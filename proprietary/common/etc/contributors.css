@@ -1,0 +1,43 @@
+body {
+    color: SkyBlue;
+    background-color: Black;
+    font-family: sans-serif;
+    font-size: large;
+    margin: 12px;
+}
+
+.MainTitle {
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 320px;
+    margin-bottom: 16px;
+}
+
+.Contributors {
+    font-size: x-large;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.SubTitle {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.Footer {
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 320px;
+}
+
+.Company {
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+

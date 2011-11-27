@@ -1,0 +1,24 @@
+# Commands to move files associated with base Google packages.
+
+# Merge all data into the new com.google.android.gsf package.
+com.google.android.gsf:com.google.android.providers.talk
+    databases
+com.google.android.gsf:com.google.android.googleapps
+    databases
+com.google.android.gsf:com.google.android.apps.gtalkservice
+    files
+com.google.android.gsf:com.google.android.providers.settings
+    databases
+
+# Merge the old IM database in Donut to the new com.google.android.gsf package.
+com.google.android.gsf:com.android.providers.im
+    databases
+
+# Merge all data from the gmail content provider into the
+# com.google.android.gm package
+com.google.android.gm:com.google.android.providers.gmail
+    databases
+
+# Calendar couldn't use original-package due to a shared user ID
+com.google.android.calendar:com.android.calendar
+    shared_prefs
