@@ -25,7 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/app/Gmail.apk:system/app/Gmail.apk \
     vendor/pete/proprietary/common/app/GoogleBackupTransport.apk:system/app/GoogleBackupTransport.apk \
     vendor/pete/proprietary/common/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
-    vendor/pete/proprietary/common/app/GoogleEarth.apk:system/app/GoogleEarth.apk \
     vendor/pete/proprietary/common/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
     vendor/pete/proprietary/common/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
     vendor/pete/proprietary/common/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
@@ -35,7 +34,6 @@ PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/app/Maps.apk:system/app/Maps.apk \
     vendor/pete/proprietary/common/app/MarketUpdater.apk:system/app/MarketUpdater.apk \
     vendor/pete/proprietary/common/app/MediaUploader.apk:system/app/MediaUploader.apk \
-    vendor/pete/proprietary/common/app/Music.apk:system/app/Music.apk \
     vendor/pete/proprietary/common/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
     vendor/pete/proprietary/common/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
     vendor/pete/proprietary/common/app/Phonesky.apk:system/app/Phonesky.apk \
@@ -46,9 +44,6 @@ PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/pete/proprietary/common/app/Talk.apk:system/app/Talk.apk \
     vendor/pete/proprietary/common/app/talkback.apk:system/app/talkback.apk \
-    vendor/pete/proprietary/common/app/Videos.apk:system/app/Videos.apk \
-    vendor/pete/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
-    vendor/pete/proprietary/common/app/YouTube.apk:system/app/YouTube.apk \
     vendor/pete/proprietary/common/etc/contributors.css:system/etc/contributors.css \
     vendor/pete/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/pete/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
@@ -60,6 +55,16 @@ PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
     vendor/pete/proprietary/common/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
     vendor/pete/proprietary/common/xbin/su:system/xbin/su
+
+ifeq ($(TARGET_BUILD_VARIANT),user)
+# Blobs common to all devices except emulator
+PRODUCT_COPY_FILES += \
+    vendor/pete/proprietary/common/app/GoogleEarth.apk:system/app/GoogleEarth.apk \
+    vendor/pete/proprietary/common/app/Music.apk:system/app/Music.apk \
+    vendor/pete/proprietary/common/app/Videos.apk:system/app/Videos.apk \
+    vendor/pete/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
+    vendor/pete/proprietary/common/app/YouTube.apk:system/app/YouTube.apk
+endif
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
