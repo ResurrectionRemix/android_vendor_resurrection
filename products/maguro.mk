@@ -11,7 +11,7 @@ PRODUCT_DEVICE := maguro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=yakju BUILD_ID=ITL41D BUILD_FINGERPRINT=google/yakju/maguro:4.0.1/ITL41D/223971:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.0.1 ITL41D 223971 release-keys" BUILD_NUMBER=223971 BUILD_UTC_DATE=1321071732
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=yakju BUILD_ID=ITL41F BUILD_FINGERPRINT=google/yakju/maguro:4.0.1/ITL41F/228551:user/release-keys PRIVATE_BUILD_DESC="yakju-user 4.0.1 ITL41F 228551 release-keys" BUILD_NUMBER=228551 BUILD_UTC_DATE=1321928358
 
 # Inherit common build.prop overrides
 -include vendor/pete/products/common_versions.mk
