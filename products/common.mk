@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/app/Talk.apk:system/app/Talk.apk \
     vendor/pete/proprietary/common/app/talkback.apk:system/app/talkback.apk \
     vendor/pete/proprietary/common/etc/contributors.css:system/etc/contributors.css \
+    vendor/pete/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
     vendor/pete/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
     vendor/pete/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
     vendor/pete/proprietary/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
