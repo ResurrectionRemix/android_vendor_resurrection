@@ -34,6 +34,9 @@ PRODUCT_COPY_FILES +=  \
     vendor/pete/proprietary/common/lib/libshoppervorbisencoder-2.so:system/lib/libshoppervorbisencoder-2.so \
     vendor/pete/proprietary/common/lib/libshopperzxingutils-4.so:system/lib/libshopperzxingutils-4.so
 
+# Inherit Face lock security blobs
+-include vendor/pete/products/common_facelock.mk
+
 # Inherit drm blobs
 -include vendor/pete/products/common_drm.mk
 
