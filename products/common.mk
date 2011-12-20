@@ -21,6 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/app/BooksTablet.apk:system/app/BooksTablet.apk \
+    vendor/pete/proprietary/common/app/CarHome.apk:system/app/CarHome.apk \
     vendor/pete/proprietary/common/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/pete/proprietary/common/app/GenieWidget.apk:system/app/GenieWidget.apk \
     vendor/pete/proprietary/common/app/Gmail.apk:system/app/Gmail.apk \
