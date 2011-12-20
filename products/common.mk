@@ -21,6 +21,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/pete/proprietary/common/app/BooksTablet.apk:system/app/BooksTablet.apk \
+    vendor/pete/proprietary/common/app/Calendar.apk:system/app/Calendar.apk \
     vendor/pete/proprietary/common/app/CarHome.apk:system/app/CarHome.apk \
     vendor/pete/proprietary/common/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
     vendor/pete/proprietary/common/app/GenieWidget.apk:system/app/GenieWidget.apk \
@@ -62,6 +63,7 @@ PRODUCT_COPY_FILES += \
 ifeq ($(TARGET_BUILD_VARIANT),user)
 # Blobs common to all devices except emulator
 PRODUCT_COPY_FILES += \
+    vendor/pete/proprietary/common/app/Gallery2.apk:system/app/Gallery2.apk \
     vendor/pete/proprietary/common/app/GoogleEarth.apk:system/app/GoogleEarth.apk \
     vendor/pete/proprietary/common/app/Music.apk:system/app/Music.apk \
     vendor/pete/proprietary/common/app/Videos.apk:system/app/Videos.apk \
