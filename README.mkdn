@@ -1,15 +1,8 @@
-Peter Alfonso
-===========
+Android Open Kang Project
+=========================
 
-Visit http://peteralfonso.com 
 
-Follow http://twitter.com/peteralfonso 
 
-Like http://facebook.com/peteralfonsojr
-
-Link http://linkedin.com/in/peteralfonso
-
-Circle http://profiles.google.com/peteralfonsojr
 
 
 Getting Started
@@ -19,10 +12,15 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u git://github.com/peteralfonso/platform_manifest.git -b ics
+    repo init -u git://github.com/teamkang/manifest.git -b master
 
 Then to sync up:
 
     repo sync
+    
+    
+Special Thanks
+--------------
+Huge shout out to @peteralfonzo for his wonderfully clean vendor tree to use as a base. This makes this infinitely more oragnized and easier to work with. Thank him!
 
 

@@ -3,6 +3,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=relea
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=$(shell date +"%s") \
-    ro.rommanager.developerid=pete
+    ro.modversion=$(TARGET_PRODUCT)_build-$(AOKP_BUILD) \
+    ro.rommanager.developerid=aokp
 

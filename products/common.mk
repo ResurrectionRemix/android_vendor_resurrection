@@ -1,10 +1,18 @@
 # Generic product
-PRODUCT_NAME := pete
-PRODUCT_BRAND := pete
+PRODUCT_NAME := aokp
+PRODUCT_BRAND := aokp
 PRODUCT_DEVICE := generic
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/pete/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
+
+PRODUCT_PACKAGES += \
+    MusicFX \
+    MusicVisualization \
+    NoiseField \
+    PhaseBeam \
+    ROMControl \
+    Supseruser
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -18,56 +26,51 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/pete/proprietary/common/app/BooksTablet.apk:system/app/BooksTablet.apk \
-    vendor/pete/proprietary/common/app/Calendar.apk:system/app/Calendar.apk \
-    vendor/pete/proprietary/common/app/CarHome.apk:system/app/CarHome.apk \
-    vendor/pete/proprietary/common/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
-    vendor/pete/proprietary/common/app/GenieWidget.apk:system/app/GenieWidget.apk \
-    vendor/pete/proprietary/common/app/Gmail.apk:system/app/Gmail.apk \
-    vendor/pete/proprietary/common/app/GoogleBackupTransport.apk:system/app/GoogleBackupTransport.apk \
-    vendor/pete/proprietary/common/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
-    vendor/pete/proprietary/common/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
-    vendor/pete/proprietary/common/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
-    vendor/pete/proprietary/common/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
-    vendor/pete/proprietary/common/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
-    vendor/pete/proprietary/common/app/GoogleTTS.apk:system/app/GoogleTTS.apk \
-    vendor/pete/proprietary/common/app/LatinIMEDictionaryPack.apk:system/app/LatinIMEDictionaryPack.apk \
-    vendor/pete/proprietary/common/app/Maps.apk:system/app/Maps.apk \
-    vendor/pete/proprietary/common/app/MarketUpdater.apk:system/app/MarketUpdater.apk \
-    vendor/pete/proprietary/common/app/MediaUploader.apk:system/app/MediaUploader.apk \
-    vendor/pete/proprietary/common/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
-    vendor/pete/proprietary/common/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
-    vendor/pete/proprietary/common/app/Phonesky.apk:system/app/Phonesky.apk \
-    vendor/pete/proprietary/common/app/PlusOne.apk:system/app/PlusOne.apk \
-    vendor/pete/proprietary/common/app/QuickSearchBox.apk:system/app/QuickSearchBox.apk \
-    vendor/pete/proprietary/common/app/SetupWizard.apk:system/app/SetupWizard.apk \
-    vendor/pete/proprietary/common/app/Street.apk:system/app/Street.apk \
-    vendor/pete/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
-    vendor/pete/proprietary/common/app/Talk.apk:system/app/Talk.apk \
-    vendor/pete/proprietary/common/app/talkback.apk:system/app/talkback.apk \
-    vendor/pete/proprietary/common/etc/contributors.css:system/etc/contributors.css \
-    vendor/pete/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
-    vendor/pete/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
-    vendor/pete/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
-    vendor/pete/proprietary/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
-    vendor/pete/proprietary/common/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
-    vendor/pete/proprietary/common/lib/libpicowrapper.so:system/lib/libpicowrapper.so \
-    vendor/pete/proprietary/common/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
-    vendor/pete/proprietary/common/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
-    vendor/pete/proprietary/common/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
-    vendor/pete/proprietary/common/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
-    vendor/pete/proprietary/common/xbin/su:system/xbin/su
-
-ifeq ($(TARGET_BUILD_VARIANT),user)
-# Blobs common to all devices except emulator
-PRODUCT_COPY_FILES += \
-    vendor/pete/proprietary/common/app/Gallery2.apk:system/app/Gallery2.apk \
-    vendor/pete/proprietary/common/app/GoogleEarth.apk:system/app/GoogleEarth.apk \
-    vendor/pete/proprietary/common/app/Music.apk:system/app/Music.apk \
-    vendor/pete/proprietary/common/app/Videos.apk:system/app/Videos.apk \
-    vendor/pete/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
-    vendor/pete/proprietary/common/app/YouTube.apk:system/app/YouTube.apk
-endif
+    vendor/aokp/proprietary/common/app/BooksTablet.apk:system/app/BooksTablet.apk \
+    vendor/aokp/proprietary/common/app/Calendar.apk:system/app/Calendar.apk \
+    vendor/aokp/proprietary/common/app/CarHome.apk:system/app/CarHome.apk \
+    vendor/aokp/proprietary/common/app/ChromeBookmarksSyncAdapter.apk:system/app/ChromeBookmarksSyncAdapter.apk \
+    vendor/aokp/proprietary/common/app/GenieWidget.apk:system/app/GenieWidget.apk \
+    vendor/aokp/proprietary/common/app/Gmail.apk:system/app/Gmail.apk \
+    vendor/aokp/proprietary/common/app/GoogleBackupTransport.apk:system/app/GoogleBackupTransport.apk \
+    vendor/aokp/proprietary/common/app/GoogleContactsSyncAdapter.apk:system/app/GoogleContactsSyncAdapter.apk \
+    vendor/aokp/proprietary/common/app/GoogleFeedback.apk:system/app/GoogleFeedback.apk \
+    vendor/aokp/proprietary/common/app/GoogleLoginService.apk:system/app/GoogleLoginService.apk \
+    vendor/aokp/proprietary/common/app/GooglePartnerSetup.apk:system/app/GooglePartnerSetup.apk \
+    vendor/aokp/proprietary/common/app/GoogleServicesFramework.apk:system/app/GoogleServicesFramework.apk \
+    vendor/aokp/proprietary/common/app/GoogleTTS.apk:system/app/GoogleTTS.apk \
+    vendor/aokp/proprietary/common/app/LatinIMEDictionaryPack.apk:system/app/LatinIMEDictionaryPack.apk \
+    vendor/aokp/proprietary/common/app/Maps.apk:system/app/Maps.apk \
+    vendor/aokp/proprietary/common/app/MarketUpdater.apk:system/app/MarketUpdater.apk \
+    vendor/aokp/proprietary/common/app/MediaUploader.apk:system/app/MediaUploader.apk \
+    vendor/aokp/proprietary/common/app/NetworkLocation.apk:system/app/NetworkLocation.apk \
+    vendor/aokp/proprietary/common/app/OneTimeInitializer.apk:system/app/OneTimeInitializer.apk \
+    vendor/aokp/proprietary/common/app/Phonesky.apk:system/app/Phonesky.apk \
+    vendor/aokp/proprietary/common/app/PlusOne.apk:system/app/PlusOne.apk \
+    vendor/aokp/proprietary/common/app/QuickSearchBox.apk:system/app/QuickSearchBox.apk \
+    vendor/aokp/proprietary/common/app/SetupWizard.apk:system/app/SetupWizard.apk \
+    vendor/aokp/proprietary/common/app/Street.apk:system/app/Street.apk \
+    vendor/aokp/proprietary/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/aokp/proprietary/common/app/Talk.apk:system/app/Talk.apk \
+    vendor/aokp/proprietary/common/app/talkback.apk:system/app/talkback.apk \
+    vendor/aokp/proprietary/common/etc/contributors.css:system/etc/contributors.css \
+    vendor/aokp/proprietary/common/etc/resolv.conf:system/etc/resolv.conf \
+    vendor/aokp/proprietary/common/etc/permissions/com.google.android.maps.xml:system/etc/permissions/com.google.android.maps.xml \
+    vendor/aokp/proprietary/common/etc/permissions/features.xml:system/etc/permissions/features.xml \
+    vendor/aokp/proprietary/common/etc/updatecmds/google_generic_update.txt:system/etc/updatecmds/google_generic_update.txt \
+    vendor/aokp/proprietary/common/framework/com.google.android.maps.jar:system/framework/com.google.android.maps.jar \
+    vendor/aokp/proprietary/common/lib/libpicowrapper.so:system/lib/libpicowrapper.so \
+    vendor/aokp/proprietary/common/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
+    vendor/aokp/proprietary/common/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
+    vendor/aokp/proprietary/common/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
+    vendor/aokp/proprietary/common/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
+    vendor/aokp/proprietary/common/app/Gallery2.apk:system/app/Gallery2.apk \
+    vendor/aokp/proprietary/common/app/GoogleEarth.apk:system/app/GoogleEarth.apk \
+    vendor/aokp/proprietary/common/app/Music.apk:system/app/Music.apk \
+    vendor/aokp/proprietary/common/app/Videos.apk:system/app/Videos.apk \
+    vendor/aokp/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
+    vendor/aokp/proprietary/common/app/YouTube.apk:system/app/YouTube.apk \
+    vendor/aokp/prebuilt/bootanimation.zip:system/media/bootanimation.zip
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
