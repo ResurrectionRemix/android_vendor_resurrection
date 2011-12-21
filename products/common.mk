@@ -6,8 +6,6 @@ PRODUCT_DEVICE := generic
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/pete/overlay/common
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
     ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \

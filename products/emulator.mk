@@ -14,7 +14,7 @@ PRODUCT_DEVICE := generic
 PRODUCT_MODEL := Emulator
 PRODUCT_MANUFACTURER := google
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=emulator BUILD_ID=ICL53F
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=emulator
 
 # Inherit common build.prop overrides
 -include vendor/pete/products/common_versions.mk
