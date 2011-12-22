@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/aokp/proprietary/common/app/Videos.apk:system/app/Videos.apk \
     vendor/aokp/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
     vendor/aokp/proprietary/common/app/YouTube.apk:system/app/YouTube.apk \
+    vendor/aokp/proprietary/common/app/Wallet.apk:system/app/Wallet.apk \
     vendor/aokp/prebuilt/bootanimation.zip:system/media/bootanimation.zip
 
 # Enable SIP+VoIP on all targets
