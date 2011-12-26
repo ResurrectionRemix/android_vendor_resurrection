@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/products/common.mk)
 
+# Tuna overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_maguro
 PRODUCT_BRAND := google
@@ -26,6 +29,7 @@ PRODUCT_COPY_FILES +=  \
     vendor/aokp/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
     vendor/aokp/proprietary/common/etc/permissions/com.google.android.nfc_extras.xml:system/etc/permissions/com.google.android.nfc_extras.xml \
     vendor/aokp/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
+    #vendor/aokp/proprietary/common/framework/com.android.nfc_extras.jar:system/framework/com.android.nfc_extras.jar \
     vendor/aokp/proprietary/common/lib/libearthmobile.so:system/lib/libearthmobile.so \
     vendor/aokp/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 

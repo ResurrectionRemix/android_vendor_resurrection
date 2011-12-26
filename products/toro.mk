@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/toro/full_toro.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/products/common.mk)
 
+# Tuna overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_toro
 PRODUCT_BRAND := google
@@ -22,12 +25,11 @@ PRODUCT_COPY_FILES +=  \
     vendor/aokp/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/aokp/proprietary/tuna/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/aokp/proprietary/tuna/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/aokp/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
     vendor/aokp/proprietary/common/app/Microbes.apk:system/app/Microbes.apk \
     vendor/aokp/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
     vendor/aokp/proprietary/common/etc/permissions/com.google.android.nfc_extras.xml:system/etc/permissions/com.google.android.nfc_extras.xml \
     vendor/aokp/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
-    vendor/aokp/proprietary/common/framework/com.android.nfc_extras.jar:system/framework/com.android.nfc_extras.jar \
+    #vendor/aokp/proprietary/common/framework/com.android.nfc_extras.jar:system/framework/com.android.nfc_extras.jar \
     vendor/aokp/proprietary/common/lib/libearthmobile.so:system/lib/libearthmobile.so \
     vendor/aokp/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
