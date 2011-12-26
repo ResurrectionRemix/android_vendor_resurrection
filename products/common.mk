@@ -7,6 +7,7 @@ PRODUCT_DEVICE := generic
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
 PRODUCT_PACKAGES += \
+    Camera \
     MusicFX \
     MusicVisualization \
     NoiseField \
@@ -22,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.error.receiver.system.apps=com.google.android.feedback \
     ro.com.google.locationfeatures=1 \
-    ro.setupwizard.mode=OPTIONAL \
+    #ro.setupwizard.mode=OPTIONAL \
     ro.setupwizard.enterprise_mode=1
 
 # Blobs common to all devices
@@ -72,6 +73,7 @@ PRODUCT_COPY_FILES += \
     vendor/aokp/proprietary/common/app/VoiceSearch.apk:system/app/VoiceSearch.apk \
     vendor/aokp/proprietary/common/app/YouTube.apk:system/app/YouTube.apk \
     vendor/aokp/proprietary/common/app/Wallet.apk:system/app/Wallet.apk \
+    vendor/aokp/proprietary/common/app/Tag.apk:system/app/Tag.apk \
     vendor/aokp/prebuilt/bootanimation.zip:system/media/bootanimation.zip
 
 # Enable SIP+VoIP on all targets
