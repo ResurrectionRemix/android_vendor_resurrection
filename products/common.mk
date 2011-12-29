@@ -65,7 +65,6 @@ PRODUCT_COPY_FILES += \
     vendor/aokp/proprietary/common/lib/libspeexwrapper.so:system/lib/libspeexwrapper.so \
     vendor/aokp/proprietary/common/lib/libvideochat_jni.so:system/lib/libvideochat_jni.so \
     vendor/aokp/proprietary/common/lib/libvideochat_stabilize.so:system/lib/libvideochat_stabilize.so \
-    vendor/aokp/proprietary/common/lib/libWVphoneAPI.so:system/lib/libWVphoneAPI.so \
     vendor/aokp/proprietary/common/lib/libvoicesearch.so:system/lib/libvoicesearch.so \
     vendor/aokp/proprietary/common/lib/libearthmobile.so:system/lib/libearthmobile.so \
     vendor/aokp/proprietary/common/app/Gallery2.apk:system/app/Gallery2.apk \
