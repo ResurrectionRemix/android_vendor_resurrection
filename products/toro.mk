@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/aokp/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
     vendor/aokp/proprietary/common/etc/permissions/com.google.android.nfc_extras.xml:system/etc/permissions/com.google.android.nfc_extras.xml \
     vendor/aokp/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
-    #vendor/aokp/proprietary/common/framework/com.android.nfc_extras.jar:system/framework/com.android.nfc_extras.jar \
     vendor/aokp/proprietary/common/lib/libearthmobile.so:system/lib/libearthmobile.so \
     vendor/aokp/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
