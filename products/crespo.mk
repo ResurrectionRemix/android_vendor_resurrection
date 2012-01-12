@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/crespo/full_crespo.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/products/common.mk)
 
+# Common overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/crespo
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_crespo
 PRODUCT_BRAND := google
