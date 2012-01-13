@@ -36,8 +36,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/aokp/proprietary/common/lib/libshopperzxingutils-4.so:system/lib/libshopperzxingutils-4.so
 
 # Inherit Face lock security blobs
--include vendor/aokp/products/common_facelock.mk
+#-include vendor/aokp/products/common_facelock.mk
 
 # Inherit drm blobs
--include vendor/aokp/products/common_drm.mk
+#-include vendor/aokp/products/common_drm.mk
 

@@ -32,8 +32,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/aokp/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
 
 # Inherit Face lock security blobs
--include vendor/aokp/products/common_facelock.mk
+#-include vendor/aokp/products/common_facelock.mk
 
 # Inherit drm blobs
--include vendor/aokp/products/common_drm.mk
+#-include vendor/aokp/products/common_drm.mk
 

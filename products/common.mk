@@ -13,7 +13,6 @@ PRODUCT_PACKAGES += \
     NoiseField \
     PhaseBeam \
     ROMControl \
-    Supseruser \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -31,7 +30,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/NovaLauncher.apk:system/app/NovaLauncher.apk \
-    vendor/aokp/prebuilt/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/aokp/prebuilt/Superuser.apk:system/app/Superuser.apk
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
