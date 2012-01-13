@@ -35,5 +35,5 @@ PRODUCT_COPY_FILES +=  \
 #-include vendor/aokp/products/common_facelock.mk
 
 # Inherit drm blobs
-#-include vendor/aokp/products/common_drm.mk
+-include vendor/aokp/products/common_drm.mk
 
