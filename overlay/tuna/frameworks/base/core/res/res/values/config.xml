@@ -64,4 +64,6 @@
         <item>250</item>
     </integer-array>
 
+    <bool name="config_bluetooth_adapter_quick_switch">true</bool>
+
 </resources>
