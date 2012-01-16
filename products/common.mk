@@ -24,14 +24,53 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
     windowsmgr.max_events_per_sec=240 \
-    ro.kernel.android.checkjni=0
+    ro.kernel.android.checkjni=0 \
+    wifi.supplicant_scan_interval=120
 
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/NovaLauncher.apk:system/app/NovaLauncher.apk \
-    vendor/aokp/prebuilt/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/aokp/prebuilt/Superuser.apk:system/app/Superuser.apk
+    vendor/aokp/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
+    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/aokp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
+    vendor/aokp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf 
+    
+# init.d
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/aokp/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/aokp/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/aokp/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/aokp/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/aokp/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/aokp/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/aokp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/aokp/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/aokp/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/aokp/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.enabled \
+    vendor/aokp/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
+    vendor/aokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
+    
+# Cron
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
+    vendor/aokp/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
+    vendor/aokp/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
+    vendor/aokp/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
+    vendor/aokp/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
+    vendor/aokp/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
+    vendor/aokp/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
+    
+# Adding files needed for extra camera features
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/aokp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
+    vendor/aokp/prebuilt/common/media/video/AndroidInSpace.240p.mp4:system/media/video/AndroidInSpace.240p.mp4 \
+    vendor/aokp/prebuilt/common/media/video/AndroidInSpace.480p.mp4:system/media/video/AndroidInSpace.480p.mp4 \
+    vendor/aokp/prebuilt/common/media/video/Disco.240p.mp4:system/media/video/Disco.240p.mp4 \
+    vendor/aokp/prebuilt/common/media/video/Disco.480p.mp4:system/media/video/Disco.480p.mp4 \
+    vendor/aokp/prebuilt/common/media/video/Sunset.240p.mp4:system/media/video/Sunset.240p.mp4 \
+    vendor/aokp/prebuilt/common/media/video/Sunset.480p.mp4:system/media/video/Sunset.480p.mp4 
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \

@@ -1,0 +1,69 @@
+#!/system/xbin/ash
+: '
+ ============ Copyright (C) 2010 Jared Rummler (JRummy16) ============
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ =====================================================================
+'
+
+if busybox [ ! -f /system/etc/liberty.cfg ]; then
+	busybox mount -o remount,rw /system
+	cat > /system/etc/liberty.cfg << EOF
+SD_BOOST_AT_BOOT=1
+READ_AHEAD_KB=2048
+ENABLE_CRON=1
+FIX_PERMISSIONS_AT_BOOT=0
+ZIPALIGN_AT_BOOT=1
+REMOVE_CACHE=0
+ENABLE_SYSCTL=1
+FREE_MEM_AT_BOOT=1
+# MEMORY THRESHOLDS
+FOREGROUND_APP_MEM=2048
+VISIBLE_APP_MEM=3072
+PERCEPTIBLE_APP_MEM=4096
+HEAVY_WEIGHT_APP_MEM=4096
+SECONDARY_SERVER_MEM=6144
+BACKUP_APP_MEM=6144
+HOME_APP_MEM=6144
+HIDDEN_APP_MEM=7168
+EMPTY_APP_MEM=8192
+EOF
+busybox mount -o remount,ro /system
+fi
+if busybox [ ! -f /system/etc/init_trigger.enabled ]; then
+	busybox mount -o remount,rw /system
+	cat > /system/etc/liberty.cfg << EOF
+SD_BOOST_AT_BOOT=0
+READ_AHEAD_KB=2048
+ENABLE_CRON=0
+FIX_PERMISSIONS_AT_BOOT=0
+ZIPALIGN_AT_BOOT=0
+REMOVE_CACHE=0
+ENABLE_SYSCTL=0
+FREE_MEM_AT_BOOT=0
+# MEMORY THRESHOLDS
+FOREGROUND_APP_MEM=2048
+VISIBLE_APP_MEM=3072
+PERCEPTIBLE_APP_MEM=4096
+HEAVY_WEIGHT_APP_MEM=4096
+SECONDARY_SERVER_MEM=6144
+BACKUP_APP_MEM=6144
+HOME_APP_MEM=6144
+HIDDEN_APP_MEM=7168
+EMPTY_APP_MEM=8192
+EOF
+busybox mount -o remount,ro /system
+fi
+

@@ -1,0 +1,7 @@
+#!/system/bin/sh
+
+. /system/etc/cron/cron.conf
+
+if test $WEEKLY_CLEAR_CACHE -eq 1; then
+	cache -rmdata
+fi

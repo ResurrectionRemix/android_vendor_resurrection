@@ -1,0 +1,415 @@
+#!/system/xbin/bash
+: '
+ ============ Copyright (C) 2010 Jared Rummler (JRummy16) ============
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ =====================================================================
+'
+
+: ' =========================================================
+ function name: fix_permissions
+ parameters: void
+ returns: void
+ description:
+    Sets permissions for Android data directories and apks
+============================================================= '
+function fix_permissions()
+{
+	START=` busybox date +%s `
+	PKGLINE=(` pm list packages -f | busybox cut -d ':' -f2 `);
+	MAX=${#PKGLINE[*]}
+	INCREMENT=5
+	PROGRESS=0
+	PROGRESS_BAR=""
+
+	echo
+	echo "Fixing permissions..."
+	echo
+
+	busybox mount -o remount,rw /system
+	
+	for pkgline in ${PKGLINE[*]}; do
+		
+		PKGNAME=` echo $pkgline | busybox cut -d '=' -f2 `
+		CODEPATH=` echo $pkgline | busybox cut -d '=' -f1 `
+		DATAPATH=/data/data/$PKGNAME
+		PKGUID=` busybox grep $CODEPATH /data/system/packages.xml | busybox sed 's%.*serId="\(.*\)".*%\1%' |  busybox cut -d '"' -f1 `
+		
+		let PROGRESS++
+		PERCENT=$(( $PROGRESS * 100 / $MAX ))
+		if busybox [ $PERCENT -eq $INCREMENT ]; then
+			INCREMENT=$(( $INCREMENT + 5 ))
+			PROGRESS_BAR="${PROGRESS_BAR}="
+		fi
+		
+		echo -ne "  \r  ${PROGRESS}/${MAX} ${PERCENT}% [ ${PROGRESS_BAR}> ]"
+		
+		if busybox [ -e $CODEPATH ]; then
+
+			APPDIR=` busybox dirname $CODEPATH `
+
+			if busybox [ $APPDIR = /system/app ]; then
+				busybox chown 0 $CODEPATH
+				busybox chown :0 $CODEPATH
+				busybox chmod 644 $CODEPATH
+			elif busybox [ $APPDIR = /data/app ]; then
+				busybox chown 1000 $CODEPATH
+				busybox chown :1000 $CODEPATH
+				busybox chmod 644 $CODEPATH
+			elif busybox [ $APPDIR = /data/app-private ]; then
+				busybox chown 1000 $CODEPATH
+				busybox chown :$PKGUID $CODEPATH
+				busybox chmod 640 $CODEPATH
+			fi
+
+			if busybox [ -d $DATAPATH ]; then
+
+				busybox chmod 755 $DATAPATH
+				busybox chown $PKGUID $DATAPATH
+				busybox chown :$PKGUID $DATAPATH
+
+				DIRS=` busybox find $DATAPATH -mindepth 1 -type d `
+
+				for file in $DIRS; do
+
+					PERM=755
+					NEWUID=$PKGUID
+					NEWGID=$PKGUID
+					FNAME=` busybox basename $file `
+					
+					case $FNAME in
+						lib)
+							busybox chmod 755 $file
+							NEWUID=1000
+							NEWGID=1000
+							PERM=755
+						;;
+						shared_prefs)
+							busybox chmod 771 $file
+							PERM=660					
+						;;
+						databases)
+							busybox chmod 771 $file
+							PERM=660
+						;;
+						cache)
+							busybox chmod 771 $file
+							PERM=600
+						;;
+						*)
+							busybox chmod 771 $file
+							PERM=771
+						;;
+					esac
+					
+					busybox chown $NEWUID $file
+					busybox chown :$NEWGID $file
+
+					busybox find $file -type f -maxdepth 1 ! -perm $PERM -exec busybox chmod $PERM {} ';'
+					busybox find $file -type f -maxdepth 1 ! -user $NEWUID -exec busybox chown $NEWUID {} ';'
+					busybox find $file -type f -maxdepth 1 ! -group $NEWGID -exec busybox chown :$NEWGID {} ';'
+
+				done
+			fi
+		fi
+	done
+
+	busybox mount -o remount,ro /system
+	sync
+	
+	STOP=` busybox date +%s `
+	RUNTIME=` runtime $START $STOP `
+	echo
+	echo
+	echo "Fix permissions complete! Runtime: ${RUNTIME}"
+	echo
+}
+
+: ' =========================================================
+ function name: getFastReboot
+ parameters: void
+ returns: void
+ description:
+    Hot reboots the device
+============================================================= '
+function getFastReboot()
+{
+	busybox killall system_server
+}
+
+: ' =========================================================
+ function name: getFastReboot
+ parameters: void
+ returns: rw|ro
+ description:
+    Gets mount
+'
+function getMount()
+{
+	mount | busybox grep /system | busybox awk '{print $4}' | busybox cut -d ',' -f1
+}
+
+: ' =========================================================
+ function name: installApks
+ parameters: $1 - "-r" search all sub directories for apks, or...
+                  path to directory
+             $2 - path to directory (if recursize)
+ returns: void
+ description:
+    Installs apks to device using package manager
+============================================================= '
+function installApks()
+{
+	RECURSIZE=0
+	case $1 in
+		-r)
+			RECURSIZE=1
+			shift;
+		;;
+	esac
+	
+	APKS_DIR=${1:-/mnt/sdcard/}
+	declare -a APKS
+	
+	if busybox [ -d $APKS_DIR ]; then	
+		
+		if busybox [ $RECURSIZE -eq 1 ]; then
+			APKS=(` busybox find $APKS_DIR -type f -name *.apk -print `);
+		else
+			APKS=(` ls $APKS_DIR/*.apk `);
+		fi
+		
+		for apk in ${APKS[*]}; do
+			pm install -i com.google.android.feedback -r $apk
+		done
+	fi
+}
+
+: ' =========================================================
+ function name: isBusyboxInstalled
+ parameters: void
+ returns: 0: busybox is installed
+          1: busybox is not installed
+ description:
+    Checks if busybox is installed correctly
+============================================================= '
+function isBusyboxInstalled()
+{
+	if ! busybox > /dev/nul 2>&1; then
+		return 1
+	fi
+	return 0
+}
+
+: ' =========================================================
+ function name: isRoot
+ parameters: void
+ returns: 0: if user is root
+          1: if user is not root
+ description:
+    Checks if user is running as root
+============================================================= '
+function isRoot()
+{
+	if busybox [ `whoami` = root ]; then
+		return 0
+	fi
+	return 1
+}
+
+: ' =========================================================
+ function name: isProcessRunning
+ parameters: $1 - process name
+ returns: 0: Process is running
+          1: Process is not running
+ description:
+    Checks if SD card is mounted
+============================================================= '
+function isProcessRunning()
+{
+	if busybox [ $# -ne 1 ]; then
+		return 1
+	fi
+	
+	PROCESS=$1
+	
+	PROCESSES=(` ps | busybox awk '{print $9}' `);
+	for p in ${PROCESSES[*]}; do
+		if busybox [ "$p" = "$PROCESS" ]; then
+			return 0
+		fi
+	done
+	return 1
+}
+
+: ' =========================================================
+ function name: isSdPresent
+ parameters: void
+ returns: 0: SD card is present
+          1: SD card is not present
+ description:
+    Checks if SD card is mounted
+============================================================= '
+function isSdPresent()
+{
+	if busybox [ -z "$( busybox mount | busybox grep /sdcard )" ]; then
+		return 1
+	fi
+	return 0
+}
+
+: ' =========================================================
+ function name: runtime
+ parameters: $1 - Start time of task
+             $2 - End time of task
+ returns: task runtime
+ description:
+    Prints runtime of a task
+============================================================= '
+function runtime()
+{
+	START=$1
+	STOP=$2
+	
+	RUNTIME=` busybox expr $STOP - $START`
+	HOURS=` busybox expr $RUNTIME / 3600`
+	REMAINDER=` busybox expr $RUNTIME % 3600`
+	MINS=` busybox expr $REMAINDER / 60`
+	SECS=` busybox expr $REMAINDER % 60`
+	busybox printf "%02d:%02d:%02d\n" "$HOURS" "$MINS" "$SECS"
+}
+
+: ' =========================================================
+ function name: setProp
+ parameters: $1 - Key
+             $2 - Value
+			 $3 - File
+ returns: void
+ description:
+    Sets build properties
+============================================================= '
+function setProp()
+{
+	if busybox [ $# -lt 2 ]; then
+		return
+	fi
+	
+	KEY=$1
+	VALUE=$2
+	PROP_FILE=${3:-/system/build.prop}
+	SEPERATOR="="
+	LINE=""
+	
+	if busybox [ -f $PROP_FILE ]; then
+		LINE=` busybox grep $KEY $PROP_FILE `
+		if busybox [ -n "${LINE}" ]; then
+			if busybox [ -n "$( echo $LINE | busybox grep ' = ' )" ]; then
+				SEPERATOR=" = "
+			fi
+			busybox sed -i "s|${KEY}${SEPERATOR}.*|${KEY}${SEPERATOR}${VALUE}|" $PROP_FILE
+		fi
+	else
+		echo "$PROP_FILE  does not exist"
+	fi
+	setprop $KEY $VALUE
+}
+
+: ' =========================================================
+ function name: sysro
+ parameters: void
+ returns: void
+ description:
+    Mounts system read-only
+============================================================= '
+function sysro()
+{
+	busybox mount -o remount,ro /system
+}
+
+: ' =========================================================
+ function name: sysrw
+ parameters: void
+ returns: void
+ description:
+    Mounts system rear/write
+============================================================= '
+function sysrw()
+{
+	busybox mount -o remount,rw /system
+}
+
+: ' =========================================================
+ function name: zipalign_apks
+ parameters: void
+ returns: void
+ description:
+    Checks for unaligned apks and aligns them.
+============================================================= '
+function zipalign_apks()
+{
+	if busybox [ -z "$( busybox which zipalign )" ]; then
+		echo "Error: zipalign binary missing."
+		return
+	fi
+
+	START=` busybox date +%s `
+	CODEPATH=(` pm list packages -f | busybox cut -d ':' -f2 | busybox cut -d '=' -f1 `);
+	MAX=${#CODEPATH[*]}
+	INCREMENT=5
+	PROGRESS=0
+	PROGRESS_BAR=""
+
+	echo
+	echo "Zipaligning..."
+	echo
+
+	busybox mount -o remount,rw /system
+	
+	for codepath in ${CODEPATH[*]}; do
+		
+		let PROGRESS++
+		PERCENT=$(( $PROGRESS * 100 / $MAX))
+		if busybox [ $PERCENT -eq $INCREMENT ]; then
+			INCREMENT=$(( $INCREMENT + 5 ))
+			PROGRESS_BAR="${PROGRESS_BAR}="
+		fi
+		
+		echo -ne "  \r  ${PROGRESS}/${MAX} ${PERCENT}% [ ${PROGRESS_BAR}> ]"
+		
+		if busybox [ -e $codepath ]; then
+			zipalign -c 4 $codepath
+			ZIP_CHECK=$?
+			case $ZIP_CHECK in
+				1)
+					if zipalign -f 4 $codepath /data/local/pkg.apk; then
+						busybox cp -f /data/local/pkg.apk $codepath
+						busybox rm -f /data/local/pkg.apk
+					fi
+				;;
+			esac
+		fi
+
+	done
+	
+	busybox mount -o remount,ro /system
+	sync
+
+	STOP=` busybox date +%s `
+	RUNTIME=` runtime $START $STOP `
+	echo
+	echo
+	echo "Zipalign complete! Runtime: ${RUNTIME}"
+	echo
+}
