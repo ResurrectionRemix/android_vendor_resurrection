@@ -46,7 +46,7 @@ PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
     vendor/aokp/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
     vendor/aokp/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/aokp/prebuilt/common/etc/init_trigger.enabled:system/etc/init_trigger.disabled \
+    vendor/aokp/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
     vendor/aokp/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
     vendor/aokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
     
