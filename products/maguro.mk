@@ -6,6 +6,7 @@ $(call inherit-product, vendor/aokp/products/common.mk)
 
 # Tuna overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/maguro
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_maguro

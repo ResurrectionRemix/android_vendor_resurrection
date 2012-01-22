@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Whether or not to display the notification LED settings -->
+    <bool name="has_notification_led">true</bool>
+
+</resources>
