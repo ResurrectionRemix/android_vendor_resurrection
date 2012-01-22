@@ -36,29 +36,7 @@ PRODUCT_COPY_FILES += \
     
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/aokp/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
-    vendor/aokp/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
-    vendor/aokp/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
-    vendor/aokp/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
-    vendor/aokp/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
-    vendor/aokp/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
-    vendor/aokp/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
-    vendor/aokp/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
-    vendor/aokp/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
-    vendor/aokp/prebuilt/common/etc/init_trigger.disabled:system/etc/init_trigger.disabled \
-    vendor/aokp/prebuilt/common/etc/liberty.bsh:system/etc/liberty.bsh \
-    vendor/aokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
-    
-# Cron
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/etc/cron/cron.conf:system/etc/cron/cron.conf \
-    vendor/aokp/prebuilt/common/etc/cron/cron.hourly/00drop_caches:system/etc/cron/cron.hourly/00drop_caches \
-    vendor/aokp/prebuilt/common/etc/cron/cron.daily/00drop_caches:system/etc/cron/cron.daily/00drop_caches \
-    vendor/aokp/prebuilt/common/etc/cron/cron.weekly/00drop_caches:system/etc/cron/cron.weekly/00drop_caches \
-    vendor/aokp/prebuilt/common/etc/cron/cron.hourly/01clear_cache:system/etc/cron/cron.hourly/01clear_cache \
-    vendor/aokp/prebuilt/common/etc/cron/cron.daily/01clear_cache:system/etc/cron/cron.daily/01clear_cache \
-    vendor/aokp/prebuilt/common/etc/cron/cron.weekly/01clear_cache:system/etc/cron/cron.weekly/01clear_cache 
+    vendor/aokp/prebuilt/common/etc/init.d/_placeholder_:system/etc/init.d/_placeholder_ \
     
 # Adding files needed for extra camera features
 PRODUCT_COPY_FILES += \
