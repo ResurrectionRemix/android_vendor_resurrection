@@ -2,7 +2,6 @@
 PRODUCT_NAME := aokp
 PRODUCT_BRAND := aokp
 PRODUCT_DEVICE := generic
-TARGET_OTA_ASSERT_DEVICE :=
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
