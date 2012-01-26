@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/crespo4g/full_crespo4g.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/products/common.mk)
+$(call inherit-product, vendor/aokp/products/common_phone.mk)
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/crespo4g

@@ -29,7 +29,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
     vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip \
     vendor/aokp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/aokp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf 

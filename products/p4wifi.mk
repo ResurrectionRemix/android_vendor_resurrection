@@ -2,7 +2,7 @@
 $(call inherit-product, device/samsung/p4wifi/p4wifi.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aokp/products/common_full_tablet_wifi.mk)
+$(call inherit-product, vendor/aokp/products/common_tablet.mk)
 
 PRODUCT_PACKAGE_OVERLAYS += device/samsung/p4wifi/overlay
 
