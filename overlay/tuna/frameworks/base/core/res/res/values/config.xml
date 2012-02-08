@@ -20,50 +20,5 @@
 <!-- These resources are around just to allow their values to be customized
      for different hardware and product builds. -->
 <resources>
-    <integer-array name="config_autoBrightnessLevels">
-        <item>6</item>
-        <item>9</item>
-        <item>14</item>
-        <item>20</item>
-        <item>30</item>
-        <item>46</item>
-        <item>68</item>
-        <item>103</item>
-        <item>154</item>
-        <item>231</item>
-        <item>346</item>
-        <item>519</item>
-        <item>778</item>
-        <item>1168</item>
-        <item>1752</item>
-        <item>2627</item>
-        <item>3941</item>
-        <item>5912</item>
-        <item>8867</item>
-    </integer-array>
-    <integer-array name="config_autoBrightnessLcdBacklightValues">
-        <item>50</item>
-        <item>52</item>
-        <item>55</item>
-        <item>58</item>
-        <item>62</item>
-        <item>65</item>
-        <item>68</item>
-        <item>70</item>
-        <item>72</item>
-        <item>75</item>
-        <item>82</item>
-        <item>88</item>
-        <item>101</item>
-        <item>116</item>
-        <item>133</item>
-        <item>152</item>
-        <item>174</item>
-        <item>199</item>
-        <item>228</item>
-        <item>250</item>
-    </integer-array>
-
     <bool name="config_bluetooth_adapter_quick_switch">true</bool>
-
 </resources>
