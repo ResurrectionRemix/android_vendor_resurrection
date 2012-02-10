@@ -10,3 +10,4 @@ add_lunch_combo aokp_p4-userdebug
 add_lunch_combo aokp_p4vzw-userdebug
 add_lunch_combo aokp_stingray-userdebug
 add_lunch_combo aokp_wingray-userdebug
+add_lunch_combo aokp_supersonic_userdebug
