@@ -11,3 +11,4 @@ add_lunch_combo aokp_stingray-userdebug
 add_lunch_combo aokp_wingray-userdebug
 add_lunch_combo aokp_supersonic-userdebug
 add_lunch_combo aokp_inc-userdebug
+add_lunch_combo aokp_otter-userdebug
