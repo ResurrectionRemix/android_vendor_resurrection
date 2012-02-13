@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="clock_style_entries">
+		<item>Right clock</item>
+		<item>No clock</item>
+	</string-array>
+
+	<string-array name="clock_style_values">
+		<item>1</item>
+		<item>0</item>
+	</string-array>
+
+</resources>
