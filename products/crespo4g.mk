@@ -21,19 +21,9 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=sojus BUILD_ID=GWK74 BUILD_FINGERPR
 
 # Copy crespo4g specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/proprietary/crespo/app/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/aokp/proprietary/crespo/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/aokp/proprietary/crespo/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aokp/proprietary/crespo/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/aokp/proprietary/tuna/media/audio/notifications/Nexus.mp3:system/media/audio/notifications/Nexus.mp3 \
-    vendor/aokp/proprietary/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/aokp/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
-    vendor/aokp/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
-    vendor/aokp/proprietary/common/lib/libearthmobile.so:system/lib/libearthmobile.so \
-    vendor/aokp/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
-    vendor/aokp/proprietary/common/lib/libshopperimageutils-3.so:system/lib/libshopperimageutils-3.so \
-    vendor/aokp/proprietary/common/lib/libshoppervorbisencoder-2.so:system/lib/libshoppervorbisencoder-2.so \
-    vendor/aokp/proprietary/common/lib/libshopperzxingutils-4.so:system/lib/libshopperzxingutils-4.so
+    vendor/aokp/prebuilt/crespo/app/Thinkfree.apk:system/app/Thinkfree.apk \
+    vendor/aokp/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+
 
 # Inherit Face lock security blobs
 #-include vendor/aokp/products/common_facelock.mk

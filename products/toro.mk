@@ -22,15 +22,8 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mysid BUILD_ID=ICL53F BUILD_FINGERP
 
 # Copy toro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/proprietary/tuna/app/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/aokp/proprietary/tuna/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/aokp/proprietary/tuna/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aokp/proprietary/tuna/media/PFFprec_600.emd:system/media/PFFprec_600.emd \
-    vendor/aokp/proprietary/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/aokp/proprietary/common/etc/permissions/com.google.android.media.effects.xml:system/etc/permissions/com.google.android.media.effects.xml \
-    vendor/aokp/proprietary/common/framework/com.google.android.media.effects.jar:system/framework/com.google.android.media.effects.jar \
-    vendor/aokp/proprietary/common/lib/libearthmobile.so:system/lib/libearthmobile.so \
-    vendor/aokp/proprietary/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
+    vendor/aokp/prebuilt/tuna/app/Thinkfree.apk:system/app/Thinkfree.apk \
+    vendor/aokp/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
 
 # Inherit Face lock security blobs
 #-include vendor/aokp/products/common_facelock.mk
