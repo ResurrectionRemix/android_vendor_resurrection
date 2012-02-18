@@ -3,6 +3,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=relea
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=$(TARGET_PRODUCT)_build-24 \
-    ro.rommanager.developerid=teamkang
+    ro.rommanager.developerid=teamkang \
+    ro.modversion=$(TARGET_PRODUCT)_build-24
+
+# Goo updater app
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=teamkang \
+	ro.goo.board=$(TARGET_PRODUCT) \
+	ro.goo.rom=aokp_$(TARGET_PRODUCT) \
+	ro.goo.version=1
+
 
