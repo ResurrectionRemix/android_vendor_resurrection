@@ -1,7 +1,7 @@
 # Inherit common tuff
-$(call inherit-product, vendor/aokp/products/common.mk)
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common_tablets
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/configs/common_tablets
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \

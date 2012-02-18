@@ -1,0 +1,4 @@
+<resources>
+  <bool name="has_notification_led">false</bool>
+</resources>
+
