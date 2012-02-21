@@ -5,7 +5,6 @@ PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
     NoiseField \
-    PhaseBeam \
     ROMControl \
     su
 
@@ -26,8 +25,9 @@ PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \
     vendor/aokp/prebuilt/common/app/LatinImeDictionaryPack.apk:system/app/LatinImeDictionaryPack.apk \
     vendor/aokp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf  \
-	vendor/aokp/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
-    vendor/aokp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so
+    vendor/aokp/prebuilt/common/app/Microbes.apk:system/app/Microbes.apk \
+    vendor/aokp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
+    vendor/aokp/prebuilt/common/app/UnicornPorn.apk:system/app/UnicornPorn.apk
     
 # init.d
 PRODUCT_COPY_FILES += \
