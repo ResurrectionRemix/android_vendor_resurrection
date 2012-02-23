@@ -11,9 +11,8 @@
 		<item>SILENT</item>
 		<item>SYNC</item>
 		<item>DATA</item>
-		<item>LTE</item>
+		<item>2G</item>
 		<item>AP</item>
-		<item>TORCH</item>
 		<item>SWAGGER</item>
 	</string-array>
 	
@@ -27,9 +26,8 @@
 		<item>Silent</item>
 		<item>Sync</item>
 		<item>Data</item>
-		<item>4G LTE</item>
+		<item>2G</item>
 		<item>Tethering (AP)</item>
-		<item>Torch</item>
 		<item>Swagger</item>
 	</string-array>
 

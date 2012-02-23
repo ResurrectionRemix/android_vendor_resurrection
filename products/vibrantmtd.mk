@@ -5,6 +5,8 @@ PRODUCT_RELEASE_NAME := Vibrant
 
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
+
 # $(call inherit-product, vendor/cm/config/gsm.mk)
 
 ## Device identifier. This must come after all inclusions
