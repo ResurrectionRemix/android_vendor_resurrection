@@ -8,3 +8,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=touchpad BUILD_ID=IML74K BUILD_FING
 
 PRODUCT_NAME := aokp_tenderloin
 PRODUCT_DEVICE := tenderloin
+
+# boot animation
+PRODUCT_COPY_FILES += \
+	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip

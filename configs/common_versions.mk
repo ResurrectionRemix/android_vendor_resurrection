@@ -9,8 +9,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=aokp \
-    ro.goo.board=$(TARGET_PRODUCT) \
-    ro.goo.rom=aokp_$(TARGET_PRODUCT) \
+    ro.goo.board=$TARGET_BUILD_DEVICE \
+    ro.goo.rom=$(TARGET_PRODUCT) \
     ro.goo.version=3
 
 

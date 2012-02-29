@@ -17,3 +17,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=IML74K BUILD_FINGERPRINT=verizon_wwe/in
 
 PRODUCT_PACKAGES += \
     Camera
+
+# boot animation
+PRODUCT_COPY_FILES += \
+	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip

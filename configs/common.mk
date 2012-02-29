@@ -19,10 +19,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     windowsmgr.max_events_per_sec=240 \
     ro.kernel.android.checkjni=0
 
-# boot animation
-PRODUCT_COPY_FILES += \
-vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
-
 # Blobs common to all devices
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/app/Superuser.apk:system/app/Superuser.apk \

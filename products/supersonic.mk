@@ -18,3 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=IML74K PRODUCT_NAME=htc_supersonic BUIL
 
 PRODUCT_PACKAGES += \
     Camera
+
+# boot animation
+PRODUCT_COPY_FILES += \
+	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip

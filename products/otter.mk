@@ -11,3 +11,7 @@ PRODUCT_BRAND := Android
 PRODUCT_MODEL := Amazon Kindle Fire
 PRODUCT_MANUFACTURER := Amazon
 PRODUCT_RELEASE_NAME := KFire
+
+# boot animation
+PRODUCT_COPY_FILES += \
+	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip

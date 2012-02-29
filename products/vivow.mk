@@ -12,3 +12,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_vivow BUILD_ID=IML74K BUILD_DIS
 
 PRODUCT_NAME := aokp_vivow
 PRODUCT_DEVICE := vivow
+
+
+# boot animation
+PRODUCT_COPY_FILES += \
+	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
