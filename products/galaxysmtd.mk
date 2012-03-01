@@ -5,6 +5,9 @@ PRODUCT_RELEASE_NAME := GalaxyS
 
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
 
 # $(call inherit-product, vendor/cm/config/gsm.mk)

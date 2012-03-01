@@ -5,9 +5,10 @@ PRODUCT_RELEASE_NAME := captivate
 
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
 
-# $(call inherit-product, vendor/cm/config/gsm.mk)
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := captivatemtd

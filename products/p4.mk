@@ -3,6 +3,9 @@ $(call inherit-product, device/samsung/p4/p4.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/p4-common
 
 PRODUCT_NAME := aokp_p4
