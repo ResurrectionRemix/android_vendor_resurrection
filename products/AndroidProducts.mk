@@ -16,5 +16,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/vivow.mk \
-    $(LOCAL_DIR)/vzwtab.mk \
+    $(LOCAL_DIR)/galaxytab7c.mk \
     $(LOCAL_DIR)/wingray.mk

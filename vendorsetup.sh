@@ -15,6 +15,6 @@ add_lunch_combo aokp_supersonic-userdebug
 add_lunch_combo aokp_tenderloin-userdebug
 add_lunch_combo aokp_vibrantmtd-userdebug
 add_lunch_combo aokp_vivow-userdebug
-add_lunch_combo aokp_vzwtab-userdebug
+add_lunch_combo aokp_galaxytab7c-userdebug
 add_lunch_combo aokp_wingray-userdebug
 add_lunch_combo aokp_a500-userdebug
