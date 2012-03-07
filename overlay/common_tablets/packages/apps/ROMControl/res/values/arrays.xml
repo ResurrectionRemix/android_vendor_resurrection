@@ -10,5 +10,15 @@
 		<item>1</item>
 		<item>0</item>
 	</string-array>
+	
+	<string-array name="weather_statusbar_location_entries">
+		<item>Above carrier text</item>
+		<item>Disabled</item>
+	</string-array>
+	
+	<string-array name="weather_statusbar_location_values">
+		<item>0</item>
+		<item>2</item>
+	</string-array>
 
 </resources>
