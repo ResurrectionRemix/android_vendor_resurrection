@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
     MusicVisualization \
     NoiseField \
     ROMControl \
+    PhaseBeam \
     su
 
 PRODUCT_PROPERTY_OVERRIDES += \
