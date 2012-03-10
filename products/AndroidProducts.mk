@@ -13,6 +13,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/supersonic.mk \
     $(LOCAL_DIR)/tenderloin.mk \
+    $(LOCAL_DIR)/tf101.mk\
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/vivow.mk \
