@@ -10,6 +10,9 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 # p999 overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/star-common
 
+# Build GanOptimizer
+PRODUCT_PACKAGES += GanOptimizer
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_p999
 PRODUCT_BRAND := lge
