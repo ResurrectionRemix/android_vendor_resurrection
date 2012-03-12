@@ -12,6 +12,7 @@ add_lunch_combo aokp_otter-userdebug
 add_lunch_combo aokp_p4-userdebug
 add_lunch_combo aokp_p4vzw-userdebug
 add_lunch_combo aokp_p4wifi-userdebug
+add_lunch_combo aokp_p5wifi-userdebug
 add_lunch_combo aokp_stingray-userdebug
 add_lunch_combo aokp_supersonic-userdebug
 add_lunch_combo aokp_tenderloin-userdebug
