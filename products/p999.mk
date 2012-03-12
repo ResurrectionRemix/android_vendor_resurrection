@@ -8,6 +8,7 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # p999 overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/star-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_p999

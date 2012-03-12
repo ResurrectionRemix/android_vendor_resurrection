@@ -12,7 +12,6 @@
 		<item>SYNC</item>
 		<item>DATA</item>
 		<item>2G</item>
-		<item>AP</item>
 		<item>TORCH</item>
 		<item>SWAGGER</item>
 	</string-array>
@@ -28,7 +27,6 @@
 		<item>Sync</item>
 		<item>Data</item>
 		<item>2G</item>
-		<item>Tethering (AP)</item>
 		<item>Torch</item>
 		<item>Swagger</item>
 	</string-array>
