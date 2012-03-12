@@ -13,7 +13,7 @@
 		<item>DATA</item>
 		<item>2G</item>
 		<item>TORCH</item>
-                <item>SWAGGER</item>
+		<item>SWAGGER</item>
 	</string-array>
 	
 	<string-array name="available_toggles_values">
@@ -28,7 +28,7 @@
 		<item>Data</item>
 		<item>2G</item>
 		<item>Torch</item>
-                <item>Swagger</item>
+		<item>Swagger</item>
 	</string-array>
 
 </resources>
