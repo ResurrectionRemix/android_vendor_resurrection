@@ -3,12 +3,14 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IML74K BUILD_VERSION_TAGS=relea
 
 CURRENT_VERSION=$(TARGET_PRODUCT)_milestone-4
 
-ifeq ($(TARGET_DEVICE),p999)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=$(CURRENT_VERSION)
-else ifeq ($(TARGET_DEVICE),p990)
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=$(CURRENT_VERSION)
+ifneq ($(TARGET_DEVICE),p999)
+    ifeq ($(TARGET_DEVICE),p990)
+	    PRODUCT_PROPERTY_OVERRIDES += \
+	        ro.cm.version=$(CURRENT_VERSION)
+     else
+         PRODUCT_PROPERTY_OVERRIDES += \
+	        ro.modversion=$(CURRENT_VERSION)
+    endif
 else
     PRODUCT_PROPERTY_OVERRIDES += \
         ro.cm.version=$(CURRENT_VERSION)
