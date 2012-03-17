@@ -1,0 +1,59 @@
+#!/system/xbin/bash
+: '
+ ============ Copyright (C) 2010 Jared Rummler (JRummy16) ============
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ 
+ =====================================================================
+' 
+
+. /system/etc/liberty.cfg
+
+if busybox [ $ENABLE_CRON -eq 1 -a -n "$( busybox | busybox grep crond )" ]; then
+	
+	# crond has "/bin/sh" hardcoded
+	mount -o remount,rw rootfs /
+	if busybox [ ! -L /bin ]; then
+		ln -s /system/bin/ /bin
+	fi
+	mount -o remount,ro rootfs /
+	
+	# set timezone (if you're not between -0500 and -0800 you get PST)
+	# todo - support other timezones
+	timezone=`date +%z`
+	if busybox [ $timezone = "-0800" ]; then
+	  TZ=PST8PDT
+	elif busybox [ $timezone = "-0700" ]; then
+	  TZ=MST7MDT
+	elif busybox [ $timezone = "-0600" ]; then
+	  TZ=CST6CDT
+	elif busybox [ $timezone = "-0500" ]; then
+	  TZ=EST5EDT
+	else
+		TZ=PST8PDT
+	fi
+	export TZ
+	
+	# use /data/cron, call the crontab file "root"
+	if busybox [ ! -d /data/cron ]; then
+		busybox mkdir -p /data/cron
+		cat > /data/cron/root << EOF
+# run-parts
+01 * * * * busybox run-parts /system/etc/cron/cron.hourly
+02 4 * * * busybox run-parts /system/etc/cron/cron.daily
+22 4 * * 0 busybox run-parts /system/etc/cron/cron.weekly
+EOF
+	fi
+	busybox crond -c /data/cron
+fi
