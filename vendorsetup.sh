@@ -16,6 +16,7 @@ add_lunch_combo aokp_p5wifi-userdebug
 add_lunch_combo aokp_stingray-userdebug
 add_lunch_combo aokp_supersonic-userdebug
 add_lunch_combo aokp_tenderloin-userdebug
+add_lunch_combo aokp_tf101-userdebug
 add_lunch_combo aokp_vibrantmtd-userdebug
 add_lunch_combo aokp_vivow-userdebug
 add_lunch_combo aokp_wingray-userdebug
