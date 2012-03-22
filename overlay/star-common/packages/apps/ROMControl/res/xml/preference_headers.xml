@@ -2,7 +2,7 @@
 
 	<header
 		android:id="@+id/about"
-		android:fragment="com.roman.romcontrol.fragments.About"
+		android:fragment="com.aokp.romcontrol.fragments.About"
 		android:title="@string/about_aokp"
 		android:summary="@string/about_aokp_summary" />
 
@@ -10,35 +10,35 @@
 
 	<header
 		android:id="@+id/user_interface"
-		android:fragment="com.roman.romcontrol.fragments.UserInterface"
+		android:fragment="com.aokp.romcontrol.fragments.UserInterface"
 		android:title="@string/general_ui"
 		android:icon="@drawable/ic_rom_control_general_ui"
 		android:summary="@string/header_summary_general_ui" />
 
 	<header
 		android:id="@+id/nav_bar"
-		android:fragment="com.roman.romcontrol.fragments.Navbar"
+		android:fragment="com.aokp.romcontrol.fragments.Navbar"
 		android:title="@string/nav_bar"
 		android:icon="@drawable/ic_rom_control_navigation_bar"
 		android:summary="@string/header_summary_navigation_bar" />
 
 	<header
 		android:id="@+id/lockscreens"
-		android:fragment="com.roman.romcontrol.fragments.Lockscreens"
+		android:fragment="com.aokp.romcontrol.fragments.Lockscreens"
 		android:title="@string/lockscreen_options"
 		android:icon="@drawable/ic_rom_control_lockscreens"
 		android:summary="@string/header_summary_lockscreens" />
 
 	<header
 		android:id="@+id/power_menu"
-		android:fragment="com.roman.romcontrol.fragments.PowerMenu"
+		android:fragment="com.aokp.romcontrol.fragments.PowerMenu"
 		android:title="@string/power_menu_optons"
 		android:icon="@drawable/ic_rom_control_power_menu"
 		android:summary="@string/header_summary_power_menu" />
 
 	<header
 		android:id="@+id/weather"
-		android:fragment="com.roman.romcontrol.fragments.Weather"
+		android:fragment="com.aokp.romcontrol.fragments.Weather"
 		android:title="@string/weather"
 		android:summary="@string/header_summary_weather"
 		android:icon="@drawable/ic_rom_control_weather" />
@@ -49,7 +49,7 @@
 
 	<header
 		android:id="@+id/power_saver"
-		android:fragment="com.roman.romcontrol.fragments.PowerSaver"
+		android:fragment="com.aokp.romcontrol.fragments.PowerSaver"
 		android:title="@string/power_saver"
 		android:icon="@drawable/ic_rom_control_powersaver"
 		android:summary="@string/header_summary_powersaver" />
@@ -57,7 +57,7 @@
 
 	<header
 		android:id="@+id/led"
-		android:fragment="com.roman.romcontrol.fragments.Led"
+		android:fragment="com.aokp.romcontrol.fragments.Led"
 		android:title="@string/led_options"
 		android:icon="@drawable/ic_rom_control_led"
 		android:summary="@string/header_summary_led" />
@@ -66,14 +66,14 @@
 
 	<header
 		android:id="@+id/statusbar_general"
-		android:fragment="com.roman.romcontrol.fragments.StatusBarGeneral"
+		android:fragment="com.aokp.romcontrol.fragments.StatusBarGeneral"
 		android:title="@string/general"
 		android:icon="@drawable/ic_rom_control_general"
 		android:summary="@string/header_summary_general" />
 
 	<header
 		android:id="@+id/statusbar_toggles"
-		android:fragment="com.roman.romcontrol.fragments.StatusBarToggles"
+		android:fragment="com.aokp.romcontrol.fragments.StatusBarToggles"
 		android:title="@string/toggles_layout"
 		android:icon="@drawable/ic_rom_control_toggles"
 		android:summary="@string/header_summary_toggles" />
@@ -81,21 +81,21 @@
 	<header
 		android:id="@+id/statusbar_clock"
 		android:title="@string/clock"
-		android:fragment="com.roman.romcontrol.fragments.StatusBarClock"
+		android:fragment="com.aokp.romcontrol.fragments.StatusBarClock"
 		android:icon="@drawable/ic_rom_control_clock"
 		android:summary="@string/header_summary_clock" />
 
 	<header
 		android:id="@+id/statusbar_battery"
 		android:title="@string/battery"
-		android:fragment="com.roman.romcontrol.fragments.StatusBarBattery"
+		android:fragment="com.aokp.romcontrol.fragments.StatusBarBattery"
 		android:icon="@drawable/ic_rom_control_battery"
 		android:summary="@string/header_summary_battery" />
 		
 	<header
 		android:id="@+id/statusbar_battery"
 		android:title="@string/signal"
-		android:fragment="com.roman.romcontrol.fragments.StatusBarSignal"
+		android:fragment="com.aokp.romcontrol.fragments.StatusBarSignal"
 		android:icon="@drawable/ic_rom_control_signal"
 		android:summary="@string/header_summary_signal" />
 
@@ -105,7 +105,7 @@
         android:id="@+id/init_d"
         android:title="@string/pt_init_d"
         android:summary="@string/ps_init_d"
-        android:fragment="com.roman.romcontrol.fragments.InitD"
+        android:fragment="com.aokp.romcontrol.fragments.InitD"
         android:icon="@drawable/ic_rom_control_init_d"/>
 
 </preference-headers>
