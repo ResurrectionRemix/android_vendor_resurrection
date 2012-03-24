@@ -1,8 +1,9 @@
 # Inherit device configuration for tf101.
 $(call inherit-product, device/asus/tf101/full_tf101.mk)
 
-# Inherit some common cyanogenmod stuff.
+# Inherit some common AOKP stuff.
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 #
 # Setup device specific product configuration.
