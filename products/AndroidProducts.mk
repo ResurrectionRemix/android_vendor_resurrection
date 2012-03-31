@@ -21,4 +21,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/galaxytab7c.mk \
     $(LOCAL_DIR)/wingray.mk \
     $(LOCAL_DIR)/p999.mk \
-    $(LOCAL_DIR)/p990.mk
+    $(LOCAL_DIR)/p990.mk \
+    $(LOCAL_DIR)/a500.mk
