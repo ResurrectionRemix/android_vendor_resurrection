@@ -25,4 +25,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.rom=$(TARGET_PRODUCT) \
     ro.goo.version=6
 
-
+# Camera shutter sound property
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.camera.shutter.sound=1
