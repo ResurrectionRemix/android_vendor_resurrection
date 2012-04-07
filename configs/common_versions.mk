@@ -1,7 +1,7 @@
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76D BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
-CURRENT_VERSION=$(TARGET_PRODUCT)_build-30
+CURRENT_VERSION=$(TARGET_PRODUCT)_build-31
 
 ifneq ($(TARGET_PRODUCT),aokp_p999)
     ifeq ($(TARGET_PRODUCT),aokp_p990)
@@ -23,7 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=aokp \
     ro.goo.rom=$(TARGET_PRODUCT) \
-    ro.goo.version=7
+    ro.goo.version=8
 
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
