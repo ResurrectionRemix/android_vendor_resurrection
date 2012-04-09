@@ -16,11 +16,11 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/p5wifi.mk \
     $(LOCAL_DIR)/p990.mk \
     $(LOCAL_DIR)/p999.mk \
-    $(LOCAL_DIR)/pyramid.mk
+    $(LOCAL_DIR)/pyramid.mk \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/supersonic.mk \
     $(LOCAL_DIR)/tenderloin.mk \
-    $(LOCAL_DIR)/tf101.mk\
+    $(LOCAL_DIR)/tf101.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/vivow.mk \
     $(LOCAL_DIR)/wingray.mk \
