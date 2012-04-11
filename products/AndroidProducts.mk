@@ -24,3 +24,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/vibrantmtd.mk \
     $(LOCAL_DIR)/vivow.mk \
     $(LOCAL_DIR)/wingray.mk \
+    $(LOCAL_DIR)/smba1002.mk \
