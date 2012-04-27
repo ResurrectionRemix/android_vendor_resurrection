@@ -1,4 +1,4 @@
-$(call inherit-product, device/acer/a500/full_a500.mk)
+$(call inherit-product, device/acer/picasso/picasso.mk)
 
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
@@ -7,12 +7,12 @@ $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
 # Set those variables here to overwrite the inherited values.
 
-PRODUCT_NAME := aokp_a500
-PRODUCT_DEVICE := a500
-PRODUCT_BRAND := acer
-PRODUCT_MANUFACTURER := acer
-PRODUCT_MODEL := Acer Iconia A500
-PRODUCT_RELEASE_NAME := a500
+PRODUCT_DEVICE := picasso
+PRODUCT_NAME := aokp_picasso
+PRODUCT_BRAND := Acer
+PRODUCT_MODEL := A500
+PRODUCT_MANUFACTURER := Acer
+PRODUCT_RELEASE_NAME := A500
 
 PRODUCT_COPY_FILES +=  \
     vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
