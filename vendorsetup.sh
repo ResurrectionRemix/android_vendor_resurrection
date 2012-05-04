@@ -13,6 +13,7 @@ add_lunch_combo aokp_p1c-userdebug
 add_lunch_combo aokp_p4-userdebug
 add_lunch_combo aokp_p4vzw-userdebug
 add_lunch_combo aokp_p4wifi-userdebug
+add_lunch_combo aokp_p5-userdebug
 add_lunch_combo aokp_p5wifi-userdebug
 add_lunch_combo aokp_p990-userdebug
 add_lunch_combo aokp_p999-userdebug

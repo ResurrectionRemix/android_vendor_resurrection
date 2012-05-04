@@ -13,6 +13,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/p4.mk \
     $(LOCAL_DIR)/p4vzw.mk \
     $(LOCAL_DIR)/p4wifi.mk \
+    $(LOCAL_DIR)/p5.mk \
     $(LOCAL_DIR)/p5wifi.mk \
     $(LOCAL_DIR)/p990.mk \
     $(LOCAL_DIR)/p999.mk \
