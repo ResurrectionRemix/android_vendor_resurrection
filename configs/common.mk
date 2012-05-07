@@ -1,6 +1,9 @@
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
+# T-Mobile theme engine
+include vendor/aokp/configs/themes_common.mk
+
 PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
