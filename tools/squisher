@@ -142,7 +142,7 @@ rm -rf $REPACK/ota/recovery
 # Determine what to name the new signed package
 
 #MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
-VERSION=`cat "vendor/aokp/configs/common_versions.mk" | grep CURRENT_VERSION | head -1 | cut -f2 -d '=' | cut -f3 -d '_'`
+VERSION=`cat "vendor/aokp/configs/common_versions.mk" | grep ro.aokp.version | head -1 | cut -f2 -d '=' | cut -f3 -d '_'`
 MODVERSION="$TARGET_PRODUCT"_"$VERSION"
 OUTFILE=$OUT/$MODVERSION.zip
 
