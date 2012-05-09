@@ -4,6 +4,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/crespo.mk \
     $(LOCAL_DIR)/crespo4g.mk \
+    $(LOCAL_DIR)/bravo.mk \
     $(LOCAL_DIR)/captivatemtd.mk \
     $(LOCAL_DIR)/fascinatemtd.mk \
     $(LOCAL_DIR)/galaxysmtd.mk \
@@ -24,6 +25,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tenderloin.mk \
     $(LOCAL_DIR)/tf101.mk \
     $(LOCAL_DIR)/vibrantmtd.mk \
+    $(LOCAL_DIR)/ville.mk \
     $(LOCAL_DIR)/vivow.mk \
-    $(LOCAL_DIR)/wingray.mk \
-    $(LOCAL_DIR)/bravo.mk \
+    $(LOCAL_DIR)/wingray.mk
