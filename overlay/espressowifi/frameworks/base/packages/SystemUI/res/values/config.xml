@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Whether to hide the signal bars by default or not. Useful for WiFi only tablets -->
+	<bool name="config_hideSignalBars">true</bool>
+</resources>
