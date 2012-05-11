@@ -24,6 +24,7 @@ add_lunch_combo aokp_stingray-userdebug
 add_lunch_combo aokp_supersonic-userdebug
 add_lunch_combo aokp_tenderloin-userdebug
 add_lunch_combo aokp_tf101-userdebug
+add_lunch_combo aokp_tf201-userdebug
 add_lunch_combo aokp_vibrantmtd-userdebug
 add_lunch_combo aokp_ville-userdebug
 add_lunch_combo aokp_vivow-userdebug
