@@ -1,5 +1,5 @@
 # Inherit device configuration for tf201.
-$(call inherit-product, device/asus/tf101/tf201.mk)
+$(call inherit-product, device/asus/tf201/full_tf201.mk)
 
 # Inherit some common AOKP stuff.
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
