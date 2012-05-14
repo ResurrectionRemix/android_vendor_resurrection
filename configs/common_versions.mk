@@ -4,13 +4,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=IMM76I BUILD_VERSION_TAGS=relea
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=teamkang \
-    ro.aokp.version=$(TARGET_PRODUCT)_build-35
+    ro.aokp.version=$(TARGET_PRODUCT)_build-36
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=aokp \
     ro.goo.rom=aokp \
-    ro.goo.version=13
+    ro.goo.version=14
 
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
