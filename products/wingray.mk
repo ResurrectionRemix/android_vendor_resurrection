@@ -15,4 +15,4 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=tervigon BUILD_ID=IML74K BUILD_FING
 
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip

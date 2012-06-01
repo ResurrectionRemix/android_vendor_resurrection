@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=US_epad BUILD_FINGERPRINT=asus/US_e
 PRODUCT_RELEASE_NAME := EeePad
 
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip

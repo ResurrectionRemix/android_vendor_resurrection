@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9000 TARGET_DEVICE=GT-I9000 BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+	vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip

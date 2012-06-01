@@ -23,6 +23,6 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=yakju BUILD_FINGERPRINT=google/yakj
 # Copy maguro specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/aokp/prebuilt/tuna/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/aokp/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip \
     vendor/aokp/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
 

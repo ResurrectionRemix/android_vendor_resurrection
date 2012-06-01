@@ -17,6 +17,6 @@ PRODUCT_PACKAGES += \
     Camera
 
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+	vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 
 DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/bravo

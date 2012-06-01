@@ -20,4 +20,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SCH-I500 TARGET_DEVICE=SCH-I500 BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+	vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip

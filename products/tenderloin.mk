@@ -13,4 +13,4 @@ PRODUCT_DEVICE := tenderloin
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+	vendor/aokp/prebuilt/bootanimation/bootanimation_1024_768.zip:system/media/bootanimation.zip

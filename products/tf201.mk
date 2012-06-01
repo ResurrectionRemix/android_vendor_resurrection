@@ -18,4 +18,4 @@ PRODUCT_MANUFACTURER := asus
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=US_epad BUILD_FINGERPRINT=asus/US_epad/EeePad:4.0.3/IML74K/US_epad-9.4.2.21-20120323:user/release-keys PRIVATE_BUILD_DESC="US_epad-user 4.0.3 IML74K US_epad-9.4.2.21-20120323 release-keys"
 
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip

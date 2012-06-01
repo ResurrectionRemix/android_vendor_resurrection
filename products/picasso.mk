@@ -15,4 +15,4 @@ PRODUCT_MANUFACTURER := Acer
 PRODUCT_RELEASE_NAME := A500
 
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip

@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ville BUILD_FINGERPRINT=tmous/v
 
 # Copy over prebuilt boot animation
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation.zip

@@ -22,5 +22,5 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=soju BUILD_FINGERPRINT=google/soju/
 # Copy crespo specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/aokp/prebuilt/crespo/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/aokp/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 

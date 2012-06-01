@@ -18,4 +18,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-P7300 BUILD_ID=IML74K BUILD_FING
 PRODUCT_RELEASE_NAME := p5
 
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/common/media/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
