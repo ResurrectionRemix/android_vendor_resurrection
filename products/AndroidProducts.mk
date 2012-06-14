@@ -10,6 +10,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/fascinatemtd.mk \
     $(LOCAL_DIR)/galaxysmtd.mk \
     $(LOCAL_DIR)/inc.mk \
+    $(LOCAL_DIR)/mesmerizemtd.mk \
     $(LOCAL_DIR)/otter.mk \
     $(LOCAL_DIR)/p1c.mk \
     $(LOCAL_DIR)/p4.mk \
@@ -21,6 +22,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/p999.mk \
     $(LOCAL_DIR)/picasso.mk \
     $(LOCAL_DIR)/pyramid.mk \
+    $(LOCAL_DIR)/showcasemtd.mk \
     $(LOCAL_DIR)/stingray.mk \
     $(LOCAL_DIR)/supersonic.mk \
     $(LOCAL_DIR)/tenderloin.mk \
