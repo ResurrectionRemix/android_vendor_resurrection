@@ -15,6 +15,7 @@
 		<item>AP</item>
 		<item>TETHER</item>
 		<item>TORCH</item>
+		<item>NFC</item>
 	</string-array>
 	
 	<string-array name="available_toggles_values">
@@ -31,6 +32,7 @@
 		<item>Wi-Fi Tether (AP)</item>
 		<item>USB Tether</item>
 		<item>Torch</item>
+		<item>NFC</item>
 	</string-array>
 
 </resources>
