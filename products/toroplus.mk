@@ -12,7 +12,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/toro
 PRODUCT_NAME := aokp_toroplus
 PRODUCT_BRAND := Google
 PRODUCT_DEVICE := toroplus
-PRODUCT_MODEL := Sprint Galaxy Nexus CDMA
+PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysidspr BUILD_FINGERPRINT=samsung/mysidspr/toroplus:4.0.4/IMM76I/330937:user/release-keys PRIVATE_BUILD_DESC="mysidspr-user 4.0.4 IMM76I 330937 release-keys" BUILD_NUMBER=330937
