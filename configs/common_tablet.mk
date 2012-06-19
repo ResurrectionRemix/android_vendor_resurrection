@@ -16,5 +16,7 @@ PRODUCT_PACKAGES += \
         VisualizationWallpapers \
         librs_jni \
         Trebuchet
-    
-    
+
+# Inherit drm blobs
+-include vendor/aokp/configs/common_drm_phone.mk
+
