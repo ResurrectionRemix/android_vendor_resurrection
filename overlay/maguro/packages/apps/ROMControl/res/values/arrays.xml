@@ -15,6 +15,7 @@
 		<item>AP</item>
 		<item>TETHER</item>
 		<item>TORCH</item>
+		<item>NFC</item>
         <item>SWAGGER</item>
         <item>FCHARGE</item>
 	</string-array>
@@ -33,6 +34,7 @@
 		<item>Wi-Fi Tether (AP)</item>
 		<item>USB Tether</item>
 		<item>Torch</item>
+		<item>NFC</item>
         <item>Swagger</item>
         <item>Fast charge</item>
 	</string-array>

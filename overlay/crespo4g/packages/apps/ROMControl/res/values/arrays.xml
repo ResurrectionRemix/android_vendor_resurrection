@@ -15,6 +15,7 @@
 		<item>TETHER</item>
 		<item>TORCH</item>
 		<item>SWAGGER</item>
+		<item>NFC</item>
 	</string-array>
 	
 	<string-array name="available_toggles_values">
@@ -31,6 +32,7 @@
 		<item>USB Tether</item>
 		<item>Torch</item>
 		<item>Swagger</item>
+		<item>NFC</item>
 	</string-array>
 
 </resources>
