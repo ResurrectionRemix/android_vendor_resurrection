@@ -5,6 +5,9 @@ PRODUCT_RELEASE_NAME := N7000
 # Inherit some common AOKP stuff.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+# Add some overlays for toggles
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/n7000
+
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
