@@ -13,7 +13,9 @@
 		<item>DATA</item>
 		<item>LTE</item>
 		<item>AP</item>
+		<item>TETHER</item>
 		<item>TORCH</item>
+		<item>NFC</item>
 		<item>SWAGGER</item>
 		<item>FCHARGE</item>
 	</string-array>
@@ -29,8 +31,10 @@
 		<item>Sync</item>
 		<item>Data</item>
 		<item>4G LTE</item>
-		<item>Tethering (AP)</item>
+		<item>Wi-Fi Tether (AP)</item>
+		<item>USB Tether</item>
 		<item>Torch</item>
+		<item>NFC</item>
 		<item>Swagger</item>
 		<item>Fast charge</item>
 	</string-array>

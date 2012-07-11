@@ -11,9 +11,11 @@
 		<item>SILENT</item>
 		<item>SYNC</item>
 		<item>DATA</item>
-		<item>LTE</item>
 		<item>AP</item>
+		<item>TETHER</item>
 		<item>TORCH</item>
+		<item>SWAGGER</item>
+		<item>NFC</item>
 	</string-array>
 	
 	<string-array name="available_toggles_values">
@@ -26,9 +28,11 @@
 		<item>Silent</item>
 		<item>Sync</item>
 		<item>Data</item>
-		<item>4G LTE</item>
-		<item>Tethering (AP)</item>
+		<item>Wi-Fi Tether (AP)</item>
+		<item>USB Tether</item>
 		<item>Torch</item>
+		<item>Swagger</item>
+		<item>NFC</item>
 	</string-array>
 
 </resources>

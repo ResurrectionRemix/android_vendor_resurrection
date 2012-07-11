@@ -1,6 +1,9 @@
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
+# T-Mobile theme engine
+include vendor/aokp/configs/themes_common.mk
+
 PRODUCT_PACKAGES += \
     MusicFX \
     MusicVisualization \
@@ -8,7 +11,10 @@ PRODUCT_PACKAGES += \
     ROMControl \
     PhaseBeam \
     su \
-    AppWidgetPicker
+    AppWidgetPicker \
+    openvpn \
+    SwagPapers \
+    AOKPtips
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
@@ -71,5 +77,19 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
+# Live wallpapers for all
+PRODUCT_PACKAGES += \
+		LiveWallpapers \
+		LiveWallpapersPicker \
+		MagicSmokeWallpapers \
+		VisualizationWallpapers \
+		librs_jni
+
+PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
+
 # Inherit common build.prop overrides
 -include vendor/aokp/configs/common_versions.mk
+
+# Camera shutter sound property
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.camera-sound=1

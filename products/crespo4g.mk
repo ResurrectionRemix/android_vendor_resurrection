@@ -19,5 +19,5 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=sojus BUILD_ID=IML74K BUILD_FINGERP
 # Copy crespo4g specific prebuilt files
 PRODUCT_COPY_FILES +=  \
     vendor/aokp/prebuilt/crespo/Thinkfree.apk:system/app/Thinkfree.apk \
-    vendor/aokp/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 

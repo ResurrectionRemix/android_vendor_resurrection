@@ -12,7 +12,7 @@ Please see the [Android source page](http://source.android.com/source/index.html
 
 To initialize your local repository using my trees, use the following command:
 
-    repo init -u https://github.com/AOKP/platform_manifest.git -b master
+    repo init -u https://github.com/AOKP/platform_manifest.git -b ics
 
 Then to sync up:
 
