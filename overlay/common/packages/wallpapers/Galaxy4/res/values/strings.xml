@@ -17,5 +17,4 @@
 <resources>
     <string name="wallpaper_label">Galaxy</string>
     <string name="wallpaper_author">Google</string>
-    <string name="wallpaper_description">A galaxy made of slowly swirling stars.</string>
 </resources>
