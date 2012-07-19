@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string-array name="available_toggles_entries">
+		<item>ROTATE</item>
+		<item>BT</item>
+		<item>GPS</item>
+		<item>WIFI</item>
+		<item>AIRPLANE_MODE</item>
+		<item>VIBRATE</item>
+		<item>SILENT</item>
+		<item>SYNC</item>
+		<item>DATA</item>
+		<item>LTE</item>
+		<item>AP</item>
+		<item>TETHER</item>
+		<item>TORCH</item>
+		<item>NFC</item>
+		<item>SWAGGER</item>
+		<item>FCHARGE</item>
+	</string-array>
+	
+	<string-array name="available_toggles_values">
+		<item>Auto-rotate</item>
+		<item>BT</item>
+		<item>GPS</item>
+		<item>Wi-Fi</item>
+		<item>Airplane mode</item>
+		<item>Vibrate</item>
+		<item>Silent</item>
+		<item>Sync</item>
+		<item>Data</item>
+		<item>4G LTE</item>
+		<item>Wi-Fi Tether (AP)</item>
+		<item>USB Tether</item>
+		<item>Torch</item>
+		<item>NFC</item>
+		<item>Swagger</item>
+		<item>Fast charge</item>
+	</string-array>
+
+</resources>
