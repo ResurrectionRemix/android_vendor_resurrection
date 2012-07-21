@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/toro/full_toro.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/toro
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_toro
 PRODUCT_BRAND := google

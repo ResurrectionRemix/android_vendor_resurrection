@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Whether or not to display the notification LED settings -->
+    <bool name="has_notification_led">true</bool>
+
+    <!-- Whether device has camera flash or torch capabilities -->
+    <bool name="has_torch">true</bool>
+
+    <!-- Whether device has hardware buttons -->
+    <bool name="has_hardware_buttons">false</bool>
+
+    <!-- Whether can use fast chage -->
+    <bool name="has_fast_charge">true</bool>
+
+    <!-- Whether can use color tuning -->
+    <bool name="has_color_tuning">true</bool>
+</resources>

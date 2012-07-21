@@ -10,4 +10,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=aokp \
     ro.goo.rom=aokp \
-    ro.goo.version=19
+    ro.goo.version=20
