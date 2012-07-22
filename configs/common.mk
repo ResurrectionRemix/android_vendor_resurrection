@@ -7,20 +7,23 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 # include vendor/aokp/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
+    AOKPtips \
+    AppWidgetPicker \
     LatinImeDictionary \
     Microbes \
     MusicFX \
     MusicVisualization \
     NoiseField \
-    ROMControl \
-    PhaseBeam \
-    su \
-    AppWidgetPicker \
     openvpn \
+    PhaseBeam \
+    ROMControl \
+    SuperSU \
     SwagPapers \
-    AOKPtips \
-    Superuser \
     UnicornPorn
+
+# Use prebuilt su until fixed when built
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/xbin/su:system/xbin/su
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
