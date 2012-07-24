@@ -11,3 +11,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=aokp \
     ro.goo.rom=aokp \
     ro.goo.version=20
+
+# Camera shutter sound property
+PRODUCT_PROPERTY_OVERRIDES += \
+	persist.sys.camera-sound=1
