@@ -75,6 +75,12 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     librs_jni
 
+PRODUCT_PACKAGES += \
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs
+
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Inherit common build.prop overrides
