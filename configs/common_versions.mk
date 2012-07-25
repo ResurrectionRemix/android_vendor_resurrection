@@ -4,7 +4,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JRO03C BUILD_VERSION_TAGS=relea
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=teamkang \
-    ro.aokp.version=$(TARGET_PRODUCT)_jb1
+    ro.aokp.version=$(TARGET_PRODUCT)_jb-build-1
 
 # Goo updater app
 PRODUCT_PROPERTY_OVERRIDES += \
