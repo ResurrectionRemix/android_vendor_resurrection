@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Location services -->
+    <string name="config_networkLocationProviderPackageName">com.google.android.location</string>
+    <string name="config_geocodeProviderPackageName">com.google.android.location</string>
+</resources>
