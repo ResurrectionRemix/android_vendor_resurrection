@@ -4,7 +4,7 @@ $(call inherit-product-if-exists, vendor/aokp/prebuilt/prebuilts.mk)
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
 # T-Mobile theme engine
-# include vendor/aokp/configs/themes_common.mk
+include vendor/aokp/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
     AOKPtips \
