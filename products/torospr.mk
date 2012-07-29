@@ -18,5 +18,7 @@ PRODUCT_COPY_FILES += \
 
 # Torospr specific packages
 PRODUCT_PACKAGES += \
-    bootanimation_720_1280 \
     Thinkfree
+
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip

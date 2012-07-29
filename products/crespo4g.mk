@@ -16,3 +16,6 @@ PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=sojus BUILD_ID=IML74K BUILD_FINGERP
 # Crespo4G specific packages
 PRODUCT_PACKAGES += \
     Thinkfree
+
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
