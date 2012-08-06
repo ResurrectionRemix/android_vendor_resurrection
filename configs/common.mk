@@ -84,6 +84,12 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
+# Default ringtone
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Scarabaeus.ogg \
+    ro.config.notification_sound=Antimony.ogg \
+    ro.config.alarm_alert=Scandium.ogg
+
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
 # Inherit common build.prop overrides
