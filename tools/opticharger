@@ -114,6 +114,11 @@ then
             echo "Unable to find certificate for $NAME"
             exit 1;
         fi
+        if [ "$CERT" = "PRESIGNED" ];
+        then
+            echo "$NAME is presigned, skipping"
+            exit 1;
+        fi
     fi
 
     [ $QUIET ] || echo "Certificate: $CERT";
@@ -132,7 +137,7 @@ then
 
     [ $QUIET ] || echo "Repacking apk.."
     aapt p -0 .dat -0 .dict -F $NAME .
-    
+
     [ $QUIET ] || echo "Resigning with cert: `echo $CERT`"
 
     [ $QUIET ] || echo java -jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar $ANDROID_BUILD_TOP/$CERT $ANDROID_BUILD_TOP/$KEY $NAME signed_$NAME
