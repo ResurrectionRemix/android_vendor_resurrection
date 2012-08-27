@@ -10,7 +10,11 @@ add_lunch_combo aokp_d2vzw-userdebug
 add_lunch_combo aokp_galaxysmtd-userdebug
 add_lunch_combo aokp_hercules-userdebug
 add_lunch_combo aokp_n7000-userdebug
+add_lunch_combo aokp_p3100-userdebug
+add_lunch_combo aokp_p3110-userdebug
 add_lunch_combo aokp_p3113-userdebug
+add_lunch_combo aokp_p5100-userdebug
+add_lunch_combo aokp_p5110-userdebug
 add_lunch_combo aokp_p5113-userdebug
 add_lunch_combo aokp_fascinatemtd-userdebug
 add_lunch_combo aokp_maguro-userdebug

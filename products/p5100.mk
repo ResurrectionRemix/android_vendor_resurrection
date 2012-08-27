@@ -18,28 +18,28 @@
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := p3113
+PRODUCT_RELEASE_NAME := p5100
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1024_600.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/espressowifi
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/espresso
 
 PRODUCT_PACKAGES += \
     NovaLauncher
 
-# Inherit some common stuff.
+# Inherit some common CM stuff.
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/p3113/full_p3113.mk)
+$(call inherit-product, device/samsung/p5100/full_p5100.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := p3113
-PRODUCT_NAME := aokp_p3113
+PRODUCT_DEVICE := p5100
+PRODUCT_NAME := aokp_p5100
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := GT-P3113
+PRODUCT_MODEL := GT-P5100
 PRODUCT_MANUFACTURER := samsung
 
 #Set build fingerprint / ID / Prduct Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=espressowifixx TARGET_DEVICE=espressowifi BUILD_FINGERPRINT=samsung/espressowifixx/espressowifi:4.0.3/IML74K/P3113XWALD2:user/release-keys PRIVATE_BUILD_DESC="espressowifixx-user 4.0.3 IML74K P3113XWALD2 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=espresso10rfxx TARGET_DEVICE=espresso10rf BUILD_FINGERPRINT=samsung/espresso10rfxx/espresso10rf:4.0.3/IML74K/P5100XWALE2:user/release-keys PRIVATE_BUILD_DESC="espresso10rfxx-user 4.0.3 IML74K P5100XWALE2 release-keys"
