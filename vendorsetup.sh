@@ -5,6 +5,7 @@ add_lunch_combo aokp_crespo4g-userdebug
 add_lunch_combo aokp_d2tmo-userdebug
 add_lunch_combo aokp_d2usc-userdebug
 add_lunch_combo aokp_d2vzw-userdebug
+add_lunch_combo aokp_evita-userdebug
 add_lunch_combo aokp_fascinatemtd-userdebug
 add_lunch_combo aokp_galaxysmtd-userdebug
 add_lunch_combo aokp_grouper-userdebug
