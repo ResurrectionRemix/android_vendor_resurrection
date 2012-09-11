@@ -25,11 +25,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/espressowifi
 
-PRODUCT_PACKAGES += \
-    NovaLauncher
-
 # Inherit some common stuff.
-$(call inherit-product, vendor/aokp/configs/common_tablet.mk)
+$(call inherit-product, vendor/aokp/configs/common_tablet_small.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/p3113/full_p3113.mk)
