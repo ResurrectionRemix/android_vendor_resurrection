@@ -56,7 +56,14 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    libssh \
+    ssh \
+    sshd \
+    sshd-config \
+    ssh-keygen \
+    sftp \
+    scp
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
