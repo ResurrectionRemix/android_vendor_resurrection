@@ -8,6 +8,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/fascinatemtd.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/hercules.mk \
+    $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/n7000.mk \
     $(LOCAL_DIR)/p3100.mk \
