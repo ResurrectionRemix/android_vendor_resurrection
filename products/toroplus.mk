@@ -1,13 +1,15 @@
 # Inherit AOSP device configuration for toroplus.
-$(call inherit-product, device/samsung/torospr/full_torospr.mk)
+$(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/toroplus
+
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_torospr
+PRODUCT_NAME := aokp_toroplus
 PRODUCT_BRAND := Google
-PRODUCT_DEVICE := torospr
+PRODUCT_DEVICE := toroplus
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := Samsung
 
