@@ -17,8 +17,6 @@ add_lunch_combo aokp_p5100-userdebug
 add_lunch_combo aokp_p5110-userdebug
 add_lunch_combo aokp_p5113-userdebug
 add_lunch_combo aokp_fascinatemtd-userdebug
-add_lunch_combo aokp_maguro-userdebug
-add_lunch_combo aokp_grouper-userdebug
 add_lunch_combo aokp_vibrantmtd-userdebug
 add_lunch_combo aokp_i9100-userdebug
 add_lunch_combo aokp_i9100g-userdebug
