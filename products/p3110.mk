@@ -21,7 +21,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 PRODUCT_RELEASE_NAME := p3110
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1024_600.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1024_600_ccw90.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/espressowifi
 
