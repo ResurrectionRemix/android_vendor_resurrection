@@ -1,0 +1,6 @@
+<resources>
+    <!-- WiFi on by default -->
+    <bool name="def_wifi_on">true</bool>
+    <!-- WiFi never sleeps -->
+    <integer name="def_wifi_sleep_policy">2</integer>
+</resources>
