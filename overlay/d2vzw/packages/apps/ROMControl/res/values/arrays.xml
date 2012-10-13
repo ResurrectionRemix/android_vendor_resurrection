@@ -18,6 +18,7 @@
                 <item>TORCH</item>
                 <item>NFC</item>
                 <item>SWAGGER</item>
+                <item>FCHARGE</item>
         </string-array>
 
         <string-array name="available_toggles_values">
@@ -37,6 +38,7 @@
                 <item>@string/toggle_torch</item>
                 <item>@string/toggle_nfc</item>
                 <item>@string/toggle_swagger</item>
+                <item>@string/toggle_fast_charge</item>
         </string-array>
 
         <string-array name="navigation_bar_qty_entries">
