@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aokp/configs/cdma.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+# Inherit common Verizon Wireless Perms and Lib
+$(call inherit-product, vendor/aokp/configs/vzw.mk)
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/d2vzw
 
 # Setup device specific product configuration.
