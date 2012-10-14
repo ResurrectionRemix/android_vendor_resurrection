@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/toro/full_toro.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 
+# Inherit common Verizon Wireless Files
+$(call inherit-product, vendor/aokp/configs/vzw.mk)
+
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/toro
 
