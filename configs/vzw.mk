@@ -1,5 +1,6 @@
 #Permissions and Lib for Verizon Wireless Apps
 PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/vzw/app/VerizonSSO.apk:system/app/VerizonSSO.apk \
     vendor/aokp/prebuilt/vzw/etc/permissions/com.vzw.hardware.ehrpd.xml:system/etc/permissions/com.vzw.hardware.ehrpd.xml \
     vendor/aokp/prebuilt/vzw/etc/permissions/com.vzw.hardware.lte.xml:system/etc/permissions/com.vzw.hardware.lte.xml \
     vendor/aokp/prebuilt/vzw/etc/permissions/com.vzw.vzwapnlib.xml:system/etc/permissions/com.vzw.vzwapnlib.xml \
