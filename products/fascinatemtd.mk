@@ -7,8 +7,8 @@ $(call inherit-product, vendor/aokp/configs/common_phone.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
-# Inherit Aries-common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
+# Inherit Fascinate overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/fascinate
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_fascinatemtd
