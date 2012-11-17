@@ -1,0 +1,43 @@
+Android Open Kang Project
+=========================
+
+
+
+
+
+Getting Started
+---------------
+
+Please see the [Android source page](http://source.android.com/source/index.html) for building instructions.
+
+To initialize your local repository using my trees, use the following command:
+
+    repo init -u https://github.com/AOKP/platform_manifest.git -b jb
+
+Then to sync up:
+
+    repo sync
+
+
+
+Building
+--------
+
+After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
+
+Once you've read that, you can build with
+
+    mka
+
+This will compile everything and use the correct "-j#" flag.
+
+You can also build a flashable zip with
+
+    mka bacon
+    
+    
+Special Thanks
+--------------
+Huge shout out to [@peteralfonzo](http://twitter.com/peteralfonso) for his wonderfully clean vendor tree to use as a base. This makes this infinitely more oragnized and easier to work with. Thank him!
+
+

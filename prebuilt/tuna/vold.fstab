@@ -1,0 +1,1 @@
+dev_mount usb /mnt/usb auto /devices/platform/omap-ehci.0

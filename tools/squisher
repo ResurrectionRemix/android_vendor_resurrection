@@ -1,0 +1,193 @@
+#!/bin/sh
+#
+# Squish a CM otapackage for distribution
+#
+# cyanogen
+# AOKP
+
+. $ANDROID_BUILD_TOP/vendor/aokp/tools/colors
+
+OUT_TARGET_HOST=`uname -a | grep Darwin`
+if [ -z "$OUT_TARGET_HOST" ]
+then
+   OUT_TARGET_HOST=linux-x86
+   MD5=md5sum
+   XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
+   SED=sed
+else
+   OUT_TARGET_HOST=darwin-x86
+   MD5=md5
+   XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
+   SED=gsed
+fi
+
+if [ -z "$OUT" -o ! -d "$OUT" ]; then
+	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
+	exit 1
+fi
+
+if [ "$TARGET_BUILD_TYPE" = "debug" ]; then
+    OTAPACKAGE=$OUT/${TARGET_PRODUCT}_debug-ota-$TARGET_BUILD_VARIANT.$USER.zip
+elif [ "$TARGET_BUILD_VARIANT" = "userdebug" ]; then
+    OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-eng.$USER.zip
+else
+    OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$USER.zip
+fi
+if [ ! -f "$OTAPACKAGE" ]; then
+	echo "$OTAPACKAGE doesn't exist!";
+	exit 1
+fi
+
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aokp/tools/opticharger
+QUIET=-q
+DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
+
+
+# Some products want a squashfs for xbin for space
+case "$TARGET_PRODUCT" in
+	cyanogen_dream_sapphire) WANT_SQUASHFS=1 ;;
+	*) WANT_SQUASHFS=0 ;;
+esac
+
+if [ "$WANT_SQUASHFS" -eq 1 ]; then
+	fatal=0
+	MKSQUASHFS_VER_REQ=4
+	if type mksquashfs >/dev/null 2>&1; then
+		if mksquashfs -version | grep -q "version $MKSQUASHFS_VER_REQ"; then :; else
+			echo
+			echo $CL_RED"ERROR: mksquashfs must be at least version $MKSQUASHFS_VER_REQ for this build."$CL_RST
+			fatal=1
+		fi
+	else
+		echo
+		echo $CL_RED"ERROR: $TARGET_PRODUCT requires mksquashfs."$CL_RST
+		fatal=1
+	fi
+
+	if [ "$fatal" -ne 0 ]; then
+		echo
+		echo $CL_YLW"       Unoptimized package is still available at"
+		echo "         $OTAPACKAGE"$CL_RST
+		exit $fatal
+	fi
+fi
+
+REPACK=$OUT/repack.d
+echo $CL_CYN"Sanitizing environment..."$CL_RST
+rm -rf $REPACK
+mkdir -p $REPACK
+echo
+
+
+# Unpack the otapackage and opticharge all apks
+mkdir $REPACK/ota
+(
+cd $REPACK/ota
+echo $CL_CYN"Unpacking $OTAPACKAGE..."$CL_RST
+unzip $QUIET $OTAPACKAGE
+echo
+
+# Move all apks to the same directory so xargs can
+# use also with framework-res.apk. This allow process
+# framework-res.apk in parallel with other apks
+mkdir -p $REPACK/parallel
+cd $REPACK/parallel
+cp $REPACK/ota/system/framework/framework-res.apk .
+cp $REPACK/ota/system/app/*.apk .
+
+# Do optimization in parallel
+find ./ -name \*.apk | $XARGS $OPTICHARGER
+
+# Move optimized apks to repack directory
+mv -f $REPACK/parallel/framework-res.apk $REPACK/ota/system/framework/framework-res.apk
+mv -f $REPACK/parallel/*.apk $REPACK/ota/system/app/
+
+# Return to directory
+cd $REPACK/ota
+rm -rf $REPACK/parallel
+)
+
+
+if [ "$WANT_SQUASHFS" -eq 1 ]; then
+	squash_opts="-force-uid 1000 -force-gid 1000 -no-progress -noappend -no-exports -no-recovery"
+	updater=$REPACK/ota/META-INF/com/google/android/updater-script
+
+	# Relocate su
+	cp -a $REPACK/ota/system/xbin $REPACK/_xbin/
+	rm -f $REPACK/_xbin/su $REPACK/ota/system/bin/su
+	mv $REPACK/ota/system/xbin/su $REPACK/ota/system/bin/su
+	chmod -R 555 $REPACK/_xbin/*
+
+	# Create symlinks for su and busybox (since updater-script can't work on the squashfs filesystem).
+	# Forgive me for the regex hell here.
+	ln -s ../bin/su $REPACK/_xbin/su
+	for link in `sed -n -e's/,//g' -e'/symlink(.*busybox/,/xbin.*);/p' $updater | tr '"' '\n' | sed -n -e'\,/system/xbin/,s,/system/xbin/,,p'`
+	do
+		ln -s busybox $REPACK/_xbin/$link
+	done
+
+	# Create the squashfs with new and improved symlinkage!
+	mksquashfs $REPACK/_xbin/* $REPACK/_xbin.sqf $squash_opts
+	rm -rf $REPACK/ota/system/xbin/*
+	mv $REPACK/_xbin.sqf $REPACK/ota/system/xbin/xbin.sqf
+	chmod 444 $REPACK/ota/system/xbin/xbin.sqf
+
+	# Remove xbin stuff and fix up updater-script
+	$SED -i -e's,system/xbin/su,system/bin/su,g' -e'/xbin/d' $updater
+fi
+
+
+# Fix build.prop
+$SED -i \
+	-e '/ro\.kernel\.android\.checkjni/d' \
+	-e '/ro\.build\.type/s/eng/user/' \
+	$REPACK/ota/system/build.prop
+
+
+# Delete unnecessary binaries
+( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
+
+# Delete leftover wireless driver
+# rm -rf $REPACK/ota/system/lib/modules/*/kernel/drivers/net
+
+# No need for recovery
+rm -rf $REPACK/ota/recovery
+
+# Strip modules
+[ -d $REPACK/ota/system/lib/modules ] && \
+	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
+
+# Determine what to name the new signed package
+
+#MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
+VERSION=`sed -n -e'/ro.aokp.version/s/^.*=//p' $REPACK/ota/system/build.prop`
+MODVERSION="$VERSION"
+OUTFILE=$OUT/$MODVERSION.zip
+
+# Pack it up and sign
+echo $CL_CYN"Zipping package..."$CL_RST
+( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
+echo
+echo $CL_CYN"Signing package..."$CL_RST
+SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
+java -Xmx1024m \
+	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+	$REPACK/update.zip $OUTFILE
+echo
+echo $CL_CYN"Cleaning up..."$CL_RST
+rm -rf $REPACK
+echo
+
+# Create a md5 checksum image of the repacked package
+(
+img=`basename $OUTFILE`
+cd `dirname $OUTFILE`
+$MD5 $img >$img.md5sum
+echo
+echo $CL_CYN"Package complete:"$CL_MAG" $OUTFILE"$CL_RST
+cat $img.md5sum
+echo
+)
+
+exit 0
