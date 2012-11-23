@@ -3,6 +3,9 @@ $(call inherit-product-if-exists, vendor/aokp/prebuilt/prebuilts.mk)
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
+# T-Mobile theme engine
+include vendor/aokp/configs/themes_common.mk
+
 PRODUCT_PACKAGES += \
     AOKPtips \
     AppWidgetPicker \
@@ -70,10 +73,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=Scarabaeus.ogg \
     ro.config.notification_sound=Antimony.ogg \
     ro.config.alarm_alert=Scandium.ogg
-
-# BT config
-PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.conf:system/etc/bluetooth/main.conf
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
