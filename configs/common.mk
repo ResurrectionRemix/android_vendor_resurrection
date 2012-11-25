@@ -1,10 +1,5 @@
-$(call inherit-product-if-exists, vendor/aokp/prebuilt/prebuilts.mk)
-
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
-
-# T-Mobile theme engine
-include vendor/aokp/configs/themes_common.mk
 
 PRODUCT_PACKAGES += \
     AOKPtips \
@@ -12,11 +7,8 @@ PRODUCT_PACKAGES += \
     LatinImeGoogle \
     LatinImeDictionary \
     Microbes \
-    MusicFX \
-    MusicVisualization \
-    NoiseField \
     NovaLauncher \
-    PhaseBeam \
+    PerformanceControl \
     ROMControl \
     SuperSU \
     SwagPapers \
@@ -78,3 +70,6 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 
 # Inherit common build.prop overrides
 -include vendor/aokp/configs/common_versions.mk
+
+# T-Mobile theme engine
+-include vendor/aokp/configs/themes_common.mk

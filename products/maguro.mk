@@ -16,9 +16,6 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=takju BUILD_FINGERPRINT=google/takju/maguro:4.1.1/JRO03C/398337:user/release-keys PRIVATE_BUILD_DESC="takju-user 4.1.1 JRO03C 398337 release-keys" BUILD_NUMBER=398337
 
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/tuna/vold.fstab:system/etc/vold.fstab
-
 # Maguro specific packages
 PRODUCT_PACKAGES += \
     Thinkfree
