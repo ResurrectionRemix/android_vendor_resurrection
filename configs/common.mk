@@ -38,6 +38,7 @@ PRODUCT_COPY_FILES += \
 
 # init.d
 PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
     vendor/aokp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/aokp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/aokp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
