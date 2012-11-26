@@ -30,8 +30,8 @@
 
 
 <!-- Sprint -->
-  <!-- Modify Apn database for Sprint CDMA MMS support -->
-  <apn carrier="Sprint" mcc="310" mnc="120" apn="Sprint" user="Sprint" server="*" password="*" mmsc="http://mms.sprintpcs.com" authtype="3"/>
+  <!-- Sprint CDMA MMS: Use LTE/eHRPD mms apns to avoid LTE/eHRPD service conflicts. -->
+  <!--<apn carrier="Sprint" mcc="310" mnc="120" apn="Sprint" user="Sprint" server="*" password="*" mmsc="http://mms.sprintpcs.com" authtype="3"/>-->
 
   <!-- Modify Apn database for Sprint LTE support -->
   <apn carrier="LTE - SPRINT test ISP" mcc="001" mnc="01" apn="n.ispsn" type="default,mms" mmsc="http://mms.sprintpcs.com" mmsproxy="68.28.31.7" mmsport="80" protocol="IPV4V6" roaming_protocol="IPV4V6" bearer="14" />
