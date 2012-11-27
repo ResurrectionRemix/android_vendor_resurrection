@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/toroplus/full_toroplus.mk)
 # Inherit AOKP common bits
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Tuna Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_toroplus
 PRODUCT_BRAND := Google

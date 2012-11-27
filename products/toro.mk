@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aokp/configs/common.mk)
 # Inherit common Verizon Wireless Files
 $(call inherit-product, vendor/aokp/configs/vzw.mk)
 
+# Tuna Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_toro
 PRODUCT_BRAND := google

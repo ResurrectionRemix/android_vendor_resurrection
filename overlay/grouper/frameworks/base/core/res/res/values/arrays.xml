@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- reboot options -->
+    <string-array name="reboot_options">
+            <item>@string/reboot</item>
+            <item>@string/reboot_recovery</item>
+            <item>@string/reboot_bootloader</item>
+    </string-array>
+
+    <!-- reboot values -->
+    <string-array name="reboot_values">
+            <item></item>
+            <item>recovery</item>
+            <item>bootloader</item>
+    </string-array>
+</resources>

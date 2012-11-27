@@ -4,6 +4,9 @@ $(call inherit-product, device/asus/grouper/full_grouper.mk)
 # Inherit AOKP common bits
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Grouper Overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/grouper
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_grouper
 PRODUCT_BRAND := google
