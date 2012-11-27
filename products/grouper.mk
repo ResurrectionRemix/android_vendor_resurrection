@@ -1,8 +1,8 @@
 # Inherit AOSP device configuration for grouper
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
-# Inherit AOKP common bits
-$(call inherit-product, vendor/aokp/configs/common.mk)
+# Inherit AOKP common_tablet bits
+$(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
 # Grouper Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/grouper
