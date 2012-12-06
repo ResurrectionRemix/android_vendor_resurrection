@@ -23,6 +23,7 @@
     <!-- Tablet toggle overlay. -->
     <string-array name="available_toggles_entries" translatable="false">
         <item>USER</item>
+        <item>FAVCONTACT</item>
         <item>BRIGHTNESS</item>
         <item>SETTINGS</item>
         <item>WIFI</item>
@@ -41,6 +42,7 @@
     </string-array>
     <string-array name="available_toggles_values" translatable="false">
         <item>@string/toggle_user</item>
+        <item>@string/toggle_favorite_contact</item>
         <item>@string/toggle_brightness</item>
         <item>@string/toggle_settings</item>
         <item>@string/toggle_wifi</item>
