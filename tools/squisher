@@ -186,7 +186,7 @@ cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 echo
 echo $CL_CYN"Package complete:"$CL_MAG" $OUTFILE"$CL_RST
-cat $img.md5sum
+echo $CL_CYN"md5:"$CL_MAG" $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
 echo
 )
 
