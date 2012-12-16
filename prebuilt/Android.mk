@@ -18,16 +18,6 @@ LOCAL_PATH := $(call my-dir)
 # Prebuilt APKs
 #
 include $(CLEAR_VARS)
-LOCAL_MODULE := LatinImeGoogle
-LOCAL_MODULE_OWNER := aokp
-LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
-LOCAL_MODULE_TAGS := optional
-LOCAL_MODULE_SUFFIX := .apk
-LOCAL_MODULE_CLASS := APPS
-LOCAL_CERTIFICATE := PRESIGNED
-include $(BUILD_PREBUILT)
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := LatinImeDictionaryPack
 LOCAL_MODULE_OWNER := aokp
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
