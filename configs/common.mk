@@ -1,6 +1,9 @@
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
+# Common dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/dictionaries
+
 PRODUCT_PACKAGES += \
     AOKPtips \
     AppWidgetPicker \
