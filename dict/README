@@ -1,0 +1,41 @@
+Welcome to the AOKP Dictionary (KangDict)...
+
+###################################################
+# all changes to the word list should be          #
+# accompanied with a binary update                #
+###################################################
+
+to compile a new dictionary and install it properly example for English:
+
+. build/envsetup.sh && lunch
+makedict_aosp \
+   -s vendor/aokp/dict/words_en.xml \
+   -d vendor/aokp/overlay/dictionaries/packages/inputmethods/LatinIME/java/res/raw/main_en.dict
+
+-s = represents the path tho the source xml word list
+-d = represents the output path for the resulting binary
+
+*RULES*
+ 1. Keep importance below 150 else words will appear annoying often
+ 2. NO WHITESPACES. PERIOD.
+ 3. use appropriate flags if possible *see below*
+     { abbreviation, babytalk, drugs, e, medical, n, offensive, p, r, s, technical }
+ 3. The format  <w f="100" flags="">ImAWord</w>
+ 4. Each entry has a frequency between 255 and 0.
+     Highest frequency words get more weight in the prediction algorithm. As a
+     special case, a weight of 0 is taken to mean profanity - words that should
+     not be considered a typo, but that should never be suggested explicitly.
+     You can capitalize words that must always be capitalized, such as "January".
+     You can have a capitalized and a non-capitalized word as separate entries,
+     such as "robin" and "Robin".
+
+Possible flag usages:
+e = ?
+n = nouns
+p = pop-culture reference
+r = rude?
+s = sedatives?
+
+*NOTE*
+Please note the KangDict may contains words recognized
+    by our community but not the greater world... yet!
