@@ -1,0 +1,26 @@
+Java Tools (Jokp)
+
+Source code for tools used to improve code quality / styling
+
+TabsToWhitespace.java (requires Java 7)
+ + Reclusively converts all tabs to four whitespaces in ONLY java & xml files
+ + Removes trailing whitespaces
+ + Removes '\r' left from Windows saved files
+
+usage examples:
+# compile the tool
+javac TabsToWhitespace.java
+
+# to reclusively convert a single directory
+java TabsToWhitespace ~/path/to/directory/
+
+# to reclusively convert multiple directories
+java TabsToWhitespace ~/path/to/directory/ ~/path/to/another/directory/
+
+# to convert only one file
+java TabsToWhitespace ~/or/path/to/single/file.java
+
+# to convert multiple directories and multiple single files
+java TabsToWhitespace ~/path/to/directory/ ~/path/to/another/directory/ \
+    ~/path/to/SomeClass.java ~/path/to/AnotherClass.java
+
