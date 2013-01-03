@@ -9,7 +9,7 @@ ifneq ($(AOKP_BUILD),)
 	    ro.goo.developerid=aokp \
 	    ro.goo.rom=aokp \
 	    ro.goo.version=$(shell echo $(AOKP_BUILD) | cut -d/ -f1) \
-		ro.aokp.version=$(TARGET_PRODUCT)_jb_$(shell echo $(AOKP_BUILD) | cut -d/ -f2)
+		ro.aokp.version=$(TARGET_PRODUCT)_jb-mr1_$(shell echo $(AOKP_BUILD) | cut -d/ -f2)
 else
 	PRODUCT_PROPERTY_OVERRIDES += \
 		ro.aokp.version=$(TARGET_PRODUCT)_unofficial_$(DATE)
