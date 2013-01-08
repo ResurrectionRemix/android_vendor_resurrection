@@ -184,9 +184,21 @@ echo
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
+ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
 echo
-echo $CL_CYN"Package complete:"$CL_MAG" $OUTFILE"$CL_RST
+echo $CL_RED"    ______"$CL_MAG"  _____"$CL_CYN"   __  __"$CL_BLU"   ____"$CL_RST
+echo $CL_RED"   /\\\\  _  \\\\"$CL_MAG"/\\\\  __\`\\\\"$CL_CYN"/\\\\ \\\\/\\\\ \\\\"$CL_BLU" /\\\\  _\`\\\\"$CL_RST
+echo $CL_RED"   \\\\ \\\\ \\\\L\\\\ \\\\"$CL_MAG" \\\\ \\\\/\\\\ \\\\"$CL_CYN" \\\\ \\\\/'/'"$CL_BLU"\\\\ \\\\ \\\\L\\\\ \\\\"$CL_RST
+echo $CL_RED"    \\\\ \\\\  __ \\\\"$CL_MAG" \\\\ \\\\ \\\\ \\\\"$CL_CYN" \\\\ , <"$CL_BLU"  \\\\ \\\\ ,__/"$CL_RST
+echo $CL_RED"     \\\\ \\\\ \\\\/\\\\ \\\\"$CL_MAG" \\\\ \\\\_\\\\ \\\\"$CL_CYN" \\\\ \\\\\\\\\`\\\\"$CL_BLU" \\\\ \\\\ \\\\/"$CL_RST
+echo $CL_RED"      \\\\ \\\\_\\\\ \\\\_\\\\"$CL_MAG" \\\\_____\\\\"$CL_CYN" \\\\_\\\\ \\\\_\\\\"$CL_BLU"\\\\ \\\\_\\\\"$CL_RST
+echo $CL_RED"       \\\\/_/\\\\/_/"$CL_MAG"\\\\/_____/"$CL_CYN"\\\\/_/\\\\/_/"$CL_BLU" \\\\/_/"$CL_RST
+echo
+echo $CL_CYN"===========-Package complete-==========="$CL_RST
+echo $CL_CYN"zip:"$CL_MAG" $OUTFILE"$CL_RST
 echo $CL_CYN"md5:"$CL_MAG" $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
+echo $CL_CYN"size:"$CL_MAG" $ZIPSIZE"$CL_RST
+echo $CL_CYN"========================================"$CL_RST
 echo
 )
 
