@@ -16,7 +16,7 @@ then
    SED=sed
 else
    OUT_TARGET_HOST=darwin-x86
-   MD5=md5
+   MD5="md5 -r "
    XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
    SED=gsed
 fi
