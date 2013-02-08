@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Maximum height for the widget pager in the keyguard -->
+    <dimen name="keyguard_widget_pager_max_height">560dp</dimen>
+</resources>
