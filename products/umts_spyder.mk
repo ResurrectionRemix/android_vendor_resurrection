@@ -14,7 +14,7 @@ PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/etc/init.local.rc:system/etc/rootfs/init.aokp.rc
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_umts_spyder
+PRODUCT_NAME := aokp_umtsspyder
 PRODUCT_BRAND := moto
 PRODUCT_DEVICE := umts_spyder
 PRODUCT_MODEL := XT910
