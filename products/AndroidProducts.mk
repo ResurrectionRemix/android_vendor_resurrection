@@ -20,4 +20,4 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tilapia.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/toroplus.mk \
-    $(LOCAL_DIR)/umts_spyder.mk
+    $(LOCAL_DIR)/umtsspyder.mk
