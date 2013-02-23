@@ -20,6 +20,8 @@
     <item>WIFITETHER</item>
     <item>USBTETHER</item>
     <item>TORCH</item>
+    <item>NAVBARHIDE</item>
+    <item>QUICKRECORD</item>
   </string-array>
 
   <string-array name="available_toggles_values" translatable="false">
@@ -42,6 +44,8 @@
     <item>@string/toggle_wifi_tether</item>
     <item>@string/toggle_usb_tether</item>
     <item>@string/toggle_torch</item>
+    <item>@string/toggle_navbar_hide</item>
+    <item>@string/toggle_quickrecord</item>
   </string-array>
 
   <string-array name="navigation_bar_qty_entries">

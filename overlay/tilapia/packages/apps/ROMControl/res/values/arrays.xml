@@ -41,6 +41,7 @@
         <item>USBTETHER</item>
         <item>2G</item>
         <item>NAVBARHIDE</item>
+        <item>QUICKRECORD</item>
     </string-array>
     <string-array name="available_toggles_values" translatable="false">
         <item>@string/toggle_user</item>
@@ -61,6 +62,7 @@
         <item>@string/toggle_usb_tether</item>
         <item>@string/toggle_2g</item>
         <item>@string/toggle_navbar_hide</item>
+        <item>@string/toggle_quickrecord</item>
     </string-array>
 
 </resources>
