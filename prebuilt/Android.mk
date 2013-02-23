@@ -86,3 +86,15 @@ LOCAL_MODULE_SUFFIX := .apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
+
+ifneq (,$(findstring $(TARGET_DEVICE),toroplus toro crespo4g))
+include $(CLEAR_VARS)
+LOCAL_MODULE := CDMATools
+LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := platform
+LOCAL_MODULE_SUFFIX := .apk
+include $(BUILD_PREBUILT)
+endif
+
