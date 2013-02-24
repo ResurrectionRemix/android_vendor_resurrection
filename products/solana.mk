@@ -4,6 +4,9 @@ $(call inherit-product, device/motorola/solana/full_solana.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/solana
 
 # Setup device specific product configuration.
