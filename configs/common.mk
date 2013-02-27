@@ -9,7 +9,6 @@ PRODUCT_PACKAGES += \
     AppWidgetPicker \
     LatinImeDictionaryPack \
     Microbes \
-    NovaLauncher \
     PerformanceControl \
     ROMControl \
     SuperSU \
