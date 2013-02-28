@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Whether or not to display the notification LED settings -->
+    <bool name="has_notification_led">false</bool>
+
+    <!-- Whether can use fast charge -->
+    <bool name="has_fast_charge">false</bool>
+
+    <!-- Whether can use color tuning -->
+    <bool name="has_color_tuning">false</bool>
+</resources>
