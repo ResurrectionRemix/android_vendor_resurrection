@@ -14,4 +14,7 @@
 
     <!-- Whether can use color tuning -->
     <bool name="has_color_tuning">false</bool>
+
+    <!-- Whether or not to display the Spen settings -->
+    <bool name="config_stylusGestures">true</bool>
 </resources>
