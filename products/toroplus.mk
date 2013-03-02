@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aokp/configs/common.mk)
 # Tuna Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
 
+# CDMATools
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/CDMATools
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_toroplus
 PRODUCT_BRAND := Google
