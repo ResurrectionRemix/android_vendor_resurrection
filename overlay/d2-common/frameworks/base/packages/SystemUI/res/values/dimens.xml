@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * Copyright (c) 2013, The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+*/
+-->
+<resources>
+    <!--  Tablet UI Stuff -->
+    <!-- The minimum height of the notification panel window -->
+    <dimen name="notification_panel_min_height">250dp</dimen>
+    <!-- Bottom margin (from display edge) for status bar panels -->
+    <dimen name="panel_float">10dp</dimen>
+    <!-- The width of the ticker, including the icon -->
+    <dimen name="notification_ticker_width">280dp</dimen>
+    <!-- The width of the notification panel window -->
+    <dimen name="notification_panel_width">290dp</dimen>
+    <!-- The height of the notification panel title -->
+    <dimen name="notification_panel_title_height">120dp</dimen>
+    <!--  Amount of Margin to offset NavRing in Portrait Mode -->
+    <dimen name="navring_left_margin_port">-390dp</dimen>
+    <!--  Amount of Margin to offset NavRing in Landscape Mode -->
+    <dimen name="navring_left_margin_land">-650dp</dimen>
+    <!--  Height of NavRing in Tablet Mode Landscape -->
+    <dimen name="navring_height_tablet_landscape">325dp</dimen>
+    <!--  Height of NavRing in Tablet Mode Portrait -->
+    <dimen name="navring_height_tablet_portrait">300dp</dimen>
+    <!--  Radius of NavRing in Tablet Mode Landscape -->
+    <dimen name="navring_radius_tablet_landscape">250dp</dimen>
+    <!--  Radius of NavRing in Tablet Mode Landscape -->
+    <dimen name="navring_radius_tablet_portrait">200dp</dimen>
+</resources>
