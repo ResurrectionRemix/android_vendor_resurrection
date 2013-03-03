@@ -1,43 +1,52 @@
-Android Open Kang Project
-=========================
+[Android Open Kang Project](aokp.co)
+====================================
 
 
+Download the source
+--------------
 
+Please read the [AOSP building instructions](http://source.android.com/source/index.html) before proceeding.
 
-
-Getting Started
----------------
-
-Please see the [Android source page](http://source.android.com/source/index.html) for building instructions.
-
-To initialize your local repository using my trees, use the following command:
+Initialize
 
     repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr1
 
-Then to sync up:
+Run the following to sync the source
 
     repo sync
 
+***
 
+Download the kernel source
+--------------------------
+
+Integrated kernel building is now **required** to compile AOKP for _all_ supported devices (even Nexus devices!)
+
+From the root of your source tree, run the following script to grab the kernel sources required
+
+    . ./platform_manifest/manual_add_kernel_manifest.sh
+
+Then run another `repo sync`
+
+
+**Advanced users:**
+Since the kernel trees are fairly large, you may want to sync only specific kernel trees for devices you build for, take a look at the file `.repo/local_manifests/kernel_manifest.xml`. You can edit this file to suite your needs.
+
+
+***
 
 Building
 --------
 
 After the sync is finished, please read the [instructions from the Android site](http://s.android.com/source/building.html) on how to build.
 
-Once you've read that, you can build with
-
-    mka
-
-This will compile everything and use the correct "-j#" flag.
-
-You can also build a flashable zip with
-
-    mka bacon
-    
-    
-Special Thanks
---------------
-Huge shout out to [@peteralfonzo](http://twitter.com/peteralfonso) for his wonderfully clean vendor tree to use as a base. This makes this infinitely more oragnized and easier to work with. Thank him!
+    . build/envsetup.sh
+    brunch
 
 
+You can also build (and see how long it took) for specific devices like this:
+
+    . build/envsetup.sh
+    time brunch aokp_mako-userdebug
+
+Remember to `make clobber` every now and then!
