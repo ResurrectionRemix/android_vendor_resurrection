@@ -7,14 +7,7 @@ $(call inherit-product, vendor/aokp/configs/cdma.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-# Inherit common Verizon Wireless Files
-$(call inherit-product, vendor/aokp/configs/vzw.mk)
-
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/maserati
-
-# AOKP-specific init file for SafeStrap
-PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/common/etc/init.local.rc:system/etc/rootfs/init.aokp.rc
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_maserati
