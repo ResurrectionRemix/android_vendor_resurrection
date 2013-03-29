@@ -17,7 +17,7 @@ else
     OUT_TARGET_HOST=darwin-x86
 fi
 
-. $ANDROID_BUILD_TOP/vendor/aokp/tools/colors
+. $ANDROID_BUILD_TOP/vendor/rr/tools/colors
 
 set -e
 QUIET=1
