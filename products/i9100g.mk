@@ -2,17 +2,17 @@
 $(call inherit-product, device/samsung/i9100g/full_i9100g.mk)
 
 # Inherit AOKP common bits
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/rr/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/rr/configs/gsm.mk)
 
 # i9100g overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/i9100
+PRODUCT_PACKAGE_OVERLAYS += vendor/rr/overlay/i9100
 
 # Setup device specific product configuration.
 PRODUCT_DEVICE := i9100g
-PRODUCT_NAME := aokp_i9100g
+PRODUCT_NAME := rr_i9100g
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I9100G
 
@@ -22,4 +22,4 @@ PRODUCT_RELEASE_NAME := GT-I9100G
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-   vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+   vendor/rr/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
