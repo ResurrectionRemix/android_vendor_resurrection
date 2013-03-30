@@ -22,4 +22,4 @@ PRODUCT_RELEASE_NAME := GT-I9100G
 
 # Bootanimation
 PRODUCT_COPY_FILES += \
-   vendor/rr/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+   vendor/rr/prebuilt/bootanimation/hdpi/bootanimation.zip:system/media/bootanimation.zip

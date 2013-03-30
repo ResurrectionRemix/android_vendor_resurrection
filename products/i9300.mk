@@ -18,4 +18,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERP
 PRODUCT_RELEASE_NAME := GT-I9300
 
 PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+    vendor/rr/prebuilt/bootanimation/xhdpi/bootanimation.zip:system/media/bootanimation.zip
