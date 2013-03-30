@@ -19,7 +19,7 @@ LOCAL_PATH := $(call my-dir)
 #
 include $(CLEAR_VARS)
 LOCAL_MODULE := LatinImeDictionaryPack
-LOCAL_MODULE_OWNER := aokp
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
@@ -29,7 +29,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Microbes
-LOCAL_MODULE_OWNER := aokp
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
@@ -39,7 +39,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := Thinkfree
-LOCAL_MODULE_OWNER := aokp
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
@@ -49,7 +49,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := VerizonSSO
-LOCAL_MODULE_OWNER := aokp
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := vzw/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
@@ -59,7 +59,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := UnicornPorn
-LOCAL_MODULE_OWNER := aokp
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
@@ -67,8 +67,10 @@ LOCAL_MODULE_CLASS := APPS
 LOCAL_CERTIFICATE := PRESIGNED
 include $(BUILD_PREBUILT)
 
+ifneq (,$(findstring $(TARGET_DEVICE),toroplus toro crespo4g))
 include $(CLEAR_VARS)
 LOCAL_MODULE := CDMATools
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
@@ -78,6 +80,7 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := UpdateMe
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
@@ -87,12 +90,11 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := NotifyMe
+LOCAL_MODULE_OWNER := rr
 LOCAL_SRC_FILES := common/app/$(LOCAL_MODULE).apk
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_MODULE_SUFFIX := .apk
 include $(BUILD_PREBUILT)
-
 endif
-

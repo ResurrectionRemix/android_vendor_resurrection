@@ -6,4 +6,4 @@ PRODUCT_PACKAGES += \
        Achromatic
 
 PRODUCT_COPY_FILES += \
-       vendor/aokp/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
+       vendor/rr/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
