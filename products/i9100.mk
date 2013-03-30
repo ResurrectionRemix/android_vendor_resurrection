@@ -12,7 +12,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rr/overlay/i9100
 
 # Setup device specific product configuration.
 PRODUCT_DEVICE := i9100
-PRODUCT_NAME := i9100
+PRODUCT_NAME := rr_i9100
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := GT-I9100
 
