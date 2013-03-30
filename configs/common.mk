@@ -17,6 +17,8 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
+    UpdateMe \
+    NotifyMe \
     UnicornPorn
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -42,6 +44,12 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit
+    
+
+PRODUCT_COPY_FILES += \
+    vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
+    vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
+
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
