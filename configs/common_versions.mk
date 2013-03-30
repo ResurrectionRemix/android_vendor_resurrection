@@ -9,10 +9,10 @@ ifneq ($(RR_BUILD),)
 	    ro.goo.developerid=rr \
 	    ro.goo.rom=rr\
 	    ro.goo.version=$(shell echo $(RR_BUILD) | cut -d/ -f1) \
-		ro.aokp.version=$(TARGET_PRODUCT)_jb-mr1_$(shell echo $(RR_BUILD) | cut -d/ -f2)
+		ro.rr.version=$(TARGET_PRODUCT)_jb-mr1_$(shell echo $(RR_BUILD) | cut -d/ -f2)
 else
 	PRODUCT_PROPERTY_OVERRIDES += \
-		ro.aokp.version=$(TARGET_PRODUCT)_V_4.0_$(DATE)
+		ro.rr.version=$(TARGET_PRODUCT)_V_4.0_$(DATE)
 endif
 
 # Camera shutter sound property
