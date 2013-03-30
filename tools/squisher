@@ -188,7 +188,7 @@ cd `dirname $OUTFILE`
 $MD5 $img >$img.md5sum
 ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
 echo -e
-echo -e $CL_RED" RESURRECTION"$CL_MAG" REMIX"$CL_CYN" ROM"$CL_BLU" COMPLATED"$CL_RST
+echo -e $CL_RED" RESURRECTION"$CL_MAG" REMIX"$CL_CYN" ROM"$CL_BLU" COMPLETED"$CL_RST
 
 echo -e $CL_CYN"===========-Package complete-==========="$CL_RST
 echo -e $CL_CYN"zip:"$CL_MAG" $OUTFILE"$CL_RST
