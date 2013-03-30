@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     Torch \
     UpdateMe \
     NotifyMe \
+    LockClock \
     UnicornPorn
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -48,7 +49,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
-    vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/LockClock.apk \
+    vendor/rr/prebuilt/common/app/LockClock.apk:system/app/LockClock.apk \
     vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk 
 
 
