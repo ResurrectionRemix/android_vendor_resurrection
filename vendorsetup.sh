@@ -17,6 +17,7 @@ add_lunch_combo rr_i9100-userdebug
 add_lunch_combo rr_i9100g-userdebug
 add_lunch_combo rr_i9300-userdebug
 add_lunch_combo rr_l900-userdebug
+add_lunch_combo rr_n7100-userdebug
 add_lunch_combo rr_maserati-userdebug
 add_lunch_combo rr_p930-userdebug
 add_lunch_combo rr-solana-userdebug
