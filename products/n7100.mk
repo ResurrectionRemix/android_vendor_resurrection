@@ -1,8 +1,8 @@
-# Inherit AOSP device configuration for hercules.
+# Inherit AOSP device configuration .
 $(call inherit-product, device/samsung/n7100/full_n7100.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/rr/configs/common.mk)
+$(call inherit-product, vendor/rr/configs/common_xhdpi.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/rr/configs/gsm.mk)
 
