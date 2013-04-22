@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     Microbes \
     PerformanceControl \
     ROMControl \
+    PermissionsManager \
     Superuser \
     su \
     SwagPapers \
@@ -56,6 +57,11 @@ PRODUCT_COPY_FILES += \
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
+
+	# Installer
+PRODUCT_COPY_FILES += \
+vendor/rr/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
+vendor/rr/prebuilt/common/etc/persist.conf:system/etc/persist.conf	    
 
 PRODUCT_PACKAGES += \
     openvpn \

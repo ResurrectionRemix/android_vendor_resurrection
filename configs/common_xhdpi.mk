@@ -12,6 +12,7 @@ PRODUCT_PACKAGES += \
     LatinImeDictionaryPack \
     Microbes \
     PerformanceControl \
+    PermissionsManager \
     ROMControl \
     Superuser \
     su \
@@ -83,6 +84,11 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 
 # T-Mobile theme engine
 -include vendor/rr/configs/themes_common.mk
+
+	# Installer
+PRODUCT_COPY_FILES += \
+vendor/rr/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
+vendor/rr/prebuilt/common/etc/persist.conf:system/etc/persist.conf
 
 # common boot animation
 PRODUCT_COPY_FILES += \
