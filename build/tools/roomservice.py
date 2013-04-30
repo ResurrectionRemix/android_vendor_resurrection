@@ -13,12 +13,29 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import os
-import sys
-import urllib2
+from __future__ import print_function
+
+import base64
 import json
+import netrc
+import os
 import re
-import netrc, base64
+import sys
+try:
+  # For python3
+  import urllib.error
+  import urllib.parse
+  import urllib.request
+except ImportError:
+  # For python2
+  import imp
+  import urllib2
+  import urlparse
+  urllib = imp.new_module('urllib')
+  urllib.error = urllib2
+  urllib.parse = urlparse
+  urllib.request = urllib2
+
 from xml.etree import ElementTree
 
 product = sys.argv[1];
@@ -34,7 +51,7 @@ except:
     device = product
 
 if not depsonly:
-    print "Device %s not found. Attempting to retrieve device repository from SlimRoms Github (http://github.com/SlimRoms)." % device
+    print("Device %s not found. Attempting to retrieve device repository from SlimRoms Github (http://github.com/SlimRoms)." % device)
 
 repositories = []
 
@@ -54,9 +71,9 @@ def add_auth(githubreq):
 
 page = 1
 while not depsonly:
-    githubreq = urllib2.Request("https://api.github.com/users/SlimRoms/repos?per_page=200&page=%d" % page)
+    githubreq = urllib.request.Request("https://api.github.com/users/SlimRoms/repos?per_page=200&page=%d" % page)
     add_auth(githubreq)
-    result = json.loads(urllib2.urlopen(githubreq).read())
+    result = json.loads(urllib.request.urlopen(githubreq).read().decode())
     if len(result) == 0:
         break
     for res in result:
@@ -153,25 +170,25 @@ def add_to_manifest(repositories, fallback_branch = None):
         repo_name = repository['repository']
         repo_target = repository['target_path']
         if exists_in_tree(lm, repo_name):
-            print 'SlimRoms/%s already exists' % (repo_name)
+            print('SlimRoms/%s already exists' % (repo_name))
             continue
 
-        print 'Adding dependency: SlimRoms/%s -> %s' % (repo_name, repo_target)
+        print('Adding dependency: SlimRoms/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
             "remote": "github", "name": "SlimRoms/%s" % repo_name })
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
         elif fallback_branch:
-            print "Using fallback branch %s for %s" % (fallback_branch, repo_name)
+            print("Using fallback branch %s for %s" % (fallback_branch, repo_name))
             project.set('revision', fallback_branch)
         else:
-            print "Using default branch for %s" % repo_name
+            print("Using default branch for %s" % repo_name)
 
         lm.append(project)
 
     indent(lm, 0)
-    raw_xml = ElementTree.tostring(lm)
+    raw_xml = ElementTree.tostring(lm).decode()
     raw_xml = '<?xml version="1.0" encoding="UTF-8"?>\n' + raw_xml
 
     f = open('.repo/local_manifests/slim_manifest.xml', 'w')
@@ -179,7 +196,7 @@ def add_to_manifest(repositories, fallback_branch = None):
     f.close()
 
 def fetch_dependencies(repo_path, fallback_branch = None):
-    print 'Looking for dependencies'
+    print('Looking for dependencies')
     dependencies_path = repo_path + '/slim.dependencies'
     syncable_repos = []
 
@@ -196,13 +213,13 @@ def fetch_dependencies(repo_path, fallback_branch = None):
         dependencies_file.close()
 
         if len(fetch_list) > 0:
-            print 'Adding dependencies to manifest'
+            print('Adding dependencies to manifest')
             add_to_manifest(fetch_list, fallback_branch)
     else:
-        print 'Dependencies file not found, bailing out.'
+        print('Dependencies file not found, bailing out.')
 
     if len(syncable_repos) > 0:
-        print 'Syncing dependencies'
+        print('Syncing dependencies')
         os.system('repo sync %s' % ' '.join(syncable_repos))
 
     for deprepo in syncable_repos:
@@ -216,7 +233,7 @@ if depsonly:
     if repo_path:
         fetch_dependencies(repo_path)
     else:
-        print "Trying dependencies-only mode on a non-existing device tree?"
+        print("Trying dependencies-only mode on a non-existing device tree?")
 
     sys.exit()
 
@@ -224,22 +241,22 @@ else:
     for repository in repositories:
         repo_name = repository['name']
         if repo_name.startswith("android_device_") and repo_name.endswith("_" + device):
-            print "Found repository: %s" % repository['name']
+            print("Found repository: %s" % repository['name'])
             
             manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
             
             default_revision = get_default_revision()
-            print "Default revision: %s" % default_revision
-            print "Checking branch info"
-            githubreq = urllib2.Request(repository['branches_url'].replace('{/branch}', ''))
+            print("Default revision: %s" % default_revision)
+            print("Checking branch info")
+            githubreq = urllib.request.Request(repository['branches_url'].replace('{/branch}', ''))
             add_auth(githubreq)
-            result = json.loads(urllib2.urlopen(githubreq).read())
+            result = json.loads(urllib.request.urlopen(githubreq).read().decode())
 
             ## Try tags, too, since that's what releases use
             if not has_branch(result, default_revision):
-                githubreq = urllib2.Request(repository['tags_url'].replace('{/tag}', ''))
+                githubreq = urllib.request.Request(repository['tags_url'].replace('{/tag}', ''))
                 add_auth(githubreq)
-                result.extend (json.loads(urllib2.urlopen(githubreq).read()))
+                result.extend (json.loads(urllib.request.urlopen(githubreq).read().decode()))
             
             repo_path = "device/%s/%s" % (manufacturer, device)
             adding = {'repository':repo_name,'target_path':repo_path}
@@ -247,30 +264,29 @@ else:
             fallback_branch = None
             if not has_branch(result, default_revision):
                 if os.getenv('ROOMSERVICE_BRANCHES'):
-                    fallbacks = filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' '))
+                    fallbacks = list(filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' ')))
                     for fallback in fallbacks:
                         if has_branch(result, fallback):
-                            print "Using fallback branch: %s" % fallback
+                            print("Using fallback branch: %s" % fallback)
                             fallback_branch = fallback
                             break
 
                 if not fallback_branch:
-                    print "Default revision %s not found in %s. Bailing." % (default_revision, repo_name)
-                    print "Branches found:"
+                    print("Default revision %s not found in %s. Bailing." % (default_revision, repo_name))
+                    print("Branches found:")
                     for branch in [branch['name'] for branch in result]:
-                        print branch
-                    print "Use the ROOMSERVICE_BRANCHES environment variable to specify a list of fallback branches."
+                        print(branch)
+                    print("Use the ROOMSERVICE_BRANCHES environment variable to specify a list of fallback branches.")
                     sys.exit()
 
             add_to_manifest([adding], fallback_branch)
 
-            print "Syncing repository to retrieve project."
+            print("Syncing repository to retrieve project.")
             os.system('repo sync %s' % repo_path)
-            print "Repository synced!"
+            print("Repository synced!")
 
             fetch_dependencies(repo_path, fallback_branch)
-            print "Done"
+            print("Done")
             sys.exit()
 
-print "Repository for %s not found in the SlimRoms Github repository list. If this is in error, you may need to manually add it to your local_manifests/slim_manifest.xml." % device
-
+print("Repository for %s not found in the SlimRoms Github repository list. If this is in error, you may need to manually add it to your local_manifests/slim_manifest.xml." % device)
