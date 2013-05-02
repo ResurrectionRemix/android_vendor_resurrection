@@ -9,5 +9,8 @@
         <item>com.android.location.fused</item>
         <!-- The Google Network Location Services location provider -->
         <item>com.google.android.location</item>
-</string-array>
+    </string-array>
+
+    <bool name="config_cellBroadcastAppLinks">true</bool>
+
 </resources>
