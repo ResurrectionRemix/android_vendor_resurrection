@@ -27,3 +27,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
    vendor/rr/prebuilt/bootanimation/hdpi/bootanimation.zip:system/media/bootanimation.zip
 
+# ota
+PRODUCT_COPY_FILES += \
+	vendor/rr/prebuilt/updateme/i9100/update_me.xml:system/update_me.xml

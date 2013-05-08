@@ -23,3 +23,7 @@ PRODUCT_RELEASE_NAME := n7100
 # boot animation
 PRODUCT_COPY_FILES += \
 	vendor/rr/prebuilt/bootanimation/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+	
+# ota
+PRODUCT_COPY_FILES += \
+	vendor/rr/prebuilt/updateme/n7100/update_me.xml:system/update_me.xml

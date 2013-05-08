@@ -52,8 +52,8 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
     vendor/rr/prebuilt/common/app/LockClock.apk:system/app/LockClock.apk \
     vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/rr/prebuilt/common/app/CMFileManager.apk:system/app/CMFileManager.apk
-
+    vendor/rr/prebuilt/common/app/CMFileManager.apk:system/app/CMFileManager.apk \
+    vendor/rr/prebuilt/common/app/pie.apk:system/app/pie.apk
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -78,8 +78,8 @@ PRODUCT_PACKAGES += \
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Scarabaeus.ogg \
-    ro.config.notification_sound=Antimony.ogg \
+    ro.config.ringtone=Testudo.ogg \
+    ro.config.notification_sound=Palladium.ogg \
     ro.config.alarm_alert=Scandium.ogg
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml

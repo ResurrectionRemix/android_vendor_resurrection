@@ -20,3 +20,7 @@ PRODUCT_RELEASE_NAME := GT-I9300
 
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/bootanimation/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+
+# ota
+PRODUCT_COPY_FILES += \
+	vendor/rr/prebuilt/updateme/i9300/update_me.xml:system/update_me.xml
