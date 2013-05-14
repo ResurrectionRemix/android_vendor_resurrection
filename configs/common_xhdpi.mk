@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     NotifyMe \
     LockClock \
     FMRadio\
-    Trebuchet\
+    CMFileManager\
     DSPManager\
     Apollo\
     UnicornPorn
@@ -54,9 +54,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
-    vendor/rr/prebuilt/common/app/LockClock.apk:system/app/LockClock.apk \
     vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/rr/prebuilt/common/app/CMFileManager.apk:system/app/CMFileManager.apk\
     vendor/rr/prebuilt/common/app/pie.apk:data/app/pie.apk
 
 # Enable SIP+VoIP on all targets
