@@ -21,6 +21,10 @@ PRODUCT_PACKAGES += \
     UpdateMe \
     NotifyMe \
     LockClock \
+    FMRadio\
+    Trebuchet\
+    DSPManager\
+    Apollo\
     UnicornPorn
 
 PRODUCT_PROPERTY_OVERRIDES += \
