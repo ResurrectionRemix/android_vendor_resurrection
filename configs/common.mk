@@ -55,6 +55,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
     vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
+    vendor/rr/prebuilt/common/app/Apollo.apk:system/app/Apollo.apk \
     vendor/rr/prebuilt/common/app/pie.apk:system/app/pie.apk
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
