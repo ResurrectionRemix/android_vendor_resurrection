@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RomConfig>
+    <RomName>Resurrection Remix i9100g</RomName>
+    <RomVersion>3.0.0</RomVersion>
+    <RomCheckUrl>https://dl.dropboxusercontent.com/u/62249445/update_me_files/update_me_check_i9100g.xml</RomCheckUrl>
+    <RebootRecovery>1</RebootRecovery>
+    <DownloadDir>/mnt/sdcard/Resurrection</DownloadDir>
+</RomConfig>

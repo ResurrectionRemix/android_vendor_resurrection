@@ -5,6 +5,7 @@ add_lunch_combo rr_toroplus-userdebug
 add_lunch_combo rr_grouper-userdebug
 add_lunch_combo rr_tilapia-userdebug
 add_lunch_combo rr_manta-userdebug
+add_lunch_combo rr_jfltetmo-userdebug
 add_lunch_combo rr_a510-userdebug
 add_lunch_combo rr_d2att-userdebug
 add_lunch_combo rr_d2tmo-userdebug

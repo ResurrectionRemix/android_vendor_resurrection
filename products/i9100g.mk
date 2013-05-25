@@ -23,3 +23,7 @@ PRODUCT_RELEASE_NAME := GT-I9100G
 # Bootanimation
 PRODUCT_COPY_FILES += \
    vendor/rr/prebuilt/bootanimation/hdpi/bootanimation.zip:system/media/bootanimation.zip
+
+# ota
+PRODUCT_COPY_FILES += \
+	vendor/rr/prebuilt/updateme/i9100g/update_me.xml:system/update_me.xml
