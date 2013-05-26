@@ -19,6 +19,3 @@ PRODUCT_COPY_FILES += \
 # ota
 PRODUCT_COPY_FILES += \
 	vendor/rr/prebuilt/updateme/jfltetmo/update_me.xml:system/update_me.xml
-	
-PRODUCT_COPY_FILES += \
-	vendor/rr/prebuilt/s4_device_settings/GalaxyS4Settings.apk:system/app/GalaxyS4Settings.apk
