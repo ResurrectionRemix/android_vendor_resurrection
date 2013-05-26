@@ -32,5 +32,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/tsubasa.mk \
     $(LOCAL_DIR)/umtsspyder.mk \
+    $(LOCAL_DIR)/n7100.mk \
     $(LOCAL_DIR)/vs920.mk \
     $(LOCAL_DIR)/yuga.mk
