@@ -11,7 +11,6 @@ PRODUCT_PACKAGES += \
     AppWidgetPicker \
     LatinImeDictionaryPack \
     Microbes \
-    PerformanceControl \
     ROMControl \
     PermissionsManager \
     Superuser \
