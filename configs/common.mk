@@ -54,7 +54,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
     vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/rr/prebuilt/common/app/Apollo.apk:system/app/Apollo.apk
+    vendor/rr/prebuilt/common/app/com.google.android.music-1.apk:system/app/Music.apk
+      
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
