@@ -20,6 +20,7 @@ PRODUCT_PACKAGES += \
     UpdateMe \
     NotifyMe \
     LockClock \
+    Music\
     FMRadio\
     CMFileManager\
     DSPManager\
@@ -53,8 +54,8 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
-    vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk 
-    vendor/rr/prebuilt/common/app/com.google.android.music-1.apk:system/app/Music.apk
+    vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
+    vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
