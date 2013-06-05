@@ -23,6 +23,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMFileManager\
     DSPManager\
+    XposedInstaller\
+    AppSettings\
     Apollo\
     FMRadio\
     UnicornPorn

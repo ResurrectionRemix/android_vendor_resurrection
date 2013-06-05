@@ -24,6 +24,8 @@ PRODUCT_PACKAGES += \
     FMRadio\
     CMFileManager\
     DSPManager\
+    XposedInstaller\
+    AppSettings\
     Apollo\
     UnicornPorn
 
