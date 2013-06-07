@@ -31,7 +31,7 @@ PRODUCT_PACKAGES += \
     MSevenTempCallFix
 
 PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/bootanimation/xhdpi/bootanimation.zip:system/media/bootanimation.zip
+    vendor/rr/prebuilt/bootanimation/1080_1920/bootanimation.zip:system/media/bootanimation.zip
 
 # ota
 PRODUCT_COPY_FILES += \
