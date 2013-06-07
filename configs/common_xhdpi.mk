@@ -57,7 +57,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
     vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk
+    vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk\
+    vendor/rr/prebuilt/common/app/XposedInstaller.apk:system/app/XposedInstaller.apk\
+    vendor/rr/prebuilt/common/app/AppSettings.apk:system/app/AppSettings.apk
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
