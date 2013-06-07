@@ -51,20 +51,17 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit
-    
-
+    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
 PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
-    vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk
-    vendor/rr/prebuilt/common/app/XposedInstaller.apk:system/app/XposedInstaller.apk\
-    vendor/rr/prebuilt/common/app/AppSettings.apk:system/app/AppSettings.apk
+vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
+vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
+vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
+vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
+vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
     
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
 	# Installer
 PRODUCT_COPY_FILES += \
 vendor/rr/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
