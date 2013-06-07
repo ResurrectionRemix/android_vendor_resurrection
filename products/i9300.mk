@@ -3,7 +3,7 @@ $(call inherit-product, device/samsung/i9300/full_i9300.mk)
 
 # Inherit common product files.
 
-$(call inherit-product, vendor/rr/configs/common_xhdpi.mk)
+$(call inherit-product, vendor/rr/configs/common.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/rr/configs/gsm.mk)

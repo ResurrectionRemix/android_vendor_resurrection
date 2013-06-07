@@ -96,7 +96,3 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 
 # T-Mobile theme engine
 -include vendor/rr/configs/themes_common.mk
-
-# common boot animation
-PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
