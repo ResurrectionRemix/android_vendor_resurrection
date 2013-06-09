@@ -7,6 +7,9 @@ $(call inherit-product, vendor/rr/configs/gsm.mk)
 $(call inherit-product, vendor/rr/configs/common.mk)
 $(call inherit-product, vendor/rr/configs/common_versions.mk)
 
+# Inherit common jf overlays
+DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltetmo TARGET_DEVICE=jfltetmo BUILD_FINGERPRINT="samsung/jfltetmo/jfltetmo:4.2.2/JDQ39/M919UVUAMDB:user/release-keys" PRIVATE_BUILD_DESC="jfltetmo-user 4.2.2 JDQ39 M919UVUAMDB release-keys"
 
 PRODUCT_NAME := rr_jfltetmo
