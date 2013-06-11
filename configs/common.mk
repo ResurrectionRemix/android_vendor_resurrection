@@ -47,17 +47,32 @@ PRODUCT_COPY_FILES += \
 
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
-    vendor/rr/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
+   vendor/rr/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
+   vendor/rr/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
+   vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+   vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+   vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
+PRODUCT_COPY_FILES += \
+  vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
+  vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
+  vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
+  vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
+  vendor/rr/prebuilt/common/app/DSPManager.apk:system/app/DSPManager.apk\
+  vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
+
+ # DSP Activator
+ PRODUCT_COPY_FILES += \
+    vendor/rr/prebuilt/dsp/etc/audio_effects.conf:system/etc/audio_effects.conf \
+    vendor/rr/prebuilt/dsp/lib/soundfx/libaudiopreprocessing.so:system/lib/soundfx/libaudiopreprocessing.so \
+    vendor/rr/prebuilt/dsp/lib/soundfx/libbundlewrapper.so:system/lib/soundfx/libbundlewrapper.so \
+    vendor/rr/prebuilt/dsp/lib/soundfx/libcyanogen-dsp.so:system/lib/soundfx/libcyanogen-dsp.so \
+    vendor/rr/prebuilt/dsp/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
+    vendor/rr/prebuilt/dsp/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
+    vendor/rr/prebuilt/dsp/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf 
+              
     vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
-PRODUCT_COPY_FILES += \
-vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
-vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
-vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
-vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
-vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
     
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
