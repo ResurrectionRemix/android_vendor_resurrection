@@ -68,12 +68,13 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/dsp/lib/soundfx/libcyanogen-dsp.so:system/lib/soundfx/libcyanogen-dsp.so \
     vendor/rr/prebuilt/dsp/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
     vendor/rr/prebuilt/dsp/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
-    vendor/rr/prebuilt/dsp/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf 
-              
+    vendor/rr/prebuilt/dsp/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf             
+    
+PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
-    
+    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit  
+      
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
