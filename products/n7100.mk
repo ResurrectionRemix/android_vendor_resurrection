@@ -7,7 +7,7 @@ $(call inherit-product, vendor/rr/configs/common.mk)
 $(call inherit-product, vendor/rr/configs/gsm.mk)
 
 # skyrocket overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/rr/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/rr/overlay/samsung_note_common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := rr_n7100
