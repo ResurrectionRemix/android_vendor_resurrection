@@ -58,6 +58,7 @@ PRODUCT_COPY_FILES += \
   vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
   vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
   vendor/rr/prebuilt/common/app/DSPManager.apk:system/app/DSPManager.apk\
+  vendor/rr/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk\
   vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
 
  # DSP Activator
