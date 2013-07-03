@@ -3,6 +3,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 
 DATE = $(shell vendor/rr/tools/getdate)
 
+RR_BRANCH=jb-mr1
+
 ifneq ($(RR_BUILD),)
 	# RR_BUILD=<goo version int>/<build string>
 	PRODUCT_PROPERTY_OVERRIDES += \
@@ -15,6 +17,11 @@ else
 		ro.rr.version=$(TARGET_PRODUCT)_Resurrection_Remix_unofficial_V4.0.2_$(DATE)
 endif
 
+# needed for statistics
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.rr.branch=$(RR_BRANCH) \
+        ro.rr.device=$(RR_PRODUCT)
+
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
-	persist.sys.camera-sound=1
+    persist.sys.camera-sound=1
