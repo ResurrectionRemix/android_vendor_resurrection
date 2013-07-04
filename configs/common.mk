@@ -44,13 +44,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/rr/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
-
+ResurrecrionRemix-changelog.txt
 # init.d
 PRODUCT_COPY_FILES += \
    vendor/rr/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
    vendor/rr/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
    vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
    vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+   vendor/rr/Configs:system/etc/ResurrecrionRemix-changelog.txt \
    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
 PRODUCT_COPY_FILES += \
   vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
