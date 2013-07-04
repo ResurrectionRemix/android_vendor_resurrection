@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 	# Installer
 PRODUCT_COPY_FILES += \
 vendor/rr/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
-vendor/rr/Configs/ResurrecrionRemix-changelog.txt:system/etc/ResurrecrionRemix-changelog.txt \
+vendor/rr/prebuilt/ResurrectionRemix-changelog.txt:system/etc/ResurrectionRemix-changelog.txt \
 vendor/rr/prebuilt/common/etc/persist.conf:system/etc/persist.conf	    
 
 PRODUCT_PACKAGES += \
