@@ -44,14 +44,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/rr/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
-ResurrecrionRemix-changelog.txt
+
 # init.d
 PRODUCT_COPY_FILES += \
    vendor/rr/prebuilt/common/etc/init.local.rc:root/init.aokp.rc \
    vendor/rr/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
    vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
    vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
-   vendor/rr/Configs:system/etc/ResurrecrionRemix-changelog.txt \
    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
 PRODUCT_COPY_FILES += \
   vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
@@ -71,8 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/dsp/lib/soundfx/libcyanogen-dsp.so:system/lib/soundfx/libcyanogen-dsp.so \
     vendor/rr/prebuilt/dsp/lib/soundfx/libreverbwrapper.so:system/lib/soundfx/libreverbwrapper.so \
     vendor/rr/prebuilt/dsp/lib/soundfx/libvisualizer.so:system/lib/soundfx/libvisualizer.so \
-    vendor/rr/prebuilt/dsp/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf             
-    
+    vendor/rr/prebuilt/dsp/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
@@ -84,6 +82,7 @@ PRODUCT_COPY_FILES += \
 	# Installer
 PRODUCT_COPY_FILES += \
 vendor/rr/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
+vendor/rr/Configs/ResurrecrionRemix-changelog.txt:system/etc/ResurrecrionRemix-changelog.txt \
 vendor/rr/prebuilt/common/etc/persist.conf:system/etc/persist.conf	    
 
 PRODUCT_PACKAGES += \
