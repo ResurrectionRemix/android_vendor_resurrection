@@ -18,8 +18,8 @@ PRODUCT_PACKAGES += \
     SwagPapers \
     Torch \
     UpdateMe \
+    Halo \
     Music\
-    NotifyMe \
     LockClock \
     CMFileManager\
     DSPManager\
@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES += \
    vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
 PRODUCT_COPY_FILES += \
-  vendor/rr/prebuilt/common/app/NotifyMe.apk:system/app/NotifyMe.apk \
   vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
   vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
   vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
