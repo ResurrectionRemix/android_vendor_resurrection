@@ -1,9 +1,16 @@
--test
--test
--test
-= test
--
+============================================
+Source : http://github.com/ResurrectionRemix
+Forum: http://www.resurrectionremix.com
+----------------------------------
+CHANGELOG : (New Features)
+----------------------------------
 
-- test
+## Resurrection Remix v4.0.3
 
-- test
+- Add ROM-Share
+- Added PIE
+- Added HALO
+- Updated AOKP
+- 
+- Updated to CM-10.1-RC5
+- TRDS 2.0

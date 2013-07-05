@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
     DSPManager\
     XposedInstaller\
     AppSettings\
-    Apollo\
+    Trebuchet\
     FMRadio\
     UnicornPorn
 
