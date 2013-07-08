@@ -1,16 +1,24 @@
-============================================
 Source : http://github.com/ResurrectionRemix
-Forum: http://www.resurrectionremix.com
+Forum  : http://www.resurrectionremix.com
 ----------------------------------
-CHANGELOG : (New Features)
+ Resurrection Remix™ CHANGELOG
 ----------------------------------
 
-## Resurrection Remix v4.0.3
+# Resurrection Remix v4.0.3 #
 
-- Add ROM-Share
-- Added PIE
-- Added HALO
-- Updated AOKP
+
+- Added PIE and PIE colors (PA)
+- Added HALO with latest updates (PA)
+- Added HALO toggle - thanks to bajee11
+- Full updated red PitchBlack ui mode
+- Add ROM-Share (pac-man)
+- Add changelog feature (CM)
+- Added PitchBlack Toggle - thanks to bajee11
+- Updated latest AOKP ROM CONTROL Features
+- Added aokp lockscreen wallpaper changer
+- Added DPI Changer
+- Added Xposed PER APP DPI Changer
+- Added CMs 3 real Circle battery & also circle dotted battery (pac-man)
+- Added Ressurrection Remix style battery Mod (images by )
+- Updated 
 - 
-- Updated to CM-10.1-RC5
-- TRDS 2.0
