@@ -59,6 +59,7 @@ PRODUCT_COPY_FILES += \
   vendor/rr/prebuilt/common/app/DSPManager.apk:system/app/DSPManager.apk\
   vendor/rr/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk\
   vendor/rr/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk\
+  vendor/rr/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk\  
   vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
 
  # DSP Activator

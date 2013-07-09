@@ -1,24 +1,53 @@
 Source : http://github.com/ResurrectionRemix
 Forum  : http://www.resurrectionremix.com
-----------------------------------
- Resurrection Remix™ CHANGELOG
-----------------------------------
+------------------------------------------
+ Resurrection Remix™ Basic CHANGELOG
+ 
+ For extanded changelog track github activities
+------------------------------------------
 
-# Resurrection Remix v4.0.3 #
+# Resurrection Remix v4.0.3 # Basic
 
-
-- Added PIE and PIE colors (PA)
-- Added HALO with latest updates (PA)
+- based on latest android 4.2.2 source
+- ROM Control- Added PIE with PIE colors (port from PA & DU)
+- ROM Control- Added Extanded Desktop updated (PA)
+- Added HALO with Recent updates (port from PA & DU)
 - Added HALO toggle - thanks to bajee11
+- Added HALO App
+- Added Nova launcher                                                      
+- Added caoslauncher                                                       
 - Full updated red PitchBlack ui mode
-- Add ROM-Share (pac-man)
-- Add changelog feature (CM)
+- Settings: Introduce Privacy Guard Manager                                
+- Added Cm Privacy Guard support (thanks to mazdarider23)                 
 - Added PitchBlack Toggle - thanks to bajee11
 - Updated latest AOKP ROM CONTROL Features
 - Added aokp lockscreen wallpaper changer
-- Added DPI Changer
+- Settings -ROM-Share (pac-man)
+- Settings -Enable notify sound when power connect / disconnect
+- Resurrection Tools -About RR
+- Resurrection Tools -emoji to enter key option
+- Resurrection Tools -disable fullscreen keyboard option
+- Resurrection Tools -auto keyboard rotation and rotate time option
+- Resurrection Tools -lockscreen see trough option
+- Resurrection Tools -show wifi name on notification area option
+- Resurrection Tools -launch music app when headset connect option
+- Resurrection Tools -low battery warning option
+- Resurrection Tools -lockclock widget(brand new weather icons by KorToIk)
+- Resurrection Tools -resurrection updater (updateme edition)
+- Resurrection Tools -changelog feature (CM)
+- ROM Control- Added lockscreen tint color option
+- ROM Control- Added LCD Density Changer
+- Added new system UI sounds (low battery,unlock,)
 - Added Xposed PER APP DPI Changer
 - Added CMs 3 real Circle battery & also circle dotted battery (pac-man)
-- Added Ressurrection Remix style battery Mod (images by )
-- Updated 
-- 
+- Added Ressurrection Remix style battery Mod (images by SilencerOfLambs)
+- Added 4 Moar battery mods (credit to bajee11)
+- Added sunbeam live wallpaper
+- Added Ressurrection Remix live wallpaper
+- Added Ressurrection Remix wallpapers
+- Added CM File manager
+- Added DSP Manager
+- Added Google Play Music
+- Added Dash clock widget
+- Updated to latest mali r3p1-01rel1 May 13 15:55:05 KST 2013 
+- included Many improvements and many fixes 
