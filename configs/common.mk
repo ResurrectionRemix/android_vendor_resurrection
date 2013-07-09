@@ -1,6 +1,6 @@
 SUPERUSER_EMBEDDED := true
 
-# Common overlay
+# Commonoverlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
 # Common dictionaries
