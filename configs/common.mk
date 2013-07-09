@@ -53,13 +53,13 @@ PRODUCT_COPY_FILES += \
    vendor/rr/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit 
 PRODUCT_COPY_FILES += \
+  vendor/rr/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk \
   vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
   vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
   vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
   vendor/rr/prebuilt/common/app/DSPManager.apk:system/app/DSPManager.apk\
   vendor/rr/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk\
   vendor/rr/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk\
-  vendor/rr/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk\  
   vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
 
  # DSP Activator
@@ -110,4 +110,5 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 -include vendor/rr/configs/common_versions.mk
 
 # T-Mobile theme engine
--include vendor/rr/configs/themes_common.mk
+-include vendor/rr/configs/themes_common.mk  
+
