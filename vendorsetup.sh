@@ -30,8 +30,8 @@ add_lunch_combo rr_targa-userdebug
 add_lunch_combo rr_umtsspyder-userdebug
 add_lunch_combo rr_vibrantmtd-userdebug
 add_lunch_combo rr_vs920-userdebug
-add_lunch_combo aokp_mako-userdebug
-add_lunch_combo aokp_maguro-userdebug
+add_lunch_combo rr_mako-userdebug
+add_lunch_combo aokp_rr-userdebug
 add_lunch_combo aokp_toro-userdebug
 add_lunch_combo aokp_toroplus-userdebug
 add_lunch_combo aokp_grouper-userdebug
