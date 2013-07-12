@@ -15,7 +15,8 @@ Forum  : http://www.resurrectionremix.com
 - Added HALO toggle - thanks to bajee11
 - Added HALO App
 - Added Nova launcher                                                      
-- Added caoslauncher                                                       
+- Added caoslauncher 
+- Settings: Added launcher options                                                      
 - Full updated red PitchBlack ui mode
 - Settings: Introduce Privacy Guard Manager                                
 - Added Cm Privacy Guard support (thanks to mazdarider23)                 

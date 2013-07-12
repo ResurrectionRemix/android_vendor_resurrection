@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
     <RomName>Resurrection Remix JB N7100</RomName>
-    <RomVersion>4.0.2</RomVersion>
+    <RomVersion>4.0.3</RomVersion>
     <RomCheckUrl>https://dl.dropboxusercontent.com/u/62249445/update_me_files/update_me_check_n7100.xml</RomCheckUrl>
 	<RebootRecovery>1</RebootRecovery>
 	<DownloadDir>/mnt/sdcard/Resurrection</DownloadDir>
