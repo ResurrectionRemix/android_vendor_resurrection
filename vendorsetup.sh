@@ -56,7 +56,7 @@ add_lunch_combo rr_m7-userdebug
 add_lunch_combo aokp_m7att-userdebug
 add_lunch_combo aokp_m7spr-userdebug
 add_lunch_combo aokp_m7tmo-userdebug
-add_lunch_combo aokp_m7ul-userdebug
+add_lunch_combo rr_m7ul-userdebug
 add_lunch_combo aokp_maserati-userdebug
 add_lunch_combo aokp_mint-userdebug
 add_lunch_combo aokp_odin-userdebug
