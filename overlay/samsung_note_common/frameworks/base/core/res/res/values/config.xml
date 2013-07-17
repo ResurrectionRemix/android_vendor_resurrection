@@ -11,6 +11,6 @@
         <item>com.google.android.location</item>
     </string-array>
 
-    <bool name="config_cellBroadcastAppLinks">true</bool>
+    <bool name="config_cellBroadcastAppLinks">false</bool>
 
 </resources>
