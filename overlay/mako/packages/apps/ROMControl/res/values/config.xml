@@ -3,7 +3,7 @@
     <!-- Whether device has hardware buttons -->
     <bool name="has_hardware_buttons">false</bool>
 
-    <!-- Whether can use fast chage -->
+    <!-- Whether can use fast charge -->
     <bool name="has_fast_charge">false</bool>
 
     <!-- Whether can use color tuning -->
