@@ -15,7 +15,7 @@
     <!-- Whether can use color tuning -->
     <bool name="has_color_tuning">false</bool>
     
-        <!-- Whether or not to display the Softkey settings -->
+    <!-- Whether or not to display the Softkey settings -->
     <bool name="has_soft_keys">true</bool>
 
     <!-- Whether or not device has home key -->
