@@ -85,22 +85,17 @@ vendor/rr/prebuilt/ResurrectionRemix-changelog.txt:system/etc/ResurrectionRemix-
 vendor/rr/prebuilt/common/etc/persist.conf:system/etc/persist.conf	    
 
 PRODUCT_PACKAGES += \
-    e2fsck \
-    fsck.exfat \
-    libssh \
-    mke2fs \
-    mkfs.exfat \
-    mount.exfat \
-    ntfsfix \
-    ntfs-3g \
     openvpn \
-    scp \
-    sftp \
+    e2fsck \
+    mke2fs \
+    tune2fs \
+    libssh \
     ssh \
     sshd \
     sshd-config \
     ssh-keygen \
-    tune2fs
+    sftp \
+    scp
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
