@@ -12,4 +12,16 @@
 
     <!-- Whether or not to display the Spen settings -->
     <bool name="config_stylusGestures">true</bool>
+    
+    <!-- Whether or not to display the Softkey settings -->
+    <bool name="has_soft_keys">true</bool>
+
+    <!-- Whether or not device has home key -->
+    <bool name="has_home_key">true</bool>
+
+    <!-- Whether or not device has back key -->
+    <bool name="has_back_key">true</bool>
+
+    <!-- Whether or not device has menu key -->
+    <bool name="has_menu_key">true</bool>
 </resources>
