@@ -1,0 +1,25 @@
+<property name="PA Colors" active="true" color="#ed4f36">
+
+        <description><![CDATA[
+            This preset will color a couple of apps. Keep in mind this is only a preset, define your own colors app per app if you like. (<i>in the apps section</i>)
+        ]]></description>
+
+        <long_description><![CDATA[
+            This preset will color a couple of apps. Keep in mind this is only a preset, define your own colors app per app if you like (<i>in the apps section</i>).<br/><br/>
+            Most apps usually must be restarted to accept new hybrid properties, which means <b>you will likely need a reboot</b> in order to see the effects.
+        ]]></long_description>
+
+        <setting type="Hybrid" target="com.android.launcher.colors" value="4A000000|B2FFFFFF|FFFFFFFF|4A000000|FF33B5E5"/>
+        <setting type="Hybrid" target="com.android.vending.colors" value="FF121212|D1DC8745|FFB5D67E|FF121212|E5C1534E"/>
+        <setting type="Hybrid" target="com.facebook.katana.colors" value="FF28395F|B2FFFFFF|FFFFFFFF|FF375180|93FFFFFF"/>
+        <setting type="Hybrid" target="com.android.mms.colors" value="FF222222|B2FFFFFF|FFFFFFFF|FF555555|B294B829"/>
+        <setting type="Hybrid" target="com.google.android.calendar.colors" value="FF44B9E5|FFFFFFFF|FFFFFFFF|FFDDDDDD|FF44B9E5"/>
+        <setting type="Hybrid" target="com.google.android.talk.colors" value="FF222222|B2FFFFFF|FFFFFFFF|FF222222|B2FF8801"/>
+        <setting type="Hybrid" target="com.sand.airdroid.colors" value="FFF4F6F7|B260A517|FF000000|FF96DF4B|FFFFFFFF"/>
+        <setting type="Hybrid" target="com.google.android.googlequicksearchbox.colors" value="FFE5E5E5|B234B4E3|FFFFFFFF|FFE5E5E5|FF33B5E5"/>
+        <setting type="Hybrid" target="com.google.android.apps.plus.colors" value="FFDDDDDD|B2777777|FFFFFFFF|FFDDDDDD|FF33B5E5"/>
+        <setting type="Hybrid" target="com.verge.android.colors" value="FFFFFFFF|FFFA4D2A|FFAA66CC|FFFA4D2A|FFFFFFFF"/>
+        <setting type="Hybrid" target="com.google.android.youtube.colors" value="FF000000|B2FF0000|FFFFFFFF|FF000000|FFC91313"/>
+        <setting type="Hybrid" target="com.google.android.apps.currents.colors" value="FFFFFFFF|FFFF4444|FFFF4444|FFFFFFFF|FFFF4444"/>
+
+</property>

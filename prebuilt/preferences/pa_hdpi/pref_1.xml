@@ -1,0 +1,16 @@
+<property name="Stock UI" active="true" image="/system/etc/paranoid/preferences/images/phone.png" color="#238fcd">
+
+        <description><![CDATA[
+            This will put your device into 240 DPI/360p Phone UI, none of your apps will be changed.
+        ]]></description>
+        <setting type="Hybrid" target="%hybrid_mode" value="1"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="%rom_default_dpi"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="%rom_default_layout"/>
+        <setting type="Hybrid" target="com.android.systemui.navbar.dpi" value="0"/>
+        <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="100"/>
+        <setting type="Hybrid" target="%system_default_layout" value="0"/>
+        <setting type="Hybrid" target="%system_default_dpi" value="0"/>
+        <setting type="Android" target="status_bar_show_clock" value="1"/>
+        <setting type="Android" target="max_notification_icons" value="5"/>
+
+</property>

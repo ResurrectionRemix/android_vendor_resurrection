@@ -1,0 +1,12 @@
+<property name="Stock UI" active="true" image="/system/etc/paranoid/preferences/images/phablet.png" color="#238fcd">
+
+        <description><![CDATA[Phablet workspace<br/>213 DPI]]></description>
+        <setting type="Hybrid" target="%hybrid_mode" value="1"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="%rom_default_dpi"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="%rom_default_layout"/>
+        <setting type="Hybrid" target="com.android.systemui.navbar.dpi" value="100"/>
+        <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="100"/>
+        <setting type="Android" target="status_bar_clock" value="1"/>
+        <setting type="Android" target="max_notification_icons" value="5"/>
+
+</property>

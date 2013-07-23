@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     Torch \
     UpdateMe \
     Halo \
+    ParanoidPreferences \
     ChaOSLauncher\
     LockClock \
     CMFileManager\
@@ -55,11 +56,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
   vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
   vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
-  vendor/rr/prebuilt/common/app/dpi/XposedInstaller.apk:system/app/XposedInstaller.apk\
+  vendor/rr/prebuilt/common/app/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
   vendor/rr/prebuilt/common/app/DSPManager.apk:system/app/DSPManager.apk\
   vendor/rr/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk\
-  vendor/rr/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk\
-  vendor/rr/prebuilt/common/app/dpi/AppSettings.apk:system/app/AppSettings.apk
+  vendor/rr/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk
 
  # DSP Activator
  PRODUCT_COPY_FILES += \

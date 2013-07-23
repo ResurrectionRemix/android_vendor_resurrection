@@ -1,0 +1,12 @@
+<property name="Tablet UI (Mid)" active="true" image="/system/etc/paranoid/preferences/images/tablet.png" color="#51ab27">
+
+        <description><![CDATA[Tablet workspace<br/>180 DPI<br/>4 Icons<br/>Clock]]></description>
+        <setting type="Hybrid" target="%hybrid_mode" value="1"/>
+        <setting type="Hybrid" target="com.android.systemui.dpi" value="180"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="1000"/>
+        <setting type="Hybrid" target="com.android.systemui.navbar.dpi" value="100"/>
+        <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="100"/>
+        <setting type="Android" target="status_bar_clock" value="1"/>
+        <setting type="Android" target="max_notification_icons" value="4"/>
+
+</property>
