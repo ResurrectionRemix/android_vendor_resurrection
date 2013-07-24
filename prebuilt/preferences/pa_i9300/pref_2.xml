@@ -5,7 +5,7 @@
         ]]></description>
         <setting type="Hybrid" target="%hybrid_mode" value="1"/>
         <setting type="Hybrid" target="com.android.systemui.dpi" value="225"/>
-        <setting type="Hybrid" target="com.android.systemui.layout" value="600"/>
+        <setting type="Hybrid" target="com.android.systemui.layout" value="500"/>
         <setting type="Hybrid" target="com.android.systemui.navbar.dpi" value="100"/>
         <setting type="Hybrid" target="com.android.systemui.statusbar.dpi" value="100"/>
         <setting type="Hybrid" target="%system_default_layout" value="0"/>
