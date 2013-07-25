@@ -37,22 +37,6 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/preferences/pa_hdpi/pref_3.xml:system/etc/paranoid/preferences/pref_3.xml \
     vendor/rr/prebuilt/preferences/pa_hdpi/pref_4.xml:system/etc/paranoid/preferences/pref_4.xml \
     vendor/rr/prebuilt/preferences/pa_hdpi/pref_5.xml:system/etc/paranoid/preferences/pref_5.xml
-
-PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/i9100g_patch/bin/pvrsrvctl_SGX540_120:system/vendor/bin/pvrsrvctl_SGX540_120 \
-    vendor/rr/prebuilt/i9100g_patch/bin/pvrsrvinit:system/vendor/bin/pvrsrvinit \
-    vendor/rr/prebuilt/i9100g_patch/lib/egl/libEGL_POWERVR_SGX540_120.so:system/vendor/lib/egl/libEGL_POWERVR_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/egl/libGLESv2_POWERVR_SGX540_120.so:system/vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/hw/gralloc.omap4430.so:system/vendor/lib/hw/gralloc.omap4430.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libglslcompiler_SGX540_120.so:system/vendor/lib/libglslcompiler_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libIMGegl_SGX540_120.so:system/vendor/lib/libIMGegl_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libpvr2d_SGX540_120.so:system/vendor/lib/libpvr2d_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libpvrANDROID_WSEGL_SGX540_120.so:system/vendor/lib/libpvrANDROID_WSEGL_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libPVRScopeServices_SGX540_120.so:system/vendor/lib/libPVRScopeServices_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libsrv_um_SGX540_120.so:system/vendor/lib/libsrv_um_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libusc_SGX540_120.so:system/vendor/lib/libusc_SGX540_120.so \
-    vendor/rr/prebuilt/i9100g_patch/lib/libsrv_init_SGX540_120.so:system/vendor/lib/libsrv_init_SGX540_120.so
    
 # ota
 PRODUCT_COPY_FILES += \
