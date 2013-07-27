@@ -109,5 +109,4 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 -include vendor/rr/configs/common_versions.mk
 
 # T-Mobile theme engine
--include vendor/rr/configs/themes_common.mk  
-
+-include vendor/rr/configs/themes_common.mk 
