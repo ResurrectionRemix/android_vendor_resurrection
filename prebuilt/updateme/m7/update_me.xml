@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
     <RomName>Resurrection Remix HTC ONE</RomName>
-    <RomVersion>4.0.4</RomVersion>
+    <RomVersion>4.0.5</RomVersion>
     <RomCheckUrl>https://dl.dropboxusercontent.com/u/62249445/update_me_files/UpdateMe_htc_m7.xml</RomCheckUrl>
 	<RebootRecovery>1</RebootRecovery>
 	<DownloadDir>/mnt/sdcard/Resurrection</DownloadDir>
