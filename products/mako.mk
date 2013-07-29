@@ -27,14 +27,14 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/preferences/images/phone.png:system/etc/paranoid/preferences/images/phone.png \
     vendor/rr/prebuilt/preferences/images/tablet.png:system/etc/paranoid/preferences/images/tablet.png \
     vendor/rr/prebuilt/preferences/images/undefined.png:system/etc/paranoid/preferences/images/undefined.png \
-    vendor/rr/prebuilt/pa_mako.conf:system/etc/paranoid/properties.conf \
-    vendor/rr/prebuilt/pa_mako.conf:system/etc/paranoid/backup.conf \
-    vendor/rr/prebuilt/preferences/pa_mako/0_colors.xml:system/etc/paranoid/preferences/0_colors.xml \
-    vendor/rr/prebuilt/preferences/pa_mako/pref_1.xml:system/etc/paranoid/preferences/pref_1.xml \
-    vendor/rr/prebuilt/preferences/pa_mako/pref_2.xml:system/etc/paranoid/preferences/pref_2.xml \
-    vendor/rr/prebuilt/preferences/pa_mako/pref_3.xml:system/etc/paranoid/preferences/pref_3.xml \
-    vendor/rr/prebuilt/preferences/pa_mako/pref_4.xml:system/etc/paranoid/preferences/pref_4.xml \
-    vendor/rr/prebuilt/preferences/pa_mako/pref_5.xml:system/etc/paranoid/preferences/pref_5.xml
+    vendor/rr/prebuilt/pa_xhdpi.conf:system/etc/paranoid/properties.conf \
+    vendor/rr/prebuilt/pa_xhdpi.conf:system/etc/paranoid/backup.conf \
+    vendor/rr/prebuilt/preferences/pa_xhdpi/0_colors.xml:system/etc/paranoid/preferences/0_colors.xml \
+    vendor/rr/prebuilt/preferences/pa_xhdpi/pref_1.xml:system/etc/paranoid/preferences/pref_1.xml \
+    vendor/rr/prebuilt/preferences/pa_xhdpi/pref_2.xml:system/etc/paranoid/preferences/pref_2.xml \
+    vendor/rr/prebuilt/preferences/pa_xhdpi/pref_3.xml:system/etc/paranoid/preferences/pref_3.xml \
+    vendor/rr/prebuilt/preferences/pa_xhdpi/pref_4.xml:system/etc/paranoid/preferences/pref_4.xml \
+    vendor/rr/prebuilt/preferences/pa_xhdpi/pref_5.xml:system/etc/paranoid/preferences/pref_5.xml
 # ota
 PRODUCT_COPY_FILES += \
 	vendor/rr/prebuilt/updateme/mako/update_me.xml:system/update_me.xml

@@ -13,6 +13,7 @@ PRODUCT_PACKAGES += \
     Microbes \
     ROMControl \
     PermissionsManager \
+    Wallpapers \
     Superuser \
     su \
     SwagPapers \
