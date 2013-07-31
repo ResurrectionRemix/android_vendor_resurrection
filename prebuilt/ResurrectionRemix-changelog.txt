@@ -3,7 +3,7 @@ Forum  : http://www.resurrectionremix.com
 ------------------------------------------
  Resurrection Remix™ Basic CHANGELOG
  
- For extanded changelog track github activities
+ For extended changelog track github activities
 ------------------------------------------
 
 # Resurrection Remix v4.0.4 # Basic
