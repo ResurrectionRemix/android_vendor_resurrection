@@ -57,6 +57,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
   vendor/rr/prebuilt/common/app/UpdateMe.apk:system/app/UpdateMe.apk \
   vendor/rr/prebuilt/common/app/Music.apk:system/app/Music.apk \
+  vendor/rr/prebuilt/common/app/Trebuchet.apk:system/app/Trebuchet.apk \
   vendor/rr/prebuilt/common/app/ParanoidPreferences.apk:system/app/ParanoidPreferences.apk \
   vendor/rr/prebuilt/common/app/SunBeam.apk:system/app/SunBeam.apk\
   vendor/rr/prebuilt/common/app/DashClock.apk:system/app/DashClock.apk
