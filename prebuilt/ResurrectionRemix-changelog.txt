@@ -6,6 +6,39 @@ Forum  : http://www.resurrectionremix.com
  For extended changelog track github activities
 ------------------------------------------
 
+# Resurrection Remix v4.0.5 # Basic
+
+- updated 4.2.2 source and kernel
+- HALO bigger update
+- halo style changes
+- HALO: hdpi & mdpi icon update 
+- HALO black toasts, italics, blue text
+- HALO first_start tutorial & gesture dead-zone
+- Completely hide Halo icons while tasking 
+- Kill floating activities running in the same thread when tapping outside 
+- HALO: fix the integer division bug and icons
+- Added more default custom app colors for pa 
+- fixed pa default dpi 
+- ScreenShot- notification Panel Quick Trash
+- fix for overflow 3 dots toggle issue
+- port Custom view for hybrid toggle
+- fix for ui sound issue
+- improved sound performance
+- added music toggle
+- added ListView Animations
+- updated MediaProvider
+- fixed tablet ui hide extras option
+- moved theme chooser to main settings
+- updated some settings icons and strings
+- updated DSP Manager
+- show DSP manager on sound settings (fixed fc)
+- BT: Fix memory leak when BT on & off done many times
+- fixed camera fc
+- removed musicfx
+- removed chaos launcher
+- added holo launcher hd
+- included lot of performance improvements and bug fixes
+
 # Resurrection Remix v4.0.4 # Basic
 
 - Added PA Hybrid (per app dpi and color)included Recent updates (port from PA & DU)
