@@ -9,7 +9,7 @@
             Most apps usually must be restarted to accept new hybrid properties, which means <b>you will likely need a reboot</b> in order to see the effects.
         ]]></long_description>
 
-       
+        <setting type="Hybrid" target="com.android.contacts.colors" value="FF000000|B2FFFFFF|FFFFFFFF|FF000000|FF33B5E5"/>
         <setting type="Hybrid" target="com.aokp.romcontrol.colors" value="FF000000|B2FFFFFF|FFFFFFFF|FF000000|FF33B5E5"/>
         <setting type="Hybrid" target="com.google.android.gm.colors" value="FF000000|B2FFFFFF|FFFFFFFF|FF000000|FF33B5E5"/>
         <setting type="Hybrid" target="com.google.android.talk.colors" value="FF000000|B2FFFFFF|FFFFFFFF|FF000000|FFE3ECEC"/>
