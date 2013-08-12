@@ -8,6 +8,9 @@ $(call inherit-product, vendor/rr/configs/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/rr/configs/gsm.mk)
 
+# SGS3 overlay
+PRODUCT_PACKAGE_OVERLAYS += vendor/rr/overlay/i9300
+
 # Setup device specific product configuration.
 PRODUCT_NAME := rr_i9305
 PRODUCT_BRAND := samsung
