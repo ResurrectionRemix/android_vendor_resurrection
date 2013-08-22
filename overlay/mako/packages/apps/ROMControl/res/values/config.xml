@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Whether device has hardware buttons -->
+    <bool name="has_hardware_buttons">false</bool>
+
+    <!-- Whether can use fast charge -->
+    <bool name="has_fast_charge">false</bool>
+
+    <!-- Whether can use color tuning -->
+    <bool name="has_color_tuning">false</bool>
+
+    <!-- Whether device has led charging feature -->
+    <bool name="has_led_charging_feature">true</bool>
+</resources>
