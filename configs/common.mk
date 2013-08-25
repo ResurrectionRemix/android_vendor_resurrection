@@ -106,8 +106,8 @@ PRODUCT_PACKAGES += \
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.ringtone=RadiationOrchestration.ogg \
-    ro.config.notification_sound=Palladium.ogg \
-    ro.config.alarm_alert=Scandium.ogg
+    ro.config.notification_sound=Procyon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
 
 PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:/system/etc/permissions/android.software.live_wallpaper.xml
 
