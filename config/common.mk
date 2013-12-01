@@ -15,7 +15,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.com.android.dataroaming=false \
 	persist.sys.root_access=1
 
-
 # enable ADB authentication if not on eng build
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
