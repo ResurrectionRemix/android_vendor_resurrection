@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <!-- Whether can use fast chage -->
-    <bool name="has_fast_charge">false</bool>
-
-    <!-- Whether can use color tuning -->
-    <bool name="has_color_tuning">false</bool>
-</resources>

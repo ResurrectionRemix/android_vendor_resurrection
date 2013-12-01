@@ -1,3 +1,0 @@
-#!/system/bin/sh
-log -p i -t start "    A wise man never plays leapfrog with a unicorn";
-
