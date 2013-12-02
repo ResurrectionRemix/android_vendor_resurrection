@@ -57,4 +57,5 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
 PRODUCT_COPY_FILES += \
     vendor/omni/prebuilt/bin/su:system/xbin/su \
     vendor/omni/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
-    vendor/omni/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
+    vendor/omni/prebuilt/apk/Superuser.apk:system/app/Superuser.apk \
+    vendor/omni/prebuilt/apk/com.teslacoilsw.launcher-2.apk:system/app/com.teslacoilsw.launcher-2.apk
