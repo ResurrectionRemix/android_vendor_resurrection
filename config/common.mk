@@ -52,3 +52,9 @@ PRODUCT_COPY_FILES += \
 
 # Add our overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/omni/overlay/common
+
+# SU Support
+PRODUCT_COPY_FILES += \
+    vendor/omni/prebuilt/bin/su:system/xbin/su \
+    vendor/omni/prebuilt/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/omni/prebuilt/apk/Superuser.apk:system/app/Superuser.apk
