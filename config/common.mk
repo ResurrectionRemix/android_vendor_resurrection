@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= Cyanogenmod
+PRODUCT_BRAND ?= cyanogenmod
 
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
@@ -46,6 +46,14 @@ endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
 PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
+endif
+
+ifdef CM_NIGHTLY
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rommanager.developerid=cyanogenmodnightly
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rommanager.developerid=cyanogenmod
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
@@ -154,7 +162,8 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Apollo \
     CMFileManager \
-    LockClock 
+    LockClock \
+    CMAccount
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
@@ -234,7 +243,7 @@ endif
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 4.0
+PRODUCT_VERSION_MAJOR = 11
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
@@ -266,7 +275,7 @@ ifdef CM_BUILDTYPE
     else
         ifndef CM_EXTRAVERSION
             # Force build type to EXPERIMENTAL, SNAPSHOT mandates a tag
-            CM_BUILDTYPE := Resurrection_Remix
+            CM_BUILDTYPE := EXPERIMENTAL
         else
             # Remove leading dash from CM_EXTRAVERSION
             CM_EXTRAVERSION := $(shell echo $(CM_EXTRAVERSION) | sed 's/-//')
@@ -276,28 +285,24 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := RR_KK_V4.0.8
+    CM_BUILDTYPE := UNOFFICIAL
     CM_EXTRAVERSION :=
 endif
 
 ifeq ($(CM_BUILDTYPE), RELEASE)
-    CM_VERSION := $(CM_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+    CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
-        CM_VERSION := $(CM_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
     else
-        CM_VERSION := $(CM_BUILDTYPE)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)$(CM_EXTRAVERSION)-$(CM_BUILD)
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.rr.version=$(CM_BUILD) \
-  ro.rr_modversion=$(CM_BUILDTYPE)
-  
- PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_BUILD) \
-  ro.cm_modversion=$(CM_BUILDTYPE) 
-  
+  ro.cm.version=$(CM_VERSION) \
+  ro.modversion=$(CM_VERSION)
+
 -include vendor/cm-priv/keys/keys.mk
 
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
