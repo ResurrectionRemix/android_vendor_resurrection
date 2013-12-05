@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= Cyanogenmod
+PRODUCT_BRAND ?= ResurrectionRemix
 
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
@@ -238,19 +238,10 @@ PRODUCT_VERSION_MAJOR = 4.0
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
-# Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
-
-ifndef CM_BUILDTYPE
-    ifdef RELEASE_TYPE
-        # Starting with "CM_" is optional
-        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^CM_||g')
-        CM_BUILDTYPE := $(RELEASE_TYPE)
-    endif
-endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
-    CM_BUILDTYPE :=
+    CM_BUILDTYPE :=RR_KK_V4.0.8
 endif
 
 ifdef CM_BUILDTYPE
@@ -296,7 +287,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
   
  PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_BUILD) \
-  ro.cm_modversion=$(CM_BUILDTYPE) 
+  ro.modversion=$(CM_BUILDTYPE) 
   
 -include vendor/cm-priv/keys/keys.mk
 
