@@ -283,7 +283,8 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
-  ro.rr_modversion=$(CM_BUILDTYPE)
+  ro.rr_modversion=$(CM_BUILDTYPE) \
+  ro.resurrection.version=Resurrection_Remix_Kitkat_4.4-$(shell date -u +%Y%m%d)
   
  PRODUCT_PROPERTY_OVERRIDES += \
   ro.cm.version=$(CM_BUILD) \
