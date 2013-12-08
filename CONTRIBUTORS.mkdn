@@ -1,7 +1,7 @@
-Resurrection Remix base on cyanogen mod
+CyanogenMod
 ===========
 
-Maintainers
+Maintainers (CyanogenMod 10.2):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Amazon Kindle Fire 1st Edition:__ Hashcode
