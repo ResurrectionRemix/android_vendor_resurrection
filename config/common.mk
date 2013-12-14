@@ -288,3 +288,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include $(WORKSPACE)/hudson/image-auto-bits.mk
 
 -include vendor/cyngn/product.mk
+
+vendor/cm/prebuilt/common/bootanimation/360.zip:system/media/bootanimation.zip
