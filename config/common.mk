@@ -148,6 +148,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     WhisperPush \
+    ScreenRecorder \
+    libscreenrecorder \
     ResurrectionWallpapers
     
 # CM Hardware Abstraction Framework
