@@ -278,7 +278,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
-  ro.resurrection.version=Resurrection_Remix_Kitkat_4.4-$(shell date -u +%Y%m%d)
+  ro.resurrection.version=Resurrection_Remix_Kitkat_4.4-$(shell date -u +%Y%m%d) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
    
  PRODUCT_PROPERTY_OVERRIDES += \
