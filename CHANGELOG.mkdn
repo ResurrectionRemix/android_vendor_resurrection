@@ -6,6 +6,96 @@ Forum  : http://www.resurrectionremix.com
  For extended changelog track github activities
 -----------------------------------------------
 
+
+# Resurrection Remix KitKat 4.4.2 Experimental - 2013121 # Basic
+
+
+- updated all cm kernel and source updates
+- Add TRDS -improved pitch black theme switcher-fly animations will turn on when PB is active
+- Added List view animations
+- Activated resurrection updater - you ll recieve notification when new RR rom updates available
+- speed up statubar/notification drawer 
+- don't clear wallpaper when SystemUI restart
+- Restart system ui when notification custom header on / off
+- Improved Resurrection walls app
+- KeyguardServiceDelegate: disable DEBUG
+- Improve scrolling cache 
+- SystemUI: Forward port Statusbar Clock and Date actions 
+- BatteryService: Restore the original parcel order
+- changed and improved custom notification panel weather images 
+- Port OnClick Fliptile animation
+- Add screen recording
+- Add screen recording power dialog
+- music tile and album artwork modes 
+- change default for unknown sources & verify apps 
+- Keyguard: smooth background change.
+- Screen recorder: add ability to record audio from mic
+- Improve AOSP Download/Upload animation 
+- Sidebar app switcher multitasking
+- Add Wifi name to notification drawer when Wifi is connected
+- Add CM Legal
+- Only show ART information if switching from dalvik to ART
+- Settings : Add hooks for device specific features
+- Settings: Long Term Orbits (LTO)
+- thats all I'd remember..
+
+
+
+# Resurrection Remix KitKat 4.4.2 Incremental - 20131216 # Basic
+
+- based on latest cm and android open source project
+- included all cm11 and some of cm10 features
+*profiles 
+*HW buttons
+*lockscreen targets and and more lockscreen tweaks
+*Quick settings notification panel and custom tiles
+*custom battery mods
+*battery light options
+*expanded desktop
+*performance manager
+*all cm security options
+*notification light manager
+*theme chooser
+*core superuser
+*hold back to kill -redused kill time
+*status bar brightness control
+*notification counter option
+*menu unlock
+*charging sounds
+*ringtone and volume tweaks
+*CLock (new HD weather icons)
+*torch  
+*and much more options from cm 11....
+ 
+-omni rom features
+*network speed indicator
+*custom notification panel header
+*battery around unlock ring
+*headset button launch voice contol option
+*screen off animations
+*low battery warning options
+
+other apps and mods
+-resurrection tools and about resurrection
+-checkbox spawn settings 
+-flying windows animations
+-RR Wallpapers 17 HD epic Walls
+-lockscreen see through (blur) -from pa source 
+-allow custom system background
+-improved framework drawables
+-added locations shortcuts to settings
+-improved scrolling performans
+-updated all drivers
+-changelog
+-RR updater app
+-New core app Documents-file browser
+-dsp manager
+-apollo music
+-CM file manager
+-terminal
+-thats all I'd remember
+
+
 # Resurrection Remix v4.0.7 # Basic (final 4.2.2)
 
 -Updated to final stable 4.2.2 source
@@ -13,6 +103,7 @@ Forum  : http://www.resurrectionremix.com
 -Added default ringtones to system properties
 -Settings - Switched to drawer UI 
 -Many improvements included in this final 4.2.2 roundup release
+-Now time to move on to the Android KitKat 4.4 innovations
 
 # Resurrection Remix v4.0.6 # Basic
 
@@ -33,7 +124,8 @@ Forum  : http://www.resurrectionremix.com
 -Fix browser dpi
 -Fixed RR Wallpepers server issue
 -Halo- Fix set RR wallpaper button
--Halo- Fix for install app button 
+-Halo- Fix for install app button
+-Fixed camera for m7 devices 
 
 # Resurrection Remix v4.0.5 # Basic
 
