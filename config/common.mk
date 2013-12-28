@@ -68,13 +68,14 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/apk/com.teslacoilsw.launcher-2.apk:system/app/com.teslacoilsw.launcher-2.apk \
     vendor/cm/prebuilt/apk/UpdateMe.apk:system/app/UpdateMe.apk \
     vendor/cm/prebuilt/apk/LockClock.apk:system/app/LockClock.apk \
+    vendor/cm/prebuilt/apk/LockClock.apk:system/app/LockClock.apk \
     vendor/cm/prebuilt/apk/UnicornPorn.apk:system/app/UnicornPorn.apk
     
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/cm/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/cm/prebuilt/common/etc/dhcpcd/dhcpcd-run-hooks/20-dns.conf:system/etc/dhcpcd/dhcpcd-run-hooks/20-dns.conf \
     vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
