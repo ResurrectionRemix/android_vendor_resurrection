@@ -5,12 +5,38 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 Experimental - 20140103 # Basic
+
+-SystemUI: fix SearchPanel gesture in landscape mode.
+-frameworks/base: remove some duplicate ringtones/notification sounds 
+-AppOps: track op persistence by name instead of id 
+-WifiController: fix high perf lock sometimes not respected
+-Fix charging indication.
+-Update immersive confirmation.
+-Navbar: Fix MDPI & HDPI landscape layout
+-SystemUI: don't crash when user disable default apps
+-BluetoothManagerService: fix enabling/disabling BT from Quictsettings…
+-SystemUI: Add double tap to sleep gesture 
+-Camera2: Fix for unsupported resolutions by codec.
+-Camera: Enable module switcher on resume
+-Camera: Set the width dynamic to parent from fixed 400px
+-Camera2: fix long press shutter behavior
+-Camera resurrection focus mod.(faster photo shoot)
+-Re-add system settings fragment direct link.
+-Settings: Forward port sound settings 
+-Improve app op details layout.
+-Allow tablets to send SMS if enabled in device overlays
+-Fix FC when trying to adjust radio band via *#*#4636#*#* dialer code.
+-AppOps/Privacy Guard: Fix up misaligned switches.
+-Settings: Fix for missing notification volume slider in Volume panel.
+-Removed broadcast reciever (for better battery life)
+-and also included full cm source update 
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 2013126 # Basic
 
 -Revert "Multi-window support" 
 -Add HALO 2 final version Forward port from pa 4.3 
--App sidebar: floating window (long press to app side bar icons Launch in floating mode )
+-App sidebar: floating window (long press to app side bar icons.apps Launchs in floating mode )
 -Show as floating window on recent apps(long press)
 -Launch floating notifications from notification panel (long press)
 
@@ -37,10 +63,7 @@ Forum  : http://www.resurrectionremix.com
 -Bluetooth: Destroy BT Dialog on BT power off.
 -Reorganize and clean up lock screen section 
 
-
-
 # Resurrection Remix KitKat 4.4.2 Experimental - 2013121 # Basic
-
 
 - Updated all cm kernel and source updates
 - Add TRDS -improved pitch black theme switcher-fly animations will turn on when PB is active
@@ -69,9 +92,6 @@ Forum  : http://www.resurrectionremix.com
 - Only show ART information if switching from dalvik to ART
 - Settings : Add hooks for device specific features
 - Settings: Long Term Orbits (LTO)
-
-
-
 
 # Resurrection Remix KitKat 4.4.2 Incremental - 20131216 # Basic
 
