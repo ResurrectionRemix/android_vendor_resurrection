@@ -141,7 +141,7 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     LockClock \
-    Halo \
+    HALO \
     WhisperPush \
     ScreenRecorder \
     libscreenrecorder \
