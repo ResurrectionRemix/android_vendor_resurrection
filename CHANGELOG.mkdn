@@ -7,7 +7,26 @@ Forum  : http://www.resurrectionremix.com
 -----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 Experimental - 20140103 # Basic
 
+-non intrusive incall ui from omni rom
+-Add master switch to disable Halo
+-QuickRecord Tile from slimkat
+-Add touch feedback to the clear all recents button
+-Make the lock screen camera widget configurable
+-Fix multi-user issues
+-Forward port cm11 Status Bar interface
+-SystemUI: Allow theming battery via theme chooser
+-Settings: Use solid actionbar 
+-settings: Remove ZRAM settings
+-Support the signed-builds FOTA updater, too 
+-improved camera fixed issues 
+-Port over improvements from Chronus
+-updated Resurrection Remix wallpapers to v4.0
+-basic source updates and improvements
+
+# Resurrection Remix KitKat 4.4.2 Experimental - 20140103 # Basic
+
 -SystemUI: fix SearchPanel gesture in landscape mode.
+-Add Multiuser option
 -frameworks/base: remove some duplicate ringtones/notification sounds 
 -AppOps: track op persistence by name instead of id 
 -WifiController: fix high perf lock sometimes not respected
@@ -21,7 +40,6 @@ Forum  : http://www.resurrectionremix.com
 -Camera: Enable module switcher on resume
 -Camera: Set the width dynamic to parent from fixed 400px
 -Camera2: fix long press shutter behavior
--Camera resurrection focus mod.(faster photo shoot)
 -Re-add system settings fragment direct link.
 -Settings: Forward port sound settings 
 -Improve app op details layout.
