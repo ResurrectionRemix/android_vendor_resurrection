@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= ResurrectionRemix
+PRODUCT_BRAND ?= cyanogenmod
 
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
@@ -209,9 +209,6 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 else
-
-PRODUCT_PACKAGES += \
-    CMFota
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
