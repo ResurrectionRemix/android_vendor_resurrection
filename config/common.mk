@@ -224,14 +224,14 @@ endif
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 4.0
+PRODUCT_VERSION_MAJOR = 11
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
-    CM_BUILDTYPE :=RR_KK_EXPERIMENTAL
+    CM_BUILDTYPE :=Resurrection_Remix_KK
 endif
 
 ifdef CM_BUILDTYPE
@@ -257,7 +257,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := RR_KK_EXPERIMENTAL
+    CM_BUILDTYPE := Resurrection_Remix_KK
     CM_EXTRAVERSION :=
 endif
 
