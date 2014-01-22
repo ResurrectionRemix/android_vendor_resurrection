@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RomConfig>
+    <RomName>Resurrection Remix GT-I9082</RomName>
+    <RomVersion>20140122</RomVersion>
+    <RomCheckUrl>https://dl.dropboxusercontent.com/u/18800669/xda/Resurrection_Remix/update_me_files/update_me_check_i9082.xml</RomCheckUrl>
+	<RebootRecovery>1</RebootRecovery>
+	<DownloadDir>/storage/sdcard0/Resurrection_Remix</DownloadDir>
+</RomConfig>
