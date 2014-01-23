@@ -5,10 +5,91 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
-# Resurrection Remix KitKat 4.4.2 Experimental - 20140103 # Basic
+# Resurrection Remix KitKat 4.4.2 - 20140123 # Basic
+
+-Add option to enable/disable wifi name from notification drawer
+-Update network traffic indicator
+-Port IME selector notification toggle
+-Camera button support
+-Remove 'Allow custom buttons' checkbox
+-Fix up top level "Privacy" section
+-Make Privacy Guard a first class citizen in the Settings app.
+-Settings: Port IME selector notification toggle 
+-Settings: use CMHW serial number 
+-PrivacyGuard: Specify a default value in Settings.getInt method call 
+-Storage Settings: Allow user to trigger a volume rescan 
+-Bluetooth: Don't set a null alias before unpairing 
+-Fix crash when opening privacy settings on tablets.
+-Fix LTO availability check.
+-Fix confusing warning dialog behaviour.
+-Settings: Make CM Settings visible for users other than the owner
+-Remove PG from the visibility changes
+-Fix reference to privacy settings 
+-notification transparency
+-notification drawer background
+-Port BatteryBar from aokp
+-update color picker
+-remove tap to be developer shit
+-dont hide performance-superuser-development settings
+-Quiet Hours: Allow disabling phone ringer
+-Settings: Add some more entries into 'SMS message limit' menu
+-Bluetooth updates
+-Settings: instant led test
+-update Buttons and layout
+-update strings
+-Settings: instant led test
+-Lockscreen shortcuts: Fix icon pack usage
+-Notification : Fix app info long-press 
+-Keyguard: do not allow to delete the system widget if widgets are disabled
+-Keyguard: let the user drag the challenge down if widgets are disabled
+-Keyguard: fix not shown overlay widgets from system
+-swipe anywhere on notification panel to switch views
+-WiFi label is not a Quote!
+-Keyguard: don't refresh ui when screen off
+-Fix error checking in MemoryFile.
+-Fix to NullPointerException on move back in ActivityStack.
+-Fixed incorrect calculation of dirty invalidation area 
+-Remove the navigation camera icon in keyguard if disabled by DPM
+-update Lockscreen Blur
+-DisplaySettings: Add hardware-framework support for tap-to-wake
+-included all cm source updates  
+
+# Resurrection Remix KitKat 4.4.2 - 20140116 # Basic
+
+-Adds ability to answer call with hardware HOME button (accessibility settings)
+-Enable Back-key when go to Emergency call 
+-CS translation- fix for fcs of SystemUI
+-FastTorch option
+-Fix Icon size in DocumentsUI
+-Switch back to holo blue header font color
+-Add option to always show battery status on lockscreen
+-Allow modification of the camera widget option on insecure lock screens
+-Dont show "Erase SD Card" when there is none 
+-Update gesture preference check
+-Update DocumentsUI for theme chooser combatibility 
+-Make it possible to show smaller tile icons
+-clear recent button replace to bottom 
+-add RAM bar and options
+-fix framework base issues
+-fix incoming call background
+-Update the color of the expandable volume panel icon 
+-Add text plain battery style 
+-Don't show notification count for a notification with just one item
+-Flip to Mute/Reject Call (phone settings)
+-update pb theme
+-Show owner info creation if no owner is set for UserTile
+-Updated all tranlations
+-fixed low dpi fc
+-I9100-xhdpi Framework res experience
+-No more Experimental releases all will be official
+-latest source updates and improvements
+
+# Resurrection Remix KitKat 4.4.2 Experimental - 20140109 # Basic
 
 -non intrusive incall ui from omni rom
 -Add master switch to disable Halo
+-Added Halo app
+-enabled multiuser for n7100
 -QuickRecord Tile from slimkat
 -Add touch feedback to the clear all recents button
 -Make the lock screen camera widget configurable
@@ -18,9 +99,10 @@ Forum  : http://www.resurrectionremix.com
 -Settings: Use solid actionbar 
 -settings: Remove ZRAM settings
 -Support the signed-builds FOTA updater, too 
--improved camera fixed issues 
+-improved camera fixed issues
+-improved Performance  
 -Port over improvements from Chronus
--updated Resurrection Remix wallpapers to v4.0
+-updated Resurrection Remix wallpapers to v5.0
 -basic source updates and improvements
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 20140103 # Basic
