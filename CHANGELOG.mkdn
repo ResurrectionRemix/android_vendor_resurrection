@@ -5,7 +5,6 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
-<<<<<<< HEAD
 # Resurrection Remix KitKat 4.4.2 - 20140123 # Basic
 
 -Add option to enable/disable wifi name from notification drawer
@@ -55,8 +54,6 @@ Forum  : http://www.resurrectionremix.com
 -DisplaySettings: Add hardware-framework support for tap-to-wake
 -included all cm source updates  
 
-=======
->>>>>>> be1d6d8a865c61b09ffdc74793e2c73b51148cd5
 # Resurrection Remix KitKat 4.4.2 - 20140116 # Basic
 
 -Adds ability to answer call with hardware HOME button (accessibility settings)
