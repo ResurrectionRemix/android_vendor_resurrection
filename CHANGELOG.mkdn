@@ -7,9 +7,9 @@ Forum  : http://www.resurrectionremix.com
 -----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - 20140128 # Basic
 
--Enable build with linaro 4.7.4 toolchain
+-Enable build with linaro 4.7.4 toolchain (more info http://www.linaro.org/linux-on-arm/)
 -DownloadManager : Add live folder
--add SELinux status information (fixes about phone fc )
+-add SELinux status information (fixes about phone fc)
 -add more animation scaling factors to developer settings
 -remove 3-dot overlay checkbox
 -update about RR :Add xenon92
