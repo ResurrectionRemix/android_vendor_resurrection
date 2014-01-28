@@ -15,7 +15,6 @@ Forum  : http://www.resurrectionremix.com
 -update about RR :Add xenon92
 -add checkbox for quick unlock
 -Persist lock screen blur on reboots
--add checkbox for quick unlock
 -Fix one NPE in tethering setting
 -Show memory full text only for internal storage
 -Bleed keyguard widget picker list into translucent bars 
