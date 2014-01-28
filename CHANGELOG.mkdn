@@ -5,6 +5,51 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - 20140128 # Basic
+
+-Enable build with linaro 4.7.4 toolchain
+-DownloadManager : Add live folder
+-add SELinux status information (fixes about phone fc )
+-add more animation scaling factors to developer settings
+-remove 3-dot overlay checkbox
+-update about RR :Add xenon92
+-add checkbox for quick unlock
+-Persist lock screen blur on reboots
+-add checkbox for quick unlock
+-Fix one NPE in tethering setting
+-Show memory full text only for internal storage
+-Bleed keyguard widget picker list into translucent bars 
+-Dialer: Proposal to amendment the look of dialer to fit kk
+-Re-add LoaderCallbacks to CyanogenMod dialer
+-Dialer: restore full compatibility with theme chooser 
+-camera: Keep touch focus intact during back-to-back ZSL shots
+-Camera: Change volume hard key button to zoom function
+-Set default video quality to the highest
+-camera: Make the popup menu transparent
+-Camera2: implement exposure compensation settings in video mode 
+-Camera: separate settings for color effects 
+-Camera2: implement volume key zoom in video mode 
+-Move message blacklist to framework
+-Telephony: implement noise suppression for phone calls
+-lights: Add music light support
+-Drop Lockscreen vibrate option
+-don't disable lockscreen widgets on low memory devices
+-Removed fast torch long press power button
+-Glowpad Torch
+-Last App Toggle from Omnirom
+-TRDS: Dark DocumentsUI
+-bring back rr carbon system background
+-add AM-PM settings
+-Add center clock
+-Set Settings.Global.WIFI_SCAN_ALWAYS_AVAILABLE default value
+-FB: Slim IME options
+-fix multiuser bug in vibrator service
+-add custom bootanimation colors support
+-raise max keygaurd widgets from 5 to 20
+-Framework: instant led test
+-Notification : Fix app info long-press 
+
+
 # Resurrection Remix KitKat 4.4.2 - 20140123 # Basic
 
 -Add option to enable/disable wifi name from notification drawer
@@ -34,7 +79,6 @@ Forum  : http://www.resurrectionremix.com
 -Quiet Hours: Allow disabling phone ringer
 -Settings: Add some more entries into 'SMS message limit' menu
 -Bluetooth updates
--Settings: instant led test
 -update Buttons and layout
 -update strings
 -Settings: instant led test
