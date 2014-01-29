@@ -140,6 +140,7 @@ PRODUCT_PACKAGES += \
     CMWallpapers \
     Apollo \
     CMFileManager \
+    CMAccount \
     LockClock \
     HALO \
     WhisperPush \
