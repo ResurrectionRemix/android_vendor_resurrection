@@ -225,7 +225,7 @@ PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
-    CM_BUILDTYPE :=Resurrection_Remix_KK
+    CM_BUILDTYPE :=Resurrection_Remix_KK_v5.0.0
 endif
 
 ifdef CM_BUILDTYPE
@@ -251,7 +251,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_KK
+    CM_BUILDTYPE := Resurrection_Remix_KK_v5.0.0
     CM_EXTRAVERSION :=
 endif
 
