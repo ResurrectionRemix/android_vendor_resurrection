@@ -5,7 +5,7 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
-# Resurrection Remix KitKat 4.4.2 - v5.0.0 # Basic
+# Resurrection Remix KitKat 4.4.2 - v5.0.0-20140130 # Basic
 
 -Add Resurrection Setup wizard (base on CMAccount)
 -Update rom version number as v5.0.0 
