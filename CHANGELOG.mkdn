@@ -10,6 +10,7 @@ Forum  : http://www.resurrectionremix.com
 -Add Resurrection Setup wizard (base on CMAccount)
 -Update rom version number as v5.0.0 
 -Remove lame live wallpapers 
+-fix f-ing status bar icon update issues with center clock
 -track back cm camera2
 -Appears black screen fix for a while 
 -Bluetooth: Fix to avoid framework reboot during monkey.
@@ -19,7 +20,6 @@ Forum  : http://www.resurrectionremix.com
 -Remove useless videos
 -wallpaper cropper: add permission to read external SD card
 -Edit tr strings
--move CLock to user interface
 -move rambar to user interface
 -move navigation bar height under interface
 -reorder menu: move hardware buttons below checkbox spawn
