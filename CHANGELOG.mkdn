@@ -5,6 +5,34 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.0.0 # Basic
+
+-Add Resurrection Setup wizard (base on CMAccount)
+-Update rom version number 5.0.0 
+-Remove lame live wallpapers 
+-track back cm camera2
+-Appears black screen fix for a while 
+-Bluetooth: Fix to avoid framework reboot during monkey.
+-Hide additional AppOps function 
+-fix network speed indicator with center clock
+-fix possible buffer overrun and memory leak
+-Remove useless videos
+-wallpaper cropper: add permission to read external SD card
+-Edit tr strings
+-move CLock to user interface
+-move rambar to user interface
+-move navigation bar height under interface
+-reorder menu: move hardware buttons below checkbox spawn
+-strings: update strings
+-Quick Tiles: allow 3,4,5 tiles in pulldown
+-WiFi: Add forget all networks
+-'When to daydream' dialog does not follow the JB dialog design guide 
+-Settings: AppOps: Add bootup template
+-Remove empty App Security preference group
+-Settings AppOps: show/hide app type and allow/deny counters 
+-Settings AppOps: Forward port wifi/bluetooth/mobile/wakeup ops
+-cm source updates and improvements
+
 # Resurrection Remix KitKat 4.4.2 - 20140128 # Basic
 
 -Enable build with linaro 4.7.4 toolchain (more info http://www.linaro.org/linux-on-arm/)
