@@ -11,6 +11,7 @@ Forum  : http://www.resurrectionremix.com
 -Update rom version number as v5.0.0 
 -Remove lame live wallpapers 
 -track back cm camera2
+-fix f-ing status bar icon update issues with center clock
 -Appears black screen fix for a while 
 -Bluetooth: Fix to avoid framework reboot during monkey.
 -Hide additional AppOps function 
