@@ -8,7 +8,7 @@ Forum  : http://www.resurrectionremix.com
 # Resurrection Remix KitKat 4.4.2 - v5.0.0 # Basic
 
 -Add Resurrection Setup wizard (base on CMAccount)
--Update rom version number 5.0.0 
+-Update rom version number as v5.0.0 
 -Remove lame live wallpapers 
 -track back cm camera2
 -Appears black screen fix for a while 
