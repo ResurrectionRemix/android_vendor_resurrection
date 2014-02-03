@@ -10,13 +10,14 @@ include vendor/cm/config/cm_audio.mk
 # Include CM LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 
-# Optional CM packages
+# Optional packages
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhaseBeam \
     PhotoTable \
     VoiceDialer \
-    SoundRecorder
+    SoundRecorder \
+    OmniSwitch \
 
 PRODUCT_PACKAGES += \
     VideoEditor \
