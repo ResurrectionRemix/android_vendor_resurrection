@@ -12,10 +12,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
-    Galaxy4 \
-    LiveWallpapers \
     LiveWallpapersPicker \
-    NoiseField \
     PhaseBeam \
     PhotoTable \
     VoiceDialer \
