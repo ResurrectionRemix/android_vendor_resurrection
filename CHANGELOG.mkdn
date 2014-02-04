@@ -5,6 +5,45 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.0.1-20140204 # Basic
+
+-AOKP custom system animations 
+-improve catagories
+-Fix elapsed time formatting.
+-Fix memory leak in ManageApplication 
+-Settings: Port IME selector notification toggle 
+-fix issues with linked layout quicksettings
+-make navbar size option more readily available
+-update quick_settings_tile_user.xml
+-update qs generic tile
+-Unbreak PIN/Password lockscreen options
+-remove duplicate volume option
+-OmniSwitch app
+-OmniSwitch holo theme
+-add OmniSwitch to RR Tools
+-resurrection wallpapers v6.0
+-improve focus mode
+-camera improvements
+-Remove more live wallpapers to reduce ROM size
+-Increase scroll speeds
+-GlobalActions: Set the initial status of airplane mode toggle
+-Vpn: Setup routes.
+-update notification header images
+-fix network tile text
+-fix battery tile text
+-fix for volume panel : now respecting like a b****
+-SUPL early data connection fix
+-fix height and width ratio of notification header images
+-fix issues with linked layout quicksettings
+-Add CPU boosting hooks 
+-Hide the notification tray carrier label during and not after flip
+-DockBatteryMeter: Avoid double detach when view is rebuilt
+-Multi-carrier overlays: Fix Mms
+-Generic multi-carrier overlays based on hammerhead
+-remove jb changelog
+-including all cm updates
+
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.0-20140130 # Basic
 
 -Add Resurrection Setup wizard (base on CMAccount)
