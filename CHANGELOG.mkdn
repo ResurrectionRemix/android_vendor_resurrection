@@ -12,7 +12,7 @@ Forum  : http://www.resurrectionremix.com
 -Added Active Display - included recent fixes and updates (ported by xenon92)
 -Reduced DPI For fix layout issues on active display and other apps 
 -More camera fixes for i9300, n7100
--Omni swich updates
+-OmniSwitch updates
 -PrivacyGuard: confirm permissions reset
 -Move lockscreen buttons options to one place 
 -Fix PG Showing Duplicate SMS
@@ -26,13 +26,13 @@ Forum  : http://www.resurrectionremix.com
   mms
   keyboard
 
--fix battery stats 
--update notification header afternoon image
--add circle s-pen pointer
--systemui: improve DessertCaseDream immersive mode exit 
+-Fix battery stats 
+-Update notification header afternoon image
+-Add circle s-pen pointer
+-SystemUI: improve DessertCaseDream immersive mode exit 
 -Quick Record Tile Save Location 
 -Allow forcing HighEndGfx mode
--add option to force high-end graphics on low memory devices
+-Add option to force high-end graphics on low memory devices
 
 -Open source google dialer and more :
  This is an open source variant of the well known google Dialer which gives the
@@ -41,7 +41,7 @@ Forum  : http://www.resurrectionremix.com
 
  Providers which are currently available:
 
- lookup/nearby places:
+ Lookup/nearby places:
  Google
  OpenStreetMap
 
@@ -53,15 +53,15 @@ Forum  : http://www.resurrectionremix.com
  ZabaSearch (US-only)
 
 -Notification drawer : deep solid notification header bg
--qs: sync volume tile icon (Display the current volume level in the volume qs tile)
+-QS: sync volume tile icon (Display the current volume level in the volume qs tile)
 -Update RR PlatLogoActivity
 -Left handed navbar during landscape mode
 -ActivityManager: Fix monkey tests 
 -Addition of automobile profile and group apps
 -Frameworks AppOps: fix allow/reject counting 
 -Modify alarm tile to show alarms when clicked 
--storage: Don't list removed volumes in storage list
--keyguard: fix delay lock screen sound
+-Storage: Don't list removed volumes in storage list
+-Keyguard: fix delay lock screen sound
 -Restore ProfileGroup notification override functionality
 -AND Included a lot fixes on this update .. ENJOY
 
