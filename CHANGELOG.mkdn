@@ -8,10 +8,10 @@ Forum  : http://www.resurrectionremix.com
 # Resurrection Remix KitKat 4.4.2 - v5.0.2-20140212 # Basic
 
 -Included full open source updates
--Switched to omni kernel - improved source - Graphic - battery - linaro toolchain 4.7.4 enabled (Best performans and stabilitiy i ever seen on i9100 - i9300 -n7100)
+-i9100, i9300, n7100 - Switched to omni kernel - improved source - Graphic - battery - linaro toolchain 4.7.4 enabled (Best performance and stabilitiy I have ever seen on i9100 - i9300 -n7100)
+-Added Active Display - included recent fixes and updates (ported by xenon92)
 -Reduced DPI For fix layout issues on active display and other apps 
--More camera fixes for i9300-n7100
--Added Active Display, included recent fixes and updates (ported by xenon92)
+-More camera fixes for i9300, n7100
 -Omni swich updates
 -PrivacyGuard: confirm permissions reset
 -Move lockscreen buttons options to one place 
@@ -20,7 +20,7 @@ Forum  : http://www.resurrectionremix.com
 -Bring back Camera widget option for tablets
 -LightSettingsDialog: update led on text change
 -Edit Resurrection tools catagories
--Updated PB Theme 
+-Updated Pitch Black Theme 
   dialer
   phone
   mms
