@@ -13,8 +13,6 @@ Forum  : http://www.resurrectionremix.com
 -Reduced DPI For fix layout issues on active display and other apps 
 -More camera fixes for i9300, n7100
 -OmniSwitch: service life-cycle tweaks
--OmniSwitch: omniswitch as default recents
--OmniSwitch: UI tweaks
 -PrivacyGuard: confirm permissions reset
 -Move lockscreen buttons options to one place 
 -Fix PG Showing Duplicate SMS
