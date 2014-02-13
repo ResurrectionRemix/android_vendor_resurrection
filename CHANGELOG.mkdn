@@ -5,6 +5,18 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.0.2.1-20140213 # Basic
+ 
+-fix update only for i9100-i9300-n7100
+-revert back to 240 - 320 DPI fixes google play issues
+-kernel updates - fixed hardware backlights options 
+-galaxys2: add AdvancedDisplay
+-update media_codecs
+-galaxys2-common: update overlays
+-added call_noise_suppression paths option 
+-Proper battery 
+-lot of media and camera updates
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.2-20140212 # Basic
 
 -Included full open source updates
