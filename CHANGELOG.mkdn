@@ -7,7 +7,7 @@ Forum  : http://www.resurrectionremix.com
 -----------------------------------------------
 # Resurrection Remix KitKat 4.4.2_r2 - v5.0.3-20140219 # Basic
 
--Update to android-4.4.2_r2
+-Update to android-4.4.2_r2 -changelog https://funkyandroid.com/aosp-KOT49H-KVT49L.html
 -***HIGHLY RECOMMENDED FULL WIPE (FACTORY RESET) - OTHER WHISE YOU MAY HAVE TON OF ISSUES AFTER INSTALLATION
 -***Updated GAPPS (DO NOT İNSTALL OLDER GAPPS) http://d-h.st/W1q
 
