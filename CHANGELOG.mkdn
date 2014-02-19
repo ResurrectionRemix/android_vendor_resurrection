@@ -5,6 +5,51 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2_r2 - v5.0.3-20140219 # Basic
+
+-Update to android-4.4.2_r2
+-***HIGHLY RECOMMENDED FULL WIPE (FACTORY RESET) - OTHER WHISE YOU MAY HAVE TON OF ISSUES AFTER INSTALLATION
+-***Updated GAPPS (DO NOT İNSTALL OLDER GAPPS) http://d-h.st/W1q
+
+-Add preference for EdgeGesture service. 
+-update all translations
+-SmoothProgressBar: User Custom ProgressBar Setting
+-Configurable up to user (LTE or 4G)
+-LS Notifications: Custom Background color
+-LockScreen Notifications by AOSPAL 
+-5 status bar clock font style
+-statusbar clock customization options
+-fix active display keyguard derp
+-make fit active display lockscreen layout
+-Fix appwidgets not updating
+-UsbDebuggingManager: Fix multiple NPEs toggling USB debugging 
+-Fix memory leak in PatchCache 
+-Fix up Wifi Display tile for screencasting and reenable it
+-Rename WiFiDisplay to RemoteDisplay
+-add support for translucent volume panel
+-Updated lockscreen blur added Redius option
+-show live wallpaper in recents view on high-end devices
+-add RR style status bar clock font
+-update pb wallpapers
+-fix volume panel more button transparency 
+-galaxys2: sdcard config update Commit adds parameters specific to kk4.4
+-update camera overlays
+-updated camera app - base on slim camera2
+-fixed front camera video record for galaxy s2 
+-camera fixes for all devices
+-Camera pitch black theme
+-updated navigation buttons for pitch black
+-updated pull down notification panel for pitch black
+-lot of media and sound fixes
+-added back vibrator intensity option  
+-Kernel updates
+-n7100 device source updated
+-Remove download notification after preview
+-Added noise suppression option for i9300
+-Add support for import contacts to local phone storage
+-InCall full screen photo
+
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.2.1-20140213 # Basic
  
 -fix update only for i9100-i9300-n7100
