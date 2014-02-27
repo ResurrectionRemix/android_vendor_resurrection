@@ -39,8 +39,6 @@ Forum  : http://www.resurrectionremix.com
 -Fix crash on theme change 
 -Fix too long ON/OFF strings 
 -Expanded Desktop : Fix Left handed navbar during landscape mode 
-
-
 -fix notification header not updating automatically
 -fix notification header image timings
 -A background started service is removed from mStartingBackground when timeout
