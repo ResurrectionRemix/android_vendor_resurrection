@@ -7,26 +7,29 @@ Forum  : http://www.resurrectionremix.com
 -----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.0.4-20140227 # Basic
 
+-Add facebook sync
+-Tile style options -colors - pressed colors - transparency
+-Updated Resurrection Remix logo in updater-script
+-Show default profile name if no profile exists
+-Show owner info creation if no owner is set for UserTile
+-Custom clear recents button options
+-Upgrade Network Speed Indicator
+-Camera-Fix Power Shutter Exception
 -Fix detection of 0.3 hwcomposer
 -Graphics:Add error check when create GraphicBuffer
 -n7100 add back multi user
 -smdk4412: update Boeffla Sound 1.6.5
--camera-Fix Power Shutter Exception
 -fix i9100 sd card issues
 -fix for 3d games sound issues
 -improved Camera and media updates
--Add facebook sync
 -MediaRecorder: Add pause interface
 -VideoView: Implement the suspend/resume operation in VideoView
 -Add 2 APIs (suspend/resume) in MediaPlayer 
--Tile style options -colors - pressed colors - transparency
 -custom Animations-fix black space with enter only and translucent reverse exit 
 -Show panels on lockscreen in expanded desktop mode.
 -Fix the issue that the top of fullscreen dialog is clipped away
 -Set expanded desktop through profiles
 -UserTile : Check if profile has a photo
--Show default profile name if no profile exists
--Show owner info creation if no owner is set for UserTile
 -NumberPicker: Don't filter Bengali-Indic characters
 -Block application install from unknown sources through adb
 -add STREAM_DTMF to stream affected by ringer mode
@@ -36,14 +39,13 @@ Forum  : http://www.resurrectionremix.com
 -Fix crash on theme change 
 -Fix too long ON/OFF strings 
 -Expanded Desktop : Fix Left handed navbar during landscape mode 
--Fix Power Shutter Exception
--Upgrade Network Speed Indicator
+
+
 -fix notification header not updating automatically
 -fix notification header image timings
 -A background started service is removed from mStartingBackground when timeout
 -Fix, MountService now only sends one onShutDownComplete
 -Finish fixing Zygote descriptor leakage problem
--Custom clear recents button options
 -Fix a programmatic smooth scroll bug 
 -fix volume panel more button transparency
 
