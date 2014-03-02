@@ -18,7 +18,14 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     OmniSwitch \
-    Lightbulb \
+
+# Paranoid Android's Lightbulb app
+# To enable flashlight support in this app, follow this commit
+# for your device. Link - http://goo.gl/BFu51i
+
+# PRODUCT_PACKAGES += \
+#     Lightbulb \
+
 
 PRODUCT_PACKAGES += \
     VideoEditor \
