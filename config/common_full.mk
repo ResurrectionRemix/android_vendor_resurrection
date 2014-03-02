@@ -18,6 +18,7 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     OmniSwitch \
+    Lightbulb \
 
 PRODUCT_PACKAGES += \
     VideoEditor \
