@@ -5,6 +5,44 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+
+# Resurrection Remix KitKat 4.4.2 - v5.0.5-201403__ # Basic
+
+NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
+       containing the link to your ROM thread if you want your name to be added
+       in Device Maintainers list.
+       
+     - We are releasing a new Official Resurrection Remix Custom Recovery 
+       based on the latest CWM non-touch recovery. You can download it from the 
+       respective ROM threads for your device.
+
+- Completely redesigned Resurrection Tools
+- Added the new Slim Recents
+- Added Device maintainers
+- Added an Xposed Setting in Resurrection Tools (it will show up only if Xposed-Installer is installed)
+- Added Suspend Actions
+- Added Wakelock blocker
+- Added a new Location Tile - Port from SlimROMs (thanx to rodman01)
+- Updated Resurrection Walls to v7.0
+- Added Toast Animation settings
+- Added an option to toggle status bar visiblity on lock screen
+- i9082: Add multi-user support
+- Added an option to disable camera sounds
+- Base: fix icon overflowing with centre clock
+- Base: Added support for Lightbulb app from Paranoid Android 
+- SystemUI: open quick settings panel if there are no notifications
+- SystemUI: Fix displaying of user photo.
+- Settings: Added more options in AppOps
+- Settings: SD card partition info menu 
+- Added day and week on data usage cycles
+- Enabled status bar brightness control for tablets
+- Base: Do not force notification vibrations in Vibrate Mode
+- Base: Decrease volume panel transparency
+- Improved Pitch Black
+- Merged latest fixes and commits from CyanogenMod
+- Many more fixes and updates...
+
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.4-20140227 # Basic
 
 -Add facebook sync
