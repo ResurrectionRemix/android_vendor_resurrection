@@ -29,6 +29,7 @@ NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
 - Added an option to toggle status bar visiblity on lock screen
 - i9082: Add multi-user support
 - Added an option to disable camera sounds
+- switch back to cm camera
 - Base: fix icon overflowing with centre clock
 - Base: Added support for Lightbulb app from Paranoid Android 
 - SystemUI: open quick settings panel if there are no notifications
