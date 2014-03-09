@@ -6,7 +6,7 @@ Forum  : http://www.resurrectionremix.com
  For extended changelog track github activities
 -----------------------------------------------
 
-# Resurrection Remix KitKat 4.4.2 - v5.0.5-201403__ # Basic
+# Resurrection Remix KitKat 4.4.2 - v5.0.5-20140309 # Basic
 
 NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
        containing the link to your ROM thread if you want your name to be added
@@ -17,7 +17,8 @@ NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
        respective ROM threads for your device.
 
 - Completely redesigned Resurrection Tools
-- Added the new Slim Recents
+- Added the new Slim Recents (can be toggled back to stock recents in Resurrection Tools)
+- Added Slim's Notification Reminder feature
 - Added Device maintainers
 - Added an Xposed Setting in Resurrection Tools (it will show up only if Xposed-Installer is installed)
 - Added Suspend Actions
@@ -38,7 +39,24 @@ NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
 - Enabled status bar brightness control for tablets
 - Base: Do not force notification vibrations in Vibrate Mode
 - Base: Decrease volume panel transparency
+- VolumePanel: Don't force navigation bar
 - Improved Pitch Black
+- Bluetooth: Added new key to store last connected A2dp Sep type
+- SystemUI: Only show H+ if config_hspa_data_distinguishable is set
+- Base: Fix graphics corruption caused by HWUI caches
+- Fixed upgrading from forward-lock application to system application
+- Updates to Privacy Guard
+- DocumentsUI: Add a standalone File Manager
+- Telephony: Flip to Mute/Reject Call
+- Telephony: Open source google dialer and more 
+- Added Dark Dialer
+- Added Flip to Mute/Reject Call 
+- SF: Determine if virtual display can use HWC for composition 
+- SF: Fix invalid reduction of transparent region from a layer.
+- AV: add .mov extension support
+- AV: fix mute issue for h.264 and MPEG4 
+- AV: add Sony camera parameters 
+- AV: alot of other updates and fixes
 - Merged latest fixes and commits from CyanogenMod
 - Many more fixes and updates...
 
