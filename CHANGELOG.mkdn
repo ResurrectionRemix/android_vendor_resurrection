@@ -5,8 +5,10 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
--Gapps update :LIGHT_GAPPS-RR-KK-4.4.2-20140316-ART
+-Gapps update :LIGHT_GAPPS-RR-KK-4.4.2-20140316-ART 87.39 MB
 
+ http://d-h.st/users/westcrip/?fld_id=30545#files
+ 
 -Gapps Changelog-
 
 -Fixed google play dissapearing for some devices 
