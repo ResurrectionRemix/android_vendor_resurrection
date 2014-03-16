@@ -5,6 +5,43 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.0.6-20140316 # Basic
+
+- Systemui:fix notification panel layout overlap
+- Add new halo switcher button on notification pulldown
+- slim recent fix home button lag
+- Frameworks: slimrecents fixes update
+- SlimRecents: go more inline with AOSP and add menu + new googly shortcuts
+- SlimRecents: keep IME keyboard alive due recent is showing 
+- slimrecents: call app details screen correctly 
+- slimrecents: go kitkat + style tweaks and follow googles color sheme 
+- PackageManager: Fix reconnection logic in Installer.
+- update notification header images
+- SystemUI: Update Ringer tile code.
+- Lockscreen background style 
+- FaceUnlock: Check if faceunlock is disabled 
+- Lockscreen: Turn on slow screens way faster 
+- SystemUI: Set Status bar opaque during drawer pulldown on tablets only
+- SystemUI: fix calculating alpha for back button in landscape mode. 
+- settings : Deactivate stock recents options on selecting Slim Recents
+- update all xml & values OPS resources
+- add rr tools hindu language -translated by the-dagger
+- add rr tools norway translations - translated by Thomas Åsnes
+- add rr tools Danish translations - translated by David Kallestrup
+- add rr tools Malaysian translations - translated by Hasif Hashem
+- Fix in danish language fc when tap to hw buttons options
+- Settings/Wifi: Add support for Ad-hoc (IBSS) networks 
+- Fix resource IDs being added to the android namespace 
+- Settings: Fix AppOps arrays 
+- Kernel : update local version to RESURRECTION
+- i9300 & n7100: audio: fix battery drain after phone call
+- i9300: audio: update hal
+- i9300: audio: hal update
+- Return to slim camera ( more stable ) 
+- Merged latest fixes and commits from CyanogenMod
+- Many more fixes and updates...
+
+
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.5-20140309 # Basic
 
