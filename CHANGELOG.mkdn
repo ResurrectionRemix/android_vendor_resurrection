@@ -5,40 +5,34 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
--Gapps update :LIGHT_GAPPS-RR-KK-4.4.2-20140316-ART 87.39 MB
 
- http://d-h.st/users/westcrip/?fld_id=30545#files
+- Gapps update: LIGHT_GAPPS-RR-KK-4.4.2-20140316-ART 87.39 MB
+
+    Gapps Link - http://d-h.st/users/westcrip/?fld_id=30545#files
  
--Gapps Changelog-
-
--Fixed google play dissapearing for some devices 
-
--Fixed keyboard gestures fc
-
--Fixed broken zip error
-
--Included Google DNS
-
--Support for all devices
-
--Included google apps
- 
-- GOOGLE PLAY 
-- HANGOUTS 
-- YOUTUBE 
-- GMAIL 
-- GOOGLE CALENDAR
+- Gapps Changelog -
+   - Fixed google play dissapearing for some devices 
+   - Fixed keyboard gestures fc
+   - Fixed broken zip error
+   - Included Google DNS
+   - Support for all devices
+   - Included google apps
+       - GOOGLE PLAY 
+       - HANGOUTS 
+       - YOUTUBE 
+       - GMAIL 
+       - GOOGLE CALENDAR
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.6-20140316 # Basic
 
 - Systemui:fix notification panel layout overlap
 - Add new halo switcher button on notification pulldown
-- slim recent fix home button lag
+- Slim recent fix home button lag
 - Frameworks: slimrecents fixes update
 - SlimRecents: go more inline with AOSP and add menu + new googly shortcuts
 - SlimRecents: keep IME keyboard alive due recent is showing 
-- slimrecents: call app details screen correctly 
-- slimrecents: go kitkat + style tweaks and follow googles color sheme 
+- Slimrecents: call app details screen correctly 
+- Slimrecents: go kitkat + style tweaks and follow googles color sheme 
 - PackageManager: Fix reconnection logic in Installer.
 - update notification header images
 - SystemUI: Update Ringer tile code.
@@ -49,11 +43,11 @@ Forum  : http://www.resurrectionremix.com
 - SystemUI: fix calculating alpha for back button in landscape mode. 
 - settings : Deactivate stock recents options on selecting Slim Recents
 - update all xml & values OPS resources
-- add rr tools hindu language -translated by the-dagger
-- add rr tools norway translations - translated by Thomas Åsnes
-- add rr tools Danish translations - translated by David Kallestrup
-- add rr tools Malaysian translations - translated by Hasif Hashem
-- Fix in danish language fc when tap to hw buttons options
+- Add rr tools Hindi language -translated by the-dagger
+- Add rr tools Norway translations - translated by Thomas Åsnes
+- Add rr tools Danish translations - translated by David Kallestrup
+- Add rr tools Malaysian translations - translated by Hasif Hashem
+- Fix in Danish language fc when tap on HW buttons options
 - Settings/Wifi: Add support for Ad-hoc (IBSS) networks 
 - Fix resource IDs being added to the android namespace 
 - Settings: Fix AppOps arrays 
@@ -64,7 +58,6 @@ Forum  : http://www.resurrectionremix.com
 - Return to slim camera ( more stable ) 
 - Merged latest fixes and commits from CyanogenMod
 - Many more fixes and updates...
-
 
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.5-20140309 # Basic
