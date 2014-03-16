@@ -5,6 +5,28 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+-Gapps update :LIGHT_GAPPS-RR-KK-4.4.2-20140316-ART
+
+-Gapps Changelog-
+
+-Fixed google play dissapearing for some devices 
+
+-Fixed keyboard gestures fc
+
+-Fixed broken zip error
+
+-Included Google DNS
+
+-Support for all devices
+
+-Included google apps
+ 
+- GOOGLE PLAY 
+- HANGOUTS 
+- YOUTUBE 
+- GMAIL 
+- GOOGLE CALENDAR
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.6-20140316 # Basic
 
 - Systemui:fix notification panel layout overlap
