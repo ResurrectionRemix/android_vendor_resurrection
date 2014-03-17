@@ -43,7 +43,7 @@ Forum  : http://www.resurrectionremix.com
 - SystemUI: fix calculating alpha for back button in landscape mode. 
 - settings : Deactivate stock recents options on selecting Slim Recents
 - update all xml & values OPS resources
-- Add rr tools Hindi language -translated by the-dagger
+- Add rr tools Hindi language - translated by Harshit Dwivedi aka dagger @ XDA
 - Add rr tools Norway translations - translated by Thomas Åsnes
 - Add rr tools Danish translations - translated by David Kallestrup
 - Add rr tools Malaysian translations - translated by Hasif Hashem
