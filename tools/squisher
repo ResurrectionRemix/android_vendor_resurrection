@@ -5,6 +5,7 @@
 #
 . $ANDROID_BUILD_TOP/vendor/cm/tools/functions
 
+BUILD_DATE=`date +%Y%m%d`
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
 then
@@ -76,7 +77,7 @@ $SED -i \
 MODVERSION=`sed -n -e'/ro\.rr_modversion/s/^.*=//p' $OUT/system/build.prop`
 TARGET_PRODUCT_FINAL=`echo $TARGET_PRODUCT | cut -d '_' -f2`
 echo $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
-OUTFILE=$OUT/$MODVERSION-$TARGET_PRODUCT_FINAL.zip
+OUTFILE=$OUT/$MODVERSION-$BUILD_DATE-$TARGET_PRODUCT_FINAL.zip
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
