@@ -62,11 +62,6 @@ find ./ -name \*.apk | $XARGS $OPTICHARGER
 mv -f $REPACK/parallel/framework-res.apk $REPACK/ota/system/framework/framework-res.apk
 mv -f $REPACK/parallel/*.apk $REPACK/ota/system/app/
 
-# Optimize /priv-app/
-cp $REPACK/ota/system/priv-app/*.apk .
-find ./ -name \*.apk | $XARGS $OPTICHARGER
-mv -f $REPACK/parallel/*.apk $REPACK/ota/system/priv-app/
-
 # Return to directory
 cd $REPACK/ota
 rm -rf $REPACK/parallel
