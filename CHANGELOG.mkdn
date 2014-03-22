@@ -8,43 +8,45 @@ Forum  : http://www.resurrectionremix.com
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.7-20140322 # Basic
 
--Fix F/C in TTS settings
--Add maintainer ace 2
--Frameworks: Fix linked volume does not persist after reboot. 
--Slim Recents:make it RTL/LTR aware + scaling + lefty mode + add favorite mode
--Replace CM Torch QS tile pngs with pngs from PA
--FaceUnlock: Check if faceunlock is disabled 
--Make notification_header_bg a .9.png for better theming
--SystemUI:Resurrection design pulldown
--fix for lockscreen rotation bug
--update PB default wallpaper
--PB : update status bar close png
--Keyguard: Fix configuration change observer
--Multi-user support for phones
--Fix to memory leak leaving WallpaperCropActivity.
--Fix progress of VolumePanel never refresh 
--remove unnecessary switchUser call 
--NULL previous background bitmap upon changing wallpaper
--Hang off call by power button while screen is on
--[ScreentShot]: change the implementation of get image file size
--Squash: Memory leaks, NPEs, races and optimizations for fw/base 
--Detach engines before destroying WallpaperService 
--fix for system ui fc on boot
--App sidebar: some impovements 
--Phone : Smart Phone Call
--developer options:Allow disabling of FC dialogs 
--Revert "SystemUI: open settings panel if there are no notifications"
--Smart Pulldown options
--add evening time for notification header
--n7100: fix static in video
--n7100: audio: updates from replicant 
--n7100: audio: updates for hal 
--LockClock :change font style
--Add rr tools Arabic translations translated by Cooper DMselecto
--Add rr tools italian translations translated by Volpe92
--Resurrection Developers: allow twitterHandle to be null
--included Lot of sound and media updates
--Included all cm11 source updates
+- Smart Pulldown
+- Multi-user support for phones (Lock screen multi-user support)
+- Add evening time for notification header
+- Add Device Maintainer - Galaxy Ace 2
+- SystemUI: Resurrection design pulldown
+- Phone: Smart Phone Call
+- Developer Options: Allow disabling of FC dialogs 
+- LockClock: change font style
+- Frameworks: Fix linked volume does not persist after reboot. 
+- Slim Recents: make it RTL/LTR aware + scaling + lefty mode + add favorite mode
+- Replace CM Torch QS tile pngs with pngs from Paranoid Android
+- FaceUnlock: Check if faceunlock is disabled 
+- Make notification_header_bg a .9.png for better theming
+- Fix for lockscreen rotation bug
+- Update PB default wallpaper
+- Fix F/C in TTS settings
+- PB: update status bar close png
+- Keyguard: Fix configuration change observer
+- Fix to memory leak leaving WallpaperCropActivity.
+- Fix progress of VolumePanel never refresh 
+- Remove unnecessary switchUser call 
+- NULL previous background bitmap upon changing wallpaper
+- Hang off call by power button while screen is on
+- [ScreentShot]: change the implementation of get image file size
+- Squash: Memory leaks, NPEs, races and optimizations for base
+- Detach engines before destroying WallpaperService 
+- Fix SystemUI FC on boot
+- App sidebar: some impovements 
+- n7100: fix static in video
+- n7100: audio: updates from replicant 
+- n7100: audio: updates for hal 
+- Add RR tools Arabic translations translated by Cooper DMselecto
+- Add RR tools Italian translations translated by Volpe92
+- Resurrection Developers: allow twitterHandle to be null
+- Included lot of sound and media updates
+- Included all CyanogenMod source updates
+
+
+-----
 
 
 - Gapps update: LIGHT_GAPPS-RR-KK-4.4.2-20140316-ART 87.39 MB
