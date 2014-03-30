@@ -145,7 +145,7 @@ PRODUCT_PACKAGES += \
     ScreenRecorder \
     libscreenrecorder \
     CMFota \
-    CMAccount
+    ResurrectionSetup 
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
