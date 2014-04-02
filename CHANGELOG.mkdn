@@ -5,6 +5,48 @@ Forum  : http://www.resurrectionremix.com
  
  For extended changelog track github activities
 -----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.0.8-20140402 # Basic
+
+-Add T-Mobile and AT&T Galaxy S III maintainer Deliberate
+-RR Tools romanian translations - translated by Vlad Daniel Calin
+-add new boot animations made by therichieboy 
+-bootanim: Add continuous splash support 
+-Revert back to cm camera for now - Devices like i9100:fix for front video camera issues.install 5.0.7 camera app
+-WallpaperCropper: Fix crash when set .gif as wallpaper
+-Lockscreen Blur: Disable if music is playing
+-Quiet Hours: Add 4 state (off, timed inactive, timed active and forced on) support
+-Settings: Fix Quiet Hours Tile long press action 
+-Add theme support to Ringtone and Profile pickers activities
+-contacts: Holo Light ringtone picker dialog 
+-Lockscreen Notifications: some fixes 
+-Update some translations 
+-SystemUI: add indonesian translation 
+-frameworks/base: forward port DC-HSPAP support from cm-10
+-fix: Proper security labeling of multi-user data directories.
+-Live Volume Steps
+-frameworks/base: Fix the random UI corruption 
+-Developer options : long press back to kill configurable timeout
+-halo fix updates
+-Fix Floating window bug
+-Halo: Modify behavior 
+-Frameworks: do not kill favorite recent apps 
+-Frameworks: notify arrayadapter early that data has changed on clear all
+-Custom Scroll mod
+-IME animations
+-Frameworks:fix possible NPE + and missing expandable panel
+-Base: Mirroring layout on RTL languages
+-Settings: Integrate Voice+ into Settings
+-contacts: Add support for import contacts to local phone storage
+-galaxys2: Fix the inability to mount/unmount sdcard
+-smdk4412: update fimc_capture and sr130pc20 cam driver 
+-PB Theme for calendar app
+-PB Theme for Email app
+-smdk4412: update camera resources
+-smdk4412: update batteryCurrentNowPath
+-i9300: audio: bring back removed microphone fix
+-i9300: audio: fix input device selection 
+-Included lot of sound and media updates
+-Included all CyanogenMod source updates
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.7-20140322 # Basic
 
