@@ -7,6 +7,9 @@ Forum  : http://www.resurrectionremix.com
 -----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.0.8-20140402 # Basic
 
+ATTENTION: ART won't work on this update. This is CM source base issue.
+           Switch back to dalvik runtime before flashing the ROM.
+
 - New boot animation (thanx to therichieboy)
 - Fix multi-user
 - Live Volume Steps
