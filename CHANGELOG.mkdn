@@ -1,10 +1,19 @@
-Source : http://github.com/ResurrectionRemix
-Forum  : http://www.resurrectionremix.com
+Resurrection Remix ® ROM
+===============================================
+
+CHANGELOG
+===============================================
+
+Source Code: http://github.com/ResurrectionRemix
+
+Website: http://www.resurrectionremix.com
+
 -----------------------------------------------
- Resurrection Remix ROM Basic CHANGELOG
- 
- For extended changelog track github activities
+
+For extended changelog, track github activities
+
 -----------------------------------------------
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.8-20140402 # Basic
 
 ATTENTION: ART won't work on this update. This is CM source base issue.
@@ -477,160 +486,160 @@ NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
 
 # Resurrection Remix KitKat 4.4.2 - 20140123 # Basic
 
--Add option to enable/disable wifi name from notification drawer
--Update network traffic indicator
--Port IME selector notification toggle
--Camera button support
--Remove 'Allow custom buttons' checkbox
--Fix up top level "Privacy" section
--Make Privacy Guard a first class citizen in the Settings app.
--Settings: Port IME selector notification toggle 
--Settings: use CMHW serial number 
--PrivacyGuard: Specify a default value in Settings.getInt method call 
--Storage Settings: Allow user to trigger a volume rescan 
--Bluetooth: Don't set a null alias before unpairing 
--Fix crash when opening privacy settings on tablets.
--Fix LTO availability check.
--Fix confusing warning dialog behaviour.
--Settings: Make CM Settings visible for users other than the owner
--Remove PG from the visibility changes
--Fix reference to privacy settings 
--notification transparency
--notification drawer background
--Port BatteryBar from aokp
--update color picker
--remove tap to be developer shit
--dont hide performance-superuser-development settings
--Quiet Hours: Allow disabling phone ringer
--Settings: Add some more entries into 'SMS message limit' menu
--Bluetooth updates
--update Buttons and layout
--update strings
--Settings: instant led test
--Lockscreen shortcuts: Fix icon pack usage
--Notification : Fix app info long-press 
--Keyguard: do not allow to delete the system widget if widgets are disabled
--Keyguard: let the user drag the challenge down if widgets are disabled
--Keyguard: fix not shown overlay widgets from system
--swipe anywhere on notification panel to switch views
--WiFi label is not a Quote!
--Keyguard: don't refresh ui when screen off
--Fix error checking in MemoryFile.
--Fix to NullPointerException on move back in ActivityStack.
--Fixed incorrect calculation of dirty invalidation area 
--Remove the navigation camera icon in keyguard if disabled by DPM
--update Lockscreen Blur
--DisplaySettings: Add hardware-framework support for tap-to-wake
--included all cm source updates  
+- Add option to enable/disable wifi name from notification drawer
+- Update network traffic indicator
+- Port IME selector notification toggle
+- Camera button support
+- Remove 'Allow custom buttons' checkbox
+- Fix up top level "Privacy" section
+- Make Privacy Guard a first class citizen in the Settings app.
+- Settings: Port IME selector notification toggle 
+- Settings: use CMHW serial number 
+- PrivacyGuard: Specify a default value in Settings.getInt method call 
+- Storage Settings: Allow user to trigger a volume rescan 
+- Bluetooth: Don't set a null alias before unpairing 
+- Fix crash when opening privacy settings on tablets.
+- Fix LTO availability check.
+- Fix confusing warning dialog behaviour.
+- Settings: Make CM Settings visible for users other than the owner
+- Remove PG from the visibility changes
+- Fix reference to privacy settings 
+- notification transparency
+- notification drawer background
+- Port BatteryBar from aokp
+- update color picker
+- remove tap to be developer shit
+- dont hide performance-superuser-development settings
+- Quiet Hours: Allow disabling phone ringer
+- Settings: Add some more entries into 'SMS message limit' menu
+- Bluetooth updates
+- update Buttons and layout
+- update strings
+- Settings: instant led test
+- Lockscreen shortcuts: Fix icon pack usage
+- Notification : Fix app info long-press 
+- Keyguard: do not allow to delete the system widget if widgets are disabled
+- Keyguard: let the user drag the challenge down if widgets are disabled
+- Keyguard: fix not shown overlay widgets from system
+- swipe anywhere on notification panel to switch views
+- WiFi label is not a Quote!
+- Keyguard: don't refresh ui when screen off
+- Fix error checking in MemoryFile.
+- Fix to NullPointerException on move back in ActivityStack.
+- Fixed incorrect calculation of dirty invalidation area 
+- Remove the navigation camera icon in keyguard if disabled by DPM
+- update Lockscreen Blur
+- DisplaySettings: Add hardware-framework support for tap-to-wake
+- included all cm source updates  
 
 # Resurrection Remix KitKat 4.4.2 - 20140116 # Basic
 
--Adds ability to answer call with hardware HOME button (accessibility settings)
--Enable Back-key when go to Emergency call 
--CS translation- fix for fcs of SystemUI
--FastTorch option
--Fix Icon size in DocumentsUI
--Switch back to holo blue header font color
--Add option to always show battery status on lockscreen
--Allow modification of the camera widget option on insecure lock screens
--Dont show "Erase SD Card" when there is none 
--Update gesture preference check
--Update DocumentsUI for theme chooser combatibility 
--Make it possible to show smaller tile icons
--clear recent button replace to bottom 
--add RAM bar and options
--fix framework base issues
--fix incoming call background
--Update the color of the expandable volume panel icon 
--Add text plain battery style 
--Don't show notification count for a notification with just one item
--Flip to Mute/Reject Call (phone settings)
--update pb theme
--Show owner info creation if no owner is set for UserTile
--Updated all tranlations
--fixed low dpi fc
--I9100-xhdpi Framework res experience
--No more Experimental releases all will be official
--latest source updates and improvements
+- Adds ability to answer call with hardware HOME button (accessibility settings)
+- Enable Back-key when go to Emergency call 
+- CS translation- fix for fcs of SystemUI
+- FastTorch option
+- Fix Icon size in DocumentsUI
+- Switch back to holo blue header font color
+- Add option to always show battery status on lockscreen
+- Allow modification of the camera widget option on insecure lock screens
+- Dont show "Erase SD Card" when there is none 
+- Update gesture preference check
+- Update DocumentsUI for theme chooser combatibility 
+- Make it possible to show smaller tile icons
+- clear recent button replace to bottom 
+- add RAM bar and options
+- fix framework base issues
+- fix incoming call background
+- Update the color of the expandable volume panel icon 
+- Add text plain battery style 
+- Don't show notification count for a notification with just one item
+- Flip to Mute/Reject Call (phone settings)
+- update pb theme
+- Show owner info creation if no owner is set for UserTile
+- Updated all tranlations
+- fixed low dpi fc
+- I9100-xhdpi Framework res experience
+- No more Experimental releases all will be official
+- latest source updates and improvements
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 20140109 # Basic
 
--non intrusive incall ui from omni rom
--Add master switch to disable Halo
--Added Halo app
--enabled multiuser for n7100
--QuickRecord Tile from slimkat
--Add touch feedback to the clear all recents button
--Make the lock screen camera widget configurable
--Fix multi-user issues
--Forward port cm11 Status Bar interface
--SystemUI: Allow theming battery via theme chooser
--Settings: Use solid actionbar 
--settings: Remove ZRAM settings
--Support the signed-builds FOTA updater, too 
--improved camera fixed issues
--improved Performance  
--Port over improvements from Chronus
--updated Resurrection Remix wallpapers to v5.0
--basic source updates and improvements
+- non intrusive incall ui from omni rom
+- Add master switch to disable Halo
+- Added Halo app
+- enabled multiuser for n7100
+- QuickRecord Tile from slimkat
+- Add touch feedback to the clear all recents button
+- Make the lock screen camera widget configurable
+- Fix multi-user issues
+- Forward port cm11 Status Bar interface
+- SystemUI: Allow theming battery via theme chooser
+- Settings: Use solid actionbar 
+- settings: Remove ZRAM settings
+- Support the signed-builds FOTA updater, too 
+- improved camera fixed issues
+- improved Performance  
+- Port over improvements from Chronus
+- updated Resurrection Remix wallpapers to v5.0
+- basic source updates and improvements
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 20140103 # Basic
 
--SystemUI: fix SearchPanel gesture in landscape mode.
--Add Multiuser option
--frameworks/base: remove some duplicate ringtones/notification sounds 
--AppOps: track op persistence by name instead of id 
--WifiController: fix high perf lock sometimes not respected
--Fix charging indication.
--Update immersive confirmation.
--Navbar: Fix MDPI & HDPI landscape layout
--SystemUI: don't crash when user disable default apps
--BluetoothManagerService: fix enabling/disabling BT from Quictsettings…
--SystemUI: Add double tap to sleep gesture 
--Camera2: Fix for unsupported resolutions by codec.
--Camera: Enable module switcher on resume
--Camera: Set the width dynamic to parent from fixed 400px
--Camera2: fix long press shutter behavior
--Re-add system settings fragment direct link.
--Settings: Forward port sound settings 
--Improve app op details layout.
--Allow tablets to send SMS if enabled in device overlays
--Fix FC when trying to adjust radio band via *#*#4636#*#* dialer code.
--AppOps/Privacy Guard: Fix up misaligned switches.
--Settings: Fix for missing notification volume slider in Volume panel.
--Removed broadcast reciever (for better battery life)
--and also included full cm source update 
+- SystemUI: fix SearchPanel gesture in landscape mode.
+- Add Multiuser option
+- frameworks/base: remove some duplicate ringtones/notification sounds 
+- AppOps: track op persistence by name instead of id 
+- WifiController: fix high perf lock sometimes not respected
+- Fix charging indication.
+- Update immersive confirmation.
+- Navbar: Fix MDPI & HDPI landscape layout
+- SystemUI: don't crash when user disable default apps
+- BluetoothManagerService: fix enabling/disabling BT from Quictsettings…
+- SystemUI: Add double tap to sleep gesture 
+- Camera2: Fix for unsupported resolutions by codec.
+- Camera: Enable module switcher on resume
+- Camera: Set the width dynamic to parent from fixed 400px
+- Camera2: fix long press shutter behavior
+- Re-add system settings fragment direct link.
+- Settings: Forward port sound settings 
+- Improve app op details layout.
+- Allow tablets to send SMS if enabled in device overlays
+- Fix FC when trying to adjust radio band via *#*#4636#*#* dialer code.
+- AppOps/Privacy Guard: Fix up misaligned switches.
+- Settings: Fix for missing notification volume slider in Volume panel.
+- Removed broadcast reciever (for better battery life)
+- and also included full cm source update  
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 2013126 # Basic
 
--Revert "Multi-window support" 
--Add HALO 2 final version Forward port from pa 4.3 
--App sidebar: floating window (long press to app side bar icons.apps Launchs in floating mode )
--Show as floating window on recent apps(long press)
--Launch floating notifications from notification panel (long press)
+- Revert "Multi-window support" 
+- Add HALO 2 final version Forward port from pa 4.3 
+- App sidebar: floating window (long press to app side bar icons.apps Launchs in floating mode )
+- Show as floating window on recent apps(long press)
+- Launch floating notifications from notification panel (long press)
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 2013125 # Basic
 
--Merged latest cm11 source updates
--Multi-window support - port from omni 4.3 ( leave feedback about issues )
--fix issue - battery percentage invisible after reboot
--Google play edition green color header font
--Custom carrier text option
--update missing google UI changes for 4.4 
--Forward port CM Screen Security settings
--Remove quick unlock from the spawn CB move to security section
--enable nav bar as default
--Navigation bar custom height option - on/off 
--ReportingService: Fix service startup
--Bluetooth: Fix to show internet access as marked when pan is connected
--Bluetooth: Set alias name only through Rename option
--Bluetooth: Not allow Blank BT device name.
--Bluetooth: Remove remote device from trust list on BOND change
--Bluetooth: GAP: Cancel the previous visibilty alarms if already set 
--Bluetooth: GAP: Cancel the pairing notification on bond state change
--Bluetooth: GAP: don't update autoconnect on bonding state
--Bluetooth: Destroy BT Dialog on BT power off.
--Reorganize and clean up lock screen section 
+- Merged latest cm11 source updates
+- Multi-window support - port from omni 4.3 ( leave feedback about issues )
+- fix issue - battery percentage invisible after reboot
+- Google play edition green color header font
+- Custom carrier text option
+- update missing google UI changes for 4.4 
+- Forward port CM Screen Security settings
+- Remove quick unlock from the spawn CB move to security section
+- enable nav bar as default
+- Navigation bar custom height option - on/off 
+- ReportingService: Fix service startup
+- Bluetooth: Fix to show internet access as marked when pan is connected
+- Bluetooth: Set alias name only through Rename option
+- Bluetooth: Not allow Blank BT device name.
+- Bluetooth: Remove remote device from trust list on BOND change
+- Bluetooth: GAP: Cancel the previous visibilty alarms if already set 
+- Bluetooth: GAP: Cancel the pairing notification on bond state change
+- Bluetooth: GAP: don't update autoconnect on bonding state
+- Bluetooth: Destroy BT Dialog on BT power off.
+- Reorganize and clean up lock screen section 
 
 # Resurrection Remix KitKat 4.4.2 Experimental - 2013121 # Basic
 
@@ -665,52 +674,52 @@ NOTE - To all Device Maintainers - Send a PM to 'xenon92' or 'westcrip' at XDA
 # Resurrection Remix KitKat 4.4.2 Incremental - 20131216 # Basic
 
 - based on latest cm and android open source project
-- included all cm11 and some of cm10 features
-*profiles 
-*HW buttons
-*lockscreen targets and and more lockscreen tweaks
-*Quick settings notification panel and custom tiles
-*custom battery mods
-*battery light options
-*expanded desktop
-*performance manager
-*all cm security options
-*notification light manager
-*theme chooser
-*core superuser
-*hold back to kill -redused kill time
-*status bar brightness control
-*notification counter option
-*menu unlock
-*charging sounds
-*ringtone and volume tweaks
-*CLock (new HD weather icons)
-*torch  
-*and much more options from cm 11....
+- included all cm11 and some of cm10 features:
+* profiles 
+* HW buttons
+* lockscreen targets and and more lockscreen tweaks
+* Quick settings notification panel and custom tiles
+* custom battery mods
+* battery light options
+* expanded desktop
+* performance manager
+* all cm security options
+* notification light manager
+* theme chooser
+* core superuser
+* hold back to kill -redused kill time
+* status bar brightness control
+* notification counter option
+* menu unlock
+* charging sounds
+* ringtone and volume tweaks
+* CLock (new HD weather icons)
+* torch  
+* and much more options from cm 11....
  
--omni rom features
-*network speed indicator
-*custom notification panel header
-*battery around unlock ring
-*headset button launch voice contol option
-*screen off animations
-*low battery warning options
+- omni rom features:
+* network speed indicator
+* custom notification panel header
+* battery around unlock ring
+* headset button launch voice contol option
+* screen off animations
+* low battery warning options
 
-other apps and mods
--resurrection tools and about resurrection
--checkbox spawn settings 
--flying windows animations
--RR Wallpapers 17 HD epic Walls
--lockscreen see through (blur) -from pa source 
--allow custom system background
--improved framework drawables
--added locations shortcuts to settings
--improved scrolling performans
--updated all drivers
--changelog
--RR updater app
--New core app Documents-file browser
--dsp manager
--apollo music
--CM file manager
--terminal
+- other apps and mods:
+- resurrection tools and about resurrection
+- checkbox spawn settings 
+- flying windows animations
+- RR Wallpapers 17 HD epic Walls
+- lockscreen see through (blur) -from pa source 
+- allow custom system background
+- improved framework drawables
+- added locations shortcuts to settings
+- improved scrolling performans
+- updated all drivers
+- changelog
+- RR updater app
+- New core app Documents-file browser
+- dsp manager
+- apollo music
+- CM file manager
+- terminal
