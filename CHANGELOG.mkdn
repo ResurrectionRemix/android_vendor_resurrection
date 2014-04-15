@@ -21,7 +21,6 @@ For extended changelog, track github activities
 - Add RR tools Russian translations translated by Aleksashik
 - settings: Add blacklist provider permission
 - allow Mock SMS 
-- Settings: Fix VoiceWakeup settings crash 
 - Separate Change Encryption Password Entry
 - Use SSL for submitting stats 
 - Do not enable Camera widget on non-camera devices
@@ -59,7 +58,6 @@ For extended changelog, track github activities
 - LTE toggle support
 - Solve three memory leaks related to PatchCache
 - Prevent Lockscreen album art from activating FLAG_KEEP_SCREEN_ON 
-- Do not show Home behind full screen activity
 - Do not show Home behind full screen activity
 - core: Add support for Luxembourgish
 - hammerhead-hh: Better scaling values 
