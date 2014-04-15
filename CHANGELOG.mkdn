@@ -1,17 +1,12 @@
 Resurrection Remix ® ROM
-===============================================
-
-CHANGELOG
-===============================================
-
-Source Code: http://github.com/ResurrectionRemix
-
-Website: http://www.resurrectionremix.com
-
 -----------------------------------------------
-
+CHANGELOG
+-----------------------------------------------
+Source Code: http://github.com/ResurrectionRemix
+ 
+Website: http://www.resurrectionremix.com
+-----------------------------------------------
 For extended changelog, track github activities
-
 -----------------------------------------------
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.9-20140415 # Basic
