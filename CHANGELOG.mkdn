@@ -14,6 +14,64 @@ For extended changelog, track github activities
 
 -----------------------------------------------
 
+# Resurrection Remix KitKat 4.4.2 - v5.0.9-20140415 # Basic
+
+- Fix android run time (ART)
+- Add NEW Ringtone C.Y.E-Resurrection - set as default
+- Add RR tools Russian translations translated by Aleksashik
+- settings: Add blacklist provider permission
+- allow Mock SMS 
+- Settings: Fix VoiceWakeup settings crash 
+- Separate Change Encryption Password Entry
+- Use SSL for submitting stats 
+- Do not enable Camera widget on non-camera devices
+- Update 'Wi-Fi display' string to 'Cast screen' 
+- SoundSettings: Assigning a null to an unnecessary variable 
+- update device maintainers nexus 5-nexus 4-i9305-Galaxy Note III hlte
+- fix slider torch checkbox
+- Settings: Apply Processor settings to all cpus
+- New Theme Engine
+- Runtime resource overlay, iteration 2
+- New command line tool 'idmap'
+- Remove T-mobile items not used by new theme engine
+- Wallpaper Overscroll and Transparent NavBar 
+- SysUI: Use LocationController from status bar service for GPSTile. 
+- Set some GC parameters only for dalvik
+- CM11 Themes: Take into account ALL res/xml dirs
+- Fix the value type of def_noise_suppression
+- SysUI: Don't recreate controllers.
+- SlimRecents: user configurable default expanded mode
+- Frameworks: SlimRecents pass gesture detector to the cardslistview
+- Frameworks: add 1dp more bottom paddingcore: Add support for Luxembourgish
+- Frameworks: SlimRecents: Make expanded layout pretty
+- SysUI: Don't recreate controllers.
+- Update settings after recreating status bar.
+- Suppress String resources build warnings
+- Totally fix system ui fc 
+- Keyguard: Fix problem where PhoneWindowManager waits for keyguard to drawable
+- Keyguard: We need to ensure that keyguard is showing as well to set the token
+- SlimRecents: Adress the 50ms touch unsresponsive issue 
+- base: Fix screen on stats after a boot 
+- Restore pre-KitKat permissions to external sd for all apps
+- Don't make isSafeMode a field on the Zygote class.
+- [video] : added mime-type for mov files 
+- Fix LTE tile
+- LTE toggle support
+- Solve three memory leaks related to PatchCache
+- Prevent Lockscreen album art from activating FLAG_KEEP_SCREEN_ON 
+- Do not show Home behind full screen activity
+- Do not show Home behind full screen activity
+- core: Add support for Luxembourgish
+- hammerhead-hh: Better scaling values 
+- hammerhead-enable multiuser
+- hammerhead-hh: Collapse primary audio outputs 
+- hammerhead-Make SYSTEM owner of cpu online files
+- i9300- Camera2: Don't try to cancel focus messages when preview stops
+- i9300- Switch back to the binary camera HAL
+- phone-fix flip action call options
+- Included lot of sound and media updates
+- Included CyanogenMod source updates
+
 # Resurrection Remix KitKat 4.4.2 - v5.0.8-20140402 # Basic
 
 ATTENTION: ART won't work on this update. This is CM source base issue.
