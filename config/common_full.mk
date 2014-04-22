@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhaseBeam \
     PhotoTable \
+<<<<<<< HEAD
     VoiceDialer \
     SoundRecorder \
     OmniSwitch \
@@ -26,6 +27,9 @@ PRODUCT_PACKAGES += \
 # PRODUCT_PACKAGES += \
 #     Lightbulb \
 
+=======
+    SoundRecorder
+>>>>>>> 1c282ce... build: telephony: Only include VoiceDialer in telephony builds
 
 PRODUCT_PACKAGES += \
     VideoEditor \
