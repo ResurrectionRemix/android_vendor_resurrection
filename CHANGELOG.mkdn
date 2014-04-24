@@ -7,7 +7,27 @@ Source Code: http://github.com/ResurrectionRemix
 Website: http://www.resurrectionremix.com
 -----------------------------------------------
 For extended changelog, track github activities
------------------------------------------------
+----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.1.0-20140424 # Basic
+ 
+- Download: add to support pause/resume download by manual
+- SlimRecents: fix sometimes missing first task
+- notification drawer: custom clock & calendar shortcuts
+- Gesture Lockscreen
+- about rr - add new website
+- add m7 maintainer
+- (n205des) as draid razr maintainer
+- add motorpla razr spyder GSM-CDMA maintainer - t4n017
+- Don't show "Eject card" if the card is not accessible 
+- Fix a number of aapt warnings. 
+- settings: Make mobile settings a first-class citizen
+- update device source -i9100-i9300-n7100 fixed lot of bugs
+- Fix very long app_name crash. 
+- RR Tools french translations - translated by Pierre Delfosse
+- Included lot of sound and media updates
+- Included CyanogenMod source updates and fixes
+
+
 
 # Resurrection Remix KitKat 4.4.2 - v5.0.9-20140415 # Basic
 
