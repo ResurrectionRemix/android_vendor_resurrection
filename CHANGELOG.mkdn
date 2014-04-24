@@ -10,20 +10,24 @@ For extended changelog, track github activities
 ----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.1.0-20140424 # Basic
  
-- Download: add to support pause/resume download by manual
-- SlimRecents: fix sometimes missing first task
-- notification drawer: custom clock & calendar shortcuts
+- Downloads: add support for manual pause/resume/stop downloading
 - Gesture Lockscreen
-- about rr - add new website
-- add m7 maintainer
-- (n205des) as draid razr maintainer
-- add motorpla razr spyder GSM-CDMA maintainer - t4n017
+- Notification Drawer: Custom Clock & Calendar Shortcuts
+- About RR - Add new website
+- Fixed 480x800 bootanimation zip looping (thanx to iceyhotguy @ XDA)
+- For Device Maintainers: Added a new command - make dirty (read more - http://goo.gl/i1JB3W)
+- Parallel Shutdown
+- SlimRecents: fix sometimes missing first task
+- Device Maintainers: add M7 maintainer
+- Device Maintainer: add Droid RAZR maintainer
 - Don't show "Eject card" if the card is not accessible 
+- Audio: Fixed system/call stream volume can't adjust with HS connected.
+- Fix "Email" App data lost when screen rotated.
 - Fix a number of aapt warnings. 
-- settings: Make mobile settings a first-class citizen
-- update device source -i9100-i9300-n7100 fixed lot of bugs
+- Settings: Make mobile settings a first-class citizen
+- Update device source -i9100-i9300-n7100: fixed lot of bugs
 - Fix very long app_name crash. 
-- RR Tools french translations - translated by Pierre Delfosse
+- RR Tools French translations - translated by Pierre Delfosse
 - Included lot of sound and media updates
 - Included CyanogenMod source updates and fixes
 
