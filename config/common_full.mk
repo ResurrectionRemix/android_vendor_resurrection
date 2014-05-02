@@ -25,8 +25,6 @@ PRODUCT_PACKAGES += \
 # PRODUCT_PACKAGES += \
 #     Lightbulb \
 
-    SoundRecorder
-
 PRODUCT_PACKAGES += \
     VideoEditor \
     libvideoeditor_jni \
