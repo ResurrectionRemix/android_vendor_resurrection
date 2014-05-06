@@ -33,6 +33,13 @@ PRODUCT_PACKAGES += \
     libvideoeditor_videofilters \
     libvideoeditorplayer
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec.so \
+    libstagefright_soft_ffmpegvdec.so \
+    libFFmpegExtractor.so \
+    libnamparser.so
+
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     vim
