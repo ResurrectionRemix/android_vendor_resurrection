@@ -35,6 +35,8 @@ For extended changelog, track github activities
 - Add maintainer Xperia Arc - Anzu (by 3andala)
 - add maintainer Samsung Galaxy Nexus - Maguro (by nasty007)
 - add maintainer Xperia Z1 - Honami (by omarainea)
+- add maintainer Samsung Galaxy Mega 6.3 - GT-I9205 / GT-I9200 (by Silesh.Nair) 
+- add maintainer Samsung Galaxy S4 Mini - GT-I9195 / GT-I9190  (by Silesh.Nair)
 - Add new Sony xperia maintainers NEO-NEOV-Z1
 - hammerhead: Add hardware tunables support: display
 - hammerhead: Add hardware tunables support: vibrator 
