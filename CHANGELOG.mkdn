@@ -16,7 +16,6 @@ For extended changelog, track github activities
 - Updated the Torch app interface
 - Speeded up the overall UI
 - Fix recents showing up when waking the device with the home button
-- Base: Reduce memory leaks
 - Allow configuration of the default screen-off animation style
 - Fix Airplane Mode on/off issue
 - Update mobile networks icon in Settings
