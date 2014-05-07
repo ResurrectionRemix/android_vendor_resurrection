@@ -9,7 +9,7 @@ Website: http://www.resurrectionremix.com
 For extended changelog, track github activities
 ----------------------------------------------
 
-# Resurrection Remix KitKat 4.4.2 - v5.1.1-201405__ # Basic
+# Resurrection Remix KitKat 4.4.2 - v5.1.1-20140507 # Basic
  
 - Notification Peek (from Paranoid Android)
 - Active Display: Many updates and fixes from OmniROM (thanx to t4n017 @ XDA)
@@ -32,9 +32,14 @@ For extended changelog, track github activities
 - Contacts: QuickContact: onLongClick save item data to clipboard 
 - SystemUI: add AOSP RU translation
 - i9082: fix low call volume bug
-
-- ______________________ @westecrip add device specific fixes
-
+- Add maintainer Xperia Arc - Anzu (by 3andala)
+- add maintainer Samsung Galaxy Nexus - Maguro (by nasty007)
+- add maintainer Xperia Z1 - Honami (by omarainea)
+- Add new Sony xperia maintainers NEO-NEOV-Z1
+- hammerhead: Add hardware tunables support: display
+- hammerhead: Add hardware tunables support: vibrator 
+- Torch: set default hasHighBrightness flag to false 
+- torch: Don't show the about dialog on first launch
 - Hide search assistant arrow from lockscreen when custom lockscreen is enabled
 - Bluetooth: pause music player on A2dp service disconnect
 - Bluetooth: Add Total track number. 
