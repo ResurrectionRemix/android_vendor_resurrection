@@ -14,7 +14,6 @@ For extended changelog, track github activities
 - Notification Peek (from Paranoid Android)
 - Active Display: Many updates and fixes from OmniROM (thanx to t4n017 @ XDA)
 - Updated the Torch app interface
-- Device Maintainers: add new maintainers - Xperia Arc, Galaxy Nexus, Xperia Z1, Neo, Neo V
 - Speeded up the overall UI
 - Fix recents showing up when waking the device with the home button
 - Base: Reduce memory leaks
