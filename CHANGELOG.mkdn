@@ -8,6 +8,46 @@ Website: http://www.resurrectionremix.com
 -----------------------------------------------
 For extended changelog, track github activities
 ----------------------------------------------
+
+# Resurrection Remix KitKat 4.4.2 - v5.1.1-201405__ # Basic
+ 
+- Notification Peek (from Paranoid Android)
+- Active Display: Many updates and fixes from OmniROM (thanx to t4n017 @ XDA)
+- Updated the Torch app interface
+- Device Maintainers: add new maintainers - Xperia Arc, Galaxy Nexus, Xperia Z1, Neo, Neo V
+- Speeded up the overall UI
+- Fix recents showing up when waking the device with the home button
+- Base: Reduce memory leaks
+- Allow configuration of the default screen-off animation style
+- Fix Airplane Mode on/off issue
+- Update mobile networks icon in Settings
+- Fix Total and available fields missing in Settings storage menu 
+- AudioService: Fix absolute volume for AVRCP 
+- Fix delay of Volume popup when tapping 'Volumes' in 'Settings>Sound'
+- Allow Power Notification Sounds For Wireless
+- Camera2: Update to use newer slow-shutter parameter
+- Camera2: Prevent autofocus when video snapshot is in progress 
+- Camera2: Surface Qualcomm denoise option
+- Camera2: Disable ZSL for slow shutter shots 
+- Contacts: QuickContact: onLongClick save item data to clipboard 
+- SystemUI: add AOSP RU translation
+- i9082: fix low call volume bug
+
+- ______________________ @westecrip add device specific fixes
+
+- Hide search assistant arrow from lockscreen when custom lockscreen is enabled
+- Bluetooth: pause music player on A2dp service disconnect
+- Bluetooth: Add Total track number. 
+- Base: Many other updates to Bluetooth
+- RR Tools French translations - translated by Pierre Delfosse
+- Included lot of sound and media updates
+- Included CyanogenMod source updates and fixes
+
+
+
+
+
+
 # Resurrection Remix KitKat 4.4.2 - v5.1.0-20140424 # Basic
  
 - Downloads: add support for manual pause/resume/stop downloading
