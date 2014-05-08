@@ -9,6 +9,12 @@ Website: http://www.resurrectionremix.com
 For extended changelog, track github activities
 ----------------------------------------------
 
+# Resurrection Remix KitKat 4.4.2 - v5.1.1-20140508 # Basic
+
+- Add new theme engine
+- Fix for phone call sound
+- Some improvements
+
 # Resurrection Remix KitKat 4.4.2 - v5.1.1-20140507 # Basic
  
 - Notification Peek (from Paranoid Android)
