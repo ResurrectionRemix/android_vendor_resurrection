@@ -10,7 +10,7 @@ For extended changelog, track github activities
 ----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.1.2-20140516 # Basic
 
-- Add New RR Team memeber t4n017 (Tano Abeleyra) to developer info cards
+- Add New RR Team member t4n017 (Tano Abeleyra) to developer info cards
 - Settings: make animations faster by default 
 - Floating Window:updates and fixes
 - New Lockscreen custom wallpaper from cm11 .new theme chooser capable
