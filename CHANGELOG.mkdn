@@ -10,7 +10,7 @@ For extended changelog, track github activities
 ----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.1.2-20140516 # Basic
 
-- Add New RR Team memember t4n017 (Tano Abeleyra) to developer info cards
+- Add New RR Team memeber t4n017 (Tano Abeleyra) to developer info cards
 - Settings: make animations faster by default 
 - Floating Window:updates and fixes
 - New Lockscreen custom wallpaper from cm11 .new theme chooser capable
@@ -20,7 +20,7 @@ For extended changelog, track github activities
 - Avoid SystemUI crash due to NPE 
 - CamcorderProfile: Add 4k timelapse encoder constants 
 - AudioService: fix safe volume enforced even when disabled
-- fix systemui fc while changing slim recents to left on hdpi devices
+- fix systemui fc while changing slim recents to left on hdpi compiled devices
 - Second Clock Statusbar
 - Add AutoRotate and music as Default tile
 - MediaFile: support more media types
@@ -50,7 +50,7 @@ For extended changelog, track github activities
 - Latin İME updates
 - Contact updates
 - Translation updates
-- Check out source for more updates https://github.com/ResurrectionRemix
+- Check out the source activities for more updates https://github.com/ResurrectionRemix
 
 
  # Resurrection Remix KitKat 4.4.2 - v5.1.1-20140508 # Basic
