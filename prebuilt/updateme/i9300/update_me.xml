@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RomConfig>
     <RomName>Resurrection Remix GT-I9300</RomName>
-    <RomVersion>20140508.5.1.1</RomVersion>
+    <RomVersion>20140516.5.1.2</RomVersion>
     <RomCheckUrl>https://dl.dropboxusercontent.com/u/62249445/update_me_files/update_me_check_i9300.xml</RomCheckUrl>
     <RebootRecovery>1</RebootRecovery>
     <DownloadDir>/mnt/sdcard/Resurrection</DownloadDir>
