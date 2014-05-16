@@ -8,8 +8,52 @@ Website: http://www.resurrectionremix.com
 -----------------------------------------------
 For extended changelog, track github activities
 ----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.1.2-20140516 # Basic
 
-# Resurrection Remix KitKat 4.4.2 - v5.1.1-20140508 # Basic
+- Add New RR Team memember t4n017 (Tano Abeleyra) to developer info cards
+- Settings: make animations faster by default 
+- Floating Window:updates and fixes
+- New Lockscreen custom wallpaper from cm11 .new theme chooser capable
+- CPUFreq Tile
+- WallpaperPicker: Destroy cropview to avoid leaks
+- Allow 3 AT (mnc05) to roam on T-Mobile in Austria 
+- Avoid SystemUI crash due to NPE 
+- CamcorderProfile: Add 4k timelapse encoder constants 
+- AudioService: fix safe volume enforced even when disabled
+- fix systemui fc while changing slim recents to left on hdpi devices
+- Second Clock Statusbar
+- Add AutoRotate and music as Default tile
+- MediaFile: support more media types
+- UserTile: Fix displaying user information for multi-user devices 
+- Add missing mdpi, hdpi, xhdpi drawables for new theme engine 
+- remove xperia neo - hallon from device tree
+- Fix NullPointerException issue when user change 
+- Packages : Fix for Softap turn ON/OFF fail issue. 
+- Fixes error message during pairing of HOGP devices
+- Bluetooth: Ignore the second button if one already pressed 
+- Bluetooth: Release pan proxy object while coming out from tethering menu 
+- settings: Remove "mobile plan" 
+- make LinearColorBar themeable
+- Settings: modify AOSP RU translation
+- fix RR Tools xxhdpi PNG s
+- Themes: List ThemeSettings as a valid fragment 
+- Add maintainer- Samsung Galaxy Nexus - Toro (by nasty007)
+- Add maintainer- Samsung Galaxy Mega 6.3 - GT-I9205 / GT-I9200 (by Silesh.Nair)
+- Trebuchet updates
+- Theme chooser updates
+- Torch updates
+- Camera updates
+- Email updates
+- Recovery updates
+- Mms updates
+- Lockclock updates
+- Latin İME updates
+- Contact updates
+- Translation updates
+- Check out source for more updates https://github.com/ResurrectionRemix
+
+
+ # Resurrection Remix KitKat 4.4.2 - v5.1.1-20140508 # Basic
 
 - Add new theme engine
 - Fix for phone call sound
