@@ -72,7 +72,6 @@ PRODUCT_COPY_FILES += \
 
 # RR Stuff
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/apk/com.teslacoilsw.launcher-2.apk:system/app/com.teslacoilsw.launcher-2.apk \
     vendor/cm/prebuilt/apk/UpdateMe.apk:system/app/UpdateMe.apk \
     vendor/cm/prebuilt/apk/Halo.apk:system/app/Halo.apk \
     vendor/cm/prebuilt/apk/com.resurrection.remix-2.apk:system/app/com.resurrection.remix-2.apk \
