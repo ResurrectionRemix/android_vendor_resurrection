@@ -21,7 +21,6 @@ For extended changelog, track github activities
 - Add "Accept all files" option for incoming files via Bluetooth
 - Revert "CPUFreq Tile" 
 - Perf: Improve performance profiles 
-- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013
 - Immersive mode: don't unconfirm a package, that's just dumb 
 - Development: Add setting for overwriting recovery 
 - CM11 Themes: Allow defining a custom default theme
@@ -32,6 +31,7 @@ For extended changelog, track github activities
 - Updates to FR translations by Madikan 
 - Settings: correct y-axis brightness in preview 
 - Remove nova launcher
+- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013
 - Trebuchet updates
 - Torch updates
 - Camera updates
