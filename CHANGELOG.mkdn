@@ -31,7 +31,7 @@ For extended changelog, track github activities
 - Updates to FR translations by Madikan 
 - Settings: correct y-axis brightness in preview 
 - Remove nova launcher
-- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013
+- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013-Sony Xperia M
 - Trebuchet updates
 - Torch updates
 - Camera updates
