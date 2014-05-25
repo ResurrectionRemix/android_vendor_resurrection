@@ -10,28 +10,28 @@ For extended changelog, track github activities
 ----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.1.3-20140525 # Basic
 
-- Peek update and fixes
-- Add: App Circle sidebar
-- perf: Improve performance profiles 
-- immersive mode: don't unconfirm a package, that's just dumb 
-- development: Add setting for overwriting recovery 
-- remove blank app from notification access menu
-- add "Accept all files" option for incoming files via Bluetooth
-- Themes: Support launcher based icon packs
-- CM11 Themes: Allow defining a custom default theme
+- Peek: updates and fixes
+- NEW: App Circle Sidebar
+- Pitch Black : Red Action Bar
+- Dismiss IME when floating window is dismissed
 - Don't animate the circle battery meter when battery is fully charged
+- Smart Pull-Down - Any Notification
+- Themes: Support launcher based icon packs
+- Remove blank app from notification access menu
+- Add "Accept all files" option for incoming files via Bluetooth
 - Revert "CPUFreq Tile" 
-- Dismiss IME when floating window is dismissed 
+- Perf: Improve performance profiles 
+- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013
+- Immersive mode: don't unconfirm a package, that's just dumb 
+- Development: Add setting for overwriting recovery 
+- CM11 Themes: Allow defining a custom default theme
 - Fix ressource leaks
 - Bluetooth updates
-- pitchblack : red action bar
-- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013
-- SystemUI: Smart Pull-Down - Any Notification
-- add a getter for the x and y offsets of the wallpaper window 
-- Keep title clean : remove ® from resurrection remix title .
-- latest FR translations by Madikan 
+- Add a getter for the x and y offsets of the wallpaper window 
+- Keep title clean : remove ® from resurrection remix title
+- Updates to FR translations by Madikan 
 - Settings: correct y-axis brightness in preview 
-- remove nova launcher
+- Remove nova launcher
 - Trebuchet updates
 - Torch updates
 - Camera updates
