@@ -25,6 +25,7 @@ For extended changelog, track github activities
 - Fix ressource leaks
 - Bluetooth updates
 - pitchblack : red action bar
+- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013
 - SystemUI: Smart Pull-Down - Any Notification
 - add a getter for the x and y offsets of the wallpaper window 
 - Keep title clean : remove ® from resurrection remix title .
