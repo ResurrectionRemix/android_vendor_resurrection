@@ -8,6 +8,42 @@ Website: http://www.resurrectionremix.com
 -----------------------------------------------
 For extended changelog, track github activities
 ----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.1.3-20140525 # Basic
+
+- Peek update and fixes
+- Add: App Circle sidebar
+- perf: Improve performance profiles 
+- immersive mode: don't unconfirm a package, that's just dumb 
+- development: Add setting for overwriting recovery 
+- remove blank app from notification access menu
+- add "Accept all files" option for incoming files via Bluetooth
+- Themes: Support launcher based icon packs
+- CM11 Themes: Allow defining a custom default theme
+- Don't animate the circle battery meter when battery is fully charged
+- Revert "CPUFreq Tile" 
+- Dismiss IME when floating window is dismissed 
+- Fix ressource leaks
+- Bluetooth updates
+- pitchblack : red action bar
+- SystemUI: Smart Pull-Down - Any Notification
+- add a getter for the x and y offsets of the wallpaper window 
+- Keep title clean : remove ® from resurrection remix title .
+- latest FR translations by Madikan 
+- Settings: correct y-axis brightness in preview 
+- remove nova launcher
+- Trebuchet updates
+- Torch updates
+- Camera updates
+- Themes app updates and improvements
+- i9300-Device provides its own camera HAL
+- i9300-n7100-Fix google camera
+- smdk4412-common: fix charging animation 
+- smdk4412-common: Enable use of FFMPEG codecs for extended formats
+- smdk4412-kernel updates
+- hammerhead: Fix default value of color calibration
+- Included lot of performance,sound and media updates
+- Included CyanogenMod source updates and fixes
+
 # Resurrection Remix KitKat 4.4.2 - v5.1.2-20140516 # Basic
 
 - Add New RR Team member t4n017 (Tano Abeleyra) to developer info cards
