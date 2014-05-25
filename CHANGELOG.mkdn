@@ -12,7 +12,10 @@ For extended changelog, track github activities
 
 - Peek: updates and fixes
 - NEW: App Circle Sidebar
-- Dismiss IME when floating window is dismissed 
+- Pitch Black : Red Action Bar
+- Dismiss IME when floating window is dismissed
+- Don't animate the circle battery meter when battery is fully charged
+- Smart Pull-Down - Any Notification
 - Themes: Support launcher based icon packs
 - Remove blank app from notification access menu
 - Add "Accept all files" option for incoming files via Bluetooth
@@ -23,13 +26,11 @@ For extended changelog, track github activities
 - CM11 Themes: Allow defining a custom default theme
 - Fix ressource leaks
 - Bluetooth updates
-- pitchblack : red action bar
-- SystemUI: Smart Pull-Down - Any Notification
-- add a getter for the x and y offsets of the wallpaper window 
-- Keep title clean : remove ® from resurrection remix title .
-- latest FR translations by Madikan 
+- Add a getter for the x and y offsets of the wallpaper window 
+- Keep title clean : remove ® from resurrection remix title
+- Updates to FR translations by Madikan 
 - Settings: correct y-axis brightness in preview 
-- remove nova launcher
+- Remove nova launcher
 - Trebuchet updates
 - Torch updates
 - Camera updates
