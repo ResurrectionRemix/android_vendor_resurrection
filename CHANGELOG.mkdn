@@ -10,18 +10,17 @@ For extended changelog, track github activities
 ----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.1.3-20140525 # Basic
 
-- Peek update and fixes
-- Add: App Circle sidebar
-- perf: Improve performance profiles 
-- immersive mode: don't unconfirm a package, that's just dumb 
-- development: Add setting for overwriting recovery 
-- remove blank app from notification access menu
-- add "Accept all files" option for incoming files via Bluetooth
-- Themes: Support launcher based icon packs
-- CM11 Themes: Allow defining a custom default theme
-- Don't animate the circle battery meter when battery is fully charged
-- Revert "CPUFreq Tile" 
+- Peek: updates and fixes
+- NEW: App Circle Sidebar
 - Dismiss IME when floating window is dismissed 
+- Themes: Support launcher based icon packs
+- Remove blank app from notification access menu
+- Add "Accept all files" option for incoming files via Bluetooth
+- Revert "CPUFreq Tile" 
+- Perf: Improve performance profiles 
+- Immersive mode: don't unconfirm a package, that's just dumb 
+- Development: Add setting for overwriting recovery 
+- CM11 Themes: Allow defining a custom default theme
 - Fix ressource leaks
 - Bluetooth updates
 - pitchblack : red action bar
