@@ -8,6 +8,59 @@ Website: http://www.resurrectionremix.com
 -----------------------------------------------
 For extended changelog, track github activities
 ----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.1.4-20140602 # Basic
+ 
+- Add gesture anywhere
+- Add equalizer tile
+- Add compass tile 
+- On-The-Go mode
+- Add system app remover
+- Added Power button to available NavigationBar buttons
+- Add on-the-go and volume as Default tile
+- Fliptile animation:For Compass Tile & On-The-Go Tile
+- SystemUI: Make wifi combo margin themable
+- Lockscreen: Avoid SystemUI crash due to NPE - fix all bıtmap derp
+- Fix resource leaks
+- Fix hiding ADB notification 
+- CM11 Themes: Use package name from AndroidManifest
+- wm: Underp menu key release processing
+- Fix circle battery opaqueness for the low battery color 
+- wm: Make the default menu longpress action configurable at build time
+- wm: Underp menu key release processing
+- wm: Simplify menu action decision paths
+- quiethours: fix vibrate option 
+- Keyguard : Fix album art sticking after playback is stopped
+- fix default lockscreen targets
+- CM11 Themes: Don't kill setup wizards 
+- Fix wallpapers not applying in full screen
+- Added Non-Roaming for carrier BSNL in UP East and WEST INDIA 
+- frameworks: allow Keyguard package to be defined in overlay 
+- Keyguard: Make sure disabling Camera widget 
+- perf: Don't persist the perf profile across a reboot
+- perf: Send a boost hint when a key on the navbar is pressed 
+- Animate circle battery rotation back to 0 after unplugging
+- Bluetooth: Fix for device gets stuck in pairing
+- Bluetooth: Acquire wakelock to turn on lcd during Connection
+- settings: Move headset option, hide MoreDeviceSettings if empty 
+- Settings: Remove screen rotation from accessibility
+- Settings: Allow access for external apps to launch ThemeSettings Fragment directly
+- Settings: read keyguard package name from overlays
+- Settings: Disable Battery status preference on ModLock. 
+- Settings: Remove "Make pattern visible" regardless.
+- Settings: Device Maintainers: Remove janice & codina 
+- Settings: Maintainer : add device Galaxy Note int
+- n7100 - Fix sensors - audio hal updates - Update fingerprint
+- i9300 - Add iso mode settings to the CameraWrapper - fix preview/camera crash after stopping video record
+- ResurrectionSetup updates
+- Trebuchet updates
+- Theme chooser updates
+- Camera app improvements
+- Calculator updates
+- MMS updates
+- Included lot of performance,sound and media updates
+- Included All CyanogenMod source updates and fixes
+- Check out the source activities for more updates https://github.com/ResurrectionRemix
+ 
 # Resurrection Remix KitKat 4.4.2 - v5.1.3-20140525 # Basic
 
 - Peek: updates and fixes
