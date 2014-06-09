@@ -8,6 +8,49 @@ Website: http://www.resurrectionremix.com
 -----------------------------------------------
 For extended changelog, track github activities
 ----------------------------------------------
+# Resurrection Remix KitKat 4.4.2 - v5.1.5-20140609 # Basic
+
+- Navigation bar dimensions
+- Ability to disable hardware keys via nav bar settings
+- Add android:key in hardware keys enable/disable option to forward enable this option
+- Themes: Delete icon resources during uninstall
+- Themes: remove unused code
+- Themes: uninstallThemeForAllApps shouldn't check if map is empty if it's null
+- Don't cleanup overlay mapping for non-theme apps
+- appops: enforce appop for bluetooth disabled action
+- Setting - Fix about rr on lanscape fc 
+- Add a HAF access permission 
+- Fix layout recreation check
+- CameraTile: Launch default gallery app when long pressing active camera tile
+- SystemUI: prevent NPE on clear recents double press
+- MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
+- Correct stride for drawing to cached glyph bitmap 
+- Use alpha channel instead of red in drawCachedGlyphBitmap
+- Navigation bar dimensions
+- Temporarily hide lock screen unlock targets if opening a widget 
+- fw: media: Handle NPE due to threading race 
+- FW: LS Notification: fix FC when an expanded notification gets reposted without bigContentView
+- fix derp on INotificationListener
+- WallpaperCropper: do not display null bitmaps 
+- Make theme change broadcast a protected broadcast.
+- Reduce memory leaks by removing all views.
+- appops: do not prune apps that are not present
+- apn: national roaming for ONO (Spain)
+- fix more keyguard derp
+- galaxys2-common: fix front cam video recording
+- Recovery - Version 6.0.4.9
+- included all cm-11.0 m7 updates
+- Check out the source activities for more details https://github.com/ResurrectionRemix
+
+# NOTE:
+  
+- This is the final release of Resurrection Remix android kitkat series.I ll chatch you guys on next android version A.K.A 4.5 Or 5.0 . See you soon .Thank you !
+
+  westcrip
+  
+  ENJOY!
+
+
 # Resurrection Remix KitKat 4.4.2 - v5.1.4-20140602 # Basic
  
 - Add gesture anywhere
