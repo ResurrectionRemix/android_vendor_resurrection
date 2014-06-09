@@ -16,9 +16,11 @@ For extended changelog, track github activities
 - Themes: Delete icon resources during uninstall
 - Themes: remove unused code
 - Themes: uninstallThemeForAllApps shouldn't check if map is empty if it's null
+- base: remove extra checks
 - Don't cleanup overlay mapping for non-theme apps
 - appops: enforce appop for bluetooth disabled action
-- Setting - Fix about rr on lanscape fc 
+- About Resurrection: devcard layout - fix devcard lanscape FC
+- settings: FC on quick settings editor on tablets without a vibrator 
 - Add a HAF access permission 
 - Fix layout recreation check
 - CameraTile: Launch default gallery app when long pressing active camera tile
@@ -37,6 +39,7 @@ For extended changelog, track github activities
 - appops: do not prune apps that are not present
 - apn: national roaming for ONO (Spain)
 - fix more keyguard derp
+- Mms: Clear notifications and mark messages read in certain situations 
 - galaxys2-common: fix front cam video recording
 - Recovery - Version 6.0.4.9
 - included all cm-11.0 m7 updates
