@@ -9,7 +9,7 @@ Website: http://www.resurrectionremix.com
 For extended changelog, track github activities
 ----------------------------------------------
 # Resurrection Remix KitKat 4.4.2 - v5.1.5-20140609 # Basic
-
+ 
 - Navigation bar dimensions
 - Ability to disable hardware keys via nav bar settings
 - Add android:key in hardware keys enable/disable option to forward enable this option
@@ -19,7 +19,7 @@ For extended changelog, track github activities
 - base: remove extra checks
 - Don't cleanup overlay mapping for non-theme apps
 - appops: enforce appop for bluetooth disabled action
-- About Resurrection: devcard layout - fix devcard lanscape FC
+- About Resurrection: devcard layout - fix FC devcard on lanscape mode
 - settings: FC on quick settings editor on tablets without a vibrator 
 - Add a HAF access permission 
 - Fix layout recreation check
@@ -28,7 +28,6 @@ For extended changelog, track github activities
 - MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
 - Correct stride for drawing to cached glyph bitmap 
 - Use alpha channel instead of red in drawCachedGlyphBitmap
-- Navigation bar dimensions
 - Temporarily hide lock screen unlock targets if opening a widget 
 - fw: media: Handle NPE due to threading race 
 - FW: LS Notification: fix FC when an expanded notification gets reposted without bigContentView
@@ -44,11 +43,11 @@ For extended changelog, track github activities
 - Recovery - Version 6.0.4.9
 - included all cm-11.0 m7 updates
 - Check out the source activities for more details https://github.com/ResurrectionRemix
-
+ 
 # NOTE:
   
-- This is the final release of Resurrection Remix android kitkat series.I ll chatch you guys on next android version A.K.A 4.5 Or 5.0 . See you soon .Thank you !
-
+- This is the final release of Resurrection Remix android kitkat series.I ll catch you guys on next android version A.K.A 4.5 or 5.0 . See you soon .Thank you !
+ 
   westcrip
   
   ENJOY!
