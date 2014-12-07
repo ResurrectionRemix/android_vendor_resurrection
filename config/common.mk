@@ -36,6 +36,14 @@ PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTAN
 endif
 endif
 
+ifdef CM_NIGHTLY
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rommanager.developerid=cyanogenmodnightly
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.rommanager.developerid=cyanogenmod
+endif
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -58,6 +66,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Disable multithreaded dexopt by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.dalvik.multithread=false
+
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
@@ -68,15 +80,8 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-RR.txt
+    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
-# RR Stuff
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/apk/UpdateMe.apk:system/app/UpdateMe.apk \
-    vendor/cm/prebuilt/apk/Halo.apk:system/app/Halo.apk \
-    vendor/cm/prebuilt/apk/com.resurrection.remix-2.apk:system/app/com.resurrection.remix-2.apk \
-    vendor/cm/prebuilt/apk/UnicornPorn.apk:system/app/UnicornPorn.apk
-    
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
@@ -85,6 +90,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 endif
+
+# Signature compatibility validation
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
 
 # init.d support
 PRODUCT_COPY_FILES += \
@@ -138,16 +147,14 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
+    CMWallpapers \
     Apollo \
     CMFileManager \
-    ResurrectionSetup \
     LockClock \
-    HALO \
-    WhisperPush \
-    ScreenRecorder \
-    libscreenrecorder \
-    ResurrectionWallpapers
-    
+    CMUpdater \
+    CMAccount \
+    CMHome
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
@@ -168,6 +175,9 @@ PRODUCT_PACKAGES += \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
     ntfsfix \
     ntfs-3g \
     gdbserver \
@@ -190,20 +200,26 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     rsync
 
+# Stagefright FFMPEG plugin
+PRODUCT_PACKAGES += \
+    libstagefright_soft_ffmpegadec \
+    libstagefright_soft_ffmpegvdec \
+    libFFmpegExtractor \
+    libnamparser
+
 # These packages are excluded from user builds
 ifneq ($(TARGET_BUILD_VARIANT),user)
 
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
-    CMUpdater \
     Superuser \
     su
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/cm/proprietary/Term.apk:system/app/Term/Term.apk \
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
@@ -214,19 +230,25 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 endif
 
-# easy way to extend to add more packages
--include vendor/extra/product.mk
-
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION_MAJOR = 11
+PRODUCT_VERSION_MAJOR = 12
 PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
+# Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
+
+ifndef CM_BUILDTYPE
+    ifdef RELEASE_TYPE
+        # Starting with "CM_" is optional
+        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^CM_||g')
+        CM_BUILDTYPE := $(RELEASE_TYPE)
+    endif
+endif
 
 # Filter out random types, so it'll reset to UNOFFICIAL
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
-    CM_BUILDTYPE :=Resurrection_Remix_KK_v5.1.5
+    CM_BUILDTYPE :=
 endif
 
 ifdef CM_BUILDTYPE
@@ -242,7 +264,7 @@ ifdef CM_BUILDTYPE
     else
         ifndef CM_EXTRAVERSION
             # Force build type to EXPERIMENTAL, SNAPSHOT mandates a tag
-            CM_BUILDTYPE := Resurrection_Remix
+            CM_BUILDTYPE := EXPERIMENTAL
         else
             # Remove leading dash from CM_EXTRAVERSION
             CM_EXTRAVERSION := $(shell echo $(CM_EXTRAVERSION) | sed 's/-//')
@@ -252,8 +274,14 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_KK_v5.1.5
+    CM_BUILDTYPE := Resurrection_Remix_LP_v5.2.0_alpha
     CM_EXTRAVERSION :=
+endif
+
+ifeq ($(CM_BUILDTYPE), UNOFFICIAL)
+    ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
+        CM_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
+    endif
 endif
 
 ifeq ($(CM_BUILDTYPE), RELEASE)
@@ -269,13 +297,9 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
-  ro.resurrection.version=Resurrection_Remix_Kitkat_4.4-$(shell date -u +%Y%m%d) \
+  ro.resurrection.version=Resurrection_Remix_LP_5.0-$(shell date -u +%Y%m%d) \
   ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
-   
- PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_BUILD) \
-  ro.modversion=$(CM_BUILDTYPE) 
-  
+
 -include vendor/cm-priv/keys/keys.mk
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
@@ -306,3 +330,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
 -include vendor/cyngn/product.mk
+
+$(call inherit-product-if-exists, vendor/extra/product.mk)

@@ -1,258 +1,327 @@
-Resurrection Remix ROM
------------------------------------------------
-CHANGELOG
------------------------------------------------
-Source Code: http://github.com/ResurrectionRemix
- 
-Website: http://www.resurrectionremix.com
------------------------------------------------
-For extended changelog, track github activities
-----------------------------------------------
-# Resurrection Remix KitKat 4.4.2 - v5.1.5-20140609 # Basic
- 
-- Navigation bar dimensions
-- Ability to disable hardware keys via nav bar settings
-- Add android:key in hardware keys enable/disable option to forward enable this option
-- Themes: Delete icon resources during uninstall
-- Themes: remove unused code
-- Themes: uninstallThemeForAllApps shouldn't check if map is empty if it's null
-- base: remove extra checks
-- Don't cleanup overlay mapping for non-theme apps
-- appops: enforce appop for bluetooth disabled action
-- About Resurrection: devcard layout - fix FC devcard on lanscape mode
-- settings: FC on quick settings editor on tablets without a vibrator 
-- Add a HAF access permission 
-- Fix layout recreation check
-- CameraTile: Launch default gallery app when long pressing active camera tile
-- SystemUI: prevent NPE on clear recents double press
-- MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
-- Correct stride for drawing to cached glyph bitmap 
-- Use alpha channel instead of red in drawCachedGlyphBitmap
-- Temporarily hide lock screen unlock targets if opening a widget 
-- fw: media: Handle NPE due to threading race 
-- FW: LS Notification: fix FC when an expanded notification gets reposted without bigContentView
-- fix derp on INotificationListener
-- WallpaperCropper: do not display null bitmaps 
-- Make theme change broadcast a protected broadcast.
-- Reduce memory leaks by removing all views.
-- appops: do not prune apps that are not present
-- apn: national roaming for ONO (Spain)
-- fix more keyguard derp
-- Mms: Clear notifications and mark messages read in certain situations 
-- galaxys2-common: fix front cam video recording
-- Recovery - Version 6.0.4.9
-- included all cm-11.0 m7 updates
-- Check out the source activities for more details https://github.com/ResurrectionRemix
- 
-# NOTE:
-  
-- This is the final release of Resurrection Remix android kitkat series.I ll catch you guys on next android version A.K.A 4.5 or 5.0 . See you soon .Thank you !
- 
-  westcrip
-  
-  ENJOY!
+CyanogenMod
+===============
 
+Visit http://github.com/CyanogenMod for full source and git access.
 
-# Resurrection Remix KitKat 4.4.2 - v5.1.4-20140602 # Basic
- 
-- Add gesture anywhere
-- Add equalizer tile
-- Add compass tile 
-- On-The-Go mode
-- Add system app remover
-- Added Power button to available NavigationBar buttons
-- Add on-the-go and volume as Default tile
-- Fliptile animation:For Compass Tile & On-The-Go Tile
-- SystemUI: Make wifi combo margin themable
-- Lockscreen: Avoid SystemUI crash due to NPE - fix all bıtmap derp
-- Fix resource leaks
-- Fix hiding ADB notification 
-- CM11 Themes: Use package name from AndroidManifest
-- wm: Underp menu key release processing
-- Fix circle battery opaqueness for the low battery color 
-- wm: Make the default menu longpress action configurable at build time
-- wm: Underp menu key release processing
-- wm: Simplify menu action decision paths
-- quiethours: fix vibrate option 
-- Keyguard : Fix album art sticking after playback is stopped
-- fix default lockscreen targets
-- CM11 Themes: Don't kill setup wizards 
-- Fix wallpapers not applying in full screen
-- Added Non-Roaming for carrier BSNL in UP East and WEST INDIA 
-- frameworks: allow Keyguard package to be defined in overlay 
-- Keyguard: Make sure disabling Camera widget 
-- perf: Don't persist the perf profile across a reboot
-- perf: Send a boost hint when a key on the navbar is pressed 
-- Animate circle battery rotation back to 0 after unplugging
-- Bluetooth: Fix for device gets stuck in pairing
-- Bluetooth: Acquire wakelock to turn on lcd during Connection
-- settings: Move headset option, hide MoreDeviceSettings if empty 
-- Settings: Remove screen rotation from accessibility
-- Settings: Allow access for external apps to launch ThemeSettings Fragment directly
-- Settings: read keyguard package name from overlays
-- Settings: Disable Battery status preference on ModLock. 
-- Settings: Remove "Make pattern visible" regardless.
-- Settings: Device Maintainers: Remove janice & codina 
-- Settings: Maintainer : add device Galaxy Note int
-- n7100 - Fix sensors - audio hal updates - Update fingerprint
-- i9300 - Add iso mode settings to the CameraWrapper - fix preview/camera crash after stopping video record
-- ResurrectionSetup updates
-- Trebuchet updates
-- Theme chooser updates
-- Camera app improvements
-- Calculator updates
-- MMS updates
-- Included lot of performance,sound and media updates
-- Included All CyanogenMod source updates and fixes
-- Check out the source activities for more updates https://github.com/ResurrectionRemix
- 
-# Resurrection Remix KitKat 4.4.2 - v5.1.3-20140525 # Basic
+Visit http://review.cyanogenmod.org for our Gerrit instance.
 
-- Peek: updates and fixes
-- NEW: App Circle Sidebar
-- Pitch Black : Red Action Bar
-- Dismiss IME when floating window is dismissed
-- Don't animate the circle battery meter when battery is fully charged
-- Smart Pull-Down - Any Notification
-- Themes: Support launcher based icon packs
-- Remove blank app from notification access menu
-- Add "Accept all files" option for incoming files via Bluetooth
-- Revert "CPUFreq Tile" 
-- Perf: Improve performance profiles 
-- Immersive mode: don't unconfirm a package, that's just dumb 
-- Development: Add setting for overwriting recovery 
-- CM11 Themes: Allow defining a custom default theme
-- Fix ressource leaks
-- Bluetooth updates
-- Add a getter for the x and y offsets of the wallpaper window 
-- Keep title clean : remove ® from resurrection remix title
-- Updates to FR translations by Madikan 
-- Settings: correct y-axis brightness in preview 
-- Remove nova launcher
-- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013-Sony Xperia M
-- Trebuchet updates
-- Torch updates
-- Camera updates
-- Themes app updates and improvements
-- i9300-Device provides its own camera HAL
-- i9300-n7100-Fix google camera
-- smdk4412-common: fix charging animation 
-- smdk4412-common: Enable use of FFMPEG codecs for extended formats
-- smdk4412-kernel updates
-- hammerhead: Fix default value of color calibration
-- Included lot of performance,sound and media updates
-- Included CyanogenMod source updates and fixes
+CHANGELOG (notable new features)
+---------
+### 11.0.0 M11
+* Common: Android 4.4.4 (Google)
+* New Devices: Galaxy S4 Active (jactivelte), Galaxy S4 SK I-9506 (ks01lte), Galaxy S5 GSM (klte), Galaxy Tab 10.1 (picassowifi), Galaxy Player 4.0 (ypg1)
+* Re-introduce Samsung Galaxy Relay 4G (apexqtmo) support
+* Fix signal strength showing ’2147483647′ on certain devices
+* Frameworks & Core Apps: CAF and other upstream updates
+* Lockscreen: Do not play sounds while a phone call is active & MSIM updates
+* Frameworks: Add base & MSIM APIs for SEEK (Secure Element Evaluation Kit) support
+* Frameworks: Fix volume button changing two ‘steps’ per click
+* Frameworks: Add ‘Screen Off’ action for double-tap/long-press configuration options
+* Show devices connected to your WiFi (tethering) Hotspot
+* Fix bug related to ‘switch to last app’ action while in Recents view
+* Fix Navigation Bar arrow keys in RTL locales
+* Translations updates from CyanogenMod CrowdIn team
+* Adjustments to ‘Glove Mode’ (High Touch Sensitivity)
+* APN Updates for various regions
+* Camera: Add support for all available Slow Shutter speeds (hardware dependent); Improve shutter button
+* Dialer/InCallUI: Fix smartcover always showing answer fragment
+* LG G2: Address GPS and NFC issues
+* Base support for HTC Desire 816 & HTC One Mini 2 (pending nightlies)
+* Various security updates
+* General bug fixes
 
-# Resurrection Remix KitKat 4.4.2 - v5.1.2-20140516 # Basic
+### 11.0.0 M10
+* Common: Android 4.4.4 (Google)
+* New Devices: Galaxy S5 Sprint (kltespr)
+* Split out Note 3 into GSM (hlte), Sprint (hltespr) and Verizon (hltevzw)
+* Refactor moto_msm8960dt as 'ghost' for Moto X 2013
+* Drop support for obake, toro, toroplus
+* Theme Engine: Themes support for additional UI elements
+* Frameworks & Core Apps: CAF and other upstream updates
+* Settings: Add scramble pin feature
+* Frameworks: Long press recent apps to switch to last used app
+* Settings: Add soft reboot option
+* Add smart cover support
+* Add glove mode support
+* Add bug reporter and crash log uploader
+* Multisim updates
+* General bug fixes
+* ANT+ Support for various hardware
+* Privacy Guard: Control NFC permissions
 
-- Add New RR Team member t4n017 (Tano Abeleyra) to developer info cards
-- Settings: make animations faster by default 
-- Floating Window:updates and fixes
-- New Lockscreen custom wallpaper from cm11 .new theme chooser capable
-- CPUFreq Tile
-- WallpaperPicker: Destroy cropview to avoid leaks
-- Allow 3 AT (mnc05) to roam on T-Mobile in Austria 
-- Avoid SystemUI crash due to NPE 
-- CamcorderProfile: Add 4k timelapse encoder constants 
-- AudioService: fix safe volume enforced even when disabled
-- fix systemui fc while changing slim recents to left on hdpi compiled devices
-- Second Clock Statusbar
-- Add AutoRotate and music as Default tile
-- MediaFile: support more media types
-- UserTile: Fix displaying user information for multi-user devices 
-- Add missing mdpi, hdpi, xhdpi drawables for new theme engine 
-- remove xperia neo - hallon from device tree
-- Fix NullPointerException issue when user change 
-- Packages : Fix for Softap turn ON/OFF fail issue. 
-- Fixes error message during pairing of HOGP devices
-- Bluetooth: Ignore the second button if one already pressed 
-- Bluetooth: Release pan proxy object while coming out from tethering menu 
-- settings: Remove "mobile plan" 
-- make LinearColorBar themeable
-- Settings: modify AOSP RU translation
-- fix RR Tools xxhdpi PNG s
-- Themes: List ThemeSettings as a valid fragment 
-- Add maintainer- Samsung Galaxy Nexus - Toro (by nasty007)
-- Add maintainer- Samsung Galaxy Mega 6.3 - GT-I9205 / GT-I9200 (by Silesh.Nair)
-- Trebuchet updates
-- Theme chooser updates
-- Torch updates
-- Camera updates
-- Email updates
-- Recovery updates
-- Mms updates
-- Lockclock updates
-- Latin İME updates
-- Contact updates
-- Translation updates
-- Check out the source activities for more updates https://github.com/ResurrectionRemix
+### 11.0.0 M9
+* Common: Android 4.4.4 (Google)
+* New Devices: Sony Xperia Z2 Tablets (castor); HTC One (m8)
+* Theme Engine: Themes support for additional UI elements
+* Lockscreen: Allow doubletap to sleep when using secure keyguard
+* Settings: Safe Headset Volume – prompt when interfering with 3rd party device (Jawbone, Square, etc)
+* Settings: Center clock support
+* Settings: Proximity Wake-Up support
+* Settings: Spam notification filtering
+* Settings Search: Additional improvements and highlighting
+* Data Usage Info: Add support for CDMA devices without sim cards
+* Bluetooth: Add additional A2DP profiles
+* Bluetooth: Disable AVRCP 1.5 by default (fixes various car unit compatibility)
+* Email: Fix saving attachments to storage for POP3 accounts
+* Account for Play Services induced wake-locks
+* Fix encryption on some LG Devices
+* Dialer: add support for Korean and Chinese to smart-dialer
 
+### 11.0.0 M8
+* Common: Android 4.4.4 (Google)
+* New Devices: Sony Xperia Z2 (sirius); Xiaomi Mi2 (aries); Oppo Find 7a/s (find7); OnePlus One (bacon)
+* Common: Fix VPN issues related to 4.4.3 merge
+* Common: Enable 'Heads Up' notification mode (Settings > Notifications)
+* Settings: 'Interface' replaced by 'Status Bar', 'Notification Drawer', and 'Gestures'
+* Settings: Moved 'Expanded Desktop' to 'Display'
+* Settings: Moved all lock screen related items to 'Lock Screen' and removed duplicates from 'Security'
+* Settings: Moved 'Navigation Bar' layout control to 'Buttons'
+* Trebuchet: Custom Homescreen grid size
+* Trebuchet: Add Protected Apps feature
+* Trebuchet: Add Search Panel (Google Now) option
+* WhisperPush: No longer ignores 'Blacklist'
+* Futex: Protect against Towelroot
+* Various small bugfixes, global and device-specific
 
- # Resurrection Remix KitKat 4.4.2 - v5.1.1-20140508 # Basic
+### 11.0.0 M7
+* Common: Android 4.4.2 (Google)
+* New Devices: HTC One (m8); Samsung Galaxy Tab Pro 8.4 (mondrianwifi); Galaxy Note 8.0 LTE (n5120); LG G2 Docomo (l01f)
+* Common: Theme Chooser UI Overhaul
+* Common: Calculator app redesign (courtesy Xlythe)
+* Common: Performance Profiles
+* Common: Improved theming performance on low memory devices (~512MB RAM or less)
+* Trebuchet: Move settings to new slide-out panel
+* Trebuchet: Consolidate settings for home and drawer options
+* Media: Add FFMPEG support (expanded media format support)
+* Bluetooth: Improved support for new car audio systems and docks
+* Various small bugfixes, global and device-specific
 
-- Add new theme engine
-- Fix for phone call sound
-- Some improvements
+### 10.2.0
+* Common: Android 4.3 (Google)
+* Common: Privacy Guard 2.0 with AppOps
+* Common: Quick Settings Ribbon (replaces Notification Power Widgets)
+* Common: Hardware Tunables HAL
+* Common: Settings restructure
+* SMS: Voice+ (Google Voice integration)
+* SMS: Middleware layer
+* APN: World Phone Support (unified APN list)
+* Trebuchet: Universal Icon Pack support
+* Various small bugfixes, global and device-specific
 
-# Resurrection Remix KitKat 4.4.2 - v5.1.1-20140507 # Basic
- 
-- Notification Peek (from Paranoid Android)
-- Active Display: Many updates and fixes from OmniROM (thanx to t4n017 @ XDA)
-- Updated the Torch app interface
-- Speeded up the overall UI
-- Fix recents showing up when waking the device with the home button
-- Allow configuration of the default screen-off animation style
-- Fix Airplane Mode on/off issue
-- Update mobile networks icon in Settings
-- Fix Total and available fields missing in Settings storage menu 
-- AudioService: Fix absolute volume for AVRCP 
-- Fix delay of Volume popup when tapping 'Volumes' in 'Settings>Sound'
-- Allow Power Notification Sounds For Wireless
-- Camera2: Update to use newer slow-shutter parameter
-- Camera2: Prevent autofocus when video snapshot is in progress 
-- Camera2: Surface Qualcomm denoise option
-- Camera2: Disable ZSL for slow shutter shots 
-- Contacts: QuickContact: onLongClick save item data to clipboard 
-- SystemUI: add AOSP RU translation
-- i9082: fix low call volume bug
-- Add maintainer Xperia Arc - Anzu (by 3andala)
-- add maintainer Samsung Galaxy Nexus - Maguro (by nasty007)
-- add maintainer Xperia Z1 - Honami (by omarainea)
-- add maintainer Samsung Galaxy Mega 6.3 - GT-I9205 / GT-I9200 (by Silesh.Nair) 
-- add maintainer Samsung Galaxy S4 Mini - GT-I9195 / GT-I9190  (by Silesh.Nair)
-- Add new Sony xperia maintainers NEO-NEOV-Z1
-- hammerhead: Add hardware tunables support: display
-- hammerhead: Add hardware tunables support: vibrator 
-- Torch: set default hasHighBrightness flag to false 
-- torch: Don't show the about dialog on first launch
-- Hide search assistant arrow from lockscreen when custom lockscreen is enabled
-- Bluetooth: pause music player on A2dp service disconnect
-- Bluetooth: Add Total track number. 
-- Base: Many other updates to Bluetooth
-- RR Tools French translations - translated by Pierre Delfosse
-- Included lot of sound and media updates
-- Included CyanogenMod source updates and fixes
+### 10.1.3
+* Common: CyanogenMod Account
+* Common: Privacy Guard
+* Common: Dialer blacklists
+* Common: Wake-on-Home
+* Common: QuickSettings camera
+* Common: Profile improvements
+* Various small bugfixes, global and device-specific
 
+### 10.1.2
+* Master Key #2 fix
 
-# Resurrection Remix KitKat 4.4.2 - v5.1.0-20140424 # Basic
- 
-- Downloads: add support for manual pause/resume/stop downloading
-- Gesture Lockscreen
-- Notification Drawer: Custom Clock & Calendar Shortcuts
-- About RR - Add new website
-- Fixed 480x800 bootanimation zip looping (thanx to iceyhotguy @ XDA)
-- For Device Maintainers: Added a new command - make dirty (read more - http://goo.gl/i1JB3W)
-- Parallel Shutdown
-- SlimRecents: fix sometimes missing first task
-- Device Maintainers: add M7 maintainer
-- Device Maintainer: add Droid RAZR maintainer
-- Don't show "Eject card" if the card is not accessible 
-- Audio: Fixed system/call stream volume can't adjust with HS connected.
-- Fix "Email" App data lost when screen rotated.
-- Fix a number of aapt warnings. 
-- Settings: Make mobile settings a first-class citizen
-- Update device source -i9100-i9300-n7100: fixed lot of bugs
-- Fix very long app_name crash. 
-- RR Tools French translations - translated by Pierre Delfosse
-- Included lot of sound and media updates
-- Included CyanogenMod source updates and fixes
+### 10.1.1
+* Master Key #1 fix
+
+### 10.1.0
+* Common: Android 4.2.2 (Google)
+* Common: cLock Lockscreen and Homescreen Widget
+* Common: Theme Engine Support
+* Common: Customize Navigation Bar (on devices without hardware keys)
+* Common: Customize Notification Light
+* Common: Display Battery Light
+* Common: Profiles with NFC support
+* Common: Customize Screen Rotation
+* Common: Notification Power Widgets
+* Common: DSP Manager
+* Common: Volume Rocker Wake
+* Common: Performance Settings (I/O Scheduler, CPU Governor, etc)
+* Quick Settings: Panel Customization
+* Quick Settings: Toggle QS panel with horizontal swipe
+* Quick Settings: Split QS actionable area
+* Quick Settings: Added QS Tiles
+* Status Bar: Hide or Show Clock
+* Status Bar: Battery Percentage and Circle Battery
+* Status Bar: Show Notification Counts
+* Status Bar: Signal Status Customization
+* Status Bar: Set Date and Time as buttons (with longpress actions)
+* Trebuchet: Launcher Updates
+* Lockscreen: Slider Shortcuts
+* Lockscreen: Maximize Widgets on Wake
+
+### 10.0.0
+* Common: Android 4.1.2 (Google)
+
+### 9.0.0
+* Common: Android 4.0.4 (Google)
+
+### 7.1.0
+* Common: Android 2.3.7 (Google)
+* Common: Bluetooth mouse support - Scott Brady
+* Common: Improve notification swipe-to-clear - Evan Charlton
+* Common: Improve album-artist support in media scanner - Paul Crovella
+* Common: Profile improvements and bugfixes - Martin Long, Danny Baumann, Robert Burns
+* Common: RTL text improvements - Eyad Aboulouz, Eran Mizrahi
+* Common: Wake on volume key option - Sven Dawitz
+* Common: Support for revoking application permissions - Plamen K. Kosseff
+* Common: Latest Superuser app - ChainsDD
+* Common: Control brightness by sliding on statusbar - Danesh M
+* Common: Add "copy all" to context menu - Danesh M
+* Common: Lockscreen haptic and statusbar indicators toggle - Danesh M
+* Common: Nicer timepicker/datepicker - Jiri Tyr
+* Common: Configuration 0/90/180/270 rotation - Jonas Larsson, Scott Brady
+* Common: DSP Manager bugfixes and improvements - Antti S Lankila
+* Common: Support for launching apps via gestures in the background - Jiri Tyr
+* Common: Option to hide hold button during call - Roberto Leinardi
+* Common: Allow using wildcards for call blacklisting - Nihanth Subramanya
+* Common: Option to allow in-call lockscreen to match main lockscren - Sven Dawitz
+* Common: Option to notify about incoming call only in background when screen is on - Pavel Kucera
+* Common: ADWLauncher- Transitions, catalog improvements, bugfixes - John Van Etten
+* Common: Optional GMT correction for SMS/MMS timestamps - Terry Hau
+* Common: Add FM Seek for TI devices - KalimochoAz
+* Common: Add FM support for SI4708 devices (Blade, V9, Racer) - Stéphane Konstantaropoulos
+* Common: Add FM seek implementation to FM application - Tom Giordano
+* Common: Show current FM status on lockscreen - Tom Giordano
+* Common: Camera touch-to-focus - cyanogen, arcee, m0viefreak, Danny Baumann
+* Common: Screenshot feature via power menu - arcee
+* Common: WEBP backport - Vikas Arora
+* Common: Add CM copyright noticies - arcee
+* Common: Skia/Zlib/libcore ARM optimizations - 0xlab
+* Common: Bluetooth tethering - Stéphane Konstantaropoulos
+* Common: Lockscreen widget alignment - Danesh Mondegarian
+* Common: Lockscreen calendar - David Morgan
+* Common: AVRCP 1.3 support - Qualcomm (bugfix by Danny Baumann)
+* Common: LED notification overhaul - Danny Baumann
+* Common: System-wide DNS cache - Google, SEMC
+* Common: Headset icon toggle - Cameron Pickett
+* Common: FM seek support - Emilio López, Tom Giordano
+* Common: Editable event fields in Contacts app - Danny Baumann
+* Common: Remove compromised CA from system certs - Guardian Project
+* Common: Mute camera shutter option - George Maizel
+* Common: Camera timer - Danesh Mondegarian
+* Common: "Mark all read" option in MMS - Vinod Surendran
+* Common: "eat" pushes fresh brunch/breakfast to device - Ricardo Cerqueira
+* Common: Customizable account color chip in Email - copolii
+* Common: "Rings" lockscreen - Valera Trubachev
+* Click, Motorola: Speed up photo recording - Emilio López
+* Click, Motorola: Add Geolocation to photo app - KalimochoAz
+* Click: Upgraded kernel from HTC 2.6.29 to 2.6.35
+* HTC msm7x30: 2.6.35 kernel and updated userspace
+* Buzz: 2.6.35 kernel - Arne Coucheron
+* Bravo(c)/Vivo(w)/Ace/Liberty: On charge notification led - Richard Antony Burton
+* Crespo/Crespo4G: Kernel update 2.6.35.14 and more, voodoo implementation, BLN, BLX...
+* Encore: Update kernel from 2.6.29 to 2.6.32 - Dalingrin,Fattire,Verygreen
+* Encore: New GPU drivers and userspace libs
+* Encore: Adjustable clockspeed and voltage - Dalingrin
+* Encore: Backport 2.6.35 Bluetooth - Fattire
+* Encore: Working mem sleep
+* Encore: USB host support - Verygreen
+
+### 7.0.3
+* Common: Don't allow packages with platform keys on user-controlled storage
+
+### 7.0.2
+* Common: Fix issue with missing built-in themes
+* Common: Update bundled ROM Manager to latest version
+* Supersonic: Actually fix GPS
+* Supersonic: Fix proximity and light sensor
+
+### 7.0.1
+* Common: Fix fling velocity of status bar and ADW swipe - Sven Dawitz
+* Common: Fixed webview layout bug (issue 3229) - Zinx
+* Common: Fix GVoice-opens-twice bug - Zinx
+* Common: Fix issues on all devices with DNS resolution failure after some time - Zinx, various
+* Common: RTL improvements - Eran Mizrahi, Eyad Aboulouz
+* Common: Fix crashes in Arabic locale - Eyad Aboulouz
+* Common: Add Arabic keylayout - Eyad Aboulouz
+* Common: Improve ADWLauncher scrolling/zoom performance - Pavel Kucera
+* Common: Fix excessive memory use when appending to textviews - Cyanogen
+* Common: New wallpapers from the CM community (CC License, see app for credits)
+* Common: Option to disable vibration while in-call - Evan Charlton
+* Common: Add long press option to status bar widgets for settings - Alex Avance
+* Common: Compact carrier and status bar tweaks - Nihanth Subramanya, rorifree
+* Sholes: Fix connectivity loss bug - cvpcs
+* Speedy: Fix keyboard lights - JD Horelick
+* Glacier: Fix backlights - Zinx
+* Glacier: fix GPS issues - Zinx/QCom
+* msm7x30: Fix bugs during video resume - Zinx
+* qsd8x50: Fix 720p video playback
+* qsd8x50: Unified 2.6.37 kernel - Cyanogen, toastcfh, slayher
+* Espresso, Legend: WiFi fix (HTC)
+* Supersonic: Fix GPS issues (HTC)
+* msm7227: Fix GPS issues - Alex Hofbauer
+* Click: Fix recovery kernel and compilation. Now works well with latest code - KalimochoAz
+* Click: Speed up internet connection - KalimochoAz
+* Blade: Update kernel to match Gen2 Radio - kallt_kaffe
+* Blade: Update libaudio to fix SIP audio routing and microphone mute - Tom Giordano
+
+### 7.0.0
+* Common: Android 2.3.3 (Gingerbread) - Google
+* Common: Fixes and changes from AOSP master - Various
+* Common: ClockworkMod Recovery 3.0: Koush, Cyanogen, Zinx
+* Common: Themes engine - T-Mobile
+* Common: Performance enhancements for Qualcomm hardware - Code Aurora
+* Common: New boot animation - 73v1n - http://www.youtube.com/watch?v=mYXiKWwp0DQ
+* Common: Fix readahead values for NAND/MMC devices
+* Common: Revamped notification widget - cvpcs
+* Common: Updated various graphics for GB style - blunden
+* Common: DSPManager updated for 2.3 - alankila
+* Common: Restyled music app and forward-port of features - Jason Asher
+* Common: Rotary answer in Phone app - James Peterson
+* Common: BT VoiceDialer fixes - Matthew Sparby
+* Common: Calendar enhancements - James Peterson
+* Common: Stagefright fixes for 7x30, 8x50, and 7x27 - Zinx, arcee, Cyanogen
+* Common: Pacman package manager - Kmobs
+* Common: Workaround for unknown phone number - Jiri Tyr
+* Common: Trackball answer/hangup - Juan Rodriguez
+* Common: CMParts reorganization - Robert Burns
+* Common: View ChangeLog via CMParts (System) - Wes Garner
+* Common: Optional screen on/off animations - Diogo Ferreira
+* Common: New browser incognito mode - optedoblivion
+* Common: New trackball/trackpad wake - Zinx, Cyanogen
+* Common: Legacy sensor/GPS support - arcee
+* Common: Enabled v8 javascript engine on armv6 (msm7227/msm7225) - arcee
+* Common: Customizable overscroll - arcee
+* Common: Torch cleanup - defer
+* Common: 2D compositor backwards compatibility - arcee
+* Common: OpenGL backwards compatibility - Zinx, Cyanogen, Sileht, ezterry
+* Common: SMS templates using gestures - Riccardo Ciovati
+* Common: Phone Goggles - David Bidorff
+* Common: Option to always show battery percentage on lockscreen - Robert Burns
+* Common: Option to show music controls with compatible headset connection - Wes Garner
+* Common: CPU frequency/scaling control in CMParts - Robert Ramiega
+* Common: Option to pause/play music with camera button - cvpcs
+* Common: Allow SIP User-Agent configuration - arcee
+* Common (non-HTC): Fixed mobile connection suspension - arcee
+* Common: New music widgets - Jason Asher
+* Common: Updated FLAC support - cvpcs, Cyanogen, kroot
+* Common: Updated wallpapers - Fitsnugly, Prash
+* Common: Customizable search/long-press search - Sven Dawitz
+* Common: New lockscreen styles - Rotary Revamped (default) and Lense - Sven Dawitz, Stefano Pignataro
+* Common: Customizable app launcher on rotary lockscreen - Sven Dawitz
+* Common: Now playing and album art on lockscreen - kmobs
+* Common: GPS fixes - CodeAurora, arcee
+* Common: Breakfast/Brunch - arcee
+* Common: Statusbar battery percentage with mini icon - Sven Dawitz, design by Jazz Kalsi
+* Common: SMS split for braindead carriers - Mike Wielgosz
+* Common: MMS user-defined custom vibrate - Wes Garner
+* Common: CMParts cleanup - Sven Dawitz
+* Common: Notification profiles - Martin Long
+* Common: TI wl12xx FM radio reverse engineering - Michael A. Reid
+* Common: Tablet tweaks - Sven Dawitz
+* Common: Revamped CMStats - Chris Soyars
+* Common: Improved RTL text support and fonts - Eyad Aboulouz, Eran Mizrahi,
+* Espresso/Legend: Enabled native WiFi tethering - Cyanogen, OMAPZoom.org
+* Legend/Liberty/Buzz/Click: Enabled FM Radio - Alexander Hofbauer (libaudio patch)
+* Z71: Enabled MPEG4/AAC video recording - arcee
+* Z71: Enabled native WiFi tethering - arcee
+* Passion/Bravo/BravoC/Supersonic/Inc: Kernel 2.6.37 - Google, Cyanogen, defer, Kali-, toastcfh, slayher
+* Vision/Glacier/Espresso: WiFi calling compatibility and optimization - Zinx
+* Vision/Glacier/Ace: Unified kernel - HTC, Cyanogen, Zinx, Kali-, defer
+* Vision/Glacier/Ace: Fix FM radio on 2.3 - Zinx
+* Vision/Glacier/Ace: Fixes for video overlay - Zinx, CodeAurora
+* Vision: Only install WiFi calling on TMUS devices - attn1
+* Espresso/Legend/Liberty: Unified kernel - HTC, Cyanogen, attn1, jznomoney, Alexander Hofbauer
+* Supersonic: WiMAX support - HTC, Shinzul, toastcfh, shift, #teamwin, Cyanogen, Joey Conway
+* Supersonic: HDMI mirror support: #teamwin
+* ONE: Enabled native WiFi tethering - arcee

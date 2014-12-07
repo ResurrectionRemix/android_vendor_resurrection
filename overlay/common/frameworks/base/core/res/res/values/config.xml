@@ -32,6 +32,7 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
     </string-array>
 
     <string name="config_mms_user_agent">CyanogenMod</string>
@@ -39,11 +40,22 @@
 
     <!-- Automatic power profile management per app.
          Each item should list the fully-qualified activity
-         name and the power profile id, separated by a comma. -->
+         name and the power profile id, separated by a comma.
     <string-array name="config_auto_perf_activities" translatable="false">
         <item>com.aurorasoftworks.quadrant.*BenchmarkExecutionActivity,2</item>
         <item>com.antutu.ABenchMark.*,2</item>
         <item>.*com.antutu.benchmark.*,2</item>
+    </string-array>
+  -->
+
+    <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
+         on the current state of the device. -->
+    <string-array translatable="false" name="config_globalActionsList">
+        <item>power</item>
+        <item>reboot</item>
+        <item>airplane</item>
+        <item>bugreport</item>
+        <item>users</item>
     </string-array>
 
 </resources>

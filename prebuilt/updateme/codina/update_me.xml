@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<RomConfig>
-    <RomName>Resurrection Remix GT-I8160</RomName>
-    <RomVersion>20140525.5.1.3</RomVersion>
-    <RomCheckUrl>https://dl.dropboxusercontent.com/s/hjxuqt47b24jky2/update_me_check_i8160.xml</RomCheckUrl>
-	<RebootRecovery>1</RebootRecovery>
-	<DownloadDir>/storage/sdcard0/Resurrection_Remix</DownloadDir>
-    <OtaUid>rr_kk-codina</OtaUid>
-</RomConfig>

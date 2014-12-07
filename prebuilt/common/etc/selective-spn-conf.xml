@@ -89,7 +89,6 @@
   <spnOverride numeric="40001"  spn="Azercell" />
   <spnOverride numeric="40002"  spn="Bakcell" />
   <spnOverride numeric="40003"  spn="FONEX" />
-  <!-- Azerbaijan -->
   <spnOverride numeric="40004"  spn="Nar Mobile" />
   <!-- Bahamas -->
   <spnOverride numeric="364390" spn="BaTelCo" />
@@ -1195,8 +1194,8 @@
   <spnOverride numeric="26010"  spn="Telefony Opalenickie" />
   <spnOverride numeric="26009"  spn="Telekomunikacja Kolejowa" />
   <!-- Portugal -->
-  <spnOverride numeric="26803"  spn="Optimus" />
-  <spnOverride numeric="26806"  spn="TMN" />
+  <spnOverride numeric="26806"  spn="MEO" />
+  <spnOverride numeric="26803"  spn="NOS" />
   <spnOverride numeric="26801"  spn="Vodafone" />
   <spnOverride numeric="26821"  spn="Zapp" />
   <!-- Puerto Rico -->
@@ -1405,7 +1404,6 @@
   <spnOverride numeric="24033"  spn="Mobile Arts AB" />
   <spnOverride numeric="24003"  spn="Nordisk Mobiltelefon" />
   <spnOverride numeric="24010"  spn="SpringMobil" />
-  <spnOverride numeric="24024"  spn="Sweden 2G" />
   <spnOverride numeric="24024"  spn="Sweden 2G" />
   <spnOverride numeric="24005"  spn="Sweden 3G" />
   <spnOverride numeric="24014"  spn="TDC Mobil" />
