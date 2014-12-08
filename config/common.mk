@@ -150,7 +150,6 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMFileManager \
     LockClock \
-    CMUpdater \
     CMAccount \
     CMHome
 
