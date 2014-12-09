@@ -21,7 +21,256 @@ Resurrection Remix Lollipop 5.0.1 - v5.2.0-# Basic
 -
 -
 -
-
 -
 -
+-
 
+
+# Resurrection Remix KitKat 4.4.2 - v5.1.5-20140609 # Basic
+ 
+- Navigation bar dimensions
+- Ability to disable hardware keys via nav bar settings
+- Add android:key in hardware keys enable/disable option to forward enable this option
+- Themes: Delete icon resources during uninstall
+- Themes: remove unused code
+- Themes: uninstallThemeForAllApps shouldn't check if map is empty if it's null
+- base: remove extra checks
+- Don't cleanup overlay mapping for non-theme apps
+- appops: enforce appop for bluetooth disabled action
+- About Resurrection: devcard layout - fix FC devcard on lanscape mode
+- settings: FC on quick settings editor on tablets without a vibrator 
+- Add a HAF access permission 
+- Fix layout recreation check
+- CameraTile: Launch default gallery app when long pressing active camera tile
+- SystemUI: prevent NPE on clear recents double press
+- MtpDatabase JNI: Fixed a memory-leak in getObjectPropertyValue().
+- Correct stride for drawing to cached glyph bitmap 
+- Use alpha channel instead of red in drawCachedGlyphBitmap
+- Temporarily hide lock screen unlock targets if opening a widget 
+- fw: media: Handle NPE due to threading race 
+- FW: LS Notification: fix FC when an expanded notification gets reposted without bigContentView
+- fix derp on INotificationListener
+- WallpaperCropper: do not display null bitmaps 
+- Make theme change broadcast a protected broadcast.
+- Reduce memory leaks by removing all views.
+- appops: do not prune apps that are not present
+- apn: national roaming for ONO (Spain)
+- fix more keyguard derp
+- Mms: Clear notifications and mark messages read in certain situations 
+- galaxys2-common: fix front cam video recording
+- Recovery - Version 6.0.4.9
+- included all cm-11.0 m7 updates
+- Check out the source activities for more details https://github.com/ResurrectionRemix
+ 
+# NOTE:
+  
+- This is the final release of Resurrection Remix android kitkat series.I ll catch you guys on next android version 5.0 . See you soon .Thank you !
+ 
+  westcrip
+  
+  ENJOY!
+
+
+# Resurrection Remix KitKat 4.4.2 - v5.1.4-20140602 # Basic
+ 
+- Add gesture anywhere
+- Add equalizer tile
+- Add compass tile 
+- On-The-Go mode
+- Add system app remover
+- Added Power button to available NavigationBar buttons
+- Add on-the-go and volume as Default tile
+- Fliptile animation:For Compass Tile & On-The-Go Tile
+- SystemUI: Make wifi combo margin themable
+- Lockscreen: Avoid SystemUI crash due to NPE - fix all bıtmap derp
+- Fix resource leaks
+- Fix hiding ADB notification 
+- CM11 Themes: Use package name from AndroidManifest
+- wm: Underp menu key release processing
+- Fix circle battery opaqueness for the low battery color 
+- wm: Make the default menu longpress action configurable at build time
+- wm: Underp menu key release processing
+- wm: Simplify menu action decision paths
+- quiethours: fix vibrate option 
+- Keyguard : Fix album art sticking after playback is stopped
+- fix default lockscreen targets
+- CM11 Themes: Don't kill setup wizards 
+- Fix wallpapers not applying in full screen
+- Added Non-Roaming for carrier BSNL in UP East and WEST INDIA 
+- frameworks: allow Keyguard package to be defined in overlay 
+- Keyguard: Make sure disabling Camera widget 
+- perf: Don't persist the perf profile across a reboot
+- perf: Send a boost hint when a key on the navbar is pressed 
+- Animate circle battery rotation back to 0 after unplugging
+- Bluetooth: Fix for device gets stuck in pairing
+- Bluetooth: Acquire wakelock to turn on lcd during Connection
+- settings: Move headset option, hide MoreDeviceSettings if empty 
+- Settings: Remove screen rotation from accessibility
+- Settings: Allow access for external apps to launch ThemeSettings Fragment directly
+- Settings: read keyguard package name from overlays
+- Settings: Disable Battery status preference on ModLock. 
+- Settings: Remove "Make pattern visible" regardless.
+- Settings: Device Maintainers: Remove janice & codina 
+- Settings: Maintainer : add device Galaxy Note int
+- n7100 - Fix sensors - audio hal updates - Update fingerprint
+- i9300 - Add iso mode settings to the CameraWrapper - fix preview/camera crash after stopping video record
+- ResurrectionSetup updates
+- Trebuchet updates
+- Theme chooser updates
+- Camera app improvements
+- Calculator updates
+- MMS updates
+- Included lot of performance,sound and media updates
+- Included All CyanogenMod source updates and fixes
+- Check out the source activities for more updates https://github.com/ResurrectionRemix
+ 
+# Resurrection Remix KitKat 4.4.2 - v5.1.3-20140525 # Basic
+
+- Peek: updates and fixes
+- NEW: App Circle Sidebar
+- Pitch Black : Red Action Bar
+- Dismiss IME when floating window is dismissed
+- Don't animate the circle battery meter when battery is fully charged
+- Smart Pull-Down - Any Notification
+- Themes: Support launcher based icon packs
+- Remove blank app from notification access menu
+- Add "Accept all files" option for incoming files via Bluetooth
+- Revert "CPUFreq Tile" 
+- Perf: Improve performance profiles 
+- Immersive mode: don't unconfirm a package, that's just dumb 
+- Development: Add setting for overwriting recovery 
+- CM11 Themes: Allow defining a custom default theme
+- Fix ressource leaks
+- Bluetooth updates
+- Add a getter for the x and y offsets of the wallpaper window 
+- Keep title clean : remove ® from resurrection remix title
+- Updates to FR translations by Madikan 
+- Settings: correct y-axis brightness in preview 
+- Remove nova launcher
+- Add maintainers: LG Optimus 4X HD-Nexus 7 2013-Nexus 7 LTE 2013-Sony Xperia M
+- Trebuchet updates
+- Torch updates
+- Camera updates
+- Themes app updates and improvements
+- i9300-Device provides its own camera HAL
+- i9300-n7100-Fix google camera
+- smdk4412-common: fix charging animation 
+- smdk4412-common: Enable use of FFMPEG codecs for extended formats
+- smdk4412-kernel updates
+- hammerhead: Fix default value of color calibration
+- Included lot of performance,sound and media updates
+- Included CyanogenMod source updates and fixes
+
+# Resurrection Remix KitKat 4.4.2 - v5.1.2-20140516 # Basic
+
+- Add New RR Team member t4n017 (Tano Abeleyra) to developer info cards
+- Settings: make animations faster by default 
+- Floating Window:updates and fixes
+- New Lockscreen custom wallpaper from cm11 .new theme chooser capable
+- CPUFreq Tile
+- WallpaperPicker: Destroy cropview to avoid leaks
+- Allow 3 AT (mnc05) to roam on T-Mobile in Austria 
+- Avoid SystemUI crash due to NPE 
+- CamcorderProfile: Add 4k timelapse encoder constants 
+- AudioService: fix safe volume enforced even when disabled
+- fix systemui fc while changing slim recents to left on hdpi compiled devices
+- Second Clock Statusbar
+- Add AutoRotate and music as Default tile
+- MediaFile: support more media types
+- UserTile: Fix displaying user information for multi-user devices 
+- Add missing mdpi, hdpi, xhdpi drawables for new theme engine 
+- remove xperia neo - hallon from device tree
+- Fix NullPointerException issue when user change 
+- Packages : Fix for Softap turn ON/OFF fail issue. 
+- Fixes error message during pairing of HOGP devices
+- Bluetooth: Ignore the second button if one already pressed 
+- Bluetooth: Release pan proxy object while coming out from tethering menu 
+- settings: Remove "mobile plan" 
+- make LinearColorBar themeable
+- Settings: modify AOSP RU translation
+- fix RR Tools xxhdpi PNG s
+- Themes: List ThemeSettings as a valid fragment 
+- Add maintainer- Samsung Galaxy Nexus - Toro (by nasty007)
+- Add maintainer- Samsung Galaxy Mega 6.3 - GT-I9205 / GT-I9200 (by Silesh.Nair)
+- Trebuchet updates
+- Theme chooser updates
+- Torch updates
+- Camera updates
+- Email updates
+- Recovery updates
+- Mms updates
+- Lockclock updates
+- Latin İME updates
+- Contact updates
+- Translation updates
+- Check out the source activities for more updates https://github.com/ResurrectionRemix
+
+
+ # Resurrection Remix KitKat 4.4.2 - v5.1.1-20140508 # Basic
+
+- Add new theme engine
+- Fix for phone call sound
+- Some improvements
+
+# Resurrection Remix KitKat 4.4.2 - v5.1.1-20140507 # Basic
+ 
+- Notification Peek (from Paranoid Android)
+- Active Display: Many updates and fixes from OmniROM (thanx to t4n017 @ XDA)
+- Updated the Torch app interface
+- Speeded up the overall UI
+- Fix recents showing up when waking the device with the home button
+- Allow configuration of the default screen-off animation style
+- Fix Airplane Mode on/off issue
+- Update mobile networks icon in Settings
+- Fix Total and available fields missing in Settings storage menu 
+- AudioService: Fix absolute volume for AVRCP 
+- Fix delay of Volume popup when tapping 'Volumes' in 'Settings>Sound'
+- Allow Power Notification Sounds For Wireless
+- Camera2: Update to use newer slow-shutter parameter
+- Camera2: Prevent autofocus when video snapshot is in progress 
+- Camera2: Surface Qualcomm denoise option
+- Camera2: Disable ZSL for slow shutter shots 
+- Contacts: QuickContact: onLongClick save item data to clipboard 
+- SystemUI: add AOSP RU translation
+- i9082: fix low call volume bug
+- Add maintainer Xperia Arc - Anzu (by 3andala)
+- add maintainer Samsung Galaxy Nexus - Maguro (by nasty007)
+- add maintainer Xperia Z1 - Honami (by omarainea)
+- add maintainer Samsung Galaxy Mega 6.3 - GT-I9205 / GT-I9200 (by Silesh.Nair) 
+- add maintainer Samsung Galaxy S4 Mini - GT-I9195 / GT-I9190  (by Silesh.Nair)
+- Add new Sony xperia maintainers NEO-NEOV-Z1
+- hammerhead: Add hardware tunables support: display
+- hammerhead: Add hardware tunables support: vibrator 
+- Torch: set default hasHighBrightness flag to false 
+- torch: Don't show the about dialog on first launch
+- Hide search assistant arrow from lockscreen when custom lockscreen is enabled
+- Bluetooth: pause music player on A2dp service disconnect
+- Bluetooth: Add Total track number. 
+- Base: Many other updates to Bluetooth
+- RR Tools French translations - translated by Pierre Delfosse
+- Included lot of sound and media updates
+- Included CyanogenMod source updates and fixes
+
+
+# Resurrection Remix KitKat 4.4.2 - v5.1.0-20140424 # Basic
+ 
+- Downloads: add support for manual pause/resume/stop downloading
+- Gesture Lockscreen
+- Notification Drawer: Custom Clock & Calendar Shortcuts
+- About RR - Add new website
+- Fixed 480x800 bootanimation zip looping (thanx to iceyhotguy @ XDA)
+- For Device Maintainers: Added a new command - make dirty (read more - http://goo.gl/i1JB3W)
+- Parallel Shutdown
+- SlimRecents: fix sometimes missing first task
+- Device Maintainers: add M7 maintainer
+- Device Maintainer: add Droid RAZR maintainer
+- Don't show "Eject card" if the card is not accessible 
+- Audio: Fixed system/call stream volume can't adjust with HS connected.
+- Fix "Email" App data lost when screen rotated.
+- Fix a number of aapt warnings. 
+- Settings: Make mobile settings a first-class citizen
+- Update device source -i9100-i9300-n7100: fixed lot of bugs
+- Fix very long app_name crash. 
+- RR Tools French translations - translated by Pierre Delfosse
+- Included lot of sound and media updates
+- Included CyanogenMod source updates and fixes
