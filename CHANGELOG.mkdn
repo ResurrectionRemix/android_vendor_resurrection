@@ -8,22 +8,21 @@ Website: http://www.resurrectionremix.com
 
 For extended changelog, track github activities
 
-Resurrection Remix Lollipop 5.0.1 - v5.2.0-# Basic
+Resurrection Remix Lollipop 5.0.1 - v5.2.0-# Initial Relase Changelog
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+-Statusbar clock customization + second + fonts
+-Network traffic monitor
+-Toast animations
+-Listview animations
+-LCD Density
+-Add Weather display to status bar header
+-Quick unlock
+-Overall Speed up system
+-Brand new music and audio fx app from cyanogen
+-Included all cm 12 features
+-And many more slim omni and orginal RR improvements and system ui changes running in this alpha build. So enjoy  
+
+
 
 
 # Resurrection Remix KitKat 4.4.2 - v5.1.5-20140609 # Basic
