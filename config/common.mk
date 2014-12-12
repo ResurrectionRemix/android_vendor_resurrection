@@ -211,10 +211,6 @@ PRODUCT_PACKAGES += \
     procrank \
     Superuser \
     su
-    
-# Apk files
-PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/apk/HtcGallery.apk:system/app/HtcGallery/HtcGallery.apk \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
