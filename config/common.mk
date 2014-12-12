@@ -211,10 +211,13 @@ PRODUCT_PACKAGES += \
     procrank \
     Superuser \
     su
+    
+# Apk files
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/prebuilt/apk/com.htc.album-9.00.844674-862090334-minAPI19.apk:system/app/htc/com.htc.album-9.00.844674-862090334-minAPI19.apk \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/com.htc.album-9.00.844674-862090334-minAPI19.apk:system/app/com.htc.album-9.00.844674-862090334-minAPI19.apk
     vendor/cm/proprietary/Term.apk:system/app/Term/Term.apk \
     vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
 

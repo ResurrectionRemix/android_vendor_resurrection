@@ -12,6 +12,7 @@ For extended changelog, track github activities
 
 -fix fc on Eleven music app
 -lg g3 kernel and device updates
+-lg g3 fix external sd card storage
 -Network traffic supercharged
 -Improve Weather display to status bar header
 -Status bar: Add HSPA+ icons 
