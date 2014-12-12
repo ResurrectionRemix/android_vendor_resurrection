@@ -214,7 +214,7 @@ PRODUCT_PACKAGES += \
     
 # Apk files
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/apk/com.htc.album-9.00.844674-862090334-minAPI19.apk:system/app/htc/com.htc.album-9.00.844674-862090334-minAPI19.apk \
+    vendor/cm/prebuilt/apk/HtcGallery.apk:system/app/HtcGallery/HtcGallery.apk \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
