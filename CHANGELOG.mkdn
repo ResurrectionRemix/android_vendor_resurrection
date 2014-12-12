@@ -8,7 +8,25 @@ Website: http://www.resurrectionremix.com
 
 For extended changelog, track github activities
 
-Resurrection Remix Lollipop 5.0.1 - v5.2.0-# Initial Relase Changelog
+# Resurrection Remix Lollipop 5.0.1 - v5.2.1  Basic
+
+-fix fc on Eleven music app
+-lg g3 kernel and device updates
+-Network traffic supercharged
+-Improve Weather display to status bar header
+-Status bar: Add HSPA+ icons 
+-Battery text mode
+-fix pin confirm button invisible issue
+-Policy: implement a pin keypad shuffler
+-Keyguard: do not hide confirm button if quick unlock is enabled
+-Only go HOME if screen is fully awake
+-Keyguard: don't refresh ui when screen off
+-lot of bug fix from cyanogenmod 
+-Invalidate last screenshot when activity relaunched
+-performance improvements
+
+
+# Resurrection Remix Lollipop 5.0.1 - v5.2.0-# Initial Relase Changelog
 
 -Statusbar clock customization + second + fonts
 -Network traffic monitor
