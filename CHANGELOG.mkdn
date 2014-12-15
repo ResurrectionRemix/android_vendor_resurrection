@@ -18,7 +18,7 @@ For extended changelog, track github activities
 -Update color dependent items when reusing notifications.
 -Revert lcd density changer -Reason= bug reports
 -Revert Second Clock -Reason= bug reports
--Ton of bug fix from cyanogenmod 
+-Ton of bug fix and source updates from cyanogenmod
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.1  Basic
 
