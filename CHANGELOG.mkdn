@@ -7,6 +7,7 @@ Source Code: http://github.com/ResurrectionRemix
 Website: http://www.resurrectionremix.com
 
 For extended changelog, track github activities
+
 # Resurrection Remix Lollipop 5.0.1 - v5.2.2  Basic
 
 -Add navigation bar dimensions height+width
@@ -17,7 +18,7 @@ For extended changelog, track github activities
 -Update color dependent items when reusing notifications.
 -Revert lcd density changer -Reason= bug reports
 -Revert Second Clock -Reason= bug reports
--lot of bug fix from cyanogenmod 
+-Ton of bug fix from cyanogenmod 
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.1  Basic
 
