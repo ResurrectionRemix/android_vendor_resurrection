@@ -13,6 +13,7 @@ For extended changelog, track github activities
 -Dark Material Theme
 -fix button settings fc on hardware button devices 
 -Smart pulldown + Quick pulldown + qs disable on lockscreen option
+-Enabled status bar ticker
 -fix landscape layout on color picker
 -update text style to match Settings
 -add workaround for broken hardware keyboard support 
