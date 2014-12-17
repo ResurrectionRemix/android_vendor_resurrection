@@ -8,6 +8,21 @@ Website: http://www.resurrectionremix.com
 
 For extended changelog, track github activities
 
+# Resurrection Remix Lollipop 5.0.1 - v5.2.3  Basic
+
+-Dark Material Theme
+-fix button settings fc on hardware button devices 
+-Smart pulldown + Quick pulldown + qs disable on lockscreen option
+-fix landscape layout on color picker
+-update text style to match Settings
+-add workaround for broken hardware keyboard support 
+-make switch to last app animation snappier 
+-update more carriers roaming codes
+-Recents - do not add search widget on recents if widget is lost
+-add ability to change the color in battery saver mode
+-bug fix and source updates from cyanogenmod
+
+
 # Resurrection Remix Lollipop 5.0.1 - v5.2.2  Basic
 
 -Add navigation bar dimensions height+width
