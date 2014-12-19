@@ -8,6 +8,26 @@ Website: http://www.resurrectionremix.com
 
 For extended changelog, track github activities
 
+# Resurrection Remix Lollipop 5.0.1 - v5.2.4  Basic
+
+-Add Root access app-ops control
+-fix owner settings white bacground issue
+-Clean up about RR strings
+-Battery icon options
+-Bluetooth fixes
+-Update WiFi indicator drawable sizes
+-Volume adjust sound preference
+-fix make updateapi for weather setting
+-Fix layout of lockscreen carrier text
+-Disable/Enable screenshot sound
+-Framework base udates and improvements
+-SystemUI: Silence verbose NetworkController logging 
+-fix screenshots animation glitch
+-g3-keylayout: remove deprecated wake flags 
+-g3-audio_policy: set 48k for a2dp 
+-g3-Give the ethernet feature.
+-included latest cm updates
+
 # Resurrection Remix Lollipop 5.0.1 - v5.2.3  Basic
 
 -Dark Material Theme
