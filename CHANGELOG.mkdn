@@ -10,86 +10,86 @@ For extended changelog, track github activities
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.4  Basic
 
--Add Root access app-ops control
--fix owner settings white bacground issue
--Clean up about RR strings
--Battery icon options
--Bluetooth fixes
--Update WiFi indicator drawable sizes
--Volume adjust sound preference
--fix make updateapi for weather setting
--Fix layout of lockscreen carrier text
--Disable/Enable screenshot sound
--Framework base udates and improvements
--SystemUI: Silence verbose NetworkController logging 
--fix screenshots animation glitch
--g3-keylayout: remove deprecated wake flags 
--g3-audio_policy: set 48k for a2dp 
--g3-Give the ethernet feature.
--included latest cm updates
+- Add Root access app-ops control
+- Fix owner settings white bacground issue
+- Clean up about RR strings
+- Battery icon options
+- Bluetooth fixes
+- Update WiFi indicator drawable sizes
+- Volume adjust sound preference
+- Fix make updateapi for weather setting
+- Fix layout of lockscreen carrier text
+- Disable/Enable screenshot sound
+- Framework base udates and improvements
+- SystemUI: Silence verbose NetworkController logging 
+- Fix screenshots animation glitch
+- g3-keylayout: remove deprecated wake flags 
+- g3-audio_policy: set 48k for a2dp 
+- g3-Give the ethernet feature.
+- Included latest cm updates
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.3  Basic
 
--Dark Material Theme
--fix button settings fc on hardware button devices 
--Smart pulldown + Quick pulldown + qs disable on lockscreen option
--Enabled status bar ticker
--fix landscape layout on color picker
--update text style to match Settings
--add workaround for broken hardware keyboard support 
--make switch to last app animation snappier 
--update more carriers roaming codes
--Recents - do not add search widget on recents if widget is lost
--add ability to change the color in battery saver mode
--bug fix and source updates from cyanogenmod
+- Dark Material Theme
+- Fix button settings fc on hardware button devices 
+- Smart pulldown + Quick pulldown + qs disable on lockscreen option
+- Enabled status bar ticker
+- Fix landscape layout on color picker
+- Update text style to match Settings
+- Add workaround for broken hardware keyboard support 
+- Make switch to last app animation snappier 
+- Update more carriers roaming codes
+- Recents - do not add search widget on recents if widget is lost
+- Add ability to change the color in battery saver mode
+- Bug fix and source updates from cyanogenmod
 
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.2  Basic
 
--Add navigation bar dimensions height+width
--Add about resurrection remix and maintainers list
--g3 fix camera and video recording
--kernel updates
--performance and battery improvents
--Update color dependent items when reusing notifications.
--Revert lcd density changer -Reason= bug reports
--Revert Second Clock -Reason= bug reports
--Ton of bug fix and source updates from cyanogenmod
+- Add navigation bar dimensions height+width
+- Add about resurrection remix and maintainers list
+- g3 fix camera and video recording
+- kernel updates
+- Performance and battery improvents
+- Update color dependent items when reusing notifications.
+- Revert lcd density changer -Reason= bug reports
+- Revert Second Clock -Reason= bug reports
+- Ton of bug fix and source updates from cyanogenmod
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.1  Basic
 
--fix fc on Eleven music app
--lg g3 kernel and device updates
--lg g3 fix external sd card storage
--lg g3 add more button options
--long press recent button switch last app
--Network traffic supercharged
--Improve Weather display to status bar header
--Status bar: Add HSPA+ icons 
--Battery text mode
--fix pin confirm button invisible issue
--Policy: implement a pin keypad shuffler
--Keyguard: do not hide confirm button if quick unlock is enabled
--Only go HOME if screen is fully awake
--Keyguard: don't refresh ui when screen off
--lot of bug fix from cyanogenmod 
--Invalidate last screenshot when activity relaunched
--performance improvements
+- Fix fc on Eleven music app
+- lg g3 kernel and device updates
+- lg g3 fix external sd card storage
+- lg g3 add more button options
+- Long press recent button switch last app
+- Network traffic supercharged
+- Improve Weather display to status bar header
+- Status bar: Add HSPA+ icons 
+- Battery text mode
+- Fix pin confirm button invisible issue
+- Policy: implement a pin keypad shuffler
+- Keyguard: do not hide confirm button if quick unlock is enabled
+- Only go HOME if screen is fully awake
+- Keyguard: don't refresh ui when screen off
+- Lot of bug fix from cyanogenmod 
+- Invalidate last screenshot when activity relaunched
+- Performance improvements
 
 
 # Resurrection Remix Lollipop 5.0.1 - v5.2.0-# Initial Relase Changelog
 
--Statusbar clock customization + second + fonts
--Network traffic monitor
--Toast animations
--Listview animations
--LCD Density
--Add Weather display to status bar header
--Quick unlock
--Overall Speed up system
--Brand new music and audio fx app from cyanogen
--Included all cm 12 features
--And many more slim omni and orginal RR improvements and system ui changes running in this alpha build. So enjoy  
+- Statusbar clock customization + second + fonts
+- Network traffic monitor
+- Toast animations
+- Listview animations
+- LCD Density
+- Add Weather display to status bar header
+- Quick unlock
+- Overall Speed up system
+- Brand new music and audio fx app from cyanogen
+- Included all cm 12 features
+- And many more slim omni and orginal RR improvements and system ui changes running in this alpha build. So enjoy  
 
 
 
