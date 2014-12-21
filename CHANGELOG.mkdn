@@ -8,6 +8,21 @@ Website: http://www.resurrectionremix.com
 
 For extended changelog, track github activities
 
+# Resurrection Remix Lollipop 5.0.2 - v5.2.5  Basic
+
+- Update to android 5.0.2-LRX22G
+- initial Slim heads up customizations 
+- Initial slim lockscreen shortcuts
+- Cleanup button wake settings
+- Cleanup battery style code 
+- SystemUI: fix MediaProjection cast crash 
+- SystemUI: fix battery icon patch for MSim
+- Correct the lockscreen carrier text alignment and text color 
+- g3-enable all hardware button options 
+- g3-use config-based tcp buffer sizes 
+- included lot of battery and performance improvements
+- Bug fix and source updates from cyanogenmod
+
 # Resurrection Remix Lollipop 5.0.1 - v5.2.4  Basic
 
 - Add Root access app-ops control
