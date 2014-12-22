@@ -1,12 +1,11 @@
-Resurrection Remix ROM
+ 
+  Resurrection Remix ROM
 
-CHANGELOG
+  CHANGELOG
 
-Source Code: http://github.com/ResurrectionRemix
-
-Website: http://www.resurrectionremix.com
-
-For extended changelog, track github activities
+  Source Code: http://github.com/ResurrectionRemix
+  Website: http://www.resurrectionremix.com
+  For extended changelog, track github activities
 
 # Resurrection Remix Lollipop 5.0.2 - v5.2.5  Basic
 
