@@ -15,6 +15,7 @@
 - Prevent toggling disable hardware keys too quickly 
 - fix button light restore logic
 - Add screen color settings 
+- Move about resurrection to device info settings
 - Forward port button/keyboard backlight options
 - Development settings: Checkboxes to switches
 - Add NEW Ringtone C.Y.E-Resurrection - set as default
