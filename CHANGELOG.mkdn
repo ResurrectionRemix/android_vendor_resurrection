@@ -6,6 +6,32 @@
   For extended changelog, track github activities
   
   The Changelog
+  
+# Resurrection Remix Lollipop 5.0.2 - v5.2.6  Basic
+
+- Add Gesture Anywhere
+- Gestures anywhere Materialize close button
+- fix NPE in ButtonSettings
+- Prevent toggling disable hardware keys too quickly 
+- fix button light restore logic
+- Add screen color settings 
+- Forward port button/keyboard backlight options
+- Development settings: Checkboxes to switches
+- Add NEW Ringtone C.Y.E-Resurrection - set as default
+- Swap volume buttons
+- disable caps for carrier label
+- Remove prebuilt Term.apk 
+- Fix volume key music controls and wake up
+- Left handed navbar during landscape mode
+- Fix memory leak in system_server when screen on/off
+- fix Center Clock for MSIM devices
+- fix style of battery level text for MSIM devices
+- G3 audio_policy: remove low_latency 
+- G3 audio: don't use dedicated device for voip
+- G3 kernel updates
+- Make things go fast
+- Hammerhead Add ambiand display option
+- Bug fix and source updates from cyanogenmod
 
 # Resurrection Remix Lollipop 5.0.2 - v5.2.5  Basic
 
