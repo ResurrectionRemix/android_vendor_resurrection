@@ -70,7 +70,7 @@ def add_auth(githubreq):
         githubreq.add_header("Authorization","Basic %s" % githubauth)
 
 if not depsonly:
-    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:SlimRoms+in:name" % device)
+    githubreq = urllib.request.Request("https://api.github.com/search/repositories?q=%s+user:SlimRoms+in:name+fork:true" % device)
     add_auth(githubreq)
     result = json.loads(urllib.request.urlopen(githubreq).read().decode())
     try:
