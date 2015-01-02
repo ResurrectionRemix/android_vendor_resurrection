@@ -14,7 +14,15 @@
 - Update popups and dialogs animations + fix glitch
 - Gestures anywhere : fix layout
 - Forward port power connect/disconnect notification support  
-- g3: enable persist.radio.apm_sim_not_pwdn 
+- G3 device updates
+- Battery style: fix dynamic percentage setting 
+- Settings: Hide voice wakeup category when package isn't present
+- Settings: don't remove navigation bar prefs when toggling 
+- setting: Always remove Left-handed mode setting for non-phones 
+- Display rotation: Switches to checkboxes 
+- Settings: CheckBox->Switch on restore io/processor preferences 
+- Settings: Add preference for EdgeGesture service.
+- Forward port Search button configuration 
 - Update vendor lge
 - android: reenable photophase
 - Add CAF RIL variant 
