@@ -10,8 +10,8 @@
 # Resurrection Remix Lollipop 5.0.2 - v5.2.7
 
 - Per-app performance profiles
+- Animation:give some sweet animation to popups and dialogs as default
 - Update popups and dialogs animations + fix glitch
-- Animation:give some sweet slide animation to popups and dialogs
 - Gestures anywhere : fix layout
 - Forward port power connect/disconnect notification support  
 - g3: enable persist.radio.apm_sim_not_pwdn 
