@@ -7,7 +7,34 @@
   
   The Changelog
   
-# Resurrection Remix Lollipop 5.0.2 - v5.2.6  Basic
+# Resurrection Remix Lollipop 5.0.2 - v5.2.7
+
+- Per-app performance profiles
+- Update popups and dialogs animations + fix glitch
+- Animation:give some sweet slide animation to popups and dialogs
+- Gestures anywhere : fix layout
+- Forward port power connect/disconnect notification support  
+- g3: enable persist.radio.apm_sim_not_pwdn 
+- Update vendor lge
+- android: reenable photophase
+- Add CAF RIL variant 
+- [ActivityManager] Reset ActivityRecord's waitingVisible
+- [ActivityManager] Use synchronized to protect object 
+- PackageManager: Restrict system packages to protected storage
+- Default icon is shown after uninstalling updated priv-app
+- APK still has privileged flag after being moved from "/system/priv-app" 
+- Fix pointer index out of range exception 
+- Fix NPE when start activity
+- PackageManager: Restrict system packages to protected storage 
+- Add Hungarian Resurrection Tools strings (Translated by szunyi77)
+- QuickSettings: Add long click support
+- Make preselected item clickable in intent chooser
+- Many fixes From android aosp
+- Update performance and stabilitiy 
+- Bug fix and source updates from cyanogenmod
+- Enjoy..
+
+# Resurrection Remix Lollipop 5.0.2 - v5.2.6
 
 - Add Gesture Anywhere
 - Gestures anywhere Materialize close button
@@ -34,7 +61,7 @@
 - Hammerhead Add ambiand display option
 - Bug fix and source updates from cyanogenmod
 
-# Resurrection Remix Lollipop 5.0.2 - v5.2.5  Basic
+# Resurrection Remix Lollipop 5.0.2 - v5.2.5
 
 - Update to android 5.0.2-LRX22G
 - initial Slim heads up customizations 
@@ -49,7 +76,7 @@
 - included lot of battery and performance improvements
 - Bug fix and source updates from cyanogenmod
 
-# Resurrection Remix Lollipop 5.0.1 - v5.2.4  Basic
+# Resurrection Remix Lollipop 5.0.1 - v5.2.4
 
 - Add Root access app-ops control
 - Fix owner settings white bacground issue
@@ -69,7 +96,7 @@
 - g3-Give the ethernet feature.
 - Included latest cm updates
 
-# Resurrection Remix Lollipop 5.0.1 - v5.2.3  Basic
+# Resurrection Remix Lollipop 5.0.1 - v5.2.3
 
 - Dark Material Theme
 - Fix button settings fc on hardware button devices 
@@ -85,7 +112,7 @@
 - Bug fix and source updates from cyanogenmod
 
 
-# Resurrection Remix Lollipop 5.0.1 - v5.2.2  Basic
+# Resurrection Remix Lollipop 5.0.1 - v5.2.2
 
 - Add navigation bar dimensions height+width
 - Add about resurrection remix and maintainers list
@@ -97,7 +124,7 @@
 - Revert Second Clock -Reason= bug reports
 - Ton of bug fix and source updates from cyanogenmod
 
-# Resurrection Remix Lollipop 5.0.1 - v5.2.1  Basic
+# Resurrection Remix Lollipop 5.0.1 - v5.2.1
 
 - Fix fc on Eleven music app
 - lg g3 kernel and device updates
