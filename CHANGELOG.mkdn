@@ -7,6 +7,67 @@
   
   The Changelog
   
+# Resurrection Remix Lollipop 5.0.2 - v5.2.8
+
+- Update popups animation 
+- StatusBar Ticker option
+- Add navigation bar master switch option
+- Add resurrection remix logo to about settings 
+- Recents panel clear all button tweaks
+- Replace recents clear all button with a fab button
+- update maintainer list
+- Update Hungarian RR strings 
+- Remove the superuser app 
+- Update superuser
+- Add an indicator when a 'su' session is active
+- Settings : allow to hide su indicator option
+- appops: Add support for SU
+- Improve and fix performance settings
+- Add fastscroll to the Manage applications screen
+- Settings: Add preference for EdgeGesture service.
+- Settings: don't remove navigation bar prefs when toggling
+- Settings: CheckBox->Switch on restore io/processor preferences
+- don't kill an app if its currently pinned
+- Battery style: fix dynamic percentage setting 
+- Show application's package name in the "App info" screen.
+- Check boxes to Switches in PrivacyGuardPerfs
+- Settings: Fix hiding button backlight option
+- SystemUI: Materialize volume panel in/out animation 
+- Allow disabling Search/Recents button wake
+- services: fix memory leak in ColorFade
+- Smooth Spinners: Makes the loading "spinner" animation smoother
+- BootMessage: Show each app name being optimized during boot
+- Bootmsg: The app name is now displayed in bold italc text.
+- Resize keyguard big clock font 
+- Cleanup battery style code 
+- Live Volume Steps
+- Enable profiles on power menu
+- Fix external sdcard mountpoint
+- Fix ton of Memory leaks
+- Layout the window to be displayed
+- Base: option to disable fullscreen keyboard
+- Fix memory leak in system_server when screen on/off  
+- Keyguard: allow keyguard to be dismissed via intent
+- Notifications: Materialize missed calls icons 
+- QS: fix tiles not being refreshed on overscrolling
+- base: fix battery stats wakelock crazyness 
+- ActivityManagerService: remove app switch delay
+- BroadcastReceiver : Get sender of broadcasts
+- extend PreferenceActivity for title text on a single pane mode
+- fix for google backup and restore 
+- Show safe volume panel for non-interactive volume adjustments
+- Fix possible race condition when showing dialog.
+- Remove unnecessary updateSurfaceScreenOn call.
+- Wake Keys: enforce the wake keys overlay 
+- Add system setting for t9 search input locale
+- LGE G3 Ton of fix and improvements
+- Hammerhead Revert "ambiant display" its buggy
+- hammerhead: Update A2DP policy 
+- hammerhead: Enable tethering
+- AOSP Updates 
+- improve performance and stability
+- for more changes check RR Github sources
+  
 # Resurrection Remix Lollipop 5.0.2 - v5.2.7
 
 - Per-app performance profiles
