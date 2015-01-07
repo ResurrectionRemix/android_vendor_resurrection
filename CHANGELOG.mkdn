@@ -64,9 +64,9 @@
 - Hammerhead Revert "ambiant display" its buggy
 - hammerhead: Update A2DP policy 
 - hammerhead: Enable tethering
-- AOSP Updates 
-- improve performance and stability
-- for more changes check RR Github sources
+- AOSP Updates
+- Improve performance and stability
+- For more information about changelog check out the RR Github sources
   
 # Resurrection Remix Lollipop 5.0.2 - v5.2.7
 
