@@ -7,6 +7,38 @@
   
   The Changelog
   
+# Resurrection Remix Lollipop 5.0.2 - v5.2.9
+
+- Add customization for Quick Settings
+- Quick settings: Option to disable brightness slider
+- Power menu customizations
+- Status bar carrier label 
+- Gestures lockscreen Secure
+- Battery bar customizations 
+- DocumentsUI: Add a standalone File Manager
+- Enable tap to be developer
+- Improve settings fonts
+- SystemUI: fix navbar ripple getting stuck 
+- Changed profile selection to single-tap action
+- Clean up keyguard carrier text handling.
+- Option to ignore the last app when clearing recents
+- Use fadein/fadeout anim on FAB button
+- Add Fade in and Fade out effect to Recents FAB button
+- Add system setting for t9 search input locale 
+- Wake Keys: enforce the wake keys overlay 
+- Allow disabling Search/Recents button wake
+- profiles: clean up default profiles
+- MountService: support UMS on any volume
+- System UI :Add HU translations
+- Edit Status bar BatteryLevelTextView 
+- Edit status bar text size and style 
+- Resurrection Tools FR Translations
+- MSıM updates
+- Bug fix and source updates from cyanogenmod
+- For more information about changelog check out the RR Github sources
+- Enjoy..
+
+  
 # Resurrection Remix Lollipop 5.0.2 - v5.2.8
 
 - Update popups animation 
