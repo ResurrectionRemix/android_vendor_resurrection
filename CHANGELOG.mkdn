@@ -33,6 +33,10 @@
 - Edit Status bar BatteryLevelTextView 
 - Edit status bar text size and style 
 - Resurrection Tools FR Translations
+- G3 - d855: Add LTE support 
+- G3 - fix wifi issues 
+- G3 - add usb charging mode
+- G3 - add dummy LgDataFeature telephony class 
 - MSıM updates
 - Bug fix and source updates from cyanogenmod
 - For more information about changelog check out the RR Github sources
