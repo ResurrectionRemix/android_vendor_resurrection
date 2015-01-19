@@ -7,7 +7,7 @@
   
   The Changelog
 
- # Resurrection Remix Lollipop 5.0.2 - v5.3.0
+# Resurrection Remix Lollipop 5.0.2 - v5.3.0
  
 - Update heads up notifications with swipe actions +(Master Switch-Timeout-Blacklist and do not disturb options)
 - Add Theme engine
