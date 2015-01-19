@@ -6,6 +6,44 @@
   For extended changelog, track github activities
   
   The Changelog
+
+# Resurrection Remix Lollipop 5.0.2 - v5.3.0
+
+- Update heads up notifications (Master Switch - blacklist and do not disturb options)
+- Theme engine & QS Updates
+- Re themed settings - Themes app
+- Update cLock app with material theme
+- Create expandable volume panel.
+- App Circle Sidebar & Support for Configurable Trigger Region 
+- Custom System Animations 
+- Status bar header long click actions 
+- Allow custom density  
+- Fix more memory leaks
+- Fix FC on HU language update settings strings
+- Revert ticker option for now :Causes system ui fc s(enabled as system default)
+- Settings : Make RR Tools icons themeable
+- Fix system ui crash while continuously click flash light tIle issue
+- SystemUI: Fix user profile activity overlapped by status bar panel issue 
+- Quick settings: fix ripple placement for dual tiles 
+- ConnectionSettings: Add 4g as connection options for profiles
+- SystemUI: unbreak accesibility longpress Overview to unpin 
+- wifi: Framework support for Ad-Hoc WiFi (IBSS mode)
+- Fix "ghost" weather display in expanded status bar 
+- DocumentsUI: catch NPE
+- Update RemoteController on Session update
+- ProcessList: Handle invalid state when computing next PSS Time
+- privacyguard: Add Superuser summary
+- Update RR_string french translations 
+- Settings: Improve battery percentage title 
+- hammerhead: set persist.sys.isUsbOtgEnabled to enable USB storage. 
+- G3 : change DPI to 532
+- G3 . boost sound volume
+- G3 : Increase boost duration 
+- G3 : enable all hardware button options 
+- Bug fix and source updates from cyanogenmod
+- For more information about changelog check out the RR Github sources
+- Enjoy.. 
+
   
 # Resurrection Remix Lollipop 5.0.2 - v5.2.9
 
