@@ -7,17 +7,18 @@
   
   The Changelog
 
-# Resurrection Remix Lollipop 5.0.2 - v5.3.0
-
-- Update heads up notifications (Master Switch-Timeout-Blacklist and do not disturb options)
-- Theme engine & QS Updates
-- Re themed settings - Themes app
+ # Resurrection Remix Lollipop 5.0.2 - v5.3.0
+ 
+- Update heads up notifications with swipe actions +(Master Switch-Timeout-Blacklist and do not disturb options)
+- Add Theme engine
+- Quick Settings Updates
+- Re themed settings and Themes app
 - Update cLock app with material theme
 - Create expandable volume panel.
 - App Circle Sidebar & Support for Configurable Trigger Region 
 - Custom System Animations 
 - Status bar header long click actions 
-- Allow custom density  
+- Allow custom density option
 - Fix more memory leaks
 - Fix FC on HU language update settings strings
 - Revert ticker option for now :Causes system ui fc s(enabled as system default)
@@ -42,7 +43,7 @@
 - G3 : enable all hardware button options 
 - Bug fix and source updates from cyanogenmod
 - For more information about changelog check out the RR Github sources
-- Enjoy.. 
+- Enjoy..
 
   
 # Resurrection Remix Lollipop 5.0.2 - v5.2.9
