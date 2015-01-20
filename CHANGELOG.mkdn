@@ -25,6 +25,7 @@
 - Phone: Sprint MWI Quirk: Phantom message wait indicator workaround
 - Bug fix and source updates from cyanogenmod
 - For more information about changelog check out the RR Github sources
+- G3 - fix WIFI cannot connect issue
 - Happy flashing.
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.0
