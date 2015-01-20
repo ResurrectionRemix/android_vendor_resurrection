@@ -6,6 +6,26 @@
   For extended changelog, track github activities
   
   The Changelog
+  
+# Resurrection Remix Lollipop 5.0.2 - v5.3.1
+
+- Switch to Resurrection style light material theme
+- Make RR tools icons themeable 
+- Remove italic fonts from settings
+- Power menu: add sound toggle
+- Keyguard: Create lockscreen weather
+- Settings: check if ime switcher pref was remove previously
+- Privacy guard: option to disable notification
+- Fix NPE in HighTouchSensivity 
+- Settings: Show SAR on Regulatory Info (from CM11) 
+- Delay Explicit GC from the SystemServer. 
+- SystemUI: Remove redundant and broken setText on temperture view.
+- Camera2 legacy: retry EGL config without EGL_RECORDABLE_ANDROID
+- Fix nav button ripple getting stuck (Update)
+- Phone: Sprint MWI Quirk: Phantom message wait indicator workaround
+- Bug fix and source updates from cyanogenmod
+- For more information about changelog check out the RR Github sources
+- Happy flashing.
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.0
  
