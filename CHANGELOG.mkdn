@@ -23,10 +23,10 @@
 - Camera2 legacy: retry EGL config without EGL_RECORDABLE_ANDROID
 - Fix nav button ripple getting stuck (Update)
 - Phone: Sprint MWI Quirk: Phantom message wait indicator workaround
-- Bug fix and source updates from cyanogenmod
-- For more information about changelog check out the RR Github sources
 - G3 - fix WIFI cannot connect issue
 - Hemmerhead : Enable performance processor settings 
+- Bug fix and source updates from cyanogenmod
+- For more information about changelog check out the RR Github sources
 - Happy flashing.
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.0
