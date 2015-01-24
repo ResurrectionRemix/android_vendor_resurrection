@@ -1,7 +1,6 @@
 # Support asec containers getting mounted
 allow file_type rootfs:filesystem associate;
 
-<<<<<<< HEAD
 type auditd_log, file_type, data_file_type;
 
 # Themes
@@ -9,9 +8,3 @@ type theme_data_file, file_type, data_file_type;
 
 # Performance settings
 type sysfs_devices_system_iosched, file_type, sysfs_type;
-=======
-type auditd_log, file_type;
-
-# Themes
-+type theme_data_file, file_type, data_file_type;
->>>>>>> f274019... selinux: New rw privileges for themes
