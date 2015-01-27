@@ -69,7 +69,7 @@
 - hammerhead: mixer_paths: Enable compander last 
 - Bug fix and source updates from cyanogenmod
 - For more information about changelog check out the RR Github sources
-- Note : After a long test . There never was a problem. Happy flashing..
+- Note : After a long test . There no problem found. Happy flashing..
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.1
 
