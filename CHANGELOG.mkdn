@@ -6,7 +6,71 @@
   For extended changelog, track github activities
   
   The Changelog
-  
+
+# Resurrection Remix Lollipop 5.0.2 - v5.3.2
+
+- Fix and Enable DOZE (Ambient Display) (it will works if your device supports)
+- Skip Misc/Overcounted battery stats in builds
+- Doze (ambient display) timeout option
+- Make power dialog screenshot PNGs themeable 
+- Make power dialog profile and screenshot PNGs themeable 
+- Update Gestures anywhere close button and font color 
+- Fix Status bar Carrier label issues
+- clean up hiding search bar
+- Update cLock theme
+- Expand Recents to the top if Search is disabled
+- Add "Accept all files" option for incoming file via BT
+- SystemUI: reset timeout when expanding volume panel 
+- Revert Keyguard: Create lockscreen weather (Because CM Team reverted from their source to)
+- Hide GlowPadView warnings
+- Themes: Restructure resource cache
+- SystemUI: Fix the wrong speech in TalkBack application. 
+- Keyguard: Avoid null pointer exception
+- Include material ringtones and notification sounds
+- storage: Don't list removed volumes in storage list 
+- WindowManagerService: Fix On-Screen keyboard popups when hw-keyboard is present
+- Do not allow the navigation bar to move if width == height 
+- Centralize QuickSettings constants
+- bootanim: Add continuous splash support
+- Themes: Ensure themed fonts always have fallbacks 
+- lowmemorykiller: Overwrite LMK parameters for low-tier devices 
+- Themes: System theme should clear wallpaper 
+- Themes: Update LoadedApk resources. 
+- Themes: Fix font layout missing a view
+- Themes: Clear out icon resources for non-composed icons
+- Themes: Fix launching themes using APP_THEMES category
+- SystemUI: animate expanded volume panel 
+- ExpandedVolumePanel: Fix SystemUI FC when expands volume panel from Notifications tile
+- fix derp after theme engine implemented
+- Prevent AudioService dead lock issue. 
+- MediaCodec/Image: handle null cropRect correctly 
+- Fix GPS for old GPS HALs
+- SystemUI : Add QSDetailItems 
+- SystemUI: add Profiles tile 
+- SystemUI : Add adb over network tile
+- SystemUI: add NFC tile 
+- SystemUI: port compass tile to cm-12.0
+- SystemUI: port lock screen toggle tile
+- SystemUI: Create LteTile 
+- SystemUI: add AudioFX/visualizer tile
+- Reduce default animation duration 
+- DocumentsUI: update launcher icon
+- ShutdownThread: dont show advanced reboot options when long pressing power off
+- Settings: fix empty Wifi triggers screen 
+- Settings : Update for centralized quick settings 
+- Cleanup and fix QS tile implementation
+- Settings: Enforce non-blank profile names 
+- Update APN S
+- G3 - Boost cpu and performance
+- G3 - Add bools for DOZE
+- G3 - charger: fix warnings
+- G3 - charger: remove charger pecentage
+- G3 - Fix kernel issues 
+- hammerhead: mixer_paths: Enable compander last 
+- Bug fix and source updates from cyanogenmod
+- For more information about changelog check out the RR Github sources
+- Note : After a long test . There never was a problem. Happy flashing..
+
 # Resurrection Remix Lollipop 5.0.2 - v5.3.1
 
 - Switch to Resurrection style light material theme
