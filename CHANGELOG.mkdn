@@ -10,15 +10,15 @@
 # Resurrection Remix Lollipop 5.0.2 - v5.3.2
 
 - Fix and Enable DOZE (Ambient Display) (it will works if your device supports)
-- Skip Misc/Overcounted battery stats in builds
 - Doze (ambient display) timeout option
-- Make power dialog screenshot PNGs themeable 
+- Skip Misc/Overcounted battery stats in builds
 - Make power dialog profile and screenshot PNGs themeable 
-- Update Gestures anywhere close button and font color 
+- Update Gestures anywhere close button to (Material FAB) and make gesture color themeable 
 - Fix Status bar Carrier label issues
 - clean up hiding search bar
 - Update cLock theme
 - Expand Recents to the top if Search is disabled
+- Fixes for bluetooth
 - Add "Accept all files" option for incoming file via BT
 - SystemUI: reset timeout when expanding volume panel 
 - Revert Keyguard: Create lockscreen weather (Because CM Team reverted from their source to)
@@ -67,9 +67,10 @@
 - G3 - charger: remove charger pecentage
 - G3 - Fix kernel issues 
 - hammerhead: mixer_paths: Enable compander last 
+- hammerhead: Kernel updates
 - Bug fix and source updates from cyanogenmod
 - For more information about changelog check out the RR Github sources
-- Note : After a long test . There is no problem found. Happy flashing..
+- Note :Full Wipe installation (Highly Recommended) .After a long test. There is no problem found. Happy flashing..
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.1
 
