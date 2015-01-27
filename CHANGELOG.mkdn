@@ -12,6 +12,7 @@
 - Fix and Enable DOZE (Ambient Display) (it will works if your device supports)
 - Doze (ambient display) timeout option
 - Skip Misc/Overcounted battery stats in builds
+- Add expanded desktop
 - Make power dialog profile and screenshot PNGs themeable 
 - Update Gestures anywhere close button to (Material FAB) and make gesture color themeable 
 - Fix Status bar Carrier label issues
@@ -52,7 +53,7 @@
 - SystemUI: port compass tile to cm-12.0
 - SystemUI: port lock screen toggle tile
 - SystemUI: Create LteTile 
-- SystemUI: add AudioFX/visualizer tile
+- SystemUI: add AudioFX/visualizer tile (beta)
 - Reduce default animation duration 
 - DocumentsUI: update launcher icon
 - ShutdownThread: dont show advanced reboot options when long pressing power off
