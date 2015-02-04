@@ -6,6 +6,38 @@
   For extended changelog, track github activities
   
   The Changelog
+  
+# Resurrection Remix Lollipop 5.0.2 - v5.3.3
+
+- SystemUI: Lockscreen shortcut customization
+- Navbar ring targets 
+- NavigationBar fixes 
+- Option to show four tiles per row
+- Add new 100 hd lockscreen shortcus icons 
+- Add screen timeout tile
+- Fix AudioFX tile
+- QS: add Screenshot tile
+- QS: add Sync tile
+- protected SMS
+- Fix for statusbar header weatherReceiver issue
+- fix unpinning locked apps
+- Fixes and update Theme chooser resources 
+- Disable ticker 
+- fix ambient display issues
+- Fix issues .system ui fc s and ui refreshes after apply themes 
+- Update lockscreen quick unlock
+- Exact solution for FC s on NavigationBarView 
+- Fixes for lockscreen issues
+- Fixes for profile settings
+- Update theme chooser icon 
+- g3-common: cmhw: Don't cache tap-to-wake setting 
+- g3: Fix hispeed frequency 
+- g3 kernel updates
+- hammerhead: Add QCOM effect blobs 
+- hammerhead: Remove speaker drc flag from audio policy
+- hammerhead: kernel updates
+- And much more..
+- Enjoy!
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.2
 
