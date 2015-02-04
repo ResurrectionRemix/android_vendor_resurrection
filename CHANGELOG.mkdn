@@ -8,9 +8,10 @@
   The Changelog
   
 # Resurrection Remix Lollipop 5.0.2 - v5.3.3
-
+ 
 - SystemUI: Lockscreen shortcut customization
-- Navbar ring targets 
+- Navbar customization
+- Navbarring targets 
 - NavigationBar fixes 
 - Option to show four tiles per row
 - Add new 100 hd lockscreen shortcus icons 
@@ -36,6 +37,7 @@
 - hammerhead: Add QCOM effect blobs 
 - hammerhead: Remove speaker drc flag from audio policy
 - hammerhead: kernel updates
+- includes all cm updates
 - And much more..
 - Enjoy!
 
