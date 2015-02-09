@@ -7,6 +7,45 @@
   
   The Changelog
   
+# Resurrection Remix Lollipop 5.0.2 - v5.3.4
+
+- PitchBlack Theme Initial release
+- Option to disable search panel (navrings)
+- Add ability to disable a lockscreen shortcut 
+- fix more battery dain
+- improved overall stability 
+- Add default revision for AOSP remote 
+- apply default profile after resetting them 
+- Fix for bluetooth issues
+- RR Tools RU and PL translations
+- Update and make cLock app themeable
+- Move cLock app to misc
+- Remove image from about resurrection
+- Fix lockscreen issues
+- Disable Ambient display bools as default
+- Fix profiles crash
+- lowmemorykiller: Fix high min-free values 
+- Performance: fix mix/max cpu frequency
+- improve lockscreen tile behavior
+- Stylus gestures features for note devices
+- Add setting for updating recovery 
+- AppOps: fix deadlock issue when showing dialog 
+- VolumePanel : Check if StreamControl is null
+- Themes: Add tm command line tool 
+- Msim: Use SIM display name 
+- Fix for some of theme issues 
+- Move navring app loading to background tasks 
+- Make navbar back,recent not re-assignable
+- Improve nav ring swipe behavior 
+- Fix Power Shutter Exception
+- PhoneWindowPolicy: Fix NPE race condition by excessive screen on delay 
+- Camera : allow camera to use power key as shutter
+- g3-common: increase overall volume levels
+- includes all cm updates
+- Bug fixes
+- And much more..
+- Enjoy!
+  
 # Resurrection Remix Lollipop 5.0.2 - v5.3.3
  
 - SystemUI: Lockscreen shortcut customization
