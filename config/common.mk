@@ -74,7 +74,7 @@ endif
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-RR.txt \
-    vendor/cm/prebuilt/common/pitchblack/PitchBlack.apk:system/app/PitchBlack.apk
+    vendor/cm/prebuilt/common/pitchblack/PitchBlack.apk:system/app/PitchBlack/PitchBlack.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -253,7 +253,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_LP_v5.3.3
+    CM_BUILDTYPE := Resurrection_Remix_LP_v5.3.4
     CM_EXTRAVERSION :=
 endif
 
