@@ -17,7 +17,8 @@
 - QS:Screen off tile 
 - QS:notifications tile 
 - Slim doze options
-- SystemUI: fix performance profile not showing up 
+- fix performance profile not showing up 
+- Optimizing app dialog on first boot
 - fix bunch of issues after apply theme 
 - Create configurable default expanded desktop style. 
 - Don't lookup application keyguard notification visibility unnecessarily
