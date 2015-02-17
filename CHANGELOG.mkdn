@@ -6,7 +6,46 @@
   For extended changelog, track github activities
   
   The Changelog
-  
+
+# Resurrection Remix Lollipop 5.0.2 - v5.3.5
+
+- Update and fixes for PitchBlack theme
+- Navigation bar button color
+- QS:Battery saver tile 
+- QS:Brightness tile 
+- QS:Expanded desktop tile 
+- QS:Screen off tile 
+- QS:notifications tile 
+- Slim doze options
+- SystemUI: fix performance profile not showing up 
+- fix bunch of issues after apply theme 
+- Create configurable default expanded desktop style. 
+- Don't lookup application keyguard notification visibility unnecessarily
+- Hide privacyguard notifications on keyguard 
+- AppOps: fix deadlock issue when showing dialog 
+- Themes: Include ThemeConfig for ResourceKey hash
+- Themes: Add theme change timestamp to ThemeConfig 
+- Themes: Don't clip notification when a theme defines a larger radius 
+- Themes: Fix theme package name being set to target's
+- fix flashlight tile inconsistency 
+- Disable lock screen after boot
+- Prevent power key capture when screen is off
+- Hide msim 'no-sim' icons 
+- fix performance profile not showing up 
+- fix status bar activity indicators getting stuck when disabling
+- Hide privacyguard notifications on keyguard 
+- Move changelog to about resurrection 
+- Rename : Resurrection tools >>> Configurations
+- Add touchscreen hovering support
+- Update translations
+- move gestures setting in to device section
+- hammerhead: Update removable disk configuration 
+- hammerhead: return to stock DPI
+- includes all cm updates
+- Bug fixes
+- And much more..
+- Enjoy!
+
 # Resurrection Remix Lollipop 5.0.2 - v5.3.4
 
 - PitchBlack Theme Initial release
