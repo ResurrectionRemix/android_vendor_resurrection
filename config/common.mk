@@ -73,9 +73,8 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-RR.txt \
-    vendor/cm/prebuilt/common/pitchblack/PitchBlack.apk:system/app/PitchBlack/PitchBlack.apk
-
+    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-RR.txt
+    
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
