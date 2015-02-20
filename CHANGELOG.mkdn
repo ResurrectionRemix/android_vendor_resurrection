@@ -7,6 +7,38 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.0.2 - v5.3.6
+
+- Removed PitchBlack Theme from system/app
+- PitchBlack Now available on play store for free: https://play.google.com/store/apps/details?id=com.resurrectionremix.pitchblack
+  Note:Playstore version wont work on RR version 5.3.5
+ 
+- Fixed bootloop after theme change 
+- Themes: Get mFontPkgName hashCode not mIconPkgName's 
+- Expanded Desktop : Fix Left handed navbar during landscape mode
+- Enable Buttons and Status Bar settings Multi-user enabled
+- Use actual storage type for format message strings
+- Fix for ambiguous and broken disk formatting dialog
+- Storage; Fix apps2sd for noemulated secondary storage
+- GlobalActions: Always add power off option to power menu 
+- Expose hardcoded colors
+- Fixed lockscreen toggle not sticky
+- Themes: Include ThemeConfig for ResourceKey hash 
+- Themes: Add theme change timestamp to ThemeConfig 
+- Fix Profiles settings screen padding
+- Power Menu: remove power as an option 
+- Don't show "Eject card" if the card is not accessible 
+- Fix detection of USB/UICC volumes
+- Performance -> Battery mode 
+- improved performance and stability 
+- g3: fix external storage permissions 
+- g3: Remove deprecated Camera2 overlays
+- hammerhead: Tweak speaker and headphone volumes
+- includes all cm updates
+- And much more.
+- Happy flashing..
+
+
 # Resurrection Remix Lollipop 5.0.2 - v5.3.5
 
 - Update and fixes for PitchBlack theme
