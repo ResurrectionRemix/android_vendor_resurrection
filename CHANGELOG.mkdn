@@ -22,7 +22,6 @@
 - Storage; Fix apps2sd for noemulated secondary storage
 - GlobalActions: Always add power off option to power menu 
 - Expose hardcoded colors
-- Fixed lockscreen toggle not sticky
 - Themes: Include ThemeConfig for ResourceKey hash 
 - Themes: Add theme change timestamp to ThemeConfig 
 - Fix Profiles settings screen padding
