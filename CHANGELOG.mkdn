@@ -7,6 +7,31 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.0.2 - v5.3.7
+
+- Add power button to navbar
+- App Circle Bar tile
+- NavBar tile
+- long press back to kill configurable timeout
+- Themes: Use rounded rect for heads up notification 
+- Themes: Enhanced theming capabilities
+- Avert duplicating translation in drawing a background drawable 
+- Strings improvements 
+- base: LT translations
+- Update DPI settings
+- Fix mobile network settings for multi sim
+- Update mobile network settings
+- Update data usage settings
+- set volume wake dependency in code
+- Upate Translations
+- TeleService: Add all supported network modes
+- Improve multi-sim data configuration 
+- Lot of bug fixes and improvemens 
+- includes all cm updates
+- And much more.
+- Happy flashing..
+
+
 # Resurrection Remix Lollipop 5.0.2 - v5.3.6
 
 - Removed PitchBlack Theme from system/app
