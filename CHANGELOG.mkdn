@@ -23,7 +23,7 @@
 - Update mobile network settings
 - Update data usage settings
 - set volume wake dependency in code
-- Upate Translations
+- Update Translations
 - TeleService: Add all supported network modes
 - Improve multi-sim data configuration 
 - Lot of bug fixes and improvemens 
