@@ -281,7 +281,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
   ro.resurrection.version=Resurrection_Remix_LP_5.0-$(shell date -u +%Y%m%d) \
-  ro.cmlegal.url=http://www.cyanogenmod.org/docs/privacy
+  ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
+
 
 -include vendor/cm-priv/keys/keys.mk
 
