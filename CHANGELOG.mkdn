@@ -6,6 +6,50 @@
   For extended changelog, track github activities
   
   The Changelog
+  
+# Resurrection Remix Lollipop 5.0.2 - v5.3.8
+
+- Implement ambient display as Active Display
+- add visualizer to lock screen 
+- Double tap to sleep on navigation bar
+- Wakelock Blocker
+- Fix race condition in setting notification panel height 
+- Implement active display adjustment and tile
+- Change to CmHardwareService
+- Force Expanded Notifications
+- Hide unused msim icons on setting preference
+- Mirroring layout on RTL languages
+- animate clear recents exit
+- Fix some notification still unreadable
+- Quick settings customizations and fixes
+- Improve HeadsUp
+- Materialize toast frames 
+- Ambient display tile 
+- fix qs main tiles settings not refreshing tiles
+- long press lock screen lock icon to sleep (1/2)
+- hide floating clear all only if were removing all tasks 
+- update battery saver off and sync drawables
+- don't show headsup if IME is showing
+- launch default music player on headset connect
+- Don't show warning notification on disabled. 
+- Fix MSimSignalClusterView padding when no sims inserted.
+- Themes: fixes and improvements
+- Volume panel timeout 
+- Fix Battery saver mode
+- Themes: fix copy paste error for applying ringtone/alarm 
+- modify default system profiles
+- add advanced_mode
+- prevent doze notifications from inverting
+- fix doze pickup 
+- Add missing back_ime_land.png 
+- Fix NP transparency background vector glitches
+- hide Ambient display tile if not supported 
+- Move vibration intensity option to misc settings
+- translation imports
+- g3: enable otg storage settings
+- And ton of improvements
+- includes all cm updates
+- And much more.
 
 # Resurrection Remix Lollipop 5.0.2 - v5.3.7
 

@@ -206,7 +206,6 @@ ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
     procrank \
-    Superuser \
     su
 endif
 
@@ -257,7 +256,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_LP_v5.3.7
+    CM_BUILDTYPE := Resurrection_Remix_LP_v5.3.8
     CM_EXTRAVERSION :=
 endif
 
