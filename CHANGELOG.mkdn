@@ -34,8 +34,12 @@
 - SysUI: Clip to outline in ActivatableNotificationView 
 - Remove more duplicate sounds 
 - Provider: Add multi SIM ringtone support in SettingsProvider
+- Properly clean up when setting new InputFilter.
+- AudioEffect JNI: use new max preprocessing constant 
+- Fix build breakage in older branches by avoiding <> notation
 - keyguard: don't use eq visualized in LowEndGfx devices
 - Themes: Process theme resources after package scanned
+- Themes: Switch themes when user changes 
 - Improve system ui pngs & add missing navbar buttons for other resolutions
 - Mising back_ime_land.png
 - Unknown source apps: enable apk installation by default
