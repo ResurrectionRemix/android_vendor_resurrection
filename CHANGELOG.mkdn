@@ -7,6 +7,43 @@
   
   The Changelog
   
+# Resurrection Remix Lollipop 5.0.2 - v5.3.9
+
+- Fix 2g/3g/LTE switch
+- Allow lock screen visualizer to be disabled
+- Use 100K steps for color temperature sliders.
+- livedisplay: Fix for multiuser 
+- merge ProfilesList into ProfilesSettings
+- Regulatory text color: make this readable 
+- Return stock colors on default material settings theme
+- Add left padding to wakelock title/summary
+- Dotted circle battery option
+- livedisplay: Add an "off" state
+- Added a check if a custom activity can be started
+- Revert Port long press back to kill configurable timeout 
+- MTP: Update JNI for new packet getters 
+- Themes: Switch themes when user changes
+- Factory reset: Allow passing wipe_media to recovery 
+- SystemUI: CellularTile support multi-sim 
+- Lockscreen visualizer: Disable out animation
+- Do not start music app when headset is unplugged
+- Clean up keyguard carrier text handling. 
+- livedisplay: Updated icon from Asher 
+- Themes: Change themeChange config value to 0x300000
+- Themes: Add CONFIG_THEME_FONT to Configuration.diff()
+- SysUI: Clip to outline in ActivatableNotificationView 
+- Remove more duplicate sounds 
+- Provider: Add multi SIM ringtone support in SettingsProvider
+- keyguard: don't use eq visualized in LowEndGfx devices
+- Themes: Process theme resources after package scanned
+- Improve system ui pngs & add missing navbar buttons for other resolutions
+- Mising back_ime_land.png
+- Unknown source apps: enable apk installation by default
+- SystemUI: improve recreating statusbar 
+- And other bug fixes and improvements 
+
+
+  
 # Resurrection Remix Lollipop 5.0.2 - v5.3.8
 
 - Implement ambient display as Active Display
