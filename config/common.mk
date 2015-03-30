@@ -216,7 +216,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 12
-PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MINOR = 1
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set CM_BUILDTYPE from the env RELEASE_TYPE, for jenkins compat
@@ -224,7 +224,7 @@ PRODUCT_VERSION_MAINTENANCE = 0-RC0
 ifndef CM_BUILDTYPE
     ifdef RELEASE_TYPE
         # Starting with "CM_" is optional
-        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^CM_||g')
+        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^RR_||g')
         CM_BUILDTYPE := $(RELEASE_TYPE)
     endif
 endif
@@ -257,7 +257,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_LP_v5.3.9
+    CM_BUILDTYPE := Resurrection_Remix_LP_v5.4.0
     CM_EXTRAVERSION :=
 endif
 
