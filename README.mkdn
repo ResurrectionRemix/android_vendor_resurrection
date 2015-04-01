@@ -2,7 +2,7 @@ Resurrection Remix Lollipop Source 2015
 ===================
 
 
-[Join the Resurrection Remix Team](http://www.resurrectionremix.com)
+[Join the Resurrection Remix Team](http://forum.resurrectionremix.com/index.php?topic=2037.new#new)
 
 Getting Started
 ---------------
@@ -11,7 +11,19 @@ familiar with [Git and Repo](http://source.android.com/source/version-control.ht
 
 How To Build Resurrection Remix ROM for your device - Tutorial
 --------
+### Easiest Way to set up and build Resurrection Remix.
 
+##### Simply copy and paste this in a terminal window:
+
+     $ git clone https://github.com/ResurrectionRemix/platform_manifest.git
+     $ cd ~/platform_manifest
+     $ ./setup.sh
+
+Once done, the source code should be already set up and you can head on to build RR by using the RR Wizard which will be located in the main directory of your source code.
+
+     $./build_device.sh
+
+---
 ### Build Environment
 
 - Tested and Working on any version of Ubuntu - 12.04, 12.10 and 13.10, 14.04 (64-bit)
@@ -26,7 +38,6 @@ How To Build Resurrection Remix ROM for your device - Tutorial
 ##### Simply copy and paste this in a terminal window:
 [Hint: This command updates the Ubuntu Packages List (Install Listing) and install the required version of Java]
 
-     $ sudo apt-get update
      $ sudo apt-get install openjdk-7-jdk
 
 ### Let that install and then proceed.
@@ -34,7 +45,7 @@ How To Build Resurrection Remix ROM for your device - Tutorial
 ### More copy and paste:
 [Hint: Running this command installs the other required packages to build android]
 
-     $ sudo apt-get install bison g++-multilib git gperf libxml2-utils
+     $ sudo apt-get update && sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk2.8-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-6-jre openjdk-6-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline-gplv2-dev gcc-multilib
 
 ### Getting the Source
 - Making required directories
@@ -69,12 +80,12 @@ Alright, so now we’re getting there. I have outlined the basics of what we’r
 
 ##### Initializing the RR repo and downloading the manifest
 
-      $  repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b lollipop
+      $  repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b lollipop5.1
 
 ##### Syncing the source
 [Hint: This might take a long time as the source is about 13GB+]
 
-      $  repo sync
+      $  repo sync -j 16
 
 ###Building the Resurrection Remix ROM
 - Preparing Required Binaries and Device Drivers
@@ -91,14 +102,11 @@ Congratulations on the succesfull build initialization! Now, we shall go ahead a
 - To set up CCache, follow the following:
 
 
-      $ sudo nano ~/.bashrc
-Doing this will open nano, a text editor for Linux. From here, navigate to the end of the file and add the following:
+        $ echo "export USE_CCACHE=1" >> ~/.bashrc
+      
+        $ ~/RR/prebuilts/misc/linux-x86/ccache/ccache -M 50G
 
-      $ export USE_CCACHE=1
-      $ export CCACHE_DIR=~/.ccache
-After doing so, do a CTRL+X and type Y and enter. This will save the .BashRC file with the changes made. Now that is complete, do the following to activate CCache.
-
-      $ prebuilts/misc/linux-x86/ccache/ccache -M 50G
+     -M 50G
 The number before the letter G at the end specifies the amount of space CCache can use in your storage unit. As such, ensure that not too much of space is specified as this might result in unexpected errors although, the more storage you have, its recommended to have more CCache as it will increase the build times. Most efficient build systems are able to utilize CCache to about 120G or more.
 
 ##### To build Resurrection Remix ROM
@@ -107,10 +115,15 @@ The number before the letter G at the end specifies the amount of space CCache c
       $ . build/envsetup.sh && brunch <device>
 
 ##### Obtaining the zip created from the build process
-To get the zip file that has been built, navigate to the out directory and find for the zip file there. If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following:
+To get the zip file that has been built, navigate to the following directory and find for the zip file:
+
+      $ cd ~/RR/out/target/product/<devicename>/
+
+If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following to make sure your next build is clean;
 
       $ cd ~/RR
       $ make clean
+      $ repo sync -j16
 
 After doing so, redo everything stated from the Building Section.
 
