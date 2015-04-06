@@ -60,7 +60,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false \
     ro.setupwizard.network_required=false \
-    ro.setupwizard.gservices_delay=-1
+    ro.setupwizard.gservices_delay=-1 \
+    dalvik.vm.image-dex2oat-filter=everything \
+    dalvik.vm.dex2oat-filter=everything
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
