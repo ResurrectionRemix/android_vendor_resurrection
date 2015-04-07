@@ -11,3 +11,6 @@ type sysfs_devices_system_iosched, file_type, sysfs_type;
 
 # Recovery's "cache"
 type recovery_cache_file, file_type, mlstrustedobject;
+
+# Hosts
+type hosts_data_file, file_type, data_file_type;

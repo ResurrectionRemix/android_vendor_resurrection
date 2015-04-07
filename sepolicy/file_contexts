@@ -34,3 +34,6 @@
 
 # Lockscreen wallpaper
 /data/system/users/[0-9]+/keyguard_wallpaper   u:object_r:wallpaper_file:s0
+
+# Hosts
+/system/etc/hosts(/.*)?               u:object_r:hosts_data_file:s0
