@@ -7,6 +7,41 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.0-r3 - v5.4.1
+ 
+- Lock screen Weather panel 
+- Add membar to recents options 
+- Quick settings customizations
+- Volume panel timeout
+- QS :Make tiles visible behind of transparent detail view 
+- Add RR boot dialog
+- Make G notification font colors more compatible with dark and light themes
+- keyguard: dont show enter key when quick unlock is enabled 
+- Use actual storage type of sdcard/usb
+- follow charging notification settings also for wireless charging
+- Hide secondary icon and divider on expanded volume panel
+- Add brightness settings to Profiles
+- If a wake key is disabled by the user, do not wake from doze. 
+- Themes: Remove unnecessary query in updateWallpaper 
+- SystemUi: Nuke secondaryIcon.
+- bootanimation: Set CPU boost hint
+- Materialize volume panel in/out animation 
+- long press back to kill configurable timeout
+- remove redundant ic_qs_signa 
+- don't use SIM display name if there isn't available info l_hp.PNG 
+- Move default value for Settings.Secure.ADVANCED_MODE to core 
+- Make forward/reverse lookup default overlay
+- add back permission-group SECURITY to fix blacklist 
+- System ui : Restore text Styles to stock
+- systemui: Boost when expanding the notification shade 
+- fix BluetoothControllerImpl formatting issues 
+- Fix FC after starting screen recording
+- policy: don't allow app switch/recents key to be pressed on lockscreen
+- included all cm 12.1 updates and fixes
+- For extended changelog, track github activities
+- Enjoy
+
+
 # Resurrection Remix Lollipop 5.1.0-r3 - v5.4.0
 
 - Switched to Android version 5.1.0- r3 
