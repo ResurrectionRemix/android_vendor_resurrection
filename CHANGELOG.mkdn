@@ -6,6 +6,61 @@
   For extended changelog, track github activities
   
   The Changelog
+  
+# Resurrection Remix Lollipop 5.1.0-r5 - v5.4.2
+
+- Anadroid update 5.1.0_r5 
+- Only go HOME if screen is fully awake 
+- Fixing memory leak in RenderBufferCache
+- Fix DataInputStream leaks
+- inputservice: Allow disabling the usage of cursor layers.
+- QS: change live display off color to grey
+- Forward port pattern visibility settings
+- forward port lock pattern grid size 
+- fix race condition with occluded keyguard on non-navbar devices 
+- Add USB Tether tile 
+- Fix signal annunciators missing issue.
+- Add music tile
+- Restore proper ringtone for msim
+- EdgeGesture service: add more sensitivity steps
+- Automatic translation imports
+- Fix screen pinning averting soft reboot 
+- Zen mode add 10 and 12 hours downtime
+- Screenshots info is not updated when device is plugged in MTP mode
+- Modify the display of system default ringtone when it is none.
+- Find wall clock RTC through sysfs
+- Show operator name UI after getting valid operator name 
+- third part apps can disable the secret lockscreen 
+- Fix memory leak in Connectivity Service when phone app crashes 
+- Prevent unexpected rotation while going back to keyguard
+- Optimize IncallUI delay for voice calls 
+- Fix an apk icon animation corruption issue 
+- restrict updateExternalMediaStatus to non-emulated storage
+- Avoid duplicated calling to isRestricted to improve performance 
+- nat464X: Only update ipv4 pseudo-interface when it's connected
+- always update volumes slider state
+- Mobile data tile: open network settings
+- Add a timeout state to frozen windows
+- Allow screen unpinning on devices without navbar 
+- SystemUI: hide navigation bar faster in SetupWizard 
+- System UI: Improve Recents 
+- The DUT can't screen shot in guest mode
+- Always show ZenPanel when showing expanded volume panel 
+- animate clear recents button on exit animation 
+- add CPU info overlay 
+- allow recent tasks to draw behind the status bar
+- Statusbar header: Add vibration to settings button
+- SystemUI: Update doze pulse-in option
+- fix keyguard charging text not showing 
+- fix updating keyguard insecure lock icon 
+- WIFI Improvements
+- Fix up torch tile handling.
+- SystemUI: move keyguard visualizer behind notifications
+- Bluetooth improvements
+- Themes improvemnts 
+- Performance improvements and bug fixes
+- includes Other cm 12.1 and AOSP updates
+- For extended changelog, track github activities
 
 # Resurrection Remix Lollipop 5.1.0-r3 - v5.4.1
  
