@@ -103,6 +103,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
+# PitchBlack Theme
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/PitchBlack/com.resurrectionremix.pitchblack-v33.apk:system/app/PitchBlack/com.resurrectionremix.pitchblack-v33.apk
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
