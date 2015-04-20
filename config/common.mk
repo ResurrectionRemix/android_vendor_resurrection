@@ -105,7 +105,7 @@ endif
 
 # PitchBlack Theme
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/PitchBlack/com.resurrectionremix.pitchblack-v33.apk:system/app/PitchBlack/com.resurrectionremix.pitchblack-v33.apk
+    vendor/cm/prebuilt/PitchBlack/com.resurrectionremix.pitchblack.apk:system/app/PitchBlack/com.resurrectionremix.pitchblack.apk
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
