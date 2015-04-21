@@ -133,7 +133,8 @@ include vendor/cm/config/themes_common.mk
 PRODUCT_PACKAGES += \
     Development \
     LatinIME \
-    BluetoothExt
+    BluetoothExt \
+    Profiles
 
 # Optional CM packages
 PRODUCT_PACKAGES += \
