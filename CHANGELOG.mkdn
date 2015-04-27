@@ -6,6 +6,61 @@
   For extended changelog, track github activities
   
   The Changelog
+
+# Resurrection Remix Lollipop 5.1.1-r1 - v5.4.3
+
+- Update to android-5.1.1_r1 
+- Themes: Add rotation and translation to composed icons 
+- QS: Add heads up tile
+- Add preinstalled PitchBlack Theme 
+- Option to use volume keys to control media volume anytime
+- Frameworks: Allow/Prevent notification light in Zen mode
+- Invert notification backgrounds 
+- Fix HTC headset handling.
+- AudioService: fix crash when no music player found
+- frameworks: display: Added automatic brightness configs
+- Fix ANR caused by hwuiTask thread 
+- framework: add KillSwitch stubs 
+- fix Notification volume slider linking 
+- Added carrier selection to DataUsageTile
+- base: ConnectivityServer: Don't reap the new network 
+- ScreenCap : Add jpeg support
+- Fix: In Afrikaans the unit name is not before size but after.
+- Return of Silent mode
+- doze: Do not bother checking proximity for the DOZE_ACTION intent 
+- printspooler: Print view crash. 
+- qs: support for all timeout value in case set by user apps 
+- Update boot string
+- Frameworks/base: Compile-time optimize SQLiteConnection 
+- Hide Volumepanel on incoming call 
+- Remove minimal dead zone at navigation bar (fix Nexus 4) 
+- Make MediaPlayer fail fast on UnknownServiceException.
+- PowerProfile: allow overriding default power profile 
+- AudioManager: update references to application context
+- Edit boot dialog swap strings
+- Fix boolean hasNavigationBar issues
+- Keyguard: only tint the sim card drawable when multisim is enabled 
+- Update navbar layout 
+- Themes: Add palettized icon background support 
+- frameworks: prepare for Profiles trust agent
+- SystemUI: improve visualier tile state management
+- ConnectivityService: add persist.radio.noril
+- Heads up tile : open notification settings action on long press
+- Heads up tıle : Grey out off vector 
+- Telecomm: Fix doc-comment-check for linking of hidden API.
+- NotificationMgr: Only do DOS protection if not updating a notification.
+- SystemUI: add a disabled state for Quick Tiles
+- SystemUI: Set Occluded to false when keyguard is not showing 
+- Black Screen: Fix dlfree error when delet mZipInflater. 
+- Launch app privacy settings when tapping on PG notification
+- Settings: re-index search after setting new lockscreen 
+- Settings: fix search key not opening search
+- settings: fix RTL layouts 
+- translation imports
+- Performance improvements and bug fixes
+- includes Other cm 12.1 and AOSP updates
+- For extended changelog, track github activities
+
   
 # Resurrection Remix Lollipop 5.1.0-r5 - v5.4.2
 
