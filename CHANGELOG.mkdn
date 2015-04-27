@@ -57,6 +57,7 @@
 - Settings: fix search key not opening search
 - settings: fix RTL layouts 
 - translation imports
+- G3 Kernel & performance ,sensor,wifi improvements
 - Performance improvements and bug fixes
 - includes Other cm 12.1 and AOSP updates
 - For extended changelog, track github activities
