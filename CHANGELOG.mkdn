@@ -23,6 +23,7 @@
 - framework: add KillSwitch stubs 
 - fix Notification volume slider linking 
 - Added carrier selection to DataUsageTile
+- Show Optimizing app dialog on first boot 
 - base: ConnectivityServer: Don't reap the new network 
 - ScreenCap : Add jpeg support
 - Fix: In Afrikaans the unit name is not before size but after.
