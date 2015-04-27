@@ -163,7 +163,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/cm/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-    
+
+ifeq ($(filter NIGHTLY SNAPSHOT EXPERIMENTAL,$(CM_BUILDTYPE)),)
+# CM Platform Library Resource Package
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform-res
+
+# CM Platform Library
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform \
+    org.cyanogenmod.platform.xml
+endif
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
