@@ -138,7 +138,7 @@ def get_revision(manifest=None, p="android_build"):
         if re.search(r"%s$" % p, proj.get("name")):
             project = proj
             break
-    if project is not None:
+    if project is None:
         return get_default_revision(manifest=m)
     revision = project.get('revision')
     if revision:
@@ -304,7 +304,8 @@ else:
             
             manufacturer = repo_name.replace("device_", "").replace("_" + device, "")
             
-            default_revision = get_revision()
+            calc_revision = get_revision()
+            default_revision = get_default_revision()
             print("Default revision: %s" % default_revision)
             print("Checking branch info")
             githubreq = urllib.request.Request(repository['branches_url'].replace('{/branch}', ''))
@@ -312,16 +313,18 @@ else:
             result = json.loads(urllib.request.urlopen(githubreq).read().decode())
 
             ## Try tags, too, since that's what releases use
-            if not has_branch(result, default_revision):
+            if not (has_branch(result, calc_revision) or has_branch(result, default_revision)):
                 githubreq = urllib.request.Request(repository['tags_url'].replace('{/tag}', ''))
                 add_auth(githubreq)
-                result.extend (json.loads(urllib.request.urlopen(githubreq).read().decode()))
+                result.extend(json.loads(urllib.request.urlopen(githubreq).read().decode()))
             
             repo_path = "device/%s/%s" % (manufacturer, device)
             adding = {'repository':repo_name,'target_path':repo_path}
             
             fallback_branch = None
-            if not has_branch(result, default_revision):
+            if calc_revision != default_revision and has_branch(result, calc_revision):
+                fallback_branch = calc_revision
+            if not fallback_branch and not has_branch(result, default_revision):
                 if os.getenv('ROOMSERVICE_BRANCHES'):
                     fallbacks = list(filter(bool, os.getenv('ROOMSERVICE_BRANCHES').split(' ')))
                     for fallback in fallbacks:
