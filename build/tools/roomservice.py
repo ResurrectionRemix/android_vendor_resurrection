@@ -220,6 +220,9 @@ def fetch_dependencies(repo_path, fallback_branch=None):
 
     for dependency in dependencies:
         if not is_in_manifest(dependency['target_path']):
+            if not dependency.get('branch'):
+                dependency['branch'] = get_revision()
+
             fetch_list.append(dependency)
             syncable_repos.append(dependency['target_path'])
 
@@ -296,7 +299,7 @@ def detect_revision(repo):
 
 def main():
     try:
-        depsonly = bool(sys.argv[2])
+        depsonly = bool(sys.argv[2] in ['true', 1])
     except IndexError:
         depsonly = False
 
