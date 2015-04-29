@@ -221,7 +221,8 @@ def fetch_dependencies(repo_path, fallback_branch=None):
     for dependency in dependencies:
         if not is_in_manifest(dependency['target_path']):
             if not dependency.get('branch'):
-                dependency['branch'] = get_revision()
+                dependency['branch'] = (get_revision() or
+                                        custom_default_revision)
 
             fetch_list.append(dependency)
             syncable_repos.append(dependency['target_path'])
@@ -259,7 +260,7 @@ def detect_revision(repo):
     print("Default revision: %s" % default_revision)
 
 
-    if has_branch(result, calc_revision):
+    if calc_revision != default_revision and has_branch(result, calc_revision):
         return calc_revision
     if has_branch(result, default_revision):
         return None
@@ -271,7 +272,7 @@ def detect_revision(repo):
     result.extend(json.loads(
         urllib.request.urlopen(githubreq).read().decode()))
 
-    if has_branch(result, calc_revision):
+    if calc_revision != default_revision and has_branch(result, calc_revision):
         return calc_revision
     if has_branch(result, default_revision):
         return None
