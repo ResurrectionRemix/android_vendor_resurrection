@@ -72,13 +72,6 @@ def add_auth(g_req):
         g_req.add_header("Authorization", "Basic %s" % github_auth)
 
 
-def exists_in_tree(lm, repo):
-    for child in lm.getchildren():
-        if child.attrib['name'].endswith(repo):
-            return True
-    return False
-
-
 def indent(elem, level=0):
     # in-place prettyprint formatter
     i = "\n" + "  " * level
@@ -125,11 +118,11 @@ def get_remote(manifest=None, remote_name=None):
             return remote
 
 
-def get_revision(manifest=None, p="android_build"):
+def get_revision(manifest=None, p="build"):
     m = manifest or load_manifest(default_manifest)
     project = None
     for proj in m.findall('project'):
-        if proj.get('name').endswith(p):
+        if proj.get('path').strip('/') == p:
             project = proj
             break
     if project is None:
@@ -148,17 +141,17 @@ def get_from_manifest(device_name):
     for man in (custom_local_manifest, default_manifest):
         man = load_manifest(man)
         for local_path in man.findall("project"):
-            lp = local_path.get("name")
-            if lp.startswith("device_") and lp.endswith("_" + device_name):
-                return local_path.get("path")
+            lp = local_path.get("path").strip('/')
+            if lp.startswith("device/") and lp.endswith("/" + device_name):
+                return lp
     return None
 
 
-def is_in_manifest(project_name):
+def is_in_manifest(project_path):
     for man in (custom_local_manifest, default_manifest):
         man = load_manifest(man)
         for local_path in man.findall("project"):
-            if local_path.get("name") == project_name:
+            if local_path.get("path") == project_path:
                 return True
     return False
 
@@ -169,8 +162,8 @@ def add_to_manifest(repos, fallback_branch=None):
     for repo in repos:
         repo_name = repo['repository']
         repo_target = repo['target_path']
-        if exists_in_tree(lm, repo_name):
-            print('%s already exists' % repo_name)
+        if is_in_manifest(repo_target):
+            print('already exists: %s' % repo_target)
             continue
 
         if "/" not in repo_name:
@@ -226,10 +219,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
     syncable_repos = []
 
     for dependency in dependencies:
-        repo_name = dependency['repository']
-        if '/' not in repo_name:
-            repo_name = os.path.join(org_manifest, repo_name)
-        if not is_in_manifest(repo_name):
+        if not is_in_manifest(dependency['target_path']):
             fetch_list.append(dependency)
             syncable_repos.append(dependency['target_path'])
 
