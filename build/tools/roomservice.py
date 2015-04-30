@@ -39,6 +39,7 @@ except ImportError:
     urllib.parse = urlparse
     urllib.request = urllib2
 
+DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/slim_manifest.xml"
@@ -53,6 +54,11 @@ github_auth = None
 local_manifests = '.repo/local_manifests'
 if not os.path.exists(local_manifests):
     os.makedirs(local_manifests)
+
+
+def debug(*args, **kwargs):
+    if DEBUG:
+        print(*args, **kwargs)
 
 
 def add_auth(g_req):
@@ -213,7 +219,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
             dependencies = json.load(dep_f)
     else:
         dependencies = {}
-        print('Dependencies file not found, bailing out.')
+        debug('Dependencies file not found, bailing out.')
 
     fetch_list = []
     syncable_repos = []
@@ -299,10 +305,14 @@ def detect_revision(repo):
 
 
 def main():
+    global DEBUG
     try:
         depsonly = bool(sys.argv[2] in ['true', 1])
     except IndexError:
         depsonly = False
+
+    if os.getenv('ROOMSERVICE_DEBUG'):
+        DEBUG = True
 
     product = sys.argv[1]
     device = product[product.find("_") + 1:] or product
