@@ -92,7 +92,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/eos/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+    vendor/cm/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 
 # init.d support
