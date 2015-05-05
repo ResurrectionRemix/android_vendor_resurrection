@@ -7,6 +7,66 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.1-r1 - v5.4.4
+
+- Reorganized button settings 
+- SettingsProvider: Make the default battery style Circle 
+- SysUI: Add lockscreen visualizer for MSIM devices
+- Themes: Pass ComposedIconInfo into createIconBitmap 
+- Themes: Add randomization to composed icon rotation 
+- frameworks: add ongoing notification while collecting bug report 
+- Re-add dump() method to TorchService
+- TorchService: improve state management
+- Themes: Translate before rotating composed icons 
+- QS: don't stay in vibrate mode when toggling to important interruptions 
+- Apply sounds on theme update 
+- Unset frame listener before tearing down GLThreadManager
+- Torch: remind user flashlight is still on
+- Doze: make brightness level and auto brightness configurable 
+- Fix fetching application context for ThemedUiContext.
+- Fix NPE in NetdResponseCode.InterfaceClassActivity
+- doze: Separate proximity check by reason
+- GlobalActions: add zen mode buttons 
+- Set DataUsageTile button padding to 8 
+- Fix DataUsageTile button layout
+- Themes: include new icon features in shouldComposeIcon()
+- optimize wallpaper load,avoid show black wallpaper. 
+- SystemUI: bluetooth tile: fix disconnect action
+- Fix ro.telephony.default_network setting parsing 
+- Fix no vibration during shutdown.
+- SystemUI: small optimization for notification icon numbers
+- ambient display: Fix volume key music control 
+- Base: enable/disable doze through Profiles
+- Make minfree values optimal for 32bit devices 
+- Fix system server crash 
+- MediaSessionService: Error checks for UserRecord object 
+- libandroidfw: Fatal exception of dlfree often causes the system crashed 
+- Update carrier label / custom & change color
+- Base: Second Clock
+- Squashed: Status bar greeting & timeout + Statusbar logo & color
+- Add missing import for navbar
+- Add Gesture Lockscreen 
+- SystemUI: Use smaller battery padding
+- Revert "Settings: use correct default value for backlight brightness"
+- Settings: fix button back light restore logic 
+- Settings: use ActivityManager method for requesting bug report 
+- Settings: persist backlight brightness setting 
+- Update VibratorIntensity
+- CryptKeeper: pattern unlock displays incorrect pw when correct 
+- Settings: disable mobile network switch when SIM isn't ready
+- Settings: fix non lock pattern CryptKeeper crash 
+- Settings: fix bad MTP uncheck behavior 
+- Improve color picker: 
+- Color picker: Enable alpha slider as default
+- Open app when clicking on icon in App Info screen 
+- hammerhead: mm-camera-interface: Retry in case of timeouts 
+- g3:Add HW keys config 
+- g3:GPS updates
+- g3:Camera Updates
+- g3:Switch to governor "conservative" for better performance results 
+- g3:Revert "Revert "ril: add support for sprint nonstandard SIM"" 
+- g3:sepolicy: mpdecision: allow socket_device dir remove_name 
+
 # Resurrection Remix Lollipop 5.1.1-r1 - v5.4.3
 
 - Update to android-5.1.1_r1 
