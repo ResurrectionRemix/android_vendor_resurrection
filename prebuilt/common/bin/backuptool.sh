@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=12.1
+export V=5.1
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
@@ -25,7 +25,7 @@ restore_addon_d() {
 
 # Proceed only if /system is the expected major and minor version
 check_prereq() {
-if ( ! grep -q "^ro.cm.version=$V.*" /system/build.prop ); then
+if ( ! grep -q "^ro.build.version.release=$V.*" /system/build.prop ); then
   echo "Not backing up files from incompatible version: $V"
   return 0
 fi
