@@ -7,9 +7,9 @@
   
   The Changelog
 
-# Resurrection Remix Lollipop 5.1.1 - v5.4.5
-
-- allow overlaying default quick settings tiles 
+# Resurrection Remix Lollipop 5.1.1_r2 - v5.4.5
+- Android 5.1.1_r1 -> 5.1.1_r2
+- Allow overlaying default quick settings tiles 
 - base: Fix notification sounds for wifi only devices … 
 - Improve SeekBarVolumizer behavior with unlinked streams
 - policy: fix device sleeping with lid with incoming call
@@ -92,6 +92,7 @@
 - g3: Add the ability for call recording
 - g3:wcnss: update configs and firmware from V23C
 - g3:Fix cpu heating 
+- bug Fixes and Performance improvments from cm
 
 
 # Resurrection Remix Lollipop 5.1.1-r1 - v5.4.4
