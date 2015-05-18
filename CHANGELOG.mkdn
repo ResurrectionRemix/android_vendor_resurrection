@@ -7,6 +7,93 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.1 - v5.4.5
+
+- allow overlaying default quick settings tiles 
+- base: Fix notification sounds for wifi only devices … 
+- Improve SeekBarVolumizer behavior with unlinked streams
+- policy: fix device sleeping with lid with incoming call
+- policy: respect FLAG_TURN_SCREEN_ON flag with device flip covers
+- PowerManagerService: Honor config_dreamsActivatedOnSleepByDefault 
+- Change lock gesture correct color 
+- Change lock gesture correct color 
+- Themes: Make parse() method in FontListParser public 
+- frameworks: fix setting up linked notification stream on boot
+- Keyguard: reinflate security views after user change 
+- Adding additional Nova theme identifier to legacy icon support. 
+- Improve Recents-View 
+- Telephony: Convert subscription ID to int from long
+- framework/base: add dock sd card string 
+- QS: fix filtering additional tiles 
+- SystemUI: Use smaller battery padding 
+- Update lock weather widget layout 
+- dozeui: Broadcast an intent when beginning a doze pulse
+- textclock: Update the time when performing a doze pulse 
+- Remove resources.apk from ZipSet when removing overlay 
+- TorchService: close all opened cameras
+- SystemUI: Fix EL translation 
+- Fix setting hotspot bounds in a drawable container 
+- Fix PackageManager crashes w/ queryIntent using callerUID of 0 
+- SystemUI: Speed up and clean tests (squash) 
+- FWB: Battery light: 100% charged level 
+- SystemServer: Allow starting of overlaid external services.
+- SystemUI: Squash custom tile commits 
+- base: Nat464: unregister network observer when we stop!
+- [ActivityManager] Avoid unnecessary restart provider process 
+- SystemUI: Point to correct permission for BIND_CUSTOM_TILE_LISTENER
+- Notification drawer: Custom clear all icon color
+- SystemUI: Squash custom tile commits
+- SystemUI: Point to correct permission for BIND_CUSTOM_TILE_LISTENER
+- Improve QSPanel.java 
+- fixup volume stream linking 
+- Clean up keyguard carrier text handling.
+- Remove some useless debug spam.
+- Revert "ConnectivityService: add persist.radio.noril"
+- SystemBars: Allow the StatusBarComponent be externally defined 
+- KeyGuard: Fix the wrong Plmn/SPN display. 
+- [ActivityManager] Move UI operation to UI handler 
+- [ActivityManager] Fix activity always visible. 
+- [ActivityManager] Finish the failed-to-pause activity
+- Profiles: make Default profile change ring mode back on 
+- Fix navbar NPE 
+- improve navbar switch 
+- Improve PreviewsColumns Implementation 
+- Don't dismiss keyguard if recreating status bar 
+- Re-add missing ellipsis string 
+- Fix LiveDisplay QS icon size. 
+- Frameworks/base: Fix old code in MediaPlayer 
+- Fix context leak 
+- Sometimes the application context is null
+- Prevent windows from freezing screen while timeout 
+- fix return value scale of notifyANR() 
+- Check caller status precisely when registering receiver. 
+- Also restart provider if there is external handle. 
+- Fix lost singleton provider after force-stopping user or package.
+- Adjust display inversion matrix to account for luminance 
+- Use the correct parent size to initialize animations 
+- Don't apply animation clip to dialog activities
+- Settings : Update blacklist strings 
+- Settings: update About screen device model fields 
+- Custom clear all icon color remove dependency 
+- Updated RU translation
+- Show Toast if usb not connected in Storage Settings 
+- Settings: fix BT switch enabling discoverable mode 
+- Used fixed size for app icon width in default sms dialog 
+- Change Usb not connected string to capital letters. 
+- Fix mobile network switch for CDMA phones
+- Do not allow privacy guard for core system apps. 
+- msm8974-common: Use RIL version 10 
+- msm8974: sepolicy: vold gets persist
+- bacon: Add more options For Ambient Display
+- g2: Add more options For Ambient Display
+- bacon: FIX Ghost touch issues
+- d855: Fix apps2sd to usb storage
+- g3:fix memory leak after return battery save mode 
+- g3: Add the ability for call recording
+- g3:wcnss: update configs and firmware from V23C
+- g3:Fix cpu heating 
+
+
 # Resurrection Remix Lollipop 5.1.1-r1 - v5.4.4
 
 - Reorganized button settings 
