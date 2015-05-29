@@ -9,6 +9,7 @@
 
 # Resurrection Remix Lollipop 5.1.1_r3 - v5.4.6
 - Android 5.1.1_r2 -> 5.1.1_r3 
+- New Bootanimation for XXXHDPI anx XXHPI devices (XHDPI AND HDPI will come soon)
 - CryptKeeper: layout whole screen in bounds 
 - Settings: add marquee to Device administrators screen 
 - CryptKeeper improvements 
