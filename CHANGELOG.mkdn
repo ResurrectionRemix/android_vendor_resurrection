@@ -67,6 +67,7 @@
 - Allow changing status/navigation bars when styles selected
 - ThemeChooser: add uninstall shortcut to ChooserDetailFragment 
 - Libcore: FIX google Play Services Crash
+- translation Imports
 - msm8974: Disable BLE peripheral mode 
 - msm8974: Update WCN configuration 
 - msm8974-common: Use RIL version 10 
@@ -77,7 +78,7 @@
 - g2 :Fix 4k recording profile 
 - g2: gps: Update HALs from oppo msm8974
 - sprout: Set DPI to 182
-- audio: enable noise suppression by default
+- smdk4412:audio: enable noise suppression by default
 - hammerhead: Update build fingerprint and description to LMY48B
 - hammerhead: Give unpriviledged users write perms to USB storage 
 - Moto : Add Moto Doze Mode
