@@ -7,6 +7,84 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.1_r3 - v5.4.6
+- Android 5.1.1_r2 -> 5.1.1_r3 
+- CryptKeeper: layout whole screen in bounds 
+- Settings: add marquee to Device administrators screen 
+- CryptKeeper improvements 
+- apps2sd: Enable apps2sd for apps with unspecified install location 
+- Exclude themes from being moved to external storage 
+- Keep the content when change the orientation
+- apps2sd: Only allow "move to ___" if the media is mounted 
+- Status bar expanded header: Custom background color
+- Settings: Add some more entries into 'SMS message limit' menu 
+- Kill off a few MSIM tab hosts. 
+- WakeLock: Layout Improvements 
+- Add option to set default custom function to button recents
+- Add CAF Task Manager switch
+- PackageManager: don't attempt to get theme on core boot 
+- Implement better legacy support for themes 
+- AudioService: persist volume of ring stream when ringer mode changed 
+- BaseStatusBar: Inform StatusBarService if a notification is flagged spam 
+- Make default overlay for "spell checker" 
+- Return original value if icon info is null
+- Make ACCESS_THEME_MANAGER permission system|signature 
+- Measure absolute value of pointer motion distance
+- Fix racing condition of mTouchExcludeRegion
+- Only one task within the stack should moveToBack
+- Don't relayout based on a window that isn't visible
+- Remove the window whose client process has died or become zombie
+- Fix bug of unnecessary wakeups after completed syncs.
+- Fix for infinite loop in RemoteViewsAdapter
+- Fix bugs regarding delay the dispatching of non-wakeup alarms 
+- SystemUI: improve dpad arrow key state logic 
+- DreamManager: be aware of device lid 
+- Recognized multiple wallpapers in theme 
+- VolumePanel: Properly update expanded volume panel sliders 
+- Fix tiles with custom colors toggle issues 
+- Fix clock seconds display with am/pm 
+- SystemUI: Move custom tile listener service registration to phonestatusbar
+- Fix another off-by-one error in computeEllipsis 
+- Fix array bounds exception in getSecondaryStorageState …
+- Add alternate WebView provider package 
+- SystemServer: Skip TorchService construction if no flash feature detected
+- Revert to previous battery padding
+- PackageManagerService: Create means of installing prebundled applications
+- Allow sending vendor- or device-specific commands to the camera HAL
+- Revert  display: Added automatic brightness configs
+- Increase brightness faster if ambient light is brightening quickly. 
+- systemui: notify everyone that lockscreen is not going to be shown 
+- Profiles: re-enable data toggling 
+- Remove unnecessary videos 
+- Theme reboot menu 
+- Themes: Fix Reboot Background 
+- SystemUI: Add task manager
+- Fix ForceClose due to TaskManger.
+- Expose task manager values for themers 
+- Materialize task kill button & Improve Task manager UI 
+- Modify GC Delay to include subsequent launches. (fix) 
+- Determine default 12/24 hour time format setting from locale.
+- Allow changing status/navigation bars when styles selected
+- ThemeChooser: add uninstall shortcut to ChooserDetailFragment 
+- Libcore: FIX google Play Services Crash
+- msm8974: Disable BLE peripheral mode 
+- msm8974: Update WCN configuration 
+- msm8974-common: Use RIL version 10 
+- g3: Fix cpu heating
+- g2: Fix missing usbdisk0 in symlink and export
+- g2 :fix usb-otg
+- g2: FIX Double Tap to Wake For GOOD
+- g2 :Fix 4k recording profile 
+- g2: gps: Update HALs from oppo msm8974
+- sprout: Set DPI to 182
+- audio: enable noise suppression by default
+- hammerhead: Update build fingerprint and description to LMY48B
+- hammerhead: Give unpriviledged users write perms to USB storage 
+- Moto : Add Moto Doze Mode
+- Falcon/Titan : Add More options For Doze
+- bacon: Add Linaro Optimizations to Fix google Play Services FC
+- All Bug Fixes And performance Improvements From CM
+
 # Resurrection Remix Lollipop 5.1.1_r2 - v5.4.5
 - Android 5.1.1_r1 -> 5.1.1_r2
 - Allow overlaying default quick settings tiles 
