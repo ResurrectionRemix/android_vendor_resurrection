@@ -15,7 +15,7 @@
 - apps2sd: Enable apps2sd for apps with unspecified install location 
 - Exclude themes from being moved to external storage 
 - Keep the content when change the orientation
-- apps2sd: Only allow "move to ___" if the media is mounted 
+- apps2sd: Only allow move to _ if the media is mounted 
 - Status bar expanded header: Custom background color
 - Settings: Add some more entries into 'SMS message limit' menu 
 - Kill off a few MSIM tab hosts. 
