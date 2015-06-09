@@ -7,7 +7,64 @@
   
   The Changelog
 
-# Resurrection Remix Lollipop 5.1.1_r3 - v5.4.6
+# Resurrection Remix Lollipop 5.1.1 - v5.4.7
+
+- Add SlimPie
+- Slim recent app screen 
+- Over scroll effects
+- Power menu QS tile 
+- Action: Add screenshot action
+- Action: Add kill-app and last-app actions
+- SlimAction as QuickTile
+- QSTile: Reboot/Recovery tile
+- Slim Shortcuts
+- Add SuperSU root binary as preinstalled
+- Launch SuperSU from Settings 
+- Lock screen: Update Handle no weather information available
+- Update slim actions 
+- Update Bootanimations for per resolutions
+- Theme chooser: Small UI refresh
+- Modify GC Delay to include subsequent launches. (fix) 
+- Determine default 12/24 hour time format setting from locale.
+- SystemUI: prompt for SIM PIN if lockscreen is disabled 
+- Fix install apps will fail after setting Preferred install location as Removable SD card and removing SD card
+- Profiles: Setup uuid's for the defaults
+- translation imports
+- enable localization of Chinese operator's PLMN 
+- Introduce Theme Versioning
+- VolumePanel: show hint for unlinked notification slider too
+- VolumePanel: better handling of updating sliders in expanded view
+- SystemUI: fix adding headsup view after boot 
+- Task manager improvements 
+- Task Manager : On switch recreate statusbar to fix task view
+- Task manager : Remove empty notification after switch on/off logic 
+- VolumePanel: volume bar disorderly jump when drag it. 
+- Code Cleanup: No longer required as AOSP commit supersedes this 
+- Drop protection level of certain SMS-related system permissions 
+- Fix SystemUI FC on theme change (recreateStatusbar()) 
+- PowerManagerService: Fix updating of mUserActivitySummary 
+- Observer DEV_FORCE_SHOW_NAVBAR in LockTaskNotify 
+- TaskManager: Update some functions
+- Add longpress action for TaskManager button
+- Move LatinIME to phone/tablet configs
+- Settings: fix potential NPE 
+- Fix input method settings fc
+- Remove LatinIME as it is included per target in vendor/cm 
+- g3: Better performance profile values 
+- g3: use xxxhdpi dalvik and hwui memory sizes 
+- g3: init: remove bugreport service 
+- g3: init: enable tap to wake on boot
+- g3: cmhw: TapToWake: Don't attempt to parse a null from FileUtils 
+- g3: cmhw: TapToWake: detect if node exists to determine if supported 
+- g3: fix UX lags
+- hammerhead: Fix apps2d to usb storage
+- hammerhead: Give unpriviledged users write perms to USB storage
+- Performance improvements and bug fixes
+- includes Other cm 12.1 and AOSP updates
+- For extended changelog, track github activities
+
+# Resurrection Remix Lollipop 5.1.1 - v5.4.6
+
 - Android 5.1.1_r2 -> 5.1.1_r3 
 - New Bootanimation for XXXHDPI anx XXHPI devices (XHDPI AND HDPI will come soon)
 - CryptKeeper: layout whole screen in bounds 
