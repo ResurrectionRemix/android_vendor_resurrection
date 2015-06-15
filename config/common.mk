@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     LockClock \
     CMAccount \
-    CMHome
+    CMHome \
+    OTACenter
     
 # SuperSU
 PRODUCT_COPY_FILES += \
@@ -276,7 +277,7 @@ ifdef CM_BUILDTYPE
     endif
 else
     # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := Resurrection_Remix_LP_v5.4.7
+    CM_BUILDTYPE := Resurrection-Remix-LP-v5.4.7
     CM_EXTRAVERSION :=
 endif
 
@@ -299,8 +300,9 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
-  ro.resurrection.version=Resurrection_Remix_LP_5.0-$(shell date -u +%Y%m%d) \
-  ro.cmlegal.url=https://cyngn.com/legal/privacy-policy
+  ro.resurrection.version=Resurrection-Remix-LP-5.0-$(shell date +%Y%m%d) \
+  ro.cmlegal.url=https://cyngn.com/legal/privacy-policy \
+  rr.ota.version= $(shell date -u +%Y%m%d)
 
 
 -include vendor/cm-priv/keys/keys.mk
