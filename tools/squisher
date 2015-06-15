@@ -1,0 +1,38 @@
+#!/bin/bash
+#
+# Squish a ResurrectionRemix otapackage for distribution
+# cyanogen
+
+. $ANDROID_BUILD_TOP/vendor/cm/tools/colors
+
+OUT_TARGET_HOST=`uname -s`
+if [ x"$OUT_TARGET_HOST" = x"Linux" ]
+then
+   OUT_TARGET_HOST=linux-x86
+   XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
+elif [ x"$OUT_TARGET_HOST" = x"Darwin" ]
+then
+   OUT_TARGET_HOST=darwin-x86
+   XARGS="xargs -n 1 -P `sysctl hw.ncpu | awk '{print $2}'`"
+else
+   echo -e ${red}"ERROR: unknown/unsupported host OS!"${txtrst}
+   exit 1
+fi
+
+if [ -z "$OUT" -o ! -d "$OUT" ]; then
+	echo -e ${red}"ERROR: $0 only works with a full build environment. $OUT should exist."${txtrst}
+	exit 1
+fi
+
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/cm/tools/opticharger
+QUIET=-q
+DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
+
+# Optimize PNG resources in APKs
+( cd $OUT/system; find framework/ app/ priv-app/ vendor/ app/ -name \*.apk -print | $XARGS $OPTICHARGER; )
+
+# Add changelog
+. $ANDROID_BUILD_TOP/vendor/cm/tools/changelog
+mv $OUT/Changelog.txt $OUT/Changelog.txt
+
+exit 0
