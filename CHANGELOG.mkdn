@@ -7,6 +7,39 @@
   
   The Changelog
 
+
+# Resurrection Remix Lollipop 5.1.1 - v5.4.8
+
+- Added RR logo to updater script
+- Added RR OTACenter
+- LatinIME Package from EOS
+- AudioService: don't launch music player while in call
+- Close cursor after getting supported components.
+- SettingsProvider: turn off mobile data roaming by default
+- Revert "Status bar expanded header: Custom background color, (2/2)"
+- Trebuchet: Don't load title from intent if title loaded from DB
+- Call recording encoder/format choice
+- Show reboot dialog using themed resources
+- Get themed resources in KeyButtonView
+- Hide blur when showing keyguard media
+- Properly animate SIM PIN entry screen transition.
+- Disable mobile network settings if sub is invalid/unusable.
+- BatteryLight: Reset all settings back to default
+- Expose values in status bar expanded header
+- Don't reinflate search view on rotate
+- Fix incall music
+- Add new dimens values for expanded status bar padding
+- Boot up optimization for phoneprocess
+- MediaScanner: Detect folders
+- SlimRecents: Update to PS19 (1/2)
+- Don't dismiss notification if expanding status bar from top of heads up
+- frameworks: display: shorten automatic brightness debounce
+- Use framework name and icon for system UID.
+- Updated RU translation
+- Many more, all updates from CM and AOSP
+- Many device-specific updates as well
+- Track github commits for a more detailed changelog
+
 # Resurrection Remix Lollipop 5.1.1 - v5.4.7
 
 - Add SlimPie
