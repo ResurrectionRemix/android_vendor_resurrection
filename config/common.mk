@@ -300,7 +300,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_BUILD) \
   ro.rr_modversion=$(CM_BUILDTYPE) \
-  ro.resurrection.version=Resurrection-Remix-LP-5.0-$(shell date +%Y%m%d) \
+  ro.resurrection.version=Resurrection-Remix-LP-5.0-$(shell date -u +%Y%m%d) \
   ro.cmlegal.url=https://cyngn.com/legal/privacy-policy \
   rr.ota.version= $(shell date -u +%Y%m%d)
 
