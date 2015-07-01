@@ -7,6 +7,41 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.1 - v5.4.9
+
+- Battery saver enhancements
+- Enable fingerprint option in Settings & Numerous Fingerprint Improvements
+- density: do not apply to virtual displays
+- Screen pinning improvements
+- packages/apps/Contacts/
+- Contacts: Fixed "%s" appearing in contact options in some languages
+- Russian and Italian Translations improved
+- settings: Fix developer options crash when mBackupManager is null
+- msim: fix parse error when roaming with slot 2 only
+- Forward Port Floating Window with Multitasking. Forward Port and Fixups done by BlackDragon && rogersb11
+- Selinux Switch
+- CM Recovery RAINBOW MODE MOTHERFUCKERS & improve Rainbow Mode
+- Email: Allow saving attachments even if there's no intent handling them & Allow download of compressed attachments.
+- SystemUI: dynamically generate visualizer color
+- Fix LiveDisplay notification.
+- OTACenter: remove old translations
+- Settings: fix confirm pattern crash on rotate
+- Add Left clock
+- Calculator: Remove duplicate color.
+- SystemUI: fix visualizer tile initial state
+- Frameworks/base: Add removeAll for ArraySet
+- SystemUI: Double tap to sleep anywhere on the lock screen
+- Reduce greeting default timeout
+- Dont show greeting and carrier label on keyguard
+- Fix navigation bar view after apply theme
+- Default time format is hard coded to 24
+- Enable Advanced Reboot by default
+- Remove superuser indicator option
+- Add Volume Key Answer
+- Many device specific changes as well
+- Updates from CM
+- For more detailed changelog check commits on github
+
 
 # Resurrection Remix Lollipop 5.1.1 - v5.4.8
 
