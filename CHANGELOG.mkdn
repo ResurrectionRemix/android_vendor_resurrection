@@ -12,6 +12,7 @@
 - Merge tag Android-5.1.1_r6 (Clean installation highly recommended)
 - Pie Tile
 - Add App sidebar
+- App sidebar: Long press Launch in floating mode
 - App sidebar : Fix hardcore switch & System uı FC 
 - Notifications: Launch in floating mode button. 
 - Floating windows update: Fixes and Improvements.
