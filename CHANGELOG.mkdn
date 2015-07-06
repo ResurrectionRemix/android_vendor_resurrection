@@ -6,6 +6,41 @@
   For extended changelog, track github activities
   
   The Changelog
+  
+# Resurrection Remix Lollipop 5.1.1 - v5.5.0
+
+- Merge tag Android-5.1.1_r6 (Clean installation highly recommended)
+- Pie Tile
+- Add App sidebar
+- App sidebar : Fix hardcore switch & System uı FC 
+- Notifications: Launch in floating mode button. 
+- Floating windows update: Fixes and Improvements.
+- SystemUI: use smaller padding for battery 
+- SystemUI: DozeService: Prevent NPE 
+- HeadsUp snooze function
+- HeadsUp: only snooze when swiping up 
+- Fix lot of system ui issues 
+- Fix keyguard freezes 
+- Charging indicators for text-only battery view
+- Use 24dip of height for statusbar - M style
+- Update default wallpaper 
+- Update Pitch Black theme
+- OTA:Fixed property name for current file
+- Massive APN Update 
+- Fix Sprint 3G 
+- SystemUI: fix recents task view height calculation 
+- Turn off screen pinning off by default in recents 
+- Selinux Switch 
+- Add mw settings and tile
+- Make G notification font colors more compatible with dark and light themes
+- Screen pinning improvements
+- Add missing wallpaper permission
+- [ActivityManager] Refactor broadcast and reduce deliver delay. 
+- Many device specific changes as well
+- Updates from CM
+- For more detailed changelog check commits on github
+
+
 
 # Resurrection Remix Lollipop 5.1.1 - v5.4.9
 
