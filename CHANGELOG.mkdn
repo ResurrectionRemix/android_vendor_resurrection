@@ -6,6 +6,31 @@
   For extended changelog, track github activities
   
   The Changelog
+
+# Resurrection Remix Lollipop 5.1.1 - v5.5.1
+
+- RAM bar: fix position without search bar In portrait and fix wrong bottom position in landscape with serch bar on. Also centralize text
+- Carrier Label: Hide on lock screen
+- SystemUI: use smaller padding for battery
+- Floating windows: Fix statusbar immersive mode for snap points.
+- Restore to stock battery padding
+- Revert Reorganize statusbar icon,text,clock padding
+- Enable Headsup floating by default
+- Do not launch floating window when on default launcher
+- Base: option to launch heads up in floating mode.
+- FWB: Torch to powermenu
+- systemui: restore space between clock & battery
+- Gesture anywhere floating switch
+- msim: Fix saving default sim from select SIM dialog (1/2)
+- Custom carrier label: fix usage when option is off (2/2)
+- base: dock battery
+- Remove performance settings
+- Update navbar power button drawables
+- Re-color navbar buttons
+- Floating windows: Fix minimize/maximize buttons coloring,Fix when we close floating window also remove the task.
+-  Update Translations
+- Device specific Changes
+-  Check GitHub for more details
   
 # Resurrection Remix Lollipop 5.1.1 - v5.5.0
 
