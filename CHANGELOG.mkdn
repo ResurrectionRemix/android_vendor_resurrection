@@ -7,6 +7,72 @@
   
   The Changelog
 
+
+# Resurrection Remix Lollipop 5.1.1 - v5.5.2
+
+- Add Dock Battery
+- Improve navbar layout 
+- livedisplay: Fix issue where settings weren't applied
+- livedisplay: Round values up 
+- MediaPlayer: Add multi SIM ringtone support
+- Revert CAF's default system sound settings 
+- MediaScanner: Add support for default ringtones per sim 
+- Fix mounting of non-FAT formatted SD cards 
+- Track current user id in ThemeService 
+- Authenticate When Keyguard Resumes From Camera 
+- Fingerprint: Add break after MSG_REMOVED 
+- Status bar expanded header: Custom background color
+- Fix some issues with themes and notif bg color 
+- Add Screenrecorder To Power Menu and Quick Settings
+- SettingsProvider: Update action for Profile picker.
+- Powermenu: screenshot delay
+- SystemUI: update notification clipping when reset
+- PhoneNumberUtils: Add rewrite rule for CDMA networks in Ukraine
+- GA = Fix size of close putton drawables
+- SystemUI: SlimDim
+- SlimDim: listen for touches in navbar empty areas also 
+- SystemUI: SlimDim - pref to listen on entire screen for touches 
+- SystemUI: fix battery icon jump on qs expand 
+- Fix GPS for old GPS HALs 
+- CYNGNOS-489: Fingerprint: Fix concurrent mod exception when getting Fingerprint list
+- Add fingerprint enrollment stats 
+- Settings: Hide carrier on lock screen
+- Add LOCKSCREEN_BIOMETRIC_WEAK_FALLBACK to fallbackIntent 
+- OOBE: Set next label when fingerprint enrollment done
+- Add battery saver settings to power usage summary
+- Light settings: reduce tone if preview image color is very light
+- Remove manage fingerprints from enrollment setup 
+- Use theme_accent for manage_fingerptins_primary_color 
+- Fingerprint: Cancel timeout if user leaves enrollment 
+- Settings: hide light pulse settings if not available 
+- Fingerprint: Match Enrollment UI with SetupWizard
+- Fix navigating fallback security via setup wizard 
+- Fix aliasing in FingerprintProgressBar 
+- Fingerprint: Include "Fingerprint" in the unlock title 
+- Settings: fix setting light FC 
+- Protected Apps: Monitor unlock status 
+- Keep screen on during fingerprint enrollment 
+- Fix protected apps orientation 
+- Add protected apps configChanges orientation
+- Fix config_proximityCheckOnWake setting handling 
+- Remove hardcoded textAppearance for better theme support
+- Settings:add japanese translation
+- Setup: Call setUseFingerprint() when enrollment finished 
+- Settings: Make sure we're getting the instance of ProfileManager. 
+- Settings: add Kiev time zones to picker
+- Fix Battery % display in saver threshold
+- Settings: Hide radio band selection based on config
+- vendor/cm: Introduce update-cm-prebuilts-latest-public-api.
+- vendor/cm: Clean up paths to known files.
+- Fix Rogers APN
+- APN fine tuning
+- rendang: Remove unwanted APNs
+- Hack in support for the old version of Maven
+- Themes:Update iconography.
+- Inlcludes All bug fixes and performanced updates from cyanogenmod
+- For More Information Track github activities
+
+
 # Resurrection Remix Lollipop 5.1.1 - v5.5.1
 
 - RAM bar: fix position without search bar In portrait and fix wrong bottom position in landscape with serch bar on. Also centralize text
