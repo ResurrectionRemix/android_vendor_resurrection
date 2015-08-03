@@ -7,6 +7,48 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.1 - v5.5.3
+
+- Anti-Piracy Support
+- Display headset when plug 
+- Add AdBlock
+- Themes tile
+- Add options - edit PIE control second layer
+- Weather Temprature Status Bar Icon 
+- Statusbar weather color 
+- statusbar weather font size
+- Fix left weather temp padding
+- Fix for rare recents npe
+- SlimDim: don't dim navbar on lockscreen
+- SlimDim: Use semaphore to cancel ontouch callback 
+- GA = Fix size of close button drawables P2
+- Add data connection toggle for MSIM 
+- Settings: Long Term Orbits (LTO) 
+- Don't include all resource densities 
+- Settings: Add TR Translations
+- Automatic translation import 
+- Remove Duplicate Alarms
+- Fix NPE with WeatherStatus on KeyguardStatusView
+- SystemUI: Crash fix from bad camera values.
+- CellularTile: Long-click triggers detail view instead 
+- CellularTile: Fix secondary button doesn't work and change single click behavior
+- WifiTile: Fix wifi toggle state in detail view
+- Only clear icon cache when theme/icon pack applied
+- CaptivePortal : Ensure uri is not null 
+- SystemUI: Add support for external bitmap icons.
+- systemui: Support remote expanded style. 
+- systemui: Fix various issues with transparent bars 
+- camera: Unbreak the extended face detection code 
+- ActivityManagerService: Don't export 'system' process in running app list
+- systemui: move dock battery level views outside systemicons layout 
+- qs: initialize day temperature in livedisplay tile
+- SystemUi: Respect shouldCollapsePanel when handling onClick.
+- Fix statusbar dead spaces 
+- autobrightness: Fix the brightness dialog is not work when first enable auto-backlight
+- Update APN List
+- Inlcludes All bug fixes and performanced updates from cyanogenmod
+- For More Information Track github activities
+
 
 # Resurrection Remix Lollipop 5.1.1 - v5.5.2
 
