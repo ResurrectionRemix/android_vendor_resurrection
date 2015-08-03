@@ -11,7 +11,6 @@
 
 - Anti-Piracy Support
 - Display headset when plug 
-- Add AdBlock
 - Themes tile
 - Add options - edit PIE control second layer
 - Weather Temprature Status Bar Icon 
