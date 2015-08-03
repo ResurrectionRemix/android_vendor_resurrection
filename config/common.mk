@@ -284,7 +284,7 @@ ifdef CM_BUILDTYPE
         endif
     endif
 else
-    # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
+    # If RR_BUILDTYPE is not defined, set to OFFICIAL
     CM_BUILDTYPE := Resurrection-Remix-LP-v5.5.3
     CM_EXTRAVERSION :=
 endif
