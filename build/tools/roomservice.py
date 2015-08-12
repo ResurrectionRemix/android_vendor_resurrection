@@ -239,7 +239,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
 
     if syncable_repos:
         print('Syncing dependencies')
-        os.system('repo sync %s' % ' '.join(syncable_repos))
+        os.system('repo sync --force-sync %s' % ' '.join(syncable_repos))
 
     for deprepo in syncable_repos:
         fetch_dependencies(deprepo)
@@ -349,6 +349,7 @@ def main():
 
     for repository in repositories:
         repo_name = repository['name']
+
         if not (repo_name.startswith("device_") and
                 repo_name.endswith("_" + device)):
             continue
@@ -362,7 +363,7 @@ def main():
         add_to_manifest(adding, fallback_branch)
 
         print("Syncing repository to retrieve project.")
-        os.system('repo sync %s' % repo_path)
+        os.system('repo sync --force-sync %s' % repo_path)
         print("Repository synced!")
 
         fetch_dependencies(repo_path, fallback_branch)
