@@ -7,6 +7,79 @@
   
   The Changelog
 
+# Resurrection Remix Lollipop 5.1.1 - v5.5.4
+
+- Proximity Speaker
+- Add three-fingers-swipe to screenshot 
+- Themes: don't recreateDefaults on typeface when locale changes 
+- Revert "Barrier only messages shouldn't prevent the idle handlers from running
+- base: don't refresh visualizer tile once the tile is destroyed
+- SignalStrength: Allow for custom signal buckets in LTE
+- Disable PIN entry after successful quick unlock 
+- Fix forcing media stream control on tablet 
+- systemui: Provide empty view for empty lists published in QSTile
+- audio: Playback over USB DAC connected before boot
+- [ActivityManager] Bring up Service if not schedule to restart
+- PBD: Apply the same emmc discard logic as ext4_utils 
+- SystemUI: fix empty notification space in shade_locked
+- Keyguard: Don't show keyguard if CryptKeeper enabled 
+- SystemUI: add missed super window calls 
+- Buttons: Allow setting default long-press app switch behavior
+- Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS 
+- Fix telephony property access for CDMA rewrite rules in PhoneNumberUtils
+- National roaming info for new Tuenti MNC in Spain
+- Fix intent resolution of default preferred apps
+- PhoneWinowManager: resolve home car intent 
+- Themes: Theme power off and reboot dialog 
+- Expose color values for battery saver icons 
+- Fix DT2S on navbar after SlimDim 
+- Battery saver enhancements (update) 
+- Keyguard: Stop fingerprint auth when not showing 
+- Fix StrictMode violation during getDefaultApn() 
+- AppOps: fix delete ops wrongly matched issue
+- frameworks/base: synchronize surface control object access.
+- frameworks/base: Fix ContentService JNI leaks
+- Fix memory leak in AAPT 
+- Make MANAGE_DOCUMENTS permission signature|system
+- LockPatternUtils: add a static way to retreive pattern from string 
+- Keyguard: Fix scramblepin logic 
+- Revert "AdBlock
+- Fix NPE with WeatherStatus on KeyguardStatusView
+- SystemUI: update to use new Profiles LockSettings obj
+- systemui: Support remote expanded style.
+- SystemUI: Add support for external bitmap icons.
+- CaptivePortal : Ensure uri is not null 
+- TorchService: add sysfs handling
+- autobrightness: Fix the brightness dialog is not work when first enabled
+- policy: Remove references of Profiles in android.policy
+- Settings: Disable Headsup floating by default 
+- Settings: add a way to not localize zone selections
+- settings: add IMEI information to msim device status page 
+- Device info: Remove IMEI info from SIM status 
+- Use correct icons for sound settings 
+- Show "Lock screen & fingerprint" when supported
+- Expose values for themes. 
+- Cleanup SoundSettings  
+- cmsdk: Dual SIM support on CM SDK
+- vendor/cm: Provide means of uploading an artifact to maven.
+- vendor/cm: Always use gpg sign-and-deploy for deployments.
+- APN: Update configurations for Philippine networks
+- Add new Tuenti MNC SPN override name 
+- vendor/cm: Expose internal revision for platform. 
+- apns: zero-length items are evil and break auto-selection 
+- sepolicy: Allow recovery to set system properties
+- Add SettingsManagerService from cmsdk as a system service. 
+- sf: Restrict GPU tile render feature to MAX_LAYER_COUNT
+- SF: Enable context priority 
+- stagefright: Add libhwc to exynos include paths
+- stagefright: Add support for Exynos hardware audio decoding
+- stagefright: Don't crash on invalid / null AVCC atoms in MKV
+- MPEG4Extractor.cpp: handle chunk_size > SIZE_MAX
+- video: Disable resync markers
+- Includes All updates And Performance Updates From Cyanogenmod
+- For More Details Track Github Activity
+
+
 # Resurrection Remix Lollipop 5.1.1 - v5.5.3
 
 - Anti-Piracy Support
