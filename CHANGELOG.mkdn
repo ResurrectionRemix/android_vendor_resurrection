@@ -77,7 +77,7 @@
 - MPEG4Extractor.cpp: handle chunk_size > SIZE_MAX
 - video: Disable resync markers
 - Includes All updates And Performance Updates From Cyanogenmod
-- For Details Track Github Activity
+- For More Details Track Github Activity
 
 
 # Resurrection Remix Lollipop 5.1.1 - v5.5.3
