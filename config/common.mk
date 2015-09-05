@@ -157,7 +157,8 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMAccount \
     CMHome \
-    OTACenter
+    OTACenter \
+    OmniSwitch	
     
 # SuperSU
 PRODUCT_COPY_FILES += \
