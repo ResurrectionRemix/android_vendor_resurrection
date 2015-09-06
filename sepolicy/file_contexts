@@ -37,3 +37,6 @@
 
 # Hosts
 /system/etc/hosts(/.*)?               u:object_r:hosts_data_file:s0
+
+# Persistent properties
+/persist/properties         u:object_r:persist_property_file:s0

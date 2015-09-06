@@ -14,3 +14,6 @@ type recovery_cache_file, file_type, mlstrustedobject;
 
 # Hosts
 type hosts_data_file, file_type, data_file_type;
+
+# Persistent property storage
+type persist_property_file, file_type;
