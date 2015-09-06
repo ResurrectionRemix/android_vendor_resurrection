@@ -76,7 +76,7 @@ endif
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-RR.txt
-    
+
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
@@ -158,8 +158,8 @@ PRODUCT_PACKAGES += \
     CMAccount \
     CMHome \
     OTACenter \
-    OmniSwitch	
-    
+    OmniSwitch
+
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
@@ -280,8 +280,8 @@ ifdef CM_BUILDTYPE
         endif
     endif
 else
-    # OFFICIAL Version Release of RR 
-    CM_BUILDTYPE := Resurrection-Remix-LP-v5.5.4
+    # OFFICIAL Version Release of RR
+    CM_BUILDTYPE := Resurrection-Remix-LP-v5.5.5
     CM_EXTRAVERSION :=
 endif
 
