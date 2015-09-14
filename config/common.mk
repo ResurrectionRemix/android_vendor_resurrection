@@ -112,6 +112,10 @@ endif
 #PRODUCT_COPY_FILES += \
 #    vendor/cm/prebuilt/PitchBlack/com.resurrectionremix.pitchblack.apk:system/priv-app/PitchBlack/com.resurrectionremix.pitchblack.apk
 
+# KernelAdiutor
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
