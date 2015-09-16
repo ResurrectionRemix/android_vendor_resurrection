@@ -21,7 +21,6 @@ BOARD_SEPOLICY_UNION += \
     healthd.te \
     hostapd.te \
     installd.te \
-    livedisplay.te \
     mediaserver.te \
     netd.te \
     property.te \
