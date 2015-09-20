@@ -53,6 +53,9 @@
         <item>.*com.antutu.benchmark.*,2</item>
     </string-array>
 
+    <!-- Enable lockscreen rotation by default -->
+    <bool name="config_enableLockScreenRotation">true</bool>
+
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
          on the current state of the device. -->
     <string-array translatable="false" name="config_globalActionsList">
