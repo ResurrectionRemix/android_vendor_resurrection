@@ -10,6 +10,8 @@ The Changelog
 
 - Merge tag Android-5.1.1_r18 (Clean installation highly recommended)
 - Clean recent task by shake
+- Squashed On-The-Go mode
+- On-the-go : Improve quick settings dialog
 - Clean Up Lockscreen Colors
 - Configurable lockscreen rotation Now Enabled
 - Fix Weather Color icons Issue
@@ -57,12 +59,10 @@ The Changelog
 - Themes: Set composed icon scale to 1f default
 - Default to Resolver Theme
 - Fix Custom Resolver Theming
-- On-the-go : Improve quick settings dialog
 - Fix Resolver Theming
 - SettingsProvider: move Profile picker activity 
 - SystemUI: add missing super viewgroup method calls
-- Fix race condition in panel expansion handling.
-- Squashed On-The-Go mode 
+- Fix race condition in panel expansion handling. 
 - Fix Launch Notification as Float Icon
 - base: fix window bounds for left hand navigationbar
 - framework: add string for wifi subscription change notification
