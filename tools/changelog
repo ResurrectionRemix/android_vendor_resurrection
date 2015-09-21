@@ -13,7 +13,8 @@ then
 fi
 
 touch $Changelog
-
+if [ "$MAKE_CHANGELOG" == "true" ];
+then
 # Print something to build output
 echo ${bldppl}"Generating changelog..."${txtrst}
 
@@ -36,14 +37,12 @@ done
 
 sed -i 's/project/   */g' $Changelog
 
-if [ -e $out/*/$Changelog ]
-then
-rm $out/*/$Changelog
-fi
-if [ -e $out/*/system/etc/$Changelog ]
-then
-rm $out/*/system/etc/$Changelog
-fi
+rm -f $OUT/$Changelog
+rm -f $OUT/system/etc/$Changelog
 cp $Changelog $OUT/system/etc/
 cp $Changelog $OUT/
 rm $Changelog
+else
+echo ${bldppl}"Using Prebuilt Changelog"${txtrst}
+cp vendor/cm/CHANGELOG.mkdn $OUT/system/etc/$Changelog
+fi
