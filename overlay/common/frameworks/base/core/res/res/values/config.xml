@@ -23,7 +23,7 @@
     </string-array>
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
-    <bool name="config_showNavigationBar">true</bool>
+    <bool name="config_showNavigationBar">false</bool>
 
     <!-- Disable stock OTA components if installed -->
     <string-array name="config_disabledComponents" translatable="false">
