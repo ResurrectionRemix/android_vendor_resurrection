@@ -6,7 +6,7 @@
 
 The Changelog
 
-# Resurrection Remix Lollipop 5.1.1_r18 - v5.5.6
+# Resurrection Remix Lollipop  5.1.1_r6 -> 5.1.1_r18 - v5.5.6
 
 - Merge tag Android-5.1.1_r18 (Clean installation highly recommended)
 - Clean recent task by shake
