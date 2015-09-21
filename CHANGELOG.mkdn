@@ -14,13 +14,8 @@ The Changelog
 - On-the-go : Improve quick settings dialog
 - Clean Up Lockscreen Colors
 - Configurable lockscreen rotation Now Enabled
-- Fix Weather Color icons Issue
-- Recents: Delay cleanup of remaining tasks when dismissing 
-- Settings : Add Tunings Preference in Configurations
-- Settings :Add Kernel Auduitor 
 - SystemUI: Long Press Lock Icon Now Loads Up torch
 - SystemUi: Fix navbar actions & fix wrong switch logic
-- SystemUI: Fix navbar switch logic
 - Fix navbar glitches on hardware button devices
 - Turn navbar off as default
 - Add option to disable scrolling cache
@@ -29,6 +24,10 @@ The Changelog
 - FWB: Statusbar clock font size
 - Task Manager: Use one observer for changes, misc cleanup
 - SystemUI : Navbar ring five targets 
+- Fix Weather Color icons Issue
+- Recents: Delay cleanup of remaining tasks when dismissing 
+- Settings : Add Tunings Preference in Configurations
+- Settings :Add Kernel Auduitor 
 - SlimShortcuts: Power menu 
 - SlimShortcuts: Restart SystemUI 
 - SlimShortcuts: Volume panel 
@@ -53,7 +52,7 @@ The Changelog
 - lockscreen: Add option for showing unlock screen directly (Gesture)
 - lockscreen: Add option for showing unlock screen directly 
 - SystemUI: Update RR Logo Drawables
-- Simplify getting total memory:
+- Simplify getting total memory
 - Fix animation sequence for upload tasks
 - QS: Update visibility of items in Bluetooth/WiFi tiles
 - Themes: Set composed icon scale to 1f default
@@ -69,11 +68,9 @@ The Changelog
 - SystemUI: don't show recents if not provisioned
 - Fingerprint wakeup: more consistent behavior
 - Fixed: Wrong status bar notification layout width.
-- Base : Squashed Updates
 - services: do not keep notification light on, while incall
 - SystemUI: screenshot: remove screenshot notification before taking screenshot
 - carrier label : Fix ListPreference
-- remove this P.O.S
 - Carrier label : Remove duplicate int intColor call
 - Remove lock screen hide carrier
 - Fix typo on TR translations
@@ -87,11 +84,6 @@ The Changelog
 - StatusBar Settings: Hide "Disable Quick Settings On Lockscreen"
 - Maintainers:Update LG G3 d855 Maintainer
 - Settings: Configurations:Add Some Preference Headers
-- cm: Clean up cgroups
-- cm: Fix a few denials
-- cm: Remove xattr option from bfqio cgroup
-- cm: Update shared init.rc
-- cm: Set IOPS mode for CFQ and BFQ automatically
 - vendor/cm: Remove custom resolver from OSS builds.
 - services: do not keep notification light on, while incall
 - SystemUI: screenshot: remove screenshot notification before taking it
@@ -101,7 +93,6 @@ The Changelog
 - Added Changes for Custom Resolver Activity
 - Wallpaper: Create new WallpaperObserver on user switch
 - SystemUI: Fix NPE
-- base :Add missing animations
 - services: option to disable lock screen device policy override
 - Status bar carrier: don't show Emergency text if no sim is installed
 - Fix noticfication tile fc on long press 
