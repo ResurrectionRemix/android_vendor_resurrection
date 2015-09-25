@@ -168,7 +168,8 @@ PRODUCT_PACKAGES += \
     CMAccount \
     CMHome \
     OTACenter \
-    OmniSwitch
+    OmniSwitch \
+    CMSettingsProvider
 
 # SuperSU
 PRODUCT_COPY_FILES += \
