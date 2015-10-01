@@ -116,10 +116,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
-# ThemeChooser
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/ThemeChooser/ThemeChooser.apk:system/priv-app/ThemeChooser/ThemeChooser.apk
-
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
