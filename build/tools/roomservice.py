@@ -43,7 +43,7 @@ DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
 custom_local_manifest = ".repo/local_manifests/slim_manifest.xml"
-custom_default_revision = "lp5.0"
+custom_default_revision = "mm6.0"
 custom_dependencies = "slim.dependencies"
 org_manifest = "SlimRoms"  # leave empty if org is provided in manifest
 org_display = "SlimRoms"  # needed for displaying
