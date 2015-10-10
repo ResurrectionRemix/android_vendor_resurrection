@@ -6,6 +6,63 @@
 
 The Changelog
 
+# Resurrection Remix Lollipop  5.1.1_r18 -> 5.1.1_r24 - v5.5.7
+
+- TRDS: Exclusive Inbuilt PitchBlack
+- Themed apps -
+
+  Framework
+  Settings
+  Systemui
+  Dialer
+  Contacts
+  MMS
+  Telephony
+  LockClock
+  ThemeChooser
+  OTACenter
+  OmniSwitch
+  
+- Heads up snooze 
+- Disable Lockscreen Media Art
+- Lockscreen see-through & blur
+- Settings: network activity indicators
+- QS: long press expanded desktop tile for detail view 
+- QS: long press flashlight tile for detail view
+- option to disable torch when the screen turns off
+- SystemUI: configurable lockscreen rotation
+- Systemui: Fix navigation bar layout
+- Live lock screen support
+- Settings:Lockscreen color >> Lockscreen Advanced
+- Add live lock screen previews
+- Add volume boosted ringtones
+- Fix harware keys are not enabled
+- Keyguard: Third party keyguard support 
+- Window rotation: fix up sensor logic 
+- Add config to show WiFi/data activity indicators
+- Shorten first boot time by filtering dexopted apps
+- SystemUI: fix switching from task manager to detailed view 
+- SystemUI: improve switching users 
+- Heads up snooze button : Expose button colors 
+- SysUI: Clean up objects when recreating statusbar
+- SystemUi: Don't show cellular data tile on secondary users.
+- fwBase : Disable lockscreen rotation by default
+- SystemUI: improve circle battery
+- SystemUi: Fix navbar actions & fix wrong switch logic
+- Fix sound settings and fix for Msim devices default ringtone issue 
+- Settings : Fix profile action offset when changing orientation
+- Settings : Don't show ringtone pref for non voice capable devices
+- Hide the lift to wake option
+- Clean up button settings
+- Update display settings & add missing imports
+- settings: fuelgauge: Always show screen on time 
+- Hide LCD density preference from secondary users
+- Give OnTheGo a checkbox instead of switch
+- carrier label : Fix ListPreference
+- Updated Translations
+- Includes All Fixes and Performance Updates From CM
+- For More Info Track Github Activities
+
 # Resurrection Remix Lollipop  5.1.1_r6 -> 5.1.1_r18 - v5.5.6
 
 - Merge tag Android-5.1.1_r18 (Clean installation highly recommended)
@@ -89,7 +146,7 @@ The Changelog
 - SystemUI: screenshot: remove screenshot notification before taking it
 - QS: Make WiFi and Bluetooth tile detail view consistent
 - fingerprint wakeup: improve state and error handling 
--  Frameworks: Add option for position date left-right of clock
+- Frameworks: Add option for position date left-right of clock
 - Added Changes for Custom Resolver Activity
 - Wallpaper: Create new WallpaperObserver on user switch
 - SystemUI: Fix NPE
