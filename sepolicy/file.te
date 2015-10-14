@@ -3,6 +3,9 @@ allow file_type rootfs:filesystem associate;
 
 type auditd_log, file_type, data_file_type;
 
+# Bootchart
+type bootchart_log, file_type, data_file_type;
+
 # Themes
 type theme_data_file, file_type, data_file_type;
 

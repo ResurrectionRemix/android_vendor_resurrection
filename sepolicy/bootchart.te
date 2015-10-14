@@ -1,0 +1,35 @@
+bootchart(`
+    allow adbd bootchart_log:file w_file_perms;
+    allow audiod bootchart_log:file w_file_perms;
+    allow bluetooth_loader bootchart_log:file w_file_perms;
+    allow bootanim bootchart_log:file w_file_perms;
+    allow debuggerd bootchart_log:file w_file_perms;
+    allow drmserver bootchart_log:file w_file_perms;
+    allow healthd bootchart_log:file w_file_perms;
+    allow installd bootchart_log:file w_file_perms;
+    allow irsc_util bootchart_log:file w_file_perms;
+    allow keystore bootchart_log:file w_file_perms;
+    allow lmkd bootchart_log:file w_file_perms;
+    allow logd bootchart_log:file w_file_perms;
+    allow mediaserver bootchart_log:file w_file_perms;
+    allow mm-pp-daemon bootchart_log:file w_file_perms;
+    allow mm-qcamerad bootchart_log:file w_file_perms;
+    allow netd bootchart_log:file w_file_perms;
+    allow netmgrd bootchart_log:file w_file_perms;
+    allow perfd bootchart_log:file w_file_perms;
+    allow qmuxd bootchart_log:file w_file_perms;
+    allow rfs_access bootchart_log:file w_file_perms;
+    allow rild bootchart_log:file w_file_perms;
+    allow rmt_storage bootchart_log:file w_file_perms;
+    allow sdcardd bootchart_log:file w_file_perms;
+    allow servicemanager bootchart_log:file w_file_perms;
+    allow surfaceflinger bootchart_log:file w_file_perms;
+    allow sysinit bootchart_log:file w_file_perms;
+    allow tee bootchart_log:file w_file_perms;
+    allow thermal-engine bootchart_log:file w_file_perms;
+    allow time_daemon bootchart_log:file w_file_perms;
+    allow vm_bms bootchart_log:file w_file_perms;
+    allow vold bootchart_log:file w_file_perms;
+    allow wcnss_service bootchart_log:file w_file_perms;
+    allow zygote bootchart_log:file w_file_perms;
+')
