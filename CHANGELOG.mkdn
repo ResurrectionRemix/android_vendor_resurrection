@@ -6,6 +6,54 @@
 
 The Changelog
 
+# Resurrection Remix- v5.5.8  Lollipop-5.1.1_r24 
+
+-TRDS:Pitch Black -> Update Colors For :
+	Dialer
+	Contacts
+	Mms
+	DocumentsUI
+	SystemUI
+	Settingd
+- TRDS:Pitch Black : Fix Google Account Fc	
+- Fix Plenty Of Glitches 
+- Fix Dpi Issue When Landscape Mode is Activated
+- Fix Navbar Ring Layout
+- Fix Reboot Caused By Home Button During Screen Pinning
+- Fixes For Battery Saver Warning Disabling
+- Fix For Navbar Theme Resetting On every Boot
+- Fix rotation tile animation
+- Fix horrible warning on every systemui startup. 
+- Fix navbar switch
+- Fix huge bounce-back in ListView when double-flinging 
+- PB: Dark theme for documents ui and other improvements 
+- PB :Improve sysmui dark material dialogs + bg color & fix light material font hex
+- Update audio and zen drawables 
+- TRDS : Clean up resources and fix resolver glitch 
+- TRDS:PB: Change sysenui ripple effect color
+- Add volume boosted ringtones
+- Add live lock screen previews
+- Window rotation: fix up sensor logic 
+- RotationPolicy: fix rotation toggle logic
+- BatteryService: Prevent UUC scenarios at 0%
+- Fix network stats logspam.
+- SystemUI: Remove duplicated permission
+- SystemUI: attach a queue to media player notifications
+- Disable default blending when drawing color rect 
+- FingerprintService: synchronize access to clients
+- Services : Ensure proximity check is taken into consideration
+- Revert "Don't allow deleting last remaining fingerprint"
+- Improve fingerprint management activity UX. …
+- Settings: use consistent behavior after forgetting networks …
+- Revert "Settings: clear dialog states when forgetting network" … 
+- Multiple LEDs : Illumination Bars support
+- Settings: Fix RuntimeException in InputMethod Settings
+- CMSettings: add notification play queue setting
+- Includes All Updates and Performance Enhancements By CyanogenMod 12.1
+- Merged More Translations
+- For More Updates Visit Resurrection Remix Github
+
+
 # Resurrection Remix Lollipop  5.1.1_r18 -> 5.1.1_r24 - v5.5.7
 
 - TRDS: Exclusive Inbuilt PitchBlack
