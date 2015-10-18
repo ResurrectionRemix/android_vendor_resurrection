@@ -14,7 +14,7 @@ The Changelog
 	Mms
 	DocumentsUI
 	SystemUI
-	Settingd
+	Settings
 - TRDS:Pitch Black : Fix Google Account Fc	
 - Fix Plenty Of Glitches 
 - Fix Dpi Issue When Landscape Mode is Activated
