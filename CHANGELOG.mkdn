@@ -8,6 +8,8 @@ The Changelog
 
 # Resurrection Remix- v5.5.8  Lollipop-5.1.1_r24 
 
+- Fix notifications tile
+- Fix FC queue to media player notifications
 -TRDS:Pitch Black -> Update Colors For :
 	Dialer
 	Contacts
