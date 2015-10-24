@@ -8,8 +8,15 @@ The Changelog
 
 # Resurrection Remix- v5.5.8  Lollipop-5.1.1_r24 
 
+- Fix systemUI NPE on landscape theme change 
+- telephony: Hack GSM and LTE signal strength
+- QSTiles: Set number of tile columns
+- PB: theming queue colors 
+- base: initialized context ContentResolver reference before use it
+- Lights Modes: Avoid regular values updates
 - Fix notifications tile
 - Fix FC queue to media player notifications
+
 -TRDS:Pitch Black -> Update Colors For :
 	Dialer
 	Contacts
