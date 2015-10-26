@@ -838,15 +838,13 @@
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="24" apn="services.telenor.se" proxy="173.30.253.241" port="8799" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" user="" password="" type="default,supl" spn="TELENOR" />
   <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="mms" proxy="" port="" mmsproxy="10.10.10.11" mmsport="8080" mmsc="http://mmsc/" user="" password="" type="mms" spn="TELENOR" />
-  <apn carrier="Ventelo Internet" mcc="242" mnc="01" apn="internet.ventelo.no" user="" password="" type="default,supl" spn="Ventelo" />
-  <apn carrier="Ventelo MMS" mcc="242" mnc="01" apn="mms.ventelo.no" proxy="" port="" mmsproxy="10.10.10.11" mmsport="8080" mmsc="http://mmsc/" user="ventelo" password="1111" type="mms" spn="Ventelo" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor.smart" mmsc="http://mmsc/" mmsproxy="mms-proxy.telenor.no" mmsport="8080" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Mobitalk" mcc="242" mnc="01" apn="telenor" user="dj" password="dj" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Talkmore" mcc="242" mnc="01" apn="telenor" type="default,supl,mms" />
-  <apn carrier="Ventelo Internett" mcc="242" mnc="01" apn="internet.ventelo.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Ventelo MMS" mcc="242" mnc="01" apn="mms.ventelo.no" proxy="" port="" user="ventelo" password="1111" mmsc="http://mmsc" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
+  <apn carrier="Phonero Internett" mcc="242" mnc="01" apn="internet.phonero.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Phonero MMS" mcc="242" mnc="01" apn="mms.phonero.no" proxy="" port="" user="phonero" password="1111" mmsc="http://mmsc" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
   <apn carrier="Tele2 Internet" mcc="242" mnc="01" apn="internet.tele2.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Tele2 MMS" mcc="242" mnc="01" apn="internet.tele2.se" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" type="mms" />
   <apn carrier="TDC MMS" mcc="242" mnc="01" apn="mms.no" proxy="" port="" user="" password="" mmsc="http://mms.tdcmobil.no:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
