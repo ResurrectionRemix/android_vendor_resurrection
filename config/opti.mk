@@ -88,6 +88,7 @@ endif
 
 ifeq (true,$(RR_O3))
 OPT5 := O3
+endif
 
 GCC_OPTIMIZATION_LEVELS := $(OPT1)|$(OPT2)|$(OPT3)|$(OPT4)|$(OPT5)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
