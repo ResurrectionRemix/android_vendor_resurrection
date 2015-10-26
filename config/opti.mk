@@ -82,18 +82,14 @@ ifeq (true,$(RR_KRAIT))
 OPT3 := ($(TARGET_CPU_VARIANT))
 endif
 
-ifeq (true,$(RROPTI))
-OPT4 := 4.8-Host-TC
-endif
-
 ifeq (true,$(RR_PIPE))
-OPT5 := pipe
+OPT4 := pipe
 endif
 
 ifeq (true,$(RR_O3))
-OPT6 := O3
+OPT5 := O3
 
-GCC_OPTIMIZATION_LEVELS := $(OPT1)|$(OPT2)|$(OPT3)|$(OPT4)|$(OPT5)|$(OPT6)
+GCC_OPTIMIZATION_LEVELS := $(OPT1)|$(OPT2)|$(OPT3)|$(OPT4)|$(OPT5)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.rr.optis=$(GCC_OPTIMIZATION_LEVELS)
