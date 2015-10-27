@@ -71,11 +71,11 @@ endif
 endif
 
 ifeq (true,$(RR_STRICT))
-OPT1 := strict
+OPT1 := (strict)
 endif
 
 ifeq (true,$(RR_GRAPHITE))
-OPT2 := graphite
+OPT2 := (graphite)
 endif
 
 ifeq (true,$(RR_KRAIT))
@@ -83,16 +83,16 @@ OPT3 := ($(TARGET_CPU_VARIANT))
 endif
 
 ifeq (true,$(RR_PIPE))
-OPT4 := pipe
+OPT4 := (pipe)
 endif
 
 ifeq (true,$(RR_O3))
-OPT5 := O3
+OPT5 := (O3)
 endif
 
-GCC_OPTIMIZATION_LEVELS := $(OPT1)|$(OPT2)|$(OPT3)|$(OPT4)|$(OPT5)
+GCC_OPTIMIZATION_LEVELS := $(OPT1)$(OPT2)$(OPT3)$(OPT4)$(OPT5)
 ifneq (,$(GCC_OPTIMIZATION_LEVELS))
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.rr.optis=$(GCC_OPTIMIZATION_LEVELS)
+    ro.rr.flags=$(GCC_OPTIMIZATION_LEVELS)
 endif
 endif
