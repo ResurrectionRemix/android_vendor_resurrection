@@ -797,13 +797,19 @@
   <apn carrier="3 SE MMS" mcc="240" mnc="02" apn="data.tre.se" mmsc="http://mms.tre.se" mmsproxy="mmsproxy.tre.se" mmsport="8799" type="mms" />
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="04" apn="services.telenor.se" proxy="172.30.253.241" port="8799" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telenor MMS" mcc="240" mnc="04" apn="services.telenor.se" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="172.30.253.241" mmsport="8799" type="mms" />
+  <apn carrier="Comviq" mcc="240" mnc="05" apn="internet.tele2.se" user="" password="" authtype="1" type="default,supl" spn="Comviq" />
+  <apn carrier="Comviq MMS" mcc="240" mnc="05" apn="internet.tele2.se" proxy="" port="" mmsproxy="130.244.202.30" mmsport="8080" mmsc="http://mmsc.tele2.se" user="" password="" authtype="1" type="mms" spn="Comviq" />
   <apn carrier="Telenor MMS" mcc="240" mnc="06" apn="services.telenor.se" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="173.30.253.241" mmsport="8799" type="mms" />
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="06" apn="services.telenor.se" proxy="173.30.253.241" port="8799" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Glocalnet Internet" mcc="240" mnc="06" apn="internet.glocalnet.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Glocalnet MMS" mcc="240" mnc="06" apn="services.glocalnet.se" proxy="" port="" user="" password="" mmsc="http://mms" mmsproxy="172.30.253.241" mmsport="8799" type="mms" />
   <apn carrier="Glocalnet WAP GPRS" mcc="240" mnc="06" apn="services.glocalnet.se" proxy="172.30.253.241" port="8799" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Tele2 Internet" mcc="240" mnc="07" apn="4g.tele2.se" type="default,supl" />
-  <apn carrier="Tele2 MMS" mcc="240" mnc="07" apn="4g.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" type="mms" />
+  <apn carrier="Comviq" mcc="240" mnc="07" apn="internet.tele2.se" user="" password="" authtype="1" type="default,supl" spn="Comviq" />
+  <apn carrier="Comviq MMS" mcc="240" mnc="07" apn="internet.tele2.se" proxy="" port="" mmsproxy="130.244.202.30" mmsport="8080" mmsc="http://mmsc.tele2.se" user="" password="" authtype="1" type="mms" spn="Comviq" />
+  <apn carrier="Tele2 4G" mcc="240" mnc="07" apn="4g.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" authtype="2" type="default,mms" />
+  <apn carrier="Tele2" mcc="240" mnc="07" apn="mobileinternet.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" authtype="2" type="default,supl,mms" />
+  <apn carrier="Tele2 SE" mcc="240" mnc="07" apn="internet.tele2.se" user="wap" password="wap" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.030" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="Tele2 3G" mcc="240" mnc="07" apn="internet.tele2.se" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tele2 Internet" mcc="240" mnc="07" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Tele2 MMS" mcc="240" mnc="07" apn="internet.tele2.no" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.no" mmsproxy="193.12.40.14" mmsport="8080" type="mms" />
   <apn carrier="Spring data" mcc="240" mnc="07" apn="data.springmobil.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
@@ -832,15 +838,15 @@
   <apn carrier="Telenor Mobilsurf" mcc="240" mnc="24" apn="services.telenor.se" proxy="173.30.253.241" port="8799" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" user="" password="" type="default,supl" spn="TELENOR" />
   <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="mms" proxy="" port="" mmsproxy="10.10.10.11" mmsport="8080" mmsc="http://mmsc/" user="" password="" type="mms" spn="TELENOR" />
-  <apn carrier="Ventelo Internet" mcc="242" mnc="01" apn="internet.ventelo.no" user="" password="" type="default,supl" spn="Ventelo" />
-  <apn carrier="Ventelo MMS" mcc="242" mnc="01" apn="mms.ventelo.no" proxy="" port="" mmsproxy="10.10.10.11" mmsport="8080" mmsc="http://mmsc/" user="ventelo" password="1111" type="mms" spn="Ventelo" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor.smart" mmsc="http://mmsc/" mmsproxy="mms-proxy.telenor.no" mmsport="8080" type="default,supl,mms" protocol="IPV4V6" roaming_protocol="IP" />
   <apn carrier="Telenor MMS" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
   <apn carrier="Telenor" mcc="242" mnc="01" apn="telenor" proxy="" port="" user="" password="" mmsc="" authtype="1" type="default,supl" />
   <apn carrier="Mobitalk" mcc="242" mnc="01" apn="telenor" user="dj" password="dj" proxy="10.10.10.10" port="8080" mmsc="http://mmsc/" mmsproxy="10.10.10.11" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Talkmore" mcc="242" mnc="01" apn="telenor" type="default,supl,mms" />
-  <apn carrier="Ventelo Internett" mcc="242" mnc="01" apn="internet.ventelo.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
-  <apn carrier="Ventelo MMS" mcc="242" mnc="01" apn="mms.ventelo.no" proxy="" port="" user="ventelo" password="1111" mmsc="http://mmsc" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
+  <apn carrier="Phonero Internett" mcc="242" mnc="01" apn="internet.phonero.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Phonero MMS" mcc="242" mnc="01" apn="mms.phonero.no" proxy="" port="" user="phonero" password="1111" mmsc="http://mmsc" mmsproxy="10.10.10.11" mmsport="8080" type="mms" />
+  <apn carrier="Tele2 Internet" mcc="242" mnc="01" apn="internet.tele2.se" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
+  <apn carrier="Tele2 MMS" mcc="242" mnc="01" apn="internet.tele2.se" proxy="" port="" user="" password="" mmsc="http://mmsc.tele2.se" mmsproxy="130.244.202.30" mmsport="8080" type="mms" />
   <apn carrier="TDC MMS" mcc="242" mnc="01" apn="mms.no" proxy="" port="" user="" password="" mmsc="http://mms.tdcmobil.no:8002" mmsproxy="194.182.251.15" mmsport="8080" type="mms" />
   <apn carrier="TDC Internet" mcc="242" mnc="01" apn="internet.no" proxy="" port="" user="" password="" mmsc="" type="default,supl" />
   <apn carrier="TDC WAP" mcc="242" mnc="01" apn="internet.no" proxy="194.182.251.15" port="8080" user="" password="" mmsc="" type="default,supl" />
@@ -1476,7 +1482,6 @@
   <apn carrier="WCW-MMS only" mcc="310" mnc="180" apn="mms.wcc.net" proxy="209.55.70.244" port="80" mmsc="http://mms.wcc.net" mmsproxy="209.55.70.246" mmsport="80" user="3257630000" password="mmsc" type="default,mms" authtype="3" />
   <apn carrier="T-Mobile US LTE" mcc="310" mnc="260" apn="fast.t-mobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
   <apn carrier="T-Mobile US LTE IPv6" mcc="310" mnc="260" apn="fast.t-mobile.com" user="none" password="none" server="*" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" protocol="IPV6" />
-  <apn carrier="T-Mobile GPRS" mcc="310" mnc="260" apn="fast.t-mobile.com" proxy="" port="" user="" password="" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" authtype="0" type="default,supl,mms" />
   <apn carrier="MetroPCS LTE" mcc="310" mnc="260" apn="fast.metropcs.com" user="" password="" authtype="0" proxy="" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="MetroPCS LTE IPv6" mcc="310" mnc="260" apn="fast.metropcs.com" user="" password="" authtype="0" proxy="" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" type="default,mms,supl" protocol="IPV6" />
   <apn carrier="MetroPCS" mcc="310" mnc="260" apn="fast.t-mobile.com" port="" mmsc="http://metropcs.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="6d38" type="default,mms,supl" />
@@ -1490,7 +1495,6 @@
   <apn carrier="PTel" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="Ready SIM" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="Red Pocket" mcc="310" mnc="260" apn="wholesale" port="" mmsc="http://mms.wholesale.mmsmvno.com/mms/wapenc" mmsproxy="216.155.165.50" mmsport="8080" type="default,mms,supl" />
-  <apn carrier="Harbor Mobile"  mcc="310" mnc="260" apn="fast.t-mobile.com" proxy="" port="" user="" password="" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
   <apn carrier="Univision Mobile" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://uvm.mmsmvno.com/mms/wapenc" mvno_type="gid" mvno_match_data="554d" type="default,mms,supl" />
   <apn carrier="Brightspot" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://brtspt.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
   <apn carrier="GoSmart" mcc="310" mnc="260" apn="multibrand" port="" mmsc="http://gsmt.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
@@ -1498,7 +1502,6 @@
   <apn carrier="Telcel America" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" mmsproxy="216.155.165.40" mmsport="8080" type="default,mms,supl" />
   <apn carrier="Tracfone" mcc="310" mnc="260" apn="wap.tracfone" port="" mmsc="http://mms.tracfone.com" type="default,mms,supl" />
   <apn carrier="Solavei" mcc="310" mnc="260" apn="solavei" port="" mmsc="http://solavei.mmsmvno.com/mms/wapenc" type="default,mms,supl" />
-  <apn carrier="FMP Communications" mcc="310" mnc="260" apn="fast.t-mobile.com" proxy="" port="" user="" password="" mmsc="http://mms.msg.eng.t-mobile.com/mms/wapenc" type="default,supl,mms" />
   <apn carrier="CellOne WAP" mcc="310" mnc="260" apn="wap.cellular1.net" proxy="10.10.0.97" port="9201" mmsc="http://mms.cellular1.net/ecit/mms.php" mmsproxy="10.10.0.97" mmsport="9201" type="default,supl,mms" authtype="0" />
   <apn carrier="Simple" mcc="310" mnc="260" apn="simple" port="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mvno_type="gid" mvno_match_data="534d" type="default,mms,supl" />
   <apn carrier="Simple" mcc="310" mnc="260" apn="simple" proxy="216.155.165.50" port="8080" user="" password="" mmsc="http://smpl.mms.msg.eng.t-mobile.com/mms/wapenc" mmsproxy="216.155.165.50" mmsport="8080" type="default,supl,mms" />

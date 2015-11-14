@@ -1933,3 +1933,4 @@ The Changelog
 - RR Tools French translations - translated by Pierre Delfosse
 - Included lot of sound and media updates
 - Included CyanogenMod source updates and fixes
+
