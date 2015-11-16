@@ -30,5 +30,13 @@
     <string name="settings_screen_advanced">Дополнительные настройки</string>
     <!-- Settings screen title for keyboard theme settings [CHAR LIMIT=33] -->
     <string name="settings_screen_theme">Тема</string>
+    <!-- The keyboard theme name, Holo White. This is marked as translatable="false" because this is a proper name of system-wide UI Theme. -->
+    <string name="keyboard_theme_holo_white" translatable="false">Холо белая</string>
+    <!-- The keyboard theme name, Holo Blue. This is marked as translatable="false" because this is a proper name of system-wide UI Theme.  -->
+    <string name="keyboard_theme_holo_blue" translatable="false">Холо голубая</string>
+    <!-- The keyboard theme name, Material Dark. This is marked as translatable="false" because this is a proper name of system-wide UI Theme.  -->
+    <string name="keyboard_theme_material_dark" translatable="false">Материал чёрная</string>
+    <!-- The keyboard theme name, Material Light. This is marked as translatable="false" because this is a proper name of system-wide UI Theme.  -->
+    <string name="keyboard_theme_material_light" translatable="false">Материал светлая</string>
 
 </resources>
