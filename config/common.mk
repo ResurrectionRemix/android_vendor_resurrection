@@ -137,6 +137,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     LockClock \
     CMSettingsProvider \
+    OmniSwitch \
     ExactCalculator
 
 # CM Platform Library
