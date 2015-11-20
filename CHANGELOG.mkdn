@@ -10,7 +10,7 @@ The Changelog
 
 - Android 5.1.1_r24->5.1.1_r26
 - Kernel Auditor Tile
-- *Include GCC version and Info (for Optimized Builds Only, See Note Below (for maintainers only))
+- *Include GCC version and Info (for Optimized Builds Only, See Note Below (for maintainers only)) *
 - base: don't show reboot options for safe mode 
 - perf: Add support for additional power profiles 
 - SystemUI: update keyguard state when profiles disable keyguard 
