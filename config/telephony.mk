@@ -13,4 +13,4 @@ PRODUCT_BOOT_JARS += telephony-ext
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.ringtone=Orion.ogg
+    ro.config.ringtone=Resurrection.mp3
