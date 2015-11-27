@@ -136,13 +136,13 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-    CMWallpapers \
     CMFileManager \
     Eleven \
     LockClock \
     CMSettingsProvider \
     OmniSwitch \
-    ExactCalculator
+    ExactCalculator \
+    ResurrectionOTA
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
