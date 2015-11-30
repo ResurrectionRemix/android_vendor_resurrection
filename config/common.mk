@@ -163,6 +163,13 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     ExactCalculator \
     ResurrectionOTA
+    
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
