@@ -69,6 +69,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/CHANGELOG.mkdn:system/etc/Changelog.txt
 
+# KernelAdiutor
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
