@@ -18,6 +18,7 @@ RR Customizations:-
         -Brightness Slider
         -Enable/Disable Show Notification Count
         -SuperUser Indicator Switch
+        -Double Tap To sleep Statusbar
         -Carrier Label  
                 -Carrier Label Switch
                 -Carrier label Colour
@@ -64,6 +65,11 @@ RR Customizations:-
         -Trigger Width
         -Trigger Hieght
         -Trigger Position
+-Pie
+       -Pie Trigger(left ,Right ,Bottom)
+       -Pie Targets
+       -Pie Colors
+       -More Pie Features
  
 -Recents Panel
         -Clear All button Switch
