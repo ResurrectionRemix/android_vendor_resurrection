@@ -73,21 +73,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
     
-# KernelAdiutor
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
-
 # Adaway
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Adaway/Adaway.apk:system/priv-app/Adaway/Adaway.apk
+    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
-# Adaway
+# RomStats
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Adaway/Adaway.apk:system/priv-app/Adaway/Adaway.apk
+    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -243,7 +239,11 @@ PRODUCT_VERSION = 5.6.0
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
+  ro.modversion=$(CM_VERSION) \
+  ro.romstats.url=http://resurrectionremix.sourceforge.net/stats \
+  ro.romstats.name=ResurrectionRemix \
+  ro.romstats.version=$(PRODUCT_VERSION) \
+  ro.romstats.tframe=7 
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
 
