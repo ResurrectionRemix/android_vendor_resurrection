@@ -1,0 +1,194 @@
+
+Resurrection Remix Marshmallow
+ 
+Features:-
+Based On Latest Google Android 6.0.1 Release
+Based On Cyanogenmod 13 Sources
+RR Customizations:-
+-Navigation Bar
+        -Enable/Disable Navbar
+        -Navbar Button Customization
+        -Navbar Slim Dim               
+                -Animate Dim
+                -Dim Timeout Duration
+                -Dim Alpha
+        -Double Tap To sleep navbar
+-Navigation Bar left/Right handed mode Switch for landscape
+ 
+-Statusbar
+        -Brightness Slider
+        -Enable/Disable Show Notification Count
+        -SuperUser Indicator Switch
+        -Double Tap To sleep Statusbar
+        -Carrier Label  
+                -Carrier Label Switch
+                -Carrier label Colour
+                -Carrier Label Size
+                -Clock Customizations
+                -Time & date
+                -Clock Colour
+                -Day & date Toogle
+                -Center/Right/Left Clock Choice
+                -Date Format
+                -Clock Font Styles
+        -Battery
+                -Battery Bar customization
+                -Battery Icon Customization(circle/landscape/Potrait and more)
+                -Battery % Text
+        -Network Traffic Indicator
+                -Network Traffic Arrows Switch
+                -Incoming/OutGoing Traffic
+        -Network traffic Color
+        -Statusbar RR Logo
+                -RR logo Color
+        -StatusBar Weather
+                -Weather Color
+                -Weather Position(left/right)
+                -Weather Style
+                -Weather Size
+ 
+-Animations
+        -Toast Animations
+        -ListView Animations
+        -System Animations
+ 
+-Gestures
+-Gestures Anywhere Feature
+-3 Finger Swipe Screenshot Gesture
+ 
+-App Circle Bar
+        -Choose apps in AppSidebar
+        -Trigger Width
+        -Trigger Hieght
+        -Trigger Position
+-App Sidebar
+        -Choose apps in App circle
+        -Trigger Width
+        -Trigger Hieght
+        -Trigger Position
+-Pie
+       -Pie Trigger(left ,Right ,Bottom)
+       -Pie Targets
+       -Pie Colors
+       -More Pie Features
+ 
+-Recents Panel
+        -Clear All button Switch
+        -Clear All Tasks Switch
+        -Clear All Button Location(Top right,Top Left,Top Center,Bottom Left,Bottom Right,Bottom Center)
+        -Recents Search Bar
+        -Full Screen Recents
+        -Slim Recents
+        -OmniSwitch
+ 
+-Cclock Widget
+        -CLock And Alarm Customizations
+        -Weather Panel Customizations
+        -Calender Events
+ 
+-LockScreen
+        -Lockscreen Bottom Shortcuts
+        -Lockscreen General Shorcuts
+                -100+ Icons for Shortcuts
+        -Double Tap to Sleep Lockscreen
+        -Lockscreen Media Art/Enable Disable
+        -Quick PIN/Patter Unlock
+        -LockScreen Blur
+                -Lockscreen Blur Intensity
+        -LockScreen Wallpaper
+        -Lockscreen Weather Widget
+        -Lockscreen Icons Color
+ 
+-Quick Settings Draggable Tiles
+                -Customizable Tiles
+                -Show Two Main Tiles Per Row
+                -Dyanamic Tiles Adjustment
+-Notification Drawer
+        -Weather Display Switch
+        -LongPress Toogles to Enter Settings
+        -Disable Immersive Mode Messages
+        -Force Expand Notification
+        -Task Manager Switch
+        -Time Contextual Header(HD,Modern,Poly)
+        -Quick PullDown Switch
+ 
+-Buttons
+        -Backlight Timer
+        -Backlight Strength
+ 
+-Advanced Reboot Menu
+-Power Menu Customizations
+        -Power Off
+        -Reboot(Recovery, Bootloader, Hot Reboot)
+        -ScreenShot
+        -Power Menu End Calls Switch
+        -Restart SystemUI
+        -Airplane Mode
+        -ScreenRecord
+        -On the Go Mode
+        -Sound Panel
+ 
+-Home Button(For devices with HW keys Only)
+        -Home Button answer call
+        -Long Press Actions
+        -Double Tap Actions
+ 
+-Menu Button(For devices with HW keys Only)
+        -Short Press Actions
+        -Long Press Actions
+ 
+-Search Button(If Device Supports)
+        -Short Press Action
+        -Long Press Action
+ 
+-Volume Buttons
+        -Wake Up Device
+        -Playback Control
+        -Ringtone Volume Control
+        -Keyboard Cursor Control
+        -Swap Buttons on Landscape mode
+        -Volume Key Answer
+ 
+-Miscellaneous
+        -Selinux Switch (Switch Between Permissive and Enforcing Selinux if Device has Selinux Enabled)
+        -cLock Shortcut
+        -Disable Battery Saver Warning Color
+        -Disable Fc Notifications
+        -Wakelock Blocker
+        -Media Scanner On Boot Behaviour
+        -Cammera Shutter Sound Enable/Disable
+ 
+-SystemUI Tuner
+        -Enabled By default
+        -Removed Demo mode and Tweaked SystemUI Tuner As compared To AOSP
+        -StatusBar Icons Cuzomizations
+        -Quick Settings Customizations
+ 
+Other Features
+        -Perfomance Profiles
+        -LCD Density
+        -Expanded Desktop Mode
+        -Audio FX
+        -Heads Up Switch
+        -Live Display
+        -Configurable 0,90,180,270 Degree Rotation
+        -Lock Screen Autorotate Switch
+        -Native Tap to Wake From Marshmallow
+        -Double Tap Power Button To enable Camera gesture
+        -Prevent Accidental Wakeup
+        -Wake Phone on Charging Plug
+        -Battery Light Customizations
+        -Notification Light Customizations
+        -Font Size
+        -CM privacy guard
+        -Performance Tweaks(Kernel Aduitor Inbuilt)
+ 
+-SuperSU Inbuilt
+ 
+-RR OTA
+-CM Theme Chooser
+-OverAll Smoothness Improvements
+-Optimizations to Improve Battery
+-Includes All Android Marhsmallow Features
+-Includes ALL CM13 Features
+-AND MUCH MUCH MORE

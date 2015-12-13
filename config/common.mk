@@ -67,7 +67,19 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/Changelog.txt
+    vendor/cm/CHANGELOG.mkdn:system/RR/etc/Changelog.txt
+
+# Copy features.txt from the path
+PRODUCT_COPY_FILES += \
+    vendor/cm/Features.mkdn:system/RR/etc/Features.txt
+    
+# KernelAdiutor
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
+
+# Adaway
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Adaway/Adaway.apk:system/priv-app/Adaway/Adaway.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -127,6 +139,10 @@ PRODUCT_PACKAGES += \
     libemoji \
     Terminal
 
+# Include librsjni explicitly to workaround GMS issue
+PRODUCT_PACKAGES += \
+    librsjni
+
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Launcher3 \
@@ -154,14 +170,10 @@ PRODUCT_PACKAGES += \
 # Extra tools in CM
 PRODUCT_PACKAGES += \
     libsepol \
-    e2fsck \
     mke2fs \
     tune2fs \
     nano \
     htop \
-    mkfs.f2fs \
-    fsck.f2fs \
-    fibmap.f2fs \
     mkfs.ntfs \
     fsck.ntfs \
     mount.ntfs \
