@@ -67,11 +67,11 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/RR/etc/Changelog.txt
+    vendor/cm/CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
-    vendor/cm/Features.mkdn:system/RR/etc/Features.txt
+    vendor/cm/Features.mkdn:system/etc/RR/Features.txt
     
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
