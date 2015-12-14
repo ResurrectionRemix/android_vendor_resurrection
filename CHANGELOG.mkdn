@@ -9,7 +9,9 @@ The Changelog
 
 # ResurrectionRemix- v5.6.0 - 20151214
 
-- Fix Bootloop after flash gapps 
+- Fix Bootloop after flashing gapps
+- Fix other minor issues
+- Performance improvements
 
 # Resurrection Remix- v5.6.0  Marshmallow 6.0.1_r3
 
