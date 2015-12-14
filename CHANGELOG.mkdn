@@ -98,7 +98,7 @@ RR Customizations:-
         -Slim Recents
         -OmniSwitch
  
--Cclock Widget
+-Clock Widget
         -CLock And Alarm Customizations
         -Weather Panel Customizations
         -Calender Events
