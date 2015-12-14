@@ -7,9 +7,14 @@
 
 The Changelog
 
+# ResurrectionRemix- v5.6.0 - 20151214
+
+- Fix Bootloop after flash gapps 
+
 # Resurrection Remix- v5.6.0  Marshmallow 6.0.1_r3
 
 Resurrection Remix Marshmallow
+
  
 Features:-
 Based On Latest Google Android 6.0.1 Release
