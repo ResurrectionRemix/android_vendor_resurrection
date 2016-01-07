@@ -82,8 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
 # RomStats
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
