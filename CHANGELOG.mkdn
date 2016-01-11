@@ -7,6 +7,87 @@
 
 The Changelog
 
+# ResurrectionRemix - v5.6.1 - Marshmallow 6.0.1_r10
+
+- Add Screencast by default
+- Theme chooser : Update theme to stock material look 
+- SystemUI : SystemUI Tuner settings modifications
+- QS: Gesture Anywhere Tile
+- SystemUI: Add longpress action for TaskManager button 
+- Base : Update default material popup animations
+- FWBase: Add 7 more power menu animations
+- [WindowManagerService] fix starting window issue
+- Qs:systemUI Restart Tile
+- QS:Add App SideBar Tile
+- Update private copy of Palette
+- Navigationbar: Add just one more button
+- QSpanel: few new vector drawables 
+- SystemUI: Expose Add Tiles DetailedView Title and Icon Color
+- fix setting new encryption password 
+- Base:Add Option to Disable Brightness Icon In Brightness Slider
+- base: add CPU info overlay 
+- base: app notifications hide when locked
+- Reset battery stats
+- QSBrighnessIcon: Make it show in notification panel
+- base: add auto brightness toggle to qs
+- Fw_base - Proximity speaker
+- Themes tile 
+- QS: add headsup tile 
+- SystemUI:Add LTE Tile 
+- SystemUI : Add RR Configurations Tile
+- Themes: Re-enable changing keyguard wallpaper
+- QSpanel: Fix FC when adding New Tile 
+- CamcorderProfile: Add 1440p camcorder profile 
+- SystemUI: Fix statusbar clock font size at times not updated on boot 
+- Live Volume Steps
+- Max Lockscreen Notification count
+- SystemUI: fix flicker when removing tiles 
+- SystemUI: add tiles detail view 
+- FWB: Add clock/date in recents while in fullscreen mode
+- FEB: Disable/Enable screenshot sound
+- Lockscreen Clock Widget Fonts
+- Launch app privacy settings when tapping on PG notification
+- network tile: Change long click action 
+- Show 4G intead of LTE switch 
+- Do not start music app when headset is unplugged 
+- Themes: Expose hard code for themes
+- Dotted circle battery
+- IME animations
+- NavBar: add power button
+- Slim Recent App Sidebar 
+- Add SlimRecents
+- Add Battery Saver QS Tile
+- Reboot/Recovery QS Tile 
+- Add Music QS Tile
+- Quick Settings: add some more tiles
+- Themes: Expose hard code color for divider sim pin 
+- Themes: Expose Hard coded colors in Quick Settings Tiles 
+- Rotation anim to Power and reboot menu
+- Power Menu animations
+- SlimDim performance boost 
+- NavigationBar : Switch to display orientation from config orientation
+- PowerManagerService: Log when proximity blocks wake 
+- Add custom camera shutter
+- Lockscreen shortcuts improvements
+- Make user avatar long clickable 
+- Frameworks: Slim doze options
+- Add Vibrate on long press Header Buttons 
+- Status bar header long click actions 
+- SystemUI: use new visualizer from Eleven 
+- LockscreenToggleTile
+- Services: DO NOT send Broadcast On boot 
+- Frameworks: Remove duplicated audio files 
+- SystemUI : Fix perf profile tile index calculation 
+- SystemUI : Add location tile from 12.1
+- Navbar on/off and custom dimensions
+- SystemUI: fix tile pages not filling up
+- FWB: Hold back to kill timeout
+- FWB: PIE: Always on the right switch
+- Update contextual headers per original from Omni
+- New contextual header images  
+- Fix other minor issues
+- Performance improvements
+
 # ResurrectionRemix- v5.6.0 - 20151214
 
 - Fix Bootloop after flashing gapps
