@@ -11,6 +11,7 @@ f=$(which figlet);
 if [ "$f" == "" ];
 then
 e "";
+e "";
 e "          _____                    _____          ";
 e "         /\    \                  /\    \         ";
 e "        /::\    \                /::\    \        ";
@@ -36,6 +37,8 @@ e "                                                  ";
 e "     R E S U R R E C T I O N   R E M I X";
 e "";
 e "            M A R S H M A L L O W";
+e "";
+e "";
 else
 figlet "Resurrection" "Remix" "- Marshmallow";
 fi
