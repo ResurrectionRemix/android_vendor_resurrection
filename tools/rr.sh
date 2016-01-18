@@ -40,5 +40,5 @@ e "            M A R S H M A L L O W";
 e "";
 e "";
 else
-figlet "Resurrection" "Remix" "- Marshmallow";
+figlet "Resurrection" "Remix" "Marshmallow";
 fi
