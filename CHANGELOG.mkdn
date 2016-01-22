@@ -9,7 +9,7 @@ The Changelog
 
 # ResurrectionRemix - v5.6.2 - Marshmallow 6.0.1_r10
 
-- Rework navigation bar layouts (fixes all cm12.1 - 13 themes) 
+- Rework and fix navigation bar layouts + buttons 
 - Notifications: Custom colors
 - FWB: QS shade transparency
 - Notification Colors Switch
