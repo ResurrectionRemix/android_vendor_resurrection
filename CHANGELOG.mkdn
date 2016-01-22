@@ -7,6 +7,73 @@
 
 The Changelog
 
+# ResurrectionRemix - v5.6.2 - Marshmallow 6.0.1_r10
+
+- Rework navigation bar layouts (fixes all cm12.1 - 13 themes) 
+- Notifications: Custom colors
+- FWB: QS shade transparency
+- Notification Colors Switch
+- Hide Multi Window Again ( Causes system UI freezes )
+- Update notification and power navbar drawables
+- SysUI: Fix notification panel alignment after theme change
+- SysUI: Clean up objects when recreating statusbar
+- Themes: Fix applying theme for notifications
+- SysUI: Pass themed resources on to NavBarEditor 
+- SystemUI: Add battery saver tile
+- Notification drawer: Custom clear all icon color
+- Framework: safe headset volume option
+- Remove system ui tuner settings 
+- Change to 12hr clock
+- long press torch tile to open camera
+- Longpress power lockscreen torch
+- Immersive Recents
+- Keyguard: set separator for multi-sim CarrierText
+- pm: Add persist property to enable lazy dexopt
+- SystemUI: fix qs tile page regressions 
+- Add left QS quick pulldown
+- SystemUI: Screenshot rotation
+- Screenrecord: save screenrecord in "Screenrecords" directory 
+- Add a timer to screen record 
+- FWB: Battery saver and low battery notification toggles
+- Less notifications sound
+- SystemUI: fix disappearing tiles 
+- SystemUI: fix tiles per page when changing top tile type 
+- SystemUI: fix viewpager page recycling 
+- Paella: Enable Spanish single shift table 
+- Configurable dashboard columns
+- Breathing missedcall/voicemail
+- fix race condition between HWUI cache and renderThread 
+- SysUI: Guard against NPE in SignalClusterView 
+- SysUI: Check that backgrounds are RippleDrawables 
+- Add enabled pre-installed carrier apps 
+- SystemUI: fix lock screen tile state refresh
+- SystemUI: handle custom tile long press PendingIntents
+- SystemUI: improve qs tile layout mechanism
+- base: correctly save app notification config
+- Themes: Call recreateTheme when theme changed
+- SysUI: Fix keyguard wallpaper not updating
+- Change carrier label default font style condensed
+- Reduced carrier label default font size
+- Disable Quick Settings on secure lockscreen
+- SystemUI: Make lockscreen visualizer battery friendly
+- SysUI: Re-add status icons in recreateStatusBar() 
+- Have Battery bar controller obey Hide value 
+- Frameworks: Slim Shortcuts 
+- Fix WallpaperCropper crash when setting wallpaper over 8MB
+- base: fix num cpu check for CPU overlay 
+- Add IME Switcher icon back into the statusbar 
+- Reduce log verbosity: Don't spam logcat 
+- Turn advanced devices and file sizes on by default 
+- SystemUI: Fix NPE
+- Animate backlight quickly when display state request to change or power
+- FWB: Make all 18 font variants available to Statusbar weather temp
+- FWB: Make all 18 font variants available to Statusbar Clock
+- SystemUI: Removing padding on mobile signal group.
+- Ringtone: Add support for selection of phone ringtone for SIM-2.
+- Update translations
+- Update Turkish language
+- Fix other minor issues
+
 # ResurrectionRemix - v5.6.1 - Marshmallow 6.0.1_r10
 
 - Add Screencast by default
