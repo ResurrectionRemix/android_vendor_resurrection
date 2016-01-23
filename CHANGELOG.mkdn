@@ -7,6 +7,18 @@
 
 The Changelog
 
+# ResurrectionRemix - v5.6.2 - 20160123
+ 
+- Revert Fix protected apps implementation (Fixes setup wizard fc) 
+- DisplayMetrics: set noncompat DPI as well 
+- Dashboard tileview double lines toggle
+- FWB: Power/reboot menu transparency
+- FWB: Volume dialog transparency
+- FWB: QS header transparency
+- SysUI: Recreate volume dialog on theme change 
+- Update adb tile drawable
+
+
 # ResurrectionRemix - v5.6.2 - Marshmallow 6.0.1_r10
 
 - Rework and fix navigation bar layouts + buttons 
