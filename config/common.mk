@@ -158,7 +158,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     OmniSwitch \
     ExactCalculator \
-    ResurrectionOTA
+    ResurrectionOTA \
+    CyanogenSetupWizard	
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
