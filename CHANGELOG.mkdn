@@ -110,7 +110,8 @@ The Changelog
 -ProtectedApps: add up navigation and fix action bar icons  
 -All updates and Fixed From CM
 -Improved Translations
--For More Info Track Github Acitivity   
+-For More Info Track Github Acitivity  
+-DUE TO CMS TOYBOX CHANGES ,SYSTEMUI RESTART HAS BEEN BROKEN . WE ARE STILL WORKING ON A FIX
 
 # ResurrectionRemix - v5.6.2 - 20160123
  
