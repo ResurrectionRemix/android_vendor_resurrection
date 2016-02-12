@@ -51,7 +51,7 @@ $(eval $(call check-api, \
     $(INTERNAL_CM_PLATFORM_API_FILE), \
     $(FRAMEWORK_CM_PLATFORM_REMOVED_API_FILE), \
     $(INTERNAL_CM_PLATFORM_REMOVED_API_FILE), \
-    -hide 2 -hide 3 -hide 4 -hide 5 -hide 6 -hide 24 -hide 25 -hide 26 -hide 27 \
+    -hide 2 -hide 3 -hide 4 -hide 5 -hide 6 -hide 17 -hide 24 -hide 25 -hide 26 -hide 27 \
     -error 7 -error 8 -error 9 -error 10 -error 11 -error 12 -error 13 -error 14 -error 15 \
     -error 16 -error 17 -error 18 , \
     cat $(FRAMEWORK_CM_API_NEEDS_UPDATE_TEXT), \
@@ -99,7 +99,7 @@ $(eval $(call check-api, \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
     $(FRAMEWORK_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
     $(INTERNAL_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
-    -hide 2 -hide 3 -hide 4 -hide 5 -hide 6 -hide 24 -hide 25 -hide 26 -hide 27 \
+    -hide 2 -hide 3 -hide 4 -hide 5 -hide 6 -hide 17 -hide 24 -hide 25 -hide 26 -hide 27 \
     -error 7 -error 8 -error 9 -error 10 -error 11 -error 12 -error 13 -error 14 -error 15 \
     -error 16 -error 17 -error 18 , \
     cat $(FRAMEWORK_CM_API_NEEDS_UPDATE_TEXT), \
@@ -110,7 +110,7 @@ $(eval $(call check-api, \
 # Check that the System API we're building hasn't changed from the not-yet-released
 # SDK version.
 $(eval $(call check-api, \
-    checksystemapi-cm-current, \
+    checkpublicapi-cm-current, \
     $(FRAMEWORK_CM_PLATFORM_SYSTEM_API_FILE), \
     $(INTERNAL_CM_PLATFORM_SYSTEM_API_FILE), \
     $(FRAMEWORK_CM_PLATFORM_SYSTEM_REMOVED_API_FILE), \
