@@ -15,27 +15,26 @@
 full_target := $(call doc-timestamp-for,$(LOCAL_MODULE))
 
 ifeq ($(strip $(LOCAL_MAVEN_POM)),)
-  $(error LOCAL_MAVEN_POM not defined.)
+  $(warning LOCAL_MAVEN_POM not defined.)
 endif
 ifeq ($(strip $(LOCAL_MAVEN_REPO)),)
-  $(error LOCAL_MAVEN_REPO not defined.)
-endif
-ifeq ($(strip $(LOCAL_MAVEN_FILE_PATH)),)
-  $(error LOCAL_MAVEN_FILE_PATH not defined.)
+  $(warning LOCAL_MAVEN_REPO not defined.)
 endif
 ifeq ($(strip $(LOCAL_MAVEN_REPO_ID)),)
-  $(error LOCAL_MAVEN_REPO_ID not defined.)
+  $(warning LOCAL_MAVEN_REPO_ID not defined.)
 endif
-
 
 $(full_target): pomfile := $(LOCAL_MAVEN_POM)
 $(full_target): repo := $(LOCAL_MAVEN_REPO)
+ifdef LOCAL_MAVEN_FILE_PATH
 $(full_target): path_to_file := $(LOCAL_MAVEN_FILE_PATH)
+endif
 $(full_target): repoId := $(LOCAL_MAVEN_REPO_ID)
 $(full_target): classifier := $(LOCAL_MAVEN_CLASSIFIER)
 $(full_target): sources := $(LOCAL_MAVEN_SOURCES)
 $(full_target): javadoc := $(LOCAL_MAVEN_JAVADOC)
 
+ifdef LOCAL_MAVEN_FILE_PATH
 $(full_target):
 	$(hide) mvn -e -X gpg:sign-and-deploy-file \
 		    -DpomFile=$(pomfile) \
@@ -46,4 +45,5 @@ $(full_target):
 			-Dsources=$(sources) \
 			-Djavadoc=$(javadoc)
 	@echo -e ${CL_GRN}"Publishing:"${CL_RST}" $@"
-$(LOCAL_MODULE) : $(full_target)
+endif
+$(LOCAL_MODULE): $(full_target)
