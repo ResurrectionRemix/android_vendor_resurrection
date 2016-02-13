@@ -7,9 +7,31 @@
 
 The Changelog
 
+# ResurrectionRemix - v5.6.3 - 20160213
+
+- Turn back to AOSP setup wizard
+- Fix OntheGo Mode NPE
+- SystemUI: handle hiding recents search bar dynamically 
+- QS: Kill App Tile
+- Keyguard: Show backdrop when sim pin secure screen shown
+- framework: move device key handler logic, fix gesture camera launch 
+- Fix leftAffordanceView visibility bug
+- FWB: Add rotation animation to navbar icons
+- Update API levels and fix errors 
+- SystemUI: add volume tones back 
+- update secure keyguard check
+- SystemUI: add caffeine qs tile
+- Recents: Fix Clear All Button Dissappearing Again 
+- SysUI: Don't show LS wallpaper if LLS is available
+- Add wakelock option for flashlight
+- Update translations
+- Fix other minor issues
+- 
+- Notification Header Customization Colors
+
 # ResurrectionRemix - v5.6.3 - Marshmallow 6.0.1_r13
  
-- Android Marshmallow 6.0.1_r10-> 6.0.1_r13
+-Android Marshmallow 6.0.1_r10-> 6.0.1_r13
 -FWB: Status bar header font style 
 -FWB: Even more fonts to LS clock 
 -Hide Lockscreen clock & date  
