@@ -27,111 +27,112 @@ The Changelog
 - Add wakelock option for flashlight
 - Update translations
 - Fix other minor issues
+
 # ResurrectionRemix - v5.6.3 - Marshmallow 6.0.1_r13
  
--Android Marshmallow 6.0.1_r10-> 6.0.1_r13
--FWB: Status bar header font style 
--FWB: Even more fonts to LS clock 
--Hide Lockscreen clock & date  
--FWB: Notification Header Customizations
--SystemUI : 3G Icon Instead Of H+ Switch
--Custom header: Add shadow to more TextViews
--QS: Selinux Switch Tile
--QS: App picker Tile 
--RR logo Location 
--Breathing SMS 
--SystemUI: Double tap to sleep anywhere on the lock screen
--NavBar: Add Some More Buttons [ camera,Screenshot,Kill Task, Pie,Torch,RR --config,App picker, screenrecord, Immersive Mode]
--SystemUI: HeadsUp whitelists 
--SystemUI: HeadsUp blacklists 
--HW keys tweaks 
--FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp 
--FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock
--Make task manager button themeable
--Hide arrows in network traffic indicators 
--Qs : Improve Navbar Tile Logic    
+- Android Marshmallow 6.0.1_r10-> 6.0.1_r13
+- FWB: Status bar header font style 
+- FWB: Even more fonts to LS clock 
+- Hide Lockscreen clock & date  
+- FWB: Notification Header Customizations
+- SystemUI : 3G Icon Instead Of H+ Switch
+- Custom header: Add shadow to more TextViews
+- QS: Selinux Switch Tile
+- QS: App picker Tile 
+- RR logo Location 
+- Breathing SMS 
+- SystemUI: Double tap to sleep anywhere on the lock screen
+- NavBar: Add Some More Buttons [ camera,Screenshot,Kill Task, Pie,Torch,RR --config,App picker, screenrecord, Immersive Mode]
+- SystemUI: HeadsUp whitelists 
+- SystemUI: HeadsUp blacklists 
+- HW keys tweaks 
+- FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Temp 
+- FBW: Add DancingScript / ComingSoon / NotoSerif to Statusbar Clock
+- Make task manager button themeable
+- Hide arrows in network traffic indicators 
+- Qs : Improve Navbar Tile Logic    
 - SystemUI: handle when brightness slider is hidden 
--SystemUI: don't add already attached qs tile pages   
--SystemUI: smoother tile transitions when moving to 1st row 
--SystemUI: improve tile caching mechanism 
--Lockscreen fonts: set correct default value
+- SystemUI: don't add already attached qs tile pages   
+- SystemUI: smoother tile transitions when moving to 1st row 
+- SystemUI: improve tile caching mechanism 
+- Lockscreen fonts: set correct default value
 - Make lights out mode of navigation bar consistent to normal mode.   
--SettingsProvider : Don't replay aosp defaults every boot   
--aapt: add check for untranslatable "string-array"s   
--pm: Fix ordering of parameters for sendPackageBroadcast.   
--allow priveleged phone state permission to be whitelisted   
--SystemUI: disable editing tiles while in lock screen   
--Clean Up QSpanel   
--SystemUI: make sure to expand all the way when flinging   
--SystemUI: initialize drag panel with proper column count    
--IMS: Add Ims reason info codes for supplementary service failures   
--IMS: Fix video call forwarding options issue   
--Add mapping string for call reject cause code 26.   
--SysUI: Listen for changes to LIVE_LOCK_SCREEN_ENABLED   
--SystemUI: Don't update if HeadsUp is disabled   
--Intent: Fix a NPE on readFromParcel   
--SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission   
--Taskmanager: Reduce Logging   
--Flip to Mute/Reject Call 
--SystemUI: add better hints when trying to delete edit tile   
--SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE 
--Partially revert 'SOFTAP: implement SOFTAP new requirement in framewo     
--ZenMode : Update defaults for CTSVerifier   
--Tethering: Fix number of device connected   
--am: Don't take down activity process if target intent component is null.   
--Themes: Fix CMSetupWizard package name in ThemeService   
--Themes: def theme package is defined in CMSettings   
--Add keylayout for Xbox One controller   
--SystemUI: Don't update if HeadsUp is disabled   
--SystemUI: make online cpu color green for cpu overlay   
--Don't reuse weather controller before it's changed   
--Wifi tile: don't set items visible from non-ui thread   
--SystemUI: fix contracting qs settings page   
--allow whitelisting of ACCESS_KEYGUARD_SECURE_STORAGE    
--SystemUI: visually disable EditTile in lock screen   
--add routing for explicit call transfer   
--Battery: Show battery fully charged notification   
--Fix pattern visibility settings
--Alarm: add missing closedir after opendir when searching for RTC   
--String update, change wording from "Mobile" to "Cellular"   
--Frameworks: Restart last task if last task is dead   
--SystemUI: Allow clearing recents tasks within recents button   
--Frameworks: Lockscreen blur fix & tweak   
--fw: Make sure to get the actual ringtone uri per subId.   
--nms: Actually allow smsRingtone to work.   
--SystemUI : Show create profile if user doesn't have one setup   
--Tethering: Turn off Wi-Fi Hotspot after inactivity 
--SELinuxTile: use runShellCommand instead of runSuCommand for getenforce
--am: Handle potential NPE when activity info can't be resolved.   
--SystemUI: nuke broadcast tile from user tile list   
--base: fix window bounds for left hand navigationbar   
--SystemUI: add flashlight notification reminder   
--Themes: Process applied themes before boot finishes   
--Add FDN enabled related API    
--Themes: Get default theme from CMSettings   
--SysUI: Make sure LLS is enabled after inflation   
--Fix lockscreen disabling for MSIM.    
--SystemUI: update keyguard state when profiles disable keyguard    
--SystemUI: prompt for SIM PIN if lockscreen is disabled    
--systemui: notify everyone that lockscreen is not going to be shown    
--Profiles: Disable lock screen after boot    
--The DUT can't screen shot in guest mode    
--DocumentsUI: Expose appbar elevation value.    
--pm: Allow fall through for protected apps validator activity.    
--GlobalActions: Use circular user avatars    
--LiveDisplayTile : Update entries on locale changes    
--livedisplay: remove user hint notification when clicked    
--GlobalActions: Fix setting ringer mode in global actions    
--lights: Automatically generate an LED color for notifications    
--Remove leftover power menu profile resources 
--settings: Add preference for automagic LED colors 
--Settings: blacklist: update iconography    
--Fingerprint: do not error out when stopping to listen    
--ProtectedApps: add up navigation and fix action bar icons  
--All updates and Fixed From CM
--Improved Translations
--For More Info Track Github Acitivity  
--DUE TO CMS TOYBOX CHANGES ,SYSTEMUI RESTART HAS BEEN BROKEN . WE ARE STILL WORKING ON A FIX
+- SettingsProvider : Don't replay aosp defaults every boot   
+- aapt: add check for untranslatable "string-array"s   
+- pm: Fix ordering of parameters for sendPackageBroadcast.   
+- allow priveleged phone state permission to be whitelisted   
+- SystemUI: disable editing tiles while in lock screen   
+- Clean Up QSpanel   
+- SystemUI: make sure to expand all the way when flinging   
+- SystemUI: initialize drag panel with proper column count    
+- IMS: Add Ims reason info codes for supplementary service failures   
+- IMS: Fix video call forwarding options issue   
+- Add mapping string for call reject cause code 26.   
+- SysUI: Listen for changes to LIVE_LOCK_SCREEN_ENABLED   
+- SystemUI: Don't update if HeadsUp is disabled   
+- Intent: Fix a NPE on readFromParcel   
+- SettingsProvider: Add missing INTERACT_ACROSS_USERS_FULL permission   
+- Taskmanager: Reduce Logging   
+- Flip to Mute/Reject Call 
+- SystemUI: add better hints when trying to delete edit tile   
+- SeekBarVolumizer : Disable notification volume if RINGER_MODE_VIBRATE 
+- Partially revert 'SOFTAP: implement SOFTAP new requirement in framewo     
+- ZenMode : Update defaults for CTSVerifier   
+- Tethering: Fix number of device connected   
+- am: Don't take down activity process if target intent component is null.   
+- Themes: Fix CMSetupWizard package name in ThemeService   
+- Themes: def theme package is defined in CMSettings   
+- Add keylayout for Xbox One controller   
+- SystemUI: Don't update if HeadsUp is disabled   
+- SystemUI: make online cpu color green for cpu overlay   
+- Don't reuse weather controller before it's changed   
+- Wifi tile: don't set items visible from non-ui thread   
+- SystemUI: fix contracting qs settings page   
+- allow whitelisting of ACCESS_KEYGUARD_SECURE_STORAGE    
+- SystemUI: visually disable EditTile in lock screen   
+- add routing for explicit call transfer   
+- Battery: Show battery fully charged notification   
+- Fix pattern visibility settings
+- Alarm: add missing closedir after opendir when searching for RTC   
+- String update, change wording from "Mobile" to "Cellular"   
+- Frameworks: Restart last task if last task is dead   
+- SystemUI: Allow clearing recents tasks within recents button   
+- Frameworks: Lockscreen blur fix & tweak   
+- fw: Make sure to get the actual ringtone uri per subId.   
+- nms: Actually allow smsRingtone to work.   
+- SystemUI : Show create profile if user doesn't have one setup   
+- Tethering: Turn off Wi-Fi Hotspot after inactivity 
+- SELinuxTile: use runShellCommand instead of runSuCommand for getenforce
+- am: Handle potential NPE when activity info can't be resolved.   
+- SystemUI: nuke broadcast tile from user tile list   
+- base: fix window bounds for left hand navigationbar   
+- SystemUI: add flashlight notification reminder   
+- Themes: Process applied themes before boot finishes   
+- Add FDN enabled related API    
+- Themes: Get default theme from CMSettings   
+- SysUI: Make sure LLS is enabled after inflation   
+- Fix lockscreen disabling for MSIM.    
+- SystemUI: update keyguard state when profiles disable keyguard    
+- SystemUI: prompt for SIM PIN if lockscreen is disabled    
+- systemui: notify everyone that lockscreen is not going to be shown    
+- Profiles: Disable lock screen after boot    
+- The DUT can't screen shot in guest mode    
+- DocumentsUI: Expose appbar elevation value.    
+- pm: Allow fall through for protected apps validator activity.    
+- GlobalActions: Use circular user avatars    
+- LiveDisplayTile : Update entries on locale changes    
+- livedisplay: remove user hint notification when clicked    
+- GlobalActions: Fix setting ringer mode in global actions    
+- lights: Automatically generate an LED color for notifications    
+- Remove leftover power menu profile resources 
+- settings: Add preference for automagic LED colors 
+- Settings: blacklist: update iconography    
+- Fingerprint: do not error out when stopping to listen    
+- ProtectedApps: add up navigation and fix action bar icons  
+- All updates and Fixed From CM
+- Improved Translations
+- For More Info Track Github Acitivity  
+- DUE TO CMS TOYBOX CHANGES ,SYSTEMUI RESTART HAS BEEN BROKEN . WE ARE STILL WORKING ON A FIX
 
 # ResurrectionRemix - v5.6.2 - 20160123
  
