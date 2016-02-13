@@ -11,6 +11,7 @@ The Changelog
 
 - Turn back to AOSP setup wizard
 - Fix OntheGo Mode NPE
+- Notification Header Customization Colors
 - SystemUI: handle hiding recents search bar dynamically 
 - QS: Kill App Tile
 - Keyguard: Show backdrop when sim pin secure screen shown
@@ -26,9 +27,6 @@ The Changelog
 - Add wakelock option for flashlight
 - Update translations
 - Fix other minor issues
-- 
-- Notification Header Customization Colors
-
 # ResurrectionRemix - v5.6.3 - Marshmallow 6.0.1_r13
  
 -Android Marshmallow 6.0.1_r10-> 6.0.1_r13
