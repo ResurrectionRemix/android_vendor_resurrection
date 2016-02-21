@@ -7,9 +7,6 @@ function e()
 echo -e $bldred "$@" $txtrst;
 }
 
-f=$(which figlet);
-if [ "$f" == "" ];
-then
 e "";
 e "";
 e "          _____                    _____          ";
@@ -39,6 +36,3 @@ e "";
 e "            M A R S H M A L L O W";
 e "";
 e "";
-else
-figlet "Resurrection" "Remix" "Marshmallow";
-fi
