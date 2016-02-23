@@ -2,7 +2,8 @@
 
 ./vendor/cm/tools/colors
 
-tput setaf 1
+tput setaf 6
+tput bold
 echo -e "";
 echo -e "";
 echo -e "          _____                    _____          ";
