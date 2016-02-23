@@ -1,5 +1,5 @@
 
-  Resurrection Remix ROM
+  Resurrection Remix OS - Marshmallow
 
   Source Code: http://github.com/ResurrectionRemix
   Website: http://www.resurrectionremix.com
