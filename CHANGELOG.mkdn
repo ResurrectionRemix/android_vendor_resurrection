@@ -58,7 +58,7 @@ The Changelog
 - Device specific Updates
 - CM updates
 - Translations updated
-- Check GitHub commits for more, or open /system/etc/Changelog.txt
+- Check GitHub commits for more.
 
 # ResurrectionRemix - v5.6.3 - 20160213
 
