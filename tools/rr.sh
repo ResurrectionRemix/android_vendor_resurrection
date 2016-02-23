@@ -48,9 +48,12 @@ echo -e "       \::|   |                 \::|   |          ";
 echo -e "        \:|   |                  \:|   |          ";
 echo -e "         \|___|                   \|___|          ";
 echo -e "                                                  ";
+echo -e "                                                  ";
+echo -e "                                                  ";
 tput setaf 1
 tput bold
 echo -e "     R E S U R R E C T I O N   R E M I X  O S";
+echo -e "                                                  ";
 echo -e "";
 tput setaf 7
 tput bold
