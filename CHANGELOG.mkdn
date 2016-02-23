@@ -7,6 +7,59 @@
 
 The Changelog
 
+# ResurrectionRemix - v5.6.4 - 20160223
+
+- Reverted to AOSP Setup Wizard
+- RR Settings Categories organized
+- SystemUI: Show lockscreen wallpaper if no album art is available
+- QS: Show # of clients connected to hotspot
+- Revert "Frameworks: Slim Shortcuts"
+- LockScreen customization [color] improved.
+- cmsdk: insert dnd & edit tiles for 12.1 -> 13.0 upgrade
+- SystemUI: Prevent search bar flicker between recents and launchers
+- SoundRecorder: fix menu behavior on devices with hardware menu button
+- cmsdk: add common action for launching camera from screen gesture
+- Settings: Scatter and CleanUp Notification Drawer Settings
+- Settings: add config to apply custom shadow on header images
+- Settings: daylight header packs extensions
+- Revert "Settings: Add option for new poly hd custom headers
+- Dashboard tileview dividers toggle
+- Add single & double tap option to mid-lockscreen shortcuts
+- cmsdk: add Sound tile to QS
+- Set number of tile columns
+- CMSDK:Hardware Keys Tile
+- Fix systemUI restart command
+- framework: Log applied theme when apps crash
+- Screen Pinning: Show correct text for on screen nav
+- SystemUI: disable QS tile Edit mode on screen off
+- Recents : Don't show clear all if no tasks
+- SystemUI:Improve task view header layout
+- Fixed Some Statusbar lags
+- Force OpenWeatherMap to be the weather provider
+- AppSideBar Reverted due to instability
+- SysUI: LiveLockScreen Updates from CM
+- Recents: Fix Clear All Button Dissappearing Again
+- SystemUI: add caffeine qs tile
+- update secure keyguard check
+- Revert "DndTile: Always open the detailed view"
+- SystemUI: add volume tones back
+- Option for date style/position, left-right of clock
+- Return: Smart Pulldown And Enable By Default
+- Fix leftAffordanceView visibility bug
+- framework: move device key handler logic, fix gesture camera launch
+- Keyguard: Show backdrop when sim pin secure screen shown
+- Add rotation animation to navbar icons
+- Settings: Add notification light setting to system profiles
+- SimDialogActivity: Check whether there is no default sub
+- Kill App Tile
+- SystemUI: handle hiding recents search bar dynamically
+- Revert "SystemUI: Add option to disable search bar in recents
+- Notification Header Customization Colors
+- Device specific Updates
+- CM updates
+- Translations updated
+- Check GitHub commits for more, or open /system/etc/Changelog.txt
+
 # ResurrectionRemix - v5.6.3 - 20160213
 
 - Turn back to AOSP setup wizard
