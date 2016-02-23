@@ -9,6 +9,7 @@ The Changelog
 
 # ResurrectionRemix - v5.6.4 - 20160223
 
+- Added back Multi Window feature
 - Stock GCC Toolchain used by default now
 - If maintainers want to use Uber or other custom toolchain, they can sync in local manifest
 - Reverted to AOSP Setup Wizard
