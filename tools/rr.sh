@@ -18,6 +18,7 @@ normal='tput sgr0'
 ./vendor/cm/tools/colors
 
 tput setaf 1
+tput bold
 echo -e "";
 echo -e "";
 echo -e "          _____                    _____          ";
