@@ -56,4 +56,5 @@ tput setaf 7
 tput bold
 echo -e "              M A R S H M A L L O W";
 echo -e "";
+tput sgr0
 echo -e "";
