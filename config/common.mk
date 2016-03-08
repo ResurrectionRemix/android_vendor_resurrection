@@ -161,7 +161,9 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     OmniSwitch \
     ExactCalculator \
-    ResurrectionOTA
+    ResurrectionOTA \
+    ExactCalculator \
+    LiveLockScreenService
     
 # DU Utils Library
 PRODUCT_PACKAGES += \
