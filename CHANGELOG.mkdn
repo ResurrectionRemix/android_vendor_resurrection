@@ -7,7 +7,7 @@
 
 The Changelog
 
-# ResurrectionRemix - v5.6.5 - 20160223 #Marshmallow 6.0.1_r17
+# ResurrectionRemix - v5.6.5 - 20160311 #Marshmallow 6.0.1_r17
 
 - Android 6.0.1_r13 -.6.0.1_r17
 - Major Clean up & Fix to SystemUI. Memory Leak has been majorly fixed and Lags Have Been taken care of
