@@ -7,13 +7,11 @@
 
 The Changelog
 
-# ResurrectionRemix - v5.6.5 - 20160223 Marshmallow 6.0.1_r17
-
 - Android 6.0.1_r13 -.6.0.1_r17
 - Major Clean up & Fix to SystemUI. Memory Leak has been majorly fixed and Lags Have Been taken care of
 - Fix 1st Boot stuck on "Preparing Contacts Storage"
 - StatusBar Icon Colors
-- Statusbar: Custom Logos and Styles 
+- Statusbar: Custom Logos and Styles
 - Qs Custom Colors
 - Recents Custom Clear All Styles
 - Recents Panel Customizations
@@ -32,12 +30,12 @@ The Changelog
 - Optional Dashboard switches
 - Clock Color Switch
 - Change No weather button as imagebutton layout
-- SysUI: Clear notification data when recreating status bar 
+- SysUI: Clear notification data when recreating status bar
 - audiosystem: Add API for listening to effect session events
 - sensors: Create bool to select what timestamp to use
 - SystemUI: Add PERFORMANCE_ACCESS permission.
 - base: Fix proximity check on non power key
-- SysUI: Fix hiding sensitive notification behavior 
+- SysUI: Fix hiding sensitive notification behavior
 - Allow to ignore presentation indicator of outgoing calls
 - dock battery
 - Revert "PhoneWindowManager: add ability to use EdgeGestureService
@@ -49,12 +47,10 @@ The Changelog
 - Settings: fix indexing for saved access point settings
 - Settings: Fix SecuritySettings filtering.
 - Fix selinux OnBoot settings crash on first boot
-- Settings: add a GApps downloader
 - Use correct icon for ring volume
-- Themes: Expose Hard colors for storage settings 
+- Themes: Expose Hard colors for storage settings
 - All updates from CM
-- For more info Track Github Activities
-
+-For more info Track Github Activities
 
 
 # ResurrectionRemix - v5.6.4 - 20160223
