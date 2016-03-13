@@ -1,8 +1,8 @@
 
-  Resurrection Remix OS - Marshmallow
+# Resurrection Remix OS - Marshmallow
 
   Source Code: http://github.com/ResurrectionRemix
-  Website: http://www.resurrectionremix.com
+  G+: https://plus.google.com/communities/109352646351468373340
   For extended changelog, track github activities
 
 # The Changelog
