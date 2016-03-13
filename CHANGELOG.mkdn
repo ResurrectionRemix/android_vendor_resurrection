@@ -7,6 +7,20 @@
 
 The Changelog
 
+# ResurrectionRemix - v5.6.5 - 20160313 #Marshmallow 6.0.1_r22
+
+- Android 6.0.1_r17 -.6.0.1_r22 / Changelog : http://www.androidpolice.com/android_aosp_changelogs/android-wear-5.1.1_r1-to-android-6.0.1_r22-AOSP-changelog.html
+- SystemUI: Optimizations and cleanups
+- Add needed callbacks to refresh statusbar view and update contents
+- clean up do not stress (recreate statusbar)
+- Prevent to fix statusbar lag issues
+- Revert pie control (deprecated and breaking things) thanks to varun date
+- Revert edge gesture service (deprecated and breaking things)
+- Fix system ui NPE when device rotated
+- Don't refresh ui when screen off
+- Fixed lockscreen clock and date color not updating after disable refresh ui when screen is off
+- Clean up scrollbars (deprecated)
+
 # ResurrectionRemix - v5.6.5 - 20160311 #Marshmallow 6.0.1_r17
 
 - Android 6.0.1_r13 -.6.0.1_r17
