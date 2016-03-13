@@ -5,11 +5,11 @@
   Website: http://www.resurrectionremix.com
   For extended changelog, track github activities
 
-The Changelog
+# The Changelog
 
 # ResurrectionRemix - v5.6.5 - 20160313 #Marshmallow 6.0.1_r22
 
-- Android 6.0.1_r17 -.6.0.1_r22 / Changelog : http://www.androidpolice.com/android_aosp_changelogs/android-wear-5.1.1_r1-to-android-6.0.1_r22-AOSP-changelog.html
+- Android 6.0.1_r17 -.6.0.1_r22
 - SystemUI: Optimizations and cleanups
 - Add needed callbacks to refresh statusbar view and update contents
 - clean up do not stress (recreate statusbar)
