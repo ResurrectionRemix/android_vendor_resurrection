@@ -163,7 +163,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     ResurrectionOTA \
     ExactCalculator \
-    LiveLockScreenService
+    LiveLockScreenService \
+    WeatherProvider
     
 # DU Utils Library
 PRODUCT_PACKAGES += \
