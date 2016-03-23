@@ -31,7 +31,8 @@ PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/boosted/Highscore.ogg:system/media/audio/ringtones/Highscore.ogg \
 	$(RINGTONE_PATH)/boosted/Lyon.ogg:system/media/audio/ringtones/Lyon.ogg \
 	$(RINGTONE_PATH)/boosted/Rockin.ogg:system/media/audio/ringtones/Rockin.ogg \
-	$(RINGTONE_PATH)/boosted/Resurrection.mp3:system/media/audio/ringtones/Resurrection.mp3
+	$(RINGTONE_PATH)/boosted/Resurrection.mp3:system/media/audio/ringtones/Resurrection.mp3 \
+	$(RINGTONE_PATH)/boosted/Resurrection_Ringtone2.mp3:system/media/audio/ringtones/Resurrection2.mp3
 
 else
 PRODUCT_COPY_FILES += \
@@ -42,5 +43,6 @@ PRODUCT_COPY_FILES += \
     $(RINGTONE_PATH)/Rockin.ogg:system/media/audio/ringtones/Rockin.ogg \
     $(RINGTONE_PATH)/Sheep.mp3:system/media/audio/ringtones/Sheep.mp3 \
     $(RINGTONE_PATH)/Resurrection.mp3:system/media/audio/ringtones/Resurrection.mp3 \
+    $(RINGTONE_PATH)/Resurrection_Ringtone2.mp3:system/media/audio/ringtones/Resurrection2.mp3 \
     $(RINGTONE_PATH)/Yukaay.ogg:system/media/audio/ringtones/Yukaay.ogg
 endif
