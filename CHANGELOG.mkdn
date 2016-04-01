@@ -7,6 +7,44 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.6.6 - 20160401
+
+- SystemUI: Restart System UI on theme Change and NP color switch
+- LLS: Add LiveLockScreenController
+- Update RR logos
+- SystemUI : Fix Network Traffic Colors Not updating 
+- SystemUI: Fix headsup stuck after theme change and recreate statusbar
+- [SQUASHED]Mass Revert of CM's Qs Drag Panel 
+- FWBase : Port & Improve CPU boosting Hooks && Interface
+- Fix headsup blacklist and whitelist
+- SystemUI :[Squashed] Fixed Leaks and Observers 
+- SystemUI: Reduce Load On ContentObservers 
+- SystemUI: Optimizations and cleanups
+- ix metrics density comparisons
+- GlobalActions: Set the initial status of airplane mode toggle
+- SystemUI: Change demo mode time of day. 
+- Prompt permission dialog for status bar weather
+- Should use scan flag, or it will not scan device.
+- base: pipe all IME hints regardless of IME notification state/settings
+- SystemUI: Fix Notification panel NPE 
+- Qs: Improve Themes Tile
+- [ThemesTile] Sort themes 
+- Port ThemesTile to new CMTE api
+- Compile app theme in background
+- Cast Tile: only scan while in detail view
+- SystemUI: more consistent visualizer logic 
+- Fling : Gallery icon support
+- camera2 legacy: Allow HDR processing to take a while 
+- Cleanup Ls Weather Layout
+- Revert "MediaScanner behavior on boot
+- Add Resurrection ringtone v2
+- Hack to remove black bar on custom lockscreen wallpaper 
+- Themes: Fail theme install if common resources fail
+- SystemUI: stop hiding hotspot & color inversion tiles 
+- For more info Track Github Activities
+- Translations updates
+
+
 # ResurrectionRemix - v5.6.5 - 20160313 #Marshmallow 6.0.1_r22
 
 - Android 6.0.1_r17 -.6.0.1_r22
@@ -66,7 +104,7 @@
 - Use correct icon for ring volume
 - Themes: Expose Hard colors for storage settings
 - All updates from CM
--For more info Track Github Activities
+- For more info Track Github Activities
 
 
 # ResurrectionRemix - v5.6.4 - 20160223
