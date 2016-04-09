@@ -7,6 +7,48 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.6.7 - Android r24 - 20160409
+
+- Android 6.0.1_r22 -> 6.0.1_r24
+- Add 5 RR 1 PB header logo
+- Update taskmanager switch button
+- Add Heads-up button in the extended statusbar
+- SystemUI: Fix Dual Tiles Qs Color Switch Text
+- Revert Restart System UI on theme Change and NP color switch
+- Heads Up Snooze
+- Fix low battery warning level
+- 2 more SB Custom logos
+- HeadsUp: add timeout option
+- Reverted clock second (Avoid to lag issues)
+- Fix Applying Notification Colors To Light StatusBar Background 
+- Tune up dexopt dialog
+- Settings: Make Most RR settings Searchable
+- DevelopmentSettings: Synchronize USB connection data state 
+- Lockscreen : Fix bottom area visibility
+- media: Add flags, channelMask, and UID to audio session callbacks
+- audio: Don't play sound effects if stream is muted 
+- SystemUI: show visualizer in shade-locked view
+- Bugfixes for systemUI
+- Fix location tile not showing in the keyguard
+- NetworkManagement: Add ability to restrict app WiFi background data access
+- SystemUI: ensure volume record exists before showing notification 
+- MountService: ensure VolumeRecord with UUID exists before modifying
+- Implement left swipe on lockscreen
+- Framework changes for resetting data usage statistics 
+- LLS: Use window attachment callbacks
+- SysUI: Add event logs for live lock screen interactions  
+- Fix battery stats helper derp
+- Update ambientsdk version 1.5.2
+- Add Weather Content Provider
+- Add state member to WeatherLocation class
+- Reset timer when a new weather service provider is selected
+- Force Heads up in all applications
+- Add system property to control config_enableAutoPowerModes
+- SysUI/LLS: Slide panel out when collapse called 
+- QS:Re Add LS Tile and Addapt to AOSP panel
+- translation imports
+- For more info Track Github Activities
+
 # ResurrectionRemix - v5.6.6 - 20160401
 
 - SystemUI: Restart System UI on theme Change and NP color switch
