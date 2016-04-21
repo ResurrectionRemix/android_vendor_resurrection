@@ -240,7 +240,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=1
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
@@ -256,11 +256,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.romstats.tframe=7 
 
 CM_DISPLAY_VERSION := $(CM_VERSION)
-
-# SuperSU
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/cm/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.display.version=$(CM_DISPLAY_VERSION)

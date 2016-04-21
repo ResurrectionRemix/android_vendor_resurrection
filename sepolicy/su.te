@@ -61,6 +61,7 @@ userdebug_or_eng(`
 
 
   # For Settings control of access
+  allow system_app su_exec:file { execute_no_trans getattr open read execute };
   allow system_app superuser_device:sock_file { read write create setattr unlink getattr };
   allow system_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow system_app superuser_device:dir { create rw_dir_perms setattr unlink };
