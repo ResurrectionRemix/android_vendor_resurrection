@@ -80,11 +80,6 @@ PRODUCT_COPY_FILES += \
 # KernelAdiutor
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
-    
-    
-# Audio FX
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/AudioFX/AudioFX.apk:system/priv-app/AudioFX/AudioFX.apk
 
 # RomStats
 #PRODUCT_COPY_FILES += \
@@ -159,6 +154,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
+    AudioFX \
     CMFileManager \
     Eleven \
     LockClock \
