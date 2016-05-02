@@ -17,6 +17,7 @@
 - Pulse Bar Customizations
 - Configurable Pulse Bar Spacing
 - ThemeChooser: update UI 
+- Fix Selinux permessive mode reset after every reboot 
 - Dyanamically Configurable Pulse Bar Dimensions
 - Floating Window 
 - Add Back Pie
