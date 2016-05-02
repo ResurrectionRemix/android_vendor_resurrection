@@ -7,6 +7,71 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.6.8 - Android r30 - 20160502
+
+- Android 6.0.1_r24-> r30 
+- Update Bootanimations
+- Update boot logo same as bootanimation
+- Custom Settings Dashboard Colors
+- Pulse Visualizer Sanity Level
+- Pulse Bar Customizations
+- Configurable Pulse Bar Spacing
+- ThemeChooser: update UI 
+- Dyanamically Configurable Pulse Bar Dimensions
+- Floating Window 
+- Add Back Pie
+- Add Pulse Tile
+- Statusbar weather: fix temp style after refresh 
+- FWB :SmartBar Button Tint
+- Update some settings configurations icons
+- Disable expanded status bar weather by default
+- Add Option to Enable/Disable ScreenShot & ScreenRecord Shorcut
+- Configurable Keyguard Quick Shortcut Colors
+- LLS: Show notification panel if LLS crashes 
+- LLS: Fix screen off event firing when not interactive
+- Improve TM animation & use stock detail background
+- Use CircularReveal animation to show/hide task manager panel 
+- Add the ability to hide superuser status bar icon
+- Switch back to cm root as default
+- Keyguard Charging Current Switch
+- Keyguard: show charging current in mAh on lockscreen 
+- Themes: Update icon mapping on boot
+- Update themes icon drawables
+- fwb: Add ability to permanently hide apps from recents 
+- ThemesTile: Don't process clicks on current theme item 
+- ThemeTile: Custom QS detail header title support for theming apps
+- About RR : Add g+ account to profile cards instead of twitter
+- Update Some Settings Activities
+- Settings: Ensure user has to wait 30 before retrying pattern
+- SystemUI: add HeadsUp snooze disabled state
+- bootanimation: Switch to readahead
+- SystemUI: HeadsUp toast message
+- SysUI: Improve Show3g Logic 
+- add ability to disable bar color in battery saver mode
+- Global actions: fix airplane mode switch for MSIM
+- SystemUI: Fix nav bar transparency when enabling software keys 
+- SysUI: Fix reporting of swipe progess in notification panel
+- Lockscreen : Ensure we hide bottom area in bouncer 
+- livedisplay: Moving LiveDisplay to CMSDK
+- Lockscreen : Update shortcuts in onAttachWindow
+- GlobalActions: Always use setZenMode
+- Lockscreen : Fix dead-zone in bottom area
+- Remove Hide Settings Icon from header 
+- SystemUI: fix double tab launching custom lockscreen icon 
+- Point Amibent display tile longpress action to it's own settings
+- Remove Invert Colors and Cast Tiles as Default 
+- Update A Custom SB logo
+- Check for deprecated third party keyguard perm
+- packagemanager: Fix bootloop if packages.xml is deleted 
+- Fix Heads Up and TaskManager buttons in StatusBarHeaderView 
+- QSTiles: set disconnect callback in bluetooth details list adapter 
+- SystemUI: Fix Statusbar Clock font size/color on location changes
+- Support for new properties to identify country based ecc #s added by RIL 
+- Remove the brightness mirror
+- Give LockClock the location permission by default
+- translation imports
+- For more info Track Github Activities
+
 # ResurrectionRemix - v5.6.7 - Android r24 - 20160409
 
 - Android 6.0.1_r22 -> 6.0.1_r24
