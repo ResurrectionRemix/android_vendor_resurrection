@@ -164,7 +164,6 @@ PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ExactCalculator \
     LiveLockScreenService \
-    CyanogenSetupWizard \
     WeatherProvider
     
 # DU Utils Library
