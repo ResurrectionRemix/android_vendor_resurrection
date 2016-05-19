@@ -82,8 +82,8 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
 # RomStats
-#PRODUCT_COPY_FILES += \
-#    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
@@ -247,7 +247,7 @@ PRODUCT_VERSION = 5.6.8
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
-  ro.romstats.url=http://resurrectionremix.sourceforge.net/stats \
+  ro.romstats.url=http://rrstats.esy.es/ \
   ro.romstats.name=ResurrectionRemix \
   ro.romstats.version=$(PRODUCT_VERSION) \
   ro.romstats.tframe=7 
