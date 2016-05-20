@@ -5,10 +5,11 @@ Features:-
 Based On Latest Google Android 6.0.1 Release
 Based On Cyanogenmod 13 Sources
 RR Customizations:-
--Navigation Bar
+-DU Navigation Bar
         -Enable/Disable Navbar
         -Navbar Button Customization smartbar
-        -Navbar Pulse             
+        -Navbar Pulse 
+        -Navbar Fling            
         -Double Tap To sleep navbar
  
 -Statusbar
