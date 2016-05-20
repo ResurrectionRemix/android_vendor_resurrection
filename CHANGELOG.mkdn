@@ -7,6 +7,104 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.6.9 - Android 6.0.1_r43 - 20160520
+
+- Android 6.0.1_r30-> r43
+- Introducing Resurrection Remix Rom stats 
+- SysUI:Custom Recents Style -Taskviewheader colors
+- Option to Hide carrier label based on notitication icons 
+- FWB: Carrier label font style
+- Carrier Label Fonts Style
+- Battery bar enhancements
+- ActivityManager: fix perf boost NPE
+- Qs: Add Audio Fx Visualizer Tile
+- Custom Headers : Add new material design colorful headers
+- batteryservice: Add support for segmented power LEDs
+- QSPanel: Fix Reported SystemUI FC on Themes Tile
+- SystemUI: avoid lock screen shortcut picker crash 
+- SysUI: Show keyguard when LLS dies and had focus
+- pms: Skip reinstall of prebundles correctly per user.
+- systemui: Fix the TrustDrawable animation state
+- SystemUI: bail out of recents-to-home animation when losing focus
+- Lockscreen : Bunch-o-fixes 
+- Themes: Expose manifest styles for framework activities
+- Add new options for call waiting response in InCallUI
+- SysUI: Make sure LLS focus is false when unlocking
+- perf: Send the process name and pid for launch boosts
+- am: Remove extraneous boostage
+- batteryservice: Use Alpha channel for segmented LED power level 
+- ThemeTile: tighten up how we execute a theme change
+- CmRes: Attach themed cmsdk resources to assets
+- SystemUI: attach a queue to media player notifications
+- SystemUI: fix play queue crash
+- am: Don't protect apps that atttempt to grant uri perms
+- SystemUI: fix potential NPE with Queue
+- only use proximity checks on wakeup keys
+- SysUI: Use VectorDrawable's for rendering battery 
+- Fix SystemUI FC on Media Notification Queue 
+- bootanimation: fix check for system bootanimation
+- MediaScanner: Add support for default ringtones per sim
+- Fix incorrect behavior for statusbar and quicksettings panel
+- ActivityManager: fix perf boost NPE
+- QS: fix performance profile tile observer
+- SystemUI : Fix multi-user for keyguard
+- SystemUI: Set circle battery path as untranslatable
+- Update volume slider only if ringer mode changed
+- SystemUITests: fix compile error
+- Lockscreen : Disable left edge after showing keyguard
+- Keyguard: Allow swiping up when trust managed
+- SpamFilter : Hide option if notification cannot be filtered
+- FWB: Move Pulse Configs to Secure
+- LS:Fix Weather Panel Not hiding With Max Notif 
+- Acquire wakelock until dream service acknowledges dream state change
+- Lockscreen : Only animate targets if launched via swipe 
+- Ensure camera is launched if doing screen off gesture
+- Keyguard : Ensure we expand onIconClicked
+- WindowManagerService : Ensure we update both size/position 
+- Fix Battery Icon Tint on Keyguard
+- SysUI:Update a Custom Logo 
+- SysUI:Update some quick tile icons
+- Qs: Add Audio Fx Visualizer Tile
+- Speed up notification panel pulldown animation when called externally
+- Lls: Use LlsController for checking LLS focus
+- LLS: Don't change bar state when changing LLS focus
+- LLS: Ensure LLS loses focus when showing bouncer
+- ShutdownThread: Decrypt before stopping storage manager
+- VisualizerTile: Use proper Techniques to unlink with Pulse
+- Release alarm wakelock for blocked uid.
+- SyncManager: Adjust sync remaining time calculation.
+- Themes: Fix theming of cmsdk assets
+- Fix isComponentProtected calls in package manager tests
+- MSIM: Fix to resolve SIM PIN unlock in APM.
+- SystemUI: Check current data subscription when updating signal cluster
+- SysUI: Adjust battery dimensions for better look
+- am: Handle unchecked activity starts for protected components.
+- SysUI: Check swiping progress before collapsing KBA
+- SystemUI : Fix left swipe when dismissing bouncer
+- usb: ensure accessory detached sent on re-attach
+- SysUI:Cleaup Observers and fix certain mem leaks
+- SystemUI: fix NFC tile sometimes hiding 
+- SystemUI : Ensure bouncer is not shown for SHADE
+- Port "Settings: add a way to not localize zone selections" to cm-13 
+- Telephony: fix crash if SubInfo isn't ready 
+- Settings:Close "Protected apps" activity during power cycle
+- Settings: Move vibrator value restore to onActivityStop
+- Settings: Use correct icon for sim card
+- Settings:Disable battery pulsing if segmented battery LED is enabled
+- Settings:Update MultiTasking Category Icon 
+- Settings:Protected apps: fix rotation states 
+- Settings:LockPatternView: persist state across rotates 
+- Settings:LLS: Load title and summary from ext. package if avail.  
+- Settings: Make sure to rebuild on app entries loaded. 
+- Settings: fix backlight illumination wrong summary
+- Settings: More Dashboard Customizations
+- Fix Reboot on Call Waiting Scenario
+- Update Translations
+- All updates from CM
+- For more info Track Github Activities
+
+
+
 # ResurrectionRemix - v5.6.8 - Android r30 - 20160502
 
 - Android 6.0.1_r24-> r30 
