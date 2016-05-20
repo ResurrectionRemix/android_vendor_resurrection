@@ -7,13 +7,9 @@ Based On Cyanogenmod 13 Sources
 RR Customizations:-
 -Navigation Bar
         -Enable/Disable Navbar
-        -Navbar Button Customization
-        -Navbar Slim Dim               
-                -Animate Dim
-                -Dim Timeout Duration
-                -Dim Alpha
+        -Navbar Button Customization smartbar
+        -Navbar Pulse             
         -Double Tap To sleep navbar
--Navigation Bar left/Right handed mode Switch for landscape
  
 -Statusbar
         -Brightness Slider
@@ -183,7 +179,7 @@ Other Features
         -CM privacy guard
         -Performance Tweaks(Kernel Aduitor Inbuilt)
  
--SuperSU Inbuilt
+-CM root inbuilt
  
 -RR OTA
 -CM Theme Chooser
