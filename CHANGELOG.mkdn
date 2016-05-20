@@ -12,13 +12,14 @@
 - Android 6.0.1_r30-> r43
 - Introducing Resurrection Remix Rom stats 
 - SysUI:Custom Recents Style -Taskviewheader colors
+- Carrier Label Fonts Style
+- Custom Headers : Add new material design colorful headers
+- SystemUI : Re-order left statusbar icon layouts and paddings
 - Option to Hide carrier label based on notitication icons 
 - FWB: Carrier label font style
-- Carrier Label Fonts Style
 - Battery bar enhancements
 - ActivityManager: fix perf boost NPE
 - Qs: Add Audio Fx Visualizer Tile
-- Custom Headers : Add new material design colorful headers
 - batteryservice: Add support for segmented power LEDs
 - QSPanel: Fix Reported SystemUI FC on Themes Tile
 - SystemUI: avoid lock screen shortcut picker crash 
