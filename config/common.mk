@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 
 # RomStats
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/RomStats/RomStats.apk:system/app/RomStats/RomStats.apk
+    vendor/cm/prebuilt/ResurrectionStats/ResurrectionStats.apk:system/app/ResurrectionStats/ResurrectionStats.apk
 
 # Backup Tool
 ifneq ($(WITH_GMS),true)
