@@ -1,9 +1,12 @@
 
 Resurrection Remix Marshmallow
  
-Features:-
+Features:
+
 Based On Latest Google Android 6.0.1 Release
-Based On Cyanogenmod 13 Sources
+
+Resurrection Remix Crowdin : https://crowdin.com/project/resurrectionremix/
+
 RR Customizations:-
 -DU Navigation Bar
         -Enable/Disable Navbar
