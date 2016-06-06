@@ -72,6 +72,12 @@ userdebug_or_eng(`
   allow system_server sudaemon:unix_stream_socket { connectto read write setopt ioctl };
   allow system_server superuser_device:dir { create rw_dir_perms setattr unlink };
 
+  # Allow platform apps to start su commands
+  allow platform_app su_exec:file { execute_no_trans getattr open read execute };
+  allow platform_app superuser_device:sock_file { read write create setattr unlink getattr };
+  allow platform_app sudaemon:unix_stream_socket { connectto read write setopt ioctl };
+  allow platform_app superuser_device:dir { create rw_dir_perms setattr unlink };
+
   allow kernel sudaemon:fd { use };
 
 ')
