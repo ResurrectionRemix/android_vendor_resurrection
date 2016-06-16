@@ -7,6 +7,48 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.7.0 - Android 6.0.1_r46 - 2016-06-16
+
+- Android Update 6.0.1_r43-> 6.0.1_r46 
+- Android N style "No recents" activity
+- Add animations to quick settings tiles 
+- Add interpolators to qs tiles animation
+- Add new bunch of alpha and smart layer headers 
+- Add per app controls for LP keyguard notifications 
+- Remove LightStatusbar dark icon mode & make statusbar gradient
+- Configurable LockClock & Date Text Sizes 
+- Improve some headers 
+- BatteryService: Fully charged notification toggle
+- Visualizer: Let visualizer fill the entire available screen 
+- Only show keyguard panel if on lockscreen + no activity on top
+- Update sb headset vector
+- Update keyguard weather layout 
+- SystemUI: fix NPE when configuring blur layer 
+- SystemUI: fix multi touch gestures and extra jank
+- SysUI: Simplify Code for Battery Icon Tint
+- SysUI:Fix a Recents Styles Default
+- SysUI: Fix SystemUI Crash on Notification Guts Media
+- Don't lookup application keyguard notification visibility unnecessarily
+- SystemUI: Add support for persistent usb drive notification.
+- SysUI: Fix Secure Lockscreen Pulldown Switch 
+- SystemUI: fix NFC tile sometimes hiding 
+- Fix possibility of slim recents icon fc
+- Fix a glitch causing shadow not to be reset when header disabled 
+- DocumentsUI : Hide advanced menu option when in forced mode
+- SystemUI: fix one more misbehaving shadow
+- Settings: Update performance settings icon
+- Settings:Disable Weather Provider By Default 
+- Settings : Fix dashboard colors default and reset values 
+- Recovery : Update RR script banner
+- Themes : Update statusbar notify icon
+- SmartBar: Add app picker as an action
+- Give Pulse & Fling a Little CPU boost
+- Pulse:imrpove Reset Logic 
+- Update Translations
+- All updates from CM
+- Bugfixes and improvements
+- For more info Track Github Activities
+
 # ResurrectionRemix - v5.6.9 - Android 6.0.1_r43 - 20160520
 
 - Android 6.0.1_r30-> r43
