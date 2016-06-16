@@ -3,6 +3,8 @@
 
   Source Code: http://github.com/ResurrectionRemix
   G+: https://plus.google.com/communities/109352646351468373340
+  Resurrection Remix Crowdin : https://crowdin.com/project/resurrectionremix/
+  
   For extended changelog, track github activities
 
 # The Changelog
