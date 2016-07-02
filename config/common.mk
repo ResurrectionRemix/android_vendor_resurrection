@@ -113,6 +113,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
+#SMWeatherProvider
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/SMWeatherProvider/SMWeatherProvider.apk:system/app/SMWeatherProvider/SMWeatherProvider.apk
+
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
@@ -128,6 +132,10 @@ PRODUCT_COPY_FILES += \
 # This is CM!
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
+
+# Phonelocation!
+PRODUCT_COPY_FILES +=  \
+    vendor/cm/prebuilt/common/media/location/suda-phonelocation.dat:system/media/location/suda-phonelocation.dat
 
 # Theme engine
 include vendor/cm/config/themes_common.mk
@@ -158,6 +166,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
+    PhoneLocationProvider \
     CMSettingsProvider \
     OmniSwitch \
     ExactCalculator \
