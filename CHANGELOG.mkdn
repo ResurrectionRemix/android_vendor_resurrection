@@ -9,6 +9,74 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.7.1 - Android 6.0.1_r52 
+
+Android 6.0.1_r46->6.0.1_r52
+-FWB: Add RR logo to QS panel
+-FWB: QS shade stroke dash 
+-FWB: VolumeDialog stroke dash 
+-SystemServer: Do not start Atlas Service on lowram devices.
+-SysUI:Do Not RecreateStatusBar on Show3g and 4G
+-SysUI:Fix Show 3G and 4G Switch Not updating Icons
+-wifi: Enable WiFi IpReachabilityMonitor by default 
+-SysUI: Disable Volume & QS Strokes by Default 
+-FWB: QS shade stroke
+-FWB: VolumeDialog corner radius
+-FWB: VolumeDialog stroke settings
+-Configurable Header Text Shadow
+-SystemUI: Remove Duplicate NFC perm
+-Update QS panel resources to fix padding issues
+-base: remove unneded top margin in QS tuner 
+-SysUI: Fix Reported FC
+-SysUI:SysUI: Clean up objects when recreating statusbar
+-Fix NPE in DocumentsUI when rotate UI before format as internal 
+-Revert "Only show keyguard panel if on lockscreen + no activity on top"
+-SysUI: Make Dark Icon Mode Optional Along With New SB gradient 
+-FWB: QSStroke: Don't apply any effect when disabled 
+-Keyguard: Don't circular reveal a non-visible view
+-Avoid NPE in printspooler when changing language
+-FWB: Volume Dialog: Force expanded mode
+-FWB: Volume dialog timeout 
+-SystemConfig: allow app-link to be set to any possible state
+-am: clear protected apps from recents
+-media:Modify the display of system default ringtone when it is none.
+-SystemUI: Fix pie translations FC
+-SystemUI: Restrict persistent USB drive notifications to USB disks 
+-BT: Set persiste Bluetooth State during enable timeout case
+-Add absent sim info to locked screen text
+-Encapsulate the unbindService with try catch block
+-Bluetooth: Access mediaplayerlist in synchronized way
+-WifiDisplayController: Fix p2p disconnect before rtsp teardown completes=
+-Wifi: Make maximum selective channel scans and interval configurable
+-combo bug when location reported by providers do not come with extras
+-Ignore IMS type APN when notify data connection
+-Remove TONE_SUPERVISORY_CH
+-MSIM: Restrict data activity change to listeners with matching subId
+-Add config to show HD icon on EVS codec.
+-Remove use of '_' variable name 
+-Revert "Revert "Only show keyguard panel if on lockscreen + no activi…
+-Adjust padding between battery icon and text 
+-NotificationPanelView: Make Qs Background More Consistent
+-KeyguardSecurityViewFlipper : Fix sim unlock height overlap 
+-Disable proximity check on power key properly
+-fw: GlobalActions: Always dismiss any existing dialog
+-Settings:Telephony(MSIM): Fix ANR on SIM deactivation
+-Settings:Fix to enable data for non-dds sub.
+-Settings:IMS: Set Wifi calling preference to Wifi preferred by default
+-Settings:Wi-Fi: Do not display the not scanned saved networks forever
+-Settings:Don't start auto scan if screen recovers from frozen state
+-Settings:Fix mcc-mnc population issue in apn editor
+-Settings:Update OperatorInfo in Simstatus settings for correct subid
+-Settings:Grey out PIN1 enable/disable option when SUB is not ready
+-Settings:Bluetooth : Handle SQL memory situation during OPP.
+-Apply active profile if user enables system profiles
+-LLS: Allow default enabled events to be overlaid 
+-Themes: Provide 100% test coverage for themes 
+-Themes: Fix ThemeManagerTest 
+-Themes: Fix applying default theme 
+-Translation Updates
+-All updates from CM
+
 # ResurrectionRemix - v5.7.0 - Android 6.0.1_r46 - 2016-06-16
 
 - Android Update 6.0.1_r43-> 6.0.1_r46 
