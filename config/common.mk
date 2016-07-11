@@ -81,10 +81,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
-# RomStats
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/ResurrectionStats/ResurrectionStats.apk:system/app/ResurrectionStats/ResurrectionStats.apk
-
 # Backup Tool
 ifneq ($(WITH_GMS),true)
 PRODUCT_COPY_FILES += \
@@ -175,6 +171,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     ExactCalculator \
     ResurrectionOTA \
+    ResurrectionStats \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
