@@ -9,9 +9,52 @@
 
 # The Changelog
 
-# ResurrectionRemix - v5.7.1 - Android 6.0.1_r52 
+# ResurrectionRemix - v5.7.2 - Android 6.0.1_r52 - 2016/07/31
 
-Android 6.0.1_r46->6.0.1_r52
+- Pulse Solid Bar Sanity Levels & Lavalamp Anim Speed
+- Pulse 2.0 Advanced Audio/Visual Rendering
+- Settings:Pulse-Update Legacy Dimens and Bar Spacing Resources
+- Settings:Pulse Use Sliders for Pulse Customizations
+- Add dependencies to pulse 'fading blocks' seekbars 
+- Clock color master switch
+- Task Manager animations
+- Obey inverted statusbar ONLY when color is white
+- Color picker: Rework 
+- ADB always notify
+- Disable gradient SB by default
+- Popup menu: Add support for item icons
+- Fix Null Checks to avoid NPE
+- Fix random crash in libhwui 
+- lights: Make sure the lights are out 
+- SysUI: Define config for showing screen on hints
+- AudioDucking : Check session playback state 
+- SysUI: Add first time use lock screen hints
+- PackageManager: make protected-broadcasts permission aware 
+- livedisplay: Add support for direct color balance control 
+- Recents Styles - Add Android N Recents Style Button
+- SysUI: Show hints if showing keyguard and provisioned 
+- SystemUI : Initialize state linked volume 
+- Recents: Remove Dead Code 
+- Factory reset: Wipe media by default
+- Improve the scan process 
+- Fix notification panel can't hide in statusbar 
+- Enable camera hal v3 interface 
+- Revert "FWB: Volume Dialog: Force expanded mode 2/2"
+- mountservice: Shut down volumes before restarting framework 
+- mountservice: Don't nuke all volumes when decrypting
+- SeekBarPreferenceCham: Expand with buttons 
+- Add SIM status string for localizing voice/data strings 
+- Settings: Fix possible crash
+- Settings: Improve vibrator intensity dialog layout 
+- settings: Add support for color balance in LiveDisplay
+- Automatic translations imports
+- All updates from CM
+- Bugfixes and improvements
+- For more info Track Github Activities
+
+# ResurrectionRemix - v5.7.1 - Android 6.0.1_r52
+
+- Android 6.0.1_r46->6.0.1_r52
 - FWB: Add RR logo to QS panel
 - FWB: QS shade stroke dash 
 - FWB: VolumeDialog stroke dash 
