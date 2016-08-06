@@ -165,7 +165,6 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     ResurrectionOTA \
     ResurrectionStats \
-    ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
     DataUsageProvider
