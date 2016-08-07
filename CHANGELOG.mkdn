@@ -9,6 +9,58 @@
 
 # The Changelog
 
+# ResurrectionRemix - v5.7.3 - Android 6.0.1_r61 - 2016/08/07
+
+Android 6.0.1_r53->6.0.1_r61
+
+- SystemUI: BatteryBar: Gradient color
+- Frameworks: Halo Color
+- Frameworks: HALO
+- Halo: Add option to Enable/Disable Halo Button in Header
+- SysUI: Fix Layouts of Halo Button within Expanded Statusbar
+- StatusbarHeader: Fix Headsup and Halo Button Animations
+- Halo: Reverse message bubble bg and text colors
+- Blur: Minor fixes
+- Blur: Fix Arithmetic Exception when Radius and Scale are set to 0
+- Blur: Major update
+- SystemUI: Display bluetooth battery status when available
+- Implement Blur Statusbar personalization options
+- Update halo and heads up qs button
+- Configurable Notifications transparency
+- Configurable Smartbar button transparency
+- Fix up header button icon, position and animation
+- Network Traffic and Custom Logos: Fix Inverted SB icon tint when color is white
+- Option to set custom scrolling values
+- Statusbar: Gracefully adapt 3Minit Battery hook for AOSP
+- Add 3Minit battery mod
+- Option to let ADB always notify
+- Custom Toast Color Options 
+- Fix FC on Seekbar in VOlume dialog and power menu Stroke & opacity
+- SystemUI: Add vector support to SlimRecents
+- Update Slim Recent App Sidebar
+- mountservice: Don't nuke all volumes when decrypting (Speeds up bootime by 30 % for encrypted devices)
+- SysUI: Add theme manager permission
+- Themes: Add permission to themes protected broadcasts
+- Instant reboot action trigger
+- MobileNetworkSettings: Check CarrierConfig on isWorldMode
+- EditPhoneNumberPreference: Prevent empty text from being set 
+- Dynamically tell the user which vendor image is needed
+- Show a more descriptive message when vendor.img is out of date
+- Update Kernel Adiutor apk
+- make overlay permission check configurable
+- fw: enforce android.permission.PREVENT_SYSTEM_KEYS in system server
+- SysUI: Add RecreateStatusbar to Quick Settings Blur
+- SysUI: Make sure new Blur Features dont Conflict with Transparency Items
+- bootanimation: add multithreaded decode
+- framework: don't allow assist activities while not provisioned
+- Services: Fix a small Derp from instant reboot action
+- sepolicy: Let the IO prefetcher look at sdcardfs
+- sepolicy: Put theme service in its own context
+- sepolicy: More IOP rules
+- sepolicy: Fix MTP for sdcardfs 
+- Translation Updates
+- All updates from CM
+
 # ResurrectionRemix - v5.7.2 - Android 6.0.1_r52 - 2016/07/31
 
 - Pulse Solid Bar Sanity Levels & Lavalamp Anim Speed
