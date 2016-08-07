@@ -11,9 +11,8 @@
 
 # ResurrectionRemix - v5.7.3 - Android 6.0.1_r61 - 2016/08/07
 
-Android 6.0.1_r53->6.0.1_r61
 
-- SystemUI: BatteryBar: Gradient color
+- Android 6.0.1_r53->6.0.1_r61
 - Frameworks: Halo Color
 - Frameworks: HALO
 - Halo: Add option to Enable/Disable Halo Button in Header
@@ -23,6 +22,7 @@ Android 6.0.1_r53->6.0.1_r61
 - Blur: Minor fixes
 - Blur: Fix Arithmetic Exception when Radius and Scale are set to 0
 - Blur: Major update
+- SystemUI: BatteryBar: Gradient color
 - SystemUI: Display bluetooth battery status when available
 - Implement Blur Statusbar personalization options
 - Update halo and heads up qs button
