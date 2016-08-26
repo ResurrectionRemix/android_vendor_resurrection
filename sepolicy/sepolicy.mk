@@ -3,5 +3,5 @@
 # inherit from CM
 #
 
-BOARD_SEPOLICY_DIRS += \
-    vendor/cm/sepolicy
+#BOARD_SEPOLICY_DIRS += \
+#    vendor/cm/sepolicy
