@@ -125,10 +125,10 @@ endif
 
 # Required CM packages
 PRODUCT_PACKAGES += \
+    BluetoothExt \
     CMAudioService \
     CMParts \
     Development \
-    BluetoothExt \
     Profiles \
     WeatherManagerService
 
@@ -153,7 +153,7 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     LiveLockScreenService \
-    WeatherProvider \
+    WeatherProvider
 
 # Exchange support
 PRODUCT_PACKAGES += \
