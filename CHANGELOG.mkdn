@@ -9,8 +9,41 @@
 
 # The Changelog
 
-# ResurrectionRemix - v5.7.3 - Android 6.0.1_r61 - 2016/08/07
+# ResurrectionRemix - v5.7.4 - Android 6.0.1_r66 - 2016/09/20
 
+- Android 6.0.1_r61->r66
+- SysUI: Don't set panel bar to null and avoid NPEs
+- connectivity-service: fix/improve unique hostname 
+- Ensure DHCP requests have nonempty hostnames 
+- Bluetooth: Fix broadcast receiver leak issue
+- QsPanel: RR logo Styles
+- Framework: Fix for file delete on settings not reflecting in MTP host
+- Framework: Do not turn off voice interaction when close system dialog…
+- SystemUI: Don't pad when config_showScreenOnLockScreenHints is false
+- Themes: Give power dialogs own set of volume icons for themes
+- Prevent invocation of startNavigating() when GPS is off 
+- Fix lockscreen charging current switch to show max current 
+- SysUI:Fix oversized kill task icon
+- services: core: use proper tags when logging
+- QsTiles: Configurable Themes tile components to apply
+- Show/hide zen icon in statusbar
+- Revert "Fix slow anim when using a gesture to open status bar pulldown"
+- Applied workaround for MultiSelectListPreference bug 
+- Ensure packages on adopted media do not move when updated
+- Apps on adopted storage should stay there during update
+- CellularTile: If Switch is Enabled, Make Longpress Enter Data Settings
+- Data tile behavior: make it customizable by the user
+- Settings: Fix possible NPE
+- Settings: Notification light: Fix for app customization
+- DevelopmentSettings: Add an opt-out for recovery updater
+- Don't crash while entering in DevelopmentSettings
+- Fix AIOOBE with root access disabled
+- libcameraservice: Don't pass NULL args on setCallbacks call
+- Translation Updates
+- All updates from CM
+
+
+# ResurrectionRemix - v5.7.3 - Android 6.0.1_r61 - 2016/08/07
 
 - Android 6.0.1_r53->6.0.1_r61
 - Frameworks: Halo Color
