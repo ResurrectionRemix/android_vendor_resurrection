@@ -72,7 +72,19 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG.txt
+    vendor/cm/CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+
+# Copy features.txt from the path
+PRODUCT_COPY_FILES += \
+    vendor/cm/Features.mkdn:system/etc/RR/Features.txt
+    
+# Adaway
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
+
+# KernelAdiutor
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
