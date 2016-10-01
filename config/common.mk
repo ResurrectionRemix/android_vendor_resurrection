@@ -166,6 +166,7 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Launcher3 \
+ 	OTACenter \
     Trebuchet \
     AudioFX \
     CMWallpapers \
@@ -272,7 +273,8 @@ PRODUCT_VERSION = 5.8.0
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(CM_VERSION) \
- ro.modversion=$(CM_VERSION)
+ ro.modversion=$(CM_VERSION) \
+ rr.ota.version= $(shell date -u +%Y%m%d)
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS += \
