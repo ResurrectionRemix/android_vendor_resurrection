@@ -45,17 +45,15 @@ echo -e "              GGGGGG   GGGG       OOOOOOOOO             TTTTTTTTTTT  ";
 echo -e "";
 echo -e "";
 tput setaf 7
-echo -e "   88888  88888 888888 8   8 88888  88888  88888 888888 88888 88888 888888 ";
+echo -e "   ##~~##~~#####~~~##~~~##~#####~~~##      ~####~~~~#### ";
 tput setaf 2
-echo -e "   8   8  8     8      8   8 8   8  8   8  8     8    8   8   8     8    8 ";
+echo -e "   ###~##~~##~~~~~~##~~~##~##~~~~~~##      ##~~##~~## ";
 tput setaf 3
-echo -e "   8eee8e 8eeee 8eeeee 8e  8 8eee8e 8eee8e 8eeee 8e       8e  8eeee 8e   8 ";
+echo -e "   ##~###~~####~~~~##~#~##~####~~~~##      ##~~##~~~#### ";
 tput setaf 1
-echo -e "   88   8 88        88 88  8 88   8 88   8 88    88       88  88    88   8 ";
+echo -e "   ##~~##~~##~~~~~~#######~##~~~~~~##      ##~~##~~~~~~## ";
 tput setaf 4
-echo -e "   88   8 88    e   88 88  8 88   8 88   8 88    88   e   88  88    88   8 ";
-tput setaf 5
-echo -e "   88   8 88eee 8eee88 88ee8 88   8 88   8 88eee 88eee8   88  88eee 88eee8 ";
+echo -e "   ##~~##~~#####~~~~##~##~~#####~~~######  ~####~~~~#### ";
 echo -e " ";
 
 
@@ -71,6 +69,6 @@ tput setaf 4
 echo -e " 〉Powered by ANDROID ™  // MARSHMALLOW";
 echo -e "";
 tput setaf 1
-echo -e " 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED ";
+echo -e " 〉Enjoy the Newel OS // #GETNEWEL ";
 tput sgr0
 echo -e "";

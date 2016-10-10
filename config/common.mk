@@ -1,4 +1,4 @@
-PRODUCT_BRAND ?= resurrection
+PRODUCT_BRAND ?= newel
 
 ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # determine the smaller dimension
@@ -54,11 +54,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
-
-# Default notification/alarm sounds
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.config.notification_sound=Argon.ogg \
-    ro.config.alarm_alert=Helium.ogg
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
@@ -134,9 +129,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
-
 # Theme engine
 include vendor/cm/config/themes_common.mk
 
@@ -155,8 +147,7 @@ PRODUCT_PACKAGES += \
 # Optional CM packages
 PRODUCT_PACKAGES += \
     libemoji \
-    Terminal \
-    LiveWallpapersPicker
+    Terminal
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
@@ -174,13 +165,9 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     ExactCalculator \
     ResurrectionOTA \
-    ResurrectionStats \
     LiveLockScreenService \
     WeatherProvider \
-    DataUsageProvider \
-    WallpaperPicker \
-    SoundRecorder \
-    Screencast
+    DataUsageProvider
     
 # DU Utils Library
 PRODUCT_PACKAGES += \
@@ -208,18 +195,7 @@ PRODUCT_PACKAGES += \
     oprofiled \
     sqlite3 \
     strace \
-    pigz \
-    7z \
-    lib7z \
-    bash \
-    bzip2 \
-    curl \
-    powertop \
-    unrar \
-    unzip \
-    vim \
-    wget \
-    zip
+    pigz
 
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
@@ -277,14 +253,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.7.4
-    CM_VERSION := ResurrectionRemix-M-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+PRODUCT_VERSION = 1.0.0
+    CM_VERSION := NewelOS-M-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.version=$(CM_VERSION) \
   ro.modversion=$(CM_VERSION) \
   ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
-  ro.romstats.name=ResurrectionRemix \
+  ro.romstats.name=NewelOS \
   ro.romstats.version=$(PRODUCT_VERSION) \
   ro.romstats.tframe=7 
 
