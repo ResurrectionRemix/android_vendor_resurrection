@@ -1,13 +1,8 @@
-
-Resurrection Remix Marshmallow
+NewelOS
  
 Features:
 
-Based On Latest Google Android 6.0.1 Release
-
-Resurrection Remix Crowdin : https://crowdin.com/project/resurrectionremix/
-
-RR Customizations:-
+NewelOS Customizations:-
 -DU Navigation Bar
         -Enable/Disable Navbar
         -Navbar Button Customization smartbar
@@ -39,8 +34,6 @@ RR Customizations:-
                 -Network Traffic Arrows Switch
                 -Incoming/OutGoing Traffic
         -Network traffic Color
-        -Statusbar RR Logo
-                -RR logo Color
         -StatusBar Weather
                 -Weather Color
                 -Weather Position(left/right)
@@ -185,7 +178,7 @@ Other Features
  
 -CM root inbuilt
  
--RR OTA
+-NewelOS OTA
 -CM Theme Chooser
 -OverAll Smoothness Improvements
 -Optimizations to Improve Battery
