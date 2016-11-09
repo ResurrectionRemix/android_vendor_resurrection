@@ -81,10 +81,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
-# KernelAdiutor
+# NexusLauncher
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/KernelAdiutor/KernelAdiutor.apk:system/app/KernelAdiutor/KernelAdiutor.apk
+    vendor/cm/prebuilt/NexusLauncher/NexusLauncher.apk:system/app/NexusLauncher/NexusLauncher.apk
 
+# Wallpaper
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Wallpaper/Wallpaper.apk:system/app/Wallpaper/Wallpaper.apk
+    
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
@@ -279,7 +283,7 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    persist.sys.root_access=0
+    persist.sys.root_access=1
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
