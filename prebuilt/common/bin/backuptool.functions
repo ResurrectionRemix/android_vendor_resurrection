@@ -5,7 +5,6 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=15.1
 
 copy_file() {
   cp -dp "$1" "$2"

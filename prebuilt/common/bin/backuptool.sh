@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V=15.1
+export V=8.1
 
 # Scripts in /system/addon.d expect to find backuptool.functions in /tmp
 cp -f /tmp/install/bin/backuptool.functions /tmp
@@ -34,10 +34,19 @@ check_prereq() {
 if [ ! -r /system/build.prop ]; then
     return 0
 fi
-if ( ! grep -q "^ro.lineage.version=$V.*" /system/build.prop ); then
-  echo "Not backing up files from incompatible version: $V"
+
+# Check whether RR is installed
+if ( ! grep -q "^ro.rr.version=" /system/build.prop ); then
+  echo "Not backing up files as ResurrectionRemix is not installed"
   return 0
 fi
+
+# Check whether installed Android Version is 8.1*
+if ( ! grep -q "^ro.build.version.release=$V*" /system/build.prop ); then
+  echo "Not backing up files from incompatible Android Version!"
+  return 0
+fi
+
 return 1
 }
 
