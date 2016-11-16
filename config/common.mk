@@ -76,10 +76,6 @@ PRODUCT_COPY_FILES += \
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
     vendor/cm/Features.mkdn:system/etc/RR/Features.txt
-    
-# Adaway
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Adaway/Adaway.apk:system/app/Adaway/Adaway.apk
 
 # NexusLauncher
 PRODUCT_COPY_FILES += \
