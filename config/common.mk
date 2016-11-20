@@ -173,7 +173,7 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Launcher3 \
- 	OTACenter \
+    ResurrectionOTA \
     Trebuchet \
     AudioFX \
     RRWallpapers \
