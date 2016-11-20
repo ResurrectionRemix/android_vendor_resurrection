@@ -176,7 +176,7 @@ PRODUCT_PACKAGES += \
  	OTACenter \
     Trebuchet \
     AudioFX \
-    CMWallpapers \
+    RRWallpapers \
     CMFileManager \
     Eleven \
     LockClock \
