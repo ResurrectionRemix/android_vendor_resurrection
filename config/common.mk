@@ -174,6 +174,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     ResurrectionOTA \
+    ResurrectionStats \
     Trebuchet \
     AudioFX \
     RRWallpapers \
@@ -289,7 +290,11 @@ PRODUCT_VERSION = 5.8.0
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(CM_VERSION) \
  ro.modversion=$(CM_VERSION) \
- rr.ota.version= $(shell date -u +%Y%m%d)
+ rr.ota.version= $(shell date -u +%Y%m%d) \
+ ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
+ ro.romstats.name=ResurrectionRemix \
+ ro.romstats.version=$(PRODUCT_VERSION) \
+ ro.romstats.tframe=7 
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS += \
