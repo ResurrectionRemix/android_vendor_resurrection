@@ -191,6 +191,7 @@ RR Customizations:-
 -CM root inbuilt
  
 -RR OTA
+-A Whole new RR Configurations 
 -OverAll Smoothness Improvements
 -Optimizations to Improve Battery
 -Includes All Android Nougat Features
