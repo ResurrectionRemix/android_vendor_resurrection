@@ -3,12 +3,11 @@ Resurrection Remix Marshmallow
  
 Features:
 
-Based On Latest Google Android 6.0.1 Release
+Based On Latest Google Android 7.1.0_r7 release
 
 Resurrection Remix Crowdin : https://crowdin.com/project/resurrectionremix/
 
 RR Customizations:-
--DU Navigation Bar
         -Enable/Disable Navbar
         -Navbar Button Customization smartbar
         -Navbar Pulse 
@@ -22,11 +21,10 @@ RR Customizations:-
         -Double Tap To sleep Statusbar
         -Carrier Label  
                 -Carrier Label Switch
-                -Carrier label Colour
+                -Carrier label Color
                 -Carrier Label Size
                 -Clock Customizations
                 -Time & date
-                -Clock Colour
                 -Day & date Toogle
                 -Center/Right/Left Clock Choice
                 -Date Format
@@ -41,16 +39,26 @@ RR Customizations:-
         -Network traffic Color
         -Statusbar RR Logo
                 -RR logo Color
+                -Position
+        -Custom Logos
+                -logo Color
+                -Position
+                -Style
         -StatusBar Weather
                 -Weather Color
                 -Weather Position(left/right)
-                -Weather Style
+                -Weather Font Style
                 -Weather Size
+        -StatusBar Ticker
+                -Ticker Text color
+                -Ticker Icon Color
  
 -Animations
         -Toast Animations
         -ListView Animations
         -System Animations
+        -Power Menu Animations
+        -Misc Animations
  
 -Gestures
 -Gestures Anywhere Feature
@@ -76,9 +84,8 @@ RR Customizations:-
         -Clear All button Switch
         -Clear All Tasks Switch
         -Clear All Button Location(Top right,Top Left,Top Center,Bottom Left,Bottom Right,Bottom Center)
-        -Recents Search Bar
         -Full Screen Recents
-        -Slim Recents
+        -Recents Styles
         -OmniSwitch
  
 -Cclock Widget
@@ -93,24 +100,25 @@ RR Customizations:-
         -Double Tap to Sleep Lockscreen
         -Lockscreen Media Art/Enable Disable
         -Quick PIN/Patter Unlock
-        -LockScreen Blur
-                -Lockscreen Blur Intensity
         -LockScreen Wallpaper
         -Lockscreen Weather Widget
         -Lockscreen Icons Color
  
 -Quick Settings Draggable Tiles
                 -Customizable Tiles
-                -Show Two Main Tiles Per Row
                 -Dyanamic Tiles Adjustment
+                -Number of columns/rows
+                -Tile Animations
 -Notification Drawer
-        -Weather Display Switch
         -LongPress Toogles to Enter Settings
         -Disable Immersive Mode Messages
         -Force Expand Notification
-        -Task Manager Switch
-        -Time Contextual Header(HD,Modern,Poly)
-        -Quick PullDown Switch
+        -Quick PullDown
+        -Smart Pulldown
+        -Notification Panel Transperency
+        -Volume Dialog Transperency
+        -Notification Panel Stroke
+        -Volume Dialog Stroke
  
 -Buttons
         -Backlight Timer
@@ -153,9 +161,7 @@ RR Customizations:-
         -Selinux Switch (Switch Between Permissive and Enforcing Selinux if Device has Selinux Enabled)
         -cLock Shortcut
         -Disable Battery Saver Warning Color
-        -Disable Fc Notifications
-        -Wakelock Blocker
-        -Media Scanner On Boot Behaviour
+        -OTA U
         -Cammera Shutter Sound Enable/Disable
  
 -SystemUI Tuner
@@ -164,12 +170,11 @@ RR Customizations:-
         -StatusBar Icons Cuzomizations
         -Quick Settings Customizations
  
-Other Features
+-Other Features
         -Perfomance Profiles
         -LCD Density
         -Expanded Desktop Mode
-        -Audio FX
-        -Heads Up Switch
+        -Heads Up Switch and customizations
         -Live Display
         -Configurable 0,90,180,270 Degree Rotation
         -Lock Screen Autorotate Switch
@@ -186,9 +191,8 @@ Other Features
 -CM root inbuilt
  
 -RR OTA
--CM Theme Chooser
 -OverAll Smoothness Improvements
 -Optimizations to Improve Battery
--Includes All Android Marhsmallow Features
--Includes ALL CM13 Features
+-Includes All Android Nougat Features
+-Includes ALL CM14.1 Features
 -AND MUCH MUCH MORE
