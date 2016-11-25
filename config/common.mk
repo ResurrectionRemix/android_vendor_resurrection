@@ -88,7 +88,11 @@ PRODUCT_COPY_FILES += \
 # DeskClock
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/DeskClock/DeskClock.apk:system/app/DeskClock/DeskClock.apk
-    
+
+# Chrome
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/Chrome/Chrome.apk:system/app/Chrome/Chrome.apk
+        
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
