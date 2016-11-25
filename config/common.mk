@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
 
 # Chrome
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/Chrome/Chrome.apk:system/app/Chrome/Chrome.apk
+    vendor/cm/prebuilt/Chrome/com.android.chrome-54.0.2840.85.apk:system/app/Chrome/com.android.chrome-54.0.2840.85.apk
         
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
