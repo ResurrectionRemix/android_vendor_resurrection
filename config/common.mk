@@ -184,7 +184,7 @@ PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ResurrectionStats \
     Trebuchet \
-    AudioFX \
+    MusicFX \
     RRWallpapers \
     CMFileManager \
     Eleven \
