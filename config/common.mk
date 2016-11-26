@@ -181,7 +181,6 @@ PRODUCT_PACKAGES += \
     ResurrectionStats \
     Trebuchet \
     MusicFX \
-    RRWallpapers \
     CMFileManager \
     Eleven \
     LockClock \
