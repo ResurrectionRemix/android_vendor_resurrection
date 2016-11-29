@@ -35,4 +35,7 @@
     <!-- The default WebView implementation -->
     <webviewprovider description="AOSP WebView" packageName="com.android.webview" availableByDefault="true" />
 
+    <!-- Chromium WebView -->
+    <webviewprovider description="Chromium" packageName="org.chromium.chrome" />
+
 </webviewproviders>
