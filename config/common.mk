@@ -170,8 +170,9 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhotoTable
 
-# Include librsjni explicitly to workaround GMS issue
+# Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
     librsjni
 
 # Custom CM packages
