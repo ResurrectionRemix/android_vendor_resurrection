@@ -188,9 +188,10 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
-	OmniSwitch \
+    OmniSwitch \
     SoundRecorder \
-    Screencast
+    Screencast \
+    masquerade
 
 # Exchange support
 PRODUCT_PACKAGES += \
