@@ -71,7 +71,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+    CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
@@ -170,8 +170,9 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhotoTable
 
-# Include librsjni explicitly to workaround GMS issue
+# Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
     librsjni
 
 # Custom CM packages
