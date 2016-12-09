@@ -24,7 +24,8 @@ touch $Changelog
 # ask for days and version
 echo ""
 echo ${cya}" 〉Generating $source_name Changelog..\n"${txtrst}
-echo ${ylw}" ► How many days to changelog do you want to generate?"${txtrst}
+echo ${ylw}" ▼ For how many days changelog do you want to generate?"${txtrst}
+echo ""
 read -r days_to_log
 echo >> $Changelog;
 echo " ▼ $source_name Ver 5.8.0 Changelog"    >> $Changelog;
@@ -35,9 +36,10 @@ cd $source_tree
 
 for i in $(seq $days_to_log);
 do
-export After_Date=`date --date="$i days ago" +%m-%d-%Y`
+export After_Date=`date --date="$i days ago" +%m/%d/%Y`
 k=$(expr $i - 1)
-	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
+	export Until_Date=`date --date="$k days ago" +%m/%d/%Y`
+    echo ""	
 	echo ${ylw}" 〉Generating day number:$i $Until_Date.."${txtrst}
 	source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date');
 
@@ -45,13 +47,13 @@ k=$(expr $i - 1)
 
 		echo " ▼ $Until_Date" >> $Changelog;
 		echo '' >> $Changelog;
-		repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | sed 's/^$/#EL /' | sed 's/^/ ● /' | sed 's/ ● #EL //' >> $Changelog
+		repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | sed 's/^$/#EL /' | sed 's/^/ ▪ /' | sed 's/ ▪ #EL //' >> $Changelog
 		echo >> $Changelog;
 	fi
 
 done
 
-sed -i 's/ ● project / ● /g' $Changelog
+sed -i 's/* Project /▼ /g' $Changelog
 
 Changelog=$source_tree/$changelog_path_name
 if [ -f $Changelog ] && [ -f $Temp_Changelog ];
@@ -60,4 +62,4 @@ then
 	rm -f $Temp_Changelog
 fi
 
-echo ${blu}"\n √ Changelog generated\n"${txtrst}
+echo ${blu}"\n √ Changelog successfully generated.\n"${txtrst}
