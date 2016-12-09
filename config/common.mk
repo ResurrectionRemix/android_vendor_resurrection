@@ -71,7 +71,7 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+    CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
