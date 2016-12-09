@@ -5,13 +5,13 @@
 # file.md can work with more data or have more lines then a page wiki
 . $ANDROID_BUILD_TOP/vendor/cm/tools/colors
 # input variables set the below the rest must be automatic
-source_tree="RR/"; #path here must be inside home directory
+source_tree="$ANDROID_BUILD_TOP"; #path here must be inside home directory
 changelog_path_name=CHANGELOG.mkdn #changelog file path/name.extension
 source_name="Resurrection Remix Nougat" #Name to display in changelog.md top before version
 # input variables end
 
-export Changelog=$HOME/$source_tree/$changelog_path_name
-export Temp_Changelog=$HOME/$source_tree/$changelog_path_name.temp
+export Changelog=$source_tree/$changelog_path_name
+export Temp_Changelog=$source_tree/$changelog_path_name.temp
 
 if [ -f $Changelog ];
  then
@@ -29,7 +29,7 @@ echo "► $source_name Ver 5.8.0 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
 echo >> $Changelog;
 
-cd $HOME/$source_tree
+cd $source_tree
 
 for i in $(seq 10);
 do
@@ -51,7 +51,7 @@ done
 
 sed -i 's/● project /● /g' $Changelog
 
-Changelog=$HOME/$source_tree/$changelog_path_name
+Changelog=$source_tree/$changelog_path_name
 if [ -f $Changelog ] && [ -f $Temp_Changelog ];
 then
 	echo "$(cat $Temp_Changelog)\n$(cat $Changelog)" > $Changelog
