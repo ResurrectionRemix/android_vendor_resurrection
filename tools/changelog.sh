@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Simple sh to automatic generate a file with source and device specif git commit changes to use in a github wiki pages or file.md
 # like this:
 # https://github.com/bhb27/android_vendor_crdroid/blob/change_temp/Changelog.md
@@ -23,10 +23,10 @@ touch $Changelog
 
 # ask for days and version
 echo ""
-echo ${cya}" 〉Generating $source_name Changelog..\n"${txtrst}
+echo -e ${cya}" 〉Generating $source_name Changelog..\n"${txtrst}
 echo ${ylw}" ▼ For how many days changelog do you want to generate?"${txtrst}
 echo ""
-read -r days_to_log
+read -r -t 60 days_to_log || days_to_log=7
 echo >> $Changelog;
 echo " ▼ $source_name Ver 5.8.0 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
@@ -62,4 +62,4 @@ then
 	rm -f $Temp_Changelog
 fi
 
-echo ${blu}"\n √ Changelog successfully generated.\n"${txtrst}
+echo -e ${blu}"\n √ Changelog successfully generated.\n"${txtrst}
