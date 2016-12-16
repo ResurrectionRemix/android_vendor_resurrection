@@ -26,7 +26,10 @@ echo ""
 echo -e ${cya}" 〉Generating $source_name Changelog..\n"${txtrst}
 echo ${ylw}" ▼ For how many days changelog do you want to generate?"${txtrst}
 echo ""
+# use 'export days_to_log=5' before '. build/envsetup.sh' were 5 is days to log
+if [ -z $days_to_log ];then
 read -r -t 60 days_to_log || days_to_log=7
+fi
 echo >> $Changelog;
 echo " ▼ $source_name Ver 5.8.0 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
