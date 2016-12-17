@@ -23,7 +23,7 @@ touch $Changelog
 
 # ask for days and version
 echo ""
-echo ${cya}"〉 Generating $source_name (for last 10 days) Changelog..\n"${txtrst}
+echo ${cya}"〉 Generating $source_name (for last 30 days) Changelog..\n"${txtrst}
 echo >> $Changelog;
 echo "# $source_name Version 5.8.0 Changelog"    >> $Changelog;
 echo '====================================================' >> $Changelog;
@@ -31,7 +31,7 @@ echo >> $Changelog;
 
 cd $HOME/$source_tree
 
-for i in $(seq 10);
+for i in $(seq 30);
 do
 export After_Date=`date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
