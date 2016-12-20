@@ -13,6 +13,8 @@ echo -e ${cya}" 〉4- Weekly"${txtrst}
 echo -e "";
 echo -e ${red}" 〉30/sec Time-out (official)"${txtrst}
 echo -e "";
+echo -e ${blu}" ▼ Pick a number"${txtrst}
+echo -e "";
 $normal
 read -t 30 askvariant || autovariant=1
 sleep 1
