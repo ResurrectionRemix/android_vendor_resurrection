@@ -16,7 +16,9 @@ echo -e "";
 echo -e ${blu}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
+if [ -z $askvariant ];then
 read -t 30 askvariant || autovariant=1
+fi
 sleep 1
 if [ "$autovariant" == "1" ]
 then
