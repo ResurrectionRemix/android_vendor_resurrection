@@ -3,9 +3,9 @@
 # like this:
 # https://github.com/bhb27/android_vendor_crdroid/blob/change_temp/Changelog.md
 # file.md can work with more data or have more lines then a page wiki
-. $ANDROID_BUILD_TOP/vendor/cm/tools/colors
 # input variables set the below the rest must be automatic
 source_tree="$ANDROID_BUILD_TOP"; #path here must be inside home directory
+. $source_tree/vendor/cm/tools/colors
 changelog_path_name=CHANGELOG.mkdn #changelog file path/name.extension
 source_name="Resurrection Remix Nougat" #Name to display in changelog.md top before version
 # input variables end
