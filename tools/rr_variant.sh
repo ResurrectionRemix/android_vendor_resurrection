@@ -1,5 +1,8 @@
 #!/bin/bash
 # Build type chooser for the Resurrection Remix ROM
+if [ -z $RR_BUILDTYPE ];
+then
+
 . $ANDROID_BUILD_TOP/vendor/cm/tools/colors
 echo -e ${ylw}"\n\n ▼ Which build type do you want to choose?\n"${txtrst}
 echo -e "";
@@ -16,7 +19,9 @@ echo -e "";
 echo -e ${blu}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
+if [ -z $askvariant ];then
 read -t 30 askvariant || autovariant=1
+fi
 sleep 1
 if [ "$autovariant" == "1" ]
 then
@@ -63,4 +68,7 @@ echo -e "";
 echo -e "";
 $normal
 sleep 1
+fi
+else
+echo -e "Building $RR_BUILDTYPE variant"
 fi
