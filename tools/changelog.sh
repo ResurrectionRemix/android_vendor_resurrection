@@ -3,9 +3,9 @@
 # like this:
 # https://github.com/bhb27/android_vendor_crdroid/blob/change_temp/Changelog.md
 # file.md can work with more data or have more lines then a page wiki
-. $ANDROID_BUILD_TOP/vendor/cm/tools/colors
 # input variables set the below the rest must be automatic
 source_tree="$ANDROID_BUILD_TOP"; #path here must be inside home directory
+. $source_tree/vendor/cm/tools/colors
 changelog_path_name=CHANGELOG.mkdn #changelog file path/name.extension
 source_name="Resurrection Remix Nougat" #Name to display in changelog.md top before version
 # input variables end
@@ -23,12 +23,15 @@ touch $Changelog
 
 # ask for days and version
 echo ""
-echo -e ${cya}" 〉Generating $source_name Changelog..\n"${txtrst}
 echo ${ylw}" ▼ For how many days changelog do you want to generate?"${txtrst}
 echo ""
+echo -e ${red}" 〉30/sec Time-out (7 days)"${txtrst}
+echo -e "";
+echo -e ${blu}" ▼ Type a number"${txtrst}
+echo -e "";
 # use 'export days_to_log=5' before '. build/envsetup.sh' were 5 is days to log
 if [ -z $days_to_log ];then
-read -r -t 60 days_to_log || days_to_log=7
+read -r -t 30 days_to_log || days_to_log=7
 fi
 echo >> $Changelog;
 echo " ▼ $source_name Ver 5.8.0 Changelog"    >> $Changelog;
