@@ -16,14 +16,8 @@ echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
-read -t 30 askvariant || autovariant=1
+read -t 30 askvariant
 sleep 1
-if [ "$autovariant" == "1" ]
-then
-export RR_BUILDTYPE=unofficial
-$normal
-sleep 1
-fi
 if [ "$askvariant" == "1" ]
 then
 echo -e "";
