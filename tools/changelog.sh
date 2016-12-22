@@ -25,9 +25,9 @@ touch $Changelog
 echo ""
 echo ${ylw}" ▼ For how many days changelog do you want to generate?"${txtrst}
 echo ""
-echo -e ${red}" 〉30/sec Time-out (7 days)"${txtrst}
+echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ 7 Days by default"${txtrst}
 echo -e "";
-echo -e ${blu}" ▼ Type a number"${txtrst}
+echo -e ${cya}" ▼ Type a number"${txtrst}
 echo -e "";
 # use 'export days_to_log=5' before '. build/envsetup.sh' were 5 is days to log
 if [ -z $days_to_log ];then
@@ -46,7 +46,7 @@ export After_Date=`date --date="$i days ago" +%m/%d/%Y`
 k=$(expr $i - 1)
 	export Until_Date=`date --date="$k days ago" +%m/%d/%Y`
     echo ""	
-	echo ${ylw}" 〉Generating day number:$i $Until_Date.."${txtrst}
+	echo ${blu}" 〉 Generating day number $i ▪ $Until_Date.."${txtrst}
 	source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date');
 
 	if [ -n "${source##+([:space:])}" ]; then
@@ -68,4 +68,4 @@ then
 	rm -f $Temp_Changelog
 fi
 
-echo -e ${blu}"\n √ Changelog successfully generated.\n"${txtrst}
+echo -e ${ylw}"\n √ Changelog successfully generated.\n"${txtrst}
