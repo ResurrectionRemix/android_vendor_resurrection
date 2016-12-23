@@ -11,7 +11,7 @@ echo -e ${blu}" 〉 3- Nightly "${txtrst}${red}"     ︱ Option for the only off
 echo -e "";
 echo -e ${blu}" 〉 4- Weekly "${txtrst}${red}"      ︱ Option for the only official weekly builders"${txtrst}
 echo -e "";
-echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Unofficial by default"${txtrst}
+echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Default"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
