@@ -189,7 +189,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
-	OmniSwitch \
+    OmniSwitch \
     SoundRecorder \
     Screencast
 
@@ -293,8 +293,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION = 5.8.0
-RR_BUILDTYPE ?= UNOFFICIAL
+ifneq ($(RR_BUILDTYPE),)
 CM_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
+else
+CM_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(CM_VERSION) \
@@ -303,7 +306,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
  ro.romstats.name=ResurrectionRemix \
  ro.romstats.version=$(PRODUCT_VERSION) \
- ro.romstats.tframe=7 
+ ro.romstats.tframe=7
 
 ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
     PRODUCT_EXTRA_RECOVERY_KEYS += \
