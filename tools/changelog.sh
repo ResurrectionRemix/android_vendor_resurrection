@@ -34,7 +34,7 @@ if [ -f $source_tree/conf ];then
 source $source_tree/conf
 read -r -t $timer $days_to_log
 elif [ -z $days_to_log ];then
-read -r -t 10 days_to_log || days_to_log=7
+read -r -t 30 days_to_log || days_to_log=7
 fi
 echo >> $Changelog;
 echo " ▼ $source_name Ver 5.8.0 Changelog"    >> $Changelog;
