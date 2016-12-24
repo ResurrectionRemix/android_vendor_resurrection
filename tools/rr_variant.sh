@@ -17,6 +17,8 @@ echo -e ${blu}" 〉 6- Milestone "${txtrst}${red}"   ︱ Only for the milestone 
 echo -e "";
 echo -e ${blu}" 〉 7- Final "${txtrst}${red}"       ︱ Only for the final releases by the RR-team"${xtrst}
 echo -e "";
+echo -e ${blu}" 〉 8- Xmas "${txtrst}${red}"        ︱ Christmas exclusive before holiday build "${xtrst}
+echo -e "";
 echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Default option"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
@@ -89,6 +91,16 @@ then
 echo -e "";
 echo -e ${blu}" ▪ Building final variant "${txtrst}
 export RR_BUILDTYPE=final
+echo -e "";
+echo -e "";
+$normal
+sleep 1
+fi
+if [ "$askvariant" == "8" ]
+then
+echo -e "";
+echo -e ${blu}" ▪ Building Xmas variant "${txtrst}
+export RR_BUILDTYPE=xmas
 echo -e "";
 echo -e "";
 $normal
