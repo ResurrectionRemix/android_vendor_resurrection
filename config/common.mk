@@ -188,8 +188,6 @@ PRODUCT_PACKAGES += \
     WeatherProvider \
     OmniStyle \
     OmniSwitch \
-    SoundRecorder \
-    Screencast \
     masquerade
 
 # Exchange support
