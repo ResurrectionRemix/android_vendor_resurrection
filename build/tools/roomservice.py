@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # Copyright (C) 2012-2013, The CyanogenMod Project
 # Copyright (C) 2012-2015, SlimRoms Project
+# Copyright (C) 2018, Resurrection Remix
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -42,11 +43,11 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
-custom_local_manifest = ".repo/local_manifests/slim_manifest.xml"
-custom_default_revision = "mm6.0"
-custom_dependencies = "slim.dependencies"
-org_manifest = "SlimRoms"  # leave empty if org is provided in manifest
-org_display = "SlimRoms"  # needed for displaying
+custom_local_manifest = ".repo/local_manifests/roomservice.xml"
+custom_default_revision = "oreo"
+custom_dependencies = "rr.dependencies"
+org_manifest = "rr-devices"  # leave empty if org is provided in manifest
+org_display = "ResurrectionRemix-Devices"  # needed for displaying
 
 github_auth = None
 
@@ -109,11 +110,6 @@ def get_default(manifest=None):
     return d
 
 
-def get_default_revision(manifest=None):
-    r = get_default(manifest=manifest).get('revision')
-    return r.replace('refs/heads/', '').replace('refs/tags/', '')
-
-
 def get_remote(manifest=None, remote_name=None):
     m = manifest or load_manifest(default_manifest)
     if not remote_name:
@@ -125,21 +121,20 @@ def get_remote(manifest=None, remote_name=None):
 
 
 def get_revision(manifest=None, p="build"):
+    return custom_default_revision
     m = manifest or load_manifest(default_manifest)
     project = None
     for proj in m.findall('project'):
         if proj.get('path').strip('/') == p:
             project = proj
             break
-    if project is None:
-        return get_default_revision(manifest=m)
     revision = project.get('revision')
     if revision:
         return revision.replace('refs/heads/', '').replace('refs/tags/', '')
     remote = get_remote(manifest=m, remote_name=project.get('remote'))
     revision = remote.get('revision')
     if not revision:
-        return get_default_revision(manifest=None)
+        return custom_default_revision
     return revision.replace('refs/heads/', '').replace('refs/tags/', '')
 
 
@@ -168,24 +163,36 @@ def add_to_manifest(repos, fallback_branch=None):
     for repo in repos:
         repo_name = repo['repository']
         repo_target = repo['target_path']
+	if 'branch' in repo:
+	    repo_branch=repo['branch']
+	else:
+	    repo_branch=custom_default_revision
+	if 'remote' in repo:
+	    repo_remote=repo['remote']
+	else:
+	    repo_remote=org_manifest
+
         if is_in_manifest(repo_target):
             print('already exists: %s' % repo_target)
             continue
 
-        if "/" not in repo_name:
-            repo_name = os.path.join(org_manifest, repo_name)
+	if repo_remote is None:
+	    repo_remote="github"
+
+	if "/" not in repo_name and repo_remote is not org_manifest:
+            repo_name = os.path.join(org_display, repo_name)
 
         print('Adding dependency: %s -> %s' % (repo_name, repo_target))
 
         project = ElementTree.Element(
             "project",
             attrib={"path": repo_target,
-                    "remote": "github",
+                    "remote": repo_remote,
                     "name": "%s" % repo_name}
         )
 
-        if 'branch' in repo:
-            project.set('revision', repo['branch'])
+        if repo_branch is not None:
+            project.set('revision', repo_branch)
         elif fallback_branch:
             print("Using branch %s for %s" %
                   (fallback_branch, repo_name))
@@ -239,7 +246,7 @@ def fetch_dependencies(repo_path, fallback_branch=None):
 
     if syncable_repos:
         print('Syncing dependencies')
-        os.system('repo sync --force-sync %s' % ' '.join(syncable_repos))
+        os.system('repo sync --force-sync --no-tags --current-branch --no-clone-bundle %s' % ' '.join(syncable_repos))
 
     for deprepo in syncable_repos:
         fetch_dependencies(deprepo)
@@ -261,27 +268,10 @@ def detect_revision(repo):
     result = json.loads(urllib.request.urlopen(githubreq).read().decode())
 
     calc_revision = get_revision()
-    default_revision = get_default_revision()
     print("Calculated revision: %s" % calc_revision)
-    print("Default revision: %s" % default_revision)
 
-
-    if calc_revision != default_revision and has_branch(result, calc_revision):
+    if has_branch(result, calc_revision):
         return calc_revision
-    if has_branch(result, default_revision):
-        return None
-
-    # Try tags, too, since that's what releases use
-    githubreq = urllib.request.Request(
-        repo['tags_url'].replace('{/tag}', ''))
-    add_auth(githubreq)
-    result.extend(json.loads(
-        urllib.request.urlopen(githubreq).read().decode()))
-
-    if calc_revision != default_revision and has_branch(result, calc_revision):
-        return calc_revision
-    if has_branch(result, default_revision):
-        return None
 
     fallbacks = os.getenv('ROOMSERVICE_BRANCHES', '').split()
     for fallback in fallbacks:
@@ -294,8 +284,6 @@ def detect_revision(repo):
               % custom_default_revision)
         return custom_default_revision
 
-    print("Default revision %s not found in %s. Bailing." %
-          (default_revision, repo['name']))
     print("Branches found:")
     for branch in result:
         print(branch['name'])
@@ -363,7 +351,7 @@ def main():
         add_to_manifest(adding, fallback_branch)
 
         print("Syncing repository to retrieve project.")
-        os.system('repo sync --force-sync %s' % repo_path)
+        os.system('repo sync --force-sync --no-tags --current-branch --no-clone-bundle %s' % repo_path)
         print("Repository synced!")
 
         fetch_dependencies(repo_path, fallback_branch)
