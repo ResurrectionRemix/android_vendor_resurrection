@@ -32,15 +32,15 @@ echo -e ${blu}" 〉 3- Nightly "${txtrst}${red}"     ︱ Only for the official d
 echo -e "";
 echo -e ${blu}" 〉 4- Weekly "${txtrst}${red}"      ︱ Only for the official weekly builds by the maintainers"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 5- Release "${txtrst}${red}"     ︱ Only for the official releases by the RR-team"${txtrst}
+echo -e ${blu}" 〉 5- Release "${txtrst}${red}"     ︱ Only for the official releases by the RR-Team"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 6- Milestone "${txtrst}${red}"   ︱ Only for the milestone releases by the RR-team"${txtrst}
+echo -e ${blu}" 〉 6- Milestone "${txtrst}${red}"   ︱ Only for the milestone releases by the RR-Team"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 7- Final "${txtrst}${red}"       ︱ Only for the final releases by the RR-team"${xtrst}
+echo -e ${blu}" 〉 7- Experimental "${txtrst}${red}"︱ Only for the experimental releases by the RR-Team"${xtrst}
 echo -e "";
-echo -e ${blu}" 〉 8- Experimental "${txtrst}${red}"︱ Only for the Experimental releases by the RR-team"${xtrst}
+echo -e ${blu}" 〉 8- Final "${txtrst}${red}"       ︱ Only for the final releases by the RR-Team"${xtrst}
 echo -e "";
-echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Default option"${txtrst}
+echo -e ${blu}" 🕑  30/sec Time-out"${txtrst}${red}"︱ Default option"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
@@ -110,8 +110,8 @@ fi
 if [ "$askvariant" == "7" ]
 then
 echo -e "";
-echo -e ${blu}" ▪ Building final variant "${txtrst}
-export RR_BUILDTYPE=Final
+echo -e ${blu}" ▪ Building experimental variant "${txtrst}
+export RR_BUILDTYPE=Experimental
 echo -e "";
 echo -e "";
 $normal
@@ -120,8 +120,8 @@ fi
 if [ "$askvariant" == "8" ]
 then
 echo -e "";
-echo -e ${blu}" ▪ Building experimental variant "${txtrst}
-export RR_BUILDTYPE=Experimental
+echo -e ${blu}" ▪ Building final variant "${txtrst}
+export RR_BUILDTYPE=Final
 echo -e "";
 echo -e "";
 $normal
