@@ -32,15 +32,15 @@ echo -e ${blu}" 〉 3- Nightly "${txtrst}${red}"     ︱ Only for the official d
 echo -e "";
 echo -e ${blu}" 〉 4- Weekly "${txtrst}${red}"      ︱ Only for the official weekly builds by the maintainers"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 5- Release "${txtrst}${red}"     ︱ Only for the official releases by the RR-team"${txtrst}
+echo -e ${blu}" 〉 5- Release "${txtrst}${red}"     ︱ Only for the official releases by the RR-Team"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 6- Milestone "${txtrst}${red}"   ︱ Only for the milestone releases by the RR-team"${txtrst}
+echo -e ${blu}" 〉 6- Milestone "${txtrst}${red}"   ︱ Only for the milestone releases by the RR-Team"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 7- Final "${txtrst}${red}"       ︱ Only for the final releases by the RR-team"${xtrst}
+echo -e ${blu}" 〉 7- Experimental "${txtrst}${red}"︱ Only for the experimental releases by the RR-Team"${xtrst}
 echo -e "";
-echo -e ${blu}" 〉 8- Xmas "${txtrst}${red}"        ︱ Christmas exclusive before holiday build "${xtrst}
+echo -e ${blu}" 〉 8- Final "${txtrst}${red}"       ︱ Only for the final releases by the RR-Team"${xtrst}
 echo -e "";
-echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ Default option"${txtrst}
+echo -e ${blu}" 🕑  30/sec Time-out"${txtrst}${red}"︱ Default option"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
@@ -51,7 +51,7 @@ if [ "$askvariant" == "1" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building official variant "${txtrst}
-export RR_BUILDTYPE=official
+export RR_BUILDTYPE=Official
 echo -e "";
 echo -e "";
 $normal
@@ -61,7 +61,7 @@ if [ "$askvariant" == "2" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building unofficial variant "${txtrst}
-export RR_BUILDTYPE=unofficial
+export RR_BUILDTYPE=Unofficial
 echo -e "";
 echo -e "";
 $normal
@@ -71,7 +71,7 @@ if [ "$askvariant" == "3" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building nightly variant "${txtrst}
-export RR_BUILDTYPE=nightly
+export RR_BUILDTYPE=Nightly
 echo -e "";
 echo -e "";
 $normal
@@ -81,7 +81,7 @@ if [ "$askvariant" == "4" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building weekly variant "${txtrst}
-export RR_BUILDTYPE=weekly
+export RR_BUILDTYPE=Weekly
 echo -e "";
 echo -e "";
 $normal
@@ -91,7 +91,7 @@ if [ "$askvariant" == "5" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building release variant "${txtrst}
-export RR_BUILDTYPE=release
+export RR_BUILDTYPE=Release
 echo -e "";
 echo -e "";
 $normal
@@ -101,7 +101,7 @@ if [ "$askvariant" == "6" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building milestone variant "${txtrst}
-export RR_BUILDTYPE=milestone
+export RR_BUILDTYPE=Milestone
 echo -e "";
 echo -e "";
 $normal
@@ -110,8 +110,8 @@ fi
 if [ "$askvariant" == "7" ]
 then
 echo -e "";
-echo -e ${blu}" ▪ Building final variant "${txtrst}
-export RR_BUILDTYPE=final
+echo -e ${blu}" ▪ Building experimental variant "${txtrst}
+export RR_BUILDTYPE=Experimental
 echo -e "";
 echo -e "";
 $normal
@@ -120,8 +120,8 @@ fi
 if [ "$askvariant" == "8" ]
 then
 echo -e "";
-echo -e ${blu}" ▪ Building Xmas variant "${txtrst}
-export RR_BUILDTYPE=xmas
+echo -e ${blu}" ▪ Building final variant "${txtrst}
+export RR_BUILDTYPE=Final
 echo -e "";
 echo -e "";
 $normal
