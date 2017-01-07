@@ -310,12 +310,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.romstats.version=$(PRODUCT_VERSION) \
  ro.romstats.tframe=7
 
-ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
-    PRODUCT_EXTRA_RECOVERY_KEYS += \
-        vendor/cm/build/target/product/security/cm \
-        vendor/cm/build/target/product/security/cm-devkey
-endif
-
 CM_DISPLAY_VERSION := $(RR_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
