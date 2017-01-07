@@ -315,6 +315,9 @@ CM_DISPLAY_VERSION := $(RR_VERSION)
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.display.version=$(CM_DISPLAY_VERSION)
 
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+  vendor/cm/build/target/product/security/lineage
+ 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/cm/config/partner_gms.mk
 -include vendor/cyngn/product.mk
