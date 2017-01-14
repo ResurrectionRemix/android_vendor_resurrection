@@ -169,18 +169,14 @@ def add_to_manifest(repos, fallback_branch=None):
 	    repo_branch=custom_default_revision
 	if 'remote' in repo:
 	    repo_remote=repo['remote']
-	else:
+	elif "/" not in repo_name:
 	    repo_remote=org_manifest
+	elif "/" in repo_name:
+	    repo_remote="github"
 
         if is_in_manifest(repo_target):
             print('already exists: %s' % repo_target)
             continue
-
-	if repo_remote is None:
-	    repo_remote="github"
-
-	if "/" not in repo_name and repo_remote is not org_manifest:
-            repo_name = os.path.join(org_display, repo_name)
 
         print('Adding dependency: %s -> %s' % (repo_name, repo_target))
 
@@ -199,6 +195,9 @@ def add_to_manifest(repos, fallback_branch=None):
             project.set('revision', fallback_branch)
         else:
             print("Using default branch for %s" % repo_name)
+	if 'clone-depth' in repo:
+	    print("Setting clone-depth to %s for %s" % (repo['clone-depth'], repo_name))
+	    project.set('clone-depth', repo['clone-depth'])
         lm.append(project)
 
     indent(lm)
