@@ -1,199 +1,242 @@
-
-Resurrection Remix Nougat
- 
-Features:
-
-Based On Latest Google Android 7.1.0_r7 release
-
-Resurrection Remix Crowdin : https://crowdin.com/project/resurrectionremix/
-
-RR Customizations:-
-        -Enable/Disable Navbar
-        -Navbar Button Customization smartbar
-        -Navbar Pulse 
-        -Navbar Fling            
-        -Double Tap To sleep navbar
- 
--Statusbar
-        -Brightness Slider
-        -Enable/Disable Show Notification Count
-        -SuperUser Indicator Switch
-        -Double Tap To sleep Statusbar
-        -Carrier Label  
-                -Carrier Label Switch
-                -Carrier label Color
-                -Carrier Label Size
-                -Clock Customizations
-                -Time & date
-                -Day & date Toogle
-                -Center/Right/Left Clock Choice
-                -Date Format
-                -Clock Font Styles
-        -Battery
-                -Battery Bar customization
-                -Battery Icon Customization(circle/landscape/Potrait and more)
-                -Battery % Text
-        -Network Traffic Indicator
-                -Network Traffic Arrows Switch
-                -Incoming/OutGoing Traffic
-        -Network traffic Color
-        -Statusbar RR Logo
-                -RR logo Color
-                -Position
-        -Custom Logos
-                -logo Color
-                -Position
-                -Style
-        -StatusBar Weather
-                -Weather Color
-                -Weather Position(left/right)
-                -Weather Font Style
-                -Weather Size
-        -StatusBar Ticker
-                -Ticker Text color
-                -Ticker Icon Color
- 
--Animations
-        -Toast Animations
-        -ListView Animations
-        -System Animations
-        -Power Menu Animations
-        -Misc Animations
- 
--Gestures
--Gestures Anywhere Feature
--3 Finger Swipe Screenshot Gesture
- 
--App Circle Bar
-        -Choose apps in AppSidebar
-        -Trigger Width
-        -Trigger Hieght
-        -Trigger Position
--App Sidebar
-        -Choose apps in App circle
-        -Trigger Width
-        -Trigger Hieght
-        -Trigger Position
--Pie
-       -Pie Trigger(left ,Right ,Bottom)
-       -Pie Targets
-       -Pie Colors
-       -More Pie Features
- 
--Recents Panel
-        -Clear All button Switch
-        -Clear All Tasks Switch
-        -Clear All Button Location(Top right,Top Left,Top Center,Bottom Left,Bottom Right,Bottom Center)
-        -Full Screen Recents
-        -Recents Styles
-        -OmniSwitch
- 
--Cclock Widget
-        -CLock And Alarm Customizations
-        -Weather Panel Customizations
-        -Calender Events
- 
--LockScreen
-        -Lockscreen Bottom Shortcuts
-        -Lockscreen General Shorcuts
-                -100+ Icons for Shortcuts
-        -Double Tap to Sleep Lockscreen
-        -Lockscreen Media Art/Enable Disable
-        -Quick PIN/Patter Unlock
-        -LockScreen Wallpaper
-        -Lockscreen Weather Widget
-        -Lockscreen Icons Color
- 
--Quick Settings Draggable Tiles
-                -Customizable Tiles
-                -Dyanamic Tiles Adjustment
-                -Number of columns/rows
-                -Tile Animations
--Notification Drawer
-        -LongPress Toogles to Enter Settings
-        -Disable Immersive Mode Messages
-        -Force Expand Notification
-        -Quick PullDown
-        -Smart Pulldown
-        -Notification Panel Transperency
-        -Volume Dialog Transperency
-        -Notification Panel Stroke
-        -Volume Dialog Stroke
- 
--Buttons
-        -Backlight Timer
-        -Backlight Strength
- 
--Advanced Reboot Menu
--Power Menu Customizations
-        -Power Off
-        -Reboot(Recovery, Bootloader, Hot Reboot)
-        -ScreenShot
-        -Power Menu End Calls Switch
-        -Restart SystemUI
-        -Airplane Mode
-        -ScreenRecord
-        -On the Go Mode
-        -Sound Panel
- 
--Home Button(For devices with HW keys Only)
-        -Home Button answer call
-        -Long Press Actions
-        -Double Tap Actions
- 
--Menu Button(For devices with HW keys Only)
-        -Short Press Actions
-        -Long Press Actions
- 
--Search Button(If Device Supports)
-        -Short Press Action
-        -Long Press Action
- 
--Volume Buttons
-        -Wake Up Device
-        -Playback Control
-        -Ringtone Volume Control
-        -Keyboard Cursor Control
-        -Swap Buttons on Landscape mode
-        -Volume Key Answer
- 
--Miscellaneous
-        -Selinux Switch (Switch Between Permissive and Enforcing Selinux if Device has Selinux Enabled)
-        -cLock Shortcut
-        -Disable Battery Saver Warning Color
-        -OTA U
-        -Cammera Shutter Sound Enable/Disable
- 
--SystemUI Tuner
-        -Enabled By default
-        -Removed Demo mode and Tweaked SystemUI Tuner As compared To AOSP
-        -StatusBar Icons Cuzomizations
-        -Quick Settings Customizations
- 
--Other Features
-        -Perfomance Profiles
-        -LCD Density
-        -Expanded Desktop Mode
-        -Heads Up Switch and customizations
-        -Live Display
-        -Configurable 0,90,180,270 Degree Rotation
-        -Lock Screen Autorotate Switch
-        -Native Tap to Wake From Marshmallow
-        -Double Tap Power Button To enable Camera gesture
-        -Prevent Accidental Wakeup
-        -Wake Phone on Charging Plug
-        -Battery Light Customizations
-        -Notification Light Customizations
-        -Font Size
-        -CM privacy guard
-        -Performance Tweaks(Kernel Aduitor Inbuilt)
- 
--CM root inbuilt
- 
--RR OTA
--A Whole new RR Configurations 
--OverAll Smoothness Improvements
--Optimizations to Improve Battery
--Includes All Android Nougat Features
--Includes ALL CM14.1 Features
--AND MUCH MUCH MORE
+	
+	● Resurrection Remix OS Nougat
+	
+	● Crowdin for translations : https://crowdin.com/project/resurrectionremix/
+	
+	● Main Features ▼
+	
+	● Navigation bar ▼
+	
+	-Enable/Disable Navbar
+	-Navbar color tint
+	-Navbar Button Customization smartbar
+	-Navbar Pulse 
+	-Navbar Fling            
+	-Double Tap to sleep navbar
+	
+	● Statusbar ▼
+	
+	-Brightness Slider
+	-Enable/Disable Show Notification Count
+	-SuperUser Indicator Switch
+	-Double Tap To sleep Statusbar
+	-Carrier Label  
+	-Carrier Label Switch
+	-Carrier label Color
+	-Carrier Label Size
+	-Clock Customizations
+	-Time & date
+	-Day & date Toogle
+	-Center/Right/Left Clock Choice
+	-Date Format
+	-Clock Font Styles
+	
+	● Battery ▼
+	
+	-Battery Bar customization
+	-Battery Icon Customization(circle/landscape/Potrait and more)
+	-Battery % Text
+	
+	● Network Traffic Indicator ▼
+	
+	-Network Traffic Arrows Switch
+	-Incoming/OutGoing Traffic
+	-Network traffic Color
+	
+	● Statusbar RR Logo ▼
+	
+	-RR logo Color
+	-Position
+	
+	● Custom Logos ▼
+	
+	-logo Color
+	-Position
+	-Style
+	
+	● StatusBar Weather ▼
+	
+	-Weather Color
+	-Weather Position(left/right)
+	-Weather Font Style
+	-Weather Size
+	
+	● StatusBar Ticker ▼
+	
+	-Ticker Text color
+	-Ticker Icon Color
+	
+	● Animations ▼
+	
+	-Toast Animations
+	-ListView Animations
+	-System Animations
+	-QS tile Animations
+	-Power Menu Animations
+	-Misc Animations
+	
+	● Gestures ▼
+	
+	-Gestures Anywhere Feature
+	-3 Finger Swipe Screenshot Gesture
+	
+	● App Circle Bar ▼
+	
+	-Choose apps in AppSidebar
+	-Trigger Width
+	-Trigger Hieght
+	-Trigger Position
+	
+	● App Sidebar ▼
+	
+	-Choose apps in App circle
+	-Trigger Width
+	-Trigger Hieght
+	-Trigger Position
+	
+	● Pie Control ▼
+	
+	-Pie Trigger(left ,Right ,Bottom)
+	-Pie Targets
+	-Pie Colors
+	-More Pie Features
+	
+	● Recents Panel ▼
+	
+	-Clear All button Switch
+	-Clear All Tasks Switch
+	-Clear All Button Location(Top right,Top Left,Top Center,Bottom Left,Bottom Right,Bottom Center)
+	-Full Screen Recents
+	-Recents Styles
+	-OmniSwitch
+	
+	● Cclock Widget ▼
+	
+	-CLock And Alarm Customizations
+	-Weather Panel Customizations
+	-Calender Events
+	
+	● LockScreen ▼
+	
+	-Lockscreen Bottom Shortcuts
+	-Lockscreen General Shorcuts
+	-100+ Icons for Shortcuts
+	-Double Tap to Sleep Lockscreen
+	-Lockscreen Media Art/Enable Disable
+	-Quick PIN/Patter Unlock
+	-LockScreen Wallpaper
+	-Lockscreen Weather Widget
+	-Lockscreen Icons Color
+	
+	● Quick Settings Draggable Tiles ▼
+	
+	-Customizable Tiles
+	-Dyanamic Tiles Adjustment
+	-Number of columns/rows
+	-Tile Animations
+	
+	● Notification Drawer ▼
+	
+	-Task manager
+	-Custom headers
+	-LongPress Toogles to Enter Settings
+	-Disable Immersive Mode Messages
+	-Force Expand Notification
+	-Quick PullDown
+	-Smart Pulldown
+	-Notification Panel Transperency
+	-Volume Dialog Transperency
+	-Notification Panel Stroke
+	-Volume Dialog Stroke
+	
+	● Buttons ▼
+	
+	-Backlight Timer
+	-Backlight Strength
+	
+	● Advanced Reboot Menu ▼
+	
+	-Power Off
+	-Reboot(Recovery, Bootloader, Hot Reboot)
+	-ScreenShot
+	-Power Menu End Calls Switch
+	-Restart SystemUI
+	-Airplane Mode
+	-ScreenRecord
+	-On the Go Mode
+	-Sound Panel
+	
+	● Home Button(For devices with HW keys Only) ▼
+	
+	-Home Button answer call
+	-Long Press Actions
+	-Double Tap Actions
+	
+	● Menu Button(For devices with HW keys Only) ▼
+	
+	-Short Press Actions
+	-Long Press Actions
+	
+	● Search Button(If Device Supports) ▼
+	
+	-Short Press Action
+	-Long Press Action
+	
+	● Volume Buttons ▼
+	
+	-Wake Up Device
+	-Playback Control
+	-Ringtone Volume Control
+	-Keyboard Cursor Control
+	-Swap Buttons on Landscape mode
+	-Volume Key Answer
+	
+	● Miscellaneous ▼
+	
+	-Selinux Switch (Switch Between Permissive and Enforcing Selinux if Device has Selinux Enabled)
+	-cLock Shortcut
+	-Disable Battery Saver Warning Color
+	-OTA Updates
+	-Cammera Shutter Sound Enable/Disable
+	
+	● SystemUI Tuner ▼
+	
+	-Enabled By default
+	-Removed Demo mode and Tweaked SystemUI Tuner As compared To AOSP
+	-StatusBar Icons Cuzomizations
+	-Quick Settings Customizations
+	
+	● Other Features ▼
+	
+	-Perfomance Profiles
+	-LCD Density
+	-Expanded Desktop Mode
+	-Heads Up Switch and customizations
+	-Live Display
+	-Configurable 0,90,180,270 Degree Rotation
+	-Lock Screen Autorotate Switch
+	-Native Tap to Wake From Marshmallow
+	-Double Tap Power Button To enable Camera gesture
+	-Prevent Accidental Wakeup
+	-Wake Phone on Charging Plug
+	-Battery Light Customizations
+	-Notification Light Customizations
+	-Font Size
+	-CM privacy guard
+	
+	● RR OTA
+	
+	● CM root inbuilt
+	
+	● A Whole new RR Configurations 
+	
+	● Overall Smoothness Improvements
+	
+	● Optimizations to Improve Battery
+	
+	● Includes all Android Nougat Features
+	
+	● Includes all CM14.1 Features
+	
+	● And much much more ...
+	
