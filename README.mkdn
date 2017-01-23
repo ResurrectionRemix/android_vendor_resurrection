@@ -1,13 +1,21 @@
-![](https://i.imgsafe.org/56593d8991.png)
+![](https://i.imgsafe.org/678946f7a2.png)
 
 
 Resurrection Remix OS Nougat Source 2017
 ===================
 
-
-[Join the Resurrection Remix](https://plus.google.com/communities/109352646351468373340)
-
 [Crowdin for translations](https://crowdin.com/project/resurrectionremix/)
+
+
+Rom Downloads
+===================
+
+[![Download Resurrection Remix OS](https://i.imgsafe.org/675c1f407f.png)](https://sourceforge.net/projects/resurrectionremix/files/?source=navbar)
+
+Social Media
+===================
+
+[![](https://i.imgsafe.org/67ed4ee248.png)](https://plus.google.com/communities/109352646351468373340) [![](https://i.imgsafe.org/67ed3f229f.png)](https://www.facebook.com/resurrectionremixrom) [![](https://i.imgsafe.org/67ed596e9e.png)](https://twitter.com/)
 
 Getting Started
 ---------------
