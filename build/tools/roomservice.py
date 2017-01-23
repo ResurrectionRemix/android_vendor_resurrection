@@ -162,7 +162,7 @@ def add_to_manifest(repos, fallback_branch=None):
 
     for repo in repos:
         repo_name = repo['repository']
-        repo_target = repo['target_path']
+        repo_path = repo['target_path']
 	if 'branch' in repo:
 	    repo_branch=repo['branch']
 	else:
@@ -174,15 +174,15 @@ def add_to_manifest(repos, fallback_branch=None):
 	elif "/" in repo_name:
 	    repo_remote="github"
 
-        if is_in_manifest(repo_target):
-            print('already exists: %s' % repo_target)
+        if is_in_manifest(repo_path):
+            print('already exists: %s' % repo_path)
             continue
 
-        print('Adding dependency: %s -> %s' % (repo_name, repo_target))
+        print('Adding dependency:\nRepository: %s\nBranch: %s\nRemote: %s\nPath: %s\n' % (repo_name, repo_branch,repo_remote, repo_path))
 
         project = ElementTree.Element(
             "project",
-            attrib={"path": repo_target,
+            attrib={"path": repo_path,
                     "remote": repo_remote,
                     "name": "%s" % repo_name}
         )
