@@ -54,8 +54,9 @@ echo -e "";
 if [ -z $days_to_log ];then
 read -r -t 30 days_to_log || days_to_log=7
 fi
+version=$(grep -r 'PRODUCT_VERSION ' vendor/cm/config/ | sed 's/vendor\/cm\/config\/common.mk:PRODUCT_VERSION //g' | sed  's/= //g');
 echo >> $Changelog;
-echo " ▼ $source_name Ver 5.8.0 Changelog"    >> $Changelog;
+echo " ▼ $source_name Ver $version Changelog"    >> $Changelog;
 echo '' >> $Changelog;
 echo >> $Changelog;
 
