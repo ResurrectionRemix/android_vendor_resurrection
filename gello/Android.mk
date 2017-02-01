@@ -36,6 +36,7 @@ endif
 LOCAL_SRC_FILES := ../../../external/gello-build/Gello.apk
 include $(BUILD_PREBUILT)
 else
+ifeq ($(THEY_FIXED_GELLO),true)
 LOCAL_DEX_PREOPT := false
 LOCAL_MODULE_TAGS := optional
 LOCAL_BUILT_MODULE_STEM := package.apk
@@ -47,4 +48,5 @@ LOCAL_HTTP_FILENAME := gello.apk
 LOCAL_HTTP_MD5SUM := $(LOCAL_HTTP_FILENAME).md5sum
 
 include $(BUILD_HTTP_PREBUILT)
+endif
 endif
