@@ -17,5 +17,5 @@
  */
 -->
 <resources>
-    <string name="def_enable_mobile_data">false</string>
+    <bool name="def_enable_mobile_data">false</bool>
 </resources>
