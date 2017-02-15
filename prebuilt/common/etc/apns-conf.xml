@@ -1459,7 +1459,7 @@
   <apn carrier="Straight Talk" mcc="310" mnc="410" apn="tfdata" port="80" mmsc="http://mms-tf.net" mmsproxy="mms3.tracfone.com" mmsport="80" mvno_type="gid" mvno_match_data="deff" type="default,mms,supl" />
   <apn carrier="Red Pocket" mcc="310" mnc="410" apn="PRODATA" port="" mmsc="http://mmsc.mobile.att.net" mmsproxy="proxy.mobile.att.net" mmsport="80" mvno_type="gid" mvno_match_data="4201" type="default,mms,supl" />
   <apn carrier="Black Wireless" mcc="310" mnc="410" apn="att.mvno" proxy="66.209.11.33" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="66.209.11.33" mmsport="80" type="default,mms,supl,agps,fota" authtype="1" />
-  <apn carrier="H20 Wireless" mcc="310" mnc="410" apn="prodata" proxy="" port="" mmsc="http://mmsc.mobile.att.net" mmsproxy="proxy.mobile.att.net" mmsport="80" type="default,mms,supl" />
+  <apn carrier="H2O Wireless" mcc="310" mnc="410" apn="PRODATA" mmsc="http://mmsc.mobile.att.net" mmsproxy="proxy.mobile.att.net" mmsport="80" type="default,mms,supl" />
   <apn carrier="Pure Talk USA" mcc="310" mnc="410" apn="att.mvno" proxy="" port="" mmsc="http://mmsc.cingular.com" mmsproxy="proxy.mvno.telrite.com" mmsport="80" type="default,mms,supl" />
   <apn carrier="AirVoice Wireless" mcc="310" mnc="410" apn="att.mvno" proxy="66.209.11.33" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="66.209.11.33" mmsport="80" type="default,mms,supl" />
   <apn carrier="Jolt Mobile" mcc="310" mnc="410" apn="att.mvno" proxy="66.209.11.33" port="80" mmsc="http://mmsc.cingular.com" mmsproxy="66.209.11.33" mmsport="80" type="default,mms,supl" />
@@ -3365,6 +3365,7 @@
   <apn carrier="True" mcc="520" mnc="99" apn="internet" user="true" password="true" type="default,supl" />
   <apn carrier="True MMS" mcc="520" mnc="99" apn="mms" user="true" password="true" mmsc="http://mms.trueworld.net:8002" mmsproxy="10.4.7.39" mmsport="8080" type="mms" />
   <apn carrier="SingTel" mcc="525" mnc="01" apn="e-ideas" type="default,supl" />
+  <apn carrier="SingTel hi!card" mcc="525" mnc="01" apn="hicard" mmsc="http://mms.singtel.com:10021/mmsc" mmsproxy="165.21.42.84" mmsport="8080" authtype="1" type="default,supl,mms" />
   <apn carrier="IDEAS" mcc="525" mnc="01" apn="e-ideas" type="default,supl,mms" />
   <apn carrier="IDEAS MMS" mcc="525" mnc="01" apn="e-ideas" user="65IDEAS" password="65ideas" mmsc="http://mms.singtel.com:10021/mmsc" mmsproxy="165.21.42.84" mmsport="8080" type="mms" />
   <apn carrier="SingTel" mcc="525" mnc="02" apn="e-ideas" type="default,supl" />
