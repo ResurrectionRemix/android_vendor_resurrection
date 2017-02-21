@@ -4,7 +4,10 @@
 	● Crowdin for translations : https://crowdin.com/project/resurrectionremix/
 	
 	● Main Features ▼
-	
+
+	● Theme Engine ▼
+	- Full Substratum(OMS) theme support
+
 	● Navigation bar ▼
 	
 	- Enable/Disable Navbar
