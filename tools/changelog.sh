@@ -55,7 +55,7 @@ if [ -z $days_to_log ];then
 read -r -t 30 days_to_log || days_to_log=7
 fi
 echo >> $Changelog;
-echo " ▼ $source_name Ver 5.8.1 Changelog"    >> $Changelog;
+echo " ▼ $source_name Ver 5.8.2 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
 echo >> $Changelog;
 
