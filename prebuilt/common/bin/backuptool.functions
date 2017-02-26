@@ -7,7 +7,7 @@ export C=/tmp/backupdir
 export S=/system
 
 backup_file() {
-  if [ -e "$1" ]; then
+  if [ -e "$1" -o -L "$1" ]; then
     local F=`basename "$1"`
     local D=`dirname "$1"`
     # dont backup any apps that have odex files, they are useless
@@ -23,7 +23,7 @@ backup_file() {
 restore_file() {
   local FILE=`basename "$1"`
   local DIR=`dirname "$1"`
-  if [ -e "$C/$DIR/$FILE" ]; then
+  if [ -e "$C/$DIR/$FILE" -o -L "$C/$DIR/$FILE" ]; then
     if [ ! -d "$DIR" ]; then
       mkdir -p "$DIR";
     fi
