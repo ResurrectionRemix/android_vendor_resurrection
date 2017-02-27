@@ -279,17 +279,17 @@ PRODUCT_VERSION = 5.7.4
     LINEAGE_VERSION := ResurrectionRemix-M-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.rr.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION) \
+  ro.rr.version=$(LINEAGE_VERSION) \
+  ro.modversion=$(LINEAGE_VERSION) \
   ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
   ro.romstats.name=ResurrectionRemix \
   ro.romstats.version=$(PRODUCT_VERSION) \
-  ro.romstats.tframe=7 
+  ro.romstats.tframe=7
 
-CM_DISPLAY_VERSION := $(CM_VERSION)
+LINEAGE__DISPLAY_VERSION := $(LINEAGE_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.rr.display.version=$(CM_DISPLAY_VERSION)
+  ro.rr.display.version=$(LINEAGE_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
