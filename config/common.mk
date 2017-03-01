@@ -188,6 +188,7 @@ PRODUCT_PACKAGES += \
     WeatherProvider \
     OmniStyle \
     OmniSwitch \
+    OmniJaws \
     masquerade
 
 # Exchange support
