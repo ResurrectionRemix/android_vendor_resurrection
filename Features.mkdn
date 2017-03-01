@@ -6,6 +6,7 @@
 	● Main Features ▼
 
 	● Theme Engine ▼
+	
 	- Full Substratum(OMS) theme support
 
 	● Navigation bar ▼
