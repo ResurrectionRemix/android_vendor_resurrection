@@ -21,10 +21,3 @@ userdebug_or_eng(`
     allow sysinit self:capability dac_override;
     allow sysinit userinit_exec:file { rx_file_perms };
 ')
-
-allow sysinit cache_file:dir getattr;
-allow sysinit persist_file:dir getattr;
-allow sysinit proc:file write;
-allow sysinit storage_file:dir getattr;
-allow sysinit system_block_device:blk_file read;
-allow sysinit system_data_file:dir write;
