@@ -82,4 +82,4 @@ userdebug_or_eng(`
 
 ')
 
-neverallow { domain userdebug_or_eng(`-dumpstate -shell -su -untrusted_app -init -sudaemon -system_app -system_server -platform_app -priv_app') } su_exec:file no_x_file_perms;
+neverallow { domain userdebug_or_eng(`-dumpstate -shell -su -untrusted_app -init -sudaemon -system_app -system_server -platform_app') } su_exec:file no_x_file_perms;
