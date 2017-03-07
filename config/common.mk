@@ -87,10 +87,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/DeskClock/DeskClock.apk:system/app/DeskClock/DeskClock.apk
 
-# Copy Magisk zip
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
-
 # DU Utils Library
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
@@ -273,10 +269,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Storage manager
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
-
-# Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
 
 # Telephony
 PRODUCT_PACKAGES += \
