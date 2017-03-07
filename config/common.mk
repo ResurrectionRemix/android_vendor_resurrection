@@ -190,6 +190,7 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     OmniJaws \
     ThemeInterfacer
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
