@@ -189,7 +189,7 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     OmniSwitch \
     OmniJaws \
-    masquerade
+    ThemeInterfacer
 
 # Exchange support
 PRODUCT_PACKAGES += \
