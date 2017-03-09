@@ -48,6 +48,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# OMS THEMEINTERFACER
+PRODUCT_PACKAGES += \
+   ThemeInterfacer
+
 # Enable Google Assistant on all devices.
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
@@ -187,7 +191,15 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     OmniSwitch \
     OmniJaws \
-    masquerade
+    ThemeInterfacer
+
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -279,8 +291,13 @@ PRODUCT_BOOT_JARS += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
+    procrank
+
+# Conditionally build in su
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
     su
+endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \

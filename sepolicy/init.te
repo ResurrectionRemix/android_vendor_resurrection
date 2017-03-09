@@ -5,3 +5,5 @@ allow init cache_block_device:blk_file rw_file_perms;
 
 # Allow init to send class_* trigger events
 allow init property_socket:sock_file write;
+
+allow init debugfs:file write;
