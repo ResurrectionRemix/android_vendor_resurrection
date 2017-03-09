@@ -195,6 +195,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     ThemeInterfacer
 
+ifneq ($(AVOID_MAGISK), false)
 # Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
@@ -202,6 +203,7 @@ PRODUCT_PACKAGES += \
 # Copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+endif
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -318,6 +320,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(RR_VERSION) \
  ro.modversion=$(RR_VERSION) \
  rr.build.type=$(RR_BUILDTYPE) \
+ rr.magisk.disable=$(AVOID_MAGISK)\
  Default \
  rr.ota.version= $(shell date -u +%Y%m%d) \
  ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
