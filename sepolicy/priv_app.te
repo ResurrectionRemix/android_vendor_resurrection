@@ -1,2 +1,0 @@
-allow priv_app device:dir read;
-allow priv_app sysfs_mac_address:file read;

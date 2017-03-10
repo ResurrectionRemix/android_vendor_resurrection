@@ -15,6 +15,3 @@ get_prop(system_server, adbsecure_prop)
 # Allow system_server to relabel newly created theme directory for
 # use by the proxied theme service
 allow system_server themeservice_app_data_file:dir relabelto;
-
-allow system_server persist_file:dir search;
-allow system_server user_profile_data_file:dir read;
