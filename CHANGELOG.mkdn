@@ -1,697 +1,1776 @@
 
-# Resurrection Remix Nougat Version 5.8.0 Changelog
+# Resurrection Remix Nougat Version 5.8.2 Changelog
 ====================================================
 
-12-09-2016
-============
-
-#### build/
-* 6e6a22d Build : Start changelog generator beginning of the build script
-* cb4d931 Add zip size and md5 info to end of the build script
-
-#### frameworks/base/
-* dc51ef6 fwb: services: tests: Remove duplicated WrappedAvoidBadWifiTracker class
-
-#### packages/apps/Settings/
-* 346d93b Automatic translation import
-* 5e65d7d Settings: Fix the failing of more strings
-
-#### vendor/cm/
-* 609aa45 Vendor: Update changelog generator script
-* d804513 Vendor: Add auto source changelog to file.md generator
-* 3cdec9b Revert "vendor: add changelog script"
-* 58196dd vendor: add changelog script
-
-12-08-2016
-============
-
-#### build/
-* 387bf3c Merge branch 'cm-14.1' of https://github.com/CyanogenMod/android_build into nougat
-
-#### device/google/shamrock/
-* 231281c Optimize device with cmhw
-* c32da73 Improve performace profiles and CPU - UX tunings - remove cm.dependencies
-
-#### frameworks/av/
-* 5b4f173 Merge tag 'android-7.1.1_r4' into try_again
-* d7732b7 Revert "stagefright: add handling for Large metadata across binder"
-
-#### frameworks/base/
-* 2198ea2 Fix screenshot Crop & Share pen size preview color -Menu icons was invisible
-* 526d501 systemui: Fix derp: calling a non-existent method. (#154)
-* 1605378 Merge pull request #153 from nicknitewolf/patch-1
-* 2070d0d systemui: Disable doze_pulse_on_pick_up
-* 9f09f8a Merge tag 'android-7.1.1_r4' into nougat
-
-#### hardware/qcom/audio-caf/msm8994/
-* 5059cb1 audio policy: fix capture indication to sound trigger service.
-
-#### packages/apps/Bluetooth/
-* c7a4661 Automatic translation import
-* 3a4891b Automatic translation import
-
-#### packages/apps/Calendar/
-* fc1da0c Automatic translation import
-* b770a4c Automatic translation import
-
-#### packages/apps/Dialer/
-* 302f6b7 Merge tag 'android-7.1.1_r4' into cm-14.1
-* 8d2a1ea Dialer: fix IllegalStateException in Search call log
-
-#### packages/apps/Messaging/
-* fc45ec4 Merge branch 'cm-14.1' of https://github.com/cyanogenmod/android_packages_apps_Messaging into nougat
-
-#### packages/apps/PhoneCommon/
-* 798ac9f Automatic translation import
-* 3fcb063 Automatic translation import
-
-#### packages/apps/Settings/
-* 9614e0b Settings: Fix the failing strings
-* 0ddae2f Fix asturian again
-* f92ebcc Automatic translation import
-* 48a9236 Automatic translation import
-* 7a546da Unbreak Fingerprint Unlock Setup
-* 4fd5f80 Replace some rr ui settings options - Crop switch was hidden behind of fab button
-* 54ef012 Fix Build
-* 25520b6 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/WallpaperPicker/
-* f507d00 Automatic translation import
-
-#### packages/providers/DownloadProvider/
-* 18a7458 Automatic translation import
-
-#### packages/services/Telecomm/
-* b9a6f5b Merge tag 'android-7.1.1_r4' into cm-14.1
-* 5545ed5 Automatic translation import
-
-#### packages/services/Telephony/
-* 1498e31 Merge tag 'android-7.1.1_r4' into cm-14.1
-* e96d336 Not cache empty config bundle.
-
-#### system/sepolicy/
-* 9e1584d Merge tag 'android-7.1.1_r4' into cm-14.1
-* 6d93d52 sepolicy: exclude sdcard_posix/fuseblk from shipping builds
-
-12-07-2016
+02-25-2017
 ============
 
 #### android/
-* 102862e cm: android-7.1.1_r4
-
-#### art/
-* 58d4793 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### bionic/
-* cc5d7ad Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### bootable/recovery/
-* 93bcfca Merge tag 'android-7.1.1_r4' into cm-14.1
+* dc90f5d manifest: android-7.1.1_r9 -> android-7.1.1_r21
 
 #### build/
-* 43e781b blockimgdiff: plz don't spam my terminal, thx
-* 55b3889 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### development/
-* ed637d9 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### device/lge/hammerhead/
-* 33b19f2 hammerhead: Enable HAL1 hacks
-
-#### device/qcom/sepolicy/
-* 32df817 Allow hci_qcomm_init /persist/.bt_nv.bin access
-
-#### external/boringssl/
-* 20e10d3 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/icu/
-* 96679c6 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/iproute2/
-* 3e14eaf Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/libhevc/
-* be401a3 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/libxml2/
-* 9074669 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/okhttp/
-* b36a712 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/skia/
-* 1be5c83 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### external/toybox/
-* 9f27615 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/base/
-* 46028e9 Revert "QS Header Icon settings [1/2]"
-* 28f5b1c Revert "Header Date+Time positions [1/2]"
-* 6dfaa5b Revert " Circle and landscape battery perc inside the icon: use bigger text"
-* c4eb07a Fix the deadlock problem
-* 4c15ff5 [AM] Fix system server may killed when monkey crash.
-* e7bd35f SystemUITests: fix compile error
-
-#### frameworks/native/
-* 1c3a042 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/opt/datetimepicker/
-* 66a7685 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/opt/net/ims/
-* 06434bb Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/opt/net/wifi/
-* 7e4f2af Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/opt/setupwizard/
-* 66dcb82 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/opt/telephony/
-* 07fb1fe Merge tag 'android-7.1.1_r4' into cm-14.1
-* ff5ecfb fix compile error.
-
-#### frameworks/opt/vcard/
-* 90940cd Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### frameworks/support/
-* 0422d94 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/broadcom/wlan/
-* ec1bdf2 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/intel/common/libmix/
-* 7f2d5a0 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/intel/common/omx-components/
-* e8366b6 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/intel/common/utils/
-* 5617484 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/intel/img/hwcomposer/
-* 77a5690 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/libhardware/
-* f1aeb1f Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/qcom/audio-caf/msm8916/
-* 92eff45 audio policy: fix capture indication to sound trigger service.
-* a002cb7 audio policy: fix media volume after ringtone
-* bf8c245 audiopolicy: Avoid spurious routing in APM::stopSource
-* 02f55ae audio_policy: Add extra check before restoring device in stopOutput
-
-#### hardware/qcom/audio-caf/msm8937/
-* 81237ea audio policy: fix capture indication to sound trigger service.
-* 61c12d5 audio policy: fix media volume after ringtone
-* bfdbcf2 audiopolicy: Avoid spurious routing in APM::stopSource
-
-#### hardware/qcom/audio-caf/msm8952/
-* b4d2df1 audio policy: fix capture indication to sound trigger service.
-* 7d376f3 audio policy: fix media volume after ringtone
-* 534f1fd audiopolicy: Avoid spurious routing in APM::stopSource
-
-#### hardware/qcom/audio-caf/msm8960/
-* 5dc5270 audio policy: fix media volume after ringtone
-
-#### hardware/qcom/audio-caf/msm8974/
-* b5f28ec audio policy: fix media volume after ringtone
-* 7010e5b audiopolicy: Avoid spurious routing in APM::stopSource
-
-#### hardware/qcom/audio-caf/msm8994/
-* c4bc329 audio policy: fix media volume after ringtone
-* 3aa03bf audiopolicy: Avoid spurious routing in APM::stopSource
-
-#### hardware/qcom/audio-caf/msm8996/
-* 07650c8 audio policy: fix capture indication to sound trigger service.
-* 9449876 audio policy: fix media volume after ringtone
-
-#### hardware/qcom/audio/default/
-* 6e93570 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/qcom/bt/
-* 9fda5c3 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/qcom/camera/
-* 4688bb5 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/qcom/display/
-* d7dc8cd Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/qcom/gps/
-* 371e95f Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/qcom/media/
-* 2fb47ed Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### hardware/ril/
-* 4715c65 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### kernel/google/msm8952/
-* aa810da msm: vidc: Set constrained intra refresh property
-* 5aa7140 msm: vidc: Add control to set csc coefficients to firmware
-* 1b24720 msm: vidc: Add support for color space information
-* f04760e msm: vidc: Add SEI extradata.
-
-#### libcore/
-* d34cbe9 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/Bluetooth/
-* 18e387a Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/Camera2/
-* ba1fd32 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/CarrierConfig/
-* 2f5013f Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/CellBroadcastReceiver/
-* ba2807f Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/CertInstaller/
-* 14ae18b Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/EmergencyInfo/
-* 71b6494 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/ExactCalculator/
-* 140eeb2 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/ManagedProvisioning/
-* 94a5f31 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/Messaging/
-* 09edb9f Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/Nfc/
-* 213bb13 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/PackageInstaller/
-* e1bff64 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/PhoneCommon/
-* 8d53892 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/Settings/
-* fe83209 Merge pull request #628 from RMarchetto96/patch-1
-* c1c778d Update resurrection_device_maintainers_strings.xml
-* e81ed29 Revert " QS Header Icon settings [2/2]"
-* 90966e4 Revert " Header Date+Time positions [2/2]"
-* 6d475e1 Fix up Maintainer Strings
-
-#### packages/apps/Stk/
-* 91e60c1 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/StorageManager/
-* c2e731d Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/apps/TvSettings/
-* 3297a0b Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/inputmethods/LatinIME/
-* dded75c Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/providers/ContactsProvider/
-* 972e214 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/providers/DownloadProvider/
-* 6867fd9 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/providers/MediaProvider/
-* ea4068b Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/providers/TelephonyProvider/
-* 488ef95 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/services/Car/
-* 1692bfa Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/services/Mms/
-* 29e321b Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### packages/wallpapers/LivePicker/
-* 47b60d5 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### system/bt/
-* 6fe776c Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### system/core/
-* 1ac6d97 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### system/keymaster/
-* 27afd44 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### system/media/
-* c5b5812 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### system/netd/
-* 5615983 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-#### system/vold/
-* 87e0068 Merge tag 'android-7.1.1_r4' into cm-14.1
-
-12-06-2016
-============
-
-#### art/
-* 20af132 dex2oat: Fix compilation of host binary on Mac due to watchdog fix
-
-#### build/
-* 34e1e20 Revert "Revert "Add PRODUCT_BOOTANIMATION""
-
-#### device/google/shamrock/
-* feb3279 shamrock: Use cpusets for all services
-* 94de710 shamrock: Update qualcomm configs
-* 7160b76 shamrock: Update Audio Blobs
-* 9c48bdd shamrock: Enforce SELinux
-* 199b680 shamrock: Update sepolicy rules
-* c31b087 shamrock: Don't need to build keymaster
-* 4779aea shamrock: Switch to the unified LED capabilities overlay
-* 36a63c4 shamrock: Build missing packages
-* 48ca09a shamrock: Build libprotobuf-cpp-full
-* a4bdb9f shamrock: Add 'misc' entry in fstab.qcom
-
-#### frameworks/base/
-* 4dfdcd6 AppOps: Do not prune apps that are not present
-* aa53e38 Support for MODE_ASK in commandline
-* c9514da Automatic translation import
-* 71b22c7 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
-* ca4124c Buttons: Hardware key disable support with M adaptations [1/2]
-* eb5c551 frameworks/base: Don't report existing menu key if it was remapped. [2/3]
-* 7283805 Buttons: Bring up hardware key action binding framework [1/2]
-* 8167824 Revert " [Base] HW keys tweaks (1/2)"
-
-#### packages/apps/Dialer/
-* 9697a84 Automatic translation import
-
-#### packages/apps/OmniSwitch/
-* fb37454 Automatic translation import
-
-#### packages/apps/ResurrectionOTA/
-* 7dbc97d Automatic translation import
-
-#### packages/apps/ResurrectionStats/
-* c9af665 Automatic translation import
-
-#### packages/apps/Settings/
-* abbe2b6 Use bands.length instead of bands[0] when populating the bands list
-* 6913698 Settings: Add CMHW vibrator intensity preference
-* 4e18ee4 Fix- readd recently removed strings
-* e6c4baf Automatic translation import
-* f242ff5 Add Moto G LTE Maintainer (Peregrine) (#623)
-* 9c3683a7 more corrections (#622)
-* af7ea98 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
-* 10396be Buttons: Bring up hardware key action binding framework [2/2]
-
-12-05-2016
-============
-
-#### device/qcom/sepolicy/
-* c62c6dd Allow qmuxd access diag
-* 46c74da Readd support for old perfd socket
-* 78700b4 Move bluetooth_loader sepolicy to common
-* 05446e2 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.9' into cm-14.1
-
-#### frameworks/base/
-* afd40af Header Date+Time positions [1/2]
-* 1bdec5d QS Header Icon settings [1/2]
-* 9005eee  Circle and landscape battery perc inside the icon: use bigger text
-* f8bd737 SystemUI: statusbar: Fix status bar brightness control feature
-* 718cc11 [1/2] base: Screenshot Crop & Share
-* 27e42cc base: add overlay to not ignore back button with capacitive buttons disabled (#150)
-* 8194457 Merge pull request #148 from bhb27/nougat_overlay_doze
-* 9463ddc Merge pull request #147 from bhb27/nougat_cpu_overlay
-* e1765ab SettingsProvider: allow ambient display/doze mode to be overlayed
-* 5d3408d SystemUI: make online cpu color green for cpu overlay
-* 41e3183 base: fix num cpu check for CPU overlay
-* aa7b71c [1/2] base: add CPU info overlay
-* a63eb19 Merge pull request #146 from AndropaX/patch-1
-* d40617e Restore multi-sim colors
-* f8c7da9 SystemUI: Fix pie translations FC
-* b357a55 FWB: Volume dialog timeout (1/2)
-* d9a1263 Battery: allow set a custom symbol near text pct on charging [1/2]
-* 94ee50a Battery icon: allow to set a custom charging color [1/2]
-* 95c8dd7 GA: Layout improvements & switch to dark material theme
-* 84ab4f5 Add back sync battery tile icon with statusbar
-* 40fe022 SystemUI : Update cm battery styles and clean ups
-
-#### packages/apps/Settings/
-* 4aa1f9b  Header Date+Time positions [2/2]
-* f31361c  QS Header Icon settings [2/2]
-* e06fb86 Change switch preference
-* 5264c49 Screenshot crop and share
-* 695b87a corrections
-* 7042d02 Merge pull request #619 from bhb27/nougat_cpu_overlay
-* 1ac1374 [2/2] settings: add CPU info overlay
-* 072c676 Add Dependency to Custom Charging Symbol
-* 6f12d89 Volume Dialog Timeout [2/2]
-* da2b560 Battery: allow set a custom symbol near text pct on charging [2/2]
-
-12-04-2016
-============
-
-#### build/
-* a51bd64 build: Conditionally disable ccache for modules with FDO enabled
-* 48a0afd binary: Append cc/cxx wrapper to sdclang
-
-#### device/lge/hammerhead/
-* 18f5847 hammerhead: Switch to the unified LED capabilities overlay
-
-#### frameworks/base/
-* fe7f1a5 VibratorService: Track vibrator intensity
-* fa547f7 PhoneWindowManager: Implement press home to answer call
-* 8dbb588 am: Account for time changes when showing recent activities
-* 3d31464 Automatic translation import
-* eb92a3d NotificationManager: Concentrate LED light capabilities in a single location
-* 8199c44 Automatic translation import
-* 4f23a18 Merge pull request #145 from dragonGR/rr-pr
-* ae75979 Tethering: Turn off wifi hotspot after inactivity(1/3)
-
-#### packages/apps/Bluetooth/
-* ef49a42 Automatic translation import
-
-#### packages/apps/CMParts/
-* ff425e5 CMParts: Use NotificationManager to figure out LED capabilities
-
-#### packages/apps/Calendar/
-* 550f16a Automatic translation import
-
-#### packages/apps/Dialer/
-* 3109ee4 Automatic translation import
-
-#### packages/apps/Email/
-* 54a22f0 Email: Use NotificationManager to figure out LED capabilities
-
-#### packages/apps/OmniSwitch/
-* 91bdd16 Automatic translation import
-
-#### packages/apps/ResurrectionOTA/
-* 0845da6 Automatic translation import
-
-#### packages/apps/ResurrectionStats/
-* 457f6b2 Automatic translation import
-
-#### packages/apps/Settings/
-* 8f47521 Automatic translation import
-* 7fa3328 Fix translation import
-* 9ccca46 Automatic translation import
-* 0c38b90 Fix translation import
-* 3d6f19a fingerpint: Allow devices to configure sensor location
-* 2f18bdf Automatic translation import
-* a2a758a Settings: Use separate icon for flashlight power usage
-* 469401b Tethering: Turn off wifi hotspot after inactivity(3/3)
-* 614fbab Settings: Use GLIF Theme for missing Settings > Screen lock Activities
-* 09bc3fb Settings: Update SP/T/TX/V/M maintainers
-* 51f052a Fix PL translations error
-* 69d262e Automatic translation import
-* 1c8ac81 Settings: fix spelling
-
-#### packages/apps/UnifiedEmail/
-* 5caab8c Automatic translation import
-
-#### packages/providers/DownloadProvider/
-* c1a4ced Automatic translation import
-
-#### packages/services/Telephony/
-* f12910e Automatic translation import
-* 6a1791b Automatic translation import
-* 7f9b150 Automatic translation import
-* 965bde2 Automatic translation import
-* 4d0c1cc Automatic translation import
-* 4a9e3aa Automatic translation import
-
-#### vendor/cm/
-* 68df40b roomservice: Follow fetched android_device_ projects
-* cb49c0a [2/2] cm: set cache partition location
-
-#### vendor/cmsdk/
-* ecde09b cmsdk: Define a default LED capabilities value
-
-#### vendor/lge/
-* cd98c03 d855: remove prebuilt ril
-* 99c4b16 d851: remove prebuilt ril
-
-12-03-2016
-============
-
-#### art/
-* 72c7409 dex2oat: Use CLOCK_MONOTONIC, not REALTIME for a watchdog!
-
-#### build/
-* 74b5119 Revert "Add PRODUCT_BOOTANIMATION"
-
-#### external/vim/
-* b08aeec Merge tag 'v8.0.0117' into HEAD
-
-#### frameworks/base/
-* 824bec5 GA : Materiallize gesture anywhere layout - Added close fab button - Added 3 colors gradient layout background - overall improved UI - Exposed all colors for the themers
-* 6ccc546 ColorFade: fix EGL crash on exynos4 mali blobs
-* 1aab635 Remove the unnecessary window animation request
-* f480945 PhoneWindowManager: Tap volume buttons to answer call
-* ed55932 QS: Show # of clients connected to hotspot
-
-#### hardware/qcom/audio-caf/msm8960/
-* a85e455 audio: set voice call volume step by property
-
-#### hardware/qcom/audio-caf/msm8994/
-* 7ca19aa audio: set voice call volume step by property
-
-#### hardware/ti/omap4/
-* 453e216 cmhw: Account for devices that don't use manager0 sysfs paths
-
-#### kernel/google/msm8952/
-* 8221d07 defconfig: shamrock: Add CyanogenMod variant
-
-#### packages/apps/CMParts/
-* 2e4074e CMParts: Add volume button call answer switch
-
-#### packages/apps/Settings/
-* 5bed035 Add volume button call answer switch
-* 0937004 Add lux maintainer (#615)
-* ff01342 Add klte maintainer (#614)
-
-#### vendor/cmsdk/
-* 610916b cmsdk: Switch to a unified LED capabilities overlay
-* 77b34c3 CMSDK: Add volume answer call CMSetting
-
-12-02-2016
-============
-
-#### build/
-* b6bd8ea build: Conditionally disable ccache for modules with FDO enabled
-
-#### device/google/shamrock/
-* 9ba5570 shamrock: Select cache file system type
-
-#### external/vim/
-* 327054d patch 8.0.0117 Problem:    Parallel make fails. (J. Lewis Muir) Solution:   Make sure the objects directory exists. (closes #1259)
-* 6dbf66a patch 8.0.0116 Problem:    When reading English help and using CTRl-] the language from             'helplang' is used. Solution:   Make help tag jumps keep the language. (Tatsuki, test by Hirohito             Higashi, closes #1249)
-* e3af763 patch 8.0.0115 Problem:    When building with Cygwin libwinpthread isn't found. Solution:   Link winpthread statically. (jmmerz, closes #1255, closes #1256)
-* b04a98f patch 8.0.0114 Problem:    Coding style not optimal. Solution:   Add spaces. (Ken Takata)
-* 87f3d20 patch 8.0.0113 Problem:    MS-Windows: message box to prompt for saving changes may appear on             the wrong monitor. Solution:   Adjust the CenterWindow function. (Ken Takata)
-* eca626f patch 8.0.0112 Problem:    Tests 92 and 93 are old style. Solution:   Make test92 and test93 new style. (Hirohito Higashi, closes #1289)
-* eebd84e patch 8.0.0111 Problem:    The :history command is not tested. Solution:   Add tests. (Dominique Pelle)
-* 5a030a5 patch 8.0.0110 Problem:    Drop command doesn't use existing window. Solution:   Check the window width properly. (Hirohito Higashi)
-* b129a44 patch 8.0.0109 Problem:    Still checking if memcmp() exists while every system should have             it now. Solution:   Remove vim_memcmp().  (James McCoy, closes #1295)
-* 65e08ee patch 8.0.0108 Problem:    The channel "drop" option is not tested. Solution:   Add a test.
-* 958dc69 patch 8.0.0107 Problem:    When reading channel output in a timer, messages may go missing.             (Skywind) Solution:   Add the "drop" option.  Write error messages in the channel log.             Don't have ch_canread() check for the channel being open.
-
-#### frameworks/base/
-* aa9616a FW: Use stock pixel color scheme & improve upcoming CMTE compatibility - Used stock google pixel system material colors - Vectorized brightness thumb to fix dpi issues - Use system secondary text color for lockscreen shortcuts info text - Created own color.xml and describe the colors
-* 294d3ba Fix Battery Meter Style Resetting on Boot
-
-#### packages/apps/LockClock/
-* 83089b8 Improve theme for upcoming CMTE compatibility
-
-#### packages/apps/ResurrectionOTA/
-* 02f3f3a Improve theme for upcoming CMTE compatibility
-
-#### packages/apps/Settings/
-* 507a816 Describe configurations settings colors
-
-#### packages/apps/UnifiedEmail/
-* 8c91a11 UnifiedEmail: Use NotificationManager to figure out LED capabilities
-
-#### system/core/
-* 3e7227c [1/2] init.rc: set DOWNLOAD_CACHE based on prop
-
-#### vendor/cm/
-* 4dbcb61 Merge pull request #51 from jhenrique09/patch-1
-* 48e2415 It's cm14-1 guys...
-
-12-01-2016
-============
-
-#### hardware/intel/common/omx-components/
-* 6ad0c8d omx: cleanup zenfone2 old blob support
-
-#### packages/apps/Settings/
-* 4268058 Merge pull request #612 from eldainosor/patch-1
-* 99082a1 Merge pull request #613 from MobiusM/nougat
-* ba0e9ca Add g2m & jagnm maintainer
-* 292f1a5 Adding fragment for Surnia
-* a61fac4  QS tile titles visibility [2/2]
-
-11-30-2016
-============
-
-#### build/
-* f246c64 binary: Append cc/cxx wrapper to sdclang
-
-#### external/vim/
-* 0945eaf patch 8.0.0106 Problem:    Cannot use a semicolon in 'backupext'. (Jeff) Solution:   Allow for a few more characters when "secure" isn't set.
-* 4b785f6 patch 8.0.0105 Problem:    When using ch_read() with zero timeout, can't tell the difference             between reading an empty line and nothing available. Solution:   Add ch_canread().
+* 114055a Merge tag 'android-7.1.1_r21' into cm-14.1
+* 12f3c95 build: always copy recovery.img to BOOTABLE_IMAGES.
+* 7f28bb3 Add dumpvar for WITH_GMS
+* 3a95f4b core: include getb64key.py in otatools
+* 2032d1d ota_from_target_files: CalculateFingerprint when dump fingerprints
+* f685027 Add dumpvar for WITH_SU
+
+#### device/qcom/common/
+* 1a1248b power: replace strncpy with strlcpy
 
 #### frameworks/av/
-* af6eea9 audioflinger: Fix audio for WifiDisplay
+* 4a6bb0d Merge tag 'android-7.1.1_r21' into cm-14.1
+* 7750f38 ACodec: Fix video autoscaling on old OMX decoders
 
 #### frameworks/base/
-* f96ea9b QS tile titles visibility [1/2]
-* 3221594 SystemUI: make clock and date clickable in statusbar
-* 078d7c6fc Revert "statusbar header date and clock click targets"
-* 3493bf6 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
-* d9db526 Fix translation error (typo)  - Fix build
-* 171e476 Revert "SystemUI: make clock and date clickable in statusbar"
-* a1040b8 sounds: fix typo
-* 4326356 Automatic translation import
-* 47d5f1e settings: Allow accessing CMSettings via settings command
-* d43f6b7 SystemUI: make clock and date clickable in statusbar
-* 5d64503 Automatic translation import
-* 4d1835e Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
-* 97894ad Clock Seonds Options [1/2]
+* 6f7e30a SystemUI: Add config to disable HumanInteractionClassifier
+* bc9f8ed Automatic translation import
+* ee49489 Revert "Emergency call button on Swipe lock Screen."
+* 9dc712a Revert "Hide Lockscreen emergency button [1/2]"
+* ba9a4bc Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
+* d00b760 Merge tag 'android-7.1.1_r21' into cm-14.1
+* 676b40a Pulse: allow custom opacity for solid line renderer [2/3]
+* fd46b3f Pulse: Moar bars for solid line renderer [2/3]
+* 18426989 Fix slim recents duplicate entries
+* 80081b8 Ticker: We need to center it horozontal, not vertical
+* c853642 Ticker: Center Ticker layout vertically in statusbar view
+* 2a54d2a Fix TaskManager Running services [1/2] (#177)
+* be092ae Fix automatic zen rules.
+* 6cde8a1 DocumentsUI: use 'Files' icon and text for icon
+* e9c382a Bluetooth: Fix setting app stoped when unpair device
 
-#### kernel/lge/hammerhead/
-* 1594e46 KEYS: Fix short sprintf buffer in /proc/keys show function
-* 39febfb mm, gup: close FOLL MAP_PRIVATE race
+#### frameworks/native/
+* 8ce9604 Merge tag 'android-7.1.1_r21' into cm-14.1
+* 72839b9 libEGL: Only enable WORKAROUND_BUG_10194508 with board flag
 
-#### packages/apps/CMBugReport/
-* 69cba43 bugreport: Stop crashing when packages change
+#### frameworks/opt/hardware/
+* ca48b0c Revert "cmhw: Allow LiveDisplay to check if GPU transform is used"
+
+#### packages/apps/Bluetooth/
+* f355923 Automatic translation import
+
+#### packages/apps/CMParts/
+* cc00362 CMParts: Restructure status bar settings
+* b6c7f0b CMParts: Fix email and browser intents
+* 670c2ec Automatic translation import
+* 2fbcf82 CMParts: Replace variable for setup wizard complete
+* d02f378 Automatic translation import
+* e0ed192 CMParts: Add strings for sRGB
+* 5bb856b Revert "Touchscreen gestures: remove CM Setup Wizard dependency"
 
 #### packages/apps/Contacts/
-* a5bf60d Automatic translation import
+* e055a35 Automatic translation import
+* d385e38 Automatic translation import
+
+#### packages/apps/ContactsCommon/
+* a205f7e Automatic translation import
+* bfa8ab1 Automatic translation import
+
+#### packages/apps/DUI/
+* b39961b Pulse: allow custom opacity for solid line renderer [1/3]
+* ba72265 Pulse: Moar bars for solid line renderer [1/3]
+
+#### packages/apps/Dialer/
+* 33abb31 Automatic translation import
+* fb85139 Automatic translation import
+* 3cc3af8 Use TabLayout for DSDA tabs.
+
+#### packages/apps/Email/
+* e29763c Automatic translation import
+
+#### packages/apps/Messaging/
+* be76523 Automatic translation import
+* 8d3c467 Merge tag 'android-7.1.1_r21' into cm-14.1
+* 4c8acd6 Automatic translation import
+
+#### packages/apps/PhoneCommon/
+* 952a5f0 Automatic translation import
+* 0cb1362 Normall -> Normal typo in strings
 
 #### packages/apps/Settings/
-* 8803e14 Automatic translation import
-* d283a2e Settings: move notification lights settings into notifications options
-* 6f57c91 Settings: Remove A/B preference if unsupported
-* ed97d8f Automatic translation import
-* b300acd Fix Backlight Buttons FC on Hw button devices
-* 4da5194 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
-* 8f7371f Revert "update_rr_maintiner_N910F+N910T+N7105.xml (#609)"
-* b6d706f update_rr_maintiner_N910F+N910T+N7105.xml (#609)
-* 051938c Settings: Re add Moto Maxx-Turbo, Droid Turbo Maintainer also clean up duplicated strings (#606)
-* 9758975 Clock Seonds Options [2/2]
-* 418d5eb Added paella info (#600)
-* e6c6b91 Fix missing maintainer name (#579)
-* ee433d9 Add mantainer for Moto E 2015 LTE (surnia) (#607)
+* 9fe6f2b Update build number to r21
+* 3619285 Revert "Revert "Properly Fix Settings FC in Lockscreen Security""
+* 50ec085  Pulse: allow custom opacity for solid line renderer [3/3]
+* fc7faf5 Pulse: Moar bars for solid line renderer [3/3]
+* f45a40f Revert "Lockscreen Emergency Button Switch [2/2]"
+* 7f7dfd8 Revert "Settings: Fix FC on devices without finger print scanner"
+* 01f5c7a Revert "Revert "Settings: Fix FC on devices without finger print scanner""
+* 51e4933 Revert "Properly Fix Settings FC in Lockscreen Security"
+* 13f2b20 Revert "Remove Dependecy on Emergency Button Switch"
+* 0dd9186 Fix TTS engine label text wrapping
+* f5409aa Automatic translation import
+* 9d8c482 Automatic translation import
+* acbfc77 Fix TaskManager Running services [2/2] (#706)
+* 48c5b83 Revert "Settings:Change the way of email account displayed"
+* 82b9fcd Improve layout of app ops details screen.
+
+#### packages/apps/UnifiedEmail/
+* a2eadaa Automatic translation import
+
+#### packages/services/Telephony/
+* bcb0926 Automatic translation import
+* d4157b3 Automatic translation import
+
+#### system/core/
+* cf3c8a3 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### system/sepolicy/
+* d3c6052 Merge tag 'android-7.1.1_r21' into cm-14.1
 
 #### vendor/cm/
-* 11f39b3 Merge pull request #48 from dragonGR/nougat
-* fd9173e cm: config: Remove enhanced NFC feature
-* 0bf7a81 build: kernel: Remove duplicated targets
-* ce62b14 build: Set android jack args to global jack server args if existing
-* 06c9ff6 extract_utils: Use shasum on macOS
-* 506b5ab cm: enable hidden storage manager
-* 1d8fc04 Clean up 3G config for Vietnamese network
+* 2bcf560 Update github changelog
+* 853924e Use releasekey instead of platform for extra recovery keys
+* c88a7cd build: Pass path into grep instead of using cat
+* d0fce77 overlay: enable productivity_device for DocumentsUI
+* 3d87c4b vendor: support more text types
+* c56c14d apn: Updating Movistar Argentina APN
+
+#### vendor/cmsdk/
+* 8155c99 Automatic translation import
+* 0c75bfe CMSettingsProvider: remove per-user cursor observation
+* 0859764 cmsdk: Remove launch boost support
+* 311515b Automatic translation import
+* dba81b3 Add a proper description for CM_SETUP_WIZARD_COMPLETED deprecation
+* 6171436 cmsdk: Deprecate CM_SETUP_WIZARD_COMPLETED
+* 8baffef Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* 79b5f88 Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+* cbd94da Automatic translation import
+
+#### vendor/lge/
+* 008e4d8 bullhead: update blobs from N4F26O factory image
+* 29c052d mako: Kang hammerhead drm blobs
+
+02-24-2017
+============
+
+#### bionic/
+* a15dbf3 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### dalvik/
+* df22533 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### device/qcom/common/
+* 2be2684 power: Use POWER_HINT_LAUNCH for launch boosts
+
+#### frameworks/base/
+* 1d60e49 Wired headset: make ringtone audio focus customizable [1/3]
+* 663dcff Fix RTL layout with membar 'free ram' text
+
+#### hardware/libhardware/
+* 721e37c Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### hardware/libhardware_legacy/
+* ece325e Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### hardware/qcom/audio-caf/msm8916/
+* c205dc8 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.12' into HEAD
+
+#### hardware/qcom/audio/default/
+* bc83ef0 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### hardware/qcom/display-caf/msm8916/
+* c1f04be Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.12' into HEAD
+
+#### libcore/
+* 7afe9e8 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/apps/Bluetooth/
+* f568886 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/apps/CMBugReport/
+* 1803055 Automatic translation import
+
+#### packages/apps/CMFileManager/
+* e65455f Automatic translation import
+
+#### packages/apps/Calendar/
+* 9fcf496 Automatic translation import
+
+#### packages/apps/CellBroadcastReceiver/
+* 79dcdc1 Automatic translation import
+
+#### packages/apps/DUI/
+* 2da9889 Allow to set Ripple on other buttons for Home button only pixel animation [1/2]
+* 3a2191f Smartbar: allow to set pixel ani for the home button only [1/2]
+
+#### packages/apps/Eleven/
+* 21bbc9c Automatic translation import
+
+#### packages/apps/Email/
+* ce1a995 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/apps/Gallery2/
+* 399265e Automatic translation import
+
+#### packages/apps/Gello/
+* d104005 Automatic translation import
+
+#### packages/apps/HTMLViewer/
+* ec61c56 Allow searching in HTMLViewer.
+
+#### packages/apps/Profiles/
+* 83dd47f Automatic translation import
+
+#### packages/apps/Recorder/
+* 814b9b0 Automatic translation import
+
+#### packages/apps/Settings/
+* fd90a28 Wired headset: make ringtone audio focus customizable [3/3]
+* 39974f3  Allow to set Ripple on other buttons for Home button only pixel animation [2/2]
+* a1210e6 Smartbar: allow to set pixel ani for the home button only [2/2]
+
+#### packages/apps/SetupWizard/
+* 9365fb1 Automatic translation import
+
+#### packages/apps/Snap/
+* a1794ca Automatic translation import
+
+#### packages/apps/TV/
+* 95adef3 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/apps/Tag/
+* c2d04dc Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/apps/Terminal/
+* 8e2999c Automatic translation import
+
+#### packages/apps/ThemeChooser/
+* 4b0a9e5 Automatic translation import
+
+#### packages/apps/Trebuchet/
+* bec1da7 Automatic translation import
+
+#### packages/apps/UnifiedEmail/
+* e2ae143 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/inputmethods/LatinIME/
+* 151818a Automatic translation import
+
+#### packages/providers/BlockedNumberProvider/
+* 6a4e5ff Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/providers/CalendarProvider/
+* a656734 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/providers/DataUsageProvider/
+* 86834db Automatic translation import
+
+#### packages/providers/DownloadProvider/
+* 15cc93d Automatic translation import
+
+#### packages/providers/ThemesProvider/
+* 16cf3ec Automatic translation import
+
+#### packages/providers/UserDictionaryProvider/
+* 88e435c Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### packages/providers/WeatherProvider/
+* 82adbf6 Automatic translation import
+
+#### packages/services/CMAudioService/
+* 3fddddf Automatic translation import
+
+#### packages/services/LiveLockScreenService/
+* e6357f3 Automatic translation import
+
+#### packages/services/Telecomm/
+* 49f9cde Wired headset: make ringtone audio focus customizable [3/3]
+
+#### packages/services/ThemeManagerService/
+* 13317b9 Automatic translation import
+
+#### packages/services/WeatherService/
+* c42f6f4 Automatic translation import
+
+#### system/security/
+* 375e02f Merge tag 'android-7.1.1_r21' into cm-14.1
+
+#### system/tools/aidl/
+* 6192de5 Merge tag 'android-7.1.1_r21' into cm-14.1
+
+02-23-2017
+============
+
+#### hardware/qcom/media-caf/msm8974/
+* 99eef72 media-caf msm8974: Fix typo in video decoder error check for debug output
+
+#### libcore/
+* b065999 Revert "Remove support for reading mime types from property files."
+
+#### packages/apps/HTMLViewer/
+* 23ad424 HTMLViewer: support most text/ mimetypes
+
+#### packages/apps/SetupWizard/
+* ec3dcce SetupWizard: Increment version
+* 63aaa30 SetupWizard: Don't crash when missing Google SUW
+
+#### vendor/cm/
+* bfe154c Changelog should be for 5.8.2 now (#72)
+
+#### vendor/lge/
+* dad39fe f400: No need to rename bluetooth firmware
+
+02-22-2017
+============
+
+#### frameworks/base/
+* 3f83c8b Settings: add development animation transition mode 0.75 and 0.25
+* 1fdf834 Automatic translation import
+* bc6f58a Revert "All tile scroller for quickbar settings [1/2]"
+* 8887f0e Revert "Auto calculate quickbar tiles amount"
+* c745ca5 Revert "SystemUI: Fix QS tiles fancy animation layout glitch and mergin"
+
+#### packages/apps/Dialer/
+* 43f3323 Automatic translation import
+
+#### packages/apps/OmniSwitch/
+* 5f555fa Automatic translation import
+
+#### packages/apps/ResurrectionOTA/
+* fe46f7a Automatic translation import
+
+#### packages/apps/ResurrectionStats/
+* 038829c Automatic translation import
+* f745580 V5.8.2
+
+#### packages/apps/Settings/
+* 2acedc3 Automatic translation import
+* 8b0075b Revert "Scrollable Small QS tiles [2/2]"
+
+#### vendor/cm/
+* 3491e5e Features: add OMS support to feature list (#71)
+
+02-21-2017
+============
+
+#### bootable/recovery/
+* 9041a47 recovery: rebrand for lineage
+
+#### device/qcom/common/
+* 2f412a4 Revert "Revert "extractors: Add msm8996 32bit libmm-disp-apis and libmm-qdcm""
+* ea99b0c extractors: Update msm8996 graphics blobs info
+
+#### frameworks/base/
+* e2fb61d Automatic translation import
+* 0c95c0c base: instrumentation: fix protected apps intents
+
+#### packages/apps/DUI/
+* 8cf78de SmartBar: Pixel button animation support [2/3]
+* 2a42d94 Bring in initial Pixel Navbar animation resources [1/?]
+
+#### packages/apps/Settings/
+* a58e4fa SmartBar: Add Pixel to button animation settings [3/3]
+* 19c00c7 Add device Z010D (#701)
+* 30286c3 Update Device Maintainer for Cancro. (#699)
+* 0a59715 Update OP2 maintainer. (#700)
+* b4f4c2a Remove Dependecy on Emergency Button Switch
+
+#### packages/apps/Snap/
+* b2f33fa Snap: Allow switching beyond just 2 cameras
+
+#### vendor/lge/
+* e315a6b f400: Remove prebuilt ril and regenerate makefiles
+
+02-20-2017
+============
+
+#### android/
+* 5c4d36b Remove cm updater
+
+#### frameworks/base/
+* e0ad3b9 SystemUI: Fix QS tiles fancy animation layout glitch and mergin
+* 76c33cc Set external QS tiles tint mode to SRC_ATOP
+* 12d2285 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_frameworks_base into nougat
+* 427f1f2 BatteryMeterDrawable: Add Missing Pulgged In Intialization
+
+#### hardware/qcom/fm/
+* 6337276 Automatic translation import
+
+#### hardware/ti/omap4/
+* a6fd7f4 Enable BOARD_EGL_WORKAROUND_BUG_10194508 by default
+
+#### kernel/lge/hammerhead/
+* e33068a BACKPORT: msm: camera: Avoid exposing kernel addresses
+
+#### packages/apps/AudioFX/
+* 9b36fdc Automatic translation import
+
+#### packages/apps/CMFileManager/
+* eb3c609 Automatic translation import
+
+#### packages/apps/Calendar/
+* d4d47ff Automatic translation import
+
+#### packages/apps/CellBroadcastReceiver/
+* 08117b8 Automatic translation import
+* af13354 CellBroadcastReceiver: Fix strings
+
+#### packages/apps/DUI/
+* 81b1b28 Update edit mode button & fix action list pressed color
+* 2f9217f Update navigation button sizes and some drawables
+
+#### packages/apps/Gallery2/
+* bc9f781 Automatic translation import
+
+#### packages/apps/Gello/
+* 3b6a6cf Automatic translation import
+
+#### packages/apps/Recorder/
+* 3d92b85 Automatic translation import
+* 17585c7 Dismiss notification when corresponding recording is deleted
+* 42faf20 Fix last recording duration string
+
+#### packages/apps/Settings/
+* b20cd47 Properly Fix Settings FC in Lockscreen Security
+* 59d714e Revert "Settings: Fix FC on devices without finger print scanner"
+* 83b5861 Settings: Fix FC on devices without finger print scanner
+* 8e6046f Set external settings icon tint mode to SRC_ATOP
+
+#### packages/apps/SetupWizard/
+* 3ecb352 Automatic translation import
+
+#### packages/apps/Snap/
+* f7854a1 Automatic translation import
+
+#### packages/apps/ThemeChooser/
+* 72900fa Automatic translation import
+
+#### packages/apps/Trebuchet/
+* eb9e8cf Automatic translation import
+
+#### packages/providers/DataUsageProvider/
+* b978855 Automatic translation import
+
+#### packages/providers/WeatherProvider/
+* e84d46c Automatic translation import
+
+#### packages/services/CMAudioService/
+* 83729e0 Automatic translation import
+
+#### packages/services/LiveLockScreenService/
+* 01c3940 Automatic translation import
+
+#### packages/services/ThemeManagerService/
+* 32b32a4 Automatic translation import
+
+#### packages/services/WeatherService/
+* 6b4875a Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* 7e1dd7c Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+* 2badf2f Automatic translation import
+
+#### vendor/lge/
+* 71959c2 Merge branch 'cm-14.1' of github.com:TheMuppets/proprietary_vendor_lge into HEAD
+* 64b45c1 g4: use opensource consumerir hal
+
+02-19-2017
+============
+
+#### build/
+* ed9dc49 Build : Evo-merge - Switch to rebased
+
+#### external/DUtils/
+* a0ccca8 Separate one handed mode icons [2/2]
+
+#### frameworks/base/
+* f8bfe83 Hide Lockscreen emergency button [1/2]
+* 356cbbd Base: bring back restart action
+* cae3cf0 Notification tint: add optional findContrastColor algorithm for dark backgrounds
+* 9b32646 Solid battery: Bring back pulsing animation
+* 0eac40c Unlock keystore with fingerprint after reboot (1/2)
+* 51a1167 Base: Update navigation button sizes and some drawables
+* 5c74531 Expose lockscreen bottom shorcut phone inner bg and text colors
+* d7bdd4d Base: bring back restart action
+* 95a8e66 Base: Update navigation button sizes and some drawables
+* 6f72aa7 Expose lockscreen bottom shorcut phone inner bg and text colors
+* 40544be Fix build after rebase
+
+#### kernel/lge/hammerhead/
+* 2399c57 msm: mdss: hide kernel addresses from unprevileged users
+* 3940436 net: ping: Fix stack buffer overflow in ping_common_sendmsg()
+
+#### packages/apps/ContactsCommon/
+* e5b6dcc Themes: Define back arrow tint color for themes
+
+#### packages/apps/DUI/
+* 5390e06 Separate one handed mode icons [1/2]
+
+#### packages/apps/Dialer/
+* 85be705 Dialer : Evo-merge - Switch to rebased
+
+#### packages/apps/Settings/
+* 2b4bdcb Lockscreen Emergency Button Switch [2/2]
+* c37b094  Unlock keystore with fingerprint after reboot (2/2)
+* 5455a0c Update Zenfone 2 Laser 720p Maintainer (#697)
+* 748e050 Settings: Display remove the duplo check if LiftToWake is Available +  DisplaySettings.java improves indentation of onCreate (#698)
+* fd6cb62 Settings: Evo-merge - Switch to rebased
+
+#### packages/apps/SetupWizard/
+* 765f0e6 SetupWizard: Include tests makefile
+
+#### packages/apps/Snap/
+* f098f1a Snap: CaptureModule: fix preview being invisible on first start
+* 21bc834 CaptureModule: Fix UI.
+* ec6475e Snap: CaptureModule: re-apply flash setting when disabling manual iso
+* f17e127 Snap: CaptureModule: check if ZSL is supported before using it
+* 27f8676 Snap: CaptureModule: enable noise reduction
+* 5710a02 Snap: CaptureModule: enable redeye reduction
+* b6b13fc Snap: CaptureModule: enable and fix manual iso control
+* ebd135d Snap: CaptureUI: remove camera2 option
+
+#### vendor/cm/
+* a11ca29 Update github changelog
+* a1faf3b Update version 5.8.2
+
+#### vendor/cmsdk/
+* e28fc9d RemotePreferenceManager: Fix receiver registration issues.
+
+#### vendor/lge/
+* 1437cb6 f400: Update blobs from F400K30g
+* 9037048 Revert "g4: switch to common GPU drivers"
+
+02-18-2017
+============
+
+#### android/
+* 0bf770a cm: Remove ahbottomnavigation library
+
+#### art/
+* 8b76e42 Disable FDO_SUPPORT [1/2]
+
+#### external/skia/
+* 3692d49 Skia: Disable FDO_SUPPORT [2/2] *this allows ccache to work on art/skia and increases build times by 10+ minutes
+
+#### frameworks/av/
+* fdb0874 Forward Port: Add Camera sound toggle [3/3]
+
+#### frameworks/base/
+* 3d16128 Base : Evo-merge - Switch to rebased
+
+#### frameworks/native/
+* dcd12e3 Fix one handed mode triggering tapjacking protection *also clean up pointless whitespace from one hand merge
+* f701ae7 Add new feature of One-hand UI Mode [2/3]
+* 8a4d6f3 OMS-N: installd: add command 'rmidmap'
+
+#### frameworks/opt/cards/
+* 8d54ddf Merge pull request #1 from ashoksoni/nougat
+* 645b533 Fix card header title centering when panel size != 100%
+
+#### hardware/qcom/audio-caf/msm8916/
+* 316d96e Merge AU_LINUX_ANDROID_LA.BR.1.2.9_RB1.07.01.01.254.017 on remote branch
+
+#### packages/apps/Contacts/
+* 64c4ae1 Contacts : Evo-merge - Switch to rebased
+
+#### packages/apps/ContactsCommon/
+* beeea9e ContactsCommon : Evo-merge - Switch to rebased
+
+#### packages/apps/Messaging/
+* 0a5e5a6 [5/6] Breathing missedcall/sms/voicemail
+
+#### packages/apps/PhoneCommon/
+* c00ed20 PhoneCommon : Evo-merge - Switch to rebased
+
+#### packages/apps/SetupWizard/
+* fc2ca45 SetupWizard: Allow skip of optional screens
+
+#### packages/apps/Snap/
+* b8af8f1 Snap: detect and use Camera2 if available
+
+#### packages/apps/StorageManager/
+* 195baec Expose storage manager settings colors
+
+#### packages/services/Telecomm/
+* 10fcc02 [2/6] Breathing missedcall/sms/voicemail
+
+#### packages/services/Telephony/
+* 727f23a [3/6] Breathing missedcall/sms/voicemail
+* d355384 Fix Lte Tile
+
+#### system/core/
+* 5c0fc72 Lockscreen charging info: real time values [2/4]
+
+#### system/sepolicy/
+* fdbb439 Add policy to SELinux to allow ViPER4Android in enforcing mode
+* 4e02d8a OMS7-N: Add service 'overlay' to service_contexts
+* fa7ebe9 RR: 7.1 fix
+* b8bdccb sepolicy: Allow platform_app to run su_exec() (1/2)
+* 746fc82 sepolicy: Allow system_server to run su_exec() (1/2)
+* 247cd63 sepolicy: Allow system_app to run su_exec()
+* e4ab1c0 sepolicy: Allow remount /system
+
+02-17-2017
+============
+
+#### device/qcom/sepolicy/
+* e4fb9ea Bluetooth: Remove stray characters
+
+#### hardware/qcom/fm/
+* d7414fe Automatic translation import
+
+#### packages/apps/Bluetooth/
+* 8a090b9 Automatic translation import
+
+#### packages/apps/CMFileManager/
+* cdac44d Automatic translation import
+
+#### packages/apps/Calendar/
+* 2779aa2 Automatic translation import
+
+#### packages/apps/Camera2/
+* 90e6bfb Automatic translation import
+
+#### packages/apps/CellBroadcastReceiver/
+* bd333cf Automatic translation import
+
+#### packages/apps/CertInstaller/
+* 2062efc Automatic translation import
+
+#### packages/apps/Eleven/
+* f9fe670 Automatic translation import
+
+#### packages/apps/Email/
+* af5fd12 Automatic translation import
+
+#### packages/apps/EmergencyInfo/
+* 5f291a2 Automatic translation import
+
+#### packages/apps/Gallery2/
+* 987562c Automatic translation import
+
+#### packages/apps/Gello/
+* dec5cbc Automatic translation import
+
+#### packages/apps/HTMLViewer/
+* b947f4c Automatic translation import
+
+#### packages/apps/KeyChain/
+* 25cd354 Automatic translation import
+
+#### packages/apps/ManagedProvisioning/
+* e3d6ed5 Automatic translation import
+
+#### packages/apps/Messaging/
+* 6a0f388 Automatic translation import
+
+#### packages/apps/Nfc/
+* 9748287 Automatic translation import
+
+#### packages/apps/PackageInstaller/
+* 6c0e26f Automatic translation import
+
+#### packages/apps/Recorder/
+* 1b9ae02 Automatic translation import
+
+#### packages/apps/SafetyRegulatoryInfo/
+* e2b1567 Automatic translation import
+
+#### packages/apps/Settings/
+* 4813933 Automatic translation import
+
+#### packages/apps/SetupWizard/
+* 4161a57 Automatic translation import
+
+#### packages/apps/Snap/
+* 198d1f8 Automatic translation import
+
+#### packages/apps/Stk/
+* 05fec2e Automatic translation import
+
+#### packages/apps/Tag/
+* bc4fdb8 Automatic translation import
+
+#### packages/apps/Terminal/
+* 476eed2 Automatic translation import
+
+#### packages/apps/TvSettings/
+* 03fa940 Automatic translation import
+
+#### packages/apps/UnifiedEmail/
+* e66a6c4 Automatic translation import
+
+#### packages/apps/WallpaperPicker/
+* 235345a Automatic translation import
+
+#### packages/inputmethods/LatinIME/
+* 95836eb Automatic translation import
+
+#### packages/providers/BookmarkProvider/
+* cb94ffa Automatic translation import
+
+#### packages/providers/CalendarProvider/
+* 9d234c9 Automatic translation import
+
+#### packages/providers/CallLogProvider/
+* c09b8a7 Automatic translation import
+
+#### packages/providers/ContactsProvider/
+* b57ce09 Automatic translation import
+
+#### packages/providers/DownloadProvider/
+* e3b13c9 Automatic translation import
+
+#### packages/providers/MediaProvider/
+* 8cb59e5 Automatic translation import
+
+#### packages/providers/TelephonyProvider/
+* 4cccef4 Automatic translation import
+
+#### packages/providers/UserDictionaryProvider/
+* e1a7789 Automatic translation import
+
+#### packages/screensavers/Basic/
+* 4e39499 Automatic translation import
+
+#### packages/screensavers/PhotoTable/
+* f99b33f Automatic translation import
+
+#### packages/services/CMAudioService/
+* e953031 Automatic translation import
+
+#### packages/services/Telecomm/
+* 07399be Automatic translation import
+
+#### packages/services/Telephony/
+* 5163191 Automatic translation import
+
+#### packages/wallpapers/LivePicker/
+* 1717578 Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* d5ca09b Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+* 60dd98e Automatic translation import
+
+02-16-2017
+============
+
+#### build/
+* 6e38819 core: Output full OTA package path to terminal
+* de7eac8 Revert "Allow to force disable block based OTAs"
+* 513a1e8 Allow to force disable block based OTAs
+* e6970b4 releasetools: Generate recovery-from-boot.p with bsdiff if necessary
+* 4ccb660 dumpvar: Dump RECOVERY_VARIANT if not empty
+* c07ae38 bacon: strip absolute PRODUCT_OUT path from md5sum file
+* 4c892a9 Add dumpvar for WITH_SU
+
+#### device/qcom/common/
+* cb1c51f Revert "extractors: Add aptX & aptXHD to confirmed platforms"
+* 8685a57 cryptfs_hw: Move to vendor/qcom/opensource/cryptfs_hw
+
+#### frameworks/base/
+* 071683e Add back data saver long click action
+* 9fa418b Show infinity for large notification counts
+* c26d671 Don't reposition the clock when pulling down the notification bar
+* 671b088 Automatic translation import
+* 9da4680 Automatic translation import
+
+#### hardware/libhardware/
+* a6d7dab hardware: power: Remove POWER_HINT_LAUNCH_BOOST
+* a9bb3f7 hardware: power: Remove POWER_HINT_AUDIO
+* fcd7a60 Revert "power: Add support for camera preview in powerHAL"
+
+#### packages/apps/CMParts/
+* be502fd Automatic translation import
+* 5745690 CMParts: strings: Fix indentation
+* d0cb33a CMParts: gestures: Specify a qualified user for update broadcast
+* 570b5e5 Automatic translation import
+
+#### packages/apps/Contacts/
+* b59f482 Improve CAF strings
+* 80a82b0 Automatic translation import
+
+#### packages/apps/ContactsCommon/
+* e15f1f5 Automatic translation import
+* 00d6890 Improve CAF strings
+
+#### packages/apps/Dialer/
+* 7cf8f61 Automatic translation import
+* cc91b7a Fix tab layout for DSDA.
+* 2d4800d Automatic translation import
+* dbd2df8 Improve CAF strings
+* a07aadb Automatic translation import
+* 58f308b Automatic translation import
+* f4ee8ae Automatic translation import
+* 6188691 Automatic translation import
+
+#### packages/apps/PhoneCommon/
+* 54ff9b7 Automatic translation import
+* 3fb43dd Automatic translation import
+* 48d0efd Automatic translation import
+* 3082767 Automatic translation import
+* eb4e879 Automatic translation import
+
+#### packages/apps/Settings/
+* 64d21c0 Track RemotePreferenceManager API changes.
+* edde204 Automatic translation import
+
+#### system/extras/
+* b76b440 extras: Remove su, we have our own
+
+#### system/vold/
+* 25ea9c3 vold: Update path to cryptfs_hw
+
+#### vendor/cm/
+* f5eeaeb Revert "Revert "Gello: fixed""
+* 0ce00d1 Update github changelog
+
+#### vendor/cmsdk/
+* e0fde0e Automatic translation import
+
+#### vendor/lge/
+* f209cca msm8996: Add aptX blobs
+
+02-15-2017
+============
+
+#### bootable/recovery/
+* 34a4e01 Rename process_key to ProcessKey
+* 6d1945e Fix bldr msg file open mode when offset specified
+
+#### external/e2fsprogs/
+* 016c2c7 e2fsck: Add e2fsck_static
+
+#### external/ntfs-3g/
+* 5effca1 Loaded the fuse kernel module with no environment
+
+#### frameworks/base/
+* 614afdb Automatic translation import
+
+#### frameworks/native/
+* 267a2e8 sf: fixes for HWC2
+
+#### hardware/qcom/bootctrl/
+* 0a8485b bootctl: use TARGET_RECOVERY_UPDATER_LIBS macro for linking
+
+#### hardware/qcom/fm/
+* 63717c4 jni: Confine the firmware-load skipping to the actual loading
+
+#### hardware/ril-caf/
+* 927a52d ril: Setting ril to v10 or v11 serves no purpose
+
+#### packages/apps/Settings/
+* 097a5d6 Automatic translation import
+
+#### packages/providers/ContactsProvider/
+* c881eba dbhelper: fix schema disaster from pre-cafrebase repo
+
+#### packages/services/Telephony/
+* aa8becd Telephony: Fix qtistrings
+* 83008b2 Telephony: Fix qtistrings
+
+#### system/bt/
+* e999a15 Revert "Bluetooth-Wipower: Enable WiPower feature."
+
+02-14-2017
+============
+
+#### build/
+* 2714fc8 Merge pull request #24 from j144df/patch-1
+
+#### frameworks/base/
+* 61e27e9 Automatic translation import
+* 3678b35 Correctly Fix SB weather always showing on left
+* fe83a39 Revert "SysUI:Fix Left Weather always showing even when disabled"
+
+#### hardware/qcom/media/
+* c8a7605 media: add missing 8952 symlink
+
+#### packages/apps/Dialer/
+* 72e93d1 Automatic translation import
+
+#### packages/apps/Eleven/
+* abc9ded Automatic translation import
+
+#### packages/apps/OmniSwitch/
+* ac95269 Automatic translation import
+
+#### packages/apps/Recorder/
+* 7a10f08 Automatic translation import
+
+#### packages/apps/Settings/
+* 913acec Automatic translation import
+
+#### packages/apps/SetupWizard/
+* d4cea55 SetupWizard: Part 2: Implement new OOBE using custom wizard manager
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* 2a96249 Automatic translation import
+
+02-13-2017
+============
+
+#### build/
+* 83f8844 Fix the 'full_target'
+
+#### frameworks/base/
+* 2e69c38 QS Stroke: Fix Stroke Not applying with Blur
+* a040914 SysUI:Fix Left Weather always showing even when disabled
+
+#### packages/apps/ResurrectionOTA/
+* cb65b63 Automatic translation import
+
+#### packages/apps/Settings/
+* 6acd833 Settings: Update maintainer lists for Android One 2'nd (seed) (#693)
+* ef24de0 Automatic translation import
+* 9204aaa Scrollable Small QS tiles [2/2]
+
+#### packages/apps/SetupWizard/
+* 3593f03 SetupWizard: Part 1: Initial wizard manager conversion
+
+#### vendor/qcom/opensource/cryptfs_hw/
+* d1e1e0b cryptfs_hw: Remove keymaster partition check
+* 8d14c48 Cleanup temporarily stored passwords
+* 3494750 cryptfs_hw: update the listener property with keymaster property
+* f09ae18 Wait for QSEECom listeners before calling KMS APIs
+* 55fd88f cryptfs_hw: Tie HW FDE keys with keymaster
+* 7223712 cryptfs_hw: Update module as per vold project
+* 0e64543 cryptfs_hw: add string.h
+* 0b9f6f6 cryptfs_hw: Update APIs to take old password
+* 53ae3b4 cryptfs_hw: Add support for wipe_key routine
+* 1ecf84f Adding support for eMMC based ICE
+* 2fc15a0 Adding support of Inline Crypto Engine (ICE)
+* d48e2a0 qcom/common: Added O_NOFOLLOW to avoid follow the symlink
+* 9cccca7 Port cryptfs_hw library to 64bit platform
+* cba11e0 Wrong function pointer usage
+* a0624c1 Place library in vendor folder on device
+* ffb80b2 vold: HW based device encryption
+
+02-12-2017
+============
+
+#### android/
+* ba558c7 Track Fw Opt Cards
+
+#### frameworks/base/
+* f76c902 Auto calculate quickbar tiles amount
+* 78aa731 All tile scroller for quickbar settings [1/2]
+* ec9021c OneHandMode Recents: fix NPE
+* f662091 Change long click actions on some QS tiles
+* f758029 Make Power Menu Emergency Panel Optional [1/2]
+
+#### packages/apps/AudioFX/
+* c591503 Automatic translation import
+
+#### packages/apps/CMBugReport/
+* dafa10b Automatic translation import
+
+#### packages/apps/CMFileManager/
+* aaf23a3 Automatic translation import
+
+#### packages/apps/Eleven/
+* 7a9e5c2 Automatic translation import
+
+#### packages/apps/Exchange/
+* e458fec Automatic translation import
+
+#### packages/apps/FMRadio/
+* cf589ab Automatic translation import
+
+#### packages/apps/Gello/
+* 3a2438d Automatic translation import
+
+#### packages/apps/Profiles/
+* f1c23ad Automatic translation import
+
+#### packages/apps/Recorder/
+* e4e79ce Automatic translation import
+
+#### packages/apps/Settings/
+* 4ba55e3 Settings: Make Power Menu Emergency Panel Optional [2/2]
+* 8bfdafe Slim Recents squash [2/2]
+
+#### packages/apps/SetupWizard/
+* 167ac2c Automatic translation import
+
+#### packages/apps/ThemeChooser/
+* 7817771 Automatic translation import
+
+#### packages/apps/Trebuchet/
+* 6a669a3 Automatic translation import
+
+#### packages/providers/DataUsageProvider/
+* 60282f9 Automatic translation import
+
+#### packages/providers/ThemesProvider/
+* dd7ff50 Automatic translation import
+
+#### packages/providers/WeatherProvider/
+* 68a67f3 Automatic translation import
+
+#### packages/services/CMAudioService/
+* 00e085e Automatic translation import
+
+#### packages/services/LiveLockScreenService/
+* 226fe91 Automatic translation import
+
+#### packages/services/ThemeManagerService/
+* 0f49c72 Automatic translation import
+
+#### packages/services/WeatherService/
+* b64184a Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* 847f472 Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+* 0d0f144 Automatic translation import
+
+02-11-2017
+============
+
+#### bionic/
+* 55db114 linker: Allow only specified non-PIE executables
+* 4e0733d linker: allow text relocations on user builds
+
+#### bootable/recovery/
+* d234593 Fixup custom bootloader msg offset in block misc
+
+#### frameworks/base/
+* a2992fd Slim recents: card expand button: use same color like card text
+* b33bff2 Slim recents: avoid crashes due to different drawable types
+* 1f73bfe Net monitor: fix visual glitch on statusbar expand when autohide enabled
+* a456e73 Slim Recents squash [1/2]
+* a34f371 PhoneWindowManager: add mTopFullscreenOpaqueWindowState null check to fix exception
+* ebce732 Automatic translation import
+* a6c0adc Automatic translation import
+
+#### frameworks/native/
+* cd6c007 Preserve app data if neither ce nor de have xattr user.default
+
+#### hardware/libhardware_legacy/
+* 20cae0c wifi: Import CID_PATH from samsung_macloader.h
+
+#### hardware/qcom/display-caf/msm8916/
+* f5fccd5 hwc: Add src image width and height check in prepare
+
+#### packages/apps/CMParts/
+* d4ebc3c Automatic translation import
+* dd5649c Add "Letter V" string
+* 18e8f3c Automatic translation import
+* c3b79a3 CMParts: Clean out imports
+* 602e9da CMParts: Simplify long press for torch strings
+* ae24efd Automatic translation import
+* 040a398 CMParts: Long-press power while display is off for torch
+* dac39d7 CMParts: Clean up status bar settings class
+* 5195eed CMParts: power: Resolve 'automatic optimization' state issues
+* e4ab72a CMParts: Update quick QS pull-down entries for RTL layouts
+* 47abb9a CMParts: Don't update status bar clock summary on RTL
+* 9730b04 CMParts: Update quick QS pull-down summary on pref change
+* b306390 Automatic translation import
+
+#### packages/apps/Calendar/
+* f42d5a7 Calendar: Fix check for things to import
+
+#### packages/apps/CellBroadcastReceiver/
+* b692982 Alert tone does not play for ETWS
+
+#### packages/apps/ResurrectionStats/
+* a03b489 Automatic translation import
+
+#### packages/apps/Settings/
+* ca9894c Settings: Set ADB notification on by default
+* f59bbb3 Automatic translation import
+* d4fea05 Automatic translation import
+* ce22a04 wifi: Allow configuration of country code for wifi
+* 0088d36 Automatic translation import
+* 831d38c Show proper notification volume icon on non-voice capable devices
+* 6c7724f SoundSettings: Always initialize mRingOrNotificationPreference
+* 28dda6d Revert "SoundSettings: Prevent NPE due to linked volumes change"
+* 9f0e4db Automatic translation import
+* f3720bf Automatic translation import
+* 025a209 Update resurrection_device_maintainers_strings.xml (#691)
+* 8740935 Spelling and grammar fixes (#692)
+* 149c84a Automatic translation import
+* 3314d13 Update resurrection_device_maintainers_strings.xml (#690)
+
+#### packages/apps/Snap/
+* b202eb4 Snap: Replace noisy debug line
+* 808f559 Snap: VideoModule: Restore check on mPreferenceRead
+* 670944b Snap: VideoModule: Update flash status on preference change
+* 3ff3328 Snap: Fix filtering of unsupported HFR/HSR modes
+* 7cd1d08 Snap: Fix max brightness and power shutter settings
+* bb7712e Snap: Fix NPE when parameters.getSupportedVideoSizes() is null
+* f894729 Fix shutter button pressed state tracking issues.
+* 7bfb43e Snap: store module index
+* 413e9bd Fix thumbnail sometimes not being shown initially in video mode.
+* 33c7742 Snap: VideoModule: properly update focus settings when switching between cameras
+* c2d3695 Snap: Fix zoom in video mode
+
+#### packages/apps/WallpaperPicker/
+* 10360a6 WallpaperPicker: bring back cm wallpapers
+* 3e595e6 WallpaperPicker: materialize delete icon
+* 3210ccd WallpaperPicker: update icon
+
+#### packages/providers/TelephonyProvider/
+* d5e1823 Revert "telephony: Initialize USER_NETWORK_MODE with DEFAULT_NW_MODE"
+* 68c7c44 telephony: Initialize USER_NETWORK_MODE with DEFAULT_NW_MODE
+
+#### vendor/cm/
+* d047c47 tasks: dt: add flag to optionally compress dt with lz4
+* 8ff1fa6 qcom: Permit dumpstate to run "ip xfrm policy"
+* d0a6f00 LatinIME: re-add (fixed) Hungarian dictionary
+* aeb15c6 cm: charger: Correct res_create_multi_display_surface() usage
+* efd20f4 vendor: fix lunch combo name to lineage
+* 269c418 cm: Enable long-press on power in suspend by default
+* 8e3af74 apns: Add SingTel hi!card sim APN
+* 1dc3076 apns: Update H2O Wireless for LTE
+
+#### vendor/cmsdk/
+* 3a3dd65 Automatic translation import
+* ac95f68 Automatic translation import
+* b55d5ca CMSDK: Add long-press power for torch CMSetting
+* 3a2c4be cmsdk: PerformanceManager: Update POWER_HINT_SET_PROFILE value
+* 0f02f65 Automatic translation import
+
+02-10-2017
+============
+
+#### external/jemalloc/
+* 836d536 Avoid a potential innocuous compiler warning.
+
+#### frameworks/base/
+* 4350975 Automatic translation import
+
+#### hardware/broadcom/libbt/
+* 0034a25 libbt: Import CID_PATH from samsung_macloader.h
+
+#### hardware/qcom/audio-caf/msm8974/
+* f67da5f hal: Remove duplicated HFP if branch (mismerge)
+
+#### packages/apps/CMFileManager/
+* 71b49b8 Automatic translation import
+
+#### packages/apps/Calendar/
+* bc4acc4 Calendar: Prevent NPE
+
+#### packages/apps/OmniSwitch/
+* 79fee4f Automatic translation import
+
+#### packages/apps/Recorder/
+* ef8d286 Automatic translation import
+
+#### packages/apps/ResurrectionOTA/
+* c9494b2 Automatic translation import
+
+#### packages/apps/Settings/
+* 822828b Automatic translation import
+* 69e300c Update Zenfone Laser/Selfie (Device Name) (#687)
+* 99930d2 add-device-Z00D (#686)
+
+#### packages/apps/SetupWizard/
+* 3d3519e Automatic translation import
+
+#### packages/apps/Snap/
+* 21b3a73 Snap: Remove touch AF/AEC option
+
+#### packages/apps/WallpaperPicker/
+* e15b638 WallpaperPicker: bump gradle
+
+#### packages/inputmethods/LatinIME/
+* c2de221 LatinIME: Add Hungarian QWERTY, enable predictive dictionary
+
+#### packages/providers/ContactsProvider/
+* 54846fc Don't suspend aggregation for new contacts
+
+#### system/core/
+* dddec45 debuggerd: Rebrand tombstone header to LineageOS
+
+#### system/media/
+* 0211728 audio_route: Add support to set complete byte arrays
+
+#### system/sepolicy/
+* 73cda83 Permit dumpstate to run "ip xfrm policy".
+
+#### vendor/lge/
+* fb78e0d msm8996: Initial common blobs (also delete duplicate g5-common blobs)
+* 29ad76d g5: Add qdcm calibration XML
+
+02-09-2017
+============
+
+#### frameworks/base/
+* e54b12e Automatic translation import
+
+#### packages/apps/Dialer/
+* f38a596 Automatic translation import
+
+#### packages/apps/OmniSwitch/
+* 8c9d49e Automatic translation import
+
+#### packages/apps/Recorder/
+* 3e48f73 Automatic translation import
+
+#### packages/apps/ResurrectionStats/
+* 4d54b14 Automatic translation import
+
+#### packages/apps/Settings/
+* 32e27a4 Settings: Fix pulse activity typo
+* 8a2329e Automatic translation import
+
+02-08-2017
+============
+
+#### frameworks/base/
+* f022a1a Automatic translation import
+
+#### packages/apps/AudioFX/
+* 30d2aeb Automatic translation import
+
+#### packages/apps/CMFileManager/
+* 81c2530 Automatic translation import
+
+#### packages/apps/Dialer/
+* 13a84eb Automatic translation import
+
+#### packages/apps/Gello/
+* 2f31869 Automatic translation import
+
+#### packages/apps/OmniSwitch/
+* 1048d53 Automatic translation import
+
+#### packages/apps/Recorder/
+* 63a278b Recorder: add play action to notifications
+* 27187eb Recorder: bump support libraries
+* d32b39e Recorder: cleanup
+* 7c28074 Correctly unregister shared preference change listener.
+* a645771 Recorder: add latest records cards
+* c3f7f8d Recorder: fix broken services on activity changes
+* 3843e8d Recorder: fix mic request for screen recorder
+* 61901ce Avoid fragment state management issues.
+
+#### packages/apps/ResurrectionOTA/
+* 9294873 Automatic translation import
+
+#### packages/apps/ResurrectionStats/
+* b4114dd Automatic translation import
+
+#### packages/apps/Settings/
+* aa880de Add Pixel XL maintainer
+* ca94032 Add ZUK Z1 (ham) maintainer (#685)
+* 337d35c Automatic translation import
+
+#### packages/apps/SetupWizard/
+* 42a4e55 Automatic translation import
+
+#### packages/apps/ThemeChooser/
+* 36c1213 Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* a6fc233 Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+* 655b92a Automatic translation import
+
+#### vendor/lge/
+* 8f6e201 g3-common: qsee: D8553C blobs
+
+02-07-2017
+============
+
+#### build/
+* 48a868b Merge pull request #23 from Chippa-a/nougat
+* 2aa1505 dumpvar: Remove unnecessary print variables
+
+#### frameworks/base/
+* 9ddcfe6 SystemUI: Fix the unlock sound played repeatedly
+* 32d7696 policy: don't allow app switch/recents key to be pressed on lockscreen
+* 04d32e6 Automatic translation import
+* 8df27c4 Automatic translation import
+* 663b383 Automatic translation import
+
+#### packages/apps/OmniSwitch/
+* 94f9af9 Automatic translation import
+
+#### packages/apps/Settings/
+* dee8e9e Add OnePlus 3T maintainer
+* 5720018 Add maintainer for Lenovo A6000 #2 (#683)
+* 5875c57 Add Maintainer for Lenovo A6000 (#682)
+* 0a2b2ba Automatic translation import
+
+02-06-2017
+============
+
+#### device/qcom/common/
+* fc48325 extractors: Add aptX & aptXHD to confirmed platforms
+
+#### frameworks/base/
+* c9d5631 Automatic translation import
+
+#### packages/apps/Dialer/
+* 3f312b7 Themes: Expose hardcoded layout and style colors
+
+#### packages/apps/OmniSwitch/
+* fa25470 Automatic translation import
+
+#### packages/apps/ResurrectionOTA/
+* 0c80361 Automatic translation import
+
+#### packages/apps/ResurrectionStats/
+* e6181d2 Automatic translation import
+
+#### packages/apps/Settings/
+* 6206fd3 Automatic translation import
+* 65aed57 Automatic translation import
+
+#### system/extras/su/
+* d30f4ad su: don't crash on SIGPIPE while passing return code to client
+
+02-05-2017
+============
+
+#### android/
+* 704e862 Track our omnistyle repo
+
+#### frameworks/base/
+* 4b786e0 SystemUI: PowerNotification: Add up button to fragment
+* c750458 Use STREAM_RING on non-voice capable devices
+* 9ea3487 Statusbar: Gracefully adapt 3Minit Battery hook for AOSP
+* 997d2fd Add 3Minit battery mod
+* 3dda028 Automatic translation import
+* 8e8d6ed Automatic translation import
+* d43c8cf Automatic translation import
+* b46742b Bluetooth: Fix Default BT turn on
+* 0ed31d6 AlarmsBlocker [1/2] Made by @faust93. Based on WakelockBlocker by @maxwen
+* 16c5df6 Disable touch slop for generated gesture events
+* 5584f2d Fix for reboot due to Volume State not updated in callback
+* 087c632 Fix recents thumbnails for one hand mode
+
+#### packages/apps/AudioFX/
+* 0e6e947 Automatic translation import
+
+#### packages/apps/CMBugReport/
+* 4fcd796 Automatic translation import
+
+#### packages/apps/CMFileManager/
+* 08bd02b Automatic translation import
+
+#### packages/apps/CMParts/
+* f4a35de Touchscreen gestures: remove CM Setup Wizard dependency
+
+#### packages/apps/Eleven/
+* ee30de9 Automatic translation import
+
+#### packages/apps/Gello/
+* 3089d2f Automatic translation import
+
+#### packages/apps/OmniStyle/
+* c4fcb7e OmniStyle: add creator meta data for header packs
+
+#### packages/apps/OmniSwitch/
+* a0c4546 Automatic translation import
+
+#### packages/apps/ResurrectionStats/
+* 1ab16d0 Automatic translation import
+
+#### packages/apps/Settings/
+* ff2bf08 Add alarm blocker summary
+* e6badf8 Update rr_strings.xml (#681)
+* f2626e5 Edit themes dashboard position
+* 7b32afb Add LG G5 Int & T-Mobile maintainer (#680)
+* b65923f Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+* 16188b4 Automatic translation import
+
+#### packages/apps/SetupWizard/
+* 54311c0 Automatic translation import
+
+#### packages/apps/ThemeChooser/
+* 7ca2ce5 Automatic translation import
+
+#### packages/apps/Trebuchet/
+* aaa3783 Automatic translation import
+
+#### packages/providers/DataUsageProvider/
+* 6981666 Automatic translation import
+
+#### packages/services/CMAudioService/
+* 6dad83d Automatic translation import
+
+#### packages/services/ThemeManagerService/
+* d345819 Automatic translation import
+
+#### packages/services/WeatherService/
+* d3f16b2 Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/WundergroundWeatherProvider/
+* 97dc85c Automatic translation import
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+* 1efd29a Automatic translation import
+
+02-04-2017
+============
+
+#### bionic/
+* b1190bb Revert "Revert "Reenable support for non-PIE executables""
+
+#### external/DUtils/
+* 1ad724b Add one handed mode action [1/2]
+* 5f2d876 WiFi Hotspot: use new on/off logic
+
+#### packages/apps/DUI/
+* c98f311 Slidetouch listener only on navbar view
+* 1206ff3 Add one handed mode action [2/2]
+
+#### packages/apps/Gallery2/
+* ec7e4e6 Gallery2: Fix crash when using locations view
+
+#### packages/apps/OmniSwitch/
+* d8226ae Automatic translation import
+* f4a2c03 Automatic translation import
+
+#### packages/apps/Settings/
+* e3ccc67 Automatic translation import
+* 522fcd2 Automatic translation import
+* 7109caa AlarmsBlocker [2/2]
+* b6d44d4 Fix a mismerge
+
+02-03-2017
+============
+
+#### frameworks/base/
+* fecfcc9 Revert "telephony: Add state check for LteOnCdma to isGsm and isCdma"
+* 49a197b Revert "Enable mobile data always on."
+* dbe0d84 Revert "Revert "Framework: Add regional carrier bootanimation""
+* 6d90eb7 Revert "Revert "Support AOSP service to scan carrier resources""
+
+02-02-2017
+============
+
+#### android/
+* 63bdcf4 Track our external google
+* 05fe737 android: switch to LineageOS recorder
+
+#### device/qcom/common/
+* b136210 power: Remove POWER_HINT_AUDIO
+
+#### external/toybox/
+* 39eedbf cp: set rc properly
+
+#### frameworks/base/
+* 4468628 GlobalScreenShot:Fix Unused Calls
+* 2a042d7 Update qs settings on dpi change
+* c5e40ab [1/2] base: SystemUI: header pack config enhancements
+* eb8041d Fix playing screenshot's sound when camera's sounds off
+* 9666bc2 PhoneWindowManager: Support multiple key handlers
+* adf3c54 SystemUI: Never link nofication volume on non-voice capable devices
+* 96e38eb core: more descriptive vendor image mismatch message
+* dbcaebf Revert "Frameworks: fix living wallpaper exception when reboot"
+* 467a7b7 Merge pull request #175 from micky387/nougat
+* 26a7bb2 Fix Battery Text Visibility issues (update)
+
+#### packages/apps/AudioFX/
+* 68476c6 Automatic translation import
+
+#### packages/apps/CMBugReport/
+* b23a2ac Automatic translation import
+
+#### packages/apps/CMFileManager/
+* ff821d4 Automatic translation import
+
+#### packages/apps/CMParts/
+* 6694859 CMParts: Move status bar tap to sleep pref to Settings
+* 9665e1d CMParts: Add touchscreen gesture settings and keyhandler
+* e8261dd CMParts: buttons: Remove double tap power for camera setting
+* fe53ebe Automatic translation import
+
+#### packages/apps/Dialer/
+* 3ea64e3 Automatic translation import
+
+#### packages/apps/Eleven/
+* bb82223 Automatic translation import
+
+#### packages/apps/Gello/
+* 794fdd5 Automatic translation import
+
+#### packages/apps/Settings/
+* 049d0fc Remove cube in, cube out animations for configurations tabs
+* 6c02870 Settings: Add status bar tap to sleep pref to gestures
+* b881ecf Settings: gesture: Add CMParts touchscreen gesture settings
+
+#### packages/apps/SetupWizard/
+* fdf1c87 Automatic translation import
+* cd34a58 Build org.cyanogenmod.platform.internal as static library
+
+#### packages/apps/ThemeChooser/
+* ed41164 Automatic translation import
+
+#### packages/apps/Trebuchet/
+* 3778f4d Automatic translation import
+
+#### packages/providers/DataUsageProvider/
+* be55cf6 Automatic translation import
+
+#### packages/providers/WeatherProvider/
+* 67824b6 Automatic translation import
+
+#### packages/services/CMAudioService/
+* 9d998c1 Automatic translation import
+
+#### packages/services/ThemeManagerService/
+* 149b09d Automatic translation import
+
+#### packages/services/WeatherService/
+* dc3564a Automatic translation import
+
+#### system/bt/
+* b42beca HID: Prevent crash by Cancelling SDP during cleanup
+
+#### vendor/cm/
+* ef85831 cm: overlay: Settings: Enable gesture settings
+* f030ff9 cm: add LineageOS recorder
+* 2043535 Revert "Gello: fixed"
+
+#### vendor/cmsdk/
+* b26d017 cmsdk: Add touchscreen gestures support
+* 51dc7e3 cmsdk: Add DeviceKeyHandler overlays
+* 8a30161 Automatic translation import
+* 3b1686c Automatic translation import
+
+02-01-2017
+============
+
+#### bootable/recovery/
+* 2b0ba18 Fix compile Wreorder warning
+
+#### frameworks/av/
+* cd72c75 libstagefright: Restore AOSP's handling of 24/32-bit wav files
+
+#### frameworks/native/
+* 4ed04ff gralloc1: Acquire mutex early in release
+
+#### frameworks/opt/hardware/
+* 3a49878 cmhw: Add TouchscreenGestures API
+
+#### hardware/qcom/audio-caf/msm8916/
+* 8059aed     audiopolicy: Update voice concurrency support for 8916
+
+#### hardware/qcom/display-caf/msm8960/
+* f27984c hwc: clear HWC_SKIP_LAYER flag for all layers under opaque layer
+
+#### hardware/qcom/media-caf/msm8960/
+* 3e34f24 mm-video: Handle async_message_thread error
+
+#### packages/apps/ResurrectionStats/
+* ebde8fd Stats: Constants: v5.8.1
+
+#### packages/apps/Settings/
+* 4de12cc Add Xiaomi Mi5 (gemini) maintainer (#679) (#679)
+* 008772f Add themes to dashboard
+* a387ea0 Add Zenfone 5 (T00F) maintainer (#678)
+* cc0ec1e Settings: Expose configutations fab button colors
+* 511b2c0 withdraw name from maintainer for htc10 and z3 (#677)
+
+#### packages/apps/SetupWizard/
+* 4e218b6 Remove Google Play Services dependency
+
+#### packages/services/Telecomm/
+* acbfb3b CallAudioModeStateMachineTest: fix compilation
+
+#### packages/services/Telephony/
+* 2980576 MobileNetworkSettings: Read and write USER_NETWORK_MODE
+
+#### vendor/cm/
+* 5064a4c Update github changelog
+
+#### vendor/lge/
+* 004dcf8 hammerheadcaf: Update blobs
+
+01-31-2017
+============
+
+#### android/
+* f25eb12 manifest: update for OMS
+
+#### build/
+* 13ab327 Always copy bootable images in BOOTABLE_IMAGES/
+* 97c2e92 Revert "releasetools: Don't extract BOOTABLE_IMAGES when signing target files"
+* 5b8790b Move ro.bootimage.build.fingerprint to build.prop
+
+#### frameworks/base/
+* b4498c2 Merge remote-tracking branch 'private/oms-final' into nougat
+* 0d693b9 core: remove duplicate symbol
+* 29e5562 SystemUI: Disable statusbar superuser indicator by default
+* daa2993 Base: Fix hot reboot issues that caused by color HEX
+* f6adaf4 Base: Update colors for RR OMS (1/2)
+* ea6e1cb Expose external qs tile tint color
+* a10f3df PackageSettingBase: underp setUserState()'s parameters
+* 1718a1d Rework dashboard settings [2/2]
+* 280bbd0 Dashboard summaries double lines toggle [1/2]
+* 8fe80d8 Dashboard tile layout config [2/2]
+* dc80299 FWB: Dasboard customizations
+* f4d2730 doze: allow grayscale even if invert boolean is false
+* 0f9165d SystemUI: Expose switch bar title
+* f596124 OMS: Introduce MODIFY_OVERLAYS permission for user apps
+* da09181 Themes: Expose QS battery
+* f243d40 OMS7-N: ApplicationsState: add filter for Substratum icon overlays [1/2]
+* 4224259 OMS7-N: ApplicationsState: add filter for Substratum overlays [1/2]
+* 8001a84 N-Extras: AudioService: Allow system effect sounds to be themed
+* 517557f N-Extras: Add dynamic theme fonts support
+* 29fc612 N-Extras: Add dynamic theme BootAnimation support
+* 9edecbb SystemUI: Use own drawables for QS expand icon
+* 2ea5fe9 OMS7 compatible 'Ambient notification inversion'
+* 2743ee8 Allow prevention of doze notification color inversion
+* 0f30012 Notification dynamic colors bool compatible with OMS7
+* f1fbc9d Notifications: Expose a bool to disable dynamic colors
+* e8bdc24 Themes: Expose various QuickSettings text colors
+* 0650141 Allow custom alpha for notification shade bg color
+* d168925 SystemUI: Expose QS edit item decoration background color
+* 4587ae1 Themes: Allow Navbar ripple color to be themed
+* a083316 Themes: Allow Permission Icons to be fully themed
+* 87a0e02 Themes: Allow Immersive cling colors to be fully themed
+* 9c07b9f Themes: Expose resolver hardcoded colors
+* e510c1a OMS7-N: Implement multi-target enable/disable and disable-all [11/11]
+* c214769 OMS7-N: Do not enforce code policy limiting overlay installation [10/11]
+* 4f371d1 OMS7-N: Persistence on boot through OverlayManagerServiceImpl [9/11]
+* a099049 OMS7-N: Disable Zygote preloaded drawables [8/11]
+* 8fefb60 OMS7-N: installd: add command 'rmidmap' [7/11]
+* 0cf2542 OMS7-N: Fix memory leak during idmap creation [6/11]
+* b3416be OMS7-N: idmap: suppress print for padded resources [5/11]
+* d9c7f5e OMS7-N: Set EXTRA_REPLACING correctly in ACTION_PACKAGE_ADDED [4/11]
+* 09a364e OMS7-N: Integrate OverlayManagerService into framework [3/11]
+* 89fad15 OMS7-N: Introduce the OverlayManagerService [2/11]
+* 467768a OMS7-N: Support tagging resources as OK to overlay [1/11]
+* 99dee22 Revert "Support AOSP service to scan carrier resources"
+* 4921eda Revert "Framework: Add regional carrier bootanimation"
+* 98c518d Correctly name LID_STATE_CHANGED broadcast
+* 1233532 Automatic translation import
+* 9e9b22f Disable lock screen blur by default
+* 6e5987b Revert "Add overlay option for Settings.System.ACCELEROMETER_ROTATION_ANGLES"
+* f59351a Fix incorrect FIFO cgroup assignment.
+* 4af5174 Make sure Zygote is running at process priority 0 after VM has started.
+* 9c14710 Automatic translation import
+
+#### hardware/broadcom/libbt/
+* 5f404c9 libbt: Remove unnecessary config ifdef
+
+#### hardware/qcom/display-caf/msm8996/
+* c372a9b Revert "display: Add color metadata definition"
+* d714c70 Revert "sdm: Use ColorMetadata in SDM"
+
+#### hardware/qcom/media-caf/msm8996/
+* 86c766c Revert "mm-video-v4l2: vdec: Support for HDR Info extension"
+* 524280d Revert "mm-video-v4l2: vdec:Metadata for HDR and ColorAspects"
+* bb55321 Revert "mm-video-v4l2: vdec: Convert maximum display luminance in cd/m2"
+
+#### packages/apps/Contacts/
+* b641709 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_Contacts into HEAD
+
+#### packages/apps/ContactsCommon/
+* ff08d44 Merge branch 'nougat' of https://github.com/ResurrectionRemix/android_packages_apps_ContactsCommon into HEAD
+
+#### packages/apps/Dialer/
+* 8c959cc Themes: InCallUI dialpad digits color
+* 09bb139 Themes: Separate background color from text color
+
+#### packages/apps/ExactCalculator/
+* dbaca56 Merge https://github.com/SubstratumResources/platform_packages_apps_ExactCalculator into HEAD
+
+#### packages/apps/PhoneCommon/
+* a2afd1b Merge branch 'n-mr1-oms7' of https://github.com/SubstratumResources/platform_packages_apps_PhoneCommon into HEAD
+
+#### packages/apps/Settings/
+* 697d612 Merge branch 'private/oms' into nougat
+* 97f6e25 Settings: Don't crash in SUW if no talkback service is installed
+* 15a2742 Automatic translation import
+* 2073b35 Settings: Disable lock screen blur by default
+* 53652d9 Handle SubSettings instance leaks in Index.java
+
+#### vendor/cm/
+* d87df53 rr: version 5.8.1
+* 7f4d5c4 apns: Remove differentiation between FreedomPop GSM APNs
+* cd4b865 apns: Correct FreedomPop US LTE APN
+* e035d26 envsetup: Use GNU sed commands if GNU sed is detected
+* acdd10c apns: Add differentiation to FreedomPop Global GSM APN
+* 1239f72 apns: Add FreedomPop US LTE sim APN
+* 5332b34 apns: Correct FreedomPop Global GSM APN
+
+01-30-2017
+============
+
+#### device/qcom/common/
+* 58bf7c3 extractors: Set INITIAL_COPYRIGHT_YEAR
+
+#### packages/apps/Recorder/
+* 8e9a287 Recorder: grant permissions to read opened files to apps started from notifications
+* 29a86fe Recorder: tmp app icon
+* 5231b70 Recorder: update gradle plugin
+
+01-29-2017
+============
+
+#### hardware/qcom/audio-caf/msm8996/
+* 25bbb88 Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996
+* 0c8637a Revert "post proc : volume listener : fix effect release crash"
+
+#### hardware/qcom/display-caf/msm8996/
+* b55e7d6 Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996
+
+#### hardware/qcom/media-caf/msm8996/
+* a0bb242 Merge tag 'LA.UM.5.5.r1-02500-8x96.0' into cm-14.1-caf-8996
+
+#### packages/apps/Settings/
+* a7e4f75 Fix Derp (#676)
+* 0690417 Add missing </PreferenceCategory>
+* 9cf8a21 Added Nougat Maintainer For LeEco Le 2 (s2) (#675)
+* ae17381 Automatic translation import
+
+#### vendor/lge/
+* 1654427 bullhead: remove blobs that are compiled from source
+
+01-28-2017
+============
+
+#### frameworks/base/
+* b5c81a4 Automatic translation import
+
+#### frameworks/opt/cards/
+* d4e4efb Don't depend on org.slim.framework
+
+#### hardware/broadcom/libbt/
+* 4ee210c Broadcom BT: Add support fm/bt via v4l2.
+
+#### hardware/qcom/audio-caf/msm8916/
+* ce91b1e Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.11' into HEAD
+
+#### packages/apps/OmniSwitch/
+* 942cc81 Automatic translation import
+
+#### packages/apps/ResurrectionStats/
+* 3a8d955 Automatic translation import
+
+#### packages/apps/Settings/
+* f19df0f Automatic translation import
+
+#### packages/apps/masquerade/
+* b5b1004 Release 20P: Initiate the caller package checking system
+
+#### vendor/lge/
+* d27f8dc g3-common: Kang hammerhead drm
+
+01-27-2017
+============
+
+#### packages/apps/OmniStyle/
+* 6edea6f [2/2] OmniStyle: header pack config enhancements
+
+#### packages/apps/Settings/
+* 2fc27e7 Add Lenovo Vibe K5 (A6020) (#674)
+* 76e40ef Settings: Update cofigurations fab button background
+
+#### packages/apps/SetupWizard/
+* a0cd247 SetupWizard: Update test app icon
+
+#### vendor/cmsdk/
+* 05c8e52 Merge pull request #9 from sayeed99/nougat
+* 69113e6 cmsdk: cmhw: Deprecate TAP_TO_WAKE feature
 

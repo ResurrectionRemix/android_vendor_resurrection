@@ -43,16 +43,18 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    keyguard.no_require_sim=true \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    ro.com.android.dataroaming=false
+    keyguard.no_require_sim=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
+
+# OMS THEMEINTERFACER
+PRODUCT_PACKAGES += \
+   ThemeInterfacer
+
+# Enable Google Assistant on all devices.
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
 
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -177,7 +179,6 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
-    Launcher3 \
     ResurrectionOTA \
     ResurrectionStats \
     Trebuchet \
@@ -189,9 +190,18 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     LiveLockScreenService \
     WeatherProvider \
-	OmniSwitch \
-    SoundRecorder \
-    Screencast
+    OmniStyle \
+    OmniSwitch \
+    OmniJaws \
+    ThemeInterfacer
+
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
+
+# Copy Magisk zip
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -283,8 +293,13 @@ PRODUCT_BOOT_JARS += \
 ifneq ($(TARGET_BUILD_VARIANT),user)
 PRODUCT_PACKAGES += \
     procmem \
-    procrank \
+    procrank
+
+# Conditionally build in su
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
     su
+endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -292,29 +307,32 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.8.0
-    CM_VERSION := ResurrectionRemix-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+PRODUCT_VERSION = 5.8.2
+ifneq ($(RR_BUILDTYPE),)
+RR_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
+else
+RR_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
- ro.rr.version=$(CM_VERSION) \
- ro.modversion=$(CM_VERSION) \
+ ro.rr.version=$(RR_VERSION) \
+ ro.modversion=$(RR_VERSION) \
+ rr.build.type=$(RR_BUILDTYPE) \
+ Default \
  rr.ota.version= $(shell date -u +%Y%m%d) \
  ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
  ro.romstats.name=ResurrectionRemix \
  ro.romstats.version=$(PRODUCT_VERSION) \
- ro.romstats.tframe=7 
+ ro.romstats.tframe=7
 
-ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
-    PRODUCT_EXTRA_RECOVERY_KEYS += \
-        vendor/cm/build/target/product/security/cm \
-        vendor/cm/build/target/product/security/cm-devkey
-endif
-
-CM_DISPLAY_VERSION := $(CM_VERSION)
+CM_DISPLAY_VERSION := $(RR_VERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.rr.display.version=$(CM_DISPLAY_VERSION)
 
+PRODUCT_EXTRA_RECOVERY_KEYS += \
+  vendor/cm/build/target/product/security/lineage
+ 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/cm/config/partner_gms.mk
 -include vendor/cyngn/product.mk

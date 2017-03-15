@@ -108,12 +108,20 @@ else
       TARGET_PREBUILT_INT_KERNEL_TYPE := zImage
     endif
   endif
+  ifeq ($(TARGET_KERNEL_APPEND_DTB),true)
+    TARGET_PREBUILT_INT_KERNEL_TYPE := $(TARGET_PREBUILT_INT_KERNEL_TYPE)-dtb
+  endif
 endif
 
 TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(TARGET_PREBUILT_INT_KERNEL_TYPE)
 
 # Clear this first to prevent accidental poisoning from env
 MAKE_FLAGS :=
+
+ifeq ($(KERNEL_ARCH),arm)
+  # Avoid "Unknown symbol _GLOBAL_OFFSET_TABLE_" errors
+  MAKE_FLAGS += CFLAGS_MODULE="-fno-pic"
+endif
 
 ifeq ($(KERNEL_ARCH),arm64)
   # Avoid "unsupported RELA relocation: 311" errors (R_AARCH64_ADR_GOT_PAGE)
@@ -134,16 +142,6 @@ else
     KERNEL_ADDITIONAL_CONFIG_SRC := /dev/null
 endif
 
-## Do be discontinued in a future version. Notify builder about target
-## kernel format requirement
-ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
-ifeq ($(BOARD_USES_UBOOT),true)
-        $(error "Please set BOARD_KERNEL_IMAGE_NAME to uImage")
-else ifeq ($(BOARD_USES_UNCOMPRESSED_BOOT),true)
-        $(error "Please set BOARD_KERNEL_IMAGE_NAME to Image")
-endif
-endif
-
 ifeq "$(wildcard $(KERNEL_SRC) )" ""
     ifneq ($(TARGET_PREBUILT_KERNEL),)
         HAS_PREBUILT_KERNEL := true
@@ -162,7 +160,7 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
         $(warning * THIS IS DEPRECATED, AND WILL BE DISCONTINUED                *)
         $(warning * Please configure your device to download the kernel         *)
         $(warning * source repository to $(KERNEL_SRC))
-        $(warning * See http://wiki.cyanogenmod.org/w/Doc:_integrated_kernel_building)
+        $(warning * See http://wiki.lineageos.org/w/Doc:_integrated_kernel_building)
         $(warning * for more information                                        *)
         $(warning ***************************************************************)
         FULL_KERNEL_BUILD := false

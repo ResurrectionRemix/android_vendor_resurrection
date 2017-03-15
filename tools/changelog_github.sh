@@ -3,7 +3,27 @@
 # like this:
 # https://github.com/bhb27/android_vendor_crdroid/blob/change_temp/Changelog.md
 # file.md can work with more data or have more lines then a page wiki
-. $ANDROID_BUILD_TOP/vendor/cm/tools/colors
+# Specify colors utilized in the terminal
+    red=$(tput setaf 1)             #  red
+    grn=$(tput setaf 2)             #  green
+    ylw=$(tput setaf 3)             #  yellow
+    blu=$(tput setaf 4)             #  blue
+    ppl=$(tput setaf 5)             #  purple
+    cya=$(tput setaf 6)             #  cyan
+    txtbld=$(tput bold)             #  Bold
+    bldred=${txtbld}$(tput setaf 1) #  red
+    bldgrn=${txtbld}$(tput setaf 2) #  green
+    bldylw=${txtbld}$(tput setaf 3) #  yellow
+    bldblu=${txtbld}$(tput setaf 4) #  blue
+    bldppl=${txtbld}$(tput setaf 5) #  purple
+    bldcya=${txtbld}$(tput setaf 6) #  cyan
+    txtrst=$(tput sgr0)             #  Reset
+    rev=$(tput rev)                 #  Reverse color
+    pplrev=${rev}$(tput setaf 5)
+    cyarev=${rev}$(tput setaf 6)
+    ylwrev=${rev}$(tput setaf 3)
+    blurev=${rev}$(tput setaf 4)
+    normal='tput sgr0'
 # input variables set the below the rest must be automatic
 source_tree="RR/"; #path here must be inside home directory
 changelog_path_name=vendor/cm/CHANGELOG.mkdn #changelog file path/name.extension
@@ -23,20 +43,22 @@ touch $Changelog
 
 # ask for days and version
 echo ""
-echo ${cya}"〉 Generating $source_name (for last 10 days) Changelog..\n"${txtrst}
+echo ${cya}" ▼ Generating (for last 30 days) github format changelog.."${txtrst}
+echo ""
 echo >> $Changelog;
-echo "# $source_name Version 5.8.0 Changelog"    >> $Changelog;
+echo "# $source_name Version 5.8.2 Changelog"    >> $Changelog;
 echo '====================================================' >> $Changelog;
 echo >> $Changelog;
 
 cd $HOME/$source_tree
 
-for i in $(seq 10);
+for i in $(seq 30);
 do
 export After_Date=`date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
 	export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
-	echo ${ylw}"〉 Generating day number:$i $Until_Date.."${txtrst}
+	echo ""
+	echo ${ylw}" 〉 Generating day number $i ▪ $Until_Date.."${txtrst}
 	source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date');
 
 	if [ -n "${source##+([:space:])}" ]; then
@@ -57,5 +79,7 @@ then
 	echo "$(cat $Temp_Changelog)\n$(cat $Changelog)" > $Changelog
 	rm -f $Temp_Changelog
 fi
-
-echo ${grn}"\n√ Changelog generated\n"${txtrst}
+echo ""
+echo ${grn}" √ Changelog successfully generated."${txtrst}
+echo ""
+echo ""

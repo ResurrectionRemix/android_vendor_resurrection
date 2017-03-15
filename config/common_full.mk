@@ -3,6 +3,6 @@ $(call inherit-product, vendor/cm/config/common.mk)
 
 PRODUCT_SIZE := full
 
-# Themes
+# Recorder
 PRODUCT_PACKAGES += \
-    HexoLibre
+    Recorder
