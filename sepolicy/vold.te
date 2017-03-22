@@ -10,6 +10,9 @@ allow vold fuse_device:chr_file rw_file_perms;
 # NTFS-3g wants to drop permission
 allow vold self:capability { setgid setuid };
 
+# Allow vold to mount public volumes other than vfat
+allow vold mnt_media_rw_stub_file:dir r_dir_perms
+
 # Vold can also run as minivold in the rootfs
 recovery_only(`
   allow vold rootfs:dir { add_name write };
