@@ -51,7 +51,10 @@ echo -e "";
 echo -e ${cya}" ▼ Type a number"${txtrst}
 echo -e "";
 # use 'export days_to_log=5' before '. build/envsetup.sh' were 5 is days to log
-if [ -z $days_to_log ];then
+if [ -f $source_tree/conf ];then
+source $source_tree/conf
+read -r -t $timer $days_to_log
+elif [ -z $days_to_log ];then
 read -r -t 30 days_to_log || days_to_log=7
 fi
 echo >> $Changelog;
@@ -68,16 +71,10 @@ k=$(expr $i - 1)
 	export Until_Date=`date --date="$k days ago" +%m/%d/%Y`
     echo ""	
 	echo ${blu}" 〉 Generating day number $i ▪ $Until_Date.."${txtrst}
-	source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date');
-
-	if [ -n "${source##+([:space:])}" ]; then
-
 		echo " ▼ $Until_Date" >> $Changelog;
 		echo '' >> $Changelog;
 		repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | sed 's/^$/#EL /' | sed 's/^/ ▪ /' | sed 's/ ▪ #EL //' >> $Changelog
 		echo >> $Changelog;
-	fi
-
 done
 
 sed -i 's/* Project /▼ /g' $Changelog

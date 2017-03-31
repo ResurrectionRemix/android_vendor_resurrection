@@ -45,7 +45,12 @@ echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
 $normal
+if [ -f $ANDROID_BUILD_TOP/conf ];then
+source $ANDROID_BUILD_TOP/conf
+read -t $timer askvariant
+else
 read -t 30 askvariant
+fi
 sleep 1
 if [ "$askvariant" == "1" ]
 then
