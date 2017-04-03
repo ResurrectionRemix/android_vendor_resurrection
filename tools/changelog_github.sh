@@ -65,7 +65,7 @@ k=$(expr $i - 1)
 
 		echo "$Until_Date" >> $Changelog;
 		echo '============' >> $Changelog;
-		repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | sed 's/^$/#EL /' | sed 's/^/* /' | sed 's/* #EL //' >> $Changelog
+		repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | grep -v "Automatic translation import" | sed 's/^$/#EL /' | sed 's/^/* /' | sed 's/* #EL //' >> $Changelog
 		echo >> $Changelog;
 	fi
 
