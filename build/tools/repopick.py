@@ -268,6 +268,10 @@ if __name__ == '__main__':
             continue
 
         change = int(change)
+
+        if patchset is not None:
+            patchset = int(patchset)
+
         review = next((x for x in reviews if x['number'] == change), None)
         if review is None:
             print('Change %d not found, skipping' % change)
@@ -286,7 +290,7 @@ if __name__ == '__main__':
         mergables[-1]['id'] = change
         if patchset:
             try:
-                mergables[-1]['fetch'] = [x['fetch'] for x in review['revisions'] if x['_number'] == patchset][0]
+                mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
                 mergables[-1]['id'] = '{0}/{1}'.format(change, patchset)
             except (IndexError, ValueError):
                 args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
@@ -347,7 +351,7 @@ if __name__ == '__main__':
 
         # Print out some useful info
         if not args.quiet:
-            print('--> Subject:       "{0}"'.format(item['subject']))
+            print('--> Subject:       "{0}"'.format(item['subject'].encode('utf-8')))
             print('--> Project path:  {0}'.format(project_path))
             print('--> Change number: {0} (Patch Set {0})'.format(item['id']))
 
