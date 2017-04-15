@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-     Copyright 2016 The ??? Project
+<!-- Copyright (C) 2017 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- When true enable gesture setting. -->
-    <bool name="config_gesture_settings_enabled">true</bool>
-
-    <!-- If the Storage Manager settings are enabled. -->
-    <bool name="config_storage_manager_settings_enabled">true</bool>
-
-    <!-- Does the device allow updating the recovery. -->
-    <bool name="config_enableRecoveryUpdater">false</bool>
-</resources>
+<config>
+    <!-- Email app must always have network access for IMAP IDLE. -->
+    <allow-in-power-save package="com.android.email" />
+</config>
