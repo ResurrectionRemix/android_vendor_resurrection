@@ -25,13 +25,17 @@
     blurev=${rev}$(tput setaf 4)
     normal='tput sgr0'
 # input variables set the below the rest must be automatic
-source_tree="RR/"; #path here must be inside home directory
+source_tree="${ANDROID_BUILD_TOP}"; #path here must be inside home directory
 changelog_path_name=vendor/cm/CHANGELOG.mkdn #changelog file path/name.extension
 source_name="Resurrection Remix Nougat" #Name to display in changelog.md top before version
 # input variables end
 
-export Changelog=$HOME/$source_tree/$changelog_path_name
-export Temp_Changelog=$HOME/$source_tree/$changelog_path_name.temp
+if [ -z ${source_tree} ]; then
+echo "Please run envsetup.sh first";
+else
+
+export Changelog=$source_tree/$changelog_path_name
+export Temp_Changelog=$source_tree/$changelog_path_name.temp
 
 if [ -f $Changelog ];
  then
@@ -46,11 +50,11 @@ echo ""
 echo ${cya}" ▼ Generating (for last 30 days) github format changelog.."${txtrst}
 echo ""
 echo >> $Changelog;
-echo "# $source_name Version 5.8.2 Changelog"    >> $Changelog;
+echo "# $source_name Version 5.8.3 Changelog"    >> $Changelog;
 echo '====================================================' >> $Changelog;
 echo >> $Changelog;
 
-cd $HOME/$source_tree
+cd $source_tree
 
 for i in $(seq 30);
 do
@@ -83,3 +87,4 @@ echo ""
 echo ${grn}" √ Changelog successfully generated."${txtrst}
 echo ""
 echo ""
+fi
