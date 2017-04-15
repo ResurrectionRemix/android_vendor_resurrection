@@ -319,12 +319,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(RR_VERSION) \
  ro.modversion=$(RR_VERSION) \
  rr.build.type=$(RR_BUILDTYPE) \
- Default \
- rr.ota.version= $(shell date -u +%Y%m%d) \
- ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
- ro.romstats.name=ResurrectionRemix \
- ro.romstats.version=$(PRODUCT_VERSION) \
- ro.romstats.tframe=7
+ rr.ota.version= $(shell date +%Y%m%d)
 
 CM_DISPLAY_VERSION := $(RR_VERSION)
 
@@ -333,9 +328,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
   vendor/cm/build/target/product/security/lineage
- 
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/cm/config/partner_gms.mk
--include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
