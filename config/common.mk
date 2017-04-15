@@ -106,9 +106,10 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
     vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
-# Backup Services whitelist
+# System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
+    vendor/cm/config/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/cm/config/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
@@ -305,7 +306,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 DEVICE_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
-PRODUCT_VERSION = 5.8.2
+PRODUCT_VERSION = 5.8.3
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-N-v$(PRODUCT_VERSION)-$(shell date -u +%Y%m%d)-$(CM_BUILD)-$(RR_BUILDTYPE)
 else
@@ -316,12 +317,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(RR_VERSION) \
  ro.modversion=$(RR_VERSION) \
  rr.build.type=$(RR_BUILDTYPE) \
- Default \
- rr.ota.version= $(shell date -u +%Y%m%d) \
- ro.romstats.url=http://resurrectionremix.sourceforge.net/ \
- ro.romstats.name=ResurrectionRemix \
- ro.romstats.version=$(PRODUCT_VERSION) \
- ro.romstats.tframe=7
+ rr.ota.version= $(shell date +%Y%m%d)
 
 CM_DISPLAY_VERSION := $(RR_VERSION)
 
@@ -330,9 +326,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
   vendor/cm/build/target/product/security/lineage
- 
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/cm/config/partner_gms.mk
--include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
