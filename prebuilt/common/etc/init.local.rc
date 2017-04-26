@@ -161,6 +161,9 @@ service bugreport /system/bin/dumpstate -d -p -B -z \
     disabled
     keycodes 114 115 116
 
+# allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
+
 # adb over network
 on property:adb.network.port=*
     setprop service.adb.tcp.port ${adb.network.port}
