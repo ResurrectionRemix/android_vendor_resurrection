@@ -139,8 +139,8 @@ def get_revision(manifest=None, p="build"):
 
 
 def get_from_manifest(device_name):
-    for man in (custom_local_manifest, default_manifest):
-        man = load_manifest(man)
+    if os.path.exists(custom_local_manifest):
+        man = load_manifest(custom_local_manifest)
         for local_path in man.findall("project"):
             lp = local_path.get("path").strip('/')
             if lp.startswith("device/") and lp.endswith("/" + device_name):
