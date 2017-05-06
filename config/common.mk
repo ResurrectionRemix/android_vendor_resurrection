@@ -180,6 +180,7 @@ PRODUCT_PACKAGES += \
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
+    ResurrectionOTA \
     Trebuchet \
     MusicFX \
     CMFileManager \
