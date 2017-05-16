@@ -71,6 +71,9 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Recommend using the non debug dexpreopter
+USE_DEX2OAT_DEBUG := false
+
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     CHANGELOG.mkdn:system/etc/RR/Changelog.txt
