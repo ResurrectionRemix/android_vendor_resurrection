@@ -197,6 +197,11 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     ThemeInterfacer
 
+
+ROOT_METHOD ?= rootless
+ifneq ($(ROOT_METHOD), rootless)
+
+ifeq ($(ROOT_METHOD), magisk)
 # Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
@@ -204,6 +209,17 @@ PRODUCT_PACKAGES += \
 # Copy Magisk zip
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+endif
+
+ifeq ($(ROOT_METHOD), supersu)
+# Todo
+# Copy SuperSU zip
+endif
+
+ifeq ($(ROOT_METHOD), lineage)
+PRODUCT_PACKAGES += su
+endif
+endif
 
 # Exchange support
 PRODUCT_PACKAGES += \
