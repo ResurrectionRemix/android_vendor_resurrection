@@ -17,60 +17,36 @@ normal='tput sgr0'
 
 ./vendor/cm/tools/colors
 
-
 echo -e "";
 echo -e "";
-tput setaf 4
-echo -e "              GGGGGGGGGGGGG       OOOOOOOOO       TTTTTTTTTTTTTTTTTTTTTTT";
-echo -e "           GGG::::::::::::G     OO:::::::::OO     T:::::::::::::::::::::T";
-echo -e "         GG:::::::::::::::G   OO:::::::::::::OO   T:::::::::::::::::::::T";
+tput setaf 1
+echo "	 ______                                                _             ";
+echo "	(_____ \                                           _  (_)            ";
+echo "	 _____) )_____  ___ _   _  ____ ____ _____  ____ _| |_ _  ___  ____  ";
+echo "	|  __  /| ___ |/___) | | |/ ___) ___) ___ |/ ___|_   _) |/ _ \|  _ \ ";
+echo "	| |  \ \| ____|___ | |_| | |  | |   | ____( (___  | |_| | |_| | | | |";
+echo "	|_|   |_|_____|___/|____/|_|  |_|   |_____)\____)  \__)_|\___/|_| |_|";
+echo "	                                                                     ";
+tput setaf 3
+echo "		     ______              _          _______ ______                 ";
+echo "		    (_____ \            (_)        (_______) _____)                ";
+echo "		     _____) )_____ ____  _ _   _    _     ( (____                  ";
+echo "		    |  __  /| ___ |    \| ( \ / )  | |   | \____ \                 ";
+echo "		    | |  \ \| ____| | | | |) X (   | |___| |____) )                ";
+echo "		    |_|   |_|_____)_|_|_|_(_/ \_)   \_____(______/                 ";
+echo "	                                                                     ";
 tput setaf 2
-echo -e "        G:::::GGGGGGGG::::G  O:::::::OOO:::::::O  T:::::TT:::::::TT:::::T";
-echo -e "       G:::::G       GGGGGG  O::::::O   O::::::O  TTTTTT  T:::::T  TTTTTT";
-tput setaf 3
-echo -e "      G:::::G                O:::::O     O:::::O          T:::::T        ";
-echo -e "      G:::::G                O:::::O     O:::::O          T:::::T        ";
-echo -e "      G:::::G    GGGGGGGGGG  O:::::O     O:::::O          T:::::T        ";
+echo "	    ______                                     ___       _  _ _ _    ";
+echo "	   / _____)                                   / __)     | || | | |   ";
+echo "	  ( (____  _   _  ____ ____ _____  ___  ___ _| |__ _   _| || | | |   ";
+echo "	   \____ \| | | |/ ___) ___) ___ |/___)/___|_   __) | | | ||_|_|_|   ";
+echo "	   _____) ) |_| ( (__( (___| ____|___ |___ | | |  | |_| | | _ _ _    ";
+echo "	  (______/|____/ \____)____)_____|___/(___/  |_|  |____/ \_)_|_|_|   ";
+echo "	                                                                     ";
 tput setaf 1
-echo -e "      G:::::G    G::::::::G  O:::::O     O:::::O          T:::::T        ";
-echo -e "      G:::::G    GGGGG::::G  O:::::O     O:::::O          T:::::T        ";
-echo -e "      G:::::G        G::::G  O:::::O     O:::::O          T:::::T        ";
-tput setaf 5
-echo -e "       G:::::G       G::::G  O::::::O   O::::::O          T:::::T        ";
-echo -e "        G:::::GGGGGGGG::::G  O:::::::OOO:::::::O        TT:::::::TT      ";
-echo -e "         GG:::::::::::::::G   OO:::::::::::::OO         T:::::::::T      ";
-tput setaf 7
-echo -e "           GGG::::::GGG:::G     OO:::::::::OO           T:::::::::T      ";
-echo -e "              GGGGGG   GGGG       OOOOOOOOO             TTTTTTTTTTT  ";
+echo -e " 〉Powered by ANDROID ™  // NOUGAT ";
 echo -e "";
-echo -e "";
-tput setaf 7
-echo -e "   88888  88888 888888 8   8 88888  88888  88888 888888 88888 88888 888888 ";
-tput setaf 2
-echo -e "   8   8  8     8      8   8 8   8  8   8  8     8    8   8   8     8    8 ";
 tput setaf 3
-echo -e "   8eee8e 8eeee 8eeeee 8e  8 8eee8e 8eee8e 8eeee 8e       8e  8eeee 8e   8 ";
-tput setaf 1
-echo -e "   88   8 88        88 88  8 88   8 88   8 88    88       88  88    88   8 ";
-tput setaf 4
-echo -e "   88   8 88    e   88 88  8 88   8 88   8 88    88   e   88  88    88   8 ";
-tput setaf 5
-echo -e "   88   8 88eee 8eee88 88ee8 88   8 88   8 88eee 88eee8   88  88eee 88eee8 ";
-echo -e " ";
-
-
-echo -e "";
-echo -e "";
-tput sgr0
-tput setaf 3
-echo -e "";
-echo -e " √ Build is Successfully Done! ";
-echo -e "";
-
-tput setaf 4
-echo -e " 〉Powered by ANDROID ™  // NOUGAT";
-echo -e "";
-tput setaf 1
 echo -e " 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED ";
 tput sgr0
 echo -e "";
