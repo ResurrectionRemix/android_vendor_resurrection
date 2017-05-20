@@ -196,10 +196,8 @@ PRODUCT_PACKAGES += \
     ThemeInterfacer
 
 
-ROOT_METHOD ?= rootless
-ifneq ($(ROOT_METHOD), rootless)
-
-ifeq ($(ROOT_METHOD), magisk)
+WITH_ROOT_METHOD ?= rootless
+ifeq ($(WITH_ROOT_METHOD), magisk)
 # Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
