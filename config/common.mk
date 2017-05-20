@@ -207,16 +207,6 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 endif
 
-ifeq ($(ROOT_METHOD), supersu)
-# Todo
-# Copy SuperSU zip
-endif
-
-ifeq ($(ROOT_METHOD), lineage)
-PRODUCT_PACKAGES += su
-endif
-endif
-
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
