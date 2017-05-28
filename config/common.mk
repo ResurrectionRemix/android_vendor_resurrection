@@ -210,6 +210,11 @@ PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 endif
 
+# Copy Android O Emoji
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/fonts/NotoColorEmoji.ttf:system/fonts/NotoColorEmoji.ttf
+endif
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
