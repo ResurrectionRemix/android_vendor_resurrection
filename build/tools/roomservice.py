@@ -238,9 +238,11 @@ def fetch_dependencies(repo_path, fallback_branch=None):
 
             fetch_list.append(dependency)
             syncable_repos.append(dependency['target_path'])
+        else:
+            print("Dependency already present in manifest: %s => %s" % (dependency['repository'], dependency['target_path']))
 
     if fetch_list:
-        print('Adding dependencies to manifest')
+        print('Adding dependencies to manifest\n')
         add_to_manifest(fetch_list, fallback_branch)
 
     if syncable_repos:
