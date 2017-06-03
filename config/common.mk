@@ -182,7 +182,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ResurrectionStats \
-    Trebuchet \
     MusicFX \
     CMFileManager \
     Eleven \
