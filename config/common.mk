@@ -185,7 +185,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
     Trebuchet \
-    MusicFX \
+    AudioFX \
     CMFileManager \
     Eleven \
     LockClock \
