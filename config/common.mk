@@ -214,6 +214,11 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/fonts/NotoColorEmoji.ttf:system/fonts/NotoColorEmoji.ttf
 
+# Enable Google Services Doze
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
+
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
