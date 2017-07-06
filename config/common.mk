@@ -321,7 +321,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
  ro.rr.version=$(RR_VERSION) \
  ro.modversion=$(RR_VERSION) \
  rr.build.type=$(RR_BUILDTYPE) \
- rr.ota.version= $(shell date +%Y%m%d)
+ rr.ota.version= $(shell date +%Y%m%d) \
+ ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
 
 CM_DISPLAY_VERSION := $(RR_VERSION)
 
