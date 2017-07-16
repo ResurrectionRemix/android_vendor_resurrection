@@ -299,7 +299,10 @@ if __name__ == '__main__':
                     change_numbers.append(str(i))
             else:
                 change_numbers.append(c)
-        reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
+        try:
+            reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
+        except urllib2.HTTPError:
+            reviews = fetch_query(args.gerrit[0:-1], ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
 
     # make list of things to actually merge
     mergables = []
