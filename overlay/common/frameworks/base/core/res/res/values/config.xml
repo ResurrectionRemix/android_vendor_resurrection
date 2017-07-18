@@ -82,4 +82,8 @@
     <!-- If this is true, long press on power button will be available from a
          non-interactive state. -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
+     
+    <!-- The threshold angle for any motion detection in auto-power save modes.
+         In hundreths of a degree. -->
+    <integer name="config_autoPowerModeThresholdAngle">45</integer>
 </resources>
