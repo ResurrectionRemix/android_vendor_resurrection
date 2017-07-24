@@ -29,6 +29,7 @@ $(call add_json_str,	QTIAudioPath,						$(call project-path-for,qcom-audio))
 $(call add_json_str,	QTIDisplayPath,						$(call project-path-for,qcom-display))
 $(call add_json_str,	QTIMediaPath,						$(call project-path-for,qcom-media))
 $(call add_json_str,	Java_Source_Overlays,					$(JAVA_SOURCE_OVERLAYS))
+$(call add_json_bool,	Needs_text_relocations,					$(filter true,$(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)))
 
 
 # This causes the build system to strip out the last comma in our nested struct, to keep the JSON valid.

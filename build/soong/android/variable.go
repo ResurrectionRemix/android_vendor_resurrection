@@ -1,5 +1,9 @@
 package android
 type Product_variables struct {
+	Needs_text_relocations struct {
+		Cppflags []string
+	}
+
 	Additional_gralloc_10_usage_bits struct {
 		Cppflags []string
 	}
@@ -71,6 +75,7 @@ type Product_variables struct {
 }
 
 type ProductVariables struct {
+	Needs_text_relocations					*bool `json:",omitempty"`
 	Additional_gralloc_10_usage_bits  *string `json:",omitempty"`
 	Apply_msm8974_1440p_egl_workaround  *bool `json:",omitempty"`
 	Bootloader_message_offset  *int `json:",omitempty"`
