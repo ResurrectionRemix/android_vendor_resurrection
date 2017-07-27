@@ -46,7 +46,7 @@ if [ -z $days_to_log ];then
 echo ""
 echo ${ylw}" ▼ For how many days changelog do you want to generate?"${txtrst}
 echo ""
-echo -e ${blu}" 🕑  30/sec Time-out "${txtrst}${red}"︱ 7 Days by default"${txtrst}
+echo -e ${blu}" 〉 30/sec Time-out"${txtrst}${red}" ︱ 7 Days by default"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Type a number"${txtrst}
 echo -e "";

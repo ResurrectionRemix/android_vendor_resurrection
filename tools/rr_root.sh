@@ -25,11 +25,11 @@
 if [ -z "${WITH_ROOT_METHOD}" ]; then
 echo -e ${ylw}"\n\n ▼ Which root method do you want to use?\n"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 0- Magisk "${txtrst}${red}"    ︱ Magisk Root Method"${txtrst}
+echo -e ${blu}" 〉 0- Magisk "${txtrst}${red}"                       ︱ Magisk Root Method"${txtrst}
 echo -e "";
 echo -e ${blu}" 〉 1 or any other input- Rootless "${txtrst}${red}"  ︱ Unrooted builds [default]"${txtrst}
 echo -e "";
-echo -e ${blu}" 🕑  30/sec Time-out"${txtrst}${red}"︱ Default option"${txtrst}
+echo -e ${blu}" 〉 30/sec Time-out"${txtrst}${red}"                  ︱ Default option"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a number"${txtrst}
 echo -e "";
