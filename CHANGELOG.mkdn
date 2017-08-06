@@ -1,29 +1,356 @@
 
-# Resurrection Remix Nougat Version 5.8.3 Changelog
+# Resurrection Remix Nougat Version 5.8.4 Changelog
 ====================================================
 
-07-24-2017
+08-06-2017
 ============
 
 #### frameworks/base/
+* 509aaf96787 AppOps: Fix yet another deadlock
+* 7dbfbeb0335 Frameworks Cleanups
+* 10874b8224a pocket: introduce pocket bridge
+* 42af8ad2131 policy: introduce pocket lock
+* abd6b0e02ba pocket: introduce pocket judge
+* 9c2bc7e8dc1 base: Introduce Accidental Touch
+* 5a0945c43cc frameworks: PIE 3.0 (nougat)
+* 4df79251675 Revert "Forward Port: PIE 3.0 (1/2)"
 
 #### packages/apps/DUI/
 
 #### packages/apps/Dialer/
+
+#### packages/apps/OmniSwitch/
 
 #### packages/apps/PackageInstaller/
 
 #### packages/apps/ResurrectionOTA/
 
 #### packages/apps/Settings/
+* 3701c92125 Dslv: Fix FC when adding duplicate shortcuts
+* c1348a0d92 Settings:Add preference for pocket judge [2/2]
+* e090493570 PieSettings: Add support for Pie Gravity
+* 9749d2d4c4 ButtonsSettings: Add preference for Accidental Touch
+* 5fd64bebc0 Update PIE settings to 3.0
+
+#### vendor/cm/
+* f8692056 Bump version to 5.8.4
+* 8272685d vendor: Fix a user profile data denial
+* be1cf971 vendor: Add selinux policy for pocket bridge
+* 5ea6f1ce vendor:Add sysfs permissions for pocket bridge
+* 27711887 pa: Add pocket judge selinux policy
+
+#### vendor/oneplus/
+* 2ad6aea onyx: Update hci_qcomm_init from bacon
+
+08-05-2017
+============
+
+#### packages/apps/Settings/
+* 6c960c2f11 Merge branch 'nougat' of https://github.com/ResurrectionRemix/Resurrection_packages_apps_Settings into nougat
+* 40bdde5bbc Fix settings FC and freezes after reboot on enforcing mode
+
+08-04-2017
+============
+
+#### hardware/qcom/fm/
+
+#### hardware/qcom/media-caf/msm8916/
+* ec789248f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+
+#### hardware/qcom/media-caf/msm8994/
+* 1afe59f2c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
+
+#### packages/apps/AudioFX/
+
+#### packages/apps/Bluetooth/
+
+#### packages/apps/Calendar/
+
+#### packages/apps/Camera2/
+
+#### packages/apps/CellBroadcastReceiver/
+
+#### packages/apps/Eleven/
+
+#### packages/apps/Email/
+
+#### packages/apps/EmergencyInfo/
+
+#### packages/apps/Gallery2/
+
+#### packages/apps/HTMLViewer/
+
+#### packages/apps/Jelly/
+
+#### packages/apps/ManagedProvisioning/
+
+#### packages/apps/Settings/
+* 1bed82a055 Add Maintainer For Android One 1st gen. (sprout) (#832)
+
+#### packages/apps/SetupWizard/
+
+#### packages/apps/Snap/
+
+#### packages/apps/Tag/
+
+#### packages/apps/Trebuchet/
+
+#### packages/apps/TvSettings/
+
+#### packages/apps/UnifiedEmail/
+
+#### packages/inputmethods/LatinIME/
+
+#### packages/providers/CalendarProvider/
+
+#### packages/providers/DownloadProvider/
+
+#### packages/resources/devicesettings/
+
+08-03-2017
+============
+
+#### frameworks/opt/telephony/
+* b1a8579f Telephony: Keep preferred SMS Sim
+
+08-02-2017
+============
+
+#### packages/apps/OmniSwitch/
+* 31d0a4a Fixing a NullPointerException (#8)
+
+08-01-2017
+============
+
+#### packages/apps/Eleven/
+* 1cc8b9e Eleven: Add WRITE_MEDIA_STORAGE permission
+* 083e7f9 Eleven: Promote to privileged app
+* 5301693 Eleven: allow artwork to scale down
+
+#### packages/apps/Gallery2/
+* c88c5726b Gallery2: Fix various issues and glitches
+
+#### packages/apps/Snap/
+* a206d7565 Snap: fix low resolution front camera switch icon
+
+07-31-2017
+============
+
+#### packages/apps/Gallery2/
+* d74ca5a9d Gallery2: Fix potential crash
+* 7e1b2d258 Gallery2: Switch to navigationbar from support libs
+* 82b6848ef Gallery2: Fix can't parse documents uri
+* eceb1edb1 Gallery2: Fix views overlap
+* 8c7fe642b Gallery2: Support GIF animation
+* b923c258f Gallery2: Increase the size of the tiles when decoding images
+* ccaf2e443 Gallery2: Support the newly added media file types in MTP mode
+* ebce1308f Gallery2: Fix use of uninitialized stack variables
+* 1fbe34291 Gallery2: Remove unused renderscript class
+* 40fe6d233 Gallery2: Fix spelling error
+* 5a0501d1d Gallery2: Properly declare the own permissions
+* 9c69a829b Gallery2: Remove more possible NPEs
+* 4288cf9e0 Gallery2: Enable frames in the editor
+* 09a950e43 Gallery2: Remove slideshow option if there are only videos
+* 75e883a9f Gallery2: Remove 3D overscroll effect
+* 4cbaf64e2 Gallery2: Disable dummy starting window
+* 7aeaefcfc Gallery2: Fix up audio effects dialog
+* cc80b1b5e Gallery2: Everyone or no one
+* a0dc1b87d Gallery2: Replace hamburger menu with bottom bar
+* ae2d5c13c Gallery2: Change all share intents to chooser style
+* 1b893a41e Gallery2: Update menu
+* b09126420 Gallery2: Update theme
+* 7eb847c94 Gallery2: Move & improve CAF strings
+* 81e24fe0e Gallery2: Make sure no NPE happens
+* 9c735aedd Gallery2: Remove invalid comment from manifest
+* 5b0141c65 Gallery2: Cleanup renderscript flags in Android.mk
+* 108756ab1 Gallery2: Reduce logspam in video player
+* e0c0ac0be Gallery2: Store DATE_TAKEN as milliseconds
+* bb1631470 Gallery2: Modify AOSP EL translations
+* 3861e9751 Gallery2: Remove CAF translations
+* 3bf31b249 Gallery2: Add record time to details view
+* c1cf32450 Gallery2: Fix crash of gallery on showing details
+* 880d50792 Gallery2: Fix crash when Bluetooth service is disabled
+* 2c75f4004 Gallery2: Try to open existing camera
+* db84f5bb3 Gallery2: New icon
+* 5f5c89261 Gallery2: Bump minsdk and targetsdk version
+* 658721317 Gallery: FilterShowActivity: Fix loading spinner being show forever
+* 55bf17f33 Gallery: TileImageView: fix NPE
+* be9357b06 FaceDetect: Catch more linker errors during initialization
+* 8beb6f9c5 FaceDetect: Catch linker errors during initialization
+* ea5a3097f Bump API to match dependencies.
+* 1a3f2927d Add missing includes.
+* 5c7461235 Cleanup warnings in jni.
+* b7d08f97a Fix misc-macro-parentheses warnings in Gallery2.
+* 9110325ab Float.NaN != ... always evaluates to true, use Float.isNaN.
+* 69f87c408 Rename app back to Gallery
+
+07-30-2017
+============
+
+#### frameworks/base/
+* c4a83cf2e2e Allow to disable battery light when in DND mode [1/2]
+* 20dce166e74 SystemUI: Store value of lockscreen media art
+* 3dff8ca8096 AppOps: Prevent deadlock when making note of applications
+* 0e93f345da7 KernelCpuSpeedReader: Account for missing sysfs nodes
+* 33c6d4fd285 Revert "KernelCpuSpeedReader: Account for missing sysfs nodes"
+* 6f93f576838 slim recents: Be sure to catch all exceptions for startActivityFromRecents
+* da27683f990 slim recents: Favlist creation: use HashSet instead of Arraylist
+* c46b63ce748 SystemUI: locked tasks should have a valid view
+
+#### kernel/oneplus/msm8996/
+* 069a9ee29ae f2fs: avoid cpu lockup
+* 701f3f07034 ANDROID: sdcardfs: Remove unnecessary lock
+* 1d5190ccd51 op3: Regen defconfig
+* ef669f6f5e6 op3: Disable unneeded functions
+* 78758217b99 op3: Run all RCU threads at RT prio 2
+* 45b346554ed op3: enable RCU_BOOST
+* 6a669ab042c BACKPORT: rcu: Optionally run grace-period kthreads at real-time priority
+* 9bf965b2fe9 BACKPORT: rcu: Unify boost and kthread priorities
+* 26370d833e7 BACKPORT: rcu: Move RCU_BOOST variable declarations, eliminating #ifdef
+* d9c4446247f drivers/Kconfig: remove duplicate entry for soc
+* b6712e84f1a Revert "scripts: gcc-wrapper: Use wrapper to check compiler warnings"
+* 0c40b6cf849 Makefile: add -Werror
+* b8707a0918d qcacld-2.0: Update to LA.UM.5.5.r1-05400-8x96.0
+* c726a688337 Merge tag 'LA.UM.5.5.r1-05400-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1
+
+#### packages/apps/DUI/
+
+#### packages/apps/Dialer/
+
+#### packages/apps/Jelly/
+* 083e503 Jelly: remove 'Mobile' from desktop user agent
+
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/ResurrectionOTA/
+
+#### packages/apps/Settings/
+* 648e10288d MSIM: Fix user set DDS sub in hotswap cases.
+* 5a56b01a2a Allow to disable battery light when in DND mode[2/2]
 
 #### packages/services/OmniJaws/
+
+07-29-2017
+============
+
+#### packages/apps/SetupWizard/
+* d261c7a SetupWizard: Don't show ChooseDataSimActivity on single sim devices
+* 6971663 SetupWizard: Fix crash when sims are absent
+
+#### packages/apps/Snap/
+* db73354ac Revert "Revert "SnapdragonCamera: Adding PRIVILEGED true""
+
+07-28-2017
+============
+
+#### external/chromium-webview/
+* e205b2a Update webview
+
+#### packages/apps/Calendar/
+
+#### packages/apps/Camera2/
+
+#### packages/apps/CellBroadcastReceiver/
+
+#### packages/apps/Eleven/
+
+#### packages/apps/Email/
+
+#### packages/apps/Exchange/
+
+#### packages/apps/Jelly/
+
+#### packages/apps/SetupWizard/
+* b1dd429 SetupWizard: Fix a few possible NPEs
+
+#### packages/apps/TvSettings/
+
+#### vendor/cm/
+* cfcd5e29 Fix build scripts color format
+
+07-27-2017
+============
+
+#### packages/apps/Snap/
+* bbb6ee12f Revert "SnapdragonCamera: Adding PRIVILEGED true"
+
+#### system/bt/
+* b30e393e Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1
+
+07-26-2017
+============
+
+#### frameworks/native/
+* a3768a911 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_native into nougat
+
+#### hardware/qcom/fm/
+
+#### packages/apps/Email/
+
+#### packages/apps/Jelly/
+
+#### packages/apps/Messaging/
+* cf5278b Merge branch 'cm-14.1' of https://github.com/LineageOS/android_packages_apps_Messaging into nougat
+
+#### packages/apps/Settings/
+* 48eecf4199 Add Maintainer for LG G2 (Sprint) LS980 variant (#830)
+* 213c4d974e Settings: Allow our root options to work with LineageSu as well
+
+#### packages/apps/SetupWizard/
+
+#### packages/apps/Snap/
+
+#### packages/resources/devicesettings/
+
+#### system/netd/
+* b2d5c79 SoftAp: Fix compilation in netd if  LIBWPA_CLIENT_EXISTS undefined.
+
+07-25-2017
+============
+
+#### frameworks/base/
+* 84545104c11 Fix and cleanup dui protected broadcasts [2/2]
+* 242cf2c120b base: SystemUI: add OmniSwitch hide on home
+
+#### kernel/oneplus/msm8996/
+* f8dc42b6b4b Merge b3b5cc2b1a9f0f75057824b350651a04c92a904e on remote branch
+
+#### packages/apps/OmniSwitch/
+* 89e029a Fix potential FC in the async task
+* 083543e OmniSwitch: bring back hide broadcast
+* 0f4b052 OmniSwitch: add unchanged recent task list
+* a58f458 OmniSwitch: round corners are sexy
+* 89e9691 OmniSwitch: transparents also wants to see locked apps :)
+* 92f3ac7 OmniSwitch: locked apps support
+* 006ea5a OmniSwitch: add force stop in context menu
+* b51a26c OmniSwitch: icon pack loading needs an early start
+* 423639f OmniSwitch: fix terrible wrong resizing on compose icons
+* 908e593 OmniSwitch: better safe then sorry
+
+#### packages/apps/Settings/
+* 2bdc971ca8 Fix and cleanup dui protected broadcasts [1/2]
+* c3e7f21a2e Utils: Fix onboot crash until magisk is found
+* 4856b02a45 Update LG G3 (D855) Maintainer. (#829)
+
+07-24-2017
+============
+
+#### frameworks/base/
+* 12fb6d61063 Base: Fix global actions menu emergency button position
+
+#### packages/apps/Settings/
+* 51a82c806d Add Maintainer for ZTE BLADE A610 (a610) (#826)
+* b7e811c905 Add Co-Maintainer for Lettuce (#827)
+
+#### vendor/cm/
+* d235a41c Update Changelog
 
 07-23-2017
 ============
 
+#### device/oppo/common/
+
 #### frameworks/base/
-* 963b2ad Fix custom button icon making touch and animation area smaller [2/3]
 
 #### hardware/qcom/fm/
 
@@ -37,13 +364,21 @@
 
 #### packages/apps/CellBroadcastReceiver/
 
-#### packages/apps/Eleven/
+#### packages/apps/DUI/
 
-#### packages/apps/Gallery2/
+#### packages/apps/Dialer/
+
+#### packages/apps/Eleven/
 
 #### packages/apps/Jelly/
 
+#### packages/apps/PackageInstaller/
+
 #### packages/apps/Recorder/
+
+#### packages/apps/ResurrectionOTA/
+
+#### packages/apps/Settings/
 
 #### packages/apps/SetupWizard/
 
@@ -55,31 +390,16 @@
 
 #### packages/resources/devicesettings/
 
-#### vendor/cm/
-* 982208b DeskClock: switch to version 5.0.1 (3745617)
+#### packages/services/OmniJaws/
 
 #### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
 07-22-2017
 ============
 
-#### device/oneplus/oneplus3/
-* e730649 op3: Add 3T specific power profile
-* c93fac5 op3: Pin camera HAL blob
-* c1fa530 op3: Add camera shim to always disable QuadraCfa mode
-* d408379 op3: Update from OB19
-* 086562c op3: Assert on modem build time-stamp
-* 6eaca4a recovery: Use project pathmap for recovery
-* 4f09df6 op3: Calculate TrustZone size at runtime
-* 9a7a0a7 op3: Adapt recovery updater lib to new recovery code.
-* ff748d8 op3: assert: Add support for bootdevice symlinks
-* 2e805f5 op3: Fix multi version TrustZone support
-* 46f6e5a op3: Remove useless parameter
-* 363987e op3: Add assertions on TrustZone version
-
 #### frameworks/base/
-* 6f90390 Merge pull request #204 from AndropaX/patch-4
-* 51cc188 DeviceInfoUtils: decentralize processor Regex
+* 963b2adfce7 Fix custom button icon making touch and animation area smaller [2/3]
+* 6f903906673 Merge pull request #204 from AndropaX/patch-4
 
 #### packages/apps/DUI/
 * 6515568 Fix custom button icon making touch and animation area smaller [1/3]
@@ -88,32 +408,50 @@
 * b8270d7 Jelly: Allow to display pages in full screen mode
 
 #### packages/apps/Settings/
-* 2353503 Fix custom button icon making touch and animation area smaller [3/3]
-* 4f8d736 Merge pull request #825 from AndropaX/patch-2
-* 5cd394f Add processor model in device info screen (2/2)
-* 88342d3 Add maintainer for lenovo k6/power (#824)
+* 2353503282 Fix custom button icon making touch and animation area smaller [3/3]
+* 4f8d736016 Merge pull request #825 from AndropaX/patch-2
 
-#### vendor/oneplus/
-* ff136ed op3: Hex-edit camera HAL for QuadraCfa shim
-* 6aa6ffd op3: Update to Open Beta 19 blobs
+#### vendor/cm/
+* 982208ba DeskClock: switch to version 5.0.1 (3745617)
 
 07-21-2017
+============
+
+#### frameworks/base/
+* 51cc1882152 DeviceInfoUtils: decentralize processor Regex
+
+#### hardware/qcom/media-caf/msm8994/
+* a21d861ea Merge "mm-video-v4l2: Protect buffer lifecycle with lock"
+
+#### kernel/oneplus/msm8996/
+* de493f542bb ARM: dts: 15801: Move 0x29 to dsi on command
+
+#### packages/apps/Settings/
+* 5cd394f895 Add processor model in device info screen (2/2)
+* 88342d39a9 Add maintainer for lenovo k6/power (#824)
+
+07-20-2017
 ============
 
 #### android/
 * eedb930 Remove ahbottomnavigation
 
 #### frameworks/base/
-* 021e65a DeviceInfoUtils: Expand Processor string #3
-* a700be4 Fix new Processor regex in Nexus 4
-* 3aa1c51 BootReceiver: check console-ramoops-0
-* f27f73e Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
-* 7e09920 PowerProfile: allow overriding default power profile
-* e5e8dad Revert "PowerProfile: allow reading from a file instead of resource"
-* 3008b48 Add processor info in device info screen (1/2)
+* 021e65a4ba5 DeviceInfoUtils: Expand Processor string #3
+* a700be4a737 Fix new Processor regex in Nexus 4
+* 3aa1c51b3e1 BootReceiver: check console-ramoops-0
+* f27f73ea0c4 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+* 7e09920a4f5 PowerProfile: allow overriding default power profile
+* e5e8dad7f72 Revert "PowerProfile: allow reading from a file instead of resource"
+* 3008b48f2d3 Add processor info in device info screen (1/2)
 
-#### kernel/lge/hammerhead/
-* f75e583 BACKPORT: fs: limit filesystem stacking depth
+#### kernel/oneplus/msm8996/
+* b3b5cc2b1a9 Promotion of kernel.lnx.3.18.c5-170720.
+* 0ff07607789 Promotion of kernel.lnx.3.18.c5-170719.
+* ff81fedcd24 Merge "Perf: arm64: avoid use of uninitialized variable"
+* ab3d1307d67 Merge "cnss_pci: fix the race condition in firmware file setup"
+* e028d194fec Merge "usb: gadget: Fix incorrect ISOC data transfer PIDs"
+* 0e9ee335177 Merge "msm: isp: Fix Ub allocation for image WM"
 
 #### packages/apps/Jelly/
 * 54d8d10 Jelly: Remove unused variable in SearchBarController
@@ -143,84 +481,88 @@
 * f73b438 sepolicy: Allow remount /system
 
 #### vendor/cm/
-* 715986b Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
-* bc96cad repopick: Add 'reset' option
-* 5a5e439 kernel: Add savedefconfig target
-* 4438599 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
-* 5b71695 repopick: don't bail on drafts
-* 82a5e5a prebuilt: update Magisk Manager 5.1.1 (#96)
-
-07-20-2017
-============
-
-#### hardware/qcom/fm/
-* 165ef42 FM: Use some sane colors
-
-#### kernel/lge/hammerhead/
-* 685db7f msm: vidc: Check validity of userspace address
-
-#### vendor/cm/
-* ac577f3 Update prebuilts to latest versions (#95)
-
-#### vendor/lge/
-* 4543622 g6: Add iris module
+* 715986b0 Merge remote-tracking branch 'remotes/rr/nougat' into HEAD
+* bc96cada repopick: Add 'reset' option
+* 5a5e4396 kernel: Add savedefconfig target
+* 44385998 qcom: Enable TARGET_USES_QCOM_MM_AUDIO
+* 5b716952 repopick: don't bail on drafts
+* 82a5e5a3 prebuilt: update Magisk Manager 5.1.1 (#96)
 
 07-19-2017
 ============
 
-#### frameworks/base/
-* 8320284 SEEMP: Adding auth framework for outgoing SMS messages.
+#### device/oneplus/oneplus3/
+* aa65a3d op3: Add 3T specific power profile
 
-#### vendor/lge/
-* f43adfb g6: Add missing blob for camera
+#### hardware/qcom/fm/
+* 165ef42 FM: Use some sane colors
+
+#### hardware/qcom/media-caf/msm8994/
+* 70174f06c mm-video-v4l2: venc: Protect buffer from being freed while accessing
+* 234343494 mm-video-v4l2: Protect buffer lifecycle with lock
+
+#### kernel/oneplus/msm8996/
+* ee80595700a Perf: arm64: avoid use of uninitialized variable
+
+#### vendor/cm/
+* ac577f3b Update prebuilts to latest versions (#95)
 
 07-18-2017
 ============
 
-#### device/oneplus/oneplus3/
-* a60d3b7 Dont build with UberTC as of now
-
 #### frameworks/base/
-* 7490b95 SEEMP: Adding auth framework for outgoing SMS messages.
-* bdfc59e ScreenCap : Add jpeg support
-* df6580a Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
-* 33fb4dd RecentsView: Hiding membar, memtext and fab on drag start.
-* b66c326 Connectivity: Fix format arguments
-* 9fcae18 SystemUI: Fix Notification Background Color Issue
-* 73d5dc4 Fix keyguard prompt reason showing with fingerprint reboot enabled
+* 8320284fcfc SEEMP: Adding auth framework for outgoing SMS messages.
+
+#### hardware/qcom/media-caf/msm8916/
+* 508bb0ebb mm-video-v4l2: Protect buffer lifecycle with lock
 
 #### kernel/oneplus/msm8996/
-* c8af0bb Merge tag 'LA.UM.5.5.r1-05300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1
-
-#### packages/apps/Settings/
-* 2fdd40f MiscSettings: Remove SElinux Switch & System App remover if no Magisk
-* 61a20bc Fix up Suspend actions fragment summary string value
-* 09611a0 Settings:Configurable Keyguard & bouncer alpha [2/2]
-
-#### vendor/cm/
-* e4a1100 Add Proper Magisk 13.2 zip
-* a860ae3 Delete this corrupt zip
-
-#### vendor/lge/
-* 3d65d39 h870: Update adreno firmware
-* 9b57061 h870: Use correct bluetooth firmware
-* 8fad791 Add h870 Vendor Files
-* f81fc55 msm8996: Regenerate makefiles and add us997 and h870 to build guard
-* 2e72101 Initial us997 blobs
+* 8fe33c65be3 Merge "msm: mdss: Do not apply bl scale if current back light is zero"
 
 07-17-2017
 ============
 
-#### kernel/lge/hammerhead/
-* 6e325ba udf: Check path length when reading symlink
-* 8b7fe89 ALSA: control: Make sure that id->index does not overflow
-* afeef23 filter: prevent nla extensions to peek beyond the end of the message
+#### device/oneplus/oneplus3/
+* c707c3a op3: Pin camera HAL blob
+* 4dab60e op3: Add camera shim to always disable QuadraCfa mode
+* 23bcbdb op3: Update from OB19
+* 9fd9351 op3: Assert on modem build time-stamp
+* ea2917a recovery: Use project pathmap for recovery
+* 9fdd488 op3: Calculate TrustZone size at runtime
+* 2dd0506 op3: Adapt recovery updater lib to new recovery code.
+* 8abb422 op3: assert: Add support for bootdevice symlinks
+* f710096 op3: Fix multi version TrustZone support
+* eb46898 op3: Remove useless parameter
+* 50b35b1 op3: Add assertions on TrustZone version
+
+#### frameworks/base/
+* 7490b95cef2 SEEMP: Adding auth framework for outgoing SMS messages.
+* bdfc59e31b1 ScreenCap : Add jpeg support
+* df6580a28f7 Configurable Keyguard alpha and Keyguard Bouncer alpha [1/2] inspired by the BrightLockscreen xposed module: https://github.com/Generalbrus/BrightLockscreen
+* 33fb4ddfcd7 RecentsView: Hiding membar, memtext and fab on drag start.
+* b66c326d2d0 Connectivity: Fix format arguments
+* 9fcae18c687 SystemUI: Fix Notification Background Color Issue
+* 73d5dc445cb Fix keyguard prompt reason showing with fingerprint reboot enabled
+
+#### packages/apps/Settings/
+* 2fdd40f47d MiscSettings: Remove SElinux Switch & System App remover if no Magisk
+* 61a20bc452 Fix up Suspend actions fragment summary string value
+* 09611a0c14 Settings:Configurable Keyguard & bouncer alpha [2/2]
+
+#### vendor/cm/
+* e4a1100e Add Proper Magisk 13.2 zip
+* a860ae39 Delete this corrupt zip
+
+#### vendor/oneplus/
+* d86f1a8 op3: Hex-edit camera HAL for QuadraCfa shim
+
+07-16-2017
+============
+
+#### kernel/oneplus/msm8996/
+* e866e46979a Promotion of kernel.lnx.3.18.c5-170715.
 
 #### packages/apps/Dialer/
-
-#### packages/apps/Gallery2/
-* d9f1451 Gallery: Fix potential crash
-* 8af515d Gallery2: Switch to navigationbar from support libs
 
 #### packages/apps/OmniSwitch/
 
@@ -229,74 +571,40 @@
 #### packages/apps/ResurrectionOTA/
 
 #### packages/apps/Settings/
-* 3dec931 Bring back some physical keyboard settings
-* 582837b Add maintainer for samsung galaxy s5(k3gxx) (#823)
-* 9d7e6ca Add maintainer Yu Yreka Black(garlic) (#820)
+* 3dec93138f Bring back some physical keyboard settings
+* 582837be67 Add maintainer for samsung galaxy s5(k3gxx) (#823)
+* 9d7e6ca8b9 Add maintainer Yu Yreka Black(garlic) (#820)
 
 #### packages/services/OmniJaws/
-
-#### vendor/cm/
-* fb83d97 Fix magisk 13.2 Location
-
-07-16-2017
-============
-
-#### hardware/qcom/audio-caf/msm8996/
-* f8fcd59 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
-#### hardware/qcom/display-caf/msm8996/
-* 3005091 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
-
-#### hardware/qcom/media-caf/msm8996/
-* 0273a64 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
 
 #### packages/services/ThemeInterfacer/
 * 0fded63 JobService: Use a ContentObserver to check for force authorisation of packages
 
 #### vendor/cm/
-* ac623bd Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
+* fb83d97e Fix magisk 13.2 Location
 
 07-15-2017
 ============
 
-#### device/oneplus/oneplus3/
-* 84ad733 op3: Light up buttons only when pressed
-* 219d39b op3: Abandon TARGET_UNIFIED_DEVICE flag
-* a436f75 op3: Allow vendor init to override props
-* 6c5537c op3: Update ramdisk to LA.UM.5.5.r1-05100-8x96.0
-* 60e2b5e op3: Update power profile from latest OOS
-* 78b7c7c op3: Automatically set bluetooth name based on rf version
-* 1e42247 op3: Sync bluetooth configuration with CAF
-* e3c9eef op3: Define ril-daemon normally
-* c452462 op3: sepolicy: Remove old and duplicate permissions
-* def5c30 Revert "op3: sepolicy: Fix rmt_storage and rfs_access policies"
-* ee223b5 op3: Add system GID to rmt_storage
-* 3183ac4 op3: rmt_storage should have wakelock GID
-* 131d2fe op3: Drop NET_RAW and NET_ADMIN from qti
-* 9f241a8 op3: Grant netmgrd proper unix perms
-* b0e3bb3 op3: Update qti telephony extension from MIUI 7.6.5 dev
-* e094cd9 op3: Convert rf_version to integer before comparison
-* 9d70b74 op3: Update from Open Beta 18
-* 284d091 op3: Adjust lmk parameters
-* 804d11f op3: Restore original CAF gps configuration
-* 3360f3a ipacm: fix the heap-use-after-free issue on bootup
-* a906435 IPACM: fix the security issue in ConntrackClient
-* 83129fd IPACM: fix security issue in querying if index
-* 4f16e68 Re-enable delete_aiding_data for user build
-* 752497b op3: Remove BCL hotplug disable/enable from init
-* 1c3ecef op3: Update ril header for 7.1.2
-* b5013f6 op3: Update from OxygenOS 4.1.5
-* 963eef7 op3: Doze: Require non-wake up proximity sensor
+#### frameworks/native/
+* d461e7abf Surface: Use async lock/unlock in copyBlt
+* c8aefcfce Surface: Ensure synchronisation of copyBlt
+* a3b93a7a6 surfaceflinger: Validate setposition parameters
+* 96d3138f7 sf: Fix GPU coordinates computation.
+* 0adab82d0 sf: Limit co-ordinates difference fix for high res panel
+* db0e94b4b surfaceflinger: Fix continuous SF dump.
+
+#### hardware/qcom/audio-caf/msm8996/
+* f8fcd590 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
+
+#### hardware/qcom/display-caf/msm8996/
+* 3005091d8 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
+
+#### hardware/qcom/media-caf/msm8996/
+* 0273a6407 Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into HEAD
 
 #### kernel/oneplus/msm8996/
-* 431cc84 sdcardfs: Change magic value
-* 832b24a ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb
-* 16cf7a4 mm: fix new crash in unmapped_area_topdown()
-* 5014f7a4 Allow stack to grow up to address space limit
-* 269764c mm: larger stack guard gap, between vmas
-* bc293f8 Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
-* dcd5a99 qcacld-2.0: Update to LA.UM.5.5.r1-05300-8x96.0
-* b13200b Merge b99bb1b5259d26c42658613a2b78643b5da23b2e on remote branch
+* c2b792bfbda Merge "mmc: sdhci-msm: Don't turnoff Vcc during initialization"
 
 #### packages/apps/Jelly/
 * 4d40bf7 Jelly: Remove unneeded parameter type in addResult
@@ -305,107 +613,224 @@
 * c3794c5 Hide Sheet Menu after clicking on an entry
 * 4e7e82e Jelly: Query an already ordered favorite list
 
-#### packages/apps/Settings/
-* 089a928 Official support for Moto E3 Power(taido_row) (#818)
-* 93a2c68 Official support for Moto E3 Power(taido_row) (#819)
+#### vendor/cm/
+* ac623bda Update Magisk Binary to v13.2 and Magisk Manager to v5.0.6 (#93)
+
+#### vendor/oneplus/
+* c98fad7 op3: Update to Open Beta 19 blobs
 
 07-14-2017
 ============
 
+#### kernel/oneplus/msm8996/
+* ab63df50275 Promotion of kernel.lnx.3.18.c5-170714.
+* 3c7e9789ad2 f2fs: include seq_file.h for sysfs.c
+* dc693914072 f2fs: Don't clear SGID when inheriting ACLs
+* c62d00e173f f2fs: remove extra inode_unlock() in error path
+* 8192075fcde fscrypt: add support for AES-128-CBC
+* 0e05212f447 fscrypt: inline fscrypt_free_filename()
+* c9bb03cc16d f2fs: make more close to v4.13-rc1
+* 30ab5b42edf f2fs: support plain user/group quota
+* 7ff60d19c14 f2fs: avoid deadlock caused by lock order of page and lock_op
+* 7856e8d2fb7 f2fs: use spin_{,un}lock_irq{save,restore}
+* a604e0beef4 f2fs: relax migratepage for atomic written page
+* 80d006bb397 f2fs: don't count inode block in in-memory inode.i_blocks
+* f74444772d3 Revert "f2fs: fix to clean previous mount option when remount_fs"
+* 2712035eabe f2fs: do not set LOST_PINO for renamed dir
+* 07985b84ab3 f2fs: do not set LOST_PINO for newly created dir
+* 0831c351241 f2fs: skip ->writepages for {mete,node}_inode during recovery
+* ce04a988e8a f2fs: introduce __check_sit_bitmap
+* c905acd7acb f2fs: stop gc/discard thread in prior during umount
+* 91011794a78 f2fs: introduce reserved_blocks in sysfs
+* 3806d76d9f7 f2fs: avoid redundant f2fs_flush after remount
+* 56fe38d39bf f2fs: report # of free inodes more precisely
+* 1a620c26e7f f2fs: add ioctl to do gc with target block address
+* d9e5aa6ee34 f2fs: don't need to check encrypted inode for partial truncation
+* d07f15edda1 f2fs: measure inode.i_blocks as generic filesystem
+* 36b74411454 f2fs: set CP_TRIMMED_FLAG correctly
+* ab5c8330c6a f2fs: require key for truncate(2) of encrypted file
+* 8e484ee41a5 f2fs: move sysfs code from super.c to fs/f2fs/sysfs.c
+* c159cf132bb f2fs: clean up sysfs codes
+* 68f4943c2f6 f2fs: fix wrong error number of fill_super
+* 4703a2a8912 f2fs: fix to show injection rate in ->show_options
+* 71b32fc6dd7 f2fs: Fix a return value in case of error in 'f2fs_fill_super'
+* 84d291b7b1e f2fs: use proper variable name
+* a32523cf022 f2fs: fix to avoid panic when encountering corrupt node
+* bcf58e4d387 f2fs: don't track newly allocated nat entry in list
+* 5e07a6c234f f2fs: add f2fs_bug_on in __remove_discard_cmd
+* 221e01385e1 f2fs: introduce __wait_one_discard_bio
+* 0429a487942 f2fs: dax: fix races between page faults and truncating pages
+* 490833eb91c f2fs: simplify the way of calulating next nat address
+* e53722997b4 f2fs: sanity check size of nat and sit cache
+* a6e2e3d7e24 f2fs: fix a panic caused by NULL flush_cmd_control
+* 159b5364f4f f2fs: remove the unnecessary cast for PTR_ERR
+* 3e9b9c8f613 f2fs: remove false-positive bug_on
+* 8ef8f1dce9c f2fs: Do not issue small discards in LFS mode
+* 57397c90d25 f2fs: don't bother checking for encryption key in ->write_iter()
+* 95ad62ee456 f2fs: don't bother checking for encryption key in ->mmap()
+* 06d732ea005 f2fs: wait discard IO completion without cmd_lock held
+* d119cf50a86 f2fs: wake up all waiters in f2fs_submit_discard_endio
+* a853875a15c f2fs: show more info if fail to issue discard
+* d48ec811f33 f2fs: introduce io_list for serialize data/node IOs
+* 9ac59745ca0 f2fs: split wio_mutex
+* de30ff3f2b6 f2fs: combine huge num of discard rb tree consistence checks
+* 6b6cf1490c0 f2fs: fix a bug caused by NULL extent tree
+* c06bb06248d f2fs: try to freeze in gc and discard threads
+* 2472fec932d f2fs: add a new function get_ssr_cost
+* 272b72f5a05 f2fs: declare load_free_nid_bitmap static
+* 7507e41e083 f2fs: avoid f2fs_lock_op for IPU writes
+* 042a45bcbbd f2fs: split bio cache
+* d35b8c6324d f2fs: use fio instead of multiple parameters
+* 9962115a25e f2fs: remove unnecessary read cases in merged IO flow
+* b27eed2fc09 f2fs: use f2fs_submit_page_bio for ra_meta_pages
+* 811c78d8da4 f2fs: make sure f2fs_gc returns consistent errno
+* 7acdf88075c f2fs: load inode's flag from disk
+* f6aafb2d65a f2fs: sanity check checkpoint segno and blkoff
+* e91c063146c f2fs, block_dump: give WRITE direction to submit_bio
+* ee3e1e6b4d1 sched: always use blk_schedule_flush_plug in io_schedule_out
+* 3fa3ec2fbed sched: Prevent recursion in io_schedule()
+* 09f40cd6c16 f2fs: use WRITE_SYNC for REQ_SYNC
+* c0eb0e45d5e f2fs: enable f2fs_migrate_page
+* 8f77f25b193 sdcardfs: Change magic value
+* ce7e287c3a8 ANDROID: sdcardfs: use mount_nodev and fix a issue in sdcardfs_kill_sb
+* f55098e120f mm: fix new crash in unmapped_area_topdown()
+* 24d2e4acaf0 Allow stack to grow up to address space limit
+* 4e65b398a1a mm: larger stack guard gap, between vmas
+* 7cb5cfb4dcd sctp: validate chunk len before actually using it
+* 93b8eaf43fe ipv4: keep skb->dst around in presence of IP options
+* 6c626e9f64b ALSA: timer: Fix race between read and ioctl
+* f308a4d6fae ALSA: timer: Fix missing queue indices reset at SNDRV_TIMER_IOCTL_SELECT
+* 2ac1f4276c5 Revert "proc: smaps: Allow smaps access for CAP_SYS_RESOURCE"
+* d473eff5f3c USB: digi_acceleport: do sanity checking for the number of ports
+* f81517f2ee1 Input: gtco - fix crash on detecting device without endpoints
+* ab5ad1b53fd qcacld-2.0: Update to LA.UM.5.5.r1-05300-8x96.0
+* 0dd3510757c Merge tag 'LA.UM.5.5.r1-05300-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1
+* 87e3dfa6e24 mmc: sdhci-msm: Don't turnoff Vcc during initialization
+* 0421d49aeb1 Promotion of kernel.lnx.3.18.c5-170713.
+* db752dd94d1 Merge "msm: kgsl: Use vma_area_struct with proper locks"
+* 9fc867582da Merge "MMC : card: Check for card status incase of timeout error"
+* ac98c531d68 Merge "MMC : cmdq_hci: clear interrupt after halt in case of error"
+* d1ba67688a9 Merge "drm/msm: Fix possible overflow issue in submit_cmd"
+
 #### packages/apps/Settings/
-* 809857c Add maintainer for Xiaomi RedMi 3 (#817)
+* 089a92820c Official support for Moto E3 Power(taido_row) (#818)
+* 93a2c68d47 Official support for Moto E3 Power(taido_row) (#819)
 
 #### packages/apps/Snap/
-* 5c51d47 Revert some permissions related changes
-* 0dbf891 Add overlay for restarting camera preview for additional cameras
+* 5c51d47c1 Revert some permissions related changes
 
 07-13-2017
 ============
 
+#### kernel/oneplus/msm8996/
+* 0bb6ed9b41e cnss_pci: fix the race condition in firmware file setup
+* 7c526172bd5 Merge "usb: dwc3: gadget: Fix start transfer errors for ISOC endpoints"
+* cc11e6c8b3a Merge "usb: dwc3: Fix assignment of EP transfer resources"
+* cb3edd09836 Merge "msm: camera: sensor:validating the flash initialization parameters"
+* 59059a57807 Merge "coresight: tmc: Fix use after free issue with tmc read"
+* d72cf622570 Merge "mmc: core: Remove unused variable"
+* 704512a9334 msm: kgsl: Use vma_area_struct with proper locks
+* 7623f8c5f6f MMC : card: Check for card status incase of timeout error
+* 1fc0c53758c MMC : cmdq_hci: clear interrupt after halt in case of error
+* e0b57df1657 Promotion of kernel.lnx.3.18.c5-170712.1.
+* 6ceb7f271c6 usb: dwc3: gadget: Fix start transfer errors for ISOC endpoints
+
 #### packages/apps/Jelly/
 * 6934a68 Jelly: use Google as default all the things
+
+#### packages/apps/Settings/
+* 809857c5b5 Add maintainer for Xiaomi RedMi 3 (#817)
+
+#### packages/apps/Snap/
+* 0dbf891c5 Add overlay for restarting camera preview for additional cameras
 
 07-12-2017
 ============
 
-#### device/lge/hammerhead/
-* 109887d hammerhead: revert unused aosp testing changes
-
 #### frameworks/base/
-* b0a68f3 PowerManagerService:Allow Device to set default value for hw keys light up[1/2]
+* b0a68f3e931 PowerManagerService:Allow Device to set default value for hw keys light up[1/2]
+
+#### kernel/oneplus/msm8996/
+* 6e9c00aa154 Merge "diag: Add proper checks to fix possible out-of-bound issue"
+* 5b071e26cef Merge "msm: mdss: fix null pointer dereferencing"
+* bd328e73c97 drm/msm: Fix possible overflow issue in submit_cmd
+* 65de27716d5 Promotion of kernel.lnx.3.18.c5-170712.
+* 6d44a276693 usb: dwc3: Fix assignment of EP transfer resources
+* 49529a8a59b Merge "USB: phy-msm-qusb: Enable autoresume only when device is connected"
+* fd5b3608a10 Merge "ARM: dts: msm: Use override mem-acc settings for msm8940"
+* dabe09da27e Merge "regulator: mem-acc: Add range check based override fuse version map"
 
 #### packages/apps/Settings/
-* e79d383 Settings:Allow Device to set default value for hw keys light up[2/2]
-
-#### vendor/cm/
-* 3fa356a Magisk,Manager: update to v13.1 stable
+* e79d383c13 Settings:Allow Device to set default value for hw keys light up[2/2]
 
 07-11-2017
 ============
 
-#### device/lge/hammerhead/
-* 213ccb2 hammerhead: lower the slow charging threshold
+#### kernel/oneplus/msm8996/
+* 85c3a1be96e Promotion of kernel.lnx.3.18.c5-170711.
+* 5ac202d431d diag: Add proper checks to fix possible out-of-bound issue
+* f43e2f08666 msm: camera: sensor:validating the flash initialization parameters
+* b5414136580 coresight: tmc: Fix use after free issue with tmc read
+* d95557cfac7 Promotion of kernel.lnx.3.18.c5-170710.
+* c854ece96b1 Merge "ASoC: msm: Fix kernel crash in "Speaker Function" mixer control"
+
+#### vendor/cm/
+* 3fa356a0 Magisk,Manager: update to v13.1 stable
+
+07-10-2017
+============
 
 #### frameworks/base/
-* f1c724e Base: make button backlight light up user configurable [1/2]
-* 2a7f84f Fix a crashed when clicking list item and button meanwhile
-* c2d809b Camera2: Fix Error Callback if buffer lost.
-* fb62603 [ams]set the resultTo to null started by a finishing activity
-* 5b8f52d remove the lock-use for prunePrintService in case blocking main thread
-* 0246757 Move screen on message to new thread
-* 6d688cd FlashlightTile: Retry opening camera later on if it failed before
-* 6bcd55e hwui: Remove deprecated compiler flag
-* 6d2489c SystemUI: move time tick to bg handler
+* f1c724e2e4f Base: make button backlight light up user configurable [1/2]
+* 2a7f84fff25 Fix a crashed when clicking list item and button meanwhile
+* c2d809b4a4d Camera2: Fix Error Callback if buffer lost.
+* fb62603db8e [ams]set the resultTo to null started by a finishing activity
+* 5b8f52d9f5a remove the lock-use for prunePrintService in case blocking main thread
+* 02467576dc2 Move screen on message to new thread
+* 6d688cdaf64 FlashlightTile: Retry opening camera later on if it failed before
+* 6bcd55e99a2 hwui: Remove deprecated compiler flag
+* 6d2489cf5e8 SystemUI: move time tick to bg handler
 
-#### kernel/lge/hammerhead/
-* 8b7f2a9 qseecom: remove entry from qseecom_registered_app_list
-* 902ef71 net: wireless: bcmdhd: fix use-after-free in _dhd_pno_get_for_batch()
-* 0aaba22 fs/proc/array.c: make safe access to group_leader
-* 1e9f2ca Input: gtco - fix crash on detecting device without endpoints
-* 057ebb2 Input: ati_remote2 - fix crashes on detecting device with invalid descriptor
-* 13e19ce Input: powermate - fix oops with malicious USB descriptors
-* 92d8948 USB: cdc-acm: more sanity checking
-* ec0ca49 USB: usb_driver_claim_interface: add sanity checking
-* 4184a35 USB: iowarrior: fix NULL-deref at probe
-* 1fa1784 USB: iowarrior: fix oops with malicious USB descriptors
-* cf027de USB: digi_acceleport: do sanity checking for the number of ports
-* 552ca4d USB: cypress_m8: add endpoint sanity check
-* ac1c2ca USB: mct_u232: add sanity checking in probe
-* fc17a40 ALSA: hrtimer: Fix stall by hrtimer_cancel()
-* 4264397 ALSA: timer: Harden slave timer list handling
-* 55e9c8f ALSA: timer: Fix double unlink of active_list
-* 0890f1d pipe: limit the per-user amount of pages allocated in pipes
-* 786c600 [media] media-device: fix infoleak in ioctl media_enum_entities()
+#### kernel/oneplus/msm8996/
+* c95c60d17d6 Merge "ARM: dts: msm: Adding AF support for Rear Aux Camera"
+* c7f703f507d Merge "ASoC: msm: qdsp6v2: add size check to fix out of bounds issue"
+* 0cfd69d2412 Merge "msm: sensor: actuator: add conditional check for ioctl"
+* 44126950d8a Merge "msm: sensor: Fix for variable being de-referenced without proper check"
+* 07e94cef0b1 Merge "ion: fix logical-not comparison warning"
+* 2157974cbe6 Merge "fbdev: msm: Allocate fd with O_CLOEXEC flag"
+* 84b8f8adf60 Merge "input: synaptics_dsx: validate bounds of intr_reg_num"
+* 7d30159a860 Merge "compat_qcedev: Fix accessing userspace memory in kernel space"
+* 56980a6a349 msm: isp: Fix Ub allocation for image WM
 
 #### packages/apps/DUI/
 * 5198175 DUI:Smartbar longpress delay:make it more configurable [1/2]
 
 #### packages/apps/Settings/
-* fbdd17e Settings: make hw keys light up user configurable [2/2]
-* 8ffe089 Smartbar longpress delay:make it more configurable [2/2]
+* fbdd17e5d9 Settings: make hw keys light up user configurable [2/2]
+* 8ffe089b51 Smartbar longpress delay:make it more configurable [2/2]
 
 #### vendor/oneplus/
-* 76077b6 oneplus2: Import from OnePlus2Oxygen_14_OTA_030_all_1704191749
-* 0d35b71 bacon: Update adreno blobs to LA.BF.1.1.3_rb1.12
-* 0bdb503 onyx: Regen makefiles to fix Copyright
-* 826ee48 onyx: Regen Blobs
-* 9f8fc3e bacon: Update adreno blobs
-* ac57721 bacon: Use widevine from kipper TOS125B
-* eac7b88 bacon: Regenerate makefiles
+* c2845b9 oneplus2: Import from OnePlus2Oxygen_14_OTA_030_all_1704191749
 
-07-10-2017
+07-09-2017
 ============
 
 #### bionic/
-* d207f78 Merge tag 'android-7.1.2_r24' into cm-14.1
+* d207f78d1 Merge tag 'android-7.1.2_r24' into cm-14.1
+
+#### device/oneplus/oneplus3/
+* 3e7b3d4 op3: Light up buttons only when pressed
 
 #### frameworks/base/
 
 #### hardware/qcom/audio-caf/msm8996/
-* 23d91de Merge 69af59b8962261e89d3309fd17b28425a3c0170f on remote branch
+* 23d91de4 Merge 69af59b8962261e89d3309fd17b28425a3c0170f on remote branch
 
 #### hardware/qcom/media-caf/msm8996/
-* c62bab1 Merge 04555962a06fe17ba83f2419951b30482f5f7d1f on remote branch
+* c62bab118 Merge 04555962a06fe17ba83f2419951b30482f5f7d1f on remote branch
+
+#### kernel/oneplus/msm8996/
+* e52e75f4bf8 Merge b99bb1b5259d26c42658613a2b78643b5da23b2e on remote branch
 
 #### packages/apps/OmniSwitch/
 
@@ -413,7 +838,10 @@
 
 #### packages/services/OmniJaws/
 
-07-09-2017
+#### system/bt/
+* 8bca3808 Merge 61578191af535415104b2b1a5c9b9691430d289a on remote branch
+
+07-08-2017
 ============
 
 #### android/
@@ -421,21 +849,24 @@
 * dafbf6a rr: don't track MusicFX
 
 #### build/
-* 75e05d5 core: Makefile: Correct package signature disable
-* 72cd3b1 core: assume non-release recoveries to skip signature check
-* b101356 core: use 0 compression when creating the target_files package
-* 912e52a releasetools: silence binary info printed by blockimgdiff
-* 189d8fd Create 0 compression ratio jar files
+* 75e05d5be core: Makefile: Correct package signature disable
+* 72cd3b1a8 core: assume non-release recoveries to skip signature check
+* b1013569d core: use 0 compression when creating the target_files package
+* 912e52ae7 releasetools: silence binary info printed by blockimgdiff
+* 189d8fdb7 Create 0 compression ratio jar files
 
 #### frameworks/base/
-* 79e9a27 aapt: enforce 0 compression
-* 2ca4ef8 aapt: allow opting out of uncompressed aapt
-* f6ef9b2 aapt: default to 0 compression
-* 6c9941d PowerManagerService: add a config to light up buttons only when pressed
+* 79e9a277422 aapt: enforce 0 compression
+* 2ca4ef89066 aapt: allow opting out of uncompressed aapt
+* f6ef9b26e99 aapt: default to 0 compression
+* 6c9941db8d4 PowerManagerService: add a config to light up buttons only when pressed
+
+#### kernel/oneplus/msm8996/
+* 18dff16768e Promotion of kernel.lnx.3.18.c5-170708.
+* c52651bdb69 Promotion of kernel.lnx.3.18.c5-170707.
+* 88dccb725a5 Merge "qpnp-fg: fix integer overflow"
 
 #### packages/apps/AudioFX/
-
-#### packages/apps/Gallery2/
 
 #### packages/apps/Jelly/
 
@@ -446,65 +877,81 @@
 #### packages/providers/WeatherProvider/
 
 #### vendor/cm/
-* fbb261c sensitive_pn: Enter full list of Indian MCC codes
-* a736075 sensitive_pn: Enter full list of GB MCC codes
-* 8388b24 sensitive_pn: Enter full list of US MCC codes
+* fbb261c8 sensitive_pn: Enter full list of Indian MCC codes
+* a7360756 sensitive_pn: Enter full list of GB MCC codes
+* 8388b24e sensitive_pn: Enter full list of US MCC codes
 
 #### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
 07-07-2017
 ============
 
-#### android/
-* 095f157 manifest: android-7.1.2_r17 -> android-7.1.2_r24
-
-#### build/
-* 5bd5c1f Don't build MusicFX
-* 01f92d6 Merge tag 'android-7.1.2_r24' into nougat
-
-#### external/skia/
-* d41b284 Merge tag 'android-7.1.2_r24' into nougat
-
-#### frameworks/av/
-* 4d87ec3 Merge tag 'android-7.1.2_r24' into nougat
-
 #### frameworks/base/
-* 7359783 SmartBar: make button longpress delay configurable [2/3]
-* 0f18cce fingerprint: Speed up wake-and-unlock scenario
-* 10484a5 [1/2] Add support for pulsing battery icon when charging
-* 7cc34a0 Merge tag 'android-7.1.2_r24' into nougat
-
-#### frameworks/native/
-* cfac6d5 Merge tag 'android-7.1.2_r24' into nougat
+* 7359783fc8c SmartBar: make button longpress delay configurable [2/3]
+* 0f18cce1de8 fingerprint: Speed up wake-and-unlock scenario
+* 10484a5c533 [1/2] Add support for pulsing battery icon when charging
 
 #### kernel/oneplus/msm8996/
-* 88065ec Revert "qcacld-2.0: Update to LA.UM.5.5.r1-05100-8x96.0"
+* 5fa1a2fa982 Merge "wil6210: protect against invalid length of tx management frame"
+* 8df45ecbd89 Merge "msm:ipa: Fix to kasan use-after-free issue"
+* f042c07f83b Merge "msm: ipa: prevent string buffer overflows"
 
 #### packages/apps/DUI/
 * 0e7263f SmartBar: make button longpress delay configurable [1/3]
 
 #### packages/apps/Settings/
-* 1f19428 SmartBar: make button longpress delay configurable [3/3]
-* a9a780d Edit a string
-* a9bba60 [2/2] Add support for pulsing battery icon regardless of style
-* 15be728 DeviceInfoSettings: don't hardcode tag/build id
-* 658c831 Merge tag 'android-7.1.2_r24' into nougat
-* 77bc9ec Change Oneplus2 maintainer (#816)
-
-#### vendor/cm/
-* 44d782b vendor: add a prop to get the AOSP tag from manifest
-
-#### vendor/lge/
-* f2979e9 bullhead: update blobs from N2G47Z factory image
+* 1f19428961 SmartBar: make button longpress delay configurable [3/3]
+* a9a780d98c Edit a string
+* a9bba6022f [2/2] Add support for pulsing battery icon regardless of style
 
 07-06-2017
 ============
 
+#### android/
+* 095f157 manifest: android-7.1.2_r17 -> android-7.1.2_r24
+
+#### build/
+* 5bd5c1f80 Don't build MusicFX
+* 01f92d67c Merge tag 'android-7.1.2_r24' into nougat
+
+#### device/oneplus/oneplus3/
+* 4eaa7b3 op3: Abandon TARGET_UNIFIED_DEVICE flag
+* a0b69b4 op3: Allow vendor init to override props
+
 #### external/boringssl/
 * c9d9e0b Merge tag 'android-7.1.2_r24' into cm-14.1
 
+#### external/skia/
+* d41b284fc Merge tag 'android-7.1.2_r24' into nougat
+
+#### frameworks/av/
+* 4d87ec3d7 Merge tag 'android-7.1.2_r24' into nougat
+
+#### frameworks/base/
+* 7cc34a0cc29 Merge tag 'android-7.1.2_r24' into nougat
+
+#### frameworks/native/
+* cfac6d556 Merge tag 'android-7.1.2_r24' into nougat
+* f83381fbb Merge tag 'android-7.1.2_r24' into cm-14.1
+
+#### kernel/oneplus/msm8996/
+* 7abce33d299 ASoC: msm: qdsp6v2: add size check to fix out of bounds issue
+* dad795633ed msm: sensor: actuator: add conditional check for ioctl
+* 114611115d5 msm: sensor: Fix for variable being de-referenced without proper check
+* 1fa0f78c612 msm: mdss: fix null pointer dereferencing
+* 84c0c54acf4 wil6210: protect against invalid length of tx management frame
+* c2fd287bf16 msm:ipa: Fix to kasan use-after-free issue
+* a9457ba7ca1 msm: ipa: prevent string buffer overflows
+* fb19c623ee6 msm: ispif: fix device crash during dumping io register
+* 9262263c54f USB: phy-msm-qusb: Enable autoresume only when device is connected
+
 #### libcore/
-* 30ff118 Merge tag 'android-7.1.2_r24' into cm-14.1
+* 30ff11853 Merge tag 'android-7.1.2_r24' into cm-14.1
+
+#### packages/apps/Settings/
+* 15be728ac2 DeviceInfoSettings: don't hardcode tag/build id
+* 658c8312f0 Merge tag 'android-7.1.2_r24' into nougat
+* 77bc9eca47 Change Oneplus2 maintainer (#816)
 
 #### packages/providers/DownloadProvider/
 * d20a3a2 Merge tag 'android-7.1.2_r24' into cm-14.1
@@ -515,27 +962,44 @@
 #### system/sepolicy/
 * e6105f1 Merge tag 'android-7.1.2_r24' into cm-14.1
 
+#### vendor/cm/
+* 44d782b6 vendor: add a prop to get the AOSP tag from manifest
+
 07-05-2017
+============
+
+#### kernel/oneplus/msm8996/
+* 80e323d39a2 ARM: dts: msm: Use override mem-acc settings for msm8940
+* fa601f17db2 regulator: mem-acc: Add range check based override fuse version map
+* abb04913c3e usb: gadget: Fix incorrect ISOC data transfer PIDs
+* b2ac37131cc ion: fix logical-not comparison warning
+* 08b79364a45 qpnp-fg: fix integer overflow
+* 8f881068b95 input: synaptics_dsx: validate bounds of intr_reg_num
+* 20958e19ce1 compat_qcedev: Fix accessing userspace memory in kernel space
+
+#### packages/apps/Jelly/
+* fa0b42a Jelly: Don't save form data in incognito mode
+
+#### system/core/
+* 01a71860c Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
+
+#### vendor/cm/
+* 37396255 Add LTE support for China Telecom Macau.
+* 3f2013a9 qcom_utils: Cleanup supported QCOM_BOARD_PLATFORMS
+* 3177211b build: qcom_target: Define MASTER_SIDE_CP_TARGET_LIST
+
+07-04-2017
 ============
 
 #### hardware/qcom/fm/
 
-#### kernel/oneplus/msm8996/
-* 25bbdeb Revert "op3: Disable sync before suspend"
-* 7d6a92b Revert "power: make sync on suspend optional"
-* 32a2f0c UPSTREAM: ext4: fix fencepost in s_first_meta_bg validation
-* 7c904c9 ext4: fix condition of validate s_first_meta_bg
-* 4dd713a UPSTREAM: packet: fix races in fanout_add()
-* cefc08c fs/exec.c: account for argv/envp pointers
-* 9379202 cpu-hotplug: convert cpu_hotplug_disabled to a counter
-* d0b30bf op3: Disable sync before suspend
-* 8a78987 power: make sync on suspend optional
-* 9159315 qcacld-2.0: Update to LA.UM.5.5.r1-05100-8x96.0
+#### hardware/qcom/media-caf/msm8916/
+* 22979e32d mm-video-v4l2: venc: Protect buffer from being freed while accessing
 
-#### packages/apps/Gallery2/
+#### kernel/oneplus/msm8996/
+* b99bb1b5259 Promotion of kernel.lnx.3.18.c5-170703.
 
 #### packages/apps/Jelly/
-* fa0b42a Jelly: Don't save form data in incognito mode
 
 #### packages/apps/Profiles/
 
@@ -547,36 +1011,41 @@
 
 #### packages/resources/devicesettings/
 
-#### system/core/
-* 01a7186 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_system_core into nougat
-
-#### vendor/cm/
-* 3739625 Add LTE support for China Telecom Macau.
-* 3f2013a qcom_utils: Cleanup supported QCOM_BOARD_PLATFORMS
-* 3177211 build: qcom_target: Define MASTER_SIDE_CP_TARGET_LIST
-
 #### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+#### vendor/oneplus/
+* d8da28e bacon: Update adreno blobs to LA.BF.1.1.3_rb1.12
 
 07-03-2017
 ============
 
-#### frameworks/base/
-
 #### hardware/qcom/audio-caf/msm8916/
-* 5578c76 Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.22' into cm-14.1-caf-8916
+* 5578c76b Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.22' into cm-14.1-caf-8916
 
 #### hardware/qcom/audio-caf/msm8994/
-* 9cddbb8 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.14' into cm-14.1-caf-8994
+* 9cddbb87 Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.14' into cm-14.1-caf-8994
 
 #### hardware/qcom/fm/
 * 7a29d93 FM: Fix helium hal build
 * 0df98d3 Change rename_dialog background color to default
 * f62c66a FMStats: fix GetFMStatsForFreq error for non-cherokee
 
-#### packages/apps/DUI/
+#### kernel/oneplus/msm8996/
+* 7c10f03dd6d fbdev: msm: Allocate fd with O_CLOEXEC flag
+* cfa089ad880 mmc: core: Remove unused variable
+* 413aa5fb2ed Merge "msm: ADSPRPC: Null check for file session context during device release"
+* be1538401d2 Merge "ASoC: msm: qdsp6v2: extend validation of virtual address"
 
-#### packages/apps/Gallery2/
-* c45b89b Gallery2: Fix crash after returning from albums in wallpaper picker
+#### vendor/oneplus/
+* abe2e88 onyx: Regen makefiles to fix Copyright
+* 0b83a67 onyx: Regen Blobs
+
+07-02-2017
+============
+
+#### frameworks/base/
+
+#### packages/apps/DUI/
 
 #### packages/apps/Jelly/
 * b8109ec Jelly: Update suggestions provider API URLs
@@ -589,7 +1058,10 @@
 
 #### packages/services/OmniJaws/
 
-07-02-2017
+#### vendor/oneplus/
+* 1af6d4c bacon: Update adreno blobs
+
+07-01-2017
 ============
 
 #### hardware/qcom/fm/
@@ -597,18 +1069,10 @@
 #### hardware/ti/omap4/
 * 030bec5 BUGBASH-733 Memory leak in system_server caused by suspend / color fade
 
-#### kernel/lge/hammerhead/
-* 79d000a arm: oabi compat: add missing access checks
-* 12232d1 ipv4: Don't do expensive useless work during inetdev destroy.
-* bccd7bf ALSA: seq: Fix race at timer setup and close
-* 3cfea91 ALSA: compress: fix an integer overflow check
-* 18fc002 mac80211: fix fragmentation code, particularly for encryption
-* 234673a mac80211: fix AP powersave TX vs. wakeup race
-* e9f40a3 unix: correctly track in-flight fds in sending process user_struct
-* 936a575 unix: properly account for FDs passed over unix sockets
-* 9100a48 UPSTREAM: proc: actually make proc_fd_permission() thread-friendly
-* 7eb8ae7 UPSTREAM: proc: make proc_fd_permission() thread-friendly
-* 5f995be qcrypto: protect potential integer overflow.
+#### kernel/oneplus/msm8996/
+* af5491df8d8 Promotion of kernel.lnx.3.18.c5-170701.
+* 150a6f64ed1 Revert "op3: Disable sync before suspend"
+* b862a67b1bf Revert "power: make sync on suspend optional"
 
 #### packages/apps/AudioFX/
 
@@ -618,14 +1082,13 @@
 
 #### packages/apps/Eleven/
 
-#### packages/apps/Gallery2/
-
 #### packages/apps/Jelly/
 * a7659df Jelly: Make UrlResolvedReceiver final
 * b15286f Jelly: Move bing suggestions provider to https
 * f50b7e9 Jelly: Fix Suggestions Provider strings (suggestion / uggestion)
 * 697e32d Jelly: Remove unused parameter
 * 66d1b83 Jelly: Allow launching external apps
+* 9d693cc Jelly: Remove unneeded getApplicationContext call
 
 #### packages/apps/Recorder/
 
@@ -645,124 +1108,161 @@
 
 #### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
 
-07-01-2017
-============
-
-#### frameworks/base/
-* 9265366 Fix potential KeyguardMonitor FC on unlock
-
-#### packages/apps/Jelly/
-* 9d693cc Jelly: Remove unneeded getApplicationContext call
-* d6b3b84 Jelly: Add non encrypted google search engine
-* 897fa20 Jelly: Propagate custom request headers to WebClient
-* 58c2aed Jelly: Add suggestions
-
-#### packages/apps/Settings/
-* 3e1184d Enable some more power menu actions
-
-#### packages/apps/WallpaperPicker/
-* 2b021c4 WallpaperPicker: Update for wallpaper API changes
+#### vendor/oneplus/
+* dd66582 bacon: Use widevine from kipper TOS125B
+* b5240ee bacon: Regenerate makefiles
 
 06-30-2017
 ============
 
-#### build/
-* a2f759c Disable recovery resource warning
-* 29849f1 Revert "Preventing default locale from being overridden because of buildinfo.sh"
-* 13505f0 Revert "build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE""
-* dbe4d61 Makefile: Add the missing dependency on FUTILITY.
-* 14e6c9f Build FUTILITY tool from futility-host.
-
 #### frameworks/av/
-* 0e7e3ed Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
+* 0e7e3ed52 Merge branch 'cm-14.1' of https://github.com/LineageOS/android_frameworks_av into nougat
 
 #### frameworks/base/
-* b2edd93 Revert "BluetoothTile: Fix in the off state while entering the detail view"
-* 2924709 ActivityStarter: Fix protected app intents
-* 7d5b280 SystemUI: Make play queue toggle more visible
-* c41bff4 Volume Panel: Fix Bluetooth music stream icon when muted
-* 0679fa4 Add support for the .opus file format
+* 92653666a4d Fix potential KeyguardMonitor FC on unlock
+* b2edd938098 Revert "BluetoothTile: Fix in the off state while entering the detail view"
 
 #### kernel/oneplus/msm8996/
-* cb91fda Fix build
-* 7aab82b Revert "PM / devfreq: Add a governor white list"
-* 0028b93 Revert "PM / devfreq: Add an interface to boost devices when the screen is woken"
-* 4118769 Revert "PM / devfreq: Boost "624000.ufshc" and "soc:qcom,cpubw" on screen wake"
-* 1f6e158 Revert "devfreq: dont boost ufshc, too many fail points."
-* 346e402 Revert "PM / devfreq: Remove null termination in boost_devices"
-* 9877cc1 Revert "PM / devfreq: Fix typo that caused an infinite loop"
-* 459a9b4 Merge tag 'LA.UM.5.5.r1-05100-8x96.0' into n-mr2
+* 7c0fe15b8ca Promotion of kernel.lnx.3.18.c5-170630.
+* b874853885e ASoC: msm: Fix kernel crash in "Speaker Function" mixer control
+* 0d72928f90e Merge "ASoC: wcd-mbhc: disable electrical interrupts when cable type is NONE"
+* ac3dab47b87 UPSTREAM: ext4: fix fencepost in s_first_meta_bg validation
+* 21bc23e9f67 ext4: fix condition of validate s_first_meta_bg
+* b342b66fc14 UPSTREAM: packet: fix races in fanout_add()
+* 5ed4620086b ping: implement proper locking
+* f190ef4d68b selinux: fix off-by-one in setprocattr
+* 1aad9909480 fs/exec.c: account for argv/envp pointers
+* 40d49df3b7d cpu-hotplug: convert cpu_hotplug_disabled to a counter
+* 5c8ef51b343 op3: Disable sync before suspend
+* ab8fe0528f1 power: make sync on suspend optional
+* 7f3b20569e1 Promotion of kernel.lnx.3.18.c5-170629.
 
 #### packages/apps/DUI/
 * 08efc6c Fix button size not refreshing after a dpi change
 * f758ef8 Media arrows: hide them on keyguard bouncer
 
-#### packages/apps/Settings/
-* dffe3ae Settings: Hide disabled lockscreen blur from search index
-* d033a65 Settings: handle decrypting larger pattern sizes for sw600dp
-* cc69056 Revert "Settings: Fix internal storage summary for non-emulated storage"
-* afac342 Settings: Fix automatic hotspot turn off summary
-* 962926d Settings: Make string untranslatable
+#### packages/apps/Jelly/
+* d6b3b84 Jelly: Add non encrypted google search engine
+* 897fa20 Jelly: Propagate custom request headers to WebClient
+* 58c2aed Jelly: Add suggestions
 
-#### vendor/cm/
-* 94925ac apns-conf: Add Japan Umobile APNs
-* 65227e7 sensitive_pn: Add sensitive numbers for Greece
-* 980082e sensitive_pn: fix Czech Republic MCC
-* 93c4774 sensitive_pn: Add Taiwanese sensitive numbers
-* 0d0b4a0 Add sensitive numbers for Ukraine.
-* 25aa89e Add Virgin Media Ireland to APN's
-* 0d7863e sensitive_pn: Add additional FR number
-* ea6ec70 sensitive_pn: Add additional GB numbers
-* 5cdcee9 sensitive_pn: Add additional PT numbers
-* 5873f8b sensitive_pn: add missing phone number for Brazil
-* 1498b34 roomservice: Search for repos in lineage snippet too
-* e0f8cfc roomservice: Remove support for devices in main manifest
-* eb80e6f Add sensitive numbers for Israel.
-* a632682 sensitive_pn: Add sensitive phone numbers for Czech Republic
-* a0723e8 sensitive_pn: Add Canadian sensitive numbers
-* 3483b70 sensitive_pn: Add more numbers from the Netherlands
+#### packages/apps/Settings/
+* 3e1184db02 Enable some more power menu actions
+
+#### packages/apps/WallpaperPicker/
+* 2b021c4 WallpaperPicker: Update for wallpaper API changes
+
+#### system/bt/
+* 61578191 Promotion of bt.lnx.2.1.c1-00059.
+* 9dfb5451 Merge "AV: Use separate AV sig timeout timer for dual connections." into bt.lnx.2.1.c1-dev
 
 06-29-2017
 ============
 
+#### build/
+* a2f759c83 Disable recovery resource warning
+* 29849f1d1 Revert "Preventing default locale from being overridden because of buildinfo.sh"
+* 13505f0bb Revert "build: skip 'ro.product.device' using  new macro "TARGET_SKIP_PRODUCT_DEVICE""
+* dbe4d6120 Makefile: Add the missing dependency on FUTILITY.
+* 14e6c9f63 Build FUTILITY tool from futility-host.
+
+#### device/oneplus/oneplus3/
+* 946754c op3: Update ramdisk to LA.UM.5.5.r1-05100-8x96.0
+
 #### frameworks/base/
+* 2924709a761 ActivityStarter: Fix protected app intents
+* 7d5b280f25e SystemUI: Make play queue toggle more visible
+* c41bff4dbd8 Volume Panel: Fix Bluetooth music stream icon when muted
+* 0679fa44723 Add support for the .opus file format
+
+#### kernel/oneplus/msm8996/
+* bd889915656 Merge "input: touchscreen: validate bounds of intr_reg_num"
+* 5ce33e2273f Merge "usb: bam: Remove inactivity_timer sysfs attribute"
+* 84c4f4f3c7c qcacld-2.0: Update to LA.UM.5.5.r1-05100-8x96.0
+* 118e4a23836 Merge tag 'LA.UM.5.5.r1-05100-8x96.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into cm-14.1
+* bec292b2b7f Merge "msm: camera: Fix NULL pointer dereference in msm_vb2.c."
+* a741f2b75ed Merge "power: qpnp-smbcharger: Release wakeup source on USB removal"
+* 33dc4bd23f0 Merge "qcdev: Check the digest length during the SHA operations"
+* c5bdb4d2479 Merge "soc: qcom: Initialize message pointer with NULL"
+* 0c8c475b0a0 input: touchscreen: validate bounds of intr_reg_num
+* 1ed113ac033 usb: bam: Remove inactivity_timer sysfs attribute
+
+#### packages/apps/Settings/
+* dffe3ae29c Settings: Hide disabled lockscreen blur from search index
+* d033a65d12 Settings: handle decrypting larger pattern sizes for sw600dp
+* cc69056618 Revert "Settings: Fix internal storage summary for non-emulated storage"
+* afac3428bf Settings: Fix automatic hotspot turn off summary
+* 962926d3c6 Settings: Make string untranslatable
+
+#### vendor/cm/
+* 94925ac1 apns-conf: Add Japan Umobile APNs
+* 65227e74 sensitive_pn: Add sensitive numbers for Greece
+* 980082ef sensitive_pn: fix Czech Republic MCC
+* 93c47747 sensitive_pn: Add Taiwanese sensitive numbers
+* 0d0b4a0f Add sensitive numbers for Ukraine.
+* 25aa89e8 Add Virgin Media Ireland to APN's
+* 0d7863e9 sensitive_pn: Add additional FR number
+* ea6ec708 sensitive_pn: Add additional GB numbers
+* 5cdcee91 sensitive_pn: Add additional PT numbers
+* 5873f8b3 sensitive_pn: add missing phone number for Brazil
+* 1498b342 roomservice: Search for repos in lineage snippet too
+* e0f8cfc6 roomservice: Remove support for devices in main manifest
+* eb80e6fd Add sensitive numbers for Israel.
+* a6326821 sensitive_pn: Add sensitive phone numbers for Czech Republic
+* a0723e8e sensitive_pn: Add Canadian sensitive numbers
+* 3483b70e sensitive_pn: Add more numbers from the Netherlands
+
+06-28-2017
+============
+
+#### frameworks/base/
+
+#### kernel/oneplus/msm8996/
+* 12c21b07f34 msm: camera: Fix NULL pointer dereference in msm_vb2.c.
 
 #### packages/apps/DUI/
 
 #### packages/apps/Jelly/
 * 69173dd Jelly: Add show/hide keyboard utilities
+* 9a5fcdd Jelly: Search on Enter key
+
+#### packages/apps/Messaging/
+* d1e7aec Messaging: Don't crash on unsupported shared content type
+* 53b0ba3 Messaging: Request external storage permission before handling shared files
 
 #### packages/apps/OmniSwitch/
 
 #### packages/apps/Settings/
 
-06-28-2017
+06-27-2017
 ============
 
 #### external/stagefright-plugins/
 * 931ae6b FFmpegExtractor: Fix "supported" typo in logs
 
-#### kernel/lge/hammerhead/
-* d462ad5 ext4: fix fencepost in s_first_meta_bg validation
-* 4283989 fs: fuse: Add replacment for CMA pages into the LRU cache
-* 1c388d3 net: wireless: bcmdhd: fix overrun in dhd_pno_set_cfg_gscan
-* fcfc79d ext4: validate s_first_meta_bg at mount time
+#### frameworks/av/
+* eb9cc2030 CameraService: Fix cameraId type of onDeviceStatusChanged
+
+#### kernel/oneplus/msm8996/
+* 033997ce53a power: qpnp-smbcharger: Release wakeup source on USB removal
+* 7800bf5b369 msm: ADSPRPC: Null check for file session context during device release
+* 95d439a0ef0 qcdev: Check the digest length during the SHA operations
+* d260684d00c soc: qcom: Initialize message pointer with NULL
+* 8c75fde3613 msm: sensor: validating the flash initialization parameters
+* 583be4ae2d7 ASoC: wcd-mbhc: disable electrical interrupts when cable type is NONE
+* b5b3abd519a msm: mdss: Ensure mdp splash cleanup before initiating rotation request
 
 #### packages/apps/Jelly/
-* 9a5fcdd Jelly: Search on Enter key
 * 74c7e51 Jelly: Don't reload on keyboard changes
 
 #### packages/apps/Settings/
-* 7470d86 Add device Samsung Galaxy S4 VE GT-I9515 jfvelte (#813)
+* 7470d86088 Add device Samsung Galaxy S4 VE GT-I9515 jfvelte (#813)
 
-06-27-2017
+06-26-2017
 ============
 
-#### frameworks/av/
-* eb9cc20 CameraService: Fix cameraId type of onDeviceStatusChanged
-
-#### packages/apps/Gallery2/
-* e988d6a Gallery2: Fix views overlap
+#### kernel/oneplus/msm8996/
+* 5adc0b6878d ASoC: msm: qdsp6v2: extend validation of virtual address
 
 #### packages/apps/Jelly/
 * cc66a61 Jelly: Add WebChromeClientCompat
@@ -770,7 +1270,14 @@
 
 #### packages/apps/Settings/
 
-06-26-2017
+#### packages/providers/MediaProvider/
+* 0f47b6e MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest
+* 815436d Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.
+* f3bd6a0 Music: Fix force closed when plug out the SD card while music is playing.
+* eb0378b MediaProvider: Fix SQLiteDiskIOException.
+* b619475 Revert "Fix check for existence of parent"
+
+06-25-2017
 ============
 
 #### packages/apps/DUI/
@@ -780,47 +1287,288 @@
 #### packages/apps/Eleven/
 * 38c5aea Eleven: request record audio permission for visualizer
 
-#### packages/apps/OmniSwitch/
-
-#### packages/apps/PackageInstaller/
-
-#### packages/apps/Settings/
-* 5d3664d Add Xiaomi MI6(sagit) maintainer (#812)
-
-#### packages/providers/MediaProvider/
-* 0f47b6e MediaProvider: Fix failure in android.provider.cts.MediaStore_FilesTest
-* 815436d Gallery2: Fix thumbnails of new edit photos display wrongly in Documents.
-* f3bd6a0 Music: Fix force closed when plug out the SD card while music is playing.
-* eb0378b MediaProvider: Fix SQLiteDiskIOException.
-* b619475 Revert "Fix check for existence of parent"
-* 21ce3cd Revert "MediaProvider: Fix where condition of delete queries"
-
-#### packages/services/OmniJaws/
-
-#### vendor/lge/
-* 14917ec msm8996: Fix HotwordEnrollment apk inclusion
-* 73dd94b msm8996: Add image stabilizer and video denoiser
-
-06-25-2017
-============
-
-#### frameworks/base/
-
-#### kernel/lge/hammerhead/
-* 562bd51 ALSA: info: Check for integer overflow in snd_info_entry_write()
-* c9c28a8 perf: don't leave group_entry on sibling list (use-after-free)
-
 #### packages/apps/Jelly/
 * 2d1bdcd Jelly: Add save form data setting
 * d2926c7 Jelly: add Do Not Track setting
 * 42d6446 Jelly: Add incognito mode shortcut
 * 69c2401 Jelly: Update android tools build
 
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/PackageInstaller/
+
+#### packages/apps/Settings/
+* 5d3664d68e Add Xiaomi MI6(sagit) maintainer (#812)
+
+#### packages/apps/Trebuchet/
+* 8b8de5f5b Trebuchet: Rename settings provider
+
+#### packages/providers/MediaProvider/
+* 21ce3cd Revert "MediaProvider: Fix where condition of delete queries"
+
+#### packages/services/OmniJaws/
+
+06-24-2017
+============
+
+#### device/oneplus/oneplus3/
+* b797438 op3: Update power profile from latest OOS
+* a77cc84 op3: Automatically set bluetooth name based on rf version
+
+#### frameworks/base/
+
+#### packages/apps/Jelly/
+* eff2fd2 Open link in Incognito tab automatically when in Incognito mode
+* f7338cf Jelly: Enable safe browsing
+
 #### packages/apps/Settings/
 
 #### packages/apps/SetupWizard/
 * 092d0fa Disable SetupWraith, the ATV SUW.
 
-#### packages/apps/Trebuchet/
-* 8b8de5f Trebuchet: Rename settings provider
+06-23-2017
+============
+
+#### device/oneplus/oneplus3/
+* 9a25a6a op3: Sync bluetooth configuration with CAF
+
+#### frameworks/base/
+* 9f0a98e223f Fix System Navigation fp switch
+
+#### hardware/qcom/audio/default/
+* d52eb11e hal: add missing incall recording usecases and check
+
+#### hardware/qcom/display-caf/msm8996/
+* e6e0a9e8e Merge f462bd709fbc1914135443f10489220b969c9385 on remote branch
+
+#### hardware/qcom/fm/
+
+#### kernel/oneplus/msm8996/
+* fe476e1bd8f Promotion of kernel.lnx.3.18.c5-170623.
+* 6701da1850a Merge 42dd1a0f380084d245da022619536f15c9cebf24 on remote branch
+* da150673bd1 Promotion of kernel.lnx.3.18.c5-170622.
+* 38bfef1769e Merge "msm: mdss: validate number of cea blocks before reading from edid_buf"
+* 7865ff105eb Merge "msm : mdss: fix unaligned access problem"
+* 835aca0d0f6 Merge "msm: mdss: hdmi: check up-bound of CEC frame size"
+* 66623cd9e67 Merge "msm: mdss: fix issue preventing cursor_buf address to be stored"
+
+#### packages/apps/Bluetooth/
+
+#### packages/apps/CMBugReport/
+
+#### packages/apps/Calendar/
+
+#### packages/apps/CellBroadcastReceiver/
+
+#### packages/apps/FMRadio/
+
+#### packages/apps/Jelly/
+* 818e92d Jelly: Guess filename from URL
+* 1a4f237 Jelly: Allow media scan on download
+* a8fe6fa Jelly: Show download notification on completed
+
+#### packages/apps/Messaging/
+
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/Recorder/
+
+#### packages/apps/Settings/
+
+#### packages/apps/SetupWizard/
+
+#### packages/apps/Snap/
+
+#### packages/apps/Terminal/
+
+#### packages/apps/TvSettings/
+
+#### packages/inputmethods/LatinIME/
+
+#### packages/providers/DownloadProvider/
+
+#### packages/resources/devicesettings/
+
+#### packages/services/Telephony/
+* 091ccb65 Fix Phone Service crash on MSIM devices as Guest user
+
+#### system/bt/
+* a21498d7 Merge e6ba9c4225b7639ce152017fa78356551d8756d8 on remote branch
+
+#### vendor/cmsdk/samples/weatherproviderservice/YahooWeatherProvider/
+
+06-22-2017
+============
+
+#### device/oneplus/oneplus3/
+* c2e7eda op3: Define ril-daemon normally
+* b303c21 op3: sepolicy: Remove old and duplicate permissions
+* f4ecf29 Revert "op3: sepolicy: Fix rmt_storage and rfs_access policies"
+* bb87f54 op3: Add system GID to rmt_storage
+* 2b9d2a4 op3: rmt_storage should have wakelock GID
+* 9d18ddd op3: Drop NET_RAW and NET_ADMIN from qti
+* 9cbce71 op3: Grant netmgrd proper unix perms
+
+#### frameworks/base/
+* 16cf7d01070 SystemUI: force a clock update if the screen is turned back on
+* af8a38cfad9 SystemUI: disable statusbar time refresh when screen off
+* cdf8770755e base: SystemUI: CPU Info: show CPU temp if supported
+* e57631def84 Frameworks: Fix Null Pointer Issue
+
+#### hardware/qcom/audio-caf/msm8994/
+* 4d328c00 Merge AU_LINUX_ANDROID_LA.BF64.1.2.3_RB1.07.01.02.258.026 on remote branch
+
+#### kernel/oneplus/msm8996/
+* 9ebaa821b20 Merge "NFC: Detection of NQ chip set and firmware version"
+* 86cce415aaa ANDROID: sdcardfs: remove dead function open_flags_to_access_mode()
+* 32e2e66eee1 Promotion of kernel.lnx.3.18.c5-170621.
+* 6f33b82b99a Merge "diag: Prevent NULL pointer dereference while closing logging process"
+
+#### packages/apps/PackageInstaller/
+
+#### packages/apps/Settings/
+* b2b5093158 Settings: Fragment cleanups
+
+06-21-2017
+============
+
+#### build/
+* e98448052 Clean option: deviceclean
+
+#### device/oneplus/oneplus3/
+* f2bc6c0 op3: Update qti telephony extension from MIUI 7.6.5 dev
+* 70581ae op3: Convert rf_version to integer before comparison
+* 0f0e85d op3: Update from Open Beta 18
+* 3a1de8f op3: Adjust lmk parameters
+
+#### frameworks/base/
+* 2e64d3aca21 SystemUI: Fix task lock & freeform buttons placement
+* d7bad2d4e4b SymbolComparator operator() is missing const
+* bf079b8f29c PowerProfile: allow reading from a file instead of resource
+
+#### kernel/oneplus/msm8996/
+* 5907060b6f6 Merge "msm: mdss: validate page id before reading from edid buffer"
+* 22b59d82d32 Merge "msm: mdss: validate the buffer size before allocating memory"
+* c74de79c4de Merge "msm: mdss: size check before writing to edid buffer"
+* 20db1727168 Promotion of kernel.lnx.3.18.c5-170620.1.
+* b7b825b057d Merge "msm: camera: Fix Use after free bug in msm_vb2.c."
+* 56624b3d31a Merge "msm: ipa: fix ipacm_client usage"
+* 1d391badc24 Merge "diag: Synchronize command registration table access"
+* 28efbcfd6bf Merge "soc: qcom: service-locator: Return in case of no matching domains found"
+* e1fa1ca899b Merge "msm: sensor: validating the flash initialization parameters"
+* d3e55a12811 Merge "usb: dwc3: Add check for SDP charger type"
+
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/Settings/
+* 7a3bbf24df Add nubia Z9 Max nx512j as official (#811)
+* 1f920813cb Settings: update OnePlus 3/3t maintainer, add flo, deb, dragon maintainer
+* b5c3924dd1 Maintainers: Fix up somethings
+* d0f0f3db76 Increase Max Small qs tiles to 9
+* be420f3f13 Fingerprint swipe gesture to answer/silence incoming call [2/2]
+
+#### packages/providers/MediaProvider/
+* fadf365 MediaProvider: Fix where condition of delete queries
+
+#### vendor/oneplus/
+* b7ac82e op3: Update qti telephony extension from MIUI 7.6.5 dev
+* 627730b op3: Update to Open Beta 18 blobs
+
+06-20-2017
+============
+
+#### frameworks/base/
+* 73645e52a1e When updating a split app, copy compiled files from base.apk only.
+* a5691f66f1b QS Tile: increase DEFAULT_MAX_BOUND to 6
+* 4bf8cbfe015 Fix service cannot start when service removed from restartList
+* fcfcc0a5d26 Binder: Log details of pending exception.
+* 648c2d41f7b Binder: Be forceful about a forceful exit.
+* 11a0aac604b Only destory ce data when prepare user CE data failed.
+* 8240c470656 When backup schedule version error will be caused system_server crash
+* 63a5ada7e41 fix ArraySet crash
+* a5ca9a46a2e Battery icon: Improve theme compatibility
+* 9fba0b5ad80 Adopt lockscreen shortcut hint from AOSP
+* 5ed7a438da7 Fingerprint swipe gesture to answer/silence incoming call [1/2]
+* 12cadaaa6de Notification panel fingerprint gesture: fix axis on landscape [1/2]
+* 5399cd94e7a Revert "edit app_label (#202)"
+
+#### hardware/qcom/audio-caf/msm8996/
+* 69af59b8 Promotion of audio-userspace.lnx.2.1.c1-00032.
+
+#### hardware/qcom/display/
+* f3072db9f hwcomposer: Fix regression in hwc_sync
+
+#### hardware/qcom/display-caf/apq8084/
+* 38e457cdb hwcomposer: Fix regression in hwc_sync
+
+#### hardware/qcom/display-caf/msm8916/
+* 6700612a1 hwcomposer: Fix regression in hwc_sync
+
+#### hardware/qcom/display-caf/msm8974/
+* 24176c9df hwcomposer: Fix regression in hwc_sync
+
+#### hardware/qcom/display-caf/msm8994/
+* 023758b1a hwcomposer: Fix regression in hwc_sync
+
+#### kernel/oneplus/msm8996/
+* 381508563dc Merge "msm: mdss: Buffer overflow while processing gamut table data"
+* c18af381b5f Merge "msm: mdss: Clean-up payload for unsupported versions"
+* 89e6c2d3840 msm: mdss: validate page id before reading from edid buffer
+* 70a827b013e msm: ipa: fix ipacm_client usage
+* c8118756d4f msm : mdss: fix unaligned access problem
+* f03b4752d1c msm: camera: Fix Use after free bug in msm_vb2.c.
+* f21cf3e8282 diag: Synchronize command registration table access
+* 350788e0c95 msm: mdss: hdmi: check up-bound of CEC frame size
+* addb9570ef1 msm: mdss: fix issue preventing cursor_buf address to be stored
+* d76042ec337 soc: qcom: service-locator: Return in case of no matching domains found
+* 6913a08497f msm: mdss: validate the buffer size before allocating memory
+* 6edfd74eacc msm: mdss: validate number of cea blocks before reading from edid_buf
+* d99ed8b43e9 msm: sensor: validating the flash initialization parameters
+* 4f15485c1c7 Promotion of kernel.lnx.3.18.c5-170620.
+* 1a724ed8993 diag: Prevent NULL pointer dereference while closing logging process
+* 35c6c061a28 Merge "msm: camera: Add spinlock protection for flags in CCI driver"
+
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/Settings/
+
+#### system/core/
+* fdea66196 init: Run restorecon_recursive asynchronously
+
+06-19-2017
+============
+
+#### hardware/qcom/bt-caf/
+* 6473ddb Merge tag 'LA.UM.5.5.r1-04900-8x96.0' into HEAD
+
+#### hardware/qcom/media-caf/msm8996/
+* 04555962a Promotion of video-userspace.lnx.2.1.c1-00042.
+
+#### kernel/oneplus/msm8996/
+* 42dd1a0f380 Promotion of kernel.lnx.3.18.c5-170619.
+
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/Settings/
+
+#### system/bt/
+* 31c34ae0 Promotion of bt.lnx.2.1.c1-00058.
+
+06-18-2017
+============
+
+#### device/qcom/common/
+* 5985a61 power: Use the correct opcode for STOR_CLK_SCALE_DIS
+
+#### frameworks/base/
+* 4dbe060a914 BatteryMeterDrawable:Make it more theme friendly
+
+#### packages/apps/OmniSwitch/
+
+#### packages/apps/Settings/
+* bf3bf5c586 add Lenovo A7000-a to Official (#810)
+* 9c44dc11c5 Add Nextbit Robin as Official (#804)
+
+#### packages/apps/SetupWizard/
+* d82d392 The bluetooth pairing page cannot be exited, disable it for now.
 
