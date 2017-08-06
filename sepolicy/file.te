@@ -16,3 +16,6 @@ type livedisplay_sysfs, sysfs_type, file_type;
 # Filesystems
 type exfat, sdcard_type, fs_type, mlstrustedobject;
 type ntfs, sdcard_type, fs_type, mlstrustedobject;
+
+# Pocket judge
+type pocket_judge_sysfs, fs_type, sysfs_type;
