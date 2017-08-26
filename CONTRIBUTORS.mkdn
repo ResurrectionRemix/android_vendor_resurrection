@@ -1,7 +1,7 @@
-CyanogenMod
+LineageOS
 ===========
 
-Maintainers (CyanogenMod 14.0):
+Maintainers (LineageOS 14.0):
 -----------------------------
 * __Acer A700:__ pawitp
 * __Amazon Kindle Fire 1st Edition:__ Hashcode, FuZZ__
@@ -75,6 +75,8 @@ Maintainers (CyanogenMod 14.0):
 * __LG V10 (T-Mobile) (H901):__ genesixxbf3
 * __Moto E 2014 (xt1021,xt1022,xt1023/condor):__
 * __Moto G 2014 (xt1063,xt1064,xt1068,xt1069/titan):__ LuK1337, luca020400
+* __Moto G 2014 LTE/4G (thea):__ j144df
+* __Moto G 2016 G4/Plus (XT1625,XT1640,XT1644/athene):__ Jleeblanch
 * __Moto G 4G (xt1039,xt1040,xt1042,xt1045/peregrine):__ somcom3x, intervigil
 * __Moto G 4G 2014 (xt1072,xt1077,xt1078,xt1079/thea):__ LuK1337, luca020400
 * __Moto X (xt1053,xt1055,xt1056,xt1058,xt1060/ghost):__ Hashcode, Skrilax_CZ
@@ -231,7 +233,7 @@ Translators:
 * __Persian:__ Ali Niki (alinik), Mehdi HosseinZade (Arshen) (Arshen-2014), Yaser Rajabi (yrajabi)
 * __Polish:__ Dawid (dawidohs), Kamil Jarosław (devloz1996), Michał Gątkowski (IreuN), Andrzej Ressel (jereksel), Michał Kamień (kamykowsky), lozohcum M (lozohcum), Tomasz Popielarczyk (popielarczyktomasz), Michał Jakubowski (revanmj)
 * __Portuguese:__ João Pedro Luís (joaopluis), Sergio Borges (sergioborges99), André Pinela (sheffzor), Tercio Carvalho (tercioc)
-* __Portuguese, Brazilian:__ Carlos Henrique Brendler Cabral (carloshbcabral), Gafanhotz (Gafanhotz), Gustavo Rosa (gustavogyn), Tercio Carvalho (tercioc)
+* __Portuguese, Brazilian:__ j144df (j144df), Carlos Henrique Brendler Cabral (carloshbcabral), Gafanhotz (Gafanhotz), Gustavo Rosa (gustavogyn), Tercio Carvalho (tercioc)
 * __Romanian:__ apolodor (apolodor), azzureux (azzureux), Marian-Mina Mihai (bboylalu), mihaitaus (mihaitaus)
 * __Russian:__ Vladislav Koldobskiy (NeverGone), Alexey Kuznetsov (eeepc1016p), Artem Leshchev (matshch), Maxim Perepelitsa (N0xFF), Yaroslav Yadrishnikov (MrYadro)
 * __Serbian (Cyrillic):__ Dragan Milenkovic (gagy187), Sava Mikalački (mikalackis), Драган (WD40)
