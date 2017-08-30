@@ -71,6 +71,9 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
+# Recommend using the non debug dexpreopter
+USE_DEX2OAT_DEBUG := false
+
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
     CHANGELOG.mkdn:system/etc/RR/Changelog.txt
@@ -181,7 +184,6 @@ PRODUCT_PACKAGES += \
 # Custom CM packages
 PRODUCT_PACKAGES += \
     ResurrectionOTA \
-    ResurrectionStats \
     Trebuchet \
     AudioFX \
     CMFileManager \
@@ -189,7 +191,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     CMSettingsProvider \
     ExactCalculator \
-    Jelly \
     LiveLockScreenService \
     WeatherProvider \
     OmniStyle \
@@ -197,6 +198,10 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     ThemeInterfacer
 
+
+# Possible BT fix
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/lib/bluetooth.default.so:system/lib/hw/bluetooth.default.so
 
 WITH_ROOT_METHOD ?= rootless
 ifeq ($(WITH_ROOT_METHOD), magisk)
@@ -208,6 +213,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 endif
+
+# Copy Android O Emoji
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/fonts/NotoColorEmoji.ttf:system/fonts/NotoColorEmoji.ttf
+
+# Enable Google Services Doze
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/sysconfig/google.xml:system/etc/sysconfig/google.xml
+
 
 # Exchange support
 PRODUCT_PACKAGES += \

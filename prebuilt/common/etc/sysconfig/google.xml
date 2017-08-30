@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <allow-in-power-save package="com.google.android.volta" />
+    <app-link package="com.android.vending" />
+    <app-link package="com.google.android.apps.maps" />
+    <app-link package="com.google.android.youtube" />
+    <app-link package="com.google.android.apps.docs" />
+    <app-link package="com.google.android.talk" />
+    <app-link package="com.google.android.apps.photos" />
+    <app-link package="com.google.android.music" />
+    <app-link package="com.google.android.apps.tycho" />
+    <app-link package="com.google.android.apps.plus" />
+    <app-link package="com.google.android.apps.docs.editors.sheets" />
+    <app-link package="com.google.android.apps.docs.editors.slides" />
+    <app-link package="com.google.android.apps.docs.editors.docs" />
+    <app-link package="com.google.android.talk" />
+    <app-link package="com.google.android.videos" />
+    <app-link package="com.google.android.calendar" />
+    <system-user-whitelisted-app package="com.android.vending" />
+    <system-user-whitelisted-app package="com.google.android.gms" />
+    <system-user-whitelisted-app package="com.google.android.gms.policy_auth" />
+    <system-user-whitelisted-app package="com.google.android.play.games" />
+    <system-user-blacklisted-app package="com.google.android.googlequicksearchbox" />
+    <system-user-blacklisted-app package="com.google.android.launcher" />
+    <backup-transport-whitelisted-service
+        service="android/com.android.internal.backup.LocalTransportService" />
+    <backup-transport-whitelisted-service
+        service="com.google.android.gms/.backup.BackupTransportService" />
+    <backup-transport-whitelisted-service
+        service="com.google.android.gms/.backup.component.D2dTransportService" />
+</config>
