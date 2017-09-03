@@ -25,6 +25,9 @@ $(call add_json_bool, Uses_qcom_um_3_18_family, $(filter true,$(TARGET_USES_QCOM
 $(call add_json_bool, Uses_qcom_um_4_4_family, $(filter true,$(TARGET_USES_QCOM_UM_4_4_FAMILY)))
 $(call add_json_bool, Uses_qcom_um_4_9_family, $(filter true,$(TARGET_USES_QCOM_UM_4_9_FAMILY)))
 $(call add_json_bool, Uses_qcom_um_4_14_family, $(filter true,$(TARGET_USES_QCOM_UM_4_14_FAMILY)))
+$(call add_json_str,	QTIAudioPath,						$(call project-path-for,qcom-audio))
+$(call add_json_str,	QTIDisplayPath,						$(call project-path-for,qcom-display))
+$(call add_json_str,	QTIMediaPath,						$(call project-path-for,qcom-media))
 
 # This causes the build system to strip out the last comma in our nested struct, to keep the JSON valid.
 _contents := $(_contents)__SV_END
