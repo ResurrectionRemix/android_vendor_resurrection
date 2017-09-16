@@ -41,22 +41,22 @@ if [ -f $Changelog ];
  then
  	rm -f $Changelog
 fi
- 
+
 touch $Changelog
 
 
 # ask for days and version
 echo ""
-echo ${cya}" ▼ Generating (for last 30 days) github format changelog.."${txtrst}
+echo ${cya}" ▼ Generating (for last 90 days) github format changelog.."${txtrst}
 echo ""
 echo >> $Changelog;
-echo "# $source_name Version 5.8.4 Changelog"    >> $Changelog;
+echo "# $source_name Version 5.8.5 Changelog"    >> $Changelog;
 echo '====================================================' >> $Changelog;
 echo >> $Changelog;
 
 cd $source_tree
 
-for i in $(seq 30);
+for i in $(seq 90);
 do
 export After_Date=`date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
