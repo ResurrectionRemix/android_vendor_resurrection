@@ -1,9 +1,6 @@
 # Support asec containers getting mounted
 allow file_type rootfs:filesystem associate;
 
-# Themes
-type themeservice_app_data_file, file_type, data_file_type;
-
 # Performance settings
 type sysfs_devices_system_iosched, file_type, sysfs_type;
 
