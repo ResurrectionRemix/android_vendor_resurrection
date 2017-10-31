@@ -363,6 +363,8 @@ if __name__ == '__main__':
         elif args.ignore_missing:
             print('WARNING: Skipping {0} since there is no project directory for: {1}\n'.format(item['id'], item['project']))
             continue
+        elif item['project'] == 'platform_manifest':
+            project_path = '.repo/manifests'
         else:
             sys.stderr.write('ERROR: For {0}, could not determine the project path for project {1}\n'.format(item['id'], item['project']))
             sys.exit(1)
