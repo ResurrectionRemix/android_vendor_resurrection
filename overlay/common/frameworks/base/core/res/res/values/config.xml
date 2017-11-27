@@ -74,4 +74,11 @@
     <!-- If this is true, long press on power button will be available from a
          non-interactive state. -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
+
+    <!--  Whether Multiuser UI should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
+    <!--  Maximum number of supported users -->
+    <integer name="config_multiuserMaximumUsers">4</integer>
+
 </resources>
