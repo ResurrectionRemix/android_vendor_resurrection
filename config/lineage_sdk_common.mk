@@ -1,12 +1,12 @@
 # Permissions for lineage sdk services
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/org.lineageos.audio.xml:system/etc/permissions/org.lineageos.audio.xml \
-    vendor/lineage/config/permissions/org.lineageos.livedisplay.xml:system/etc/permissions/org.lineageos.livedisplay.xml \
-    vendor/lineage/config/permissions/org.lineageos.performance.xml:system/etc/permissions/org.lineageos.performance.xml \
-    vendor/lineage/config/permissions/org.lineageos.profiles.xml:system/etc/permissions/org.lineageos.profiles.xml \
-    vendor/lineage/config/permissions/org.lineageos.statusbar.xml:system/etc/permissions/org.lineageos.statusbar.xml \
-    vendor/lineage/config/permissions/org.lineageos.telephony.xml:system/etc/permissions/org.lineageos.telephony.xml \
-    vendor/lineage/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
+    vendor/rr/config/permissions/org.lineageos.audio.xml:system/etc/permissions/org.lineageos.audio.xml \
+    vendor/rr/config/permissions/org.lineageos.livedisplay.xml:system/etc/permissions/org.lineageos.livedisplay.xml \
+    vendor/rr/config/permissions/org.lineageos.performance.xml:system/etc/permissions/org.lineageos.performance.xml \
+    vendor/rr/config/permissions/org.lineageos.profiles.xml:system/etc/permissions/org.lineageos.profiles.xml \
+    vendor/rr/config/permissions/org.lineageos.statusbar.xml:system/etc/permissions/org.lineageos.statusbar.xml \
+    vendor/rr/config/permissions/org.lineageos.telephony.xml:system/etc/permissions/org.lineageos.telephony.xml \
+    vendor/rr/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
 
 # Lineage Platform Library
 PRODUCT_PACKAGES += \
