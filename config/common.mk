@@ -129,11 +129,7 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
-ifeq ($(TARGET_BOOTANIMATION_HALF_RES),true)
-PRODUCT_BOOTANIMATION := vendor/rr/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
-else
-PRODUCT_BOOTANIMATION := vendor/rr/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
-endif
+PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip:system/media/bootanimation.zip
 endif
 
 # Required rr packages
