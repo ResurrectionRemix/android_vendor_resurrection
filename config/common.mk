@@ -91,7 +91,7 @@ PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml
 
 # Include audio files
-include vendor/rr/config/audio.mk
+include vendor/rr/config/rr_audio.mk
 
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
