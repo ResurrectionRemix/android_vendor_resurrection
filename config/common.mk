@@ -162,7 +162,10 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     Updater \
     WallpaperPicker \
-    WeatherProvider
+    WeatherProvider \
+    OmniJaws \
+    OmniStyle \
+    ResurrectionOTA
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -227,6 +230,13 @@ PRODUCT_PACKAGES += \
 # rsync
 PRODUCT_PACKAGES += \
     rsync
+
+# DUI Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
