@@ -4,7 +4,6 @@ PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/org.lineageos.livedisplay.xml:system/etc/permissions/org.lineageos.livedisplay.xml \
     vendor/rr/config/permissions/org.lineageos.performance.xml:system/etc/permissions/org.lineageos.performance.xml \
     vendor/rr/config/permissions/org.lineageos.profiles.xml:system/etc/permissions/org.lineageos.profiles.xml \
-    vendor/rr/config/permissions/org.lineageos.statusbar.xml:system/etc/permissions/org.lineageos.statusbar.xml \
     vendor/rr/config/permissions/org.lineageos.telephony.xml:system/etc/permissions/org.lineageos.telephony.xml \
     vendor/rr/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
 
