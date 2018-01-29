@@ -157,9 +157,9 @@ PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     Eleven \
     ExactCalculator \
+    Launcher3 \
     Jelly \
     LockClock \
-    Trebuchet \
     Updater \
     WallpaperPicker \
     WeatherProvider \
@@ -229,7 +229,13 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
-
+    
+# Included prebuilt apk's
+PRODUCT_PACKAGES += \
+    GoogleClock \
+    Wallpapers \
+    Camera
+ 
 # rsync
 PRODUCT_PACKAGES += \
     rsync
