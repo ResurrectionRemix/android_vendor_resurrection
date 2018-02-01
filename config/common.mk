@@ -157,8 +157,7 @@ PRODUCT_PACKAGES += \
     LineageSettingsProvider \
     Eleven \
     ExactCalculator \
-    Launcher3 \
-    Jelly \
+    Trebuchet \
     LockClock \
     Updater \
     WallpaperPicker \
