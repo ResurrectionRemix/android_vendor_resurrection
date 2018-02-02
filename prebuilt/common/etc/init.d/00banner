@@ -2,7 +2,7 @@
 #
 # Print startup info
 #
-L="log -p i -t lineage"
+L="log -p i -t rr"
 
 $L "_ _                                       "
 $L "| (_)_ __   ___  __ _  __ _  ___  ___  ___ "

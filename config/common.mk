@@ -228,6 +228,14 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
+
+# Copy over the changelog to the device
+PRODUCT_COPY_FILES += \
+    CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+
+# Copy features.txt from the path
+PRODUCT_COPY_FILES += \
+    vendor/rr/Features.mkdn:system/etc/RR/Features.txt
     
 # Included prebuilt apk's
 PRODUCT_PACKAGES += \
