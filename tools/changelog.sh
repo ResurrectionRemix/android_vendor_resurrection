@@ -62,24 +62,25 @@ cd $source_tree
 
 for i in $(seq $days_to_log);
 do
-export After_Date=`date --date="$i days ago" +%m/%d/%Y`
+export After_Date=`date --date="$i days ago" +%m-%d-%Y`
 k=$(expr $i - 1)
-	export Until_Date=`date --date="$k days ago" +%m/%d/%Y`
+    export Until_Date=`date --date="$k days ago" +%m-%d-%Y`
     echo ""
 	echo ${blu}" 〉 Generating day number $i ▪ $Until_Date.."${txtrst}
 	source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date');
 
-	if [ -n "${source##+([:space:])}" ]; then
+    # Line with after --- until was too long for a small ListView
+    echo '====================' >> $Changelog;
+    echo  "     "$Until_Date       >> $Changelog;
+    echo '===================='	>> $Changelog;
+    echo >> $Changelog;
 
-		echo " ▼ $Until_Date" >> $Changelog;
-		echo '' >> $Changelog;
-		repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | grep -v "Automatic translation import" | sed 's/^$/#EL /' | sed 's/^/ ▪ /' | sed 's/ ▪ #EL //' >> $Changelog
-		echo >> $Changelog;
-	fi
-
+    # Cycle through every repo to find commits between 2 dates
+    repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | grep -v "Automatic translation import" >> $Changelog
+    echo >> $Changelog;
 done
 
-sed -i 's/* Project /▼ /g' $Changelog
+sed -i 's/project/   */g' $Changelog
 
 Changelog=$source_tree/$changelog_path_name
 if [ -f $Changelog ] && [ -f $Temp_Changelog ];
