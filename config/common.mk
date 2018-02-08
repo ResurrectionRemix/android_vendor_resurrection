@@ -241,8 +241,7 @@ PRODUCT_COPY_FILES += \
 # Included prebuilt apk's
 PRODUCT_PACKAGES += \
     GoogleClock \
-    Wallpapers \
-    Camera
+    Wallpapers
  
 # rsync
 PRODUCT_PACKAGES += \
