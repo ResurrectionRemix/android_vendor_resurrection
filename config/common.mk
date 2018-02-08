@@ -255,12 +255,12 @@ PRODUCT_COPY_FILES += \
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
     vendor/rr/Features.mkdn:system/etc/RR/Features.txt
-    
+
 # Included prebuilt apk's
 PRODUCT_PACKAGES += \
     GoogleClock \
     Wallpapers
- 
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
@@ -271,16 +271,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
-
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libffmpeg_extractor \
-    libffmpeg_omx \
-    media_codecs_ffmpeg.xml
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    media.sf.omx-plugin=libffmpeg_omx.so \
-    media.sf.extractor-plugin=libffmpeg_extractor.so
 
 # Storage manager
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
