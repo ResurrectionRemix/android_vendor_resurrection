@@ -43,8 +43,8 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/rr/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/rr/prebuilt/common/bin/50-rr.sh:system/addon.d/50-rr.sh \
-    vendor/rr/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/rr/prebuilt/common/bin/blacklist:system/addon.d/blacklist \
+    vendor/rr/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
