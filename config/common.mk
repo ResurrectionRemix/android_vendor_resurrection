@@ -160,6 +160,7 @@ PRODUCT_PACKAGES += \
     Trebuchet \
     LockClock \
     Updater \
+    SnapdragonCamera2 \
     WallpaperPicker \
     WeatherProvider \
     OmniJaws \
