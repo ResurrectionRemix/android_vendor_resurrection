@@ -298,7 +298,7 @@ endif
 PRODUCT_GENERIC_PROPERTIES += \
     ro.rr.version=$(RR_VERSION) \
     ro.rr.releasetype=$(RR_BUILDTYPE) \
-    ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.rr.build.version=$(PRODUCT_VERSION) \
     ro.modversion=$(RR_VERSION) \
     rr.build.type=$(RR_BUILDTYPE) \
     rr.ota.version= $(shell date +%Y%m%d) \
