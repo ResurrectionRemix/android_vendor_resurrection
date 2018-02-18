@@ -168,6 +168,20 @@ PRODUCT_PACKAGES += \
     ResurrectionOTA \
     ResurrectionStats
 
+ 
+# Berry styles
+PRODUCT_PACKAGES += \
+    LineageDarkTheme \
+    LineageBlackAccent \
+    LineageBlueAccent \
+    LineageBrownAccent \
+    LineageGreenAccent \
+    LineageOrangeAccent \
+    LineagePinkAccent \
+    LineagePurpleAccent \
+    LineageRedAccent \
+    LineageYellowAccent
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
