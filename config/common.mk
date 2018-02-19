@@ -173,15 +173,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageDarkTheme \
     LineageSysUIDarkTheme \
+    LineageSettingsDarkTheme \
+    LineageAmberAccent \
     LineageBlackAccent \
-    LineageBlueAccent \
     LineageBrownAccent \
     LineageGreenAccent \
     LineageOrangeAccent \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
-    LineageYellowAccent
+    LineageYellowAccent \
+    LineageTealAccent 
 
 # Exchange support
 PRODUCT_PACKAGES += \
