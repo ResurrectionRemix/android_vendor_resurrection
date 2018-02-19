@@ -1,5 +1,5 @@
 	
-	● Resurrection Remix OS Nougat
+	● Resurrection Remix OS Oreo
 	
 	● Crowdin for translations : https://crowdin.com/project/resurrectionremix/
 	
@@ -73,10 +73,7 @@
 	● Animations ▼
 	
 	- Toast Animations
-	- ListView Animations
 	- System Animations
-	- QS tile Animations
-	- Power Menu Animations
 	- Misc Animations
 	
 	● Gestures ▼
@@ -114,12 +111,6 @@
 	- Recents Styles
 	- OmniSwitch
 	
-	● Cclock Widget ▼
-	
-	- CLock And Alarm Customizations
-	- Weather Panel Customizations
-	- Calender Events
-	
 	● LockScreen ▼
 	
 	- Lockscreen Bottom Shortcuts
@@ -141,7 +132,6 @@
 	
 	● Notification Drawer ▼
 	
-	- Task manager
 	- Custom headers
 	- LongPress Toogles to Enter Settings
 	- Disable Immersive Mode Messages
