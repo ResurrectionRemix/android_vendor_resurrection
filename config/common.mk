@@ -172,6 +172,7 @@ PRODUCT_PACKAGES += \
 # Berry styles
 PRODUCT_PACKAGES += \
     LineageDarkTheme \
+    LineageSysUIDarkTheme \
     LineageBlackAccent \
     LineageBlueAccent \
     LineageBrownAccent \
