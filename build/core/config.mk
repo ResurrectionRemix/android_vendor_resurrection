@@ -24,3 +24,5 @@ BUILD_MAVEN_PREBUILT := $(TOP)/vendor/rr/build/core/maven_artifact.mk
 PUBLISH_MAVEN_PREBUILT := $(TOP)/vendor/rr/build/core/maven_artifact_publish.mk
 
 BUILD_HTTP_PREBUILT := $(TOP)/vendor/rr/build/core/http_prebuilt.mk
+
+BUILD_RRO_SYSTEM_PACKAGE := $(TOP)/vendor/rr/build/core/system_rro.mk
