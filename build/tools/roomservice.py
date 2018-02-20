@@ -149,11 +149,9 @@ def get_from_manifest(device_name):
 
 
 def is_in_manifest(project_path):
-    for man in (custom_local_manifest, default_manifest):
-        man = load_manifest(man)
-        for local_path in man.findall("project"):
-            if local_path.get("path") == project_path:
-                return True
+    for local_path in load_manifest(custom_local_manifest).findall("project"):
+        if local_path.get("path") == project_path:
+            return True
     return False
 
 
