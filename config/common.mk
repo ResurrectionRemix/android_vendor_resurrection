@@ -173,6 +173,9 @@ PRODUCT_PACKAGES += \
     LineageDarkTheme \
     LineageSysUIDarkTheme \
     LineageSettingsDarkTheme \
+    LineageBlackTheme \
+    LineageSysUIBlackTheme \
+    LineageSettingsBlackTheme \
     LineageAmberAccent \
     LineageBlackAccent \
     LineageWhiteAccent \
