@@ -312,7 +312,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
 
 # Properties for build flash info script
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.rr.version=$(RR_VERSION) \
     ro.rr.releasetype=$(RR_BUILDTYPE) \
     ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
