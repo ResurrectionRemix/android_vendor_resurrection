@@ -246,6 +246,8 @@ if __name__ == '__main__':
     for project in projects:
         name = project.get('name')
         path = project.get('path')
+        if path is None:
+            path=name
         revision = project.get('revision')
         if revision is None:
             for remote in remotes:
