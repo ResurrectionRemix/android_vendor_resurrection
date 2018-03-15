@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
     Development \
     Profiles
 
+#Font package
+PRODUCT_PACKAGES += \
+    Custom-Fonts
+
 # Optional packages
 PRODUCT_PACKAGES += \
     libemoji \
