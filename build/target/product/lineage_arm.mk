@@ -13,7 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, build/target/product/aosp_arm.mk)
-$(call inherit-product, vendor/lineage/config/common.mk)
+$(call inherit-product, vendor/rr/config/common.mk)
 
 TARGET_USES_64_BIT_BINDER := true
 
