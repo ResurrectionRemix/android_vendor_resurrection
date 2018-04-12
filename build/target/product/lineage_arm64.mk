@@ -18,4 +18,7 @@ $(call inherit-product, vendor/rr/config/common.mk)
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
 
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
+
 PRODUCT_NAME := lineage_arm64
