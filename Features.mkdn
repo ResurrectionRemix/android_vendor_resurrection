@@ -222,7 +222,7 @@
 	- New RR Configurations 
 	- Overall Smoothness Improvements
 	- Optimizations to Improve Battery
-	- Includes all Android Nougat Features
-	- Includes all CM14.1 Features
+	- Including all Android Oreo Features
+	- Including all LOS 15 Features
 	- And much much more ...
 	
