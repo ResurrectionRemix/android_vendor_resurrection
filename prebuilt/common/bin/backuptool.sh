@@ -50,13 +50,13 @@ if [ ! -r /system/build.prop ]; then
 fi
 
 # Check whether RR is installed
-if [ ! grep -q "^ro.rr.version=6.*" /system/etc/prop.default /system/build.prop ]; then
+if  ! grep -q "^ro.rr.version=6.*" /system/etc/prop.default /system/build.prop; then
   echo "Not backing up files as ResurrectionRemix is not installed"
   return 0
 fi
 
 # Check whether installed Android Version is 8.1*
-if ( ! grep -q "^ro.build.version.release=$V*" /system/build.prop ); then
+if ! grep -q "^ro.build.version.release=$V*" /system/build.prop; then
   echo "Not backing up files from incompatible Android Version!"
   return 0
 fi
