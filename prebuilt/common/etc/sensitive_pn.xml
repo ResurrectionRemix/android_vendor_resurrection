@@ -254,6 +254,12 @@
         <item>116111</item>
         <item>116123</item>
     </sensitivePN>
+    <!--Macedonia-->
+    <sensitivePN network="294">
+        <item>192</item>
+        <item>193</item>
+        <item>194</item>
+    </sensitivePN>
     <!--Canada-->
     <sensitivePN network="302">
         <item>6455195</item>
