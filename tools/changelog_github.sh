@@ -50,7 +50,7 @@ echo ""
 echo ${cya}" ▼ Generating (for last 30 days) github format changelog.."${txtrst}
 echo ""
 echo >> $Changelog
-echo "# $source_name Version 6.0.0 Changelog"    >> $Changelog;
+echo "# $source_name Version 6.1.0 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
 echo >> $Changelog;
 

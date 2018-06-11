@@ -295,7 +295,7 @@ endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
-PRODUCT_VERSION = 6.0.0
+PRODUCT_VERSION = 6.1.0
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-O-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
@@ -320,13 +320,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
     rr.build.type=$(RR_BUILDTYPE) \
     rr.ota.version= $(shell date +%Y%m%d) \
     ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
-    
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/rr/build/target/product/security/rr
 
 RR_DISPLAY_VERSION := $(RR_VERSION)
 
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES +=
     ro.rr.display.version=$(RR_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
