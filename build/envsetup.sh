@@ -1,6 +1,6 @@
 function __print_cm_functions_help() {
 cat <<EOF
-Additional CyanogenMod functions:
+Additional LineageOS functions:
 - cout:            Changes directory to out.
 - mmp:             Builds all of the modules in the current directory and pushes them to the device.
 - mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
@@ -59,11 +59,17 @@ function breakfast()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
-            # This is probably just the CM model name
+            # This is probably just the Lineage model name
             if [ -z "$variant" ]; then
                 variant="userdebug"
             fi
-            lunch cm_$target-$variant
+
+            if ! check_product lineage_$target && check_product cm_$target; then
+                echo "** Warning: '$target' is using CM-based makefiles. This will be deprecated in the next major release."
+                lunch cm_$target-$variant
+            else
+                lunch lineage_$target-$variant
+            fi
         fi
     fi
     return $?
@@ -75,7 +81,7 @@ function eat()
 {
     if [ "$OUT" ] ; then
         MODVERSION=$(get_build_var CM_VERSION)
-        ZIPFILE=cm-$MODVERSION.zip
+        ZIPFILE=$MODVERSION.zip
         ZIPPATH=$OUT/$ZIPFILE
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
@@ -90,29 +96,28 @@ function eat()
             done
             echo "Device Found.."
         fi
-    if (adb shell getprop ro.rr.device | grep -q "$CM_BUILD");
-    then
-        # if adbd isn't root we can't write to /cache/recovery/
-        adb root
-        sleep 1
-        adb wait-for-device
-        cat << EOF > /tmp/command
+        if (adb shell getprop ro.rr.device | grep -q "$CM_BUILD"); then
+            # if adbd isn't root we can't write to /cache/recovery/
+            adb root
+            sleep 1
+            adb wait-for-device
+            cat << EOF > /tmp/command
 --sideload_auto_reboot
 EOF
-        if adb push /tmp/command /cache/recovery/ ; then
-            echo "Rebooting into recovery for sideload installation"
-            adb reboot recovery
-            adb wait-for-sideload
-            adb sideload $ZIPPATH
+            if adb push /tmp/command /cache/recovery/ ; then
+                echo "Rebooting into recovery for sideload installation"
+                adb reboot recovery
+                adb wait-for-sideload
+                adb sideload $ZIPPATH
+            fi
+            rm /tmp/command
+        else
+            echo "The connected device does not appear to be $CM_BUILD, run away!"
         fi
-        rm /tmp/command
+        return $?
     else
         echo "Nothing to eat"
         return 1
-    fi
-    return $?
-    else
-        echo "The connected device does not appear to be $CM_BUILD, run away!"
     fi
 }
 
@@ -240,12 +245,12 @@ function cmremote()
     fi
     git remote rm cmremote 2> /dev/null
     GERRIT_REMOTE=$(git config --get remote.github.projectname)
-    CMUSER=$(git config --get review.review.cyanogenmod.org.username)
+    CMUSER=$(git config --get review.review.lineageos.org.username)
     if [ -z "$CMUSER" ]
     then
-        git remote add cmremote ssh://review.cyanogenmod.org:29418/$GERRIT_REMOTE
+        git remote add cmremote ssh://review.lineageos.org:29418/$GERRIT_REMOTE
     else
-        git remote add cmremote ssh://$CMUSER@review.cyanogenmod.org:29418/$GERRIT_REMOTE
+        git remote add cmremote ssh://$CMUSER@review.lineageos.org:29418/$GERRIT_REMOTE
     fi
     echo "Remote 'cmremote' created"
 }
@@ -280,7 +285,7 @@ function cafremote()
     then
         PFX="platform/"
     fi
-    git remote add caf git://codeaurora.org/$PFX$PROJECT
+    git remote add caf https://source.codeaurora.org/quic/la/$PFX$PROJECT
     echo "Remote 'caf' created"
 }
 
@@ -401,7 +406,7 @@ function cmgerrit() {
         $FUNCNAME help
         return 1
     fi
-    local user=`git config --get review.review.cyanogenmod.org.username`
+    local user=`git config --get review.review.lineageos.org.username`
     local review=`git config --get remote.github.review`
     local project=`git config --get remote.github.projectname`
     local command=$1
@@ -636,7 +641,7 @@ function cmrebase() {
     local dir="$(gettop)/$repo"
 
     if [ -z $repo ] || [ -z $refs ]; then
-        echo "CyanogenMod Gerrit Rebase Usage: "
+        echo "LineageOS Gerrit Rebase Usage: "
         echo "      cmrebase <path to project> <patch IDs on Gerrit>"
         echo "      The patch IDs appear on the Gerrit commands that are offered."
         echo "      They consist on a series of numbers and slashes, after the text"
@@ -658,7 +663,7 @@ function cmrebase() {
     echo "Bringing it up to date..."
     repo sync .
     echo "Fetching change..."
-    git fetch "http://review.cyanogenmod.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
+    git fetch "http://review.lineageos.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
     if [ "$?" != "0" ]; then
         echo "Error cherry-picking. Not uploading!"
         return
@@ -678,7 +683,7 @@ function mka() {
                 make -C $T -j `sysctl hw.ncpu|cut -d" " -f2` "$@"
                 ;;
             *)
-                mk_timer schedtool -B -n 10 -e ionice -n 7 make -C $T -j$(cat /proc/cpuinfo | grep "^processor" | wc -l) "$@"
+                mk_timer schedtool -B -n 10 -e ionice -n 7 make -C $T -j$(grep "^processor" /proc/cpuinfo | wc -l) "$@"
                 ;;
         esac
 
@@ -722,7 +727,7 @@ function mms() {
                 make -C $T -j $NUM_CPUS "$@"
             ;;
         *)
-            local NUM_CPUS=$(cat /proc/cpuinfo | grep "^processor" | wc -l)
+            local NUM_CPUS=$(grep "^processor" /proc/cpuinfo | wc -l)
             ONE_SHOT_MAKEFILE="__none__" \
                 mk_timer schedtool -B -n 1 -e ionice -n 1 \
                 make -C $T -j $NUM_CPUS "$@"
@@ -811,8 +816,10 @@ function dopush()
         rm -f $OUT/.log;return $ret
     fi
 
+    is_gnu_sed=`sed --version | head -1 | grep -c GNU`
+
     # Install: <file>
-    if [ `uname` = "Linux" ]; then
+    if [ $is_gnu_sed -gt 0 ]; then
         LOC="$(cat $OUT/.log | sed -r -e 's/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g' -e 's/^\[ {0,2}[0-9]{1,3}% [0-9]{1,6}\/[0-9]{1,6}\] +//' \
             | grep '^Install: ' | cut -d ':' -f 2)"
     else
@@ -821,7 +828,7 @@ function dopush()
     fi
 
     # Copy: <file>
-    if [ `uname` = "Linux" ]; then
+    if [ $is_gnu_sed -gt 0 ]; then
         LOC="$LOC $(cat $OUT/.log | sed -r -e 's/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g' -e 's/^\[ {0,2}[0-9]{1,3}% [0-9]{1,6}\/[0-9]{1,6}\] +//' \
             | grep '^Copy: ' | cut -d ':' -f 2)"
     else
@@ -909,6 +916,7 @@ EOF
 alias mmp='dopush mm'
 alias mmmp='dopush mmm'
 alias mmap='dopush mma'
+alias mmmap='dopush mmma'
 alias mkap='dopush mka'
 alias cmkap='dopush cmka'
 
@@ -947,4 +955,9 @@ if [ -d $(gettop)/prebuilts/snapdragon-llvm/toolchains ]; then
             export SDCLANG_LTO_DEFS=$(gettop)/device/qcom/common/sdllvm-lto-defs.mk
             ;;
     esac
+fi
+
+# Android specific JACK args
+if [ -n "$JACK_SERVER_VM_ARGUMENTS" ] && [ -z "$ANDROID_JACK_VM_ARGS" ]; then
+    export ANDROID_JACK_VM_ARGS=$JACK_SERVER_VM_ARGUMENTS
 fi

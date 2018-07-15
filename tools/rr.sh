@@ -64,7 +64,7 @@ echo -e "";
 tput sgr0
 tput setaf 3
 echo -e "";
-echo -e " √ Build is Succesfully Done! ";
+echo -e " √ Build is Successfully Done! ";
 echo -e "";
 
 tput setaf 4
