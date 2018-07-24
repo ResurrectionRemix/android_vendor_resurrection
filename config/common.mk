@@ -141,7 +141,6 @@ endif
 
 # Required rr packages
 PRODUCT_PACKAGES += \
-    BluetoothExt \
     LineageParts \
     Development \
     Profiles
