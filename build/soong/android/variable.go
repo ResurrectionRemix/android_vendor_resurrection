@@ -95,4 +95,5 @@ type ProductVariables struct {
 	QTIAudioPath						*string `json:",omitempty"`
 	QTIDisplayPath						*string `json:",omitempty"`
 	QTIMediaPath						*string `json:",omitempty"`
+	Java_Source_Overlays					*string `json:",omitempty"`
 }
