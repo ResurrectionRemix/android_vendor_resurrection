@@ -68,10 +68,9 @@ function breakfast()
 {
     target=$1
     local variant=$2
-    LINEAGE_DEVICES_ONLY="true"
+    RR_DEVICES_ONLY="true"
     unset LUNCH_MENU_CHOICES
-    add_lunch_combo full-eng
-    for f in `/bin/ls vendor/lineage/vendorsetup.sh 2> /dev/null`
+    for f in `/bin/ls vendor/rr/vendorsetup.sh 2> /dev/null`
         do
             echo "including $f"
             . $f
@@ -92,7 +91,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch lineage_$target-$variant
+            lunch rr_$target-$variant
         fi
     fi
     return $?
@@ -103,7 +102,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/lineage-*.zip | tail -1`
+        ZIPPATH=`ls -tr "$OUT"/rr-*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
@@ -117,7 +116,7 @@ function eat()
             done
             echo "Device Found.."
         fi
-        if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD"); then
+        if (adb shell getprop ro.rr.device | grep -q "$RR_BUILD"); then
             # if adbd isn't root we can't write to /cache/recovery/
             adb root
             sleep 1
@@ -133,7 +132,7 @@ EOF
             fi
             rm /tmp/command
         else
-            echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+            echo "The connected device does not appear to be $RR_BUILD, run away!"
         fi
         return $?
     else
@@ -395,7 +394,7 @@ function installboot()
     sleep 1
     adb wait-for-online shell mount /system 2>&1 > /dev/null
     adb wait-for-online remount
-    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
+    if (adb shell getprop ro.rr.device | grep -q "$RR_BUILD");
     then
         adb push $OUT/boot.img /cache/
         if [ -e "$OUT/system/lib/modules/*" ];
@@ -410,7 +409,7 @@ function installboot()
         adb shell rm -rf /cache/boot.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        echo "The connected device does not appear to be $RR_BUILD, run away!"
     fi
 }
 
@@ -444,14 +443,14 @@ function installrecovery()
     sleep 1
     adb wait-for-online shell mount /system 2>&1 >> /dev/null
     adb wait-for-online remount
-    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
+    if (adb shell getprop ro.rr.device | grep -q "$RR_BUILD");
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
         adb shell rm -rf /cache/recovery.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        echo "The connected device does not appear to be $RR_BUILD, run away!"
     fi
 }
 
@@ -829,7 +828,7 @@ function dopush()
         echo "Device Found."
     fi
 
-    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD") || [ "$FORCE_PUSH" = "true" ];
+    if (adb shell getprop ro.rr.device | grep -q "$RR_BUILD") || [ "$FORCE_PUSH" = "true" ];
     then
     # retrieve IP and PORT info if we're using a TCP connection
     TCPIPPORT=$(adb devices \
@@ -947,7 +946,7 @@ EOF
     rm -f $OUT/.log
     return 0
     else
-        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        echo "The connected device does not appear to be $RR_BUILD, run away!"
     fi
 }
 
@@ -960,13 +959,13 @@ alias cmkap='dopush cmka'
 
 function repopick() {
     T=$(gettop)
-    $T/vendor/lineage/build/tools/repopick.py $@
+    $T/vendor/rr/build/tools/repopick.py $@
 }
 
 function fixup_common_out_dir() {
     common_out_dir=$(get_build_var OUT_DIR)/target/common
     target_device=$(get_build_var TARGET_DEVICE)
-    if [ ! -z $LINEAGE_FIXUP_COMMON_OUT ]; then
+    if [ ! -z $RR_FIXUP_COMMON_OUT ]; then
         if [ -d ${common_out_dir} ] && [ ! -L ${common_out_dir} ]; then
             mv ${common_out_dir} ${common_out_dir}-${target_device}
             ln -s ${common_out_dir}-${target_device} ${common_out_dir}
@@ -991,7 +990,7 @@ if [ -d $(gettop)/prebuilts/snapdragon-llvm/toolchains ]; then
             export SDCLANG=true
             export SDCLANG_PATH=$(gettop)/prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64/bin
             export SDCLANG_PATH_2=$(gettop)/prebuilts/snapdragon-llvm/toolchains/llvm-Snapdragon_LLVM_for_Android_4.0/prebuilt/linux-x86_64/bin
-            export SDCLANG_LTO_DEFS=$(gettop)/vendor/lineage/build/core/sdllvm-lto-defs.mk
+            export SDCLANG_LTO_DEFS=$(gettop)/vendor/rr/build/core/sdllvm-lto-defs.mk
             ;;
     esac
 fi
