@@ -177,6 +177,13 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     WeatherProvider
 
+# QS tile styles
+PRODUCT_PACKAGES += \
+    QStileCircleTrim \
+    QStileDefault \
+    QStileDualToneCircle \
+    QStileSquircleTrim
+
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
