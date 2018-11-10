@@ -16,20 +16,7 @@
 -->
 
 <resources>
-    <!-- QS tiles Active, Inactive and Unavailable tint (Requires config_enable_qs_tile_tinting bool set to true) -->
-    <color name="qs_tiles_active_tint">@*android:color/accent_device_default_light</color>
-    <color name="qs_tiles_inactive_tint">@*android:color/omni_text1</color>
-    <color name="qs_tiles_unavailable_tint">@*android:color/omni_text2</color> <!-- keep in mind that the code adds 0.26 (light) or 0.30 (dark) alpha to this color. -->
-
-    <!-- QS tiles background Active, Disable, and Inactive tint (Requires config_enable_qs_tile_tinting bool set to true) -->
-    <color name="qs_tiles_background_active_tint">@*android:color/accent_device_default_light</color>
-    <color name="qs_tiles_background_disabled_tint">@*android:color/omni_text1</color> <!-- keep in mind that the code adds 0.26 (light) or 0.30 (dark) alpha to this color. -->
-    <color name="qs_tiles_background_inactive_tint">@*android:color/omni_text2</color>
-
-    <!-- QS tiles expand, underline and label colors -->
-    <color name="qs_tiles_expand_tint">@*android:color/omni_text1</color>
-    <color name="qs_tiles_label_color">@*android:color/omni_text1</color>
-    <color name="qs_tiles_secondary_label_color">@*android:color/omni_text2</color>
-    <color name="qs_tiles_underline_color">@*android:color/omni_text1</color>
+    <!-- QS Tiles Colors --> 
+    <color name="qs_icon_active_color">@*android:color/accent_device_default_light</color>
 
 </resources>
