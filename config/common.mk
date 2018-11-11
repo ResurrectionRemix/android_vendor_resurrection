@@ -189,7 +189,8 @@ PRODUCT_PACKAGES += \
     QStileDottedCircle \
     QStileNinja \
     QStilePokesign \
-    QStileWavey
+    QStileWavey \
+    QStileSquaremedo
 
 # Exchange support
 PRODUCT_PACKAGES += \
