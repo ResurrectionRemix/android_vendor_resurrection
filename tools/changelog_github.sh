@@ -25,7 +25,7 @@
 # input variables set the below the rest must be automatic
 source_tree="${ANDROID_BUILD_TOP}"; #path here must be inside home directory
 changelog_path_name=CHANGELOG.mkdn #changelog file path/name.extension
-source_name="Resurrection Remix Pie" #Name to display in changelog.md top before version
+source_name="Resurrection Remix Q" #Name to display in changelog.md top before version
 # input variables end
 
 if [ -z ${source_tree} ]; then
@@ -40,7 +40,7 @@ else
 
 	touch $Changelog
 
-	days_to_log=180
+	days_to_log=5
 
 	echo ${cya}" ▼ Generating (for last $days_to_log days) github format changelog.."${txtrst}
 
@@ -114,7 +114,7 @@ else
 
 		echo ${blu}" 〉 Generating day number $i ▪ $Until_Date.."${txtrst}
 
-		source=$(repo forall -pc 'git log --oneline --after=$After_Date --until=$Until_Date' | grep -v "Automatic translation import" | grep -v "Merge" );
+    repo forall -c "GIT_LOG=\`git log --oneline --after=$After_Date --until=$Until_Date\` ; if [ ! -z \"\$GIT_LOG\" ]; then printf  '\n   * '; realpath \`pwd\` | sed 's|^$CURRENT_PATH/||' ; echo \"\$GIT_LOG\"; fi" >> $Changelog
 
 		if [ -n "${source##+([:space:])}" ]; then
 			# Line with after --- until was too long for a small ListView
