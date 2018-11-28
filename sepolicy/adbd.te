@@ -1,1 +1,4 @@
 set_prop(adbd, adbsecure_prop)
+
+# Required in order to set cm.service.adb.root
+set_prop(adbd, system_prop)
