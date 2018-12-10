@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
     vendor/rr/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 endif
 
+# Copy over the changelog to the device
+PRODUCT_COPY_FILES += \
+CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
 vendor/rr/Features.mkdn:system/etc/RR/Features.txt
