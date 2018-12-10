@@ -253,6 +253,35 @@ endif
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/rr/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+ro.rr.version=$(RR_VERSION) \
+ro.rr.releasetype=$(RR_BUILDTYPE) \
+ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+ro.modversion=$(RR_VERSION) \
+rr.build.type=$(RR_BUILDTYPE) \
+rr.ota.version= $(shell date +%Y%m%d) \
+ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
+# Properties for build flash info script
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.rr.version=$(RR_VERSION) \
+ro.rr.releasetype=$(RR_BUILDTYPE) \
+ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+ro.modversion=$(RR_VERSION) \
+rr.build.type=$(RR_BUILDTYPE) \
+rr.ota.version= $(shell date +%Y%m%d) \
+ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
+# Properties for splitted vendor devices
+PRODUCT_GENERIC_PROPERTIES += \
+ro.rr.version=$(RR_VERSION) \
+ro.rr.releasetype=$(RR_BUILDTYPE) \
+ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+ro.modversion=$(RR_VERSION) \
+rr.build.type=$(RR_BUILDTYPE) \
+rr.ota.version= $(shell date +%Y%m%d) \
+ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
 PRODUCT_VERSION = 7.0.0
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
