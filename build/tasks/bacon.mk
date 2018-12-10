@@ -1,5 +1,6 @@
 # Copyright (C) 2017 Unlegacy-Android
 # Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 Resurrection Remix
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,12 +15,12 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# Resurrection Remix OTA update package
 
-LINEAGE_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(LINEAGE_VERSION).zip
+RR_TARGET_PACKAGE := $(PRODUCT_OUT)/$(RR_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(LINEAGE_TARGET_PACKAGE)
+	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(RR_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).md5sum
-	@echo "Package Complete: $(LINEAGE_TARGET_PACKAGE)" >&2
+	@echo "ResurrectionRemix build complete: $(RR_TARGET_PACKAGE)" >&2
