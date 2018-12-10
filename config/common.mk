@@ -125,8 +125,14 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 # Bootanimation
 PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
 
+# Copy features.txt from the path
+PRODUCT_COPY_FILES += \
+vendor/rr/Features.mkdn:system/etc/RR/Features.txt
+
 # ResurrectionRemix
 PRODUCT_PACKAGES += \
+    OmniJaws \
+    OmniStyle \
     ThemePicker
 
 # AOSP packages
@@ -149,8 +155,6 @@ PRODUCT_PACKAGES += \
     Profiles \
     TrebuchetQuickStep \
     Updater \
-    OmniJaws \
-    OmniStyle \
     WeatherProvider
 
 # Accents
@@ -331,6 +335,39 @@ ifeq ($(LINEAGE_BUILDTYPE), RELEASE)
             RR_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(LINEAGE_BUILD)
         endif
     endif
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+ro.rr.version=$(RR_VERSION) \
+ro.rr.releasetype=$(RR_BUILDTYPE) \
+ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+ro.modversion=$(RR_VERSION) \
+rr.build.type=$(RR_BUILDTYPE) \
+rr.ota.version= $(shell date +%Y%m%d) \
+ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
+# Properties for build flash info script
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.rr.version=$(RR_VERSION) \
+ro.rr.releasetype=$(RR_BUILDTYPE) \
+ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+ro.modversion=$(RR_VERSION) \
+rr.build.type=$(RR_BUILDTYPE) \
+rr.ota.version= $(shell date +%Y%m%d) \
+ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
+# Properties for splitted vendor devices
+PRODUCT_GENERIC_PROPERTIES += \
+ro.rr.version=$(RR_VERSION) \
+ro.rr.releasetype=$(RR_BUILDTYPE) \
+ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+ro.modversion=$(RR_VERSION) \
+rr.build.type=$(RR_BUILDTYPE) \
+rr.ota.version= $(shell date +%Y%m%d) \
+ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
+PRODUCT_VERSION = 8.0.0
+ifneq ($(RR_BUILDTYPE),)
+RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
     ifeq ($(LINEAGE_VERSION_MAINTENANCE),0)
         ifeq ($(LINEAGE_VERSION_APPEND_TIME_OF_DAY),true)
