@@ -54,8 +54,7 @@ echo -e "";
 echo -e "";
 echo -e ${ylw}" √ Build is Successfully Done! "${txtrst};
 echo -e "";
-<<<<<<< HEAD
-echo -e ${blu}" 〉Powered by ANDROID ™  // Ten 2019"${txtrst};
+echo -e ${blu}" 〉Powered by ANDROID ™  // Ten "${txtrst};
 echo -e "";
 echo -e ${red}" 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED "${txtrst};
 echo -e "";
