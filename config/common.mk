@@ -51,6 +51,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-sysconfig.xml
 
+# init.d support
+PRODUCT_COPY_FILES += \
+    vendor/rr/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit
+
+ifneq ($(TARGET_BUILD_VARIANT),user)
+# userinit support
+PRODUCT_COPY_FILES += \
+    vendor/rr/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+endif
+
+# Copy features.txt from the path
+PRODUCT_COPY_FILES += \
+vendor/rr/Features.mkdn:system/etc/RR/Features.txt
+
 # Copy all Lineage-specific init rc files
 $(foreach f,$(wildcard vendor/lrr/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
@@ -262,36 +277,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/rr/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
-
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-ro.rr.version=$(RR_VERSION) \
-ro.rr.releasetype=$(RR_BUILDTYPE) \
-ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-ro.modversion=$(RR_VERSION) \
-rr.build.type=$(RR_BUILDTYPE) \
-rr.ota.version= $(shell date +%Y%m%d) \
-ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
-
-# Properties for build flash info script
-PRODUCT_PROPERTY_OVERRIDES += \
-ro.rr.version=$(RR_VERSION) \
-ro.rr.releasetype=$(RR_BUILDTYPE) \
-ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-ro.modversion=$(RR_VERSION) \
-rr.build.type=$(RR_BUILDTYPE) \
-rr.ota.version= $(shell date +%Y%m%d) \
-ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
-
-# Properties for splitted vendor devices
-PRODUCT_GENERIC_PROPERTIES += \
-ro.rr.version=$(RR_VERSION) \
-ro.rr.releasetype=$(RR_BUILDTYPE) \
-ro.rr.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-ro.modversion=$(RR_VERSION) \
-rr.build.type=$(RR_BUILDTYPE) \
-rr.ota.version= $(shell date +%Y%m%d) \
-ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
-
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/rr/build/target/product/security/rr
