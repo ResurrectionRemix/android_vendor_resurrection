@@ -5,6 +5,8 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.rr.build.version=$(PRODUCT_VERSION) \
     ro.modversion=$(RR_VERSION) \
     ro.lineagelegal.url=https://lineageos.org/legal
+    rr.ota.version= $(shell date +%Y%m%d) \
+    ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
 
 # LineageOS Platform Display Version
 ADDITIONAL_BUILD_PROPERTIES += \
