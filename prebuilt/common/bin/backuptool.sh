@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=$2
-export V=16.0
+export V=7
 
 export ADDOND_VERSION=1
 
@@ -48,7 +48,7 @@ check_prereq() {
 if [ ! -r $S/build.prop ]; then
     return 0
 fi
-if ! grep -q "^ro.lineage.version=$V.*" $S/build.prop; then
+if ! grep -q "^ro.rr.build.version=$V.*" $S/build.prop; then
   echo "Not backing up files from incompatible version: $V"
   return 0
 fi
