@@ -193,7 +193,8 @@ PRODUCT_PACKAGES += \
     QStileSquaremedo\
     QStileOreo \
     QStileOreoCircleTrim \
-    QStileOreoSquircleTrim
+    QStileOreoSquircleTrim \
+    QStileInkDrop
 
 # Exchange support
 PRODUCT_PACKAGES += \
