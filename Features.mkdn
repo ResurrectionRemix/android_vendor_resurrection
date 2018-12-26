@@ -1,15 +1,15 @@
 	
-	● Resurrection Remix OS Oreo
+	• Resurrection Remix OS Pie
 	
-	● Crowdin for translations : https://crowdin.com/project/resurrectionremix/
+	• Crowdin for translations : https://crowdin.com/project/resurrectionremix/
 	
-	● Main Features ▼
+	• Main Features
 
-	● Theme Engine ▼
+	• Theme Engine
 	
 	- Full Substratum(OMS) theme support
 
-	● Navigation bar ▼
+	• Navigation bar
 	
 	- Enable/Disable Navbar
 	- Navbar color tint
@@ -18,7 +18,7 @@
 	- Navbar Fling            
 	- Double Tap to sleep navbar
 	
-	● Statusbar ▼
+	• Statusbar
 	
 	- Brightness Slider
 	- Enable/Disable Show Notification Count
@@ -35,74 +35,74 @@
 	- Date Format
 	- Clock Font Styles
 	
-	● Battery ▼
+	• Battery
 	
 	- Battery Bar customization
 	- Battery Icon Customization(circle/landscape/Potrait and more)
 	- Battery % Text
 	
-	● Network Traffic Indicator ▼
+	• Network Traffic Indicator
 	
 	- Network Traffic Arrows Switch
 	- Incoming/OutGoing Traffic
 	- Network traffic Color
 	
-	● Statusbar RR Logo ▼
+	• Statusbar RR Logo
 	
 	- RR logo Color
 	- Position
 	
-	● Custom Logos ▼
+	• Custom Logos
 	
 	- logo Color
 	- Position
 	- Style
 	
-	● StatusBar Weather ▼
+	• StatusBar Weather
 	
 	- Weather Color
 	- Weather Position(left/right)
 	- Weather Font Style
 	- Weather Size
 	
-	● StatusBar Ticker ▼
+	• StatusBar Ticker
 	
 	- Ticker Text color
 	- Ticker Icon Color
 	
-	● Animations ▼
+	• Animations
 	
 	- Toast Animations
 	- System Animations
 	- Misc Animations
 	
-	● Gestures ▼
+	• Gestures
 	
 	- Gestures Anywhere Feature
 	- 3 Finger Swipe Screenshot Gesture
 	
-	● App Circle Bar ▼
+	• App Circle Bar
 	
 	- Choose apps in AppSidebar
 	- Trigger Width
 	- Trigger Hieght
 	- Trigger Position
 	
-	● App Sidebar ▼
+	• App Sidebar
 	
 	- Choose apps in App circle
 	- Trigger Width
 	- Trigger Hieght
 	- Trigger Position
 	
-	● Pie Control ▼
+	• Pie Control
 	
 	- Pie Trigger(left ,Right ,Bottom)
 	- Pie Targets
 	- Pie Colors
 	- More Pie Features
 	
-	● Recents Panel ▼
+	• Recents Panel
 	
 	- Clear All button Switch
 	- Clear All Tasks Switch
@@ -111,7 +111,7 @@
 	- Recents Styles
 	- OmniSwitch
 	
-	● LockScreen ▼
+	• LockScreen
 	
 	- Lockscreen Bottom Shortcuts
 	- Lockscreen General Shorcuts
@@ -123,14 +123,14 @@
 	- Lockscreen Weather Widget
 	- Lockscreen Icons Color
 	
-	● Quick Settings Draggable Tiles ▼
+	• Quick Settings Draggable Tiles
 	
 	- Customizable Tiles
 	- Dyanamic Tiles Adjustment
 	- Number of columns/rows
 	- Tile Animations
 	
-	● Notification Drawer ▼
+	• Notification Drawer
 	
 	- Custom headers
 	- LongPress Toogles to Enter Settings
@@ -143,12 +143,12 @@
 	- Notification Panel Stroke
 	- Volume Dialog Stroke
 	
-	● Buttons ▼
+	• Buttons
 	
 	- Backlight Timer
 	- Backlight Strength
 	
-	● Advanced Reboot Menu ▼
+	• Advanced Reboot Menu
 	
 	- Power Off
 	- Reboot(Recovery, Bootloader, Hot Reboot)
@@ -160,23 +160,23 @@
 	- On the Go Mode
 	- Sound Panel
 	
-	● Home Button(For devices with HW keys Only) ▼
+	• Home Button(For devices with HW keys Only)
 	
 	- Home Button answer call
 	- Long Press Actions
 	- Double Tap Actions
 	
-	● Menu Button(For devices with HW keys Only) ▼
+	• Menu Button(For devices with HW keys Only)
 	
 	- Short Press Actions
 	- Long Press Actions
 	
-	● Search Button(If Device Supports) ▼
+	• Search Button(If Device Supports)
 	
 	- Short Press Action
 	- Long Press Action
 	
-	● Volume Buttons ▼
+	• Volume Buttons
 	
 	- Wake Up Device
 	- Playback Control
@@ -185,7 +185,7 @@
 	- Swap Buttons on Landscape mode
 	- Volume Key Answer
 	
-	● Miscellaneous ▼
+	• Miscellaneous
 	
 	- Selinux Switch (Switch Between Permissive and Enforcing Selinux if Device has Selinux Enabled)
 	- cLock Shortcut
@@ -193,14 +193,14 @@
 	- OTA Updates
 	- Cammera Shutter Sound Enable/Disable
 	
-	● SystemUI Tuner ▼
+	• SystemUI Tuner
 	
 	- Enabled By default
 	- Removed Demo mode and Tweaked SystemUI Tuner As compared To AOSP
 	- StatusBar Icons Cuzomizations
 	- Quick Settings Customizations
 	
-	● Other Features ▼
+	• Other Features
 	
 	- Perfomance Profiles
 	- LCD Density
