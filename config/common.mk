@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
     Development \
     Profiles
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+ OmniJaws
+
 #Font package
 PRODUCT_PACKAGES += \
     Custom-Fonts
