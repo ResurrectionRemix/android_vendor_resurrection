@@ -86,6 +86,11 @@ CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 PRODUCT_COPY_FILES += \
 vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 
+# Included prebuilt apk's
+PRODUCT_PACKAGES += \
+GoogleClock \
+Wallpapers
+
 # Copy all Lineage-specific init rc files
 $(foreach f,$(wildcard vendor/rr/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
