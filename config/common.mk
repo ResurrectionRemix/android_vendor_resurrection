@@ -274,7 +274,7 @@ PRODUCT_VERSION = 7.0.0
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
-RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-UNOFFICIAL
+RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
 endif
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
