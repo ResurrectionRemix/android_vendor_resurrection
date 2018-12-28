@@ -36,7 +36,7 @@ endif
 LOCAL_PREBUILT_MODULE_FILE := $(FINAL_APNS_FILE)
 
 # Prebuilt apk's included in RR builds
-
+include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 LOCAL_MODULE := GoogleClock
