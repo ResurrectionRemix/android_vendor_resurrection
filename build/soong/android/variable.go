@@ -17,6 +17,9 @@ type Product_variables struct {
 	Device_support_wait_for_qsee struct {
 		Cflags []string
 	}
+	Apply_msm8974_1440p_egl_workaround struct {
+		Cflags []string
+	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
