@@ -82,6 +82,7 @@ def fetch_query_via_ssh(remote_url, query):
                 'branch': data['branch'],
                 'change_id': data['id'],
                 'current_revision': data['currentPatchSet']['revision'],
+                'current_patch_set': data['currentPatchSet']['number'],
                 'number': int(data['number']),
                 'revisions': {patch_set['revision']: {
                     '_number': int(patch_set['number']),
@@ -323,6 +324,11 @@ if __name__ == '__main__':
             print('Change %d not found, skipping' % change)
             continue
 
+        try:
+            current_patchset = review['revisions'][review['current_revision']]['_number']
+        except KeyError:
+            current_patchset = review['current_patch_set']
+
         mergables.append({
             'subject': review['subject'],
             'project': review['project'].split('/')[1],
@@ -331,14 +337,17 @@ if __name__ == '__main__':
             'change_number': review['number'],
             'status': review['status'],
             'fetch': None,
-            'patchset': review['revisions'][review['current_revision']]['_number'],
+            'patchset': current_patchset,
         })
 
         mergables[-1]['fetch'] = review['revisions'][review['current_revision']]['fetch']
         mergables[-1]['id'] = change
         if patchset:
             try:
-                mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
+                try:
+                    mergables[-1]['fetch'] = [review['revisions'][x]['fetch'] for x in review['revisions'] if review['revisions'][x]['_number'] == patchset][0]
+                except KeyError:
+                    mergables[-1]['fetch'] = [review['revisions'][current_patchset]['fetch']][0]
                 mergables[-1]['id'] = '{0}/{1}'.format(change, patchset)
                 mergables[-1]['patchset'] = patchset
             except (IndexError, ValueError):
