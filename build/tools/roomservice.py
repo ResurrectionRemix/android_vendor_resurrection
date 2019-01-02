@@ -34,7 +34,7 @@ default_manifest = ".repo/manifest.xml"
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
 custom_default_revision = "pie"
 custom_dependencies = "rr.dependencies"
-org_manifest = "rr-devices"  # leave empty if org is provided in manifest
+org_manifest = "rr-d"  # leave empty if org is provided in manifest
 org_display = "ResurrectionRemix-Devices"  # needed for displaying
 
 github_auth = None
