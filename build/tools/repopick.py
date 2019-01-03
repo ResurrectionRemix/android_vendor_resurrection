@@ -267,19 +267,22 @@ if __name__ == '__main__':
     change_numbers = []
 
     def cmp_reviews(review_a, review_b):
-        current_a = review_a['current_revision']
-        parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
-        current_b = review_b['current_revision']
-        parents_b = [r['commit'] for r in review_b['revisions'][current_b]['commit']['parents']]
-        if current_a in parents_b:
+        if args.gerrit[0:3] == 'ssh':
             return -1
-        elif current_b in parents_a:
-            return 1
         else:
-            return cmp(review_a['number'], review_b['number'])
+            current_a = review_a['current_revision']
+            parents_a = [r['commit'] for r in review_a['revisions'][current_a]['commit']['parents']]
+            current_b = review_b['current_revision']
+            parents_b = [r['commit'] for r in review_b['revisions'][current_b]['commit']['parents']]
+            if current_a in parents_b:
+                return -1
+            elif current_b in parents_a:
+                return 1
+            else:
+                return cmp(review_a['number'], review_b['number'])
 
     if args.topic:
-        reviews = fetch_query(args.gerrit, 'status:open+topic:{0}'.format(args.topic))
+        reviews = fetch_query(args.gerrit, 'status:open topic:{0}'.format(args.topic))
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
