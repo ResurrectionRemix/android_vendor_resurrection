@@ -156,15 +156,9 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    libemoji \
     LiveWallpapersPicker \
     PhotoTable \
     Terminal
-
-# Include explicitly to work around GMS issues
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
-    librsjni
 
 # Custom RR packages
 PRODUCT_PACKAGES += \
