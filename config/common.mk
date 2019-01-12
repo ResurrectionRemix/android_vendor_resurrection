@@ -134,7 +134,7 @@ PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 
 # Bootanimation
-PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
+PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
 
 # Required RR packages
 PRODUCT_PACKAGES += \
