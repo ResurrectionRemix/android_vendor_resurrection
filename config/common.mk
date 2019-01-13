@@ -72,16 +72,17 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-CHANGELOG.mkdn:system/etc/RR/Changelog.txt
+    CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
-vendor/rr/Features.mkdn:system/etc/RR/Features.txt
+    vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 
 # Included prebuilt apk's
 PRODUCT_PACKAGES += \
-GoogleClock \
-Wallpapers
+    GoogleClock \
+    Wallpapers \
+    ResurrectionStats
 
 # Copy all Lineage-specific init rc files
 $(foreach f,$(wildcard vendor/rr/prebuilt/common/etc/init/*.rc),\
