@@ -269,13 +269,6 @@ endif
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/rr/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
-PRODUCT_VERSION = 7.0.0
-ifneq ($(RR_BUILDTYPE),)
-RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
-else
-RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
-endif
-
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/rr/build/target/product/security/rr
 
