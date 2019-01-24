@@ -17,4 +17,7 @@
 -->
 <resources>
     <dimen name="rounded_corner_content_padding">8dp</dimen>
+
+    <!-- extra height to add on qs status bar heigth if header enabled -->
+    <dimen name="qs_header_image_offset">25dp</dimen>
 </resources>
