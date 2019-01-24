@@ -1,60 +1,61 @@
-Redone RR Stats app
-Implemented Lineage's updater app (allows auto flashing, even has A/B support)
-Media art on lockscreen
-Statusbar battery customizations
-Statusbar clock customizations
-Statusbar icons toggle
-Statusbar gestures (double tap to sleep, brightness)
-Customizable listview animation and interpolator
-Screen off animations customizations
-RR configurations tabs transition options
-Wakelock blocker
-IME settings like landscape keyboard not using the fullscreen, auto rotate when keyboard is opened
-Power menu customizations (like screenshot/partial screenshot)
-On-The-Go mode
-Advanced reboot
-Different toggleable layouts for RR Configurations
-Carrier Label
-Different recents options (stock/slim)
-Hide apps from recents
-Statusbar VoLTE icon toggle
-Network activity in statusbar
-Option to launch music app on headset connection
-Notification Ticker
-Heads-Up customizations
-Fingerprint authentication vibration toggle
-Quick pulldown for QS
-Smart pulldown
-QS animations
-Vibrate on touching QS
-RR logo in statusbar
-Adjust brightness by sliding across the status bar
-Battery bar
-Statusbar weather (Omni JAWS)
-Lockscreen charging info
-Lockscreen shortcuts
-Lockscreen weather
-Lockscreen clock/date
-Face auto unlock (no need of swiping)
-App circle bar
-PIE control
-Navbar customizations (smartnav - fling, pulse), navbar height
-OnePlus like navigation gestures
-Expanded desktop options per-app
-Customize settings dashboard layout and summaries
-QS rows/columns customization
-Customizable lockscreen notification count
-Customizable toast animation
-Customizable volume dialog
-Memory bar in recents
-Light/dark theme option
-Hardware keys customizations
-Buttons customizations (volume keys to wake device, answer call, control playback, etc)
-Three finger gesture (screenshot)
-Custom System animations
-Suspend Actions (get executed on screen off)
-Volume steps
-Gesture Anywhere
-Scrolling cache
-Smart pixels (for AMOLED displays)
-Intelligent notification sounds(Ring notif sound in xxx second for one time)
+ • Redone RR Stats app
+ • Implemented Lineage's updater app (allows auto flashing, even has A/B support)
+ • Media art on lockscreen
+ • Statusbar battery customizations
+ • Statusbar clock customizations
+ • Statusbar icons toggle
+ • Statusbar gestures (double tap to sleep, brightness)
+ • Customizable listview animation and interpolator
+ • Screen off animations customizations
+ • RR configurations tabs transition options
+ • Wakelock blocker
+ • IME settings like landscape keyboard not using the fullscreen, auto rotate when
+ • keyboard is opened
+ • Power menu customizations (like screenshot/partial screenshot)
+ • On-The-Go mode
+ • Advanced reboot
+ • Different toggleable layouts for RR Configurations
+ • Carrier Label
+ • Different recents options (stock/slim)
+ • Hide apps from recents
+ • Statusbar VoLTE icon toggle
+ • Network activity in statusbar
+ • Option to launch music app on headset connection
+ • Notification Ticker
+ • Heads-Up customizations
+ • Fingerprint authentication vibration toggle
+ • Quick pulldown for QS
+ • Smart pulldown
+ • QS animations
+ • Vibrate on touching QS
+ • RR logo in statusbar
+ • Adjust brightness by sliding across the status bar
+ • Battery bar
+ • Statusbar weather (Omni JAWS)
+ • Lockscreen charging info
+ • Lockscreen shortcuts
+ • Lockscreen weather
+ • Lockscreen clock/date
+ • Face auto unlock (no need of swiping)
+ • App circle bar
+ • PIE control
+ • Navbar customizations (smartnav - fling, pulse), navbar height
+ • OnePlus like navigation gestures
+ • Expanded desktop options per-app
+ • Customize settings dashboard layout and summaries
+ • QS rows/columns customization
+ • Customizable lockscreen notification count
+ • Customizable toast animation
+ • Customizable volume dialog
+ • Memory bar in recents
+ • Light/dark theme option
+ • Hardware keys customizations
+ • Buttons customizations (volume keys to wake device, answer call, control playback, etc)
+ • Three finger gesture (screenshot)
+ • Custom System animations
+ • Suspend Actions (get executed on screen off)
+ • Volume steps
+ • Gesture Anywhere
+ • Scrolling cache
+ • Smart pixels (for AMOLED displays)
+ • Intelligent notification sounds(Ring notif sound in xxx second for one time)
