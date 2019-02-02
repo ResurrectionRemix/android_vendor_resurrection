@@ -194,7 +194,8 @@ PRODUCT_PACKAGES += \
     QStileOreo \
     QStileOreoCircleTrim \
     QStileOreoSquircleTrim \
-    QStileInkDrop
+    QStileInkDrop \
+    QStileCookie
 
 # Exchange support
 PRODUCT_PACKAGES += \
