@@ -22,11 +22,6 @@ FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/rr/build/core/apichec
 
 BUILD_RRO_SYSTEM_PACKAGE := $(TOPDIR)vendor/rr/build/core/system_rro.mk
 
-# We modify several neverallows, so let the build proceed
-ifneq ($(TARGET_BUILD_VARIANT),user)
-SELINUX_IGNORE_NEVERALLOWS := true
-endif
-
 # Rules for MTK targets
 include $(TOPDIR)vendor/rr/build/core/mtk_target.mk
 
