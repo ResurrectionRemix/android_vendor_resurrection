@@ -435,7 +435,7 @@ if __name__ == '__main__':
             if args.quiet:
                 cmd.append('--quiet')
             else:
-                print(cmd)
+                print("executing: {}".format(" ".join(cmd)))
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
             FETCH_HEAD = '{0}/.git/FETCH_HEAD'.format(project_path)
             if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
