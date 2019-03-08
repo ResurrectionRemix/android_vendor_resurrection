@@ -1,4 +1,4 @@
-PRODUCT_VERSION = 7.0.0
+PRODUCT_VERSION = 7.0.1
 ifneq ($(RR_BUILDTYPE),)
 RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
