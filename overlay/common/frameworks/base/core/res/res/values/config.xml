@@ -97,4 +97,9 @@
     <string-array name="config_fontPackages" translatable="false">
         <item>com.custom.fonts</item>
     </string-array>
+
+    <!-- Ephemeral Resolver Packages -->
+    <string-array name="config_ephemeralResolverPackage">
+        <item>com.google.android.gms</item>
+    </string-array>
 </resources>
