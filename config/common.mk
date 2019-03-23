@@ -145,9 +145,10 @@ PRODUCT_PACKAGES += \
     Development \
     Profiles
 
-# OmniJaws
+# OmniPackages
 PRODUCT_PACKAGES += \
- OmniJaws
+ OmniJaws \
+ OmniStyle
 
 #Font package
 PRODUCT_PACKAGES += \
