@@ -281,10 +281,14 @@ if __name__ == '__main__':
             else:
                 return cmp(review_a['number'], review_b['number'])
 
+    if not args.force:
+        query="status:open+topic:{}"
+    else:
+        query="topic:{}"
     if args.topic:
         for t in args.topic:
             # Store current topic to process for change_numbers
-            topic = fetch_query(args.gerrit, 'status:open+topic:{0}'.format(t))
+            topic = fetch_query(args.gerrit, query.format(t))
             # Append topic to reviews, for later reference
             reviews += topic
             # Cycle through the current topic to get the change numbers
