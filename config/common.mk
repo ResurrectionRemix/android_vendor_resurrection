@@ -115,6 +115,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/lineage-power-whitelist.xml:system/etc/sysconfig/lineage-power-whitelist.xml
 
+# Include AOSP audio files
+include vendor/rr/config/aosp_audio.mk
+
 # Include Lineage audio files
 include vendor/rr/config/lineage_audio.mk
 
