@@ -54,7 +54,7 @@ echo -e "";
 read -r -t 30 days_to_log || days_to_log=7
 fi
 echo >> $Changelog;
-echo "$source_name Ver 7.0.1 Changelog"    >> $Changelog;
+echo "$source_name Ver 7.0.2 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
 echo >> $Changelog;
 
