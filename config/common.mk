@@ -191,7 +191,8 @@ PRODUCT_PACKAGES += \
     QStileBadgetwo \
     QStileSquircle \
     QStileDiamond \
-    QStileSquircleTrim
+    QStileSquircleTrim \
+    QStileCookie
 
 # Exchange support
 PRODUCT_PACKAGES += \
