@@ -167,6 +167,7 @@ PRODUCT_PACKAGES += \
 # Custom RR packages
 PRODUCT_PACKAGES += \
     AudioFX \
+    Backgrounds \
     LineageSettingsProvider \
     LineageSetupWizard \
     Eleven \
@@ -175,7 +176,6 @@ PRODUCT_PACKAGES += \
     LockClock \
     TrebuchetQuickStep \
     Updater \
-    WallpaperPicker \
     WeatherProvider
 
 # QS tile styles
