@@ -153,6 +153,11 @@ PRODUCT_PACKAGES += \
     QStileCircleTrim \
     QStileDefault \
     QStileDualToneCircle \
+    QStileHexagon \
+    QStileStar \
+    QStileTearDrop \
+    QStileSquare \
+    QStileBadge \
     QStileSquircleTrim
 
 # Themes
