@@ -2,7 +2,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 CAL_MODULE_TAGS := optional
 
-LOCAL_PACKAGE_NAME := QStileBadge
+LOCAL_PACKAGE_NAME := QStileGear
 LOCAL_SDK_VERSION := current
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := false
