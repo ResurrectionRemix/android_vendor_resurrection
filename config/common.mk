@@ -186,7 +186,8 @@ PRODUCT_PACKAGES += \
     QStileStar \
     QStileTearDrop \
     QStileSquare \
-    QStileBadge \
+    QStileGear \
+    QStileSun \
     QStileSquircleTrim
 
 # Exchange support

@@ -18,6 +18,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="qstile_badge">Badge</string>
+    <string name="qstile_gear">Gear</string>
 
 </resources>
