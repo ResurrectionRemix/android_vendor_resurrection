@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2019 Resurrection Remix OS
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+         http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="2117"
+    android:viewportHeight="2117"
+    android:width="40dp"
+    android:height="40dp">
+    <group
+        android:scaleX="0.1"
+        android:scaleY="-0.1"
+        android:translateY="2117">
+        <path
+            android:pathData="M10243 21151c-218 -60 -444 -202 -738 -466 -60 -55 -583 -571 -1160 -1147l-1050 -1047 -1580 -4c-1640 -4 -1628 -4 -1894 -48 -302 -50 -548 -161 -656 -296 -22 -26 -82 -91 -135 -143 -53 -52 -112 -120 -132 -150 -94 -144 -152 -376 -195 -775 -15 -142 -17 -333 -20 -1680l-4 -1520 -812 -815c-1268 -1272 -1437 -1447 -1594 -1655 -127 -168 -218 -343 -255 -486 -18 -72 -20 -100 -14 -199 8 -141 8 -111 0 -260 -6 -109 -4 -136 15 -210 27 -108 130 -316 215 -434 170 -236 248 -318 1608 -1681l837 -840 4 -1595c3 -1410 5 -1609 20 -1715 36 -263 86 -444 165 -600 40 -79 62 -106 176 -221 72 -72 151 -153 176 -179 65 -70 172 -136 288 -178 116 -42 200 -60 367 -81 281 -36 392 -39 1909 -43l1510 -5 1025 -1020c1013 -1008 1209 -1199 1366 -1325 172 -138 364 -250 515 -299 70 -22 103 -27 185 -27 55 0 143 0 195 0 321 -1 309 -2 410 32 180 61 342 162 523 325 192 174 652 623 1507 1469l855 847 1330 0c731 0 1442 5 1579 10 623 25 882 86 1125 265 88 65 284 258 337 332 99 136 160 310 193 548 42 303 44 387 50 1952l6 1512 430 433c1443 1452 1749 1762 1819 1843 226 260 355 477 408 689 18 70 20 95 13 191 -5 61 -7 137 -4 170 10 153 3 258 -25 345 -36 111 -120 272 -201 385 -166 232 -238 307 -1626 1700l-818 820 -4 1530c-5 1530 -7 1624 -43 1924 -31 266 -133 514 -256 627 -23 21 -92 88 -152 147 -191 190 -318 257 -611 327 -207 50 -297 53 -1989 57l-1559 4 -1026 1021c-564 562 -1084 1075 -1156 1141 -287 264 -494 403 -715 478 -85 29 -107 33 -210 33 -63 1 -131 0 -150 -2 -19 -2 -96 -1 -170 3 -115 4 -146 2 -207 -14z"
+            android:fillColor="#fff" />
+    </group>
+</vector>

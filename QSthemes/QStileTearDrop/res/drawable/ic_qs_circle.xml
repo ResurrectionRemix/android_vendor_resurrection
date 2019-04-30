@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2019 Resurrection Remix OS
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+         http://www.apache.org/licenses/LICENSE-2.0
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="1609"
+    android:viewportHeight="1609"
+    android:width="40dp"
+    android:height="40dp">
+    <group
+        android:scaleX="0.1"
+        android:scaleY="-0.1"
+        android:translateY="1609">
+        <path
+            android:pathData="M7550 16079c-1988 -130 -3798 -947 -5195 -2344 -1324 -1324 -2136 -3037 -2319 -4895 -42 -418 -47 -1097 -12 -1480 97 -1055 360 -1993 817 -2910 700 -1405 1792 -2568 3169 -3374 211 -124 643 -340 875 -439 683 -289 1398 -484 2120 -576 458 -59 138 -55 4215 -58 4118 -4 3789 -8 3995 57 184 60 340 155 492 303 196 191 317 417 367 688 15 76 16 439 13 3819 -3 4077 1 3757 -58 4215 -150 1174 -565 2309 -1213 3318 -691 1075 -1649 1985 -2771 2630 -1008 579 -2104 921 -3315 1033 -204 19 -965 28 -1180 13z"
+            android:fillColor="#fff" />
+    </group>
+</vector>
