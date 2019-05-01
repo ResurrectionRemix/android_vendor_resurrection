@@ -1,8 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.android.systemui.qstile.sun"
+    package="com.android.systemui.qstile.badgetwo"
     android:versionCode="1"
     android:versionName="1.0">
     <overlay android:targetPackage="com.android.systemui" android:priority="1"/>
 
-    <application android:label="@string/qstile_sun" android:hasCode="false"/>
+    <application android:label="@string/qstile_badgetwo" android:hasCode="false"/>
 </manifest>

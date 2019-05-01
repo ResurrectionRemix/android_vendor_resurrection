@@ -158,7 +158,10 @@ PRODUCT_PACKAGES += \
     QStileTearDrop \
     QStileSquare \
     QStileGear \
-    QStileSun \
+    QStileBadge \
+    QStileBadgetwo \
+    QStileSquircle \
+    QStileDiamond \
     QStileSquircleTrim
 
 # Themes
