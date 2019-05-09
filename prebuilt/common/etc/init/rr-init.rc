@@ -1,0 +1,3 @@
+on post-fs-data
+    chown system system /sys/class/power_supply/battery/battery_charging_enabled
+    chown system system /sys/class/power_supply/battery/charging_enabled
