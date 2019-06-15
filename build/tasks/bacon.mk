@@ -22,6 +22,6 @@ RR_TARGET_PACKAGE := $(PRODUCT_OUT)/$(RR_VERSION).zip
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(RR_TARGET_PACKAGE)
-	$(hide) $(MD5SUM) $(LINEAGE_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(LINEAGE_TARGET_PACKAGE).md5sum
+	$(hide) $(MD5SUM) $(RR_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(RR_TARGET_PACKAGE).md5sum
 	@echo "ResurrectionRemix build complete: $(RR_TARGET_PACKAGE)" >&2
 	$(hide) ./vendor/rr/tools/rr.sh
