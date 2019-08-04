@@ -17,6 +17,11 @@ on boot
     # allow system to communicate pocket state
     chown system system /sys/kernel/pocket_judge/inpocket
 
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
+
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \
         -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
