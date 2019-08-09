@@ -2,3 +2,4 @@ for combo in $(curl -s https://raw.githubusercontent.com/LineageOS/hudson/master
 do
     add_lunch_combo $combo
 done
+export SKIP_ABI_CHECKS=true
