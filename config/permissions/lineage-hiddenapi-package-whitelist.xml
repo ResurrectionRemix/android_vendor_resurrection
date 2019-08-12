@@ -23,4 +23,5 @@ platform cert need to be included, as apps signed with the platform cert are exe
 
 <config>
   <hidden-api-whitelisted-app package="org.lineageos.jelly" />
+  <hidden-api-whitelisted-app package="org.pixelexperience.screenshot" />
 </config>
