@@ -109,5 +109,9 @@
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.RECOVERY"/>
     </privapp-permissions>
+     
+    <privapp-permissions package="org.omnirom.omnistyle">
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+    </privapp-permissions>
 
 </permissions>
