@@ -1,6 +1,8 @@
 # Add variables that we wish to make available to soong here.
 EXPORT_TO_SOONG := \
     KERNEL_ARCH \
+    KERNEL_CC \
+    KERNEL_CLANG_TRIPLE \
     KERNEL_CROSS_COMPILE \
     KERNEL_MAKE_FLAGS \
     TARGET_KERNEL_CONFIG \
