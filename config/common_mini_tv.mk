@@ -2,4 +2,4 @@
 TARGET_EXCLUDES_AUDIOFX := true
 
 # Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mini.mk)
+$(call inherit-product, vendor/rr/config/common_mini.mk)
