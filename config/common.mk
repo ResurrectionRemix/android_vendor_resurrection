@@ -1,7 +1,7 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= ResurrectionRemix
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
@@ -122,7 +122,6 @@ PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/bootanimation.zip:
 
 # Required Lineage packages
 PRODUCT_PACKAGES += \
-    LineageParts \
     Development \
     Profiles
 
@@ -133,37 +132,22 @@ PRODUCT_PACKAGES += \
     Terminal
 
 # Custom Lineage packages
-PRODUCT_PACKAGES += \
-    AudioFX \
-    Backgrounds \
-    LineageSettingsProvider \
-    LineageSetupWizard \
-    Eleven \
-    ExactCalculator \
-    Jelly \
-    LockClock \
-    TrebuchetQuickStep \
-    Updater \
-    WeatherProvider
+# PRODUCT_PACKAGES += \
+#    AudioFX \
+#    Backgrounds \
+#    LineageSettingsProvider \
+#    LineageSetupWizard \
+#    Eleven \
+#    ExactCalculator \
+#    Jelly \
+#    LockClock \
+#    TrebuchetQuickStep \
+#    Updater \
+#    WeatherProvider
 
 # Exchange support
 PRODUCT_PACKAGES += \
     Exchange2
-
-# Berry styles
-PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageDarkTheme \
-    LineageBlackAccent \
-    LineageBlueAccent \
-    LineageBrownAccent \
-    LineageCyanAccent \
-    LineageGreenAccent \
-    LineageOrangeAccent \
-    LineagePinkAccent \
-    LineagePurpleAccent \
-    LineageRedAccent \
-    LineageYellowAccent
 
 # Extra tools in Lineage
 PRODUCT_PACKAGES += \
