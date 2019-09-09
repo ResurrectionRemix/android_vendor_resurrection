@@ -2,6 +2,7 @@
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
 PRODUCT_BRAND ?= ResurrectionRemix
+RR_BUILD := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
