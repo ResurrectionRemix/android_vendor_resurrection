@@ -220,7 +220,7 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/rr/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/rr/build/target/product/security/rr
+    vendor/rr/build/target/security/rr
 
 -include vendor/rr-priv/keys/keys.mk
 
