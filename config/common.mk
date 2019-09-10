@@ -1,8 +1,12 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# Include RR versions
+include $(TOPDIR)vendor/rr/build/core/main_version.mk
+
 PRODUCT_BRAND ?= ResurrectionRemix
-RR_BUILD := true
+# RR_BUILD SHOULD CONTAIN DEVICE NAME INSTEAD OF TRUE
+# RR_BUILD := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
