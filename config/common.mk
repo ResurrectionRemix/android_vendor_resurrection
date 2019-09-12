@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
     Development \
     Profiles
 
+# Required packages
+PRODUCT_PACKAGES += \
+    ThemePicker
+
 # Optional packages
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
