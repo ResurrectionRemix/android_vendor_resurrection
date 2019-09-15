@@ -6,6 +6,12 @@ RR_VERSION := RR-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
 RR_BUILDTYPE=Unofficial
 endif
 
+# Build fingerprint
+ifneq ($(BUILD_FINGERPRINT),)
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.build.fingerprint=$(BUILD_FINGERPRINT)
+endif
+
 # RR System Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.rr.version=$(RR_VERSION) \
