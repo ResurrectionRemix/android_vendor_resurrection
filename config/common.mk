@@ -133,7 +133,8 @@ PRODUCT_PACKAGES += \
 
 # Required packages
 PRODUCT_PACKAGES += \
-    ThemePicker
+    ThemePicker \
+    Launcher3
 
 # Optional packages
 PRODUCT_PACKAGES += \
