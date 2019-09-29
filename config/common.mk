@@ -139,7 +139,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     PhotoTable \
-    Terminal
 
 # Custom Lineage packages
 # PRODUCT_PACKAGES += \
