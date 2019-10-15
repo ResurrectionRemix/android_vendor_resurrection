@@ -177,7 +177,7 @@ ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     else ifeq ($(KERNEL_ARCH),x86)
         KERNEL_CLANG_TRIPLE ?= CLANG_TRIPLE=x86_64-linux-gnu-
     endif
-    PATH_OVERRIDE := PATH=$(TARGET_KERNEL_CLANG_PATH)/bin:$$PATH LD_LIBRARY_PATH=$(TARGET_KERNEL_CLANG_PATH)/lib64:$$LD_LIBRARY_PATH
+    PATH_OVERRIDE := PATH=$(TARGET_KERNEL_CLANG_PATH):$$PATH LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/clang/host/$(HOST_OS)-x86/$(KERNEL_CLANG_VERSION)/lib64:$$LD_LIBRARY_PATH
     ifeq ($(KERNEL_CC),)
         KERNEL_CC := CC="$(CCACHE_BIN) clang"
     endif
@@ -186,9 +186,6 @@ endif
 ifeq ($(TARGET_KERNEL_MODULES),)
     TARGET_KERNEL_MODULES := INSTALLED_KERNEL_MODULES
 endif
-
-# System tools are no longer allowed on 10+
-PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/perl/bin:$$PATH LD_LIBRARY_PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_OS)-x86/perl/lib:$$LD_LIBRARY_PATH
 
 KERNEL_ADDITIONAL_CONFIG_OUT := $(KERNEL_OUT)/.additional_config
 
