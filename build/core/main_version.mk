@@ -1,19 +1,29 @@
-# LineageOS System Version
-ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.version=$(LINEAGE_VERSION) \
-    ro.lineage.releasetype=$(LINEAGE_BUILDTYPE) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
-    ro.modversion=$(LINEAGE_VERSION) \
-    ro.lineagelegal.url=https://lineageos.org/legal
+PRODUCT_VERSION = 7.0.2
+ifneq ($(RR_BUILDTYPE),)
+RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
+else
+RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
+RR_BUILDTYPE=Unofficial
+endif
 
-# LineageOS Platform Display Version
+# RR System Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.display.version=$(LINEAGE_DISPLAY_VERSION)
+    ro.rr.version=$(RR_VERSION) \
+    ro.rr.releasetype=$(RR_BUILDTYPE) \
+    ro.rr.build.version=$(PRODUCT_VERSION) \
+    ro.modversion=$(RR_VERSION) \
+    ro.lineagelegal.url=https://lineageos.org/legal \
+    rr.ota.version= $(shell date +%Y%m%d) \
+    ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
+
+# RR Platform Display Version
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.rr.display.version=$(RR_VERSION)
 
 # LineageOS Platform SDK Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
+    ro.rr.build.version.plat.sdk=$(LINEAGE_PLATFORM_SDK_VERSION)
 
-# LineageOS Platform Internal Version
+# RR Platform Internal Version
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
+    ro.rr.build.version.plat.rev=$(LINEAGE_PLATFORM_REV)
