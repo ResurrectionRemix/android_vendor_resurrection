@@ -1,8 +1,8 @@
-PRODUCT_VERSION = 7.0.2
+PRODUCT_VERSION = Ten
 ifneq ($(RR_BUILDTYPE),)
-RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
+RR_VERSION := RR-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
-RR_VERSION := RR-P-v$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
+RR_VERSION := RR-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
 RR_BUILDTYPE=Unofficial
 endif
 
