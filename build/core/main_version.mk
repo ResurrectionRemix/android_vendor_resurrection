@@ -6,6 +6,8 @@ RR_VERSION := RR-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
 RR_BUILDTYPE=Unofficial
 endif
 
+BUILD_DATE_TIME := $(BUILD_TIME)$(BUILD_DATE)
+
 # Build fingerprint
 ifneq ($(BUILD_FINGERPRINT),)
 ADDITIONAL_BUILD_PROPERTIES += \
@@ -18,6 +20,7 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.rr.releasetype=$(RR_BUILDTYPE) \
     ro.rr.build.version=$(PRODUCT_VERSION) \
     ro.modversion=$(RR_VERSION) \
+    ro.build.datetime=$(BUILD_DATE_TIME) \
     ro.lineagelegal.url=https://lineageos.org/legal \
     rr.ota.version= $(shell date +%Y%m%d) \
     ro.rr.tag=$(shell grep "refs/tags" .repo/manifest.xml  | cut -d'"' -f2 | cut -d'/' -f3)
