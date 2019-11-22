@@ -23,5 +23,11 @@ $(call set-device-specific-path,WLAN,wlan,hardware/qcom-caf/wlan)
 
 PRODUCT_CFI_INCLUDE_PATHS += \
     hardware/qcom-caf/wlan/qcwcn/wpa_supplicant_8_lib
+else
+
+ifneq ($(FORCE_QCOM_DISPLAY_HAL_VARIANT),)
+$(call set-device-specific-path,DISPLAY,display,hardware/qcom-caf/$(FORCE_QCOM_DISPLAY_HAL_VARIANT)/display)
+endif
 
 endif
+
