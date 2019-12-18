@@ -883,11 +883,13 @@ EOF
         rm -f $OUT/.chkfileperm.sh
     fi
 
+    RELOUT=$(echo $OUT | sed "s#^${ANDROID_BUILD_TOP}/##")
+
     stop_n_start=false
-    for TARGET in $(echo $LOC | tr " " "\n" | sed "s#.*$OUT##" | sort | uniq); do
-        # Make sure file is in $OUT/system or $OUT/data
+    for TARGET in $(echo $LOC | tr " " "\n" | sed "s#.*${RELOUT}##" | sort | uniq); do
+        # Make sure file is in $OUT/system, $OUT/data, $OUT/odm, $OUT/oem, $OUT/product, $OUT/product_services or $OUT/vendor
         case $TARGET in
-            /system/*|/data/*)
+            /system/*|/data/*|/odm/*|/oem/*|/product/*|/product_services/*|/vendor/*)
                 # Get out file from target (i.e. /system/bin/adb)
                 FILE=$OUT$TARGET
             ;;
