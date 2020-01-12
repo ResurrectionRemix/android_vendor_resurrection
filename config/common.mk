@@ -142,7 +142,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     Terminal
 
-# Lineage packages
+# Primary colors
+PRODUCT_PACKAGES += \
+    PrimaryColorOceanOverlay
+
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
