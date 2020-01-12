@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 
 # Primary colors
 PRODUCT_PACKAGES += \
+    PrimaryColorNatureOverlay
     PrimaryColorOceanOverlay
 
 PRODUCT_PACKAGES += \
