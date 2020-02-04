@@ -132,7 +132,7 @@
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="org.pixelexperience.screenshot">
+    <privapp-permissions package="com.android.screenshot">
         <permission name="android.permission.READ_FRAME_BUFFER"/>
     </privapp-permissions>
 
