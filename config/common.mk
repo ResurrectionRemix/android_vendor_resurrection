@@ -57,7 +57,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
+    vendor/rr/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -88,7 +88,7 @@ PRODUCT_COPY_FILES += \
 
 # Pre-granted permissions
 PRODUCT_COPY_FILES += \
-    vendor/lineage/config/permissions/lineage-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/lineage-default-permissions.xml
+    vendor/rr/config/permissions/lineage-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/lineage-default-permissions.xml
 
 # Include AOSP audio files
 include vendor/rr/config/aosp_audio.mk
@@ -249,8 +249,8 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     TrebuchetQuickStep
 
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/rr/overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
 PRODUCT_VERSION_MAJOR = 17
 PRODUCT_VERSION_MINOR = 1
@@ -339,10 +339,6 @@ else
         endif
     endif
 endif
-
-
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/rr/overlay
-DEVICE_PACKAGE_OVERLAYS += vendor/rr/overlay/common
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/rr/build/target/product/security/rr
