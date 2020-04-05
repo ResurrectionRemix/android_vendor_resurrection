@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
     Profiles \
     TrebuchetQuickStep \
     Updater \
+    OmniJaws \
     WeatherProvider
 
 # Accents
