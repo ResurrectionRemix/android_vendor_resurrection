@@ -14,6 +14,9 @@ on boot
     # Persistent properties (only created if persist exists)
     mkdir /persist/properties 0770 system system
 
+    # allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
+
 # bugreport is triggered by holding down volume down, volume up and power
 service bugreport /system/bin/dumpstate -d -p -B -z \
         -o /data/user_de/0/com.android.shell/files/bugreports/bugreport
