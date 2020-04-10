@@ -20,6 +20,7 @@
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.RESET_BATTERY_STATS"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
@@ -31,6 +32,7 @@
         <permission name="android.permission.SHUTDOWN"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
 

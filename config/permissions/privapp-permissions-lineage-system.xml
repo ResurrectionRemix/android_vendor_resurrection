@@ -31,6 +31,7 @@
         <permission name="android.permission.WRITE_SYNC_SETTINGS"/>
         <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
@@ -115,6 +116,7 @@
         <permission name="android.permission.SHUTDOWN"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
