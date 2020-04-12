@@ -51,11 +51,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-sysconfig.xml
 
-# init.d support
-PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/rr/prebuilt/common/bin/sysinit:system/bin/sysinit
-
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # userinit support
 PRODUCT_COPY_FILES += \
@@ -65,6 +60,10 @@ endif
 # Copy features.txt from the path
 PRODUCT_COPY_FILES += \
 vendor/rr/Features.mkdn:system/etc/RR/Features.txt
+
+# Copy over the changelog to the device
+PRODUCT_COPY_FILES += \
+    CHANGELOG.mkdn:system/etc/RR/Changelog.txt
 
 # Copy all Lineage-specific init rc files
 $(foreach f,$(wildcard vendor/lrr/prebuilt/common/etc/init/*.rc),\
@@ -139,10 +138,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Bootanimation
 PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
-
-# Copy features.txt from the path
-PRODUCT_COPY_FILES += \
-vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 
 # ResurrectionRemix
 PRODUCT_PACKAGES += \
