@@ -28,7 +28,7 @@
 
 source_tree="$ANDROID_BUILD_TOP"; #path here must be inside home directory
 changelog_path_name=CHANGELOG.mkdn #changelog file path/name.extension
-source_name="Resurrection Remix Pie" #Name to display in changelog.md top before version
+source_name="Resurrection Remix Q" #Name to display in changelog.md top before version
 # input variables end
 
 export Changelog=$source_tree/$changelog_path_name
@@ -54,7 +54,7 @@ echo -e "";
 read -r -t 30 days_to_log || days_to_log=7
 fi
 echo >> $Changelog;
-echo "$source_name Ver 8.0.1 Changelog"    >> $Changelog;
+echo "$source_name Ver 8.0.0 Changelog"    >> $Changelog;
 echo '' >> $Changelog;
 echo >> $Changelog;
 
