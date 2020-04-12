@@ -27,7 +27,7 @@
     normal='tput sgr0'
 
 source_tree="$ANDROID_BUILD_TOP"; #path here must be inside home directory
-changelog_path_name=CHANGELOG.mkdn #changelog file path/name.extension
+changelog_path_name=vendor/CHANGELOG.mkdn #changelog file path/name.extension
 source_name="Resurrection Remix Q" #Name to display in changelog.md top before version
 # input variables end
 
