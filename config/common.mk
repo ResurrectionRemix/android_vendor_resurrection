@@ -192,6 +192,8 @@ PRODUCT_PACKAGES += \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
+    LimeAccent \
+    RedAccent \
     LineageYellowAccent
 
 # Themes

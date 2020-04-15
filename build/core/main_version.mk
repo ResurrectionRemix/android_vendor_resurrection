@@ -8,9 +8,9 @@ endif
 # RR System Version
 PRODUCT_VERSION = 8.0.0
 ifneq ($(RR_BUILDTYPE),)
-RR_VERSION := RR-Q-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
+RR_VERSION := RROS-Q-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-$(RR_BUILDTYPE)
 else
-RR_VERSION := RR-Q-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
+RR_VERSION := RROS-Q-$(PRODUCT_VERSION)-$(shell date +%Y%m%d)-$(RR_BUILD)-Unofficial
 RR_BUILDTYPE=Unofficial
 endif
 
