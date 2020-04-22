@@ -58,7 +58,7 @@ PRODUCT_COPY_FILES += \
 endif
 
 # Copy all Lineage-specific init rc files
-$(foreach f,$(wildcard vendor/lrr/prebuilt/common/etc/init/*.rc),\
+$(foreach f,$(wildcard vendor/rr/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
