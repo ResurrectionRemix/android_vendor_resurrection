@@ -102,6 +102,11 @@ PRODUCT_PACKAGES += \
     XboxGreen \
     XiaomiOrange
 
+# Dark Styles
+PRODUCT_PACKAGES += \
+    SystemAmoledBlack \
+    SystemCharcoalBlack
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
