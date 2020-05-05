@@ -68,6 +68,10 @@ PRODUCT_PACKAGES += \
     QSTileTriangles \
     QSTileTearDrop
 
+# Include Google Sounds for all
+PRODUCT_PACKAGES += \
+   SoundPickerPrebuilt
+
 #RR
 PRODUCT_PACKAGES += \
     Updater
