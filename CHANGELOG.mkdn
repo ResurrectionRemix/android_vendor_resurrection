@@ -1,0 +1,86 @@
+
+Resurrection Remix Q Ver 8.0.0 Changelog
+
+
+====================
+     05-05-2020
+====================
+
+
+   * build/make
+4ca57c2dc Unlock updater
+
+   * device/oneplus/guacamole
+7e1faa1 Merge branch 'lineage-17.1' of https://github.com/LineageOS/android_device_oneplus_guacamole into Q
+f98dd12 Merge commit 'ae30ea2' into Q
+ae30ea2 Add some configs
+90c21f2 guacamole: [DNM] disable encryption for now
+9ebae5d guacamole: overlay: Sync config_ambient* with omni
+15f87b1 guacamole: overlay: Update hysteresis name for Q
+
+   * device/oneplus/hotdog
+7ba0b19 hotdog: Relocate config_maxVisibleNotificationIcons* overlay to proper directory
+
+   * device/oneplus/sm8150-common
+e25e8b80 sm8150-common: Allow hal_audio_default to read audio_device
+
+   * device/rr/sepolicy
+c35baa2 qcom: Add legacymm livedisplay sepolicy
+
+   * frameworks/base
+616bffaf46a SystemUI: QSconfig: Re-distribute tiles on changing orientation
+a1dd23222b3 SystemUI: QS blur improvements
+57685aa955b FODAnimation: Only animate when pulsing
+1bcd49a87ef base: SystemUI: fix NPE in PowerShareTile
+cf2975b1c90 Wired/BT headset: make ringtone audio focus customizable [1/2]
+8b4dd395d3a SystemUI: add pulsing callback to KeyguardUpdateMonitor
+3f147a2fe2b FOD: Don't animate while dozing
+
+   * hardware/qcom-caf/sm8150/audio
+0b992dac4 a2dp: Add a null check before iterating over a2dp.adev->usecase_list
+
+   * lineage/wiki
+8eca768 wiki: devices: victara: Add me as a maintianer
+f2c3c99 wiki: victara: Remove myself as maintainer
+
+   * packages/apps/LineageParts
+f65250d Add charging sound vibrate summary
+
+   * packages/apps/Settings
+781cab7cd0 Add GlobalSettingListPreference
+a429ad6375 Wired/BT headset: make ringtone audio focus customizable [2/2]
+2d6e4cab3d Strings: update FOD animation summary
+
+   * packages/apps/Updater
+1b4fdd7 Utils: ignore releasetype build
+
+   * vendor/rr
+d04e71d1 tools: fixup leftovers from P
+
+====================
+     05-04-2020
+====================
+
+
+   * device/oneplus/guacamole
+75e3a81 guacamole: Relocate config_maxVisibleNotificationIcons* overlay to proper directory
+
+   * device/oneplus/hotdog
+f73201f hotdog: Add device specific camera blobs
+a1a1b0e hotdog: Exclude lineage SystemUI overlays from RRO
+655bdd0 hotdog: Add audio HAL blobs
+6882ef8 hotdog: Leave space for FOD while bouncer is requesting Pattern on PIN
+
+   * device/oneplus/sm8150-common
+2e0b4462 Revert "sm8150-common: fod: Disable DC-Dimming when fod circle is visible"
+
+   * frameworks/base
+fbdb1c9969e FOdANimations:Convert png to webp
+e3c866c436b FODAnimations: form up on dreaming
+c859c23deee SystemUI: Keyguard: Check for a null errString
+f8e6eb9be3c Revert "FOD: Show fod circle below pattern/pin view"
+c8c1a58ebd5 Revert "Patch screen flickering"
+
+   * packages/apps/Settings
+092fc6d98a Add OP energy animation FOD
+
