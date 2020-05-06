@@ -78,10 +78,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-# Hidden API whitelist
-PRODUCT_COPY_FILES += \
-    vendor/rr/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
-
 # Power whitelist
 PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/lineage-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-power-whitelist.xml
@@ -89,6 +85,10 @@ PRODUCT_COPY_FILES += \
 # Pre-granted permissions
 PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/lineage-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/lineage-default-permissions.xml
+
+# Hidden API whitelist
+PRODUCT_COPY_FILES += \
+    vendor/rr/config/permissions/rr-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/rr-hiddenapi-package-whitelist.xml
 
 # Include AOSP audio files
 include vendor/rr/config/aosp_audio.mk
