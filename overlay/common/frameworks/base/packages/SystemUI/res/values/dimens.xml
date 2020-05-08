@@ -16,9 +16,6 @@
 */
 -->
 <resources>
-    <dimen name="rounded_corner_content_padding">8dp</dimen>
-    <dimen name="qs_header_image_offset">12dp</dimen>
-
     <!-- Slice header -->
 	
     <!-- 12dp -->
