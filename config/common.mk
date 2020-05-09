@@ -46,12 +46,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/rr/config/permissions/lineage-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-sysconfig.xml
 
-ifneq ($(TARGET_BUILD_VARIANT),user)
-# userinit support
-PRODUCT_COPY_FILES += \
-    vendor/rr/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
-endif
-
 # Copy all Lineage-specific init rc files
 $(foreach f,$(wildcard vendor/rr/prebuilt/common/etc/init/*.rc),\
 	$(eval PRODUCT_COPY_FILES += $(f):$(TARGET_COPY_OUT_SYSTEM)/etc/init/$(notdir $f)))
