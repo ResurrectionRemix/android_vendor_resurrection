@@ -1,4 +1,4 @@
-include vendor/lineage/config/BoardConfigQcomDefs.mk
+include vendor/rr/config/BoardConfigQcomDefs.mk
 
 BOARD_USES_ADRENO := true
 
