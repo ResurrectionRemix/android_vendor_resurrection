@@ -65,5 +65,5 @@ echo -e ${red}" 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED "${txtrst}
 echo -e "";
 ZIPNAME=$OUT/RR*.zip
 truncate -s 0 android-info.txt
-zip $ZIPNAME *.img android-info.txt
+zip $ZIPNAME android-info.txt
 echo "{ \"response\": [ { \"datetime\": $(grep ro\.build\.date\.utc $OUT/system/build.prop | cut -d= -f2), \"filename\": \"$(basename $(ls $OUT/RROS-Q-*.zip))\", \"id\": \"$((sha256sum $OUT/RROS-Q-*.zip) | cut -d ' ' -f1)\", \"romtype\": \"$RR_BUILDTYPE\", \"size\": $(stat -c%s $OUT/RROS-Q-*.zip), \"url\": \"https://ota.resurrectionremix.com/ten/$RR_BUILD/$(basename $(ls $OUT/RROS-Q-*.zip))\", \"version\": \"$(grep -m1 ro\.rr\.build\.version $OUT/system/build.prop | cut -d= -f2)\"  }]}" | tee $OUT/$RR_BUILD.json
