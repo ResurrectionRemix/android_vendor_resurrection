@@ -31,6 +31,7 @@ $(call add_json_bool, Uses_qcom_um_3_18_family, $(filter true,$(TARGET_USES_QCOM
 $(call add_json_bool, Uses_qcom_um_4_4_family, $(filter true,$(TARGET_USES_QCOM_UM_4_4_FAMILY)))
 $(call add_json_bool, Uses_qcom_um_4_9_family, $(filter true,$(TARGET_USES_QCOM_UM_4_9_FAMILY)))
 $(call add_json_bool, Uses_qcom_um_4_14_family, $(filter true,$(TARGET_USES_QCOM_UM_4_14_FAMILY)))
+$(call add_json_bool, Target_uses_fod_hack, $(filter true,$(TARGET_USES_FOD_HACK)))
 
 # This causes the build system to strip out the last comma in our nested struct, to keep the JSON valid.
 _json_contents := $(_json_contents)__SV_END
