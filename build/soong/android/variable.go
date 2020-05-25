@@ -40,6 +40,9 @@ type Product_variables struct {
 	Target_shim_libs struct {
 		Cppflags []string
 	}
+	Target_surfaceflinger_fod_lib struct {
+		Whole_static_libs []string
+	}
 	Target_needs_netd_direct_connect_rule struct {
 		Cppflags []string
 	}
@@ -102,6 +105,7 @@ type ProductVariables struct {
 	Target_init_vendor_lib  *string `json:",omitempty"`
 	Target_process_sdk_version_override  *string `json:",omitempty"`
 	Target_shim_libs  *string `json:",omitempty"`
+	Target_surfaceflinger_fod_lib  *string `json:",omitempty"`
 	Target_needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 	Target_ignores_ftp_pptp_conntrack_failure  *bool `json:",omitempty"`
 	Target_camera_needs_client_info  *bool `json:",omitempty"`
