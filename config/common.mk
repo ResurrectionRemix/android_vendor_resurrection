@@ -147,6 +147,7 @@ PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
+    Updater
 
 # QS tile styles
 PRODUCT_PACKAGES += \
