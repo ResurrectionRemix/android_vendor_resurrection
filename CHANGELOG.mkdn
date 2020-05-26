@@ -1,86 +1,179 @@
 
-Resurrection Remix Q Ver 8.0.0 Changelog
+Resurrection Remix Q Ver 8.2.2 Changelog
 
 
 ====================
-     05-05-2020
+     05-26-2020
 ====================
 
-
-   * build/make
-4ca57c2dc Unlock updater
-
-   * device/oneplus/guacamole
-7e1faa1 Merge branch 'lineage-17.1' of https://github.com/LineageOS/android_device_oneplus_guacamole into Q
-f98dd12 Merge commit 'ae30ea2' into Q
-ae30ea2 Add some configs
-90c21f2 guacamole: [DNM] disable encryption for now
-9ebae5d guacamole: overlay: Sync config_ambient* with omni
-15f87b1 guacamole: overlay: Update hysteresis name for Q
-
-   * device/oneplus/hotdog
-7ba0b19 hotdog: Relocate config_maxVisibleNotificationIcons* overlay to proper directory
 
    * device/oneplus/sm8150-common
-e25e8b80 sm8150-common: Allow hal_audio_default to read audio_device
-
-   * device/rr/sepolicy
-c35baa2 qcom: Add legacymm livedisplay sepolicy
+ef4df123 Dont use binned proximity sensor for AOD
+411a2505 sm8150-common: Enable qti-telephony-common aosp_usr_pref_sel
+9a07fae9 Automatic translation import
+3f8fd225 Revert "sm8150-common: Switch to prebuilt liba2dpoffload"
+2e90129d Overlay maintainer string
+4c323707 Add Fod lib extenstion to properly guard against apps
+b601ea04 add overlay for keyguard indicator fod margin
+0b9ab28c Use 6GB dalvik heap config
+2cda5414 sm8150-common: dont set dalvik.vm.heapgrowthlimit according to lcd density prop
+9c80fcfc sm8150-common: Switch to prebuilt liba2dpoffload
 
    * frameworks/base
-616bffaf46a SystemUI: QSconfig: Re-distribute tiles on changing orientation
-a1dd23222b3 SystemUI: QS blur improvements
-57685aa955b FODAnimation: Only animate when pulsing
-1bcd49a87ef base: SystemUI: fix NPE in PowerShareTile
-cf2975b1c90 Wired/BT headset: make ringtone audio focus customizable [1/2]
-8b4dd395d3a SystemUI: add pulsing callback to KeyguardUpdateMonitor
-3f147a2fe2b FOD: Don't animate while dozing
+2895fb96328 translate="false" -> translatable="false"
+2f2d68afff8 Add Light/Dark theme for bugreport warning dialog
+399f698da22 Fix bugreport warning dialog
+53e3098a824 Fix Edge lighting pulse for all
+67c12b30a5d Ambient Light Edge Layout solid faded
+7004f0da29b Clean up edge lighting
+779f79a91a4 Fix Left volume panel after new UI Impl
+81ec629f9eb add missing updateSettings() for weather
+447012050b2 SystemUI: Update keyguard indication margin when fod is in use
+24ad59fa612 AoD: Always force brightness updates on pause
+49ea6914edc SystemUI: fix black screen for pulse
+b54c4f75d0a SystemUI: fix black screen after AOD_PAUSED
+12246015e3a Revert "Fix other lights when backlight uses SurfaceController API"
+d22ce57abdf SystemUI: Redesign volume dialog
+082aac05349 base: Redo expanded volume panel for 10.x
+5cbb5fb9264 base: SystemUI: hide ringer button if alert slider is present.
+1876cb6b1c0 SystemUI: allow devices override audio panel location
+382684b95e6 Remove roaming from tuner
+55769de1cd3 Make Qs tile style actually work
+7419a252524 Add more QS tile style 1/3
+504c4b269c7 base: Introduce new navigation bar key event source
 
-   * hardware/qcom-caf/sm8150/audio
-0b992dac4 a2dp: Add a null check before iterating over a2dp.adev->usecase_list
+   * frameworks/native
+2893b1605 Merge Lineage Changes
+fbae7d335 surfaceflinger: Add support for extension lib to get changed z order
 
    * lineage/wiki
-8eca768 wiki: devices: victara: Add me as a maintianer
-f2c3c99 wiki: victara: Remove myself as maintainer
+b35a0e5 wiki: Add 'connect to wifi' before oem unlock on gts4lv
 
-   * packages/apps/LineageParts
-f65250d Add charging sound vibrate summary
+   * packages/apps/Etar
+27cafb41 Etar: Modify about page
+f3d21700 Etar: Rename package to org.lineageos.etar
+547aeae3 Etar: Switch back to AOSP application name
 
    * packages/apps/Settings
-781cab7cd0 Add GlobalSettingListPreference
-a429ad6375 Wired/BT headset: make ringtone audio focus customizable [2/2]
-2d6e4cab3d Strings: update FOD animation summary
+3f64a4ce58 Edge lighting deserves its own Fragment
+84c17df65b Add Edge lighting style [2/2]
+9e3fdea3d8 Bump RR version to 8.2.2
+97021521e7 Add preference for maintainer in about device
+570ebc93e7 Remove KIll app back button for now
+2a62725e8f Add Qs icon styles [3/3]
 
    * packages/apps/Updater
-1b4fdd7 Utils: ignore releasetype build
+10c5e3e Updater: Use accent_device_default_{dark,light} for colorAccent values
+
+   * packages/inputmethods/LatinIME
+788fe075e Support polytonic Greek diacritics in the Greek keyboard
+e5da9acfe Implement text entry key API for accessibility services in AOSP Keyboard
+030d52f5d Create display context when switching IME to new display for AOSP IME
+863298bb9 LatinIME: Update key_styles_currency euro lists #2
+07c937e70 LatinIME: Fix back-arrow finishing activity
+50ae60707 LatinIME: Remove dividers everywhere
+
+   * packages/services/OmniJaws
+b474732 OmniJaws: Add privapp permissions xml
+682f6fe OmniJaws: Update owm weather icons' sunset/sunrise dependency
+33a14f6 OmniJaws: Use openweather api for sunset/sunrise and change weather icons accordingly
 
    * vendor/rr
-d04e71d1 tools: fixup leftovers from P
+50076867 Remove duplicate soong variable
+bd31607d extract-utils: Fix usage for ETC files which need sub_dir
+5511b6e3 Export qcom UM hal root to soong
+dff27f7b config: Build Etar
+dff6a3f0 Sort soong variables alphabetically
+367815b9 extract_utils: Fix vendor Android.bp creation with subdirectory
+d66bb96c Add back missing updater package
+5deac06d Bump to RR 8.2.2
+17db4210 soong: Add flag for fod extension
+85c8cd6d Revert "soong_config: Add TARGET_USES_FOD_HACK"
 
 ====================
-     05-04-2020
+     05-25-2020
 ====================
 
+
+   * android
+56491b1 android: Move to our own fork of timezonepicker
+35fe670 Remove unused frameworks/opt/datetimepicker
+0dbc632 manifest: Replace Calendar with Etar
 
    * device/oneplus/guacamole
-75e3a81 guacamole: Relocate config_maxVisibleNotificationIcons* overlay to proper directory
+ff1dbc6 Update FOD SIZE to sync with hotdog
+c57627f Brightness overlays sync with omni
 
    * device/oneplus/hotdog
-f73201f hotdog: Add device specific camera blobs
-a1a1b0e hotdog: Exclude lineage SystemUI overlays from RRO
-655bdd0 hotdog: Add audio HAL blobs
-6882ef8 hotdog: Leave space for FOD while bouncer is requesting Pattern on PIN
+cea305b Remove Redundant SOONG_CONFIG_ONEPLUS_MSMNILE_FOD_HBM
+fab97ce add board-info.txt file
+7cb41e5 Use FOD icon size from OOS
+
+   * device/oneplus/sdm845-common
+0e857e2 sdm845-common: Enable qti-telephony-common aosp_usr_pref_sel
 
    * device/oneplus/sm8150-common
-2e0b4462 Revert "sm8150-common: fod: Disable DC-Dimming when fod circle is visible"
+9871cd55 sm8150-common: Overlay fod pressed image icons
 
    * frameworks/base
-fbdb1c9969e FOdANimations:Convert png to webp
-e3c866c436b FODAnimations: form up on dreaming
-c859c23deee SystemUI: Keyguard: Check for a null errString
-f8e6eb9be3c Revert "FOD: Show fod circle below pattern/pin view"
-c8c1a58ebd5 Revert "Patch screen flickering"
+770e50d6522 Add sun custom QS tile 1/3
+f666b3fadc6 Add 5 new QS Tile style 1/3
+076f53417dc Introduce QS tile style picker [1/3]
+347afcf2453 Add switch for vpn, data saver and roaming icons
+96b6f663721 Network Traffice: Trivial improvements
+c16e44d1eb8 Fix other lights when backlight uses SurfaceController API
+0bb3fe8e63f SystemUI: Fix alignment glitch with brightness mirror
+242e65caf0b Automatic translation import
+859ce0a3372 OOS Clear All icon: Refresh BG color on theme or overlay change
+b17b616a7be Fix Ambient wake gestures not working
+9d81104f064 fw/b: adb network tile: Don't make ConnectionManager get calls from callback
+92f2838b6ea fw/b data restrictions: Don't call getNetworkCapabilities() in the callback
+39ff594c1eb fw/b: Prevent double interface restriction remove on interface name change
+e63ddead0f3 fw/b: Squash of app fw restriction commits
+7166cd65b13 Revert "fw/b: Squash of app fw restriction commits"
+77356fbd474 Fix: Media volume bar indicates a wrong value
+da2b0db2e2c Optimize IncallUI delay for voice calls
+a8458ae028d AODTile: Add missing inject
+16c03cd1e1c SystemUI: dont use PRIVATE_FLAG_IS_ROUNDED_CORNERS_OVERLAY for assistant handles
+d26f6105878 base: wake from aod on unplug if we show on charging only
+3ff71ac2c82 [1/2] base: add option to enable AOD on charging only
+d03e3b6ad74 Tint clear all icon bg color to accent on dark theme
+
+   * lineage/hudson
+bfcfff6 hudson: add Samsung Galaxy Grand 2 (ms013g)
+
+   * lineage/mirror
+ba03637 Updated to 24-May-2020 22:13 UTC
+3d5fbf7 Updated to 24-May-2020 13:56 UTC
+
+   * lineage/wiki
+7b5b8d0 wiki: Update whyred informations
+c6e0278 wiki: add Samsung Galaxy Grand 2 (ms013g)
+
+   * packages/apps/Etar
+e52b0927 Etar: adaptive icon
+8a3e3cf6 Say hello to Android.bp and farewell to Android.mk
+5188ba3f Fix retrieving resource ids after --rename-manifest-package (#705)
 
    * packages/apps/Settings
-092fc6d98a Add OP energy animation FOD
+db85237c91 Update some strings
+0cdd0f26eb Fix RR tool shortcut tint
+096c3973c3 Remove AOD charge setting if device does not support AOD
+0214659c7b Disable ambient wake gesutres if always on enabled
+fe1d416d2f Settings: Match shortcut colors with settings icon
+5b6593c0e2 Revert "Tint rr tool icon to accent on dark theme"
+b1c0597874 Add option for AOD on charge only [2/2]
+ca93f54a3f Tint rr tool icon to accent on dark theme
+
+   * vendor/nxp/opensource/commonsys/packages/apps/Nfc
+a1d7de50 Fix style name DialogAlertDayNight
+f48a631d Add dark mode support for AlertDialog
+63a7284e Migrated Nfc to androidx
+
+   * vendor/rr
+164e850f Add more QS tile style 3/3
+294b8dec Add sun custom QS tile 3/3
+9dfd7109 Add 5 new QS Tile style 3/3
+7b4a6c2e Introduce QS tile style picker [3/3]
+d12f440a fix AB backuptool
 
