@@ -47,9 +47,6 @@ type Product_variables struct {
 	Target_surfaceflinger_fod_lib struct {
 		Whole_static_libs []string
 	}
-	Target_needs_netd_direct_connect_rule struct {
-		Cppflags []string
-	}
 	Target_process_sdk_version_override struct {
 		Cppflags []string
 	}
