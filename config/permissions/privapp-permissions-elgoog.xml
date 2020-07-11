@@ -127,6 +127,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.MANAGE_USERS"/>
         <permission name="android.permission.STATUS_BAR"/>
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.SHUTDOWN"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.google.android.apps.pixelmigrate">
