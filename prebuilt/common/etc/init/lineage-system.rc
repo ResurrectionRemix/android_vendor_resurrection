@@ -1,6 +1,5 @@
 # LineageOS core functionality
 on init
-    export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
 
 on post-fs-data
@@ -11,9 +10,6 @@ on post-fs-data
     chmod 0640 /dev/fscklogs/log
 
 on boot
-    # Persistent properties (only created if persist exists)
-    mkdir /persist/properties 0770 system system
-
     # allow system to communicate pocket state
     chown system system /sys/kernel/pocket_judge/inpocket
 
