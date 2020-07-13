@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="qs_quick_tile_padding">16.0dip</dimen>
+    <dimen name="qs_quick_tile_size">52.0dip</dimen>
+    <dimen name="qs_quick_tile_space_width">0.0dip</dimen>
+    <dimen name="qs_tile_height">104.0dip</dimen>
+    <dimen name="qs_tile_icon_size">20.0dip</dimen>
+    <dimen name="qs_tile_layout_margin_side">6.0dip</dimen>
+    <dimen name="qs_tile_margin_bottom">0.0dip</dimen>
+    <dimen name="qs_tile_margin_horizontal">10.0dip</dimen>
+    <dimen name="qs_tile_margin_row">15.0dip</dimen>
+    <dimen name="qs_tile_margin_top">14.0dip</dimen>
+    <dimen name="qs_tile_margin_vertical">11.0dip</dimen>
+    <dimen name="qs_tile_padding_below_icon">8.0dip</dimen>
+    <dimen name="qs_tile_padding_bottom">16.0dip</dimen>
+    <dimen name="qs_tile_padding_top">14.0dip</dimen>
+    <dimen name="qs_tile_padding_top_large_text">4.0dip</dimen>
+    <dimen name="qs_tile_spacing">4.0dip</dimen>
+</resources>

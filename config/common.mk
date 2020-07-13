@@ -163,14 +163,28 @@ PRODUCT_PACKAGES += \
     QStileDualToneCircle \
     QStileHexagon \
     QStileStar \
-    QStileTearDrop \
     QStileSquare \
     QStileGear \
     QStileBadge \
     QStileBadgetwo \
     QStileSquircle \
     QStileDiamond \
-    QStileSquircleTrim
+    QStileSquircleTrim \
+    QStileAttemptMountain \
+    QStileDottedCircle \
+    QStileNinja \
+    QStilePokesign \
+    QStileWavey \
+    QStileSquaremedo \
+    QStileInkDrop \
+    QStileCookie \
+    QStilesCircleOutline \
+    QSTileCosmos \
+    QSTileDividedCircle \
+    QSTileNeonLight \
+    QSTileOxygen \
+    QSTileTriangles \
+    QSTileTearDrop
 
 # Themes
 PRODUCT_PACKAGES += \

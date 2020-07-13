@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-    Copyright (C) 2019 Resurrection Remix OS
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-         http://www.apache.org/licenses/LICENSE-2.0
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+<!-- Copyright (C) 2016 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
 -->
-<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
-    android:viewportWidth="24"
-    android:viewportHeight="24"
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="40dp"
-    android:height="40dp">
+    android:height="40dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
     <path
-        android:pathData="M24 24.001c-0.045 0 -7.457 0.003 -12 0h12zm-12 0c-4.551 0.003 -11.979 0 -12 0h12zm-12 -12c-0.032 -8.648 3.365 -11.993 12 -12 8.635 0.007 12.032 3.352 12 12 0.032 8.648 -3.365 11.994 -12 12 -8.635 -0.006 -12.032 -3.352 -12 -12zm24 -12h-12c4.543 -0.003 11.955 0 12 0zm-12 0c-4.551 -0.003 -11.979 0 -12 0h12z"
-        android:fillColor="#000000" />
+        android:fillColor="#ffffff"
+        android:pathData="M50,0 C10,0 0,10 0,50 0,90 10,100 50,100 90,100 100,90 100,50 100,10 90,0 50,0 Z" />
 </vector>

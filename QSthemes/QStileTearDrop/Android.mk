@@ -2,7 +2,7 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 CAL_MODULE_TAGS := optional
 
-LOCAL_PACKAGE_NAME := QStileTearDrop
+LOCAL_PACKAGE_NAME := QSTileTearDrop
 LOCAL_SDK_VERSION := current
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := false
