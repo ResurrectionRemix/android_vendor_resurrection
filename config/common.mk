@@ -1,5 +1,6 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
+$(call inherit-product-if-exists, vendor/rr/config/rr.mk)
 
 PRODUCT_BRAND ?= ResurrectionRemix
 
@@ -104,120 +105,15 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-# Bootanimation
-PRODUCT_COPY_FILES += vendor/rr/prebuilt/common/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_SYSTEM)/media/bootanimation.zip
-
-# Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/CHANGELOG.mkdn:system/etc/RR/Changelog.txt
-
-# Copy features.txt from the path
-PRODUCT_COPY_FILES += \
-vendor/rr/Features.mkdn:system/etc/RR/Features.txt
-
-# ResurrectionRemix
-PRODUCT_PACKAGES += \
-    OmniJaws \
-    OmniStyle \
-    Longshot \
-    ThemePicker \
-    LimeAccent \
-    RedAccent
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/rr/prebuilt/system/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
-
-# Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED := false
-ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
-PRODUCT_PACKAGES += \
-    FaceUnlockService
-TARGET_FACE_UNLOCK_SUPPORTED := true
-endif
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
-
 
 # AOSP packages
 PRODUCT_PACKAGES += \
     Terminal
 
-# Primary colors
-PRODUCT_PACKAGES += \
-    PrimaryColorCharcoalOverlay \
-    PrimaryColorFlameOverlay \
-    PrimaryColorGrayOverlay \
-    PrimaryColorNatureOverlay \
-    PrimaryColorOceanOverlay
-
-# Fonts
-PRODUCT_PACKAGES += \
-    fonts_customization.xml \
-    AccuratistFont \
-    AclonicaFont \
-    Amarante \
-    BariolFont \
-    CagliostroFont \
-    CoconFont \
-    ComfortaaFont \
-    ComicSansFont \
-    CoolstoryFont \
-    ExotwoFont \
-    Fifa2018Font \
-    GoogleSansFont \
-    GrandHotelFont \
-    LatoFont \
-    LGSmartGothicFont \
-    NokiaPureFont \
-    NunitoFont \
-    OneplusSlateFont \
-    QuandoFont \
-    RedressedFont \
-    ReemKufiFont \
-    RobotoCondensedFont \
-    RosemaryFont \
-    RubikFont \
-    SamsungOneFont \
-    SonySketchFont \
-    StoropiaFont \
-    SurferFont \
-    UbuntuFont
-
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
     LineageSetupWizard \
-    Updater
-
-# QS tile styles
-PRODUCT_PACKAGES += \
-    QStileCircleTrim \
-    QStileDefault \
-    QStileDualToneCircle \
-    QStileHexagon \
-    QStileStar \
-    QStileSquare \
-    QStileGear \
-    QStileBadge \
-    QStileBadgetwo \
-    QStileSquircle \
-    QStileDiamond \
-    QStileSquircleTrim \
-    QStileAttemptMountain \
-    QStileDottedCircle \
-    QStileNinja \
-    QStilePokesign \
-    QStileWavey \
-    QStileSquaremedo \
-    QStileInkDrop \
-    QStileCookie \
-    QStilesCircleOutline \
-    QSTileCosmos \
-    QSTileDividedCircle \
-    QSTileNeonLight \
-    QSTileOxygen \
-    QSTileTriangles \
-    QSTileTearDrop
 
 # Themes
 PRODUCT_PACKAGES += \
