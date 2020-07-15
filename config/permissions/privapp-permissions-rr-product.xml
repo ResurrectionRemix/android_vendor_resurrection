@@ -33,6 +33,8 @@
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.RESET_BATTERY_STATS"/>
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+        <permission name="android.permission.RECORD_AUDIO"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.gallery3d">
