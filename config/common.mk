@@ -150,6 +150,39 @@ PRODUCT_PACKAGES += \
     PrimaryColorNatureOverlay \
     PrimaryColorOceanOverlay
 
+# Fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml \
+    AccuratistFont \
+    AclonicaFont \
+    Amarante \
+    BariolFont \
+    CagliostroFont \
+    CoconFont \
+    ComfortaaFont \
+    ComicSansFont \
+    CoolstoryFont \
+    ExotwoFont \
+    Fifa2018Font \
+    GoogleSansFont \
+    GrandHotelFont \
+    LatoFont \
+    LGSmartGothicFont \
+    NokiaPureFont \
+    NunitoFont \
+    OneplusSlateFont \
+    QuandoFont \
+    RedressedFont \
+    ReemKufiFont \
+    RobotoCondensedFont \
+    RosemaryFont \
+    RubikFont \
+    SamsungOneFont \
+    SonySketchFont \
+    StoropiaFont \
+    SurferFont \
+    UbuntuFont
+
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
