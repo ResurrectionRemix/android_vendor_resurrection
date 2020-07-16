@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- the padding on the start of the statusbar -->
+    <dimen name="status_bar_padding_start">8dp</dimen>
+
+    <!-- the padding on the end of the statusbar -->
+    <dimen name="status_bar_padding_end">8dp</dimen>
+
+    <!-- the padding on the top of the statusbar (usually 0) -->
+    <dimen name="status_bar_padding_top">0dp</dimen>
+
+    <!-- Padding on the start of the quick statusbar (not top-most statusbar) -->
+    <dimen name="qs_header_start_padding">8dp</dimen>
+
+    <!-- Padding on the end of the quick statusbar (not top-most statusbar) -->
+    <dimen name="qs_header_end_padding">8dp</dimen>
+</resources>
