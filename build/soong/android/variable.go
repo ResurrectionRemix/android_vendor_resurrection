@@ -70,6 +70,30 @@ type Product_variables struct {
 		Cppflags []string
 		Shared_libs []string
 	}
+	Uses_qcom_um_family struct {
+		Cflags []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_3_18_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_4_4_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_4_9_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
+	Uses_qcom_um_4_14_family struct {
+		Include_dirs []string
+		Header_libs []string
+		Shared_libs []string
+	}
 }
 
 type ProductVariables struct {
@@ -95,4 +119,9 @@ type ProductVariables struct {
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
 	Uses_qti_camera_device  *bool `json:",omitempty"`
+	Uses_qcom_um_family  *bool `json:",omitempty"`
+	Uses_qcom_um_3_18_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_4_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
+	Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
 }
