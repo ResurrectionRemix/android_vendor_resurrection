@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     TwitchPurple \
     TwitterBlue \
     XboxGreen \
-    XiaomiOrange
+    XiaomiOrange \
+    PixelBlue
 
 # Switch Themes
 PRODUCT_PACKAGES += \
