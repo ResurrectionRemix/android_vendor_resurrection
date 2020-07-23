@@ -35,6 +35,7 @@
         <permission name="android.permission.RESET_BATTERY_STATS"/>
         <permission name="android.permission.MODIFY_AUDIO_SETTINGS"/>
         <permission name="android.permission.RECORD_AUDIO"/>
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.gallery3d">
