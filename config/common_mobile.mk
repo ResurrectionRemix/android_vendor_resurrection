@@ -34,21 +34,6 @@ PRODUCT_PACKAGES += \
     TrebuchetQuickStep \
     WeatherProvider
 
-# Accents
-PRODUCT_PACKAGES += \
-    LineageBlackTheme \
-    LineageDarkTheme \
-    LineageBlackAccent \
-    LineageBlueAccent \
-    LineageBrownAccent \
-    LineageCyanAccent \
-    LineageGreenAccent \
-    LineageOrangeAccent \
-    LineagePinkAccent \
-    LineagePurpleAccent \
-    LineageRedAccent \
-    LineageYellowAccent
-
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
