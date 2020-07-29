@@ -44,7 +44,12 @@
         <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
-	
+	<privapp-permissions package="com.custom.ambient.display">
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.WAKE_LOCK"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+
     <privapp-permissions package="org.omnirom.omnistyle">
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
     </privapp-permissions>

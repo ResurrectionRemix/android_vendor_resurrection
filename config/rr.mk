@@ -88,6 +88,7 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     Longshot \
+    CustomDoze \
     ThemePicker 
 
 # Switch Themes
