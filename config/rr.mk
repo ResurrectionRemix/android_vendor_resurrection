@@ -83,6 +83,23 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 
+# Themes
+PRODUCT_PACKAGES += \
+    XtendedClearSystemOverlay \
+    XtendedClearSystemUIOverlay \
+    PitchBlackSystemOverlay \
+    PitchBlackSystemUIOverlay \
+    SolarizedDarkSystemOverlay \
+    SolarizedDarkSystemUIOverlay \
+    BakedGreenSystemOverlay \
+    BakedGreenSystemUIOverlay \
+    ChocoXSystemOverlay \
+    ChocoXSystemUIOverlay \
+    MaterialOceanSystemOverlay \
+    MaterialOceanSystemUIOverlay \
+    DarkGreySystemOverlay \
+    DarkGreySystemUIOverlay
+
 # ResurrectionRemix
 PRODUCT_PACKAGES += \
     OmniJaws \
