@@ -117,16 +117,6 @@ PRODUCT_PACKAGES += \
         GVM-URM-R \
         GVM-URM-S
 
-# ResurrectionRemix
-PRODUCT_PACKAGES += \
-    ResurrectionIconAccent \
-    ResurrectionDefaultIcon \
-    ResurrectionBackgroundAccent \
-    ResurrectionBackGroundSystem \
-    ResurrectionBackgroundLight \
-    ResurrectionNightDark \
-    ResurrectionDarkNight
-
 
 # ResurrectionRemix Overlays
 PRODUCT_PACKAGES += \
