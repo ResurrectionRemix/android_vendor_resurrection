@@ -100,6 +100,14 @@ PRODUCT_PACKAGES += \
     DarkGreySystemOverlay \
     DarkGreySystemUIOverlay
 
+# QS header styles
+PRODUCT_PACKAGES += \
+    QSHeaderBlack \
+    QSHeaderGrey \
+    QSHeaderLightGrey \
+    QSHeaderAccent \
+    QSHeaderTransparent
+
 # ResurrectionRemix
 PRODUCT_PACKAGES += \
     OmniJaws \
