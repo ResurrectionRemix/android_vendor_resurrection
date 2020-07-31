@@ -108,6 +108,15 @@ PRODUCT_PACKAGES += \
     QSHeaderAccent \
     QSHeaderTransparent
 
+PRODUCT_PACKAGES += \
+        GVM-SBH-L \
+        GVM-SBH-M \
+        GVM-SBH-XL \
+        GVM-URM-M \
+        GVM-URM-L \
+        GVM-URM-R \
+        GVM-URM-S
+
 # ResurrectionRemix
 PRODUCT_PACKAGES += \
     OmniJaws \
