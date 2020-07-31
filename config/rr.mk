@@ -119,6 +119,14 @@ PRODUCT_PACKAGES += \
 
 # ResurrectionRemix
 PRODUCT_PACKAGES += \
+    ResurrectionIconAccent \
+    ResurrectionDefaultIcon \
+    ResurrectionBackgroundAccent \
+    ResurrectionBackGroundSystem
+
+
+# ResurrectionRemix Overlays
+PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
     Longshot \
