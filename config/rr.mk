@@ -122,7 +122,10 @@ PRODUCT_PACKAGES += \
     ResurrectionIconAccent \
     ResurrectionDefaultIcon \
     ResurrectionBackgroundAccent \
-    ResurrectionBackGroundSystem
+    ResurrectionBackGroundSystem \
+    ResurrectionBackgroundLight \
+    ResurrectionNightDark \
+    ResurrectionDarkNight
 
 
 # ResurrectionRemix Overlays
