@@ -85,8 +85,8 @@ vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 
 # Themes
 PRODUCT_PACKAGES += \
-    XtendedClearSystemOverlay \
-    XtendedClearSystemUIOverlay \
+    RRClearSystemOverlay \
+    RRClearSystemUIOverlay \
     PitchBlackSystemOverlay \
     PitchBlackSystemUIOverlay \
     SolarizedDarkSystemOverlay \
