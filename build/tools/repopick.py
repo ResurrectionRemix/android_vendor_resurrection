@@ -455,9 +455,9 @@ if __name__ == '__main__':
                 print('Trying to fetch the change from GitHub')
 
             if args.pull:
-                cmd = ['git pull --no-edit bt', item['fetch'][method]['ref']]
+                cmd = ['git pull --no-edit rr', item['fetch'][method]['ref']]
             else:
-                cmd = ['git fetch bt', item['fetch'][method]['ref']]
+                cmd = ['git fetch rr', item['fetch'][method]['ref']]
             if args.quiet:
                 cmd.append('--quiet')
             else:
