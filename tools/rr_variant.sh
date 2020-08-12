@@ -1,4 +1,9 @@
 #!/bin/bash
+
+if [[ -n "$RR_BUILDTYPE" ]]; then
+    return 0
+fi
+
 # Build type chooser for the Resurrection Remix ROM
 # Specify colors utilized in the terminal
     red=$(tput setaf 1)             #  red
