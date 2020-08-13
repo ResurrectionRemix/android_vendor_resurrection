@@ -24,5 +24,4 @@ bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) mv $(INTERNAL_OTA_PACKAGE_TARGET) $(RR_TARGET_PACKAGE)
 	$(hide) $(MD5SUM) $(RR_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(RR_TARGET_PACKAGE).md5sum
 	@echo "ResurrectionRemix build complete: $(RR_TARGET_PACKAGE)" >&2
-	$(hide) ./vendor/rr/tools/changelog.sh
 	$(hide) ./vendor/rr/tools/rr.sh
