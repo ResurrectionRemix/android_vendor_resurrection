@@ -58,7 +58,6 @@ echo -e ${blu}" 〉Powered by ANDROID ™  // Ten "${txtrst};
 echo -e "";
 echo -e ${red}" 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED "${txtrst};
 echo -e "";
-echo "{ \"response\": [ { \"datetime\": $(grep ro\.build\.date\.utc $OUT/system/build.prop | cut -d= -f2), \"filename\": \"$(basename $(ls $OUT/RR*.zip))\", \"id\": \"$((sha256sum $OUT/RR*.zip) | cut -d ' ' -f1)\", \"romtype\": \"$RR_BUILDTYPE\", \"size\": $(stat -c%s $OUT/RR*.zip), \"url\": \"https://ota.resurrectionremix.com/ten/$RR_BUILD/$(basename $(ls $OUT/RR*.zip))\", \"version\": \"$(grep -m1 ro\.rr\.build\.version $OUT/system/build.prop | cut -d= -f2)\"  }]}" | tee $OUT/$RR_BUILD.json
 echo -e ${blu}" 〉Powered by ANDROID ™  // 10 "${txtrst};
 echo -e "";
 echo -e ${red}" 〉Enjoy the Resurrection Remix OS // #GETRESURRECTED "${txtrst};
