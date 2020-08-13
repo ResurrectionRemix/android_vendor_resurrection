@@ -37,6 +37,7 @@
         <permission name="android.permission.RECORD_AUDIO"/>
         <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
         <permission name="android.permission.MANAGE_DOCUMENTS"/>
+        <permission name="com.asus.stitchimage.permission.EXPORTED_FOR_ASUS_APPS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.custom.ambient.display">
@@ -62,6 +63,7 @@
         <permission name="android.permission.RECORD_AUDIO"/>
         <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
         <permission name="android.permission.MANAGE_DOCUMENTS"/>
+        <permission name="com.asus.stitchimage.permission.EXPORTED_FOR_ASUS_APPS"/>
     </privapp-permissions>
 
 </permissions>

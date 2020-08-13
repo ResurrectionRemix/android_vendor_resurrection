@@ -122,7 +122,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniJaws \
     OmniStyle \
-    Longshot \
+    StitchImage \
     CustomDoze \
     ThemePicker 
 

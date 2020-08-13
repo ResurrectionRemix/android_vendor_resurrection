@@ -34,6 +34,7 @@
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
         <permission name="android.permission.RESET_BATTERY_STATS"/>
         <permission name="android.permission.WRITE_APN_SETTINGS"/>
+        <permission name="com.asus.stitchimage.permission.EXPORTED_FOR_ASUS_APPS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
