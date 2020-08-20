@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     QSTileNeonLight \
     QSTileOxygen \
     QSTileTriangles \
-    QSTileTearDrop
+    QSTileTearDrop \
+    QStileIconAccent
 
 # Include Google Sounds for all
 PRODUCT_PACKAGES += \
