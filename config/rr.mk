@@ -88,6 +88,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 
+# Plugins
+include packages/apps/Plugins/plugins.mk
+
 # Themes
 PRODUCT_PACKAGES += \
     RRClearSystemOverlay \
