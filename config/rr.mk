@@ -12,7 +12,6 @@ PRODUCT_PACKAGES += \
     AclonicaFont \
     Amarante \
     BariolFont \
-    CagliostroFont \
     CoconFont \
     ComfortaaFont \
     ComicSansFont \
