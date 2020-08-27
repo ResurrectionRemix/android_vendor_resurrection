@@ -108,6 +108,14 @@ PRODUCT_PACKAGES += \
     DarkGreySystemOverlay \
     DarkGreySystemUIOverlay
 
+# Navbar Themes
+PRODUCT_PACKAGES += \
+    StockAsusOverlay \
+    NavbarAsusOverlay \
+    NavbarOnePlusOverlay \
+    NavbarOneUiOverlay \
+    NavbarTecnoCamonOverlay
+
 # QS header styles
 PRODUCT_PACKAGES += \
     QSHeaderBlack \
