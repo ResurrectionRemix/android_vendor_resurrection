@@ -133,6 +133,12 @@ PRODUCT_PACKAGES += \
         GVM-URM-S
 
 
+
+ifeq ($(TARGET_HAS_FOD),true)
+DEVICE_PACKAGE_OVERLAYS += packages/overlays/Resurrection/fod/overlay
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += packages/overlays/Resurrection/fod/overlay
+endif
+
 # ResurrectionRemix Overlays
 PRODUCT_PACKAGES += \
     OmniJaws \
