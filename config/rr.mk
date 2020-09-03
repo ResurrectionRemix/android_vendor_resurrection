@@ -155,7 +155,11 @@ PRODUCT_PACKAGES += \
     OnePlusSwitch \
     RetroSwitch \
     StockSwitch \
-    TelegramSwitch
+    TelegramSwitch \
+    NarrowSwitchNormal \
+    SwitchOnePlusGradient \
+    MD2SwitchNormal \
+    TelegramSwitchNormal
 
 # Dark Styles
 PRODUCT_PACKAGES += \
