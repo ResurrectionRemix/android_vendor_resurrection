@@ -120,7 +120,9 @@ PRODUCT_PACKAGES += \
     QSHeaderBlack \
     QSHeaderGrey \
     QSHeaderLightGrey \
-    QSHeaderAccent \
+    QSHeaderGradientEndOverlay\
+    QSHeaderGradientOverlay \
+    QSHeaderAccentOverlay \
     QSHeaderTransparent
 
 PRODUCT_PACKAGES += \
@@ -159,6 +161,7 @@ PRODUCT_PACKAGES += \
     NarrowSwitchNormal \
     SwitchOnePlusGradient \
     MD2SwitchNormal \
+    ContainedSwitchNormal \
     TelegramSwitchNormal
 
 # Dark Styles
