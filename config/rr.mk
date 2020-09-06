@@ -120,8 +120,6 @@ PRODUCT_PACKAGES += \
     QSHeaderBlack \
     QSHeaderGrey \
     QSHeaderLightGrey \
-    QSHeaderGradientEndOverlay\
-    QSHeaderGradientOverlay \
     QSHeaderAccentOverlay \
     QSHeaderTransparent
 
