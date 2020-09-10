@@ -90,6 +90,9 @@ vendor/rr/Features.mkdn:system/etc/RR/Features.txt
 # Plugins
 include packages/apps/Plugins/plugins.mk
 
+# Brightness slider
+include packages/overlays/Resurrection/themes/BrightnessSlider/slider.mk
+
 # Themes
 PRODUCT_PACKAGES += \
     RRClearSystemOverlay \
@@ -131,8 +134,6 @@ PRODUCT_PACKAGES += \
         GVM-URM-L \
         GVM-URM-R \
         GVM-URM-S
-
-
 
 ifeq ($(TARGET_HAS_FOD),true)
 DEVICE_PACKAGE_OVERLAYS += packages/overlays/Resurrection/fod/overlay
