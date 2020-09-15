@@ -163,6 +163,14 @@ PRODUCT_PACKAGES += \
     ContainedSwitchNormal \
     TelegramSwitchNormal
 
+# Icon pack
+PRODUCT_PACKAGES += \
+    IconPackMultiAndroidOverlay\
+    IconPackMultiPixelLauncherOverlay \
+    IconPackMultiPixelThemePickerOverlay \
+    IconPackMultiSettingsOverlay \
+    IconPackMultiSystemUIOverlay
+
 # Dark Styles
 PRODUCT_PACKAGES += \
     SystemAmoledBlack \
