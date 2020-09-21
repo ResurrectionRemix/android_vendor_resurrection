@@ -160,6 +160,8 @@ PRODUCT_PACKAGES += \
     NarrowSwitchNormal \
     SwitchOnePlusGradient \
     MD2SwitchNormal \
+    StockishSwitch \
+    FluidSwitch \
     ContainedSwitchNormal \
     TelegramSwitchNormal
 
