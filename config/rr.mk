@@ -173,6 +173,15 @@ PRODUCT_PACKAGES += \
     IconPackMultiSettingsOverlay \
     IconPackMultiSystemUIOverlay
 
+# Analog clock size
+PRODUCT_PACKAGES += \
+    KeyguardClockSmall \
+    KeyguardClockSmallest \
+    KeyguardClockLargest \
+    KeyguardClockNormal \
+    KeyguardClockBig \
+    KeyguardInsane 
+
 # Dark Styles
 PRODUCT_PACKAGES += \
     SystemAmoledBlack \
