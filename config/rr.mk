@@ -140,6 +140,11 @@ DEVICE_PACKAGE_OVERLAYS += packages/overlays/Resurrection/fod/overlay
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += packages/overlays/Resurrection/fod/overlay
 endif
 
+ifeq ($(BUILD_RR_WALLPAPERS),true)
+PRODUCT_PACKAGES += \
+    RRWallpapers
+endif
+
 # ResurrectionRemix Overlays
 PRODUCT_PACKAGES += \
     OmniJaws \

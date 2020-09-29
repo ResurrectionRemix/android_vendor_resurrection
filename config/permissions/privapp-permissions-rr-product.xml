@@ -50,6 +50,10 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.rr.wallpapers">
+        <permission name="android.permission.SET_WALLPAPER"/>
+    </privapp-permissions>
+
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
