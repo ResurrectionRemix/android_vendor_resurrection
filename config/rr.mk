@@ -126,6 +126,14 @@ PRODUCT_PACKAGES += \
     QSHeaderAccentOverlay \
     QSHeaderTransparent
 
+# Volume icon tint
+PRODUCT_PACKAGES += \
+    VolumeIconNormal \
+    VolumeIconPrimary \
+    VolumeIconAccent \
+    VolumeSliderAccent \
+    VolumeSliderStock
+
 PRODUCT_PACKAGES += \
         GVM-SBH-L \
         GVM-SBH-M \
