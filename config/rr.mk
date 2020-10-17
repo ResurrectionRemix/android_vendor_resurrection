@@ -97,6 +97,8 @@ include packages/overlays/Resurrection/themes/BrightnessSlider/slider.mk
 PRODUCT_PACKAGES += \
     RRClearSystemOverlay \
     RRClearSystemUIOverlay \
+    RRClearSystem2Overlay \
+    RRClearSystemUI2Overlay \
     PitchBlackSystemOverlay \
     PitchBlackSystemUIOverlay \
     SolarizedDarkSystemOverlay \
