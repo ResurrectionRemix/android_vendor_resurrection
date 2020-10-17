@@ -195,7 +195,19 @@ PRODUCT_PACKAGES += \
     KeyguardClockLargest \
     KeyguardClockNormal \
     KeyguardClockBig \
-    KeyguardInsane 
+    KeyguardInsane
+
+# Settings search
+PRODUCT_PACKAGES += \
+    SearchBarCorner \
+    SearchBarRectangle \
+    SearchBarRounded \
+    SearchBarSquareRounded \
+    SearchBarRoundedMax \
+    SearchBarStock \
+    SearchBarGradient \
+    SearchBarAccent \
+    SearchBarStockColor
 
 # Dark Styles
 PRODUCT_PACKAGES += \
