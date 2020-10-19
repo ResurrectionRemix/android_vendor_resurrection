@@ -206,8 +206,11 @@ PRODUCT_PACKAGES += \
     SearchBarRoundedMax \
     SearchBarStock \
     SearchBarGradient \
+    SearchBarGradient2 \
     SearchBarAccent \
-    SearchBarStockColor
+    SearchBarStockColor \
+    SearchBarGradientSystem \
+    SearchBarGradientSystem2 
 
 # Dark Styles
 PRODUCT_PACKAGES += \
