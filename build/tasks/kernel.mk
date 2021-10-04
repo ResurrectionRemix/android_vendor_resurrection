@@ -25,6 +25,7 @@
 #   TARGET_KERNEL_VARIANT_CONFIG       = Variant defconfig, optional
 #   TARGET_KERNEL_SELINUX_CONFIG       = SELinux defconfig, optional
 #   TARGET_KERNEL_ADDITIONAL_CONFIG    = Additional defconfig, optional
+#   TARGET_KERNEL_ADDITIONAL_FLAGS     = Additional make flags, optional
 #
 #   TARGET_KERNEL_CLANG_COMPILE        = Compile kernel with clang, defaults to false
 #
@@ -102,6 +103,10 @@ ifeq ($(BOARD_KERNEL_IMAGE_NAME),)
 $(error BOARD_KERNEL_IMAGE_NAME not defined.)
 endif
 TARGET_PREBUILT_INT_KERNEL := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/$(BOARD_KERNEL_IMAGE_NAME)
+
+ifneq ($(TARGET_KERNEL_ADDITIONAL_FLAGS),)
+  MAKE_FLAGS += $(TARGET_KERNEL_ADDITIONAL_FLAGS)
+endif
 
 ifeq "$(wildcard $(KERNEL_SRC) )" ""
     ifneq ($(TARGET_PREBUILT_KERNEL),)
