@@ -50,7 +50,7 @@ echo -e "";
 $normal
 read -t 30 askvariant
 sleep 1
-if [ "$askvariant" == "1" ]
+if [ "$askvariant" = "1" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building unofficial variant "${txtrst}
@@ -60,7 +60,7 @@ echo -e "";
 $normal
 sleep 1
 fi
-if [ "$askvariant" == "2" ]
+if [ "$askvariant" = "2" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building nightly variant "${txtrst}
@@ -70,7 +70,7 @@ echo -e "";
 $normal
 sleep 1
 fi
-if [ "$askvariant" == "3" ]
+if [ "$askvariant" = "3" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building weekly variant "${txtrst}
@@ -80,7 +80,7 @@ echo -e "";
 $normal
 sleep 1
 fi
-if [ "$askvariant" == "4" ]
+if [ "$askvariant" = "4" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building release variant "${txtrst}
@@ -90,7 +90,7 @@ echo -e "";
 $normal
 sleep 1
 fi
-if [ "$askvariant" == "5" ]
+if [ "$askvariant" = "5" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building milestone variant "${txtrst}
@@ -100,7 +100,7 @@ echo -e "";
 $normal
 sleep 1
 fi
-if [ "$askvariant" == "6" ]
+if [ "$askvariant" = "6" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building experimental variant "${txtrst}
@@ -110,7 +110,7 @@ echo -e "";
 $normal
 sleep 1
 fi
-if [ "$askvariant" == "7" ]
+if [ "$askvariant" = "7" ]
 then
 echo -e "";
 echo -e ${blu}" ▪ Building final variant "${txtrst}
